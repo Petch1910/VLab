@@ -1,0 +1,279 @@
+{
+  "version": "M53-03",
+  "description": "Fifth-slice human-accepted repair artifact",
+  "selected_target": {
+    "slice": "Fifth Offline Slice",
+    "era_preset": "link_joker_legion_mate",
+    "group": "โกลด์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 3,
+    "priority_score": 77.85,
+    "best_era_candidates": 2006,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "m53_02_human_selected_recipe_artifact": "outputs\\target_slice\\m53_02_fifth_slice_human_selected_recipe_artifact.json",
+    "m52_recipe_drafts": "outputs\\target_slice\\m52_03_fifth_slice_recipe_draft_model.json"
+  },
+  "scope": {
+    "offline_human_accepted_artifact": true,
+    "records_human_selection": true,
+    "records_human_acceptance": true,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false,
+    "declares_recipe_valid": false
+  },
+  "acceptance_policy": {
+    "requires_m53_02_selection": true,
+    "requires_non_empty_acceptance_text": true,
+    "acceptance_is_not_validation": true,
+    "runtime_promotion_allowed": false,
+    "m53_04_must_rerun_validation": true
+  },
+  "acceptance_record": {
+    "decision": "accepted",
+    "accepted_by": "user",
+    "accepted_at": "2026-07-01",
+    "acceptance_text": "ผู้ใช้เลือก m53_01_m52_recipe_001_repair_review และให้เดิน M53 pipeline ต่อ จึงยอมรับ recipe/grade repair สำหรับ validation rerun",
+    "accepted_review_item_id": "m53_01_m52_recipe_001_repair_review",
+    "accepted_recipe_id": "m52_recipe_001",
+    "accepted_grade_profile_package_id": "m52_recipe_001_grade_profile_pkg_001",
+    "source_note": "Recorded from explicit acceptance of the M53-02 selected fifth-slice recipe."
+  },
+  "accepted_repair": {
+    "recipe_id": "m52_recipe_001",
+    "source_candidate_edge": "BT14-003TH->BT12-053TH",
+    "pair": {
+      "source_card_id": "BT14-003TH",
+      "source_name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+      "target_card_id": "BT12-053TH",
+      "target_name_th": "พีคกัล",
+      "net_score": 12,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "source_zone_profile_only"
+    },
+    "grade_profile_package_id": "m52_recipe_001_grade_profile_pkg_001",
+    "grade_repair_type": "grade_profile_substitution_preview",
+    "grade_additions": [
+      {
+        "card_id": "TD16-013TH",
+        "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+        "quantity": 1,
+        "grade": "0",
+        "series_code": "TD16",
+        "source": "data/packs/vanguard_th/cards.sqlite:cards"
+      },
+      {
+        "card_id": "TD08-009TH",
+        "name_th": "อัศวินผู้เพียบพร้อม,กาเร็ท",
+        "quantity": 4,
+        "grade": "1",
+        "series_code": "TD08",
+        "source": "data/packs/vanguard_th/cards.sqlite:cards"
+      }
+    ],
+    "grade_removals": [
+      {
+        "card_id": "BT10-012TH",
+        "name_th": "ลิเบอเรเตอร์แห่งขลุ่ย,เอสการ์ด",
+        "quantity": 1,
+        "grade": "2",
+        "series_code": "BT10",
+        "source": "m52_03_fifth_slice_recipe_draft_model"
+      },
+      {
+        "card_id": "BT10-003TH",
+        "name_th": "ลิเบอเรเตอร์อัศวินโต๊ะกลม,อัลเฟรด",
+        "quantity": 4,
+        "grade": "3",
+        "series_code": "BT10",
+        "source": "m52_03_fifth_slice_recipe_draft_model"
+      }
+    ],
+    "repaired_quantities": [
+      {
+        "card_id": "BT10-011TH",
+        "name_th": "ลิเบอเรเตอร์ที่เปล่งรัศมี,มาร์ค",
+        "quantity": 3,
+        "grade": "1",
+        "trigger": "",
+        "series_code": "",
+        "source": "m53_03_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT10-012TH",
+        "name_th": "ลิเบอเรเตอร์แห่งขลุ่ย,เอสการ์ด",
+        "quantity": 2,
+        "grade": "2",
+        "trigger": "",
+        "series_code": "",
+        "source": "m53_03_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT10-025TH",
+        "name_th": "ลิเบอร์เรเตอร์นักล่าที่รวดเร็ว,โจเซฟ",
+        "quantity": 3,
+        "grade": "1",
+        "trigger": "",
+        "series_code": "",
+        "source": "m53_03_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT10-053TH",
+        "name_th": "มูนกัล",
+        "quantity": 4,
+        "grade": "3",
+        "trigger": "",
+        "series_code": "",
+        "source": "m53_03_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT10-054TH",
+        "name_th": "อัศวินลูกศรระยะไกล,ซัพเฟอร์",
+        "quantity": 3,
+        "grade": "2",
+        "trigger": "",
+        "series_code": "",
+        "source": "m53_03_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT10-055TH",
+        "name_th": "อัศวินพินาศหิน,เซควาริเดส",
+        "quantity": 2,
+        "grade": "2",
+        "trigger": "",
+        "series_code": "",
+        "source": "m53_03_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT10-056TH",
+        "name_th": "กิลด์ดิ้ง・ฟอลคอนนี่",
+        "quantity": 3,
+        "grade": "1",
+        "trigger": "",
+        "series_code": "",
+        "source": "m53_03_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT10-057TH",
+        "name_th": "ลิเบอร์เรเตอร์,แฟลร์เมน・สตอลเลี่ยน",
+        "quantity": 1,
+        "grade": "1",
+        "trigger": "",
+        "series_code": "",
+        "source": "m53_03_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT10-059TH",
+        "name_th": "ลิเบอร์เรเตอร์แห่งความหวัง,เอโพน่า",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Critical",
+        "series_code": "",
+        "source": "m53_03_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT10-060TH",
+        "name_th": "โฟลกัล・ลิเบอร์เรเตอร์",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Stand",
+        "series_code": "",
+        "source": "m53_03_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT12-053TH",
+        "name_th": "พีคกัล",
+        "quantity": 4,
+        "grade": "2",
+        "trigger": "",
+        "series_code": "",
+        "source": "m53_03_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT14-003TH",
+        "name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+        "quantity": 4,
+        "grade": "3",
+        "trigger": "",
+        "series_code": "",
+        "source": "m53_03_accepted_repair_preview"
+      },
+      {
+        "card_id": "TD08-009TH",
+        "name_th": "อัศวินผู้เพียบพร้อม,กาเร็ท",
+        "quantity": 4,
+        "grade": "1",
+        "trigger": "",
+        "series_code": "TD08",
+        "source": "m53_03_accepted_repair_preview"
+      },
+      {
+        "card_id": "TD16-013TH",
+        "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+        "quantity": 1,
+        "grade": "0",
+        "trigger": "",
+        "series_code": "TD16",
+        "source": "m53_03_accepted_repair_preview"
+      },
+      {
+        "card_id": "TD16-015TH",
+        "name_th": "ลิเบอเรเตอร์,ลัคกี้・ชาร์มมี่",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Draw",
+        "series_code": "",
+        "source": "m53_03_accepted_repair_preview"
+      },
+      {
+        "card_id": "TD16-017TH",
+        "name_th": "ลิเบอเรเตอร์แห่งต้นไม้ศักดิ์สิทธิ์,เอลเคียร์",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Heal",
+        "series_code": "",
+        "source": "m53_03_accepted_repair_preview"
+      }
+    ],
+    "repair_application_issues": [],
+    "main_deck_count_after_repair": 50,
+    "grade_counts_after_repair_package": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "runtime_promotion_allowed": false,
+    "requires_m53_04_validation": true,
+    "ready_for_m53_04_validation_rerun": true
+  },
+  "summary": {
+    "accepted_review_item_id": "m53_01_m52_recipe_001_repair_review",
+    "accepted_recipe_id": "m52_recipe_001",
+    "accepted_grade_profile_package_id": "m52_recipe_001_grade_profile_pkg_001",
+    "human_selection_recorded": true,
+    "human_acceptance_recorded": true,
+    "main_deck_count_after_repair": 50,
+    "repair_application_issue_count": 0,
+    "runtime_promotion_allowed": false,
+    "declares_recipe_valid": false,
+    "ready_for_m53_04": true
+  },
+  "next_target": {
+    "milestone": "M53-04",
+    "task": "Fifth-slice repaired recipe validation rerun"
+  }
+}

@@ -1,0 +1,555 @@
+{
+  "version": "M48-05",
+  "description": "Fourth-slice candidate edge to recipe consistency check",
+  "selected_target": {
+    "slice": "Fourth Offline Slice",
+    "era_preset": "g_series_first",
+    "group": "รอยัล พาลาดิน",
+    "group_field": "clan",
+    "rank": 2,
+    "priority_score": 86.19,
+    "best_era_candidates": 1024,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "fourth_slice_recipe_draft_model": "outputs\\target_slice\\m48_03_fourth_slice_recipe_draft_model.json",
+    "fourth_slice_recipe_validation_report": "outputs\\target_slice\\m48_04_fourth_slice_recipe_validation_report.json"
+  },
+  "scope": {
+    "offline_consistency_check": true,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "runtime_deck": false,
+    "bot_playbook": false,
+    "automatic_deck_injection": false,
+    "direct_GameState_mutation": false
+  },
+  "summary": {
+    "recipe_count": 25,
+    "consistency_check_count": 25,
+    "pair_cards_present_count": 25,
+    "missing_pair_card_check_count": 0,
+    "pair_manual_dependency_check_count": 0,
+    "recipe_manual_dependency_check_count": 25,
+    "g_zone_deferred_check_count": 25,
+    "promotion_allowed_count": 0,
+    "runtime_ready_consistent_count": 0,
+    "status_counts": {
+      "blocked_by_manual_review": 25
+    },
+    "ready_for_m48_06": true
+  },
+  "consistency_checks": [
+    {
+      "recipe_id": "m48_recipe_001",
+      "source_candidate_edge": "G-CMB01-003TH->G-TD02-004TH",
+      "source_edge_rank": 1,
+      "source_card_id": "G-CMB01-003TH",
+      "target_card_id": "G-TD02-004TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 15,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_002",
+      "source_candidate_edge": "G-CMB01-003TH->G-TD11-002TH",
+      "source_edge_rank": 2,
+      "source_card_id": "G-CMB01-003TH",
+      "target_card_id": "G-TD11-002TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 15,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_003",
+      "source_candidate_edge": "G-CMB01-028TH->G-BT01-045TH",
+      "source_edge_rank": 3,
+      "source_card_id": "G-CMB01-028TH",
+      "target_card_id": "G-BT01-045TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 14,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_004",
+      "source_candidate_edge": "G-BT14-006TH->G-BT01-045TH",
+      "source_edge_rank": 4,
+      "source_card_id": "G-BT14-006TH",
+      "target_card_id": "G-BT01-045TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 14,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_005",
+      "source_candidate_edge": "G-CHB01-004TH->G-BT02-044TH",
+      "source_edge_rank": 5,
+      "source_card_id": "G-CHB01-004TH",
+      "target_card_id": "G-BT02-044TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 15,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_006",
+      "source_candidate_edge": "G-CMB01-003TH->G-BT01-045TH",
+      "source_edge_rank": 6,
+      "source_card_id": "G-CMB01-003TH",
+      "target_card_id": "G-BT01-045TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 14,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_007",
+      "source_candidate_edge": "G-BT08-025TH->G-BT01-048TH",
+      "source_edge_rank": 14,
+      "source_card_id": "G-BT08-025TH",
+      "target_card_id": "G-BT01-048TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 15,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_008",
+      "source_candidate_edge": "G-BT08-025TH->G-BT06-024TH",
+      "source_edge_rank": 15,
+      "source_card_id": "G-BT08-025TH",
+      "target_card_id": "G-BT06-024TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 15,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_009",
+      "source_candidate_edge": "G-BT08-025TH->G-BT08-048TH",
+      "source_edge_rank": 16,
+      "source_card_id": "G-BT08-025TH",
+      "target_card_id": "G-BT08-048TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 15,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_010",
+      "source_candidate_edge": "G-BT08-025TH->G-CMB01-013TH",
+      "source_edge_rank": 17,
+      "source_card_id": "G-BT08-025TH",
+      "target_card_id": "G-CMB01-013TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 15,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_011",
+      "source_candidate_edge": "G-BT08-025TH->G-CMB01-014TH",
+      "source_edge_rank": 18,
+      "source_card_id": "G-BT08-025TH",
+      "target_card_id": "G-CMB01-014TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 15,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_012",
+      "source_candidate_edge": "G-BT08-025TH->G-TD02-006TH",
+      "source_edge_rank": 19,
+      "source_card_id": "G-BT08-025TH",
+      "target_card_id": "G-TD02-006TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 15,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_013",
+      "source_candidate_edge": "G-BT08-025TH->G-TD02-012TH",
+      "source_edge_rank": 20,
+      "source_card_id": "G-BT08-025TH",
+      "target_card_id": "G-TD02-012TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 15,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_014",
+      "source_candidate_edge": "G-LD03-011TH->G-BT01-045TH",
+      "source_edge_rank": 44,
+      "source_card_id": "G-LD03-011TH",
+      "target_card_id": "G-BT01-045TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 14,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_015",
+      "source_candidate_edge": "G-BT01-010TH->G-BT02-044TH",
+      "source_edge_rank": 45,
+      "source_card_id": "G-BT01-010TH",
+      "target_card_id": "G-BT02-044TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 14,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_016",
+      "source_candidate_edge": "G-BT01-011TH->G-BT01-046TH",
+      "source_edge_rank": 46,
+      "source_card_id": "G-BT01-011TH",
+      "target_card_id": "G-BT01-046TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 14,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_017",
+      "source_candidate_edge": "G-BT01-011TH->G-BT06-003TH",
+      "source_edge_rank": 48,
+      "source_card_id": "G-BT01-011TH",
+      "target_card_id": "G-BT06-003TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 14,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_018",
+      "source_candidate_edge": "G-BT01-011TH->G-BT06-023TH",
+      "source_edge_rank": 49,
+      "source_card_id": "G-BT01-011TH",
+      "target_card_id": "G-BT06-023TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 14,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_019",
+      "source_candidate_edge": "G-BT01-011TH->G-BT06-024TH",
+      "source_edge_rank": 50,
+      "source_card_id": "G-BT01-011TH",
+      "target_card_id": "G-BT06-024TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 14,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_020",
+      "source_candidate_edge": "G-BT01-011TH->G-BT06-045TH",
+      "source_edge_rank": 51,
+      "source_card_id": "G-BT01-011TH",
+      "target_card_id": "G-BT06-045TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 14,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_021",
+      "source_candidate_edge": "G-BT01-011TH->G-BT08-048TH",
+      "source_edge_rank": 53,
+      "source_card_id": "G-BT01-011TH",
+      "target_card_id": "G-BT08-048TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 14,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_022",
+      "source_candidate_edge": "G-BT01-011TH->G-BT14-015TH",
+      "source_edge_rank": 55,
+      "source_card_id": "G-BT01-011TH",
+      "target_card_id": "G-BT14-015TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 14,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_023",
+      "source_candidate_edge": "G-BT01-011TH->G-CHB01-006TH",
+      "source_edge_rank": 57,
+      "source_card_id": "G-BT01-011TH",
+      "target_card_id": "G-CHB01-006TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 14,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_024",
+      "source_candidate_edge": "G-BT01-011TH->G-CHB01-047TH",
+      "source_edge_rank": 59,
+      "source_card_id": "G-BT01-011TH",
+      "target_card_id": "G-CHB01-047TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 14,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    },
+    {
+      "recipe_id": "m48_recipe_025",
+      "source_candidate_edge": "G-BT01-011TH->G-CMB01-004TH",
+      "source_edge_rank": 60,
+      "source_card_id": "G-BT01-011TH",
+      "target_card_id": "G-CMB01-004TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 14,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [
+        "G-BT01-024TH"
+      ],
+      "g_zone_support_deferred": true,
+      "recipe_validation_status": "blocked_by_manual_review",
+      "recipe_runtime_ready": false,
+      "consistency_status": "blocked_by_manual_review",
+      "promotion_allowed": false
+    }
+  ],
+  "next_target": {
+    "milestone": "M48-06",
+    "task": "Fourth-slice blocker repair candidates"
+  }
+}

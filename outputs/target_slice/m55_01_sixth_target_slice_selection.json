@@ -1,0 +1,143 @@
+{
+  "version": "M55-01",
+  "description": "Sixth target slice selection",
+  "source_inputs": {
+    "five_fixture_scale_decision": "outputs\\target_slice\\m54_04_five_fixture_scale_decision.json"
+  },
+  "scope": {
+    "offline_target_selection": true,
+    "creates_recipe_draft": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "GameState_mutation": false
+  },
+  "selection_policy": {
+    "requires_m54_scale_allowed": true,
+    "selects_first_available_candidate": true,
+    "excludes_completed_fixture_groups": true,
+    "selection_is_for_offline_analysis_only": true
+  },
+  "selected_target": {
+    "slice": "Sixth Offline Slice",
+    "era_preset": "g_next_z",
+    "group": "ชาโดว์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 4,
+    "priority_score": 73.61,
+    "best_era_candidates": 864,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "candidate_queue_snapshot": [
+    {
+      "rank": 4,
+      "group": "ชาโดว์ พาลาดิน",
+      "group_field": "clan",
+      "best_era": "g_next_z",
+      "best_era_candidates": 864,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 73.61,
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    {
+      "rank": 6,
+      "group": "เนโอ เนคต้า",
+      "group_field": "clan",
+      "best_era": "g_series_first",
+      "best_era_candidates": 1208,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 69.26,
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool"
+      ]
+    },
+    {
+      "rank": 7,
+      "group": "คาเงโร่",
+      "group_field": "clan",
+      "best_era": "link_joker_legion_mate",
+      "best_era_candidates": 1283,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 68.56,
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    {
+      "rank": 8,
+      "group": "อควอฟอร์ซ",
+      "group_field": "clan",
+      "best_era": "g_series_first",
+      "best_era_candidates": 999,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 68.42,
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool"
+      ]
+    },
+    {
+      "rank": 9,
+      "group": "เกียร์โครนิเคิล",
+      "group_field": "clan",
+      "best_era": "g_series_first",
+      "best_era_candidates": 3155,
+      "mechanic_tier": 5,
+      "mechanic_tier_label": "G/Stride",
+      "priority_score": 64.72,
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "complex_mechanics",
+        "rich_combo_pool"
+      ]
+    }
+  ],
+  "decision": {
+    "selection_allowed": true,
+    "sixth_slice_selected": true,
+    "offline_analysis_only": true,
+    "live_runtime_deck_enabled": false,
+    "saved_deck_enabled": false,
+    "ui_deck_list_enabled": false,
+    "bot_playbook_enabled": false,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false
+  },
+  "summary": {
+    "sixth_slice_selected": true,
+    "selected_group": "ชาโดว์ พาลาดิน",
+    "selected_era_preset": "g_next_z",
+    "selected_rank": 4,
+    "candidate_count": 5,
+    "ready_for_m55_02": true
+  },
+  "next_target": {
+    "milestone": "M55-02",
+    "task": "Sixth-slice fixture/format readiness"
+  }
+}

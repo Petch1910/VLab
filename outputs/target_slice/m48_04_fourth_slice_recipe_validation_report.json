@@ -1,0 +1,1905 @@
+{
+  "version": "M48-04",
+  "description": "Fourth-slice recipe validator for M48-03 advisory drafts",
+  "selected_target": {
+    "slice": "Fourth Offline Slice",
+    "era_preset": "g_series_first",
+    "group": "รอยัล พาลาดิน",
+    "group_field": "clan",
+    "rank": 2,
+    "priority_score": 86.19,
+    "best_era_candidates": 1024,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "fourth_slice_recipe_draft_model": "outputs\\target_slice\\m48_03_fourth_slice_recipe_draft_model.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "scope": {
+    "offline_validator": true,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "runtime_deck": false,
+    "bot_playbook": false,
+    "automatic_deck_injection": false,
+    "direct_GameState_mutation": false
+  },
+  "validation_policy": {
+    "classic_main_deck_size": 50,
+    "classic_trigger_count": 16,
+    "heal_trigger_max": 4,
+    "grade4_main_deck_max_until_g_zone_support": 0,
+    "copy_limit_from_sqlite_deck_limit": true,
+    "grade_profile_mismatch_is_review_not_blocker": true,
+    "manual_review_card_overlap_is_blocking": true,
+    "human_selection_pending_is_review_not_blocker": true,
+    "g_zone_support_deferred_is_review_not_blocker": true
+  },
+  "summary": {
+    "recipe_count": 25,
+    "runtime_ready_recipe_count": 0,
+    "validator_passed_count": 0,
+    "validator_passed_pending_human_selection_count": 0,
+    "invalid_draft_count": 0,
+    "blocked_by_manual_review_count": 25,
+    "missing_card_recipe_count": 0,
+    "copy_limit_violation_recipe_count": 0,
+    "slot_gap_recipe_count": 0,
+    "trigger_count_mismatch_recipe_count": 0,
+    "grade4_main_deck_recipe_count": 0,
+    "manual_review_overlap_recipe_count": 25,
+    "grade_profile_review_recipe_count": 24,
+    "g_zone_deferred_recipe_count": 25,
+    "issue_counts": {
+      "g_zone_support_deferred": 25,
+      "grade_profile_review": 24,
+      "human_recipe_selection_pending": 25,
+      "manual_review_card_overlap": 25
+    },
+    "ready_for_m48_05": true
+  },
+  "recipe_validations": [
+    {
+      "recipe_id": "m48_recipe_001",
+      "source_candidate_edge": "G-CMB01-003TH->G-TD02-004TH",
+      "source_edge_rank": 1,
+      "anchor_card_id": "G-CMB01-003TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 10
+            },
+            "2": {
+              "expected": 11,
+              "actual": 8
+            },
+            "3": {
+              "expected": 8,
+              "actual": 16
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 10,
+          "2": 8,
+          "3": 16
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_002",
+      "source_candidate_edge": "G-CMB01-003TH->G-TD11-002TH",
+      "source_edge_rank": 2,
+      "anchor_card_id": "G-CMB01-003TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 10
+            },
+            "2": {
+              "expected": 11,
+              "actual": 8
+            },
+            "3": {
+              "expected": 8,
+              "actual": 16
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 10,
+          "2": 8,
+          "3": 16
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_003",
+      "source_candidate_edge": "G-CMB01-028TH->G-BT01-045TH",
+      "source_edge_rank": 3,
+      "anchor_card_id": "G-CMB01-028TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 10
+            },
+            "2": {
+              "expected": 11,
+              "actual": 16
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 10,
+          "2": 16,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_004",
+      "source_candidate_edge": "G-BT14-006TH->G-BT01-045TH",
+      "source_edge_rank": 4,
+      "anchor_card_id": "G-BT14-006TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 10
+            },
+            "2": {
+              "expected": 11,
+              "actual": 12
+            },
+            "3": {
+              "expected": 8,
+              "actual": 12
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 10,
+          "2": 12,
+          "3": 12
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_005",
+      "source_candidate_edge": "G-CHB01-004TH->G-BT02-044TH",
+      "source_edge_rank": 5,
+      "anchor_card_id": "G-CHB01-004TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 10
+            },
+            "2": {
+              "expected": 11,
+              "actual": 12
+            },
+            "3": {
+              "expected": 8,
+              "actual": 12
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 10,
+          "2": 12,
+          "3": 12
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_006",
+      "source_candidate_edge": "G-CMB01-003TH->G-BT01-045TH",
+      "source_edge_rank": 6,
+      "anchor_card_id": "G-CMB01-003TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 10
+            },
+            "2": {
+              "expected": 11,
+              "actual": 12
+            },
+            "3": {
+              "expected": 8,
+              "actual": 12
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 10,
+          "2": 12,
+          "3": 12
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_007",
+      "source_candidate_edge": "G-BT08-025TH->G-BT01-048TH",
+      "source_edge_rank": 14,
+      "anchor_card_id": "G-BT08-025TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 18
+            },
+            "2": {
+              "expected": 11,
+              "actual": 8
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 18,
+          "2": 8,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_008",
+      "source_candidate_edge": "G-BT08-025TH->G-BT06-024TH",
+      "source_edge_rank": 15,
+      "anchor_card_id": "G-BT08-025TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "2": {
+              "expected": 11,
+              "actual": 12
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 14,
+          "2": 12,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_009",
+      "source_candidate_edge": "G-BT08-025TH->G-BT08-048TH",
+      "source_edge_rank": 16,
+      "anchor_card_id": "G-BT08-025TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 18
+            },
+            "2": {
+              "expected": 11,
+              "actual": 8
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 18,
+          "2": 8,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_010",
+      "source_candidate_edge": "G-BT08-025TH->G-CMB01-013TH",
+      "source_edge_rank": 17,
+      "anchor_card_id": "G-BT08-025TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "2": {
+              "expected": 11,
+              "actual": 8
+            },
+            "3": {
+              "expected": 8,
+              "actual": 12
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 14,
+          "2": 8,
+          "3": 12
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_011",
+      "source_candidate_edge": "G-BT08-025TH->G-CMB01-014TH",
+      "source_edge_rank": 18,
+      "anchor_card_id": "G-BT08-025TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "2": {
+              "expected": 11,
+              "actual": 8
+            },
+            "3": {
+              "expected": 8,
+              "actual": 12
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 14,
+          "2": 8,
+          "3": 12
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_012",
+      "source_candidate_edge": "G-BT08-025TH->G-TD02-006TH",
+      "source_edge_rank": 19,
+      "anchor_card_id": "G-BT08-025TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "2": {
+              "expected": 11,
+              "actual": 12
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 14,
+          "2": 12,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_013",
+      "source_candidate_edge": "G-BT08-025TH->G-TD02-012TH",
+      "source_edge_rank": 20,
+      "anchor_card_id": "G-BT08-025TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 18
+            },
+            "2": {
+              "expected": 11,
+              "actual": 8
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 18,
+          "2": 8,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_014",
+      "source_candidate_edge": "G-LD03-011TH->G-BT01-045TH",
+      "source_edge_rank": 44,
+      "anchor_card_id": "G-LD03-011TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "2": {
+              "expected": 11,
+              "actual": 12
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 14,
+          "2": 12,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_015",
+      "source_candidate_edge": "G-BT01-010TH->G-BT02-044TH",
+      "source_edge_rank": 45,
+      "anchor_card_id": "G-BT01-010TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 11
+            },
+            "2": {
+              "expected": 11,
+              "actual": 15
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 11,
+          "2": 15,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_016",
+      "source_candidate_edge": "G-BT01-011TH->G-BT01-046TH",
+      "source_edge_rank": 46,
+      "anchor_card_id": "G-BT01-011TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_017",
+      "source_candidate_edge": "G-BT01-011TH->G-BT06-003TH",
+      "source_edge_rank": 48,
+      "anchor_card_id": "G-BT01-011TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 11
+            },
+            "2": {
+              "expected": 11,
+              "actual": 15
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 11,
+          "2": 15,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_018",
+      "source_candidate_edge": "G-BT01-011TH->G-BT06-023TH",
+      "source_edge_rank": 49,
+      "anchor_card_id": "G-BT01-011TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 11
+            },
+            "3": {
+              "expected": 8,
+              "actual": 12
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 11,
+          "2": 11,
+          "3": 12
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_019",
+      "source_candidate_edge": "G-BT01-011TH->G-BT06-024TH",
+      "source_edge_rank": 50,
+      "anchor_card_id": "G-BT01-011TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 11
+            },
+            "2": {
+              "expected": 11,
+              "actual": 15
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 11,
+          "2": 15,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_020",
+      "source_candidate_edge": "G-BT01-011TH->G-BT06-045TH",
+      "source_edge_rank": 51,
+      "anchor_card_id": "G-BT01-011TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 11
+            },
+            "2": {
+              "expected": 11,
+              "actual": 15
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 11,
+          "2": 15,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_021",
+      "source_candidate_edge": "G-BT01-011TH->G-BT08-048TH",
+      "source_edge_rank": 53,
+      "anchor_card_id": "G-BT01-011TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 15
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 15,
+          "2": 11,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_022",
+      "source_candidate_edge": "G-BT01-011TH->G-BT14-015TH",
+      "source_edge_rank": 55,
+      "anchor_card_id": "G-BT01-011TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 11
+            },
+            "2": {
+              "expected": 11,
+              "actual": 15
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 11,
+          "2": 15,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_023",
+      "source_candidate_edge": "G-BT01-011TH->G-CHB01-006TH",
+      "source_edge_rank": 57,
+      "anchor_card_id": "G-BT01-011TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 11
+            },
+            "2": {
+              "expected": 11,
+              "actual": 15
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 11,
+          "2": 15,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_024",
+      "source_candidate_edge": "G-BT01-011TH->G-CHB01-047TH",
+      "source_edge_rank": 59,
+      "anchor_card_id": "G-BT01-011TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 15
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 15,
+          "2": 11,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m48_recipe_025",
+      "source_candidate_edge": "G-BT01-011TH->G-CMB01-004TH",
+      "source_edge_rank": 60,
+      "anchor_card_id": "G-BT01-011TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 11
+            },
+            "2": {
+              "expected": 11,
+              "actual": 15
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M48-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT01-024TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 11,
+          "2": 15,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "รอยัล พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    }
+  ],
+  "next_target": {
+    "milestone": "M48-05",
+    "task": "Fourth-slice combo-to-recipe consistency"
+  }
+}

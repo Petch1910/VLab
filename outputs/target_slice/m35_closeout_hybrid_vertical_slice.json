@@ -1,0 +1,335 @@
+{
+  "version": "M35-closeout",
+  "description": "Hybrid Vertical-Slice Strategy closeout and next queue selection",
+  "scope": {
+    "offline_coordination_artifact": true,
+    "changes_runtime_gameplay": false,
+    "changes_unity_ui": false,
+    "enables_bot_runtime": false
+  },
+  "input_checks": [
+    {
+      "milestone": "M35-A2",
+      "phase": "A",
+      "title": "First target slice selection",
+      "path": "outputs\\target_slice\\m35_a2_first_target_slice_report.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-A3",
+      "phase": "A",
+      "title": "First-slice legality fixtures",
+      "path": "outputs\\target_slice\\m35_a3_first_slice_deck_legality_fixtures.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-A4",
+      "phase": "A",
+      "title": "First-slice feasibility refresh",
+      "path": "outputs\\target_slice\\m35_a4_first_slice_feasibility_refresh.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-B1",
+      "phase": "B",
+      "title": "Selected-slice semantic vocabulary",
+      "path": "outputs\\target_slice\\m35_b1_first_slice_semantic_vocabulary.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-B2",
+      "phase": "B",
+      "title": "Selected-slice semantic extractor",
+      "path": "outputs\\target_slice\\m35_b2_first_slice_semantic_tags.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-B3",
+      "phase": "B",
+      "title": "Requirement/provider model",
+      "path": "outputs\\target_slice\\m35_b3_first_slice_requirement_provider_model.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-B4",
+      "phase": "B",
+      "title": "Manual review queue",
+      "path": "outputs\\target_slice\\m35_b4_first_slice_manual_review_queue.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-C1",
+      "phase": "C",
+      "title": "Pair compatibility graph",
+      "path": "outputs\\target_slice\\m35_c1_first_slice_pair_compatibility_graph.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-C2",
+      "phase": "C",
+      "title": "Resource conflict detector",
+      "path": "outputs\\target_slice\\m35_c2_first_slice_resource_conflict_detector.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-C3",
+      "phase": "C",
+      "title": "Timing compatibility detector",
+      "path": "outputs\\target_slice\\m35_c3_first_slice_timing_compatibility_detector.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-C4",
+      "phase": "C",
+      "title": "Zone/target compatibility detector",
+      "path": "outputs\\target_slice\\m35_c4_first_slice_zone_target_detector.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-C5",
+      "phase": "C",
+      "title": "Selected-slice compatibility output",
+      "path": "outputs\\target_slice\\m35_c5_first_slice_selected_compatibility_output.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-D1",
+      "phase": "D",
+      "title": "Candidate package selection",
+      "path": "outputs\\target_slice\\m35_d1_first_slice_candidate_packages.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-D2",
+      "phase": "D",
+      "title": "Deck skeleton ratio planner",
+      "path": "outputs\\target_slice\\m35_d2_first_slice_deck_skeleton_ratio_plans.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-D3",
+      "phase": "D",
+      "title": "Combo line explainer",
+      "path": "outputs\\target_slice\\m35_d3_first_slice_combo_line_explainer.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-D4",
+      "phase": "D",
+      "title": "Reviewed playbook seed export",
+      "path": "outputs\\target_slice\\m35_d4_first_slice_reviewed_playbook_seed.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-E1",
+      "phase": "E",
+      "title": "Second slice selection",
+      "path": "outputs\\target_slice\\m35_e1_second_target_slice_report.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-E2",
+      "phase": "E",
+      "title": "Second-slice fixture readiness",
+      "path": "outputs\\target_slice\\m35_e2_second_slice_fixture_readiness.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-E3",
+      "phase": "E",
+      "title": "Generalized semantic/compatibility probe",
+      "path": "outputs\\target_slice\\m35_e3_generalized_semantic_compatibility_probe.json",
+      "exists": true
+    },
+    {
+      "milestone": "M35-E4",
+      "phase": "E",
+      "title": "Bot integration gate",
+      "path": "outputs\\target_slice\\m35_e4_bot_integration_gate.json",
+      "exists": true
+    }
+  ],
+  "phase_summaries": [
+    {
+      "phase": "A",
+      "title": "Foundation Slice",
+      "status": "done",
+      "milestones": [
+        "M35-A2",
+        "M35-A3",
+        "M35-A4"
+      ],
+      "output_count": 3,
+      "all_outputs_present": true
+    },
+    {
+      "phase": "B",
+      "title": "Semantic Slice",
+      "status": "done",
+      "milestones": [
+        "M35-B1",
+        "M35-B2",
+        "M35-B3",
+        "M35-B4"
+      ],
+      "output_count": 4,
+      "all_outputs_present": true
+    },
+    {
+      "phase": "C",
+      "title": "Compatibility Slice",
+      "status": "done",
+      "milestones": [
+        "M35-C1",
+        "M35-C2",
+        "M35-C3",
+        "M35-C4",
+        "M35-C5"
+      ],
+      "output_count": 5,
+      "all_outputs_present": true
+    },
+    {
+      "phase": "D",
+      "title": "Deck Skeleton + Safe Playbook Seed",
+      "status": "done",
+      "milestones": [
+        "M35-D1",
+        "M35-D2",
+        "M35-D3",
+        "M35-D4"
+      ],
+      "output_count": 4,
+      "all_outputs_present": true
+    },
+    {
+      "phase": "E",
+      "title": "Scale Out + Bot Gate",
+      "status": "done",
+      "milestones": [
+        "M35-E1",
+        "M35-E2",
+        "M35-E3",
+        "M35-E4"
+      ],
+      "output_count": 4,
+      "all_outputs_present": true
+    }
+  ],
+  "key_results": {
+    "first_slice": {
+      "selected_target": {
+        "slice": "Classic Core",
+        "era_preset": "classic_part1",
+        "group": "โนว่า เกรปเปอร์",
+        "group_field": "clan",
+        "rank": 5,
+        "priority_score": 73.34,
+        "best_era_candidates": 1326,
+        "mechanic_tier": 2,
+        "mechanic_tier_label": "OG Keywords",
+        "priority_reasons": [
+          "HIGH_PRIORITY",
+          "simple_mechanics",
+          "decent_combo_pool",
+          "large_card_pool"
+        ]
+      },
+      "phase_a_ready_for_phase_b": true,
+      "semantic_tagged_cards": 112,
+      "manual_review_cards": 6,
+      "compatibility_edges": 3919,
+      "clean_candidate_edges": 604,
+      "candidate_packages": 25,
+      "deck_skeletons": 25,
+      "combo_lines": 25,
+      "reviewed_playbook_seed_entries": 1,
+      "rejected_playbook_lines": 24
+    },
+    "second_slice": {
+      "selected_target": {
+        "slice": "Classic Core",
+        "era_preset": "classic_part1",
+        "group": "โอราเคิล ทิงค์ แทงค์",
+        "group_field": "clan",
+        "rank": 10,
+        "priority_score": 63.74,
+        "best_era_candidates": 875,
+        "mechanic_tier": 2,
+        "mechanic_tier_label": "OG Keywords",
+        "priority_reasons": [
+          "MEDIUM_PRIORITY",
+          "simple_mechanics",
+          "decent_combo_pool"
+        ]
+      },
+      "fixture_expectations_met": true,
+      "classic_core_policy_reusable": true,
+      "probe_ready": true,
+      "probe_card_count": 103,
+      "probe_edge_count": 2660,
+      "probe_candidate_edges": 259
+    },
+    "bot_gate": {
+      "gate_passed": true,
+      "future_hint_candidate_count": 1,
+      "blocked_source_count": 1,
+      "runtime_bot_integration_enabled": false
+    }
+  },
+  "readiness": {
+    "all_inputs_present": true,
+    "all_phases_closed": true,
+    "m35_hybrid_vertical_slice_complete": true,
+    "safe_to_continue_to_next_queue": true,
+    "runtime_bot_integration_enabled": false
+  },
+  "next_queue_selection": {
+    "milestone": "M36",
+    "name": "Human-review-assisted deck recipe validation",
+    "why_this_next": [
+      "M35 produced advisory compatibility and one reviewed future bot hint, but it is not an executable deck or runtime playbook.",
+      "M35-D4 rejected 24 combo lines that need explicit review or support-gap handling before expansion.",
+      "Deck recipes need source-backed legality, card-quantity, trigger, grade, shield, and combo-line checks before runtime/bot work resumes."
+    ],
+    "first_tasks": [
+      {
+        "id": "M36-01",
+        "title": "First-slice review packet",
+        "goal": "Create a human-review packet for rejected lines, manual-review cards, and the one accepted seed."
+      },
+      {
+        "id": "M36-02",
+        "title": "Deck recipe draft model",
+        "goal": "Convert advisory skeletons into explicit draft recipes with card quantities and validation metadata."
+      },
+      {
+        "id": "M36-03",
+        "title": "Deck recipe validator",
+        "goal": "Validate clan/format, main/trigger/grade counts, ride deck constraints where applicable, and missing-card paths."
+      },
+      {
+        "id": "M36-04",
+        "title": "Combo-line to recipe consistency check",
+        "goal": "Confirm selected combo lines are actually present in the draft recipe and do not rely on blocked/manual-review cards."
+      },
+      {
+        "id": "M36-05",
+        "title": "Second-slice readiness comparison",
+        "goal": "Compare Oracle Think Tank probe outputs against the first-slice pipeline before broader scale-out."
+      },
+      {
+        "id": "M36-closeout",
+        "title": "Deck recipe validation closeout",
+        "goal": "Decide whether to expand more clans, build source-backed ability fixtures, or open a separate runtime/bot milestone."
+      }
+    ],
+    "hard_gates": [
+      "no runtime bot wiring",
+      "no live card text parsing",
+      "no direct GameState mutation",
+      "no automatic deck injection",
+      "human review required before playbook/runtime promotion"
+    ]
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "version": "M35-E3",
+  "description": "Generalized selected-slice semantic/compatibility probe",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โอราเคิล ทิงค์ แทงค์",
+    "group_field": "clan",
+    "rank": 10,
+    "priority_score": 63.74,
+    "best_era_candidates": 875,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "MEDIUM_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool"
+    ]
+  },
+  "source_inputs": {
+    "selected_report": "outputs\\target_slice\\m35_e1_second_target_slice_report.json",
+    "readiness_report": "outputs\\target_slice\\m35_e2_second_slice_fixture_readiness.json"
+  },
+  "pipeline_contract": {
+    "selected_report_required_keys": [
+      "selected_target",
+      "format_policy"
+    ],
+    "readiness_report_required_keys": [
+      "selected_target",
+      "fixture_policy",
+      "readiness"
+    ],
+    "stage_order": [
+      "B1 semantic vocabulary",
+      "B2 semantic tags",
+      "B3 requirement/provider model",
+      "B4 manual review queue",
+      "C1 pair compatibility graph",
+      "C2 resource detector",
+      "C3 timing detector",
+      "C4 zone/target detector",
+      "C5 selected compatibility output"
+    ],
+    "uses_injected_reports_in_memory": true,
+    "does_not_require_first_slice_file_paths_for_execution": true
+  },
+  "stage_readiness": {
+    "b1_vocabulary_ready": true,
+    "b2_semantics_ready": true,
+    "b3_provider_ready": true,
+    "b4_phase_c_ready": true,
+    "c1_resource_ready": true,
+    "c2_timing_ready": true,
+    "c3_zone_ready": true,
+    "c4_output_ready": true,
+    "c5_package_selection_ready": true
+  },
+  "stage_summaries": {
+    "b1_vocabulary": {
+      "ability_types": 3,
+      "effects": 13,
+      "missing_source_terms": 0
+    },
+    "b2_semantic_tags": {
+      "card_count": 103,
+      "cards_with_any_semantic_tag": 103,
+      "manual_review_count": 7
+    },
+    "b3_requirement_provider": {
+      "card_count": 103,
+      "cards_with_requirements": 92,
+      "cards_with_providers": 84,
+      "manual_review_count": 7,
+      "provider_type_count": 15,
+      "requirement_type_count": 16
+    },
+    "b4_manual_review_queue": {
+      "card_count": 103,
+      "manual_review_count": 7,
+      "ready_for_phase_c": true
+    },
+    "c1_pair_graph": {
+      "node_count": 103,
+      "edge_count": 2660,
+      "manual_review_card_count": 7,
+      "manual_review_edge_count": 343,
+      "advisory_edge_count": 2317,
+      "ready_for_m35_c2": true
+    },
+    "c2_resource": {
+      "node_count": 103,
+      "source_edge_count": 2660,
+      "resource_relevant_edge_count": 2113,
+      "manual_review_resource_edge_count": 289,
+      "missing_recovery_resource_count": 1,
+      "ready_for_m35_c3": true
+    },
+    "c3_timing": {
+      "node_count": 103,
+      "source_edge_count": 2660,
+      "timing_relevant_edge_count": 2621,
+      "manual_review_timing_edge_count": 336,
+      "ready_for_m35_c4": true
+    },
+    "c4_zone": {
+      "node_count": 103,
+      "source_edge_count": 2660,
+      "zone_relevant_edge_count": 2428,
+      "manual_review_zone_edge_count": 343,
+      "unsupported_required_zone_count": 2,
+      "ready_for_m35_c5": true
+    },
+    "c5_compatibility": {
+      "edge_count": 2660,
+      "status_counts": {
+        "manual_review_required": 343,
+        "missing_data": 697,
+        "mixed": 1361,
+        "synergy": 259
+      },
+      "m35_d1_candidate_edge_count": 259,
+      "ready_for_m35_d1": true
+    }
+  },
+  "runtime_boundary": {
+    "advisory_probe_only": true,
+    "does_not_create_deck": true,
+    "does_not_mutate_runtime_pack": true,
+    "does_not_publish_to_bot": true,
+    "does_not_publish_playbook_seed": true
+  },
+  "readiness": {
+    "generalized_selected_slice_contract_ready": true,
+    "second_slice_semantic_compatibility_probe_passed": true,
+    "ready_for_m35_e4_bot_gate_review": true,
+    "runtime_or_bot_promotion_allowed": false
+  },
+  "next_target": {
+    "milestone": "M35-E4",
+    "task": "Bot integration gate for reviewed playbook hints only",
+    "must_create": [
+      "explicit gate that bot can only consume reviewed hints through legal actions",
+      "masked-state requirement audit",
+      "no runtime use of unreviewed E3 probe edges"
+    ]
+  }
+}

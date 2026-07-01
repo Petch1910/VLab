@@ -1,0 +1,36 @@
+name: Data Validation
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  data-validation:
+    name: Data validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Verify Vanguard TH pack
+        run: python tools/verification/verify_vanguard_th_pack.py
+
+      - name: Validate custom pack schema v1
+        run: python tools/data/validate_custom_pack_schema.py data/templates/custom_pack
+
+      - name: Validate custom pack schema v2
+        run: python tools/data/validate_custom_pack_schema.py data/templates/custom_pack_v2
+
+      - name: Import custom pack schema v1 smoke
+        run: python tools/data/import_custom_pack.py data/templates/custom_pack --output-dir work/custom_pack_import --overwrite
+
+      - name: Import custom pack schema v2 smoke
+        run: python tools/data/import_custom_pack.py data/templates/custom_pack_v2 --output-dir work/custom_pack_v2_import --overwrite
+
+      - name: Validate structured ability pack
+        run: python tools/data/validate_ability_schema.py data/packs/vanguard_th/abilities/structured_ability_pack_m12_10.json

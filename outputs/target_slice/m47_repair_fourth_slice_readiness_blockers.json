@@ -1,0 +1,225 @@
+{
+  "version": "M47-repair",
+  "description": "Fourth-slice readiness blocker repair analysis",
+  "source_inputs": {
+    "fourth_slice_fixture_readiness": "outputs\\target_slice\\m47_02_fourth_slice_fixture_readiness.json",
+    "three_fixture_scale_decision": "outputs\\target_slice\\m46_04_three_fixture_scale_decision.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "selected_target": {
+    "slice": "Fourth Offline Slice",
+    "era_preset": "g_series_first",
+    "group": "รอยัล พาลาดิน",
+    "group_field": "clan",
+    "rank": 2,
+    "priority_score": 86.19,
+    "best_era_candidates": 1024,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "blocker_summary": {
+    "repair_required": true,
+    "repair_reasons": [
+      "classic_trigger_type_gap"
+    ],
+    "trigger_type_gaps": [
+      "Heal"
+    ],
+    "source_backed": true,
+    "can_repair_with_existing_source": true
+  },
+  "full_group_card_summary": {
+    "total_card_count": 556,
+    "series_counts": {
+      "BT01": 15,
+      "BT02": 10,
+      "BT03": 10,
+      "BT04": 4,
+      "BT05": 8,
+      "BT09": 1,
+      "BT10": 18,
+      "BT14": 21,
+      "BT16": 16,
+      "BT17": 7,
+      "D-BT05": 7,
+      "D-VS01": 4,
+      "EB01": 1,
+      "EB03": 2,
+      "FC01": 4,
+      "G-BT01": 14,
+      "G-BT02": 6,
+      "G-BT04": 8,
+      "G-BT06": 15,
+      "G-BT08": 12,
+      "G-BT10": 6,
+      "G-BT11": 8,
+      "G-BT14": 13,
+      "G-CHB01": 26,
+      "G-CMB01": 22,
+      "G-FC01": 2,
+      "G-FC02": 2,
+      "G-FC03": 2,
+      "G-FC04": 3,
+      "G-LD03": 18,
+      "G-MT01": 19,
+      "G-TD02": 16,
+      "G-TD11": 18,
+      "MBT01": 5,
+      "MT01": 12,
+      "PR": 33,
+      "TD01": 11,
+      "TD14": 17,
+      "V-BT01": 16,
+      "V-BT03": 13,
+      "V-BT05": 21,
+      "V-EB06": 10,
+      "V-EB14": 20,
+      "V-PR": 26,
+      "V-SS01": 2,
+      "V-SS07": 2,
+      "V-TD01": 15,
+      "V-TD11": 15
+    },
+    "grade_counts": {
+      "0": 108,
+      "1": 156,
+      "2": 150,
+      "3": 101,
+      "4": 41
+    },
+    "trigger_counts": {
+      "": 484,
+      "Critical": 30,
+      "Draw": 16,
+      "Heal": 14,
+      "Stand": 12
+    },
+    "heal_card_ids": [
+      "BT01-047TH",
+      "BT10-052TH",
+      "D-VS01-004TH",
+      "G-BT14-016TH",
+      "G-CHB01-051TH",
+      "G-CMB01-035TH",
+      "G-FC04-049TH",
+      "G-LD03-017TH",
+      "G-MT01-019TH",
+      "G-TD11-017TH",
+      "TD14-017TH",
+      "V-BT05/052TH",
+      "V-TD01-015TH",
+      "V-TD11-015TH"
+    ],
+    "has_heal_anywhere_in_group": true
+  },
+  "repair_options": [
+    {
+      "id": "source_expansion_same_group",
+      "available": true,
+      "reason": "A same-group Heal trigger exists outside the selected scope and could be reviewed."
+    },
+    {
+      "id": "relax_classic_trigger_profile",
+      "available": false,
+      "reason": "Rejected for fixture pipeline correctness; fixture recipes should not silently relax trigger-type requirements."
+    },
+    {
+      "id": "select_next_candidate",
+      "available": true,
+      "reason": "Use the next source-backed candidate from the M46 queue without mutating card data."
+    }
+  ],
+  "alternative_candidate_queue": [
+    {
+      "rank": 3,
+      "group": "โกลด์ พาลาดิน",
+      "group_field": "clan",
+      "best_era": "link_joker_legion_mate",
+      "best_era_candidates": 2006,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 77.85,
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "rich_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    {
+      "rank": 4,
+      "group": "ชาโดว์ พาลาดิน",
+      "group_field": "clan",
+      "best_era": "g_next_z",
+      "best_era_candidates": 864,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 73.61,
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    {
+      "rank": 6,
+      "group": "เนโอ เนคต้า",
+      "group_field": "clan",
+      "best_era": "g_series_first",
+      "best_era_candidates": 1208,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 69.26,
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool"
+      ]
+    },
+    {
+      "rank": 7,
+      "group": "คาเงโร่",
+      "group_field": "clan",
+      "best_era": "link_joker_legion_mate",
+      "best_era_candidates": 1283,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 68.56,
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool",
+        "large_card_pool"
+      ]
+    }
+  ],
+  "decision": {
+    "selected_group_repairable_now": true,
+    "recommended_action": "review_same_group_source_expansion",
+    "selection_repair_performed": false,
+    "card_data_mutated": false,
+    "runtime_fixture_created": false,
+    "saved_deck_enabled": false,
+    "ui_deck_list_enabled": false,
+    "bot_playbook_enabled": false
+  },
+  "summary": {
+    "selected_group": "รอยัล พาลาดิน",
+    "trigger_gap_count": 1,
+    "heal_exists_anywhere_in_group": true,
+    "alternative_candidate_count": 4,
+    "ready_for_reselection": false,
+    "ready_for_scope_expansion_review": true
+  },
+  "next_target": {
+    "milestone": "M47-repair-expand-scope",
+    "task": "Review same-group source expansion"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "meta_total_from_source": 10836,
+  "meta_total_exported": 10836,
+  "cards_json_count": 10836,
+  "cards_with_images_count": 10836,
+  "manifest_rows": 10836,
+  "image_file_count": 10836,
+  "part_file_count": 0,
+  "manifest_status_counts": {
+    "skipped": 10836
+  },
+  "unique_card_ids": 10836,
+  "duplicate_card_id_count": 0,
+  "unique_local_paths_in_json": 10836,
+  "duplicate_local_path_count": 0,
+  "missing_local_paths": 0,
+  "zero_byte_files": 0,
+  "non_file_refs": 0,
+  "magic_counts": {
+    "jpeg": 10836
+  },
+  "bad_magic_count": 0,
+  "total_bytes": 2322680098,
+  "total_gib": 2.163,
+  "checks": {
+    "counts_match_source": true,
+    "no_part_files": true,
+    "no_missing_paths": true,
+    "no_zero_byte_files": true,
+    "no_unknown_image_magic": true,
+    "ids_match_between_files": true,
+    "local_paths_unique": true
+  },
+  "all_ok": true
+}

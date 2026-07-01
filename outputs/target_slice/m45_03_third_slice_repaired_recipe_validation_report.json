@@ -1,0 +1,109 @@
+{
+  "version": "M45-03",
+  "description": "Third-slice repaired recipe validation rerun",
+  "selected_target": {
+    "slice": "Third Offline Slice",
+    "era_preset": "link_joker_legion_mate",
+    "group": "เบอร์มิวด้า ไทรแองเกิล",
+    "group_field": "clan",
+    "rank": 1,
+    "priority_score": 95.0,
+    "best_era_candidates": 2179,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "human_accepted_repair_artifact": "outputs\\target_slice\\m45_02_third_slice_human_accepted_repair_artifact.json",
+    "runtime_cards_sqlite": "data/packs/vanguard_th/cards.sqlite"
+  },
+  "scope": {
+    "offline_validation_rerun": true,
+    "records_human_acceptance": false,
+    "changes_accepted_repair_artifact": false,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "automatic_deck_injection": false,
+    "direct_GameState_mutation": false
+  },
+  "validation_policy": {
+    "classic_main_deck_size": 50,
+    "classic_trigger_count": 16,
+    "heal_trigger_max": 4,
+    "copy_limit_from_sqlite_deck_limit": true,
+    "grade_profile_mismatch_is_review_not_blocker": true,
+    "manual_review_card_overlap_is_blocking": true,
+    "human_selection_pending_is_review_not_blocker": true,
+    "validated_input": "m45_02_repaired_quantity_preview",
+    "human_acceptance_required": true,
+    "runtime_fixture_gate_still_required": true
+  },
+  "summary": {
+    "recipe_count": 1,
+    "runtime_ready_recipe_count": 1,
+    "validator_passed_count": 1,
+    "validator_passed_pending_human_selection_count": 0,
+    "invalid_draft_count": 0,
+    "blocked_by_manual_review_count": 0,
+    "missing_card_recipe_count": 0,
+    "copy_limit_violation_recipe_count": 0,
+    "slot_gap_recipe_count": 0,
+    "trigger_count_mismatch_recipe_count": 0,
+    "manual_review_overlap_recipe_count": 0,
+    "grade_profile_review_recipe_count": 0,
+    "issue_counts": {},
+    "ready_for_m44_05": true,
+    "accepted_recipe_id": "m44_recipe_001",
+    "accepted_review_item_id": "m45_01_m44_recipe_001_repair_review",
+    "accepted_combined_repair_package_id": "m44_recipe_001_combined_manual_grade_pkg_001",
+    "human_acceptance_recorded": true,
+    "runtime_fixture_created": false,
+    "runtime_promotion_allowed": false,
+    "ready_for_m45_04": true
+  },
+  "recipe_validations": [
+    {
+      "recipe_id": "m44_recipe_001",
+      "source_candidate_edge": "EB10-007TH-B->EB06-023TH",
+      "source_edge_rank": 1,
+      "anchor_card_id": "EB10-007TH-B",
+      "review_status": "human_accepted_repair_preview",
+      "validation_status": "validator_passed",
+      "blocking_issue_count": 0,
+      "issues": [],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": true
+    }
+  ],
+  "next_target": {
+    "milestone": "M45-04",
+    "task": "Third-slice runtime fixture promotion gate"
+  }
+}

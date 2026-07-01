@@ -1,0 +1,222 @@
+{
+  "version": "M38-04",
+  "description": "Runtime fixture promotion gate for the first accepted recipe",
+  "source_inputs": {
+    "human_accepted_recipe_artifact": "outputs\\target_slice\\m38_03_human_accepted_recipe_artifact.json",
+    "revised_recipe_validation_rerun": "outputs\\target_slice\\m37_05_revised_recipe_validation_rerun.json"
+  },
+  "scope": {
+    "offline_promotion_gate": true,
+    "creates_runtime_test_fixture_artifact": true,
+    "mutates_runtime_deck_library": false,
+    "bot_integration": false,
+    "automatic_playbook_promotion": false,
+    "live_card_text_parsing": false,
+    "GameState_mutation": false
+  },
+  "gate_policy": {
+    "requires_human_acceptance": true,
+    "requires_grade_profile_clear": true,
+    "requires_zero_blockers": true,
+    "requires_combo_consistency": true,
+    "fixture_only_not_live_deck": true
+  },
+  "gate_checks": [
+    {
+      "check_id": "human_acceptance",
+      "passed": true,
+      "evidence": {
+        "accepted_by": "user",
+        "decision": "accepted"
+      }
+    },
+    {
+      "check_id": "grade_profile_review",
+      "passed": true,
+      "evidence": {
+        "grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        }
+      }
+    },
+    {
+      "check_id": "validation",
+      "passed": true,
+      "evidence": {
+        "blocking_issue_count": 0,
+        "main_deck_count": 50,
+        "trigger_count": 16,
+        "validation_status": "accepted_review_artifact_ready_for_runtime_gate"
+      }
+    },
+    {
+      "check_id": "combo_consistency",
+      "passed": true,
+      "evidence": {
+        "source_consistency_status": "consistent_pending_human_acceptance"
+      }
+    },
+    {
+      "check_id": "runtime_boundary",
+      "passed": true,
+      "evidence": {
+        "m38_03_runtime_promotion_allowed": false,
+        "m38_03_creates_runtime_deck": false,
+        "m38_03_bot_integration": false
+      }
+    }
+  ],
+  "promotion_decision": {
+    "promotion_allowed": true,
+    "fixture_created": true,
+    "fixture_path": "outputs/target_slice/runtime_fixtures/recipe_003_classic_core_nova_grappler_m38_04.json",
+    "runtime_deck_library_mutated": false,
+    "bot_playbook_enabled": false,
+    "next_action": "M38-closeout"
+  },
+  "runtime_fixture": {
+    "schema_version": "deck_recipe_runtime_fixture_v1",
+    "fixture_id": "runtime_fixture_recipe_003_classic_core_nova_grappler_m38_04",
+    "fixture_scope": "offline_runtime_test_fixture",
+    "recipe_id": "recipe_003",
+    "source_artifact": "outputs/target_slice/m38_03_human_accepted_recipe_artifact.json",
+    "selected_target": {
+      "slice": "Classic Core",
+      "era_preset": "classic_part1",
+      "group": "โนว่า เกรปเปอร์",
+      "group_field": "clan",
+      "rank": 5,
+      "priority_score": 73.34,
+      "best_era_candidates": 1326,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    "format_policy": {
+      "slice": "Classic Core",
+      "era_preset": "classic_part1",
+      "group": "โนว่า เกรปเปอร์",
+      "group_field": "clan"
+    },
+    "main_deck": [
+      {
+        "card_id": "BT01-029TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "BT01-060TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "BT01-063TH",
+        "quantity": 1
+      },
+      {
+        "card_id": "BT01-065TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "BT02-018TH",
+        "quantity": 3
+      },
+      {
+        "card_id": "BT02-073TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "BT04-077TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "BT04-078TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "EB04-004TH",
+        "quantity": 3
+      },
+      {
+        "card_id": "EB04-010TH",
+        "quantity": 1
+      },
+      {
+        "card_id": "EB04-011TH",
+        "quantity": 1
+      },
+      {
+        "card_id": "EB04-016TH",
+        "quantity": 3
+      },
+      {
+        "card_id": "EB04-022TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "TD03-002TH",
+        "quantity": 2
+      },
+      {
+        "card_id": "TD03-003TH",
+        "quantity": 2
+      },
+      {
+        "card_id": "TD03-007TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "TD03-008TH",
+        "quantity": 2
+      }
+    ],
+    "count_summary": {
+      "main_deck_count": 50,
+      "trigger_count": 16,
+      "trigger_counts": {
+        "Critical": 4,
+        "Draw": 4,
+        "Heal": 4,
+        "Stand": 4
+      },
+      "grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "clan_counts": {
+        "โนว่า เกรปเปอร์": 50
+      }
+    },
+    "source_packages": {
+      "grade_package_id": "m38_02_grade_pkg_001",
+      "trigger_package_id": "m37_01_pkg_001"
+    },
+    "runtime_boundaries": {
+      "test_fixture_only": true,
+      "auto_injected_into_player_decks": false,
+      "bot_playbook_enabled": false,
+      "ui_deck_library_mutated": false,
+      "game_state_mutated": false
+    }
+  },
+  "summary": {
+    "recipe_id": "recipe_003",
+    "promotion_allowed": true,
+    "passed_check_count": 5,
+    "failed_check_count": 0,
+    "fixture_created": true,
+    "ready_for_m38_closeout": true
+  },
+  "next_target": {
+    "milestone": "M38-closeout",
+    "task": "First runtime fixture closeout"
+  }
+}

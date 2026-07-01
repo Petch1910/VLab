@@ -1,0 +1,498 @@
+{
+  "version": "M35-D4",
+  "description": "Reviewed advisory playbook seed export for selected first slice",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "combo_line_explainer": "outputs\\target_slice\\m35_d3_first_slice_combo_line_explainer.json"
+  },
+  "scope": {
+    "advisory_only": true,
+    "reviewed_playbook_seed_export": true,
+    "runtime_playbook": false,
+    "bot_integration": false,
+    "deck_quantities": false,
+    "runtime_effect_execution": false
+  },
+  "policy": {
+    "ai_static_review_only": true,
+    "human_acceptance_required_before_runtime": true,
+    "no_auto_inject_into_player_decks": true,
+    "no_auto_publish_to_bot": true,
+    "future_bot_use_requires_legal_action_mask_and_masked_state": true
+  },
+  "summary": {
+    "source_combo_line_count": 25,
+    "seed_entry_count": 1,
+    "rejected_line_count": 24,
+    "ready_for_m35_e1": true
+  },
+  "playbook_seed_entries": [
+    {
+      "seed_id": "seed_001",
+      "source_line_id": "line_003",
+      "source_skeleton_id": "skel_003",
+      "source_package_id": "pkg_003",
+      "anchor_card_id": "BT04-078TH",
+      "anchor_name_th": "แกรปเปิล มาเนีย",
+      "seed_status": "ai_static_reviewed_advisory",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT04-078TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH"
+      ],
+      "key_cards": [
+        "BT04-078TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT09-004TH",
+        "EB04-002TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-010TH",
+        "EB04-016TH",
+        "TD03-001TH"
+      ],
+      "trigger_cards": [
+        "BT04-078TH"
+      ],
+      "resource_recovery_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-078TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH",
+        "TD03-003TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT04-078TH->BT01-028TH",
+          "source_card_id": "BT04-078TH",
+          "target_card_id": "BT01-028TH",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede",
+            "zone:zone_support"
+          ],
+          "review_note": "static_advisory_step_only_not_runtime_action"
+        },
+        {
+          "step_no": 2,
+          "edge": "BT04-078TH->EB04-008TH",
+          "source_card_id": "BT04-078TH",
+          "target_card_id": "EB04-008TH",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede",
+            "zone:zone_support"
+          ],
+          "review_note": "static_advisory_step_only_not_runtime_action"
+        },
+        {
+          "step_no": 3,
+          "edge": "BT04-078TH->EB04-016TH",
+          "source_card_id": "BT04-078TH",
+          "target_card_id": "EB04-016TH",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede",
+            "zone:zone_support"
+          ],
+          "review_note": "static_advisory_step_only_not_runtime_action"
+        },
+        {
+          "step_no": 4,
+          "edge": "BT04-078TH->TD03-001TH",
+          "source_card_id": "BT04-078TH",
+          "target_card_id": "TD03-001TH",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede",
+            "zone:zone_support"
+          ],
+          "review_note": "static_advisory_step_only_not_runtime_action"
+        }
+      ],
+      "review": {
+        "reviewer": "ai_static_review",
+        "policy": "m35_d4_clean_no_gap_lines_only",
+        "passed": true,
+        "requires_human_acceptance_before_runtime": true
+      },
+      "runtime_policy": {
+        "not_runtime_playbook": true,
+        "not_published_to_bot": true,
+        "not_auto_injected_into_decks": true,
+        "legal_action_mask_required_before_future_bot_use": true,
+        "masked_state_required_before_future_bot_use": true
+      }
+    }
+  ],
+  "review_rejections": [
+    {
+      "source_line_id": "line_001",
+      "source_skeleton_id": "skel_001",
+      "source_package_id": "pkg_001",
+      "anchor_card_id": "BT04-038TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ]
+    },
+    {
+      "source_line_id": "line_002",
+      "source_skeleton_id": "skel_002",
+      "source_package_id": "pkg_002",
+      "anchor_card_id": "EB04-017TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ]
+    },
+    {
+      "source_line_id": "line_004",
+      "source_skeleton_id": "skel_004",
+      "source_package_id": "pkg_004",
+      "anchor_card_id": "BT01-028TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ]
+    },
+    {
+      "source_line_id": "line_005",
+      "source_skeleton_id": "skel_005",
+      "source_package_id": "pkg_005",
+      "anchor_card_id": "EB04-016TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ]
+    },
+    {
+      "source_line_id": "line_006",
+      "source_skeleton_id": "skel_006",
+      "source_package_id": "pkg_006",
+      "anchor_card_id": "TD03-003TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ]
+    },
+    {
+      "source_line_id": "line_007",
+      "source_skeleton_id": "skel_007",
+      "source_package_id": "pkg_007",
+      "anchor_card_id": "EB04-008TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ]
+    },
+    {
+      "source_line_id": "line_008",
+      "source_skeleton_id": "skel_008",
+      "source_package_id": "pkg_008",
+      "anchor_card_id": "TD03-001TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ]
+    },
+    {
+      "source_line_id": "line_009",
+      "source_skeleton_id": "skel_009",
+      "source_package_id": "pkg_009",
+      "anchor_card_id": "BT01-032TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ]
+    },
+    {
+      "source_line_id": "line_010",
+      "source_skeleton_id": "skel_010",
+      "source_package_id": "pkg_010",
+      "anchor_card_id": "EB01-020TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ]
+    },
+    {
+      "source_line_id": "line_011",
+      "source_skeleton_id": "skel_011",
+      "source_package_id": "pkg_011",
+      "anchor_card_id": "EB04-034TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ]
+    },
+    {
+      "source_line_id": "line_012",
+      "source_skeleton_id": "skel_012",
+      "source_package_id": "pkg_012",
+      "anchor_card_id": "EB04-035TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ]
+    },
+    {
+      "source_line_id": "line_013",
+      "source_skeleton_id": "skel_013",
+      "source_package_id": "pkg_013",
+      "anchor_card_id": "TD03-005TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No resource dependency detected for this edge."
+      ]
+    },
+    {
+      "source_line_id": "line_014",
+      "source_skeleton_id": "skel_014",
+      "source_package_id": "pkg_014",
+      "anchor_card_id": "BT06-099TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "No resource dependency detected for this edge."
+      ]
+    },
+    {
+      "source_line_id": "line_015",
+      "source_skeleton_id": "skel_015",
+      "source_package_id": "pkg_015",
+      "anchor_card_id": "EB04-021TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "No resource dependency detected for this edge."
+      ]
+    },
+    {
+      "source_line_id": "line_016",
+      "source_skeleton_id": "skel_016",
+      "source_package_id": "pkg_016",
+      "anchor_card_id": "BT02-018TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "No additional support gap detected by C2-C4 advisory detectors."
+      ]
+    },
+    {
+      "source_line_id": "line_017",
+      "source_skeleton_id": "skel_017",
+      "source_package_id": "pkg_017",
+      "anchor_card_id": "BT09-075TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access."
+      ]
+    },
+    {
+      "source_line_id": "line_018",
+      "source_skeleton_id": "skel_018",
+      "source_package_id": "pkg_018",
+      "anchor_card_id": "EB04-004TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "No additional support gap detected by C2-C4 advisory detectors."
+      ]
+    },
+    {
+      "source_line_id": "line_019",
+      "source_skeleton_id": "skel_019",
+      "source_package_id": "pkg_019",
+      "anchor_card_id": "BT04-076TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ]
+    },
+    {
+      "source_line_id": "line_020",
+      "source_skeleton_id": "skel_020",
+      "source_package_id": "pkg_020",
+      "anchor_card_id": "BT04-019TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No resource dependency detected for this edge."
+      ]
+    },
+    {
+      "source_line_id": "line_021",
+      "source_skeleton_id": "skel_021",
+      "source_package_id": "pkg_021",
+      "anchor_card_id": "BT09-072TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Target timing is broad; confirm actual line during review."
+      ]
+    },
+    {
+      "source_line_id": "line_022",
+      "source_skeleton_id": "skel_022",
+      "source_package_id": "pkg_022",
+      "anchor_card_id": "EB04-009TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Target timing is broad; confirm actual line during review."
+      ]
+    },
+    {
+      "source_line_id": "line_023",
+      "source_skeleton_id": "skel_023",
+      "source_package_id": "pkg_023",
+      "anchor_card_id": "EB04-023TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Target timing is broad; confirm actual line during review."
+      ]
+    },
+    {
+      "source_line_id": "line_024",
+      "source_skeleton_id": "skel_024",
+      "source_package_id": "pkg_024",
+      "anchor_card_id": "TD03-008TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Target timing is broad; confirm actual line during review."
+      ]
+    },
+    {
+      "source_line_id": "line_025",
+      "source_skeleton_id": "skel_025",
+      "source_package_id": "pkg_025",
+      "anchor_card_id": "BT02-072TH",
+      "review_status": "not_exported_to_seed",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access.",
+        "No resource dependency detected for this edge."
+      ]
+    }
+  ],
+  "next_target": "M35-E1"
+}

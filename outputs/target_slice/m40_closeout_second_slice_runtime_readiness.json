@@ -1,0 +1,135 @@
+{
+  "version": "M40-closeout",
+  "description": "Second-slice runtime readiness decision",
+  "source_inputs": {
+    "m40_01_second_slice_review_packet": "outputs\\target_slice\\m40_01_second_slice_review_packet.json",
+    "m40_02_second_slice_recipe_draft_model": "outputs\\target_slice\\m40_02_second_slice_recipe_draft_model.json",
+    "m40_03_second_slice_recipe_validation_report": "outputs\\target_slice\\m40_03_second_slice_recipe_validation_report.json",
+    "m40_04_second_slice_combo_recipe_consistency_report": "outputs\\target_slice\\m40_04_second_slice_combo_recipe_consistency_report.json",
+    "m40_05_second_slice_blocker_repair_candidates": "outputs\\target_slice\\m40_05_second_slice_blocker_repair_candidates.json"
+  },
+  "scope": {
+    "closeout_report": true,
+    "changes_recipe_draft_file": false,
+    "records_human_acceptance": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false
+  },
+  "input_checks": [
+    {
+      "milestone": "M40-01",
+      "title": "Second-slice review packet",
+      "path": "outputs\\target_slice\\m40_01_second_slice_review_packet.json",
+      "exists": true
+    },
+    {
+      "milestone": "M40-02",
+      "title": "Second-slice recipe draft model",
+      "path": "outputs\\target_slice\\m40_02_second_slice_recipe_draft_model.json",
+      "exists": true
+    },
+    {
+      "milestone": "M40-03",
+      "title": "Second-slice recipe validator",
+      "path": "outputs\\target_slice\\m40_03_second_slice_recipe_validation_report.json",
+      "exists": true
+    },
+    {
+      "milestone": "M40-04",
+      "title": "Second-slice combo-to-recipe consistency",
+      "path": "outputs\\target_slice\\m40_04_second_slice_combo_recipe_consistency_report.json",
+      "exists": true
+    },
+    {
+      "milestone": "M40-05",
+      "title": "Second-slice blocker repair candidates",
+      "path": "outputs\\target_slice\\m40_05_second_slice_blocker_repair_candidates.json",
+      "exists": true
+    }
+  ],
+  "key_results": {
+    "selected_target": {
+      "slice": "Classic Core",
+      "era_preset": "classic_part1",
+      "group": "โอราเคิล ทิงค์ แทงค์",
+      "group_field": "clan",
+      "rank": 10,
+      "priority_score": 63.74,
+      "best_era_candidates": 875,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool"
+      ]
+    },
+    "review_items": 272,
+    "recipe_drafts": 25,
+    "runtime_ready_recipe_count": 0,
+    "promotion_allowed_count": 0,
+    "manual_review_overlap_recipe_count": 25,
+    "repair_candidates_ready_for_human_review": 25,
+    "grade_profile_complete_candidate_count": 25
+  },
+  "decision": {
+    "m40_complete": true,
+    "second_slice_runtime_ready_recipe_available": false,
+    "second_slice_can_enter_runtime_fixture_gate_now": false,
+    "second_slice_remains_advisory": true,
+    "human_repair_review_allowed": true,
+    "live_runtime_deck_enabled": false,
+    "saved_deck_or_ui_publication_allowed": false,
+    "bot_playbook_enabled": false,
+    "decision_blockers": [
+      "no_runtime_ready_recipe",
+      "no_promotion_allowed_consistency_check",
+      "manual_review_overlap_unresolved",
+      "repair_candidates_require_human_acceptance",
+      "runtime_fixture_gate_not_run"
+    ],
+    "recommendation": "open_m41_human_repair_review_gate"
+  },
+  "next_queue": {
+    "id": "M41",
+    "title": "Second-slice Human Repair Review Gate",
+    "goal": "Review M40-05 repair candidates, record explicit acceptance or rejection, then rerun validation before any runtime fixture gate.",
+    "tasks": [
+      {
+        "id": "M41-01",
+        "title": "Second-slice human repair review packet",
+        "goal": "Export a concise review packet for the M40-05 repair packages."
+      },
+      {
+        "id": "M41-02",
+        "title": "Second-slice human-accepted repair artifact",
+        "goal": "Record explicit acceptance or rejection of one repaired Oracle Think Tank recipe."
+      },
+      {
+        "id": "M41-03",
+        "title": "Second-slice repaired recipe validation rerun",
+        "goal": "Apply accepted repair in memory and rerun count, trigger, grade, copy-limit, clan, and manual-overlap validation."
+      },
+      {
+        "id": "M41-04",
+        "title": "Second-slice runtime fixture promotion gate",
+        "goal": "Promote only if repaired validation, consistency, and human acceptance all pass."
+      },
+      {
+        "id": "M41-closeout",
+        "title": "Second-slice fixture closeout",
+        "goal": "Decide whether Oracle Think Tank enters offline fixture scope or remains advisory."
+      }
+    ]
+  },
+  "summary": {
+    "m40_complete": true,
+    "runtime_ready_recipe_available": false,
+    "human_repair_review_allowed": true,
+    "next_queue_id": "M41",
+    "ready_for_next_queue": true
+  }
+}

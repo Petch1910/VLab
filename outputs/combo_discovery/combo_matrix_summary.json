@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "generator": "tools/combo/build_combo_matrices.py",
+  "source_report_dir": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\combo_discovery",
+  "preset_count": 9,
+  "presets": [
+    "classic_part1",
+    "link_joker_legion_mate",
+    "g_series_first",
+    "g_next_z",
+    "v_reboot",
+    "v_shinemon_if",
+    "d_overdress",
+    "d_willdress",
+    "dz_divinez"
+  ],
+  "matrices": {
+    "era_summary_csv": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\combo_discovery\\combo_matrix_era_summary.csv",
+    "group_candidates_csv": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\combo_discovery\\combo_matrix_group_candidates.csv",
+    "group_cards_csv": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\combo_discovery\\combo_matrix_group_cards.csv",
+    "top_pair_scores_csv": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\combo_discovery\\combo_matrix_top_pair_scores.csv",
+    "synergy_tags_csv": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\combo_discovery\\combo_matrix_synergy_tags.csv"
+  },
+  "era_summary": [
+    {
+      "preset": "classic_part1",
+      "card_count": 1052,
+      "group_count": 21,
+      "nonempty_group_count": 20,
+      "candidate_pair_count": 6846,
+      "missing_set_count": 0
+    },
+    {
+      "preset": "link_joker_legion_mate",
+      "card_count": 1329,
+      "group_count": 23,
+      "nonempty_group_count": 23,
+      "candidate_pair_count": 12645,
+      "missing_set_count": 0
+    },
+    {
+      "preset": "g_series_first",
+      "card_count": 1328,
+      "group_count": 25,
+      "nonempty_group_count": 25,
+      "candidate_pair_count": 13010,
+      "missing_set_count": 2
+    },
+    {
+      "preset": "g_next_z",
+      "card_count": 1109,
+      "group_count": 28,
+      "nonempty_group_count": 24,
+      "candidate_pair_count": 8181,
+      "missing_set_count": 0
+    },
+    {
+      "preset": "v_reboot",
+      "card_count": 1183,
+      "group_count": 26,
+      "nonempty_group_count": 24,
+      "candidate_pair_count": 4266,
+      "missing_set_count": 0
+    },
+    {
+      "preset": "v_shinemon_if",
+      "card_count": 1055,
+      "group_count": 32,
+      "nonempty_group_count": 26,
+      "candidate_pair_count": 3320,
+      "missing_set_count": 10
+    },
+    {
+      "preset": "d_overdress",
+      "card_count": 848,
+      "group_count": 10,
+      "nonempty_group_count": 9,
+      "candidate_pair_count": 4958,
+      "missing_set_count": 0
+    },
+    {
+      "preset": "d_willdress",
+      "card_count": 808,
+      "group_count": 10,
+      "nonempty_group_count": 9,
+      "candidate_pair_count": 6457,
+      "missing_set_count": 11
+    },
+    {
+      "preset": "dz_divinez",
+      "card_count": 0,
+      "group_count": 0,
+      "nonempty_group_count": 0,
+      "candidate_pair_count": 0,
+      "missing_set_count": 14
+    }
+  ],
+  "note": "offline advisory matrices; synergy tag counts are based on top_pairs stored in each report"
+}

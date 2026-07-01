@@ -1,0 +1,2642 @@
+{
+  "version": "M35-B3",
+  "description": "Requirement/provider model for selected first slice",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "semantic_tags": "outputs\\target_slice\\m35_b2_first_slice_semantic_tags.json"
+  },
+  "scope": {
+    "advisory_only": true,
+    "compatibility_graph": false,
+    "deck_skeleton": false,
+    "bot_playbook": false
+  },
+  "summary": {
+    "card_count": 112,
+    "cards_with_requirements": 94,
+    "cards_with_providers": 93,
+    "manual_review_count": 6,
+    "provider_type_count": 17,
+    "requirement_type_count": 16
+  },
+  "indexes": {
+    "provider_index": {
+      "provides_board_extension": [
+        "BT01-032TH",
+        "BT06-042TH",
+        "BT09-071TH",
+        "EB01-020TH",
+        "EB04-027TH",
+        "EB04-028TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "provides_card_advantage": [
+        "BT01-061TH",
+        "BT02-018TH",
+        "BT04-038TH",
+        "BT05-020TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-014TH",
+        "EB04-017TH",
+        "EB04-021TH",
+        "EB04-024TH",
+        "TD03-009TH"
+      ],
+      "provides_counter_blast_sustain": [
+        "BT01-028TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH",
+        "TD03-003TH"
+      ],
+      "provides_counter_charge": [
+        "BT01-028TH",
+        "BT01-059TH",
+        "BT02-074TH",
+        "BT04-019TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-033TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "provides_critical_pressure": [
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-002TH"
+      ],
+      "provides_critical_trigger": [
+        "BT02-074TH",
+        "BT04-077TH",
+        "EB04-029TH",
+        "EB04-033TH"
+      ],
+      "provides_deck_recycle": [
+        "BT01-032TH",
+        "BT04-039TH",
+        "BT04-075TH",
+        "BT04-078TH",
+        "BT09-070TH",
+        "BT09-071TH",
+        "BT09-073TH",
+        "BT09-074TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "provides_draw_trigger": [
+        "BT02-073TH",
+        "BT05-073TH",
+        "EB04-030TH",
+        "EB04-031TH"
+      ],
+      "provides_heal_trigger": [
+        "BT01-065TH",
+        "EB01-018TH",
+        "EB04-032TH"
+      ],
+      "provides_power_pressure": [
+        "BT01-029TH",
+        "BT01-031TH",
+        "BT01-032TH",
+        "BT03-008TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT04-073TH",
+        "BT04-074TH",
+        "BT04-075TH",
+        "BT05-071TH",
+        "BT06-097TH",
+        "BT09-004TH",
+        "BT09-031TH",
+        "BT09-032TH",
+        "BT09-033TH",
+        "BT09-072TH",
+        "BT09-075TH",
+        "EB01-001TH",
+        "EB01-009TH",
+        "EB01-017TH",
+        "EB01-020TH",
+        "EB04-001TH",
+        "EB04-002TH",
+        "EB04-009TH",
+        "EB04-010TH",
+        "EB04-011TH",
+        "EB04-017TH",
+        "EB04-023TH",
+        "EB04-025TH",
+        "EB04-026TH",
+        "EB04-028TH",
+        "EB04-034TH",
+        "EB04-035TH",
+        "TD03-002TH",
+        "TD03-008TH",
+        "TD03-010TH",
+        "TD03-011TH"
+      ],
+      "provides_restand_or_multi_attack": [
+        "BT01-008TH",
+        "BT01-028TH",
+        "BT02-008TH",
+        "BT02-072TH",
+        "BT03-039TH",
+        "BT03-040TH",
+        "BT04-008TH",
+        "BT04-074TH",
+        "BT05-072TH",
+        "BT06-008TH",
+        "BT06-042TH",
+        "BT09-004TH",
+        "BT09-031TH",
+        "BT09-033TH",
+        "BT09-034TH",
+        "EB01-019TH",
+        "EB04-002TH",
+        "EB04-003TH",
+        "EB04-006TH",
+        "EB04-008TH",
+        "EB04-012TH",
+        "EB04-013TH",
+        "EB04-015TH",
+        "EB04-016TH",
+        "EB04-025TH",
+        "EB04-027TH",
+        "TD03-001TH",
+        "TD03-003TH"
+      ],
+      "provides_search": [
+        "BT04-039TH",
+        "BT04-075TH",
+        "BT06-098TH",
+        "BT06-101TH",
+        "BT09-071TH",
+        "BT09-074TH"
+      ],
+      "provides_soul_blast_sustain": [
+        "BT01-028TH",
+        "EB04-016TH",
+        "TD03-003TH"
+      ],
+      "provides_soul_charge": [
+        "BT01-028TH",
+        "EB04-016TH",
+        "TD03-003TH"
+      ],
+      "provides_soul_resource": [
+        "BT02-074TH",
+        "BT04-075TH",
+        "BT06-042TH",
+        "BT09-034TH",
+        "BT09-074TH",
+        "BT09-075TH",
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-027TH",
+        "EB04-033TH"
+      ],
+      "provides_stand_trigger": [
+        "BT01-032TH",
+        "BT01-064TH",
+        "BT03-077TH",
+        "BT04-078TH",
+        "BT06-102TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "provides_trigger_check_value": [
+        "BT01-032TH",
+        "BT01-064TH",
+        "BT01-065TH",
+        "BT02-073TH",
+        "BT02-074TH",
+        "BT03-077TH",
+        "BT04-077TH",
+        "BT04-078TH",
+        "BT05-073TH",
+        "BT06-102TH",
+        "EB01-018TH",
+        "EB01-020TH",
+        "EB04-029TH",
+        "EB04-030TH",
+        "EB04-031TH",
+        "EB04-032TH",
+        "EB04-033TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ]
+    },
+    "requirement_index": {
+      "requires_attack_hit": [
+        "BT01-028TH",
+        "BT02-008TH",
+        "BT02-018TH",
+        "BT02-072TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "BT06-008TH",
+        "BT06-042TH",
+        "BT06-098TH",
+        "BT06-099TH",
+        "BT06-100TH",
+        "BT06-101TH",
+        "BT09-034TH",
+        "EB04-003TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH",
+        "EB04-021TH",
+        "EB04-027TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "requires_boost_timing": [
+        "BT01-029TH",
+        "BT01-031TH",
+        "BT01-032TH",
+        "BT02-072TH",
+        "BT04-038TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "BT06-042TH",
+        "BT06-097TH",
+        "BT06-100TH",
+        "BT09-034TH",
+        "EB01-020TH",
+        "EB04-011TH",
+        "EB04-017TH",
+        "EB04-027TH",
+        "EB04-034TH",
+        "EB04-035TH",
+        "TD03-010TH"
+      ],
+      "requires_boosted": [
+        "BT01-029TH",
+        "BT01-031TH",
+        "BT01-032TH",
+        "BT02-072TH",
+        "BT04-038TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "BT06-042TH",
+        "BT06-097TH",
+        "BT06-100TH",
+        "BT09-034TH",
+        "EB01-020TH",
+        "EB04-011TH",
+        "EB04-017TH",
+        "EB04-027TH",
+        "EB04-034TH",
+        "EB04-035TH",
+        "TD03-010TH"
+      ],
+      "requires_counter_blast": [
+        "BT01-028TH",
+        "BT01-029TH",
+        "BT02-008TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT05-072TH",
+        "BT06-042TH",
+        "BT09-004TH",
+        "BT09-034TH",
+        "BT09-070TH",
+        "BT09-072TH",
+        "BT09-073TH",
+        "BT09-074TH",
+        "EB04-002TH",
+        "EB04-004TH",
+        "EB04-006TH",
+        "EB04-008TH",
+        "EB04-009TH",
+        "EB04-010TH",
+        "EB04-011TH",
+        "EB04-016TH",
+        "EB04-023TH",
+        "EB04-027TH",
+        "TD03-001TH",
+        "TD03-002TH",
+        "TD03-003TH",
+        "TD03-008TH"
+      ],
+      "requires_damage_zone_reference": [
+        "BT01-028TH",
+        "BT01-059TH",
+        "BT02-074TH",
+        "BT04-019TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "BT09-004TH",
+        "BT09-070TH",
+        "BT09-073TH",
+        "EB04-002TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-033TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "requires_drop_zone_reference": [
+        "EB01-019TH"
+      ],
+      "requires_end_phase_timing": [
+        "BT01-032TH",
+        "BT04-078TH",
+        "BT09-070TH",
+        "BT09-073TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "requires_hit_timing": [
+        "BT01-028TH",
+        "BT02-008TH",
+        "BT02-018TH",
+        "BT02-072TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "BT06-008TH",
+        "BT06-042TH",
+        "BT06-098TH",
+        "BT06-099TH",
+        "BT06-100TH",
+        "BT06-101TH",
+        "BT09-034TH",
+        "EB04-003TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH",
+        "EB04-021TH",
+        "EB04-027TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "requires_limit_break_4": [
+        "BT09-004TH",
+        "EB04-002TH"
+      ],
+      "requires_on_attack_timing": [
+        "BT01-028TH",
+        "BT01-029TH",
+        "BT02-008TH",
+        "BT02-018TH",
+        "BT02-019TH",
+        "BT02-072TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT04-073TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "BT06-008TH",
+        "BT06-042TH",
+        "BT06-098TH",
+        "BT06-099TH",
+        "BT06-100TH",
+        "BT06-101TH",
+        "BT09-004TH",
+        "BT09-032TH",
+        "BT09-034TH",
+        "EB01-008TH",
+        "EB01-016TH",
+        "EB01-019TH",
+        "EB04-003TH",
+        "EB04-004TH",
+        "EB04-007TH",
+        "EB04-008TH",
+        "EB04-010TH",
+        "EB04-011TH",
+        "EB04-016TH",
+        "EB04-017TH",
+        "EB04-019TH",
+        "EB04-021TH",
+        "EB04-027TH",
+        "TD03-001TH",
+        "TD03-002TH",
+        "TD03-003TH",
+        "TD03-005TH",
+        "TD03-011TH"
+      ],
+      "requires_on_call_timing": [
+        "BT02-019TH",
+        "BT04-075TH",
+        "BT05-020TH",
+        "BT09-070TH",
+        "BT09-071TH",
+        "BT09-073TH",
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-007TH",
+        "EB04-012TH",
+        "EB04-014TH"
+      ],
+      "requires_on_ride_timing": [
+        "BT01-032TH",
+        "BT04-039TH",
+        "BT06-042TH",
+        "BT09-074TH",
+        "BT09-075TH",
+        "EB01-016TH",
+        "EB01-020TH",
+        "EB04-019TH",
+        "EB04-027TH",
+        "EB04-028TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "requires_rear_guard_circle": [
+        "BT01-031TH",
+        "BT01-032TH",
+        "BT01-059TH",
+        "BT02-008TH",
+        "BT02-072TH",
+        "BT02-074TH",
+        "BT03-039TH",
+        "BT03-040TH",
+        "BT04-074TH",
+        "BT04-075TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "BT05-020TH",
+        "BT05-072TH",
+        "BT06-008TH",
+        "BT06-042TH",
+        "BT06-100TH",
+        "BT09-031TH",
+        "BT09-033TH",
+        "BT09-034TH",
+        "BT09-070TH",
+        "BT09-071TH",
+        "BT09-073TH",
+        "BT09-074TH",
+        "BT09-075TH",
+        "EB01-001TH",
+        "EB01-009TH",
+        "EB01-019TH",
+        "EB01-020TH",
+        "EB04-001TH",
+        "EB04-003TH",
+        "EB04-006TH",
+        "EB04-012TH",
+        "EB04-013TH",
+        "EB04-014TH",
+        "EB04-015TH",
+        "EB04-025TH",
+        "EB04-027TH",
+        "EB04-028TH",
+        "EB04-033TH",
+        "EB04-034TH",
+        "EB04-035TH",
+        "TD03-010TH"
+      ],
+      "requires_soul_blast": [
+        "BT01-028TH",
+        "BT04-038TH",
+        "EB04-016TH",
+        "EB04-017TH",
+        "TD03-003TH"
+      ],
+      "requires_trigger_check_timing": [
+        "BT01-032TH",
+        "BT01-064TH",
+        "BT01-065TH",
+        "BT02-073TH",
+        "BT02-074TH",
+        "BT03-077TH",
+        "BT04-077TH",
+        "BT04-078TH",
+        "BT05-073TH",
+        "BT06-102TH",
+        "EB01-018TH",
+        "EB01-020TH",
+        "EB04-029TH",
+        "EB04-030TH",
+        "EB04-031TH",
+        "EB04-032TH",
+        "EB04-033TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "requires_vanguard_circle": [
+        "BT01-008TH",
+        "BT01-028TH",
+        "BT01-029TH",
+        "BT02-008TH",
+        "BT03-008TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT04-073TH",
+        "BT04-075TH",
+        "BT05-071TH",
+        "BT06-008TH",
+        "BT09-004TH",
+        "BT09-070TH",
+        "BT09-071TH",
+        "BT09-073TH",
+        "EB01-001TH",
+        "EB01-016TH",
+        "EB04-001TH",
+        "EB04-002TH",
+        "EB04-003TH",
+        "EB04-008TH",
+        "EB04-011TH",
+        "EB04-016TH",
+        "EB04-017TH",
+        "EB04-019TH",
+        "TD03-001TH",
+        "TD03-003TH"
+      ]
+    },
+    "provider_counts": {
+      "provides_board_extension": 8,
+      "provides_card_advantage": 11,
+      "provides_counter_blast_sustain": 5,
+      "provides_counter_charge": 12,
+      "provides_critical_pressure": 3,
+      "provides_critical_trigger": 4,
+      "provides_deck_recycle": 11,
+      "provides_draw_trigger": 4,
+      "provides_heal_trigger": 3,
+      "provides_power_pressure": 38,
+      "provides_restand_or_multi_attack": 28,
+      "provides_search": 6,
+      "provides_soul_blast_sustain": 3,
+      "provides_soul_charge": 3,
+      "provides_soul_resource": 10,
+      "provides_stand_trigger": 8,
+      "provides_trigger_check_value": 19
+    },
+    "requirement_counts": {
+      "requires_attack_hit": 26,
+      "requires_boost_timing": 18,
+      "requires_boosted": 18,
+      "requires_counter_blast": 27,
+      "requires_damage_zone_reference": 16,
+      "requires_drop_zone_reference": 1,
+      "requires_end_phase_timing": 6,
+      "requires_hit_timing": 26,
+      "requires_limit_break_4": 2,
+      "requires_on_attack_timing": 40,
+      "requires_on_call_timing": 11,
+      "requires_on_ride_timing": 12,
+      "requires_rear_guard_circle": 43,
+      "requires_soul_blast": 5,
+      "requires_trigger_check_timing": 19,
+      "requires_vanguard_circle": 28
+    }
+  },
+  "cards": [
+    {
+      "card_id": "BT01-008TH",
+      "name_th": "อาชูร่า ไกเซอร์",
+      "series_code": "BT01",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-028TH",
+      "name_th": "Mr. อินวิซิเบิ้ล",
+      "series_code": "BT01",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_counter_blast",
+        "requires_damage_zone_reference",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_soul_blast",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_counter_blast_sustain",
+        "provides_counter_charge",
+        "provides_restand_or_multi_attack",
+        "provides_soul_blast_sustain",
+        "provides_soul_charge"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-029TH",
+      "name_th": "บลูทัล แจ็ค",
+      "series_code": "BT01",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_counter_blast",
+        "requires_on_attack_timing",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-030TH",
+      "name_th": "คิง ออฟ ซอร์ด",
+      "series_code": "BT01",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [],
+      "providers": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-031TH",
+      "name_th": "ควีน ออฟ ฮาร์ท",
+      "series_code": "BT01",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-032TH",
+      "name_th": "แบทเทิลไรเซอร์",
+      "series_code": "BT01",
+      "grade": 0,
+      "trigger": "Stand",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_end_phase_timing",
+        "requires_on_ride_timing",
+        "requires_rear_guard_circle",
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_board_extension",
+        "provides_deck_recycle",
+        "provides_power_pressure",
+        "provides_stand_trigger",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-059TH",
+      "name_th": "ฮังกรี่ ดัมตี้",
+      "series_code": "BT01",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_damage_zone_reference",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_counter_charge"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-060TH",
+      "name_th": "ทอชบอย",
+      "series_code": "BT01",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [],
+      "providers": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-061TH",
+      "name_th": "ผู้ประกาศร้องเล่นเต้นเดิน เชาท์",
+      "series_code": "BT01",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [],
+      "providers": [
+        "provides_card_advantage"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-062TH",
+      "name_th": "เคลย์-ดอล เมคานิค",
+      "series_code": "BT01",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [],
+      "providers": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-063TH",
+      "name_th": "ไชนิ่ง เลดี้",
+      "series_code": "BT01",
+      "grade": 0,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [],
+      "providers": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-064TH",
+      "name_th": "ลัคกี้เกิร์ล",
+      "series_code": "BT01",
+      "grade": 0,
+      "trigger": "Stand",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_stand_trigger",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-065TH",
+      "name_th": "ริงเกิร์ล, คลาล่า",
+      "series_code": "BT01",
+      "grade": 0,
+      "trigger": "Heal",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_heal_trigger",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT02-008TH",
+      "name_th": "ไลออน ฮีท",
+      "series_code": "BT02",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_counter_blast",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_rear_guard_circle",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT02-018TH",
+      "name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+      "series_code": "BT02",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_counter_blast",
+        "requires_hit_timing",
+        "requires_on_attack_timing"
+      ],
+      "providers": [
+        "provides_card_advantage"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT02-019TH",
+      "name_th": "ทวิน เบลดเดอร์",
+      "series_code": "BT02",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_on_attack_timing",
+        "requires_on_call_timing"
+      ],
+      "providers": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT02-071TH",
+      "name_th": "NGM โปรโตไทป์",
+      "series_code": "BT02",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [],
+      "providers": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT02-072TH",
+      "name_th": "เครย์ โซลเจอร์",
+      "series_code": "BT02",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT02-073TH",
+      "name_th": "ทรี มินิทส์",
+      "series_code": "BT02",
+      "grade": 0,
+      "trigger": "Draw",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_draw_trigger",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT02-074TH",
+      "name_th": "เรด ไลท์นิ่ง",
+      "series_code": "BT02",
+      "grade": 0,
+      "trigger": "Critical",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_damage_zone_reference",
+        "requires_rear_guard_circle",
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_counter_charge",
+        "provides_critical_trigger",
+        "provides_soul_resource",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT03-008TH",
+      "name_th": "สิ่งมีชีวิตขั้นสุดยอด คอสโม่ลอร์ด",
+      "series_code": "BT03",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT03-039TH",
+      "name_th": "เดท อาร์มี่ เลดี้",
+      "series_code": "BT03",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT03-040TH",
+      "name_th": "เดท อาร์มี่ กาย",
+      "series_code": "BT03",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT03-077TH",
+      "name_th": "แคนนอน บอล",
+      "series_code": "BT03",
+      "grade": 0,
+      "trigger": "Stand",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_stand_trigger",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT04-008TH",
+      "name_th": "สเทิร์น เบลาคลูเกอร์",
+      "series_code": "BT04",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_counter_blast",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_power_pressure",
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT04-019TH",
+      "name_th": "เบลาคลูเกอร์",
+      "series_code": "BT04",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_damage_zone_reference",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_counter_charge",
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT04-038TH",
+      "name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+      "series_code": "BT04",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_soul_blast",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_card_advantage",
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT04-039TH",
+      "name_th": "เบลาจังเกอร์",
+      "series_code": "BT04",
+      "grade": 0,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_on_ride_timing"
+      ],
+      "providers": [
+        "provides_deck_recycle",
+        "provides_search"
+      ],
+      "manual_review_required": true,
+      "manual_review_reasons": [
+        "unmapped_feature_tags"
+      ]
+    },
+    {
+      "card_id": "BT04-073TH",
+      "name_th": "ไอเซนคูเกล",
+      "series_code": "BT04",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_on_attack_timing",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT04-074TH",
+      "name_th": "แดนซ์ซิ่ง วูลฟ์",
+      "series_code": "BT04",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_power_pressure",
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT04-075TH",
+      "name_th": "เบลาแพนเซอร์",
+      "series_code": "BT04",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_on_call_timing",
+        "requires_rear_guard_circle",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_deck_recycle",
+        "provides_power_pressure",
+        "provides_search",
+        "provides_soul_resource"
+      ],
+      "manual_review_required": true,
+      "manual_review_reasons": [
+        "unmapped_feature_tags"
+      ]
+    },
+    {
+      "card_id": "BT04-076TH",
+      "name_th": "ทูลคิท บอย",
+      "series_code": "BT04",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_damage_zone_reference",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_counter_charge"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT04-077TH",
+      "name_th": "เรือรบประจัญบาน,โพรมีเทอุส",
+      "series_code": "BT04",
+      "grade": 0,
+      "trigger": "Critical",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_critical_trigger",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT04-078TH",
+      "name_th": "แกรปเปิล มาเนีย",
+      "series_code": "BT04",
+      "grade": 0,
+      "trigger": "Stand",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_damage_zone_reference",
+        "requires_end_phase_timing",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_rear_guard_circle",
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_counter_charge",
+        "provides_deck_recycle",
+        "provides_stand_trigger",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT05-020TH",
+      "name_th": "สตรีท บราวเซอร์",
+      "series_code": "BT05",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_on_call_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_card_advantage"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT05-071TH",
+      "name_th": "ท็อปกัน",
+      "series_code": "BT05",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT05-072TH",
+      "name_th": "แอนโทรรอยด์",
+      "series_code": "BT05",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_counter_blast",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT05-073TH",
+      "name_th": "เดอะ ก๊อง",
+      "series_code": "BT05",
+      "grade": 0,
+      "trigger": "Draw",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_draw_trigger",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT06-008TH",
+      "name_th": "สัตว์เทวะ,เอเซอร์ ดราก้อน",
+      "series_code": "BT06",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_rear_guard_circle",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT06-042TH",
+      "name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+      "series_code": "BT06",
+      "grade": 0,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_counter_blast",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_on_ride_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_board_extension",
+        "provides_restand_or_multi_attack",
+        "provides_soul_resource"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT06-097TH",
+      "name_th": "โมอาย เดอะ เกรท",
+      "series_code": "BT06",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_boost_timing",
+        "requires_boosted"
+      ],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT06-098TH",
+      "name_th": "สัตว์เทวะ,แบล็ค โททัส",
+      "series_code": "BT06",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_hit_timing",
+        "requires_on_attack_timing"
+      ],
+      "providers": [
+        "provides_search"
+      ],
+      "manual_review_required": true,
+      "manual_review_reasons": [
+        "unmapped_feature_tags"
+      ]
+    },
+    {
+      "card_id": "BT06-099TH",
+      "name_th": "ฮานิ ผู้ชั่วร้าย",
+      "series_code": "BT06",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_hit_timing",
+        "requires_on_attack_timing"
+      ],
+      "providers": [
+        "provides_card_advantage"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT06-100TH",
+      "name_th": "ออลไมท์ตี้ รีพอตเตอร์",
+      "series_code": "BT06",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [],
+      "manual_review_required": true,
+      "manual_review_reasons": [
+        "unmapped_feature_tags"
+      ]
+    },
+    {
+      "card_id": "BT06-101TH",
+      "name_th": "สัตว์เทวะ,สกาเล็ท เบิร์ด",
+      "series_code": "BT06",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_hit_timing",
+        "requires_on_attack_timing"
+      ],
+      "providers": [
+        "provides_search"
+      ],
+      "manual_review_required": true,
+      "manual_review_reasons": [
+        "unmapped_feature_tags"
+      ]
+    },
+    {
+      "card_id": "BT06-102TH",
+      "name_th": "เรดการ์ด ดีลเลอร์",
+      "series_code": "BT06",
+      "grade": 0,
+      "trigger": "Stand",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_stand_trigger",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-004TH",
+      "name_th": "สัตว์เทวะขั้นสุดยอด,อิลลูมินัล ดราก้อน",
+      "series_code": "BT09",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_counter_blast",
+        "requires_damage_zone_reference",
+        "requires_limit_break_4",
+        "requires_on_attack_timing",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_power_pressure",
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-031TH",
+      "name_th": "สัตว์เทวะ,ยามาตะโนะเดรค",
+      "series_code": "BT09",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_power_pressure",
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-032TH",
+      "name_th": "ฮอลโลว์ โนแมด",
+      "series_code": "BT09",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_on_attack_timing"
+      ],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-033TH",
+      "name_th": "สัตว์เทวะ,โกลเด้น แองเกล็ท",
+      "series_code": "BT09",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_power_pressure",
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-034TH",
+      "name_th": "สัตว์เทวะ,แบล็ง มาร์ช",
+      "series_code": "BT09",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_counter_blast",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_restand_or_multi_attack",
+        "provides_soul_resource"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-070TH",
+      "name_th": "ฮีโรอิค ฮานิ",
+      "series_code": "BT09",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_counter_blast",
+        "requires_damage_zone_reference",
+        "requires_end_phase_timing",
+        "requires_on_call_timing",
+        "requires_rear_guard_circle",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_deck_recycle"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-071TH",
+      "name_th": "ทรานไรเซอร์",
+      "series_code": "BT09",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_on_call_timing",
+        "requires_rear_guard_circle",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_board_extension",
+        "provides_deck_recycle",
+        "provides_search"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-072TH",
+      "name_th": "เบิร์สไรเซอร์",
+      "series_code": "BT09",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_counter_blast"
+      ],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-073TH",
+      "name_th": "สโตอิค ฮานิ",
+      "series_code": "BT09",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_counter_blast",
+        "requires_damage_zone_reference",
+        "requires_end_phase_timing",
+        "requires_on_call_timing",
+        "requires_rear_guard_circle",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_deck_recycle"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-074TH",
+      "name_th": "วิวัฒนาการแห่งการเคลื่อนย้าย,มิไรโอ",
+      "series_code": "BT09",
+      "grade": 0,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_counter_blast",
+        "requires_on_ride_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_deck_recycle",
+        "provides_search",
+        "provides_soul_resource"
+      ],
+      "manual_review_required": true,
+      "manual_review_reasons": [
+        "unmapped_feature_tags"
+      ]
+    },
+    {
+      "card_id": "BT09-075TH",
+      "name_th": "ไลโอเนท ฮีท",
+      "series_code": "BT09",
+      "grade": 0,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_on_ride_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_power_pressure",
+        "provides_soul_resource"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB01-001TH",
+      "name_th": "เพอร์เฟค ไรเซอร์",
+      "series_code": "EB01",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_on_call_timing",
+        "requires_rear_guard_circle",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_critical_pressure",
+        "provides_power_pressure",
+        "provides_soul_resource"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB01-003TH",
+      "name_th": "ไฮพาวเวอร์ไรเซอร์คัสต้อม",
+      "series_code": "EB01",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [],
+      "providers": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB01-008TH",
+      "name_th": "มิส สเปนเดอร์",
+      "series_code": "EB01",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_on_attack_timing"
+      ],
+      "providers": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB01-009TH",
+      "name_th": "ร็อคเก็ตแฮมเมอร์แมน",
+      "series_code": "EB01",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB01-016TH",
+      "name_th": "บูมเมอแรง โทรลเวอร์",
+      "series_code": "EB01",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_on_attack_timing",
+        "requires_on_ride_timing",
+        "requires_vanguard_circle"
+      ],
+      "providers": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB01-017TH",
+      "name_th": "ไรเซอร์ คัสต้อม",
+      "series_code": "EB01",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB01-018TH",
+      "name_th": "วอลบอย",
+      "series_code": "EB01",
+      "grade": 0,
+      "trigger": "Heal",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_heal_trigger",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB01-019TH",
+      "name_th": "แมวพ่อบ้าน",
+      "series_code": "EB01",
+      "grade": 0,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_drop_zone_reference",
+        "requires_on_attack_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB01-020TH",
+      "name_th": "แบทเทิล ไรเซอร์",
+      "series_code": "EB01",
+      "grade": 0,
+      "trigger": "Stand",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_on_ride_timing",
+        "requires_rear_guard_circle",
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_board_extension",
+        "provides_deck_recycle",
+        "provides_power_pressure",
+        "provides_stand_trigger",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-001TH",
+      "name_th": "เพอร์เฟค ไรเซอร์",
+      "series_code": "EB04",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_on_call_timing",
+        "requires_rear_guard_circle",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_critical_pressure",
+        "provides_power_pressure",
+        "provides_soul_resource"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-002TH",
+      "name_th": "สุดยอดร่างกัดกร่อนไร้ที่สิ้นสุด,เดทอาร์มี่ คอสโม่ลอร์ด",
+      "series_code": "EB04",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_counter_blast",
+        "requires_damage_zone_reference",
+        "requires_limit_break_4",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_critical_pressure",
+        "provides_power_pressure",
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-003TH",
+      "name_th": "สัตว์เทวะ,เอเซอร์ ดราก้อน",
+      "series_code": "EB04",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_rear_guard_circle",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-004TH",
+      "name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+      "series_code": "EB04",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_counter_blast",
+        "requires_hit_timing",
+        "requires_on_attack_timing"
+      ],
+      "providers": [
+        "provides_card_advantage"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-005TH",
+      "name_th": "ไฮพาวเวอร์ไรเซอร์คัสต้อม",
+      "series_code": "EB04",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [],
+      "providers": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-006TH",
+      "name_th": "เดทอาร์มี่ บิชอป",
+      "series_code": "EB04",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_counter_blast",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-007TH",
+      "name_th": "ทวิน เบลดเดอร์",
+      "series_code": "EB04",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_on_attack_timing",
+        "requires_on_call_timing"
+      ],
+      "providers": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-008TH",
+      "name_th": "โกลด์ รูไทล์",
+      "series_code": "EB04",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_counter_blast",
+        "requires_damage_zone_reference",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_counter_blast_sustain",
+        "provides_counter_charge",
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-009TH",
+      "name_th": "เจโนไซด์ โจ๊กเกอร์",
+      "series_code": "EB04",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_counter_blast"
+      ],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-010TH",
+      "name_th": "เดทเมทัล ดรอยด์",
+      "series_code": "EB04",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_counter_blast",
+        "requires_on_attack_timing"
+      ],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-011TH",
+      "name_th": "เจโนไซด์ แจ็ค",
+      "series_code": "EB04",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_counter_blast",
+        "requires_on_attack_timing",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-012TH",
+      "name_th": "เดทอาร์มี่ ไนท์",
+      "series_code": "EB04",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_on_call_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-013TH",
+      "name_th": "เดทอาร์มี่ เลดี้",
+      "series_code": "EB04",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-014TH",
+      "name_th": "สตรีท บราวเซอร์",
+      "series_code": "EB04",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_on_call_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_card_advantage"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-015TH",
+      "name_th": "เดทอาร์มี่ กาย",
+      "series_code": "EB04",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-016TH",
+      "name_th": "Mr.อินวิซิเบิ้ล",
+      "series_code": "EB04",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_counter_blast",
+        "requires_damage_zone_reference",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_soul_blast",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_counter_blast_sustain",
+        "provides_counter_charge",
+        "provides_restand_or_multi_attack",
+        "provides_soul_blast_sustain",
+        "provides_soul_charge"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-017TH",
+      "name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+      "series_code": "EB04",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_soul_blast",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_card_advantage",
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-018TH",
+      "name_th": "เดทอาร์มี่ รุค",
+      "series_code": "EB04",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [],
+      "providers": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-019TH",
+      "name_th": "บูมเมอแรง โทรลเวอร์",
+      "series_code": "EB04",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_on_attack_timing",
+        "requires_on_ride_timing",
+        "requires_vanguard_circle"
+      ],
+      "providers": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-020TH",
+      "name_th": "NGM โปรโตไทป์",
+      "series_code": "EB04",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [],
+      "providers": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-021TH",
+      "name_th": "มาเวลรัส ฮานิ",
+      "series_code": "EB04",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_hit_timing",
+        "requires_on_attack_timing"
+      ],
+      "providers": [
+        "provides_card_advantage"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-022TH",
+      "name_th": "ทอชบอย",
+      "series_code": "EB04",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [],
+      "providers": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-023TH",
+      "name_th": "โอเอซิส เกิร์ล",
+      "series_code": "EB04",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_counter_blast"
+      ],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-024TH",
+      "name_th": "ผู้ประกาศร้องเล่นเต้นเดิน,เชาท์",
+      "series_code": "EB04",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [],
+      "providers": [
+        "provides_card_advantage"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-025TH",
+      "name_th": "แดนซ์ซิ่ง วูลฟ์",
+      "series_code": "EB04",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_power_pressure",
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-026TH",
+      "name_th": "ไรเซอร์ คัสต้อม",
+      "series_code": "EB04",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-027TH",
+      "name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+      "series_code": "EB04",
+      "grade": 0,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_counter_blast",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_on_ride_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_board_extension",
+        "provides_restand_or_multi_attack",
+        "provides_soul_resource"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-028TH",
+      "name_th": "เดทอาร์มี่ พอว์น",
+      "series_code": "EB04",
+      "grade": 0,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_on_ride_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_board_extension",
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-029TH",
+      "name_th": "มินิมั่ม ไรเซอร์",
+      "series_code": "EB04",
+      "grade": 0,
+      "trigger": "Critical",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_critical_trigger",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-030TH",
+      "name_th": "ทรี มินิทส์",
+      "series_code": "EB04",
+      "grade": 0,
+      "trigger": "Draw",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_draw_trigger",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-031TH",
+      "name_th": "เดอะ ก๊อง",
+      "series_code": "EB04",
+      "grade": 0,
+      "trigger": "Draw",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_draw_trigger",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-032TH",
+      "name_th": "วอลบอย",
+      "series_code": "EB04",
+      "grade": 0,
+      "trigger": "Heal",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_heal_trigger",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-033TH",
+      "name_th": "เรด ไลท์นิ่ง",
+      "series_code": "EB04",
+      "grade": 0,
+      "trigger": "Critical",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_damage_zone_reference",
+        "requires_rear_guard_circle",
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_counter_charge",
+        "provides_critical_trigger",
+        "provides_soul_resource",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-034TH",
+      "name_th": "เทอร์โบไรเซอร์",
+      "series_code": "EB04",
+      "grade": 0,
+      "trigger": "Stand",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_end_phase_timing",
+        "requires_on_ride_timing",
+        "requires_rear_guard_circle",
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_board_extension",
+        "provides_deck_recycle",
+        "provides_power_pressure",
+        "provides_stand_trigger",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-035TH",
+      "name_th": "แบทเทิลไรเซอร์",
+      "series_code": "EB04",
+      "grade": 0,
+      "trigger": "Stand",
+      "type_1": "Trigger Unit",
+      "requirements": [
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_end_phase_timing",
+        "requires_on_ride_timing",
+        "requires_rear_guard_circle",
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_board_extension",
+        "provides_deck_recycle",
+        "provides_power_pressure",
+        "provides_stand_trigger",
+        "provides_trigger_check_value"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-001TH",
+      "name_th": "โกลด์ รูไทล์",
+      "series_code": "TD03",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_counter_blast",
+        "requires_damage_zone_reference",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_counter_blast_sustain",
+        "provides_counter_charge",
+        "provides_restand_or_multi_attack"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-002TH",
+      "name_th": "เดธเมทัล ดรอยด์",
+      "series_code": "TD03",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_counter_blast",
+        "requires_on_attack_timing"
+      ],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-003TH",
+      "name_th": "Mr. อินวิซิเบิ้ล",
+      "series_code": "TD03",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_counter_blast",
+        "requires_damage_zone_reference",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_soul_blast",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_counter_blast_sustain",
+        "provides_counter_charge",
+        "provides_restand_or_multi_attack",
+        "provides_soul_blast_sustain",
+        "provides_soul_charge"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-004TH",
+      "name_th": "คิง ออฟ ซอร์ด",
+      "series_code": "TD03",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [],
+      "providers": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-005TH",
+      "name_th": "สุดยอดแม่เหล็กไฟฟ้ามีชีวิต สตอร์ม",
+      "series_code": "TD03",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_attack_hit",
+        "requires_damage_zone_reference",
+        "requires_hit_timing",
+        "requires_on_attack_timing"
+      ],
+      "providers": [
+        "provides_counter_charge"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-006TH",
+      "name_th": "NGM โปรโตไทป์",
+      "series_code": "TD03",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [],
+      "providers": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-007TH",
+      "name_th": "ทอชบอย",
+      "series_code": "TD03",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [],
+      "providers": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-008TH",
+      "name_th": "โอเอซิส เกิร์ล",
+      "series_code": "TD03",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_counter_blast"
+      ],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-009TH",
+      "name_th": "ผู้ประกาศร้องเล่นเต้นเดิน เชาท์",
+      "series_code": "TD03",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [],
+      "providers": [
+        "provides_card_advantage"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-010TH",
+      "name_th": "ควีน ออฟ ฮาร์ท",
+      "series_code": "TD03",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-011TH",
+      "name_th": "แบทเทอริ่ง มิโนทอร์",
+      "series_code": "TD03",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "requirements": [
+        "requires_on_attack_timing"
+      ],
+      "providers": [
+        "provides_power_pressure"
+      ],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    }
+  ],
+  "ready_for_m35_b4": true,
+  "next_target": "M35-B4"
+}

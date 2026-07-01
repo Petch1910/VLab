@@ -1,0 +1,68 @@
+{
+  "version": "M42-01",
+  "description": "Second runtime fixture schema validation",
+  "source_inputs": {
+    "runtime_fixture": "outputs\\target_slice\\runtime_fixtures\\m40_recipe_001_classic_core_oracle_think_tank_m41_04.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "scope": {
+    "offline_fixture_schema_validator": true,
+    "mutates_fixture_artifact": false,
+    "mutates_runtime_deck_library": false,
+    "bot_integration": false,
+    "GameState_mutation": false,
+    "second_fixture_schema_validator": true
+  },
+  "validation_policy": {
+    "schema_version": "deck_recipe_runtime_fixture_v1",
+    "fixture_scope": "offline_runtime_test_fixture",
+    "main_deck_count": 50,
+    "trigger_profile": {
+      "Critical": 4,
+      "Draw": 4,
+      "Heal": 4,
+      "Stand": 4
+    },
+    "grade_profile": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "copy_limit_from_sqlite": true,
+    "selected_group_only": true,
+    "runtime_boundaries_enforced": true
+  },
+  "fixture_summary": {
+    "fixture_id": "runtime_fixture_m40_recipe_001_classic_core_oracle_think_tank_m41_04",
+    "recipe_id": "m40_recipe_001",
+    "main_deck_count": 50,
+    "trigger_counts": {
+      "Critical": 4,
+      "Draw": 4,
+      "Heal": 4,
+      "Stand": 4
+    },
+    "grade_counts": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "clan_counts": {
+      "โอราเคิล ทิงค์ แทงค์": 50
+    },
+    "unique_card_count": 15
+  },
+  "issues": [],
+  "summary": {
+    "schema_valid": true,
+    "blocking_issue_count": 0,
+    "issue_count": 0,
+    "ready_for_m42_02": true
+  },
+  "next_target": {
+    "milestone": "M42-02",
+    "task": "Second fixture deck text exporter"
+  }
+}

@@ -1,0 +1,63 @@
+{
+    "schema_version": 1,
+    "hidden_state_policy": "local_headless_trace_card_instance_ids_redacted",
+    "accepted": true,
+    "seed": 3903,
+    "ruleset": "Premium",
+    "deck_source": "deck_code",
+    "event_count": 4,
+    "events": [
+        {
+            "index": 0,
+            "event_id": "event-000001",
+            "action_type": "Draw",
+            "actor_index": 0,
+            "from_zone": "Deck",
+            "to_zone": "Hand",
+            "previous_phase": "Mulligan",
+            "new_phase": "Mulligan",
+            "gift_marker_type": "Force",
+            "marker_delta": 0,
+            "card_identity_policy": "card_instance_id_redacted"
+        },
+        {
+            "index": 1,
+            "event_id": "event-000002",
+            "action_type": "MoveCard",
+            "actor_index": 0,
+            "from_zone": "Hand",
+            "to_zone": "RearGuard",
+            "previous_phase": "Mulligan",
+            "new_phase": "Mulligan",
+            "gift_marker_type": "Force",
+            "marker_delta": 0,
+            "card_identity_policy": "card_instance_id_redacted"
+        },
+        {
+            "index": 2,
+            "event_id": "event-000003",
+            "action_type": "SetPhase",
+            "actor_index": 0,
+            "from_zone": "Deck",
+            "to_zone": "Deck",
+            "previous_phase": "Mulligan",
+            "new_phase": "Main",
+            "gift_marker_type": "Force",
+            "marker_delta": 0,
+            "card_identity_policy": "card_instance_id_redacted"
+        },
+        {
+            "index": 3,
+            "event_id": "event-000004",
+            "action_type": "AddGiftMarker",
+            "actor_index": 0,
+            "from_zone": "Deck",
+            "to_zone": "Deck",
+            "previous_phase": "Mulligan",
+            "new_phase": "Mulligan",
+            "gift_marker_type": "Protect",
+            "marker_delta": 1,
+            "card_identity_policy": "card_instance_id_redacted"
+        }
+    ]
+}

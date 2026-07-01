@@ -1,0 +1,57 @@
+name: Unity EditMode Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  unity-editmode:
+    name: Unity EditMode tests
+    runs-on: [self-hosted, Windows, Unity]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Unity EditMode tests
+        shell: powershell
+        run: |
+          $projectPath = (Resolve-Path "client\unity\VanguardThaiSim").Path
+          $unityExe = $env:UNITY_EXE
+          if ([string]::IsNullOrWhiteSpace($unityExe)) {
+            $unityExe = Join-Path $env:LOCALAPPDATA "Unity\Hub\Editor\6000.5.0f1\Editor\Unity.exe"
+          }
+          if (-not (Test-Path -LiteralPath $unityExe)) {
+            throw "Unity executable not found. Set UNITY_EXE or install Unity 6000.5.0f1 at the default Hub path."
+          }
+
+          $workPath = Join-Path $projectPath "work"
+          New-Item -ItemType Directory -Path $workPath -Force | Out-Null
+          if (-not (Get-Process Unity -ErrorAction SilentlyContinue)) {
+            Remove-Item -LiteralPath (Join-Path $projectPath "Library\ArtifactDB-lock") -Force -ErrorAction SilentlyContinue
+            Remove-Item -LiteralPath (Join-Path $projectPath "Library\SourceAssetDB-lock") -Force -ErrorAction SilentlyContinue
+          }
+
+          $logPath = Join-Path $workPath "ci_unity_editmode.log"
+          $resultsPath = Join-Path $workPath "ci_unity_editmode_results.xml"
+          Remove-Item -LiteralPath $resultsPath -Force -ErrorAction SilentlyContinue
+
+          & $unityExe -batchmode -nographics -runTests -testPlatform EditMode -projectPath $projectPath -testResults $resultsPath -logFile $logPath
+          $exitCode = $LASTEXITCODE
+          if ($exitCode -ne 0) {
+            Get-Content $logPath -Tail 200
+            exit $exitCode
+          }
+
+          if (-not (Test-Path -LiteralPath $resultsPath)) {
+            Get-Content $logPath -Tail 200
+            throw "Unity EditMode result XML was not created."
+          }
+
+      - name: Upload Unity EditMode artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unity-editmode-results
+          path: |
+            client/unity/VanguardThaiSim/work/ci_unity_editmode.log
+            client/unity/VanguardThaiSim/work/ci_unity_editmode_results.xml

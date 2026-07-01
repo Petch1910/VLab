@@ -1,0 +1,181 @@
+{
+  "version": "M52-01",
+  "description": "Fifth-slice fixture scaffold",
+  "source_inputs": {
+    "fifth_slice_recipe_pipeline_entry_gate": "outputs\\target_slice\\m51_04_fifth_slice_recipe_pipeline_entry_gate.json",
+    "fifth_slice_fixture_readiness": "outputs\\target_slice\\m51_02_fifth_slice_fixture_readiness.json",
+    "fifth_slice_semantic_compatibility_probe": "outputs\\target_slice\\m51_03_fifth_slice_semantic_compatibility_probe.json"
+  },
+  "selected_target": {
+    "slice": "Fifth Offline Slice",
+    "era_preset": "link_joker_legion_mate",
+    "group": "โกลด์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 3,
+    "priority_score": 77.85,
+    "best_era_candidates": 2006,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "fixture_scaffold": {
+    "policy_level": "fifth_slice_link_joker_legion_mate_fixture_scaffold_not_full_official_legality",
+    "identity_field": "clan",
+    "selected_identity": "โกลด์ พาลาดิน",
+    "era_preset": "link_joker_legion_mate",
+    "set_scope": [
+      "TD07",
+      "TD08",
+      "TD09",
+      "TD10",
+      "TD11",
+      "TD12",
+      "TD13",
+      "TD14",
+      "TD15",
+      "TD16",
+      "TD17",
+      "BT10",
+      "BT11",
+      "BT12",
+      "BT13",
+      "BT14",
+      "BT15",
+      "BT16",
+      "BT17",
+      "EB06",
+      "EB07",
+      "EB08",
+      "EB09",
+      "EB10",
+      "EB11",
+      "EB12"
+    ],
+    "source_series_present": [
+      "BT10",
+      "BT12",
+      "BT14",
+      "BT15",
+      "BT17",
+      "TD08",
+      "TD16"
+    ],
+    "main_deck_exact": 50,
+    "trigger_target": 16,
+    "required_trigger_types": [
+      "Critical",
+      "Draw",
+      "Heal",
+      "Stand"
+    ],
+    "recommended_trigger_profile": {
+      "Critical": 4,
+      "Draw": 4,
+      "Heal": 4,
+      "Stand": 4
+    },
+    "required_non_trigger_setup_grades": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "preferred_grade_profile": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "copy_limit_source": "runtime SQLite cards.deck_limit",
+    "deferred_source_backed_special_limits": [
+      "full official heal-trigger maximum beyond runtime deck_limit",
+      "card-specific special limits not represented in runtime SQLite",
+      "format-wide exceptions not represented in local source data",
+      "Legion Mate era card-specific deck-building exceptions"
+    ]
+  },
+  "mechanic_scope": {
+    "format_family": "Link Joker / Legion Mate era",
+    "stride_enabled": false,
+    "g_zone_runtime_enabled": false,
+    "imaginary_gift_enabled": false,
+    "ride_deck_enabled": false,
+    "over_trigger_enabled": false,
+    "front_trigger_enabled": false,
+    "order_cards_enabled": false,
+    "legion_text_requires_manual_review": true,
+    "lock_or_unlock_text_requires_manual_review": true,
+    "notes": [
+      "This scaffold is a validator policy for offline recipes, not a full official ruleset.",
+      "Legion, Lock, and Unlock-like text stays manual-review until dedicated rules modules exist."
+    ]
+  },
+  "validator_contract_for_m52_04": {
+    "must_validate_main_deck_count": true,
+    "must_validate_trigger_count": true,
+    "must_validate_required_trigger_types": true,
+    "must_validate_required_grade_coverage": true,
+    "must_validate_selected_identity": true,
+    "must_validate_set_scope": true,
+    "must_validate_runtime_deck_limit": true,
+    "must_block_missing_cards": true,
+    "must_not_accept_manual_review_dependencies_as_runtime_ready": true
+  },
+  "evidence_summary": {
+    "source_card_count": 106,
+    "series_counts": {
+      "BT10": 13,
+      "BT12": 11,
+      "BT14": 20,
+      "BT15": 16,
+      "BT17": 17,
+      "TD08": 12,
+      "TD16": 17
+    },
+    "grade_counts": {
+      "0": 20,
+      "1": 29,
+      "2": 30,
+      "3": 27
+    },
+    "trigger_counts": {
+      "": 97,
+      "Critical": 3,
+      "Draw": 1,
+      "Heal": 1,
+      "Stand": 4
+    },
+    "trigger_capacity": 36,
+    "non_trigger_capacity": 388,
+    "candidate_edge_count": 142,
+    "manual_review_card_count": 4
+  },
+  "runtime_boundary": {
+    "scaffold_artifact_only": true,
+    "does_not_create_deck": true,
+    "does_not_create_recipe_draft": true,
+    "does_not_create_runtime_fixture": true,
+    "does_not_mutate_runtime_pack": true,
+    "does_not_publish_to_ui": true,
+    "does_not_publish_to_bot": true,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "GameState_mutation": false
+  },
+  "issues": [],
+  "summary": {
+    "scaffold_ready": true,
+    "blocking_issue_count": 0,
+    "issue_count": 0,
+    "ready_for_m52_02": true
+  },
+  "next_target": {
+    "milestone": "M52-02",
+    "task": "Fifth-slice review packet"
+  }
+}

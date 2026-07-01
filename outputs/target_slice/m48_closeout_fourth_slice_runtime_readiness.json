@@ -1,0 +1,156 @@
+{
+  "version": "M48-closeout",
+  "description": "Fourth-slice runtime readiness decision",
+  "source_inputs": {
+    "m48_01_fourth_slice_fixture_scaffold": "outputs\\target_slice\\m48_01_fourth_slice_fixture_scaffold.json",
+    "m48_02_fourth_slice_review_packet": "outputs\\target_slice\\m48_02_fourth_slice_review_packet.json",
+    "m48_03_fourth_slice_recipe_draft_model": "outputs\\target_slice\\m48_03_fourth_slice_recipe_draft_model.json",
+    "m48_04_fourth_slice_recipe_validation_report": "outputs\\target_slice\\m48_04_fourth_slice_recipe_validation_report.json",
+    "m48_05_fourth_slice_combo_recipe_consistency_report": "outputs\\target_slice\\m48_05_fourth_slice_combo_recipe_consistency_report.json",
+    "m48_06_fourth_slice_blocker_repair_candidates": "outputs\\target_slice\\m48_06_fourth_slice_blocker_repair_candidates.json"
+  },
+  "scope": {
+    "closeout_report": true,
+    "changes_recipe_draft_file": false,
+    "records_human_acceptance": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false
+  },
+  "input_checks": [
+    {
+      "milestone": "M48-01",
+      "title": "Fourth-slice fixture scaffold",
+      "path": "outputs\\target_slice\\m48_01_fourth_slice_fixture_scaffold.json",
+      "exists": true
+    },
+    {
+      "milestone": "M48-02",
+      "title": "Fourth-slice review packet",
+      "path": "outputs\\target_slice\\m48_02_fourth_slice_review_packet.json",
+      "exists": true
+    },
+    {
+      "milestone": "M48-03",
+      "title": "Fourth-slice recipe draft model",
+      "path": "outputs\\target_slice\\m48_03_fourth_slice_recipe_draft_model.json",
+      "exists": true
+    },
+    {
+      "milestone": "M48-04",
+      "title": "Fourth-slice recipe validator",
+      "path": "outputs\\target_slice\\m48_04_fourth_slice_recipe_validation_report.json",
+      "exists": true
+    },
+    {
+      "milestone": "M48-05",
+      "title": "Fourth-slice combo-to-recipe consistency",
+      "path": "outputs\\target_slice\\m48_05_fourth_slice_combo_recipe_consistency_report.json",
+      "exists": true
+    },
+    {
+      "milestone": "M48-06",
+      "title": "Fourth-slice blocker repair candidates",
+      "path": "outputs\\target_slice\\m48_06_fourth_slice_blocker_repair_candidates.json",
+      "exists": true
+    }
+  ],
+  "key_results": {
+    "selected_target": {
+      "slice": "Fourth Offline Slice",
+      "era_preset": "g_series_first",
+      "group": "รอยัล พาลาดิน",
+      "group_field": "clan",
+      "rank": 2,
+      "priority_score": 86.19,
+      "best_era_candidates": 1024,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "rich_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    "fixture_scaffold_ready": true,
+    "review_items": 801,
+    "recipe_drafts": 25,
+    "runtime_ready_recipe_count": 0,
+    "promotion_allowed_count": 0,
+    "manual_review_overlap_recipe_count": 25,
+    "g_zone_deferred_recipe_count": 25,
+    "repair_candidates_ready_for_human_review": 25,
+    "manual_repair_complete_count": 25,
+    "grade_profile_complete_candidate_count": 24,
+    "unexpected_structural_blocker_recipe_count": 0
+  },
+  "decision": {
+    "m48_complete": true,
+    "fourth_slice_runtime_ready_recipe_available": false,
+    "fourth_slice_can_enter_runtime_fixture_gate_now": false,
+    "fourth_slice_remains_advisory": true,
+    "human_g_zone_review_allowed": true,
+    "g_zone_support_deferred": true,
+    "live_runtime_deck_enabled": false,
+    "saved_deck_or_ui_publication_allowed": false,
+    "bot_playbook_enabled": false,
+    "decision_blockers": [
+      "no_runtime_ready_recipe",
+      "no_promotion_allowed_consistency_check",
+      "manual_review_overlap_unresolved",
+      "g_zone_support_deferred",
+      "repair_candidates_require_human_acceptance",
+      "runtime_fixture_gate_not_run",
+      "g_zone_boundary_decision_not_run"
+    ],
+    "recommendation": "open_m49_human_repair_and_g_zone_decision_gate"
+  },
+  "next_queue": {
+    "id": "M49",
+    "title": "Fourth-slice Human Repair and G-Zone Decision Gate",
+    "goal": "Review M48-06 repair candidates, decide the G Zone/Stride boundary, then rerun validation before any runtime fixture gate.",
+    "tasks": [
+      {
+        "id": "M49-01",
+        "title": "Fourth-slice human repair review packet",
+        "goal": "Export a concise review packet for M48-06 manual and grade repair packages."
+      },
+      {
+        "id": "M49-02",
+        "title": "Fourth-slice G Zone support decision",
+        "goal": "Decide whether this slice remains main-deck-only, waits for G Zone support, or opens a separate G Zone implementation queue."
+      },
+      {
+        "id": "M49-03",
+        "title": "Fourth-slice human-accepted repair artifact",
+        "goal": "Record explicit acceptance or rejection of one repaired fourth-slice main-deck recipe."
+      },
+      {
+        "id": "M49-04",
+        "title": "Fourth-slice repaired recipe validation rerun",
+        "goal": "Apply accepted repair in memory and rerun count, trigger, grade, copy-limit, clan, manual-overlap, and G Zone boundary validation."
+      },
+      {
+        "id": "M49-05",
+        "title": "Fourth-slice runtime fixture gate",
+        "goal": "Promote only if repaired validation, consistency, human acceptance, and the G Zone boundary decision all pass."
+      },
+      {
+        "id": "M49-closeout",
+        "title": "Fourth-slice fixture closeout",
+        "goal": "Decide whether the fourth slice enters offline fixture scope or remains advisory."
+      }
+    ]
+  },
+  "summary": {
+    "m48_complete": true,
+    "runtime_ready_recipe_available": false,
+    "human_g_zone_review_allowed": true,
+    "g_zone_deferred_recipe_count": 25,
+    "next_queue_id": "M49",
+    "ready_for_next_queue": true
+  }
+}

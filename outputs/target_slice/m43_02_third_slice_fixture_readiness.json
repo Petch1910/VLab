@@ -1,0 +1,142 @@
+{
+  "version": "M43-02",
+  "description": "Third-slice fixture/format readiness",
+  "source_inputs": {
+    "third_target_slice_selection": "outputs\\target_slice\\m43_01_third_target_slice_selection.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "selected_target": {
+    "slice": "Third Offline Slice",
+    "era_preset": "link_joker_legion_mate",
+    "group": "เบอร์มิวด้า ไทรแองเกิล",
+    "group_field": "clan",
+    "rank": 1,
+    "priority_score": 95.0,
+    "best_era_candidates": 2179,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "format_scope": {
+    "era_preset": "link_joker_legion_mate",
+    "series_scope": [
+      "TD07",
+      "TD08",
+      "TD09",
+      "TD10",
+      "TD11",
+      "TD12",
+      "TD13",
+      "TD14",
+      "TD15",
+      "TD16",
+      "TD17",
+      "BT10",
+      "BT11",
+      "BT12",
+      "BT13",
+      "BT14",
+      "BT15",
+      "BT16",
+      "BT17",
+      "EB06",
+      "EB07",
+      "EB08",
+      "EB09",
+      "EB10",
+      "EB11",
+      "EB12"
+    ],
+    "trial_decks": [
+      "TD07",
+      "TD08",
+      "TD09",
+      "TD10",
+      "TD11",
+      "TD12",
+      "TD13",
+      "TD14",
+      "TD15",
+      "TD16",
+      "TD17"
+    ],
+    "booster_packs": [
+      "BT10",
+      "BT11",
+      "BT12",
+      "BT13",
+      "BT14",
+      "BT15",
+      "BT16",
+      "BT17"
+    ],
+    "extra_boosters": [
+      "EB06",
+      "EB07",
+      "EB08",
+      "EB09",
+      "EB10",
+      "EB11",
+      "EB12"
+    ],
+    "new_format_or_mechanic_fixtures_required": true,
+    "policy_reuse_decision": "requires_third_slice_fixture_scaffold"
+  },
+  "card_pool_summary": {
+    "source_card_count": 127,
+    "series_counts": {
+      "EB06": 41,
+      "EB10": 86
+    },
+    "grade_counts": {
+      "0": 31,
+      "1": 35,
+      "2": 30,
+      "3": 31
+    },
+    "trigger_counts": {
+      "": 106,
+      "Critical": 6,
+      "Draw": 6,
+      "Heal": 3,
+      "Stand": 6
+    },
+    "trigger_capacity": 84,
+    "non_trigger_capacity": 424
+  },
+  "readiness": {
+    "source_backed": true,
+    "has_grade_setup": true,
+    "has_classic_trigger_capacity": true,
+    "has_main_deck_capacity": true,
+    "all_fixture_expectations_met": true,
+    "semantic_probe_ready": true,
+    "runtime_or_bot_promotion_allowed": false
+  },
+  "runtime_boundary": {
+    "offline_fixture_readiness_only": true,
+    "does_not_create_deck": true,
+    "does_not_create_runtime_fixture": true,
+    "does_not_mutate_runtime_pack": true,
+    "does_not_publish_to_ui": true,
+    "does_not_publish_to_bot": true,
+    "GameState_mutation": false
+  },
+  "next_target": {
+    "milestone": "M43-03",
+    "task": "Third-slice semantic/compatibility probe"
+  },
+  "summary": {
+    "selected_group": "เบอร์มิวด้า ไทรแองเกิล",
+    "era_preset": "link_joker_legion_mate",
+    "source_card_count": 127,
+    "all_fixture_expectations_met": true,
+    "semantic_probe_ready": true,
+    "ready_for_m43_03": true
+  }
+}

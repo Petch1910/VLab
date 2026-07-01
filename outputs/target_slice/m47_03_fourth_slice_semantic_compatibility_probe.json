@@ -1,0 +1,166 @@
+{
+  "version": "M47-03",
+  "description": "Fourth-slice semantic/compatibility probe",
+  "selected_target": {
+    "slice": "Fourth Offline Slice",
+    "era_preset": "g_series_first",
+    "group": "รอยัล พาลาดิน",
+    "group_field": "clan",
+    "rank": 2,
+    "priority_score": 86.19,
+    "best_era_candidates": 1024,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "fourth_target_slice_selection": "outputs\\target_slice\\m47_01_fourth_target_slice_selection.json",
+    "fourth_slice_applied_scope": "outputs\\target_slice\\m47_repair_apply_scope.json"
+  },
+  "normalization": {
+    "uses_m35_b_c_probe_in_memory": true,
+    "uses_m47_applied_scope_artifact": true,
+    "adds_format_policy_for_contract": true,
+    "adds_fixture_policy_for_contract": true,
+    "maps_m47_applied_scope_to_semantic_scaleout_ready": true,
+    "does_not_write_intermediate_m35_outputs": true
+  },
+  "pipeline_contract": {
+    "selected_report_required_keys": [
+      "selected_target",
+      "format_policy"
+    ],
+    "readiness_report_required_keys": [
+      "selected_target",
+      "fixture_policy",
+      "readiness"
+    ],
+    "stage_order": [
+      "B1 semantic vocabulary",
+      "B2 semantic tags",
+      "B3 requirement/provider model",
+      "B4 manual review queue",
+      "C1 pair compatibility graph",
+      "C2 resource detector",
+      "C3 timing detector",
+      "C4 zone/target detector",
+      "C5 selected compatibility output"
+    ],
+    "uses_injected_reports_in_memory": true,
+    "does_not_require_first_slice_file_paths_for_execution": true
+  },
+  "stage_readiness": {
+    "b1_vocabulary_ready": true,
+    "b2_semantics_ready": true,
+    "b3_provider_ready": true,
+    "b4_phase_c_ready": true,
+    "c1_resource_ready": true,
+    "c2_timing_ready": true,
+    "c3_zone_ready": true,
+    "c4_output_ready": true,
+    "c5_package_selection_ready": true
+  },
+  "stage_summaries": {
+    "b1_vocabulary": {
+      "ability_types": 3,
+      "effects": 13,
+      "missing_source_terms": 0
+    },
+    "b2_semantic_tags": {
+      "card_count": 190,
+      "cards_with_any_semantic_tag": 190,
+      "manual_review_count": 15
+    },
+    "b3_requirement_provider": {
+      "card_count": 190,
+      "cards_with_requirements": 184,
+      "cards_with_providers": 172,
+      "manual_review_count": 15,
+      "provider_type_count": 18,
+      "requirement_type_count": 15
+    },
+    "b4_manual_review_queue": {
+      "card_count": 190,
+      "manual_review_count": 15,
+      "ready_for_phase_c": true
+    },
+    "c1_pair_graph": {
+      "node_count": 190,
+      "edge_count": 14150,
+      "manual_review_card_count": 15,
+      "manual_review_edge_count": 1979,
+      "advisory_edge_count": 12171,
+      "ready_for_m35_c2": true
+    },
+    "c2_resource": {
+      "node_count": 190,
+      "source_edge_count": 14150,
+      "resource_relevant_edge_count": 12135,
+      "manual_review_resource_edge_count": 1661,
+      "missing_recovery_resource_count": 0,
+      "ready_for_m35_c3": true
+    },
+    "c3_timing": {
+      "node_count": 190,
+      "source_edge_count": 14150,
+      "timing_relevant_edge_count": 13825,
+      "manual_review_timing_edge_count": 1916,
+      "ready_for_m35_c4": true
+    },
+    "c4_zone": {
+      "node_count": 190,
+      "source_edge_count": 14150,
+      "zone_relevant_edge_count": 13792,
+      "manual_review_zone_edge_count": 1979,
+      "unsupported_required_zone_count": 1,
+      "ready_for_m35_c5": true
+    },
+    "c5_compatibility": {
+      "edge_count": 14150,
+      "status_counts": {
+        "manual_review_required": 1979,
+        "missing_data": 1393,
+        "mixed": 9993,
+        "synergy": 785
+      },
+      "m35_d1_candidate_edge_count": 785,
+      "ready_for_m35_d1": true
+    }
+  },
+  "runtime_boundary": {
+    "advisory_probe_only": true,
+    "does_not_create_deck": true,
+    "does_not_create_runtime_fixture": true,
+    "does_not_mutate_runtime_pack": true,
+    "does_not_publish_to_ui": true,
+    "does_not_publish_to_bot": true,
+    "does_not_publish_playbook_seed": true,
+    "GameState_mutation": false
+  },
+  "readiness": {
+    "fourth_slice_semantic_compatibility_probe_passed": true,
+    "ready_for_m47_04": true,
+    "runtime_or_bot_promotion_allowed": false
+  },
+  "summary": {
+    "selected_group": "รอยัล พาลาดิน",
+    "era_preset": "g_series_first",
+    "applied_expansion_id": "g_era_heal_expansion",
+    "source_card_count": 190,
+    "effective_series_count": 32,
+    "semantic_card_count": 190,
+    "manual_review_card_count": 15,
+    "pair_graph_edge_count": 14150,
+    "candidate_edge_count": 785,
+    "all_stage_readiness_passed": true
+  },
+  "next_target": {
+    "milestone": "M47-04",
+    "task": "Fourth-slice recipe pipeline entry gate"
+  }
+}

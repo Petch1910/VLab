@@ -1,0 +1,1969 @@
+{
+  "version": "M44-04",
+  "description": "Third-slice recipe validator for M44-03 advisory drafts",
+  "selected_target": {
+    "slice": "Third Offline Slice",
+    "era_preset": "link_joker_legion_mate",
+    "group": "เบอร์มิวด้า ไทรแองเกิล",
+    "group_field": "clan",
+    "rank": 1,
+    "priority_score": 95.0,
+    "best_era_candidates": 2179,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "third_slice_recipe_draft_model": "outputs\\target_slice\\m44_03_third_slice_recipe_draft_model.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "scope": {
+    "offline_validator": true,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "runtime_deck": false,
+    "bot_playbook": false,
+    "automatic_deck_injection": false,
+    "direct_GameState_mutation": false
+  },
+  "validation_policy": {
+    "classic_main_deck_size": 50,
+    "classic_trigger_count": 16,
+    "heal_trigger_max": 4,
+    "copy_limit_from_sqlite_deck_limit": true,
+    "grade_profile_mismatch_is_review_not_blocker": true,
+    "manual_review_card_overlap_is_blocking": true,
+    "human_selection_pending_is_review_not_blocker": true
+  },
+  "summary": {
+    "recipe_count": 25,
+    "runtime_ready_recipe_count": 0,
+    "validator_passed_count": 0,
+    "validator_passed_pending_human_selection_count": 0,
+    "invalid_draft_count": 0,
+    "blocked_by_manual_review_count": 25,
+    "missing_card_recipe_count": 0,
+    "copy_limit_violation_recipe_count": 0,
+    "slot_gap_recipe_count": 0,
+    "trigger_count_mismatch_recipe_count": 0,
+    "manual_review_overlap_recipe_count": 25,
+    "grade_profile_review_recipe_count": 25,
+    "issue_counts": {
+      "grade_profile_review": 25,
+      "human_recipe_selection_pending": 25,
+      "manual_review_card_overlap": 25
+    },
+    "ready_for_m44_05": true
+  },
+  "recipe_validations": [
+    {
+      "recipe_id": "m44_recipe_001",
+      "source_candidate_edge": "EB10-007TH-B->EB06-023TH",
+      "source_edge_rank": 1,
+      "anchor_card_id": "EB10-007TH-B",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 19
+            },
+            "2": {
+              "expected": 11,
+              "actual": 9
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 19,
+          "2": 9,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_002",
+      "source_candidate_edge": "EB10-007TH-B->EB06-S06TH",
+      "source_edge_rank": 2,
+      "anchor_card_id": "EB10-007TH-B",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 19
+            },
+            "2": {
+              "expected": 11,
+              "actual": 9
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 19,
+          "2": 9,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_003",
+      "source_candidate_edge": "EB10-007TH-W->EB06-023TH",
+      "source_edge_rank": 3,
+      "anchor_card_id": "EB10-007TH-W",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 19
+            },
+            "2": {
+              "expected": 11,
+              "actual": 9
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 19,
+          "2": 9,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_004",
+      "source_candidate_edge": "EB10-007TH-W->EB06-S06TH",
+      "source_edge_rank": 4,
+      "anchor_card_id": "EB10-007TH-W",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 19
+            },
+            "2": {
+              "expected": 11,
+              "actual": 9
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 19,
+          "2": 9,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_005",
+      "source_candidate_edge": "EB10-S07TH-B->EB06-023TH",
+      "source_edge_rank": 5,
+      "anchor_card_id": "EB10-S07TH-B",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 19
+            },
+            "2": {
+              "expected": 11,
+              "actual": 9
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 19,
+          "2": 9,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_006",
+      "source_candidate_edge": "EB10-S07TH-B->EB06-S06TH",
+      "source_edge_rank": 6,
+      "anchor_card_id": "EB10-S07TH-B",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 19
+            },
+            "2": {
+              "expected": 11,
+              "actual": 9
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 19,
+          "2": 9,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_007",
+      "source_candidate_edge": "EB10-S07TH-W->EB06-023TH",
+      "source_edge_rank": 7,
+      "anchor_card_id": "EB10-S07TH-W",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 19
+            },
+            "2": {
+              "expected": 11,
+              "actual": 9
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 19,
+          "2": 9,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_008",
+      "source_candidate_edge": "EB10-S07TH-W->EB06-S06TH",
+      "source_edge_rank": 8,
+      "anchor_card_id": "EB10-S07TH-W",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 19
+            },
+            "2": {
+              "expected": 11,
+              "actual": 9
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 19,
+          "2": 9,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_009",
+      "source_candidate_edge": "EB10-026TH-B->EB06-020TH",
+      "source_edge_rank": 9,
+      "anchor_card_id": "EB10-026TH-B",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 15
+            },
+            "2": {
+              "expected": 11,
+              "actual": 13
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 15,
+          "2": 13,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_010",
+      "source_candidate_edge": "EB10-026TH-B->EB10-012TH-B",
+      "source_edge_rank": 10,
+      "anchor_card_id": "EB10-026TH-B",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 15
+            },
+            "2": {
+              "expected": 11,
+              "actual": 13
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 15,
+          "2": 13,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_011",
+      "source_candidate_edge": "EB10-026TH-B->EB10-012TH-W",
+      "source_edge_rank": 11,
+      "anchor_card_id": "EB10-026TH-B",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 15
+            },
+            "2": {
+              "expected": 11,
+              "actual": 13
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 15,
+          "2": 13,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_012",
+      "source_candidate_edge": "EB10-026TH-W->EB06-020TH",
+      "source_edge_rank": 12,
+      "anchor_card_id": "EB10-026TH-W",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 15
+            },
+            "2": {
+              "expected": 11,
+              "actual": 13
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 15,
+          "2": 13,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_013",
+      "source_candidate_edge": "EB10-026TH-W->EB10-012TH-B",
+      "source_edge_rank": 13,
+      "anchor_card_id": "EB10-026TH-W",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 15
+            },
+            "2": {
+              "expected": 11,
+              "actual": 13
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 15,
+          "2": 13,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_014",
+      "source_candidate_edge": "EB10-026TH-W->EB10-012TH-W",
+      "source_edge_rank": 14,
+      "anchor_card_id": "EB10-026TH-W",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 15
+            },
+            "2": {
+              "expected": 11,
+              "actual": 13
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 15,
+          "2": 13,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_015",
+      "source_candidate_edge": "EB06-017TH->EB10-012TH-B",
+      "source_edge_rank": 15,
+      "anchor_card_id": "EB06-017TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 11
+            },
+            "2": {
+              "expected": 11,
+              "actual": 13
+            },
+            "3": {
+              "expected": 8,
+              "actual": 10
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 11,
+          "2": 13,
+          "3": 10
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_016",
+      "source_candidate_edge": "EB06-017TH->EB10-012TH-W",
+      "source_edge_rank": 16,
+      "anchor_card_id": "EB06-017TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 11
+            },
+            "2": {
+              "expected": 11,
+              "actual": 13
+            },
+            "3": {
+              "expected": 8,
+              "actual": 10
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 11,
+          "2": 13,
+          "3": 10
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_017",
+      "source_candidate_edge": "EB06-022TH->EB10-012TH-B",
+      "source_edge_rank": 17,
+      "anchor_card_id": "EB06-022TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 15
+            },
+            "2": {
+              "expected": 11,
+              "actual": 13
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 15,
+          "2": 13,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_018",
+      "source_candidate_edge": "EB06-022TH->EB10-012TH-W",
+      "source_edge_rank": 18,
+      "anchor_card_id": "EB06-022TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 15
+            },
+            "2": {
+              "expected": 11,
+              "actual": 13
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 15,
+          "2": 13,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_019",
+      "source_candidate_edge": "EB06-023TH->EB10-012TH-B",
+      "source_edge_rank": 19,
+      "anchor_card_id": "EB06-023TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 15
+            },
+            "2": {
+              "expected": 11,
+              "actual": 13
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 15,
+          "2": 13,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_020",
+      "source_candidate_edge": "EB06-023TH->EB10-012TH-W",
+      "source_edge_rank": 20,
+      "anchor_card_id": "EB06-023TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 15
+            },
+            "2": {
+              "expected": 11,
+              "actual": 13
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 15,
+          "2": 13,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_021",
+      "source_candidate_edge": "EB06-S06TH->EB10-012TH-B",
+      "source_edge_rank": 21,
+      "anchor_card_id": "EB06-S06TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 15
+            },
+            "2": {
+              "expected": 11,
+              "actual": 13
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 15,
+          "2": 13,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_022",
+      "source_candidate_edge": "EB06-S06TH->EB10-012TH-W",
+      "source_edge_rank": 22,
+      "anchor_card_id": "EB06-S06TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 15
+            },
+            "2": {
+              "expected": 11,
+              "actual": 13
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 15,
+          "2": 13,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_023",
+      "source_candidate_edge": "EB10-007TH-B->EB06-008TH",
+      "source_edge_rank": 23,
+      "anchor_card_id": "EB10-007TH-B",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 15
+            },
+            "2": {
+              "expected": 11,
+              "actual": 9
+            },
+            "3": {
+              "expected": 8,
+              "actual": 10
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 15,
+          "2": 9,
+          "3": 10
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_024",
+      "source_candidate_edge": "EB10-007TH-B->EB06-011TH",
+      "source_edge_rank": 24,
+      "anchor_card_id": "EB10-007TH-B",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 15
+            },
+            "2": {
+              "expected": 11,
+              "actual": 13
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 15,
+          "2": 13,
+          "3": 6
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m44_recipe_025",
+      "source_candidate_edge": "EB10-007TH-B->EB06-013TH",
+      "source_edge_rank": 25,
+      "anchor_card_id": "EB10-007TH-B",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 18
+            },
+            "2": {
+              "expected": 11,
+              "actual": 9
+            },
+            "3": {
+              "expected": 8,
+              "actual": 7
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M44-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "EB06-001TH",
+              "EB06-002TH",
+              "EB06-005TH",
+              "EB06-006TH",
+              "EB06-010TH",
+              "EB06-012TH"
+            ]
+          }
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 18,
+          "2": 9,
+          "3": 7
+        },
+        "clan_counts": {
+          "เบอร์มิวด้า ไทรแองเกิล": 50
+        }
+      },
+      "runtime_ready": false
+    }
+  ],
+  "next_target": {
+    "milestone": "M44-05",
+    "task": "Third-slice combo-to-recipe consistency"
+  }
+}

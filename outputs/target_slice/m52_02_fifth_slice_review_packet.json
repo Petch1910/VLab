@@ -1,0 +1,5141 @@
+{
+  "version": "M52-02",
+  "description": "Fifth-slice review packet before advisory deck recipe drafting",
+  "selected_target": {
+    "slice": "Fifth Offline Slice",
+    "era_preset": "link_joker_legion_mate",
+    "group": "โกลด์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 3,
+    "priority_score": 77.85,
+    "best_era_candidates": 2006,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "fifth_target_slice_selection": "outputs\\target_slice\\m51_01_fifth_target_slice_selection.json",
+    "fifth_slice_fixture_readiness": "outputs\\target_slice\\m51_02_fifth_slice_fixture_readiness.json",
+    "fifth_slice_semantic_compatibility_probe": "outputs\\target_slice\\m51_03_fifth_slice_semantic_compatibility_probe.json",
+    "fifth_slice_recipe_pipeline_entry_gate": "outputs\\target_slice\\m51_04_fifth_slice_recipe_pipeline_entry_gate.json",
+    "fifth_slice_fixture_scaffold": "outputs\\target_slice\\m52_01_fifth_slice_fixture_scaffold.json"
+  },
+  "scope": {
+    "offline_review_packet": true,
+    "deck_recipe_draft": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "runtime_deck_promotion": false,
+    "bot_playbook_promotion": false,
+    "direct_GameState_mutation": false
+  },
+  "review_policy": {
+    "human_selection_required_before_recipe_draft": true,
+    "manual_review_cards_blocked_from_recipe_until_resolved": true,
+    "candidate_edges_are_advisory_inputs_only": true,
+    "fixture_scaffold_is_policy_evidence_not_saved_deck": true,
+    "legion_lock_text_requires_manual_review": true,
+    "no_live_card_text_parsing": true,
+    "no_direct_GameState_mutation": true
+  },
+  "evidence_summary": {
+    "m51_04_offline_recipe_pipeline_allowed": true,
+    "m51_04_runtime_promotion_closed": true,
+    "m52_01_scaffold_ready": true,
+    "probe_card_count": 106,
+    "probe_edge_count": 3075,
+    "expected_manual_review_count": 4,
+    "expected_candidate_edge_count": 142,
+    "rebuilt_manual_review_count": 4,
+    "rebuilt_candidate_edge_count": 142
+  },
+  "summary": {
+    "fixture_scaffold_item_count": 1,
+    "manual_card_item_count": 4,
+    "candidate_edge_item_count": 142,
+    "total_review_item_count": 147,
+    "ready_for_m52_03": true
+  },
+  "fixture_scaffold_items": [
+    {
+      "item_type": "fixture_scaffold_note",
+      "item_id": "m52_01_fixture_scaffold",
+      "review_priority": "P0_fixture_policy_review",
+      "policy_level": "fifth_slice_link_joker_legion_mate_fixture_scaffold_not_full_official_legality",
+      "main_deck_exact": 50,
+      "trigger_target": 16,
+      "recommended_trigger_profile": {
+        "Critical": 4,
+        "Draw": 4,
+        "Heal": 4,
+        "Stand": 4
+      },
+      "preferred_grade_profile": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "mechanic_manual_review_required": true,
+      "legion_text_manual_review_required": true,
+      "lock_or_unlock_text_manual_review_required": true,
+      "review_reasons": [
+        "new_format_or_mechanic_fixture_scaffold",
+        "link_joker_legion_mate_boundary_review",
+        "must_review_before_recipe_validator"
+      ],
+      "blocked_until": [
+        "fixture_scaffold_reviewed",
+        "m52_04_recipe_validator_uses_scaffold",
+        "legion_lock_manual_review_policy_confirmed"
+      ],
+      "recommended_next_action": "confirm_fixture_scaffold_before_recipe_draft"
+    }
+  ],
+  "manual_card_review_items": [
+    {
+      "item_type": "manual_review_card",
+      "item_id": "BT14-065TH",
+      "card_id": "BT14-065TH",
+      "name_th": "นัปปุกัล・ลิเบอเรเตอร์",
+      "series_code": "BT14",
+      "grade": 0,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "text_without_ability_type_tag"
+      ],
+      "unmapped_feature_tags": [],
+      "requirements": [],
+      "providers": [],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_scaffold_considered",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags_before_recipe"
+    },
+    {
+      "item_type": "manual_review_card",
+      "item_id": "BT15-012TH",
+      "card_id": "BT15-012TH",
+      "name_th": "ลิเบอเรเตอร์,โฮลี่ไชน์・ดราก้อน",
+      "series_code": "BT15",
+      "grade": 3,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_counter_blast",
+        "requires_damage_zone_reference",
+        "requires_limit_break_4",
+        "requires_on_attack_timing",
+        "requires_on_call_timing",
+        "requires_on_ride_timing",
+        "requires_rear_guard_circle",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_board_extension",
+        "provides_search",
+        "provides_soul_resource"
+      ],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_scaffold_considered",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags_before_recipe"
+    },
+    {
+      "item_type": "manual_review_card",
+      "item_id": "BT15-051TH",
+      "card_id": "BT15-051TH",
+      "name_th": "ลิเบอเรเตอร์แห่งประวัติศาสตร์,เมอร์รอน",
+      "series_code": "BT15",
+      "grade": 2,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_on_call_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_deck_recycle",
+        "provides_search"
+      ],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_scaffold_considered",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags_before_recipe"
+    },
+    {
+      "item_type": "manual_review_card",
+      "item_id": "BT15-053TH",
+      "card_id": "BT15-053TH",
+      "name_th": "ลิเบอเรเตอร์ปลายแหลม,โกลด์แลนเซอร์",
+      "series_code": "BT15",
+      "grade": 1,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_on_call_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_deck_recycle",
+        "provides_search"
+      ],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_scaffold_considered",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags_before_recipe"
+    }
+  ],
+  "candidate_edge_review_items": [
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-003TH->BT12-053TH",
+      "edge_rank": 1,
+      "edge": "BT14-003TH->BT12-053TH",
+      "source_card_id": "BT14-003TH",
+      "source_name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+      "target_card_id": "BT12-053TH",
+      "target_name_th": "พีคกัล",
+      "status": "synergy",
+      "net_score": 12,
+      "pair_graph_score": 6,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-003TH->TD08-011TH",
+      "edge_rank": 2,
+      "edge": "BT14-003TH->TD08-011TH",
+      "source_card_id": "BT14-003TH",
+      "source_name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+      "target_card_id": "TD08-011TH",
+      "target_name_th": "โพเมรุกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 12,
+      "pair_graph_score": 6,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-003TH->TD16-006TH",
+      "edge_rank": 3,
+      "edge": "BT14-003TH->TD16-006TH",
+      "source_card_id": "BT14-003TH",
+      "source_name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+      "target_card_id": "TD16-006TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งคำสาบาน,อาโกรเวล",
+      "status": "synergy",
+      "net_score": 12,
+      "pair_graph_score": 6,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-003TH->TD16-010TH",
+      "edge_rank": 4,
+      "edge": "BT14-003TH->TD16-010TH",
+      "source_card_id": "BT14-003TH",
+      "source_name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+      "target_card_id": "TD16-010TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งความเงียบ,เคอเดิล",
+      "status": "synergy",
+      "net_score": 12,
+      "pair_graph_score": 6,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-S03TH->BT12-053TH",
+      "edge_rank": 5,
+      "edge": "BT14-S03TH->BT12-053TH",
+      "source_card_id": "BT14-S03TH",
+      "source_name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+      "target_card_id": "BT12-053TH",
+      "target_name_th": "พีคกัล",
+      "status": "synergy",
+      "net_score": 12,
+      "pair_graph_score": 6,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-S03TH->TD08-011TH",
+      "edge_rank": 6,
+      "edge": "BT14-S03TH->TD08-011TH",
+      "source_card_id": "BT14-S03TH",
+      "source_name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+      "target_card_id": "TD08-011TH",
+      "target_name_th": "โพเมรุกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 12,
+      "pair_graph_score": 6,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-S03TH->TD16-006TH",
+      "edge_rank": 7,
+      "edge": "BT14-S03TH->TD16-006TH",
+      "source_card_id": "BT14-S03TH",
+      "source_name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+      "target_card_id": "TD16-006TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งคำสาบาน,อาโกรเวล",
+      "status": "synergy",
+      "net_score": 12,
+      "pair_graph_score": 6,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-S03TH->TD16-010TH",
+      "edge_rank": 8,
+      "edge": "BT14-S03TH->TD16-010TH",
+      "source_card_id": "BT14-S03TH",
+      "source_name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+      "target_card_id": "TD16-010TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งความเงียบ,เคอเดิล",
+      "status": "synergy",
+      "net_score": 12,
+      "pair_graph_score": 6,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT10-054TH->BT14-003TH",
+      "edge_rank": 9,
+      "edge": "BT10-054TH->BT14-003TH",
+      "source_card_id": "BT10-054TH",
+      "source_name_th": "อัศวินลูกศรระยะไกล,ซัพเฟอร์",
+      "target_card_id": "BT14-003TH",
+      "target_name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+      "status": "synergy",
+      "net_score": 11,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT10-054TH->BT14-S03TH",
+      "edge_rank": 10,
+      "edge": "BT10-054TH->BT14-S03TH",
+      "source_card_id": "BT10-054TH",
+      "source_name_th": "อัศวินลูกศรระยะไกล,ซัพเฟอร์",
+      "target_card_id": "BT14-S03TH",
+      "target_name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+      "status": "synergy",
+      "net_score": 11,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-062TH->BT14-003TH",
+      "edge_rank": 11,
+      "edge": "BT14-062TH->BT14-003TH",
+      "source_card_id": "BT14-062TH",
+      "source_name_th": "ลิเบอเรเตอร์มีดบิน,เมเลียร์แกรนซ์",
+      "target_card_id": "BT14-003TH",
+      "target_name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+      "status": "synergy",
+      "net_score": 11,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-062TH->BT14-S03TH",
+      "edge_rank": 12,
+      "edge": "BT14-062TH->BT14-S03TH",
+      "source_card_id": "BT14-062TH",
+      "source_name_th": "ลิเบอเรเตอร์มีดบิน,เมเลียร์แกรนซ์",
+      "target_card_id": "BT14-S03TH",
+      "target_name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+      "status": "synergy",
+      "net_score": 11,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->BT10-057TH",
+      "edge_rank": 13,
+      "edge": "BT14-012TH->BT10-057TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "BT10-057TH",
+      "target_name_th": "ลิเบอร์เรเตอร์,แฟลร์เมน・สตอลเลี่ยน",
+      "status": "synergy",
+      "net_score": 10,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->BT12-012TH",
+      "edge_rank": 14,
+      "edge": "BT14-012TH->BT12-012TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "BT12-012TH",
+      "target_name_th": "บาร์คกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 10,
+      "pair_graph_score": 4,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->TD08-012TH",
+      "edge_rank": 15,
+      "edge": "BT14-012TH->TD08-012TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "TD08-012TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งอนาคต,ริว",
+      "status": "synergy",
+      "net_score": 10,
+      "pair_graph_score": 4,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->TD16-012TH",
+      "edge_rank": 16,
+      "edge": "BT14-012TH->TD16-012TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "TD16-012TH",
+      "target_name_th": "บอร์ดกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 10,
+      "pair_graph_score": 4,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT10-026TH->BT17-049TH",
+      "edge_rank": 17,
+      "edge": "BT10-026TH->BT17-049TH",
+      "source_card_id": "BT10-026TH",
+      "source_name_th": "วิงกัล・ลิเบอร์เรเตอร์",
+      "target_card_id": "BT17-049TH",
+      "target_name_th": "ลิเบอเรเตอร์,ฟีทเธอร์・ไลอ้อน",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT10-054TH->BT10-055TH",
+      "edge_rank": 18,
+      "edge": "BT10-054TH->BT10-055TH",
+      "source_card_id": "BT10-054TH",
+      "source_name_th": "อัศวินลูกศรระยะไกล,ซัพเฟอร์",
+      "target_card_id": "BT10-055TH",
+      "target_name_th": "อัศวินพินาศหิน,เซควาริเดส",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT10-054TH->BT12-053TH",
+      "edge_rank": 19,
+      "edge": "BT10-054TH->BT12-053TH",
+      "source_card_id": "BT10-054TH",
+      "source_name_th": "อัศวินลูกศรระยะไกล,ซัพเฟอร์",
+      "target_card_id": "BT12-053TH",
+      "target_name_th": "พีคกัล",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT10-054TH->BT14-025TH",
+      "edge_rank": 20,
+      "edge": "BT10-054TH->BT14-025TH",
+      "source_card_id": "BT10-054TH",
+      "source_name_th": "อัศวินลูกศรระยะไกล,ซัพเฟอร์",
+      "target_card_id": "BT14-025TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT10-054TH->BT14-056TH",
+      "edge_rank": 21,
+      "edge": "BT10-054TH->BT14-056TH",
+      "source_card_id": "BT10-054TH",
+      "source_name_th": "อัศวินลูกศรระยะไกล,ซัพเฟอร์",
+      "target_card_id": "BT14-056TH",
+      "target_name_th": "ดอลกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT10-054TH->BT17-048TH",
+      "edge_rank": 22,
+      "edge": "BT10-054TH->BT17-048TH",
+      "source_card_id": "BT10-054TH",
+      "source_name_th": "อัศวินลูกศรระยะไกล,ซัพเฟอร์",
+      "target_card_id": "BT17-048TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งรัศมีหอก,มาเรียส",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT10-054TH->BT17-049TH",
+      "edge_rank": 23,
+      "edge": "BT10-054TH->BT17-049TH",
+      "source_card_id": "BT10-054TH",
+      "source_name_th": "อัศวินลูกศรระยะไกล,ซัพเฟอร์",
+      "target_card_id": "BT17-049TH",
+      "target_name_th": "ลิเบอเรเตอร์,ฟีทเธอร์・ไลอ้อน",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT10-054TH->TD08-011TH",
+      "edge_rank": 24,
+      "edge": "BT10-054TH->TD08-011TH",
+      "source_card_id": "BT10-054TH",
+      "source_name_th": "อัศวินลูกศรระยะไกล,ซัพเฟอร์",
+      "target_card_id": "TD08-011TH",
+      "target_name_th": "โพเมรุกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT10-054TH->TD16-002TH",
+      "edge_rank": 25,
+      "edge": "BT10-054TH->TD16-002TH",
+      "source_card_id": "BT10-054TH",
+      "source_name_th": "อัศวินลูกศรระยะไกล,ซัพเฟอร์",
+      "target_card_id": "TD16-002TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งความศรัทธา,แคดวาล",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT10-054TH->TD16-010TH",
+      "edge_rank": 26,
+      "edge": "BT10-054TH->TD16-010TH",
+      "source_card_id": "BT10-054TH",
+      "source_name_th": "อัศวินลูกศรระยะไกล,ซัพเฟอร์",
+      "target_card_id": "TD16-010TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งความเงียบ,เคอเดิล",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT10-058TH->BT17-049TH",
+      "edge_rank": 27,
+      "edge": "BT10-058TH->BT17-049TH",
+      "source_card_id": "BT10-058TH",
+      "source_name_th": "โฮลี่สไควร์,เอนิด",
+      "target_card_id": "BT17-049TH",
+      "target_name_th": "ลิเบอเรเตอร์,ฟีทเธอร์・ไลอ้อน",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT12-056TH->BT17-049TH",
+      "edge_rank": 28,
+      "edge": "BT12-056TH->BT17-049TH",
+      "source_card_id": "BT12-056TH",
+      "source_name_th": "ลิเบอเรเตอร์,เชียร์อัพ・ทรัมเป็ตเตอร์",
+      "target_card_id": "BT17-049TH",
+      "target_name_th": "ลิเบอเรเตอร์,ฟีทเธอร์・ไลอ้อน",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-003TH->BT10-025TH",
+      "edge_rank": 29,
+      "edge": "BT14-003TH->BT10-025TH",
+      "source_card_id": "BT14-003TH",
+      "source_name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+      "target_card_id": "BT10-025TH",
+      "target_name_th": "ลิเบอร์เรเตอร์นักล่าที่รวดเร็ว,โจเซฟ",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-060TH->BT17-049TH",
+      "edge_rank": 30,
+      "edge": "BT14-060TH->BT17-049TH",
+      "source_card_id": "BT14-060TH",
+      "source_name_th": "สัตว์ศักดิ์สิทธิ์แฝด,ไวท์ไลอ้อน",
+      "target_card_id": "BT17-049TH",
+      "target_name_th": "ลิเบอเรเตอร์,ฟีทเธอร์・ไลอ้อน",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-062TH->BT10-055TH",
+      "edge_rank": 31,
+      "edge": "BT14-062TH->BT10-055TH",
+      "source_card_id": "BT14-062TH",
+      "source_name_th": "ลิเบอเรเตอร์มีดบิน,เมเลียร์แกรนซ์",
+      "target_card_id": "BT10-055TH",
+      "target_name_th": "อัศวินพินาศหิน,เซควาริเดส",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-062TH->BT12-053TH",
+      "edge_rank": 32,
+      "edge": "BT14-062TH->BT12-053TH",
+      "source_card_id": "BT14-062TH",
+      "source_name_th": "ลิเบอเรเตอร์มีดบิน,เมเลียร์แกรนซ์",
+      "target_card_id": "BT12-053TH",
+      "target_name_th": "พีคกัล",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-062TH->BT14-025TH",
+      "edge_rank": 33,
+      "edge": "BT14-062TH->BT14-025TH",
+      "source_card_id": "BT14-062TH",
+      "source_name_th": "ลิเบอเรเตอร์มีดบิน,เมเลียร์แกรนซ์",
+      "target_card_id": "BT14-025TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-062TH->BT14-056TH",
+      "edge_rank": 34,
+      "edge": "BT14-062TH->BT14-056TH",
+      "source_card_id": "BT14-062TH",
+      "source_name_th": "ลิเบอเรเตอร์มีดบิน,เมเลียร์แกรนซ์",
+      "target_card_id": "BT14-056TH",
+      "target_name_th": "ดอลกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-062TH->BT17-048TH",
+      "edge_rank": 35,
+      "edge": "BT14-062TH->BT17-048TH",
+      "source_card_id": "BT14-062TH",
+      "source_name_th": "ลิเบอเรเตอร์มีดบิน,เมเลียร์แกรนซ์",
+      "target_card_id": "BT17-048TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งรัศมีหอก,มาเรียส",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-062TH->TD08-011TH",
+      "edge_rank": 36,
+      "edge": "BT14-062TH->TD08-011TH",
+      "source_card_id": "BT14-062TH",
+      "source_name_th": "ลิเบอเรเตอร์มีดบิน,เมเลียร์แกรนซ์",
+      "target_card_id": "TD08-011TH",
+      "target_name_th": "โพเมรุกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-062TH->TD16-002TH",
+      "edge_rank": 37,
+      "edge": "BT14-062TH->TD16-002TH",
+      "source_card_id": "BT14-062TH",
+      "source_name_th": "ลิเบอเรเตอร์มีดบิน,เมเลียร์แกรนซ์",
+      "target_card_id": "TD16-002TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งความศรัทธา,แคดวาล",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-062TH->TD16-010TH",
+      "edge_rank": 38,
+      "edge": "BT14-062TH->TD16-010TH",
+      "source_card_id": "BT14-062TH",
+      "source_name_th": "ลิเบอเรเตอร์มีดบิน,เมเลียร์แกรนซ์",
+      "target_card_id": "TD16-010TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งความเงียบ,เคอเดิล",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-063TH->BT17-049TH",
+      "edge_rank": 39,
+      "edge": "BT14-063TH->BT17-049TH",
+      "source_card_id": "BT14-063TH",
+      "source_name_th": "ราชสีห์น้อยสีเพลิง,คาเรีย",
+      "target_card_id": "BT17-049TH",
+      "target_name_th": "ลิเบอเรเตอร์,ฟีทเธอร์・ไลอ้อน",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-S03TH->BT10-025TH",
+      "edge_rank": 40,
+      "edge": "BT14-S03TH->BT10-025TH",
+      "source_card_id": "BT14-S03TH",
+      "source_name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+      "target_card_id": "BT10-025TH",
+      "target_name_th": "ลิเบอร์เรเตอร์นักล่าที่รวดเร็ว,โจเซฟ",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT15-013TH->BT17-049TH",
+      "edge_rank": 41,
+      "edge": "BT15-013TH->BT17-049TH",
+      "source_card_id": "BT15-013TH",
+      "source_name_th": "ลิเบอเรเตอร์,สตาร์เรน・ทรัมเป็ตเตอร์",
+      "target_card_id": "BT17-049TH",
+      "target_name_th": "ลิเบอเรเตอร์,ฟีทเธอร์・ไลอ้อน",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT15-028TH->BT17-049TH",
+      "edge_rank": 42,
+      "edge": "BT15-028TH->BT17-049TH",
+      "source_card_id": "BT15-028TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งความใฝ่ฝัน,อารุม",
+      "target_card_id": "BT17-049TH",
+      "target_name_th": "ลิเบอเรเตอร์,ฟีทเธอร์・ไลอ้อน",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT15-054TH->BT17-049TH",
+      "edge_rank": 43,
+      "edge": "BT15-054TH->BT17-049TH",
+      "source_card_id": "BT15-054TH",
+      "source_name_th": "ลิเบอเรเตอร์แรงกายภาพ,โซรอน",
+      "target_card_id": "BT17-049TH",
+      "target_name_th": "ลิเบอเรเตอร์,ฟีทเธอร์・ไลอ้อน",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT15-056TH->BT17-049TH",
+      "edge_rank": 44,
+      "edge": "BT15-056TH->BT17-049TH",
+      "source_card_id": "BT15-056TH",
+      "source_name_th": "ฟลาวเวอร์・การ์เดนเนอร์",
+      "target_card_id": "BT17-049TH",
+      "target_name_th": "ลิเบอเรเตอร์,ฟีทเธอร์・ไลอ้อน",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT15-S09TH->BT17-049TH",
+      "edge_rank": 45,
+      "edge": "BT15-S09TH->BT17-049TH",
+      "source_card_id": "BT15-S09TH",
+      "source_name_th": "ลิเบอเรเตอร์,สตาร์เรน・ทรัมเป็ตเตอร์",
+      "target_card_id": "BT17-049TH",
+      "target_name_th": "ลิเบอเรเตอร์,ฟีทเธอร์・ไลอ้อน",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT10-057TH->BT14-025TH",
+      "edge_rank": 46,
+      "edge": "BT10-057TH->BT14-025TH",
+      "source_card_id": "BT10-057TH",
+      "source_name_th": "ลิเบอร์เรเตอร์,แฟลร์เมน・สตอลเลี่ยน",
+      "target_card_id": "BT14-025TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT10-057TH->BT14-056TH",
+      "edge_rank": 47,
+      "edge": "BT10-057TH->BT14-056TH",
+      "source_card_id": "BT10-057TH",
+      "source_name_th": "ลิเบอร์เรเตอร์,แฟลร์เมน・สตอลเลี่ยน",
+      "target_card_id": "BT14-056TH",
+      "target_name_th": "ดอลกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT12-024TH->BT14-025TH",
+      "edge_rank": 48,
+      "edge": "BT12-024TH->BT14-025TH",
+      "source_card_id": "BT12-024TH",
+      "source_name_th": "ลิเบอเรเตอร์,แบ็กไปป์・แองเจิล",
+      "target_card_id": "BT14-025TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT12-024TH->BT14-056TH",
+      "edge_rank": 49,
+      "edge": "BT12-024TH->BT14-056TH",
+      "source_card_id": "BT12-024TH",
+      "source_name_th": "ลิเบอเรเตอร์,แบ็กไปป์・แองเจิล",
+      "target_card_id": "BT14-056TH",
+      "target_name_th": "ดอลกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT12-056TH->BT14-025TH",
+      "edge_rank": 50,
+      "edge": "BT12-056TH->BT14-025TH",
+      "source_card_id": "BT12-056TH",
+      "source_name_th": "ลิเบอเรเตอร์,เชียร์อัพ・ทรัมเป็ตเตอร์",
+      "target_card_id": "BT14-025TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT12-056TH->BT14-056TH",
+      "edge_rank": 51,
+      "edge": "BT12-056TH->BT14-056TH",
+      "source_card_id": "BT12-056TH",
+      "source_name_th": "ลิเบอเรเตอร์,เชียร์อัพ・ทรัมเป็ตเตอร์",
+      "target_card_id": "BT14-056TH",
+      "target_name_th": "ดอลกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->BT10-025TH",
+      "edge_rank": 52,
+      "edge": "BT14-012TH->BT10-025TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "BT10-025TH",
+      "target_name_th": "ลิเบอร์เรเตอร์นักล่าที่รวดเร็ว,โจเซฟ",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->BT10-053TH",
+      "edge_rank": 53,
+      "edge": "BT14-012TH->BT10-053TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "BT10-053TH",
+      "target_name_th": "มูนกัล",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->BT12-051TH",
+      "edge_rank": 54,
+      "edge": "BT14-012TH->BT12-051TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "BT12-051TH",
+      "target_name_th": "กิกันเทค・พิลลาร์ไฟท์เตอร์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->BT12-052TH",
+      "edge_rank": 55,
+      "edge": "BT14-012TH->BT12-052TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "BT12-052TH",
+      "target_name_th": "ลิเบอเรเตอร์ฟ้าหม่น,เกไรท์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->BT12-054TH",
+      "edge_rank": 56,
+      "edge": "BT14-012TH->BT12-054TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "BT12-054TH",
+      "target_name_th": "ลิเบอเรเตอร์ฝนเดือนห้า,บรูโน่",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->BT12-055TH",
+      "edge_rank": 57,
+      "edge": "BT14-012TH->BT12-055TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "BT12-055TH",
+      "target_name_th": "ซันไรซ์・ยูนิคอร์น",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->BT14-054TH",
+      "edge_rank": 58,
+      "edge": "BT14-012TH->BT14-054TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "BT14-054TH",
+      "target_name_th": "สัตว์ศักดิ์สิทธิ์ผู้พิทักษ์,เคริวเนียร์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->BT14-058TH",
+      "edge_rank": 59,
+      "edge": "BT14-012TH->BT14-058TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "BT14-058TH",
+      "target_name_th": "อัศวินขวานสีคราม,ทาลิเอชิน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->BT14-059TH",
+      "edge_rank": 60,
+      "edge": "BT14-012TH->BT14-059TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "BT14-059TH",
+      "target_name_th": "อัศวินแหงความมุ่งมั่น,โทล",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->BT15-025TH",
+      "edge_rank": 61,
+      "edge": "BT14-012TH->BT15-025TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "BT15-025TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งรุ้งสีแดง,เบริน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->BT15-026TH",
+      "edge_rank": 62,
+      "edge": "BT14-012TH->BT15-026TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "BT15-026TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งรุ้งสีขาว,เบรัน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->BT17-023TH",
+      "edge_rank": 63,
+      "edge": "BT14-012TH->BT17-023TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "BT17-023TH",
+      "target_name_th": "ลิเบอเรเตอร์,ลอว์ฟูลทรัมเป็ตเตอร์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->BT17-051TH",
+      "edge_rank": 64,
+      "edge": "BT14-012TH->BT17-051TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "BT17-051TH",
+      "target_name_th": "เนลกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->BT17-052TH",
+      "edge_rank": 65,
+      "edge": "BT14-012TH->BT17-052TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "BT17-052TH",
+      "target_name_th": "ลิเบอเรเตอร์,ไบรท์・ไบคอร์น",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->TD08-002TH",
+      "edge_rank": 66,
+      "edge": "BT14-012TH->TD08-002TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "TD08-002TH",
+      "target_name_th": "ดิคนิไฟด์・โกลด์・ดราก้อน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->TD08-005TH",
+      "edge_rank": 67,
+      "edge": "BT14-012TH->TD08-005TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "TD08-005TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งราชวงศ์,ฟารอน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->TD08-008TH",
+      "edge_rank": 68,
+      "edge": "BT14-012TH->TD08-008TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "TD08-008TH",
+      "target_name_th": "ซอยกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->TD08-010TH",
+      "edge_rank": 69,
+      "edge": "BT14-012TH->TD08-010TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "TD08-010TH",
+      "target_name_th": "ลิเบอเรเตอร์น้อย,มารอน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->TD16-005TH",
+      "edge_rank": 70,
+      "edge": "BT14-012TH->TD16-005TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "TD16-005TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งราชวงศ์,ฟารอน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->TD16-008TH",
+      "edge_rank": 71,
+      "edge": "BT14-012TH->TD16-008TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "TD16-008TH",
+      "target_name_th": "ฮันกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-012TH->TD16-011TH",
+      "edge_rank": 72,
+      "edge": "BT14-012TH->TD16-011TH",
+      "source_card_id": "BT14-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งกระบวนดาบ,อีเกรน",
+      "target_card_id": "TD16-011TH",
+      "target_name_th": "ลิเบอเรเตอร์น้อย,มารอน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-002TH->BT10-025TH",
+      "edge_rank": 73,
+      "edge": "BT17-002TH->BT10-025TH",
+      "source_card_id": "BT17-002TH",
+      "source_name_th": "มุราซาเมะลิเบอเรเตอร์,คอยล์",
+      "target_card_id": "BT10-025TH",
+      "target_name_th": "ลิเบอร์เรเตอร์นักล่าที่รวดเร็ว,โจเซฟ",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-002TH->BT12-052TH",
+      "edge_rank": 74,
+      "edge": "BT17-002TH->BT12-052TH",
+      "source_card_id": "BT17-002TH",
+      "source_name_th": "มุราซาเมะลิเบอเรเตอร์,คอยล์",
+      "target_card_id": "BT12-052TH",
+      "target_name_th": "ลิเบอเรเตอร์ฟ้าหม่น,เกไรท์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-002TH->BT12-054TH",
+      "edge_rank": 75,
+      "edge": "BT17-002TH->BT12-054TH",
+      "source_card_id": "BT17-002TH",
+      "source_name_th": "มุราซาเมะลิเบอเรเตอร์,คอยล์",
+      "target_card_id": "BT12-054TH",
+      "target_name_th": "ลิเบอเรเตอร์ฝนเดือนห้า,บรูโน่",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-002TH->BT12-055TH",
+      "edge_rank": 76,
+      "edge": "BT17-002TH->BT12-055TH",
+      "source_card_id": "BT17-002TH",
+      "source_name_th": "มุราซาเมะลิเบอเรเตอร์,คอยล์",
+      "target_card_id": "BT12-055TH",
+      "target_name_th": "ซันไรซ์・ยูนิคอร์น",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-002TH->BT15-025TH",
+      "edge_rank": 77,
+      "edge": "BT17-002TH->BT15-025TH",
+      "source_card_id": "BT17-002TH",
+      "source_name_th": "มุราซาเมะลิเบอเรเตอร์,คอยล์",
+      "target_card_id": "BT15-025TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งรุ้งสีแดง,เบริน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-002TH->BT15-026TH",
+      "edge_rank": 78,
+      "edge": "BT17-002TH->BT15-026TH",
+      "source_card_id": "BT17-002TH",
+      "source_name_th": "มุราซาเมะลิเบอเรเตอร์,คอยล์",
+      "target_card_id": "BT15-026TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งรุ้งสีขาว,เบรัน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-002TH->BT17-023TH",
+      "edge_rank": 79,
+      "edge": "BT17-002TH->BT17-023TH",
+      "source_card_id": "BT17-002TH",
+      "source_name_th": "มุราซาเมะลิเบอเรเตอร์,คอยล์",
+      "target_card_id": "BT17-023TH",
+      "target_name_th": "ลิเบอเรเตอร์,ลอว์ฟูลทรัมเป็ตเตอร์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-002TH->BT17-052TH",
+      "edge_rank": 80,
+      "edge": "BT17-002TH->BT17-052TH",
+      "source_card_id": "BT17-002TH",
+      "source_name_th": "มุราซาเมะลิเบอเรเตอร์,คอยล์",
+      "target_card_id": "BT17-052TH",
+      "target_name_th": "ลิเบอเรเตอร์,ไบรท์・ไบคอร์น",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-022TH->BT14-025TH",
+      "edge_rank": 81,
+      "edge": "BT17-022TH->BT14-025TH",
+      "source_card_id": "BT17-022TH",
+      "source_name_th": "ลิเบอเรเตอร์ฝนโปรยปราย,ทาเฮรุน",
+      "target_card_id": "BT14-025TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-022TH->BT14-056TH",
+      "edge_rank": 82,
+      "edge": "BT17-022TH->BT14-056TH",
+      "source_card_id": "BT17-022TH",
+      "source_name_th": "ลิเบอเรเตอร์ฝนโปรยปราย,ทาเฮรุน",
+      "target_card_id": "BT14-056TH",
+      "target_name_th": "ดอลกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-024TH->BT14-025TH",
+      "edge_rank": 83,
+      "edge": "BT17-024TH->BT14-025TH",
+      "source_card_id": "BT17-024TH",
+      "source_name_th": "ลิเบอเรเตอร์ขวานคู่,บาสเซีย",
+      "target_card_id": "BT14-025TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-024TH->BT14-056TH",
+      "edge_rank": 84,
+      "edge": "BT17-024TH->BT14-056TH",
+      "source_card_id": "BT17-024TH",
+      "source_name_th": "ลิเบอเรเตอร์ขวานคู่,บาสเซีย",
+      "target_card_id": "BT14-056TH",
+      "target_name_th": "ดอลกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-025TH->BT14-025TH",
+      "edge_rank": 85,
+      "edge": "BT17-025TH->BT14-025TH",
+      "source_card_id": "BT17-025TH",
+      "source_name_th": "โคโรน่ากัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT14-025TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-025TH->BT14-056TH",
+      "edge_rank": 86,
+      "edge": "BT17-025TH->BT14-056TH",
+      "source_card_id": "BT17-025TH",
+      "source_name_th": "โคโรน่ากัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT14-056TH",
+      "target_name_th": "ดอลกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-054TH->BT14-025TH",
+      "edge_rank": 87,
+      "edge": "BT17-054TH->BT14-025TH",
+      "source_card_id": "BT17-054TH",
+      "source_name_th": "ลิเบอเรเตอร์,เบลซซิ่งแอร์โร่ว์・แองเจิล",
+      "target_card_id": "BT14-025TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-054TH->BT14-056TH",
+      "edge_rank": 88,
+      "edge": "BT17-054TH->BT14-056TH",
+      "source_card_id": "BT17-054TH",
+      "source_name_th": "ลิเบอเรเตอร์,เบลซซิ่งแอร์โร่ว์・แองเจิล",
+      "target_card_id": "BT14-056TH",
+      "target_name_th": "ดอลกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD08-001TH->BT14-025TH",
+      "edge_rank": 89,
+      "edge": "TD08-001TH->BT14-025TH",
+      "source_card_id": "TD08-001TH",
+      "source_name_th": "ลิเบอเรเตอร์ผู้โดดเดี่ยว,แกรนสล็อต",
+      "target_card_id": "BT14-025TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD08-001TH->BT14-056TH",
+      "edge_rank": 90,
+      "edge": "TD08-001TH->BT14-056TH",
+      "source_card_id": "TD08-001TH",
+      "source_name_th": "ลิเบอเรเตอร์ผู้โดดเดี่ยว,แกรนสล็อต",
+      "target_card_id": "BT14-056TH",
+      "target_name_th": "ดอลกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD08-012TH->BT14-025TH",
+      "edge_rank": 91,
+      "edge": "TD08-012TH->BT14-025TH",
+      "source_card_id": "TD08-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งอนาคต,ริว",
+      "target_card_id": "BT14-025TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD08-012TH->BT14-056TH",
+      "edge_rank": 92,
+      "edge": "TD08-012TH->BT14-056TH",
+      "source_card_id": "TD08-012TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งอนาคต,ริว",
+      "target_card_id": "BT14-056TH",
+      "target_name_th": "ดอลกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD16-012TH->BT14-025TH",
+      "edge_rank": 93,
+      "edge": "TD16-012TH->BT14-025TH",
+      "source_card_id": "TD16-012TH",
+      "source_name_th": "บอร์ดกัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT14-025TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD16-012TH->BT14-056TH",
+      "edge_rank": 94,
+      "edge": "TD16-012TH->BT14-056TH",
+      "source_card_id": "TD16-012TH",
+      "source_name_th": "บอร์ดกัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT14-056TH",
+      "target_name_th": "ดอลกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD16-013TH->BT14-025TH",
+      "edge_rank": 95,
+      "edge": "TD16-013TH->BT14-025TH",
+      "source_card_id": "TD16-013TH",
+      "source_name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+      "target_card_id": "BT14-025TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD16-013TH->BT14-056TH",
+      "edge_rank": 96,
+      "edge": "TD16-013TH->BT14-056TH",
+      "source_card_id": "TD16-013TH",
+      "source_name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+      "target_card_id": "BT14-056TH",
+      "target_name_th": "ดอลกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 4,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT15-026TH->BT12-053TH",
+      "edge_rank": 97,
+      "edge": "BT15-026TH->BT12-053TH",
+      "source_card_id": "BT15-026TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งรุ้งสีขาว,เบรัน",
+      "target_card_id": "BT12-053TH",
+      "target_name_th": "พีคกัล",
+      "status": "synergy",
+      "net_score": 7,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "not_timing_relevant",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT15-026TH->BT17-048TH",
+      "edge_rank": 98,
+      "edge": "BT15-026TH->BT17-048TH",
+      "source_card_id": "BT15-026TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งรุ้งสีขาว,เบรัน",
+      "target_card_id": "BT17-048TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งรัศมีหอก,มาเรียส",
+      "status": "synergy",
+      "net_score": 7,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "not_timing_relevant",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT15-026TH->TD08-011TH",
+      "edge_rank": 99,
+      "edge": "BT15-026TH->TD08-011TH",
+      "source_card_id": "BT15-026TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งรุ้งสีขาว,เบรัน",
+      "target_card_id": "TD08-011TH",
+      "target_name_th": "โพเมรุกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 7,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "not_timing_relevant",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT15-026TH->TD16-010TH",
+      "edge_rank": 100,
+      "edge": "BT15-026TH->TD16-010TH",
+      "source_card_id": "BT15-026TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งรุ้งสีขาว,เบรัน",
+      "target_card_id": "TD16-010TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งความเงียบ,เคอเดิล",
+      "status": "synergy",
+      "net_score": 7,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "not_timing_relevant",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->BT14-025TH",
+      "edge_rank": 101,
+      "edge": "BT17-056TH->BT14-025TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT14-025TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "status": "synergy",
+      "net_score": 7,
+      "pair_graph_score": 3,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->BT14-056TH",
+      "edge_rank": 102,
+      "edge": "BT17-056TH->BT14-056TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT14-056TH",
+      "target_name_th": "ดอลกัล・ลิเบอเรเตอร์",
+      "status": "synergy",
+      "net_score": 7,
+      "pair_graph_score": 3,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-025TH->BT10-025TH",
+      "edge_rank": 103,
+      "edge": "BT14-025TH->BT10-025TH",
+      "source_card_id": "BT14-025TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "target_card_id": "BT10-025TH",
+      "target_name_th": "ลิเบอร์เรเตอร์นักล่าที่รวดเร็ว,โจเซฟ",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-025TH->BT10-053TH",
+      "edge_rank": 104,
+      "edge": "BT14-025TH->BT10-053TH",
+      "source_card_id": "BT14-025TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "target_card_id": "BT10-053TH",
+      "target_name_th": "มูนกัล",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-025TH->BT12-052TH",
+      "edge_rank": 105,
+      "edge": "BT14-025TH->BT12-052TH",
+      "source_card_id": "BT14-025TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "target_card_id": "BT12-052TH",
+      "target_name_th": "ลิเบอเรเตอร์ฟ้าหม่น,เกไรท์",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-025TH->BT12-054TH",
+      "edge_rank": 106,
+      "edge": "BT14-025TH->BT12-054TH",
+      "source_card_id": "BT14-025TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "target_card_id": "BT12-054TH",
+      "target_name_th": "ลิเบอเรเตอร์ฝนเดือนห้า,บรูโน่",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-025TH->BT12-055TH",
+      "edge_rank": 107,
+      "edge": "BT14-025TH->BT12-055TH",
+      "source_card_id": "BT14-025TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "target_card_id": "BT12-055TH",
+      "target_name_th": "ซันไรซ์・ยูนิคอร์น",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-025TH->BT14-058TH",
+      "edge_rank": 108,
+      "edge": "BT14-025TH->BT14-058TH",
+      "source_card_id": "BT14-025TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "target_card_id": "BT14-058TH",
+      "target_name_th": "อัศวินขวานสีคราม,ทาลิเอชิน",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-025TH->BT15-025TH",
+      "edge_rank": 109,
+      "edge": "BT14-025TH->BT15-025TH",
+      "source_card_id": "BT14-025TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "target_card_id": "BT15-025TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งรุ้งสีแดง,เบริน",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-025TH->BT15-026TH",
+      "edge_rank": 110,
+      "edge": "BT14-025TH->BT15-026TH",
+      "source_card_id": "BT14-025TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "target_card_id": "BT15-026TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งรุ้งสีขาว,เบรัน",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-025TH->BT17-023TH",
+      "edge_rank": 111,
+      "edge": "BT14-025TH->BT17-023TH",
+      "source_card_id": "BT14-025TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "target_card_id": "BT17-023TH",
+      "target_name_th": "ลิเบอเรเตอร์,ลอว์ฟูลทรัมเป็ตเตอร์",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT14-025TH->BT17-052TH",
+      "edge_rank": 112,
+      "edge": "BT14-025TH->BT17-052TH",
+      "source_card_id": "BT14-025TH",
+      "source_name_th": "ลิเบอเรเตอร์แห่งฟ้าสีคราม,เฮนกิสต์",
+      "target_card_id": "BT17-052TH",
+      "target_name_th": "ลิเบอเรเตอร์,ไบรท์・ไบคอร์น",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->BT10-055TH",
+      "edge_rank": 113,
+      "edge": "BT17-056TH->BT10-055TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT10-055TH",
+      "target_name_th": "อัศวินพินาศหิน,เซควาริเดส",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->BT10-059TH",
+      "edge_rank": 114,
+      "edge": "BT17-056TH->BT10-059TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT10-059TH",
+      "target_name_th": "ลิเบอร์เรเตอร์แห่งความหวัง,เอโพน่า",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->BT10-060TH",
+      "edge_rank": 115,
+      "edge": "BT17-056TH->BT10-060TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT10-060TH",
+      "target_name_th": "โฟลกัล・ลิเบอร์เรเตอร์",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->BT12-057TH",
+      "edge_rank": 116,
+      "edge": "BT17-056TH->BT12-057TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT12-057TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งรุ่งอรุณ,มูรอน",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->BT14-003TH",
+      "edge_rank": 117,
+      "edge": "BT17-056TH->BT14-003TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT14-003TH",
+      "target_name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->BT14-S03TH",
+      "edge_rank": 118,
+      "edge": "BT17-056TH->BT14-S03TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT14-S03TH",
+      "target_name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->BT15-050TH",
+      "edge_rank": 119,
+      "edge": "BT17-056TH->BT15-050TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT15-050TH",
+      "target_name_th": "กูทกัล",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->BT15-052TH",
+      "edge_rank": 120,
+      "edge": "BT17-056TH->BT15-052TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT15-052TH",
+      "target_name_th": "มัสทีกัล",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->BT15-055TH",
+      "edge_rank": 121,
+      "edge": "BT17-056TH->BT15-055TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT15-055TH",
+      "target_name_th": "ลัคกี้ไซน์・แรบบิท",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->BT17-049TH",
+      "edge_rank": 122,
+      "edge": "BT17-056TH->BT17-049TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT17-049TH",
+      "target_name_th": "ลิเบอเรเตอร์,ฟีทเธอร์・ไลอ้อน",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->BT17-050TH",
+      "edge_rank": 123,
+      "edge": "BT17-056TH->BT17-050TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT17-050TH",
+      "target_name_th": "ลิเบอเรเตอร์,โฮลี่・วิซาร์ด",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->BT17-053TH",
+      "edge_rank": 124,
+      "edge": "BT17-056TH->BT17-053TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT17-053TH",
+      "target_name_th": "ลิเบอเรเตอร์,โฮลี่・อโครไลท์",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->BT17-055TH",
+      "edge_rank": 125,
+      "edge": "BT17-056TH->BT17-055TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "BT17-055TH",
+      "target_name_th": "ลิเบอเรเตอร์ดาบเหล็กกล้า,อัลวิล่า",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->TD16-002TH",
+      "edge_rank": 126,
+      "edge": "BT17-056TH->TD16-002TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "TD16-002TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งความศรัทธา,แคดวาล",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->TD16-014TH",
+      "edge_rank": 127,
+      "edge": "BT17-056TH->TD16-014TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "TD16-014TH",
+      "target_name_th": "ลิเบอเรเตอร์ความหวังอันยิ่งใหญ่,เอซัส",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->TD16-015TH",
+      "edge_rank": 128,
+      "edge": "BT17-056TH->TD16-015TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "TD16-015TH",
+      "target_name_th": "ลิเบอเรเตอร์,ลัคกี้・ชาร์มมี่",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->TD16-016TH",
+      "edge_rank": 129,
+      "edge": "BT17-056TH->TD16-016TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "TD16-016TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งความรู้แจ้ง,จูรอน",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "BT17-056TH->TD16-017TH",
+      "edge_rank": 130,
+      "edge": "BT17-056TH->TD16-017TH",
+      "source_card_id": "BT17-056TH",
+      "source_name_th": "เคทกัล・ลิเบอเรเตอร์",
+      "target_card_id": "TD16-017TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งต้นไม้ศักดิ์สิทธิ์,เอลเคียร์",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD16-015TH->BT10-025TH",
+      "edge_rank": 131,
+      "edge": "TD16-015TH->BT10-025TH",
+      "source_card_id": "TD16-015TH",
+      "source_name_th": "ลิเบอเรเตอร์,ลัคกี้・ชาร์มมี่",
+      "target_card_id": "BT10-025TH",
+      "target_name_th": "ลิเบอร์เรเตอร์นักล่าที่รวดเร็ว,โจเซฟ",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD16-015TH->BT10-053TH",
+      "edge_rank": 132,
+      "edge": "TD16-015TH->BT10-053TH",
+      "source_card_id": "TD16-015TH",
+      "source_name_th": "ลิเบอเรเตอร์,ลัคกี้・ชาร์มมี่",
+      "target_card_id": "BT10-053TH",
+      "target_name_th": "มูนกัล",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD16-015TH->BT12-052TH",
+      "edge_rank": 133,
+      "edge": "TD16-015TH->BT12-052TH",
+      "source_card_id": "TD16-015TH",
+      "source_name_th": "ลิเบอเรเตอร์,ลัคกี้・ชาร์มมี่",
+      "target_card_id": "BT12-052TH",
+      "target_name_th": "ลิเบอเรเตอร์ฟ้าหม่น,เกไรท์",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD16-015TH->BT12-054TH",
+      "edge_rank": 134,
+      "edge": "TD16-015TH->BT12-054TH",
+      "source_card_id": "TD16-015TH",
+      "source_name_th": "ลิเบอเรเตอร์,ลัคกี้・ชาร์มมี่",
+      "target_card_id": "BT12-054TH",
+      "target_name_th": "ลิเบอเรเตอร์ฝนเดือนห้า,บรูโน่",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD16-015TH->BT12-055TH",
+      "edge_rank": 135,
+      "edge": "TD16-015TH->BT12-055TH",
+      "source_card_id": "TD16-015TH",
+      "source_name_th": "ลิเบอเรเตอร์,ลัคกี้・ชาร์มมี่",
+      "target_card_id": "BT12-055TH",
+      "target_name_th": "ซันไรซ์・ยูนิคอร์น",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD16-015TH->BT14-026TH",
+      "edge_rank": 136,
+      "edge": "TD16-015TH->BT14-026TH",
+      "source_card_id": "TD16-015TH",
+      "source_name_th": "ลิเบอเรเตอร์,ลัคกี้・ชาร์มมี่",
+      "target_card_id": "BT14-026TH",
+      "target_name_th": "อัศวินเกล็ดอัคคี,เอลิวู้ด",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD16-015TH->BT14-058TH",
+      "edge_rank": 137,
+      "edge": "TD16-015TH->BT14-058TH",
+      "source_card_id": "TD16-015TH",
+      "source_name_th": "ลิเบอเรเตอร์,ลัคกี้・ชาร์มมี่",
+      "target_card_id": "BT14-058TH",
+      "target_name_th": "อัศวินขวานสีคราม,ทาลิเอชิน",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD16-015TH->BT15-025TH",
+      "edge_rank": 138,
+      "edge": "TD16-015TH->BT15-025TH",
+      "source_card_id": "TD16-015TH",
+      "source_name_th": "ลิเบอเรเตอร์,ลัคกี้・ชาร์มมี่",
+      "target_card_id": "BT15-025TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งรุ้งสีแดง,เบริน",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD16-015TH->BT15-026TH",
+      "edge_rank": 139,
+      "edge": "TD16-015TH->BT15-026TH",
+      "source_card_id": "TD16-015TH",
+      "source_name_th": "ลิเบอเรเตอร์,ลัคกี้・ชาร์มมี่",
+      "target_card_id": "BT15-026TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งรุ้งสีขาว,เบรัน",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD16-015TH->BT17-023TH",
+      "edge_rank": 140,
+      "edge": "TD16-015TH->BT17-023TH",
+      "source_card_id": "TD16-015TH",
+      "source_name_th": "ลิเบอเรเตอร์,ลัคกี้・ชาร์มมี่",
+      "target_card_id": "BT17-023TH",
+      "target_name_th": "ลิเบอเรเตอร์,ลอว์ฟูลทรัมเป็ตเตอร์",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD16-015TH->BT17-052TH",
+      "edge_rank": 141,
+      "edge": "TD16-015TH->BT17-052TH",
+      "source_card_id": "TD16-015TH",
+      "source_name_th": "ลิเบอเรเตอร์,ลัคกี้・ชาร์มมี่",
+      "target_card_id": "BT17-052TH",
+      "target_name_th": "ลิเบอเรเตอร์,ไบรท์・ไบคอร์น",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "TD16-015TH->TD16-006TH",
+      "edge_rank": 142,
+      "edge": "TD16-015TH->TD16-006TH",
+      "source_card_id": "TD16-015TH",
+      "source_name_th": "ลิเบอเรเตอร์,ลัคกี้・ชาร์มมี่",
+      "target_card_id": "TD16-006TH",
+      "target_name_th": "ลิเบอเรเตอร์แห่งคำสาบาน,อาโกรเวล",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "fifth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m52_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m52_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m52_03_advisory_recipe_draft"
+    }
+  ],
+  "next_target": {
+    "milestone": "M52-03",
+    "task": "Fifth-slice recipe draft model",
+    "blocked_until": [
+      "M52-02 review packet is available",
+      "human/team can inspect fixture scaffold, candidate edges, and manual-review cards"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "ability_schema_v1",
+  "abilities": [
+    {
+      "ability_id": "sample_bt01_001_auto_01",
+      "card_id": "BT01-001TH",
+      "label": "Sample AUTO draw",
+      "kind": "auto",
+      "trigger": {
+        "type": "on_timing",
+        "timing_window": "OnMoveCard",
+        "event_type": "called_or_placed",
+        "source_zone": "RearGuard",
+        "condition": "When this unit is placed on RC."
+      },
+      "timing": {
+        "phase": "Main",
+        "window": "OnMoveCard",
+        "optional": true
+      },
+      "costs": [
+        {
+          "type": "counter_blast",
+          "amount": 1
+        },
+        {
+          "type": "once_per_turn",
+          "amount": 1,
+          "key": "sample_bt01_001_auto_01"
+        }
+      ],
+      "targets": [
+        {
+          "id": "self_unit",
+          "type": "self",
+          "owner": "self",
+          "zone": "RearGuard",
+          "count": 1,
+          "filters": [],
+          "optional": false
+        }
+      ],
+      "effects": [
+        {
+          "type": "draw",
+          "amount": 1,
+          "target_ref": "self_player"
+        }
+      ],
+      "duration": {
+        "type": "instant",
+        "cleanup_timing": "none"
+      },
+      "manual_fallback": true,
+      "notes": "Sample only; not a real card transcription."
+    }
+  ]
+}

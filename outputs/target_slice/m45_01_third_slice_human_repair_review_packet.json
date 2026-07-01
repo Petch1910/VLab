@@ -1,0 +1,3982 @@
+{
+  "version": "M45-01",
+  "description": "Third-slice human repair review packet",
+  "selected_target": {
+    "slice": "Third Offline Slice",
+    "era_preset": "link_joker_legion_mate",
+    "group": "เบอร์มิวด้า ไทรแองเกิล",
+    "group_field": "clan",
+    "rank": 1,
+    "priority_score": 95.0,
+    "best_era_candidates": 2179,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "m44_closeout": "outputs\\target_slice\\m44_closeout_third_slice_runtime_readiness.json",
+    "m44_repair_candidates": "outputs\\target_slice\\m44_06_third_slice_blocker_repair_candidates.json",
+    "m44_recipe_drafts": "outputs\\target_slice\\m44_03_third_slice_recipe_draft_model.json"
+  },
+  "scope": {
+    "offline_human_review_packet": true,
+    "records_human_acceptance": false,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false
+  },
+  "review_policy": {
+    "human_decision_required": true,
+    "packet_is_not_acceptance": true,
+    "runtime_promotion_allowed": false,
+    "m45_02_must_record_explicit_acceptance": true,
+    "m45_03_must_rerun_validation": true
+  },
+  "summary": {
+    "review_item_count": 25,
+    "ready_for_human_repair_review_count": 25,
+    "complete_manual_repair_count": 25,
+    "complete_grade_profile_candidate_count": 25,
+    "manual_overlap_recipe_count": 25,
+    "runtime_promotion_allowed": false,
+    "human_repair_review_allowed": true,
+    "decision_option_count": 3,
+    "ready_for_m45_02": true
+  },
+  "review_items": [
+    {
+      "review_item_id": "m45_01_m44_recipe_001_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_001",
+      "source_candidate_edge": "EB10-007TH-B->EB06-023TH",
+      "source_edge_rank": 1,
+      "pair": {
+        "source_card_id": "EB10-007TH-B",
+        "source_name_th": "Duo วันแห่งคำสัญญา,โคลิม่า",
+        "target_card_id": "EB06-023TH",
+        "target_name_th": "PR♥ISM-Promise,เลเต้",
+        "net_score": 10,
+        "resource_verdict": "target_resource_need_not_supported_by_source",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "zone_support"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_001_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_001_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-011TH",
+          "name_th": "PR♥ISM-Romance,ลูมิเอล",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 3,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-012TH",
+          "name_th": "สวีทฮาร์โมนี่,โมน่า",
+          "quantity": 2,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 5,
+      "grade_removed_card_count": 5,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_002_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_002",
+      "source_candidate_edge": "EB10-007TH-B->EB06-S06TH",
+      "source_edge_rank": 2,
+      "pair": {
+        "source_card_id": "EB10-007TH-B",
+        "source_name_th": "Duo วันแห่งคำสัญญา,โคลิม่า",
+        "target_card_id": "EB06-S06TH",
+        "target_name_th": "PR♥ISM-Promise, เลเต้",
+        "net_score": 10,
+        "resource_verdict": "target_resource_need_not_supported_by_source",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "zone_support"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_002_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_002_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-011TH",
+          "name_th": "PR♥ISM-Romance,ลูมิเอล",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 3,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-012TH",
+          "name_th": "สวีทฮาร์โมนี่,โมน่า",
+          "quantity": 2,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 5,
+      "grade_removed_card_count": 5,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_003_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_003",
+      "source_candidate_edge": "EB10-007TH-W->EB06-023TH",
+      "source_edge_rank": 3,
+      "pair": {
+        "source_card_id": "EB10-007TH-W",
+        "source_name_th": "Duo วันแห่งคำสัญญา,โคลิม่า",
+        "target_card_id": "EB06-023TH",
+        "target_name_th": "PR♥ISM-Promise,เลเต้",
+        "net_score": 10,
+        "resource_verdict": "target_resource_need_not_supported_by_source",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "zone_support"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_003_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_003_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-011TH",
+          "name_th": "PR♥ISM-Romance,ลูมิเอล",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 3,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-012TH",
+          "name_th": "สวีทฮาร์โมนี่,โมน่า",
+          "quantity": 2,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 5,
+      "grade_removed_card_count": 5,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_004_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_004",
+      "source_candidate_edge": "EB10-007TH-W->EB06-S06TH",
+      "source_edge_rank": 4,
+      "pair": {
+        "source_card_id": "EB10-007TH-W",
+        "source_name_th": "Duo วันแห่งคำสัญญา,โคลิม่า",
+        "target_card_id": "EB06-S06TH",
+        "target_name_th": "PR♥ISM-Promise, เลเต้",
+        "net_score": 10,
+        "resource_verdict": "target_resource_need_not_supported_by_source",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "zone_support"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_004_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_004_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-011TH",
+          "name_th": "PR♥ISM-Romance,ลูมิเอล",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 3,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-012TH",
+          "name_th": "สวีทฮาร์โมนี่,โมน่า",
+          "quantity": 2,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 5,
+      "grade_removed_card_count": 5,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_005_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_005",
+      "source_candidate_edge": "EB10-S07TH-B->EB06-023TH",
+      "source_edge_rank": 5,
+      "pair": {
+        "source_card_id": "EB10-S07TH-B",
+        "source_name_th": "Duo วันแห่งคำสัญญา,โคลิม่า",
+        "target_card_id": "EB06-023TH",
+        "target_name_th": "PR♥ISM-Promise,เลเต้",
+        "net_score": 10,
+        "resource_verdict": "target_resource_need_not_supported_by_source",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "zone_support"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_005_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_005_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-011TH",
+          "name_th": "PR♥ISM-Romance,ลูมิเอล",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 3,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-012TH",
+          "name_th": "สวีทฮาร์โมนี่,โมน่า",
+          "quantity": 2,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 5,
+      "grade_removed_card_count": 5,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_006_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_006",
+      "source_candidate_edge": "EB10-S07TH-B->EB06-S06TH",
+      "source_edge_rank": 6,
+      "pair": {
+        "source_card_id": "EB10-S07TH-B",
+        "source_name_th": "Duo วันแห่งคำสัญญา,โคลิม่า",
+        "target_card_id": "EB06-S06TH",
+        "target_name_th": "PR♥ISM-Promise, เลเต้",
+        "net_score": 10,
+        "resource_verdict": "target_resource_need_not_supported_by_source",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "zone_support"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_006_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_006_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-011TH",
+          "name_th": "PR♥ISM-Romance,ลูมิเอล",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 3,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-012TH",
+          "name_th": "สวีทฮาร์โมนี่,โมน่า",
+          "quantity": 2,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 5,
+      "grade_removed_card_count": 5,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_007_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_007",
+      "source_candidate_edge": "EB10-S07TH-W->EB06-023TH",
+      "source_edge_rank": 7,
+      "pair": {
+        "source_card_id": "EB10-S07TH-W",
+        "source_name_th": "Duo วันแห่งคำสัญญา,โคลิม่า",
+        "target_card_id": "EB06-023TH",
+        "target_name_th": "PR♥ISM-Promise,เลเต้",
+        "net_score": 10,
+        "resource_verdict": "target_resource_need_not_supported_by_source",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "zone_support"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_007_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_007_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-011TH",
+          "name_th": "PR♥ISM-Romance,ลูมิเอล",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 3,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-012TH",
+          "name_th": "สวีทฮาร์โมนี่,โมน่า",
+          "quantity": 2,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 5,
+      "grade_removed_card_count": 5,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_008_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_008",
+      "source_candidate_edge": "EB10-S07TH-W->EB06-S06TH",
+      "source_edge_rank": 8,
+      "pair": {
+        "source_card_id": "EB10-S07TH-W",
+        "source_name_th": "Duo วันแห่งคำสัญญา,โคลิม่า",
+        "target_card_id": "EB06-S06TH",
+        "target_name_th": "PR♥ISM-Promise, เลเต้",
+        "net_score": 10,
+        "resource_verdict": "target_resource_need_not_supported_by_source",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "zone_support"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_008_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_008_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-011TH",
+          "name_th": "PR♥ISM-Romance,ลูมิเอล",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 3,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-012TH",
+          "name_th": "สวีทฮาร์โมนี่,โมน่า",
+          "quantity": 2,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 5,
+      "grade_removed_card_count": 5,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_009_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_009",
+      "source_candidate_edge": "EB10-026TH-B->EB06-020TH",
+      "source_edge_rank": 9,
+      "pair": {
+        "source_card_id": "EB10-026TH-B",
+        "source_name_th": "Duo ร่มใสกันแดด,คูร่า",
+        "target_card_id": "EB06-020TH",
+        "target_name_th": "PR♥ISM-Smile,สโคเทียร์",
+        "net_score": 9,
+        "resource_verdict": "resource_support",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "source_zone_profile_only"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_009_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_009_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-005TH",
+          "name_th": "PR♥ISM-Promise,เคลท์",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 3,
+      "grade_removed_card_count": 3,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_010_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_010",
+      "source_candidate_edge": "EB10-026TH-B->EB10-012TH-B",
+      "source_edge_rank": 10,
+      "pair": {
+        "source_card_id": "EB10-026TH-B",
+        "source_name_th": "Duo ร่มใสกันแดด,คูร่า",
+        "target_card_id": "EB10-012TH-B",
+        "target_name_th": "Duo เมจิคคัลไมค์,ชาลเวน",
+        "net_score": 9,
+        "resource_verdict": "resource_support",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "source_zone_profile_only"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_010_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_010_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-005TH",
+          "name_th": "PR♥ISM-Promise,เคลท์",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 3,
+      "grade_removed_card_count": 3,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_011_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_011",
+      "source_candidate_edge": "EB10-026TH-B->EB10-012TH-W",
+      "source_edge_rank": 11,
+      "pair": {
+        "source_card_id": "EB10-026TH-B",
+        "source_name_th": "Duo ร่มใสกันแดด,คูร่า",
+        "target_card_id": "EB10-012TH-W",
+        "target_name_th": "Duo เมจิคคัลไมค์,ชาลเวน",
+        "net_score": 9,
+        "resource_verdict": "resource_support",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "source_zone_profile_only"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_011_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_011_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-005TH",
+          "name_th": "PR♥ISM-Promise,เคลท์",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 3,
+      "grade_removed_card_count": 3,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_012_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_012",
+      "source_candidate_edge": "EB10-026TH-W->EB06-020TH",
+      "source_edge_rank": 12,
+      "pair": {
+        "source_card_id": "EB10-026TH-W",
+        "source_name_th": "Duo ร่มใสกันแดด,คูร่า",
+        "target_card_id": "EB06-020TH",
+        "target_name_th": "PR♥ISM-Smile,สโคเทียร์",
+        "net_score": 9,
+        "resource_verdict": "resource_support",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "source_zone_profile_only"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_012_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_012_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-005TH",
+          "name_th": "PR♥ISM-Promise,เคลท์",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 3,
+      "grade_removed_card_count": 3,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_013_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_013",
+      "source_candidate_edge": "EB10-026TH-W->EB10-012TH-B",
+      "source_edge_rank": 13,
+      "pair": {
+        "source_card_id": "EB10-026TH-W",
+        "source_name_th": "Duo ร่มใสกันแดด,คูร่า",
+        "target_card_id": "EB10-012TH-B",
+        "target_name_th": "Duo เมจิคคัลไมค์,ชาลเวน",
+        "net_score": 9,
+        "resource_verdict": "resource_support",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "source_zone_profile_only"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_013_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_013_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-005TH",
+          "name_th": "PR♥ISM-Promise,เคลท์",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 3,
+      "grade_removed_card_count": 3,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_014_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_014",
+      "source_candidate_edge": "EB10-026TH-W->EB10-012TH-W",
+      "source_edge_rank": 14,
+      "pair": {
+        "source_card_id": "EB10-026TH-W",
+        "source_name_th": "Duo ร่มใสกันแดด,คูร่า",
+        "target_card_id": "EB10-012TH-W",
+        "target_name_th": "Duo เมจิคคัลไมค์,ชาลเวน",
+        "net_score": 9,
+        "resource_verdict": "resource_support",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "source_zone_profile_only"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_014_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_014_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-005TH",
+          "name_th": "PR♥ISM-Promise,เคลท์",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 3,
+      "grade_removed_card_count": 3,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_015_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_015",
+      "source_candidate_edge": "EB06-017TH->EB10-012TH-B",
+      "source_edge_rank": 15,
+      "pair": {
+        "source_card_id": "EB06-017TH",
+        "source_name_th": "PR♥ISM-Romance,เอตัวล์",
+        "target_card_id": "EB10-012TH-B",
+        "target_name_th": "Duo เมจิคคัลไมค์,ชาลเวน",
+        "net_score": 8,
+        "resource_verdict": "target_resource_need_not_supported_by_source",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "not_zone_relevant"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_015_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_015_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-021TH",
+          "name_th": "เมอร์เมดไอดอล,เซดน่า",
+          "quantity": 3,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-005TH",
+          "name_th": "PR♥ISM-Promise,เคลท์",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-001TH",
+          "name_th": "อีเทอนอลไอดอล,พาซิฟิก้า",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 4,
+      "grade_removed_card_count": 4,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_016_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_016",
+      "source_candidate_edge": "EB06-017TH->EB10-012TH-W",
+      "source_edge_rank": 16,
+      "pair": {
+        "source_card_id": "EB06-017TH",
+        "source_name_th": "PR♥ISM-Romance,เอตัวล์",
+        "target_card_id": "EB10-012TH-W",
+        "target_name_th": "Duo เมจิคคัลไมค์,ชาลเวน",
+        "net_score": 8,
+        "resource_verdict": "target_resource_need_not_supported_by_source",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "not_zone_relevant"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_016_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_016_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-021TH",
+          "name_th": "เมอร์เมดไอดอล,เซดน่า",
+          "quantity": 3,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-005TH",
+          "name_th": "PR♥ISM-Promise,เคลท์",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-001TH",
+          "name_th": "อีเทอนอลไอดอล,พาซิฟิก้า",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 4,
+      "grade_removed_card_count": 4,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_017_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_017",
+      "source_candidate_edge": "EB06-022TH->EB10-012TH-B",
+      "source_edge_rank": 17,
+      "pair": {
+        "source_card_id": "EB06-022TH",
+        "source_name_th": "เฟรชสตาร์,คอรัล",
+        "target_card_id": "EB10-012TH-B",
+        "target_name_th": "Duo เมจิคคัลไมค์,ชาลเวน",
+        "net_score": 8,
+        "resource_verdict": "target_resource_need_not_supported_by_source",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "source_zone_profile_only"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_017_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-014TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_017_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-005TH",
+          "name_th": "PR♥ISM-Promise,เคลท์",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 3,
+      "grade_removed_card_count": 3,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_018_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_018",
+      "source_candidate_edge": "EB06-022TH->EB10-012TH-W",
+      "source_edge_rank": 18,
+      "pair": {
+        "source_card_id": "EB06-022TH",
+        "source_name_th": "เฟรชสตาร์,คอรัล",
+        "target_card_id": "EB10-012TH-W",
+        "target_name_th": "Duo เมจิคคัลไมค์,ชาลเวน",
+        "net_score": 8,
+        "resource_verdict": "target_resource_need_not_supported_by_source",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "source_zone_profile_only"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_018_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-014TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_018_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-005TH",
+          "name_th": "PR♥ISM-Promise,เคลท์",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 3,
+      "grade_removed_card_count": 3,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_019_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_019",
+      "source_candidate_edge": "EB06-023TH->EB10-012TH-B",
+      "source_edge_rank": 19,
+      "pair": {
+        "source_card_id": "EB06-023TH",
+        "source_name_th": "PR♥ISM-Promise,เลเต้",
+        "target_card_id": "EB10-012TH-B",
+        "target_name_th": "Duo เมจิคคัลไมค์,ชาลเวน",
+        "net_score": 8,
+        "resource_verdict": "target_resource_need_not_supported_by_source",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "source_zone_profile_only"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_019_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_019_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-005TH",
+          "name_th": "PR♥ISM-Promise,เคลท์",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 3,
+      "grade_removed_card_count": 3,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_020_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_020",
+      "source_candidate_edge": "EB06-023TH->EB10-012TH-W",
+      "source_edge_rank": 20,
+      "pair": {
+        "source_card_id": "EB06-023TH",
+        "source_name_th": "PR♥ISM-Promise,เลเต้",
+        "target_card_id": "EB10-012TH-W",
+        "target_name_th": "Duo เมจิคคัลไมค์,ชาลเวน",
+        "net_score": 8,
+        "resource_verdict": "target_resource_need_not_supported_by_source",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "source_zone_profile_only"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_020_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_020_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-005TH",
+          "name_th": "PR♥ISM-Promise,เคลท์",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 3,
+      "grade_removed_card_count": 3,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_021_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_021",
+      "source_candidate_edge": "EB06-S06TH->EB10-012TH-B",
+      "source_edge_rank": 21,
+      "pair": {
+        "source_card_id": "EB06-S06TH",
+        "source_name_th": "PR♥ISM-Promise, เลเต้",
+        "target_card_id": "EB10-012TH-B",
+        "target_name_th": "Duo เมจิคคัลไมค์,ชาลเวน",
+        "net_score": 8,
+        "resource_verdict": "target_resource_need_not_supported_by_source",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "source_zone_profile_only"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_021_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_021_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-005TH",
+          "name_th": "PR♥ISM-Promise,เคลท์",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 3,
+      "grade_removed_card_count": 3,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_022_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_022",
+      "source_candidate_edge": "EB06-S06TH->EB10-012TH-W",
+      "source_edge_rank": 22,
+      "pair": {
+        "source_card_id": "EB06-S06TH",
+        "source_name_th": "PR♥ISM-Promise, เลเต้",
+        "target_card_id": "EB10-012TH-W",
+        "target_name_th": "Duo เมจิคคัลไมค์,ชาลเวน",
+        "net_score": 8,
+        "resource_verdict": "target_resource_need_not_supported_by_source",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "source_zone_profile_only"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_022_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_022_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-005TH",
+          "name_th": "PR♥ISM-Promise,เคลท์",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 3,
+      "grade_removed_card_count": 3,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_023_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_023",
+      "source_candidate_edge": "EB10-007TH-B->EB06-008TH",
+      "source_edge_rank": 23,
+      "pair": {
+        "source_card_id": "EB10-007TH-B",
+        "source_name_th": "Duo วันแห่งคำสัญญา,โคลิม่า",
+        "target_card_id": "EB06-008TH",
+        "target_name_th": "ไชนิ่งซิงเกอร์,อิโอเนีย",
+        "net_score": 8,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "zone_support"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_023_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_023_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-011TH",
+          "name_th": "PR♥ISM-Romance,ลูมิเอล",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-001TH",
+          "name_th": "อีเทอนอลไอดอล,พาซิฟิก้า",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 3,
+      "grade_removed_card_count": 3,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_024_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_024",
+      "source_candidate_edge": "EB10-007TH-B->EB06-011TH",
+      "source_edge_rank": 24,
+      "pair": {
+        "source_card_id": "EB10-007TH-B",
+        "source_name_th": "Duo วันแห่งคำสัญญา,โคลิม่า",
+        "target_card_id": "EB06-011TH",
+        "target_name_th": "PR♥ISM-Romance,ลูมิเอล",
+        "net_score": 8,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "zone_support"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_024_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-018TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_024_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-005TH",
+          "name_th": "PR♥ISM-Promise,เคลท์",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 3,
+      "grade_removed_card_count": 3,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    },
+    {
+      "review_item_id": "m45_01_m44_recipe_025_repair_review",
+      "item_type": "third_slice_repair_review",
+      "recipe_id": "m44_recipe_025",
+      "source_candidate_edge": "EB10-007TH-B->EB06-013TH",
+      "source_edge_rank": 25,
+      "pair": {
+        "source_card_id": "EB10-007TH-B",
+        "source_name_th": "Duo วันแห่งคำสัญญา,โคลิม่า",
+        "target_card_id": "EB06-013TH",
+        "target_name_th": "PR♥ISM-Romance,เมอร์เคียว",
+        "net_score": 8,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "zone_support"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "manual_review_card_ids": [
+        "EB06-001TH",
+        "EB06-002TH",
+        "EB06-005TH",
+        "EB06-006TH",
+        "EB06-010TH",
+        "EB06-012TH"
+      ],
+      "manual_repair_package_id": "m44_recipe_025_manual_overlap_pkg_001",
+      "manual_repair_complete": true,
+      "manual_substitutions": [
+        {
+          "remove_card_id": "EB06-001TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-003TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-002TH",
+          "remove_quantity": 4,
+          "replacement_card_id": "EB06-S01TH",
+          "replacement_quantity": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-005TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-011TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-006TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-021TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-010TH",
+          "remove_quantity": 2,
+          "replacement_card_id": "EB06-S05TH",
+          "replacement_quantity": 2,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        },
+        {
+          "remove_card_id": "EB06-012TH",
+          "remove_quantity": 3,
+          "replacement_card_id": "EB06-022TH",
+          "replacement_quantity": 3,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "has_selected_replacement": true
+        }
+      ],
+      "grade_profile_package_id": "m44_recipe_025_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-011TH",
+          "name_th": "PR♥ISM-Romance,ลูมิเอล",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 1,
+          "grade": "3",
+          "series_code": "EB06",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "EB06-006TH",
+          "name_th": "PR♥ISM-Image,เคลียร์",
+          "quantity": 3,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-012TH",
+          "name_th": "สวีทฮาร์โมนี่,โมน่า",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 4,
+      "grade_removed_card_count": 4,
+      "grade_repair_complete": true,
+      "manual_overlap_cleared_by_grade_package": false,
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_combined_manual_and_grade_repair_for_validation_rerun",
+          "label": "Accept combined manual and grade repair for validation rerun",
+          "effect": "Allows M45-02 to record explicit acceptance and M45-03 to rerun validation; does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair",
+          "label": "Request different repair",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "recommended_reviewer_action": "review_combined_manual_and_grade_packages_before_m45_02_acceptance"
+    }
+  ],
+  "next_target": {
+    "milestone": "M45-02",
+    "task": "Third-slice human-accepted repair artifact"
+  }
+}

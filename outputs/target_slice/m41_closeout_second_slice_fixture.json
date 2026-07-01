@@ -1,0 +1,78 @@
+{
+  "version": "M41-closeout",
+  "description": "Second-slice fixture closeout and next queue selection",
+  "source_inputs": {
+    "second_slice_runtime_fixture_promotion_gate": "outputs\\target_slice\\m41_04_second_slice_runtime_fixture_promotion_gate.json"
+  },
+  "scope": {
+    "closeout_report": true,
+    "changes_fixture_artifact": false,
+    "mutates_runtime_deck_library": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_integration": false,
+    "automatic_playbook_promotion": false,
+    "GameState_mutation": false
+  },
+  "key_results": {
+    "recipe_id": "m40_recipe_001",
+    "m41_complete": true,
+    "second_runtime_fixture_available": true,
+    "fixture_path": "outputs/target_slice/runtime_fixtures/m40_recipe_001_classic_core_oracle_think_tank_m41_04.json",
+    "fixture_scope": "offline_runtime_test_fixture",
+    "promotion_allowed": true,
+    "gate_passed_check_count": 6,
+    "gate_failed_check_count": 0,
+    "runtime_deck_library_mutated": false,
+    "saved_deck_injected": false,
+    "ui_deck_list_published": false,
+    "bot_playbook_enabled": false
+  },
+  "decision": {
+    "second_recipe_enters_fixture_scope": true,
+    "second_recipe_remains_advisory_only": false,
+    "live_runtime_deck_enabled": false,
+    "saved_deck_enabled": false,
+    "ui_deck_list_enabled": false,
+    "bot_playbook_enabled": false,
+    "needs_user_team_review_before_live_deck_ui": true,
+    "decision_notes": [
+      "The second-slice Oracle Think Tank recipe can be used as an offline runtime/test fixture.",
+      "The fixture is not a saved player deck and is not automatically visible in UI.",
+      "Bot/playbook runtime use still needs a separate gate."
+    ]
+  },
+  "next_queue": {
+    "id": "M42",
+    "title": "Second Fixture Consumption and Third-Slice Scale Gate",
+    "goal": "Validate how the Oracle Think Tank fixture can be consumed safely, then decide whether to scale recipe work to another clan slice.",
+    "tasks": [
+      {
+        "id": "M42-01",
+        "title": "Second fixture schema validator",
+        "goal": "Validate the Oracle Think Tank runtime fixture independently from the M41 generator."
+      },
+      {
+        "id": "M42-02",
+        "title": "Second fixture deck text exporter",
+        "goal": "Export the Oracle Think Tank fixture as reviewable count-line deck text without adding it to saved decks."
+      },
+      {
+        "id": "M42-03",
+        "title": "Second fixture headless load smoke",
+        "goal": "Load the Oracle Think Tank fixture through offline/headless paths without UI or bot mutation."
+      },
+      {
+        "id": "M42-04",
+        "title": "Multi-fixture scale decision",
+        "goal": "Review Nova Grappler and Oracle Think Tank fixture evidence before selecting any third slice."
+      }
+    ]
+  },
+  "summary": {
+    "m41_complete": true,
+    "second_runtime_fixture_available": true,
+    "next_queue_id": "M42",
+    "ready_for_next_queue": true
+  }
+}

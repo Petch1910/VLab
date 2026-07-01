@@ -1,0 +1,48 @@
+# Vanguard Thai Sim Deck List
+# M50-02 review-only export from an offline runtime fixture.
+# FixtureId: runtime_fixture_m48_recipe_001_g_series_first_royal_paladin_m49_05
+# RecipeId: m48_recipe_001
+# Slice: Fourth Offline Slice
+# Group: รอยัล พาลาดิน
+# GZoneBoundary: main_deck_only_for_current_windows_fixture
+# Scope: review_only_offline_fixture
+Name: G Series Royal Paladin Fixture (m48_recipe_001)
+Format: g_series_first
+PackId: vanguard_th
+PackVersion: 251
+PackDefinitionHash: e1d568ec103786c3a9a782e6a011e6307f612be28ba6e6b677c281f367cdd7c4
+
+[Main]
+# Card: ไนท์・ออฟ・แฟรกเมนต์ | G2 | Normal Unit | G-BT01
+4 G-BT01-010TH
+# Card: โฮลี่ไนท์・การ์เดี้ยน | G1 | Normal Unit | G-BT01
+3 G-BT01-011TH
+# Card: สตาร์ไลท์・ไวโอลินนิสต์ | G2 | Normal Unit | G-BT01
+3 G-BT01-023TH
+# Card: ซีกเกอร์, พราวด์รอร์・ไลออน | G2 | Normal Unit | G-BT01
+4 G-BT01-045TH
+# Card: กิกันเทค・ช็อต พัตเตอร์ | G1 | Normal Unit | G-BT01
+4 G-BT01-046TH
+# Card: ไนท์・ออฟ・ชีลด์ แบช | G1 | Normal Unit | G-BT01
+4 G-BT01-047TH
+# Card: บราโวกัล・ซีกเกอร์ | G1 | Normal Unit | G-BT01
+3 G-BT01-048TH
+# Card: ไนท์・ออฟ・ดรอว์นซอร์ด | G0 | Normal Unit | G-BT01
+1 G-BT01-049TH
+# Card: ไนท์・ออฟ・แฟลช | G0 | Trigger Unit | Critical | G-BT01
+4 G-BT01-050TH
+# Card: เอนเคอเรจ・แองเจิล | G0 | Trigger Unit | Stand | G-BT01
+4 G-BT01-051TH
+# Card: เรเมดี้・แองเจิล | G0 | Trigger Unit | Heal | G-BT14
+4 G-BT14-016TH
+# Card: พ่อค้าอาวุธ, บรูทู | G0 | Trigger Unit | Draw | G-CHB01
+4 G-CHB01-050TH
+# Card: อัศวินมือขวาแห่งราชา, กัลฮาร์ | G3 | Normal Unit | G-CMB01
+4 G-CMB01-003TH
+# Card: นักปราชญ์ผู้ลึกซึ้ง,คุนรอน | G3 | Normal Unit | G-TD02
+4 G-TD02-004TH
+
+[Ride]
+
+[G]
+# Empty: G Zone and Stride runtime are disabled for this fixture.

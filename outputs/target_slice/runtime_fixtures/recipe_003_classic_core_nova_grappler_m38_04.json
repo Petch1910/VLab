@@ -1,0 +1,130 @@
+{
+  "schema_version": "deck_recipe_runtime_fixture_v1",
+  "fixture_id": "runtime_fixture_recipe_003_classic_core_nova_grappler_m38_04",
+  "fixture_scope": "offline_runtime_test_fixture",
+  "recipe_id": "recipe_003",
+  "source_artifact": "outputs/target_slice/m38_03_human_accepted_recipe_artifact.json",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "format_policy": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan"
+  },
+  "main_deck": [
+    {
+      "card_id": "BT01-029TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT01-060TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT01-063TH",
+      "quantity": 1
+    },
+    {
+      "card_id": "BT01-065TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT02-018TH",
+      "quantity": 3
+    },
+    {
+      "card_id": "BT02-073TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT04-077TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT04-078TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "EB04-004TH",
+      "quantity": 3
+    },
+    {
+      "card_id": "EB04-010TH",
+      "quantity": 1
+    },
+    {
+      "card_id": "EB04-011TH",
+      "quantity": 1
+    },
+    {
+      "card_id": "EB04-016TH",
+      "quantity": 3
+    },
+    {
+      "card_id": "EB04-022TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "TD03-002TH",
+      "quantity": 2
+    },
+    {
+      "card_id": "TD03-003TH",
+      "quantity": 2
+    },
+    {
+      "card_id": "TD03-007TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "TD03-008TH",
+      "quantity": 2
+    }
+  ],
+  "count_summary": {
+    "main_deck_count": 50,
+    "trigger_count": 16,
+    "trigger_counts": {
+      "Critical": 4,
+      "Draw": 4,
+      "Heal": 4,
+      "Stand": 4
+    },
+    "grade_counts": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "clan_counts": {
+      "โนว่า เกรปเปอร์": 50
+    }
+  },
+  "source_packages": {
+    "grade_package_id": "m38_02_grade_pkg_001",
+    "trigger_package_id": "m37_01_pkg_001"
+  },
+  "runtime_boundaries": {
+    "test_fixture_only": true,
+    "auto_injected_into_player_decks": false,
+    "bot_playbook_enabled": false,
+    "ui_deck_library_mutated": false,
+    "game_state_mutated": false
+  }
+}

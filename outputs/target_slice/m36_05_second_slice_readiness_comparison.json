@@ -1,0 +1,88 @@
+{
+  "version": "M36-05",
+  "description": "Second-slice readiness comparison before broader scale-out",
+  "source_inputs": {
+    "m35_closeout": "outputs\\target_slice\\m35_closeout_hybrid_vertical_slice.json",
+    "second_slice_fixture_readiness": "outputs\\target_slice\\m35_e2_second_slice_fixture_readiness.json",
+    "second_slice_probe": "outputs\\target_slice\\m35_e3_generalized_semantic_compatibility_probe.json",
+    "first_slice_recipe_validation": "outputs\\target_slice\\m36_03_deck_recipe_validation_report.json",
+    "first_slice_combo_recipe_consistency": "outputs\\target_slice\\m36_04_combo_recipe_consistency_report.json"
+  },
+  "scope": {
+    "offline_readiness_comparison": true,
+    "starts_second_slice_recipe_pipeline": false,
+    "runtime_deck": false,
+    "bot_integration": false,
+    "automatic_deck_injection": false
+  },
+  "first_slice_status": {
+    "selected_target": {
+      "slice": "Classic Core",
+      "era_preset": "classic_part1",
+      "group": "โนว่า เกรปเปอร์",
+      "group_field": "clan",
+      "rank": 5,
+      "priority_score": 73.34,
+      "best_era_candidates": 1326,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    "clean_candidate_edges": 604,
+    "candidate_packages": 25,
+    "deck_skeletons": 25,
+    "reviewed_playbook_seed_entries": 1,
+    "rejected_playbook_lines": 24,
+    "runtime_ready_recipe_count": 0,
+    "promotion_allowed_count": 0,
+    "blocked_by_review_count": 24,
+    "slot_gap_recipe_count": 16
+  },
+  "second_slice_status": {
+    "selected_target": {
+      "slice": "Classic Core",
+      "era_preset": "classic_part1",
+      "group": "โอราเคิล ทิงค์ แทงค์",
+      "group_field": "clan",
+      "rank": 10,
+      "priority_score": 63.74,
+      "best_era_candidates": 875,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool"
+      ]
+    },
+    "fixture_expectations_met": true,
+    "classic_core_policy_reusable": true,
+    "semantic_probe_ready": true,
+    "probe_card_count": 103,
+    "probe_edge_count": 2660,
+    "probe_candidate_edges": 259,
+    "manual_review_count": 7,
+    "runtime_or_bot_promotion_allowed": false
+  },
+  "comparison": {
+    "second_candidate_edge_ratio_vs_first": 0.429,
+    "second_manual_review_delta_vs_first": 1,
+    "first_slice_has_runtime_ready_recipe": false,
+    "first_slice_has_promotable_combo_line": false,
+    "recommendation": "second_slice_semantic_ready_but_hold_recipe_drafting_until_first_slice_review_blockers_clear"
+  },
+  "readiness": {
+    "second_slice_ready_for_future_recipe_pipeline": true,
+    "broader_scaleout_runtime_allowed": false,
+    "ready_for_m36_closeout": true
+  },
+  "next_target": {
+    "milestone": "M36-closeout",
+    "task": "Deck recipe validation closeout"
+  }
+}

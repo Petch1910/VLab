@@ -1,0 +1,78 @@
+{
+  "version": "M53-closeout",
+  "description": "Fifth-slice fixture closeout and next queue selection",
+  "source_inputs": {
+    "fifth_slice_runtime_fixture_promotion_gate": "outputs\\target_slice\\m53_05_fifth_slice_runtime_fixture_promotion_gate.json"
+  },
+  "scope": {
+    "closeout_report": true,
+    "changes_fixture_artifact": false,
+    "mutates_runtime_deck_library": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_integration": false,
+    "automatic_playbook_promotion": false,
+    "GameState_mutation": false
+  },
+  "key_results": {
+    "recipe_id": "m52_recipe_001",
+    "m53_complete": true,
+    "fifth_runtime_fixture_available": true,
+    "fixture_path": "outputs/target_slice/runtime_fixtures/m52_recipe_001_gold_paladin_m53_05.json",
+    "fixture_scope": "offline_runtime_test_fixture",
+    "promotion_allowed": true,
+    "gate_passed_check_count": 5,
+    "gate_failed_check_count": 0,
+    "runtime_deck_library_mutated": false,
+    "saved_deck_injected": false,
+    "ui_deck_list_published": false,
+    "bot_playbook_enabled": false
+  },
+  "decision": {
+    "fifth_recipe_enters_fixture_scope": true,
+    "fifth_recipe_remains_advisory_only": false,
+    "live_runtime_deck_enabled": false,
+    "saved_deck_enabled": false,
+    "ui_deck_list_enabled": false,
+    "bot_playbook_enabled": false,
+    "needs_user_team_review_before_live_deck_ui": true,
+    "decision_notes": [
+      "The fifth-slice Gold Paladin recipe can be used as an offline runtime/test fixture.",
+      "The fixture is not a saved player deck and is not automatically visible in UI.",
+      "Bot/playbook runtime use still needs a separate gate."
+    ]
+  },
+  "next_queue": {
+    "id": "M54",
+    "title": "Fifth Fixture Consumption and Next-Slice Scale Gate",
+    "goal": "Validate how the Gold Paladin fixture can be consumed safely, export reviewable deck text, then decide whether the fixture set is ready for another scale step.",
+    "tasks": [
+      {
+        "id": "M54-01",
+        "title": "Fifth fixture schema validator",
+        "goal": "Validate the Gold Paladin runtime fixture independently from the M53 generator."
+      },
+      {
+        "id": "M54-02",
+        "title": "Fifth fixture deck text exporter",
+        "goal": "Export the Gold Paladin fixture as reviewable count-line deck text without adding it to saved decks."
+      },
+      {
+        "id": "M54-03",
+        "title": "Fifth fixture headless load smoke",
+        "goal": "Load the Gold Paladin fixture through offline/headless paths without UI or bot mutation."
+      },
+      {
+        "id": "M54-04",
+        "title": "Multi-fixture scale decision",
+        "goal": "Review all fixture evidence before selecting any further slice."
+      }
+    ]
+  },
+  "summary": {
+    "m53_complete": true,
+    "fifth_runtime_fixture_available": true,
+    "next_queue_id": "M54",
+    "ready_for_next_queue": true
+  }
+}

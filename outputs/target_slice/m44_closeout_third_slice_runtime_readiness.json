@@ -1,0 +1,145 @@
+{
+  "version": "M44-closeout",
+  "description": "Third-slice runtime readiness decision",
+  "source_inputs": {
+    "m44_01_third_slice_fixture_scaffold": "outputs\\target_slice\\m44_01_third_slice_fixture_scaffold.json",
+    "m44_02_third_slice_review_packet": "outputs\\target_slice\\m44_02_third_slice_review_packet.json",
+    "m44_03_third_slice_recipe_draft_model": "outputs\\target_slice\\m44_03_third_slice_recipe_draft_model.json",
+    "m44_04_third_slice_recipe_validation_report": "outputs\\target_slice\\m44_04_third_slice_recipe_validation_report.json",
+    "m44_05_third_slice_combo_recipe_consistency_report": "outputs\\target_slice\\m44_05_third_slice_combo_recipe_consistency_report.json",
+    "m44_06_third_slice_blocker_repair_candidates": "outputs\\target_slice\\m44_06_third_slice_blocker_repair_candidates.json"
+  },
+  "scope": {
+    "closeout_report": true,
+    "changes_recipe_draft_file": false,
+    "records_human_acceptance": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false
+  },
+  "input_checks": [
+    {
+      "milestone": "M44-01",
+      "title": "Third-slice fixture scaffold",
+      "path": "outputs\\target_slice\\m44_01_third_slice_fixture_scaffold.json",
+      "exists": true
+    },
+    {
+      "milestone": "M44-02",
+      "title": "Third-slice review packet",
+      "path": "outputs\\target_slice\\m44_02_third_slice_review_packet.json",
+      "exists": true
+    },
+    {
+      "milestone": "M44-03",
+      "title": "Third-slice recipe draft model",
+      "path": "outputs\\target_slice\\m44_03_third_slice_recipe_draft_model.json",
+      "exists": true
+    },
+    {
+      "milestone": "M44-04",
+      "title": "Third-slice recipe validator",
+      "path": "outputs\\target_slice\\m44_04_third_slice_recipe_validation_report.json",
+      "exists": true
+    },
+    {
+      "milestone": "M44-05",
+      "title": "Third-slice combo-to-recipe consistency",
+      "path": "outputs\\target_slice\\m44_05_third_slice_combo_recipe_consistency_report.json",
+      "exists": true
+    },
+    {
+      "milestone": "M44-06",
+      "title": "Third-slice blocker repair candidates",
+      "path": "outputs\\target_slice\\m44_06_third_slice_blocker_repair_candidates.json",
+      "exists": true
+    }
+  ],
+  "key_results": {
+    "selected_target": {
+      "slice": "Third Offline Slice",
+      "era_preset": "link_joker_legion_mate",
+      "group": "เบอร์มิวด้า ไทรแองเกิล",
+      "group_field": "clan",
+      "rank": 1,
+      "priority_score": 95.0,
+      "best_era_candidates": 2179,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "rich_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    "fixture_scaffold_ready": true,
+    "review_items": 171,
+    "recipe_drafts": 25,
+    "runtime_ready_recipe_count": 0,
+    "promotion_allowed_count": 0,
+    "manual_review_overlap_recipe_count": 25,
+    "repair_candidates_ready_for_human_review": 25,
+    "manual_repair_complete_count": 25,
+    "grade_profile_complete_candidate_count": 25
+  },
+  "decision": {
+    "m44_complete": true,
+    "third_slice_runtime_ready_recipe_available": false,
+    "third_slice_can_enter_runtime_fixture_gate_now": false,
+    "third_slice_remains_advisory": true,
+    "human_repair_review_allowed": true,
+    "live_runtime_deck_enabled": false,
+    "saved_deck_or_ui_publication_allowed": false,
+    "bot_playbook_enabled": false,
+    "decision_blockers": [
+      "no_runtime_ready_recipe",
+      "no_promotion_allowed_consistency_check",
+      "manual_review_overlap_unresolved",
+      "repair_candidates_require_human_acceptance",
+      "runtime_fixture_gate_not_run"
+    ],
+    "recommendation": "open_m45_human_repair_review_gate"
+  },
+  "next_queue": {
+    "id": "M45",
+    "title": "Third-slice Human Repair Review Gate",
+    "goal": "Review M44-06 repair candidates, record explicit acceptance or rejection, then rerun validation before any runtime fixture gate.",
+    "tasks": [
+      {
+        "id": "M45-01",
+        "title": "Third-slice human repair review packet",
+        "goal": "Export a concise review packet for the M44-06 repair packages."
+      },
+      {
+        "id": "M45-02",
+        "title": "Third-slice human-accepted repair artifact",
+        "goal": "Record explicit acceptance or rejection of one repaired third-slice recipe."
+      },
+      {
+        "id": "M45-03",
+        "title": "Third-slice repaired recipe validation rerun",
+        "goal": "Apply accepted repair in memory and rerun count, trigger, grade, copy-limit, clan, and manual-overlap validation."
+      },
+      {
+        "id": "M45-04",
+        "title": "Third-slice runtime fixture promotion gate",
+        "goal": "Promote only if repaired validation, consistency, and human acceptance all pass."
+      },
+      {
+        "id": "M45-closeout",
+        "title": "Third-slice fixture closeout",
+        "goal": "Decide whether the third slice enters offline fixture scope or remains advisory."
+      }
+    ]
+  },
+  "summary": {
+    "m44_complete": true,
+    "runtime_ready_recipe_available": false,
+    "human_repair_review_allowed": true,
+    "next_queue_id": "M45",
+    "ready_for_next_queue": true
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "version": "M47-02",
+  "description": "Fourth-slice fixture/format readiness",
+  "source_inputs": {
+    "fourth_target_slice_selection": "outputs\\target_slice\\m47_01_fourth_target_slice_selection.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "selected_target": {
+    "slice": "Fourth Offline Slice",
+    "era_preset": "g_series_first",
+    "group": "รอยัล พาลาดิน",
+    "group_field": "clan",
+    "rank": 2,
+    "priority_score": 86.19,
+    "best_era_candidates": 1024,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "format_scope": {
+    "era_preset": "g_series_first",
+    "series_scope": [
+      "G-TD01",
+      "G-TD02",
+      "G-TD03",
+      "G-TD04",
+      "G-TD05",
+      "G-TD06",
+      "G-TD07",
+      "G-TD08",
+      "G-TD09",
+      "G-SD01",
+      "G-SD02",
+      "G-BT01",
+      "G-BT02",
+      "G-BT03",
+      "G-BT04",
+      "G-BT05",
+      "G-BT06",
+      "G-BT07",
+      "G-BT08",
+      "G-CB01",
+      "G-CB02",
+      "G-CB03",
+      "G-CB04",
+      "G-TCB01",
+      "G-TCB02"
+    ],
+    "trial_decks": [
+      "G-TD01",
+      "G-TD02",
+      "G-TD03",
+      "G-TD04",
+      "G-TD05",
+      "G-TD06",
+      "G-TD07",
+      "G-TD08",
+      "G-TD09"
+    ],
+    "start_decks": [
+      "G-SD01",
+      "G-SD02"
+    ],
+    "booster_packs": [
+      "G-BT01",
+      "G-BT02",
+      "G-BT03",
+      "G-BT04",
+      "G-BT05",
+      "G-BT06",
+      "G-BT07",
+      "G-BT08"
+    ],
+    "clan_boosters": [
+      "G-CB01",
+      "G-CB02",
+      "G-CB03",
+      "G-CB04"
+    ],
+    "technical_boosters": [
+      "G-TCB01",
+      "G-TCB02"
+    ],
+    "new_format_or_mechanic_fixtures_required": true,
+    "policy_reuse_decision": "requires_fourth_slice_readiness_repair"
+  },
+  "card_pool_summary": {
+    "source_card_count": 71,
+    "series_counts": {
+      "G-BT01": 14,
+      "G-BT02": 6,
+      "G-BT04": 8,
+      "G-BT06": 15,
+      "G-BT08": 12,
+      "G-TD02": 16
+    },
+    "grade_counts": {
+      "0": 15,
+      "1": 22,
+      "2": 18,
+      "3": 9,
+      "4": 7
+    },
+    "trigger_counts": {
+      "": 61,
+      "Critical": 6,
+      "Draw": 1,
+      "Stand": 3
+    },
+    "trigger_capacity": 40,
+    "non_trigger_capacity": 244,
+    "trigger_type_gaps": [
+      "Heal"
+    ]
+  },
+  "readiness": {
+    "source_backed": true,
+    "has_grade_setup": true,
+    "has_classic_trigger_capacity": false,
+    "has_main_deck_capacity": true,
+    "all_fixture_expectations_met": false,
+    "semantic_probe_ready": false,
+    "runtime_or_bot_promotion_allowed": false,
+    "repair_required": true,
+    "repair_reasons": [
+      "classic_trigger_type_gap"
+    ]
+  },
+  "runtime_boundary": {
+    "offline_fixture_readiness_only": true,
+    "does_not_create_deck": true,
+    "does_not_create_runtime_fixture": true,
+    "does_not_mutate_runtime_pack": true,
+    "does_not_publish_to_ui": true,
+    "does_not_publish_to_bot": true,
+    "GameState_mutation": false
+  },
+  "next_target": {
+    "milestone": "M47-repair",
+    "task": "Repair fourth-slice readiness blockers"
+  },
+  "summary": {
+    "selected_group": "รอยัล พาลาดิน",
+    "era_preset": "g_series_first",
+    "source_card_count": 71,
+    "all_fixture_expectations_met": false,
+    "semantic_probe_ready": false,
+    "ready_for_m47_03": false,
+    "repair_required": true,
+    "repair_reasons": [
+      "classic_trigger_type_gap"
+    ]
+  }
+}

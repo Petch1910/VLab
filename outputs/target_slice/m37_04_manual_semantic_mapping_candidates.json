@@ -1,0 +1,749 @@
+{
+  "version": "M37-04",
+  "description": "Manual semantic mapping candidates from rejected-line triage",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "rejected_line_support_gap_triage": "outputs\\target_slice\\m37_03_rejected_line_support_gap_triage.json"
+  },
+  "scope": {
+    "offline_mapping_candidates": true,
+    "changes_ability_schema": false,
+    "changes_recipe_draft": false,
+    "creates_runtime_deck": false,
+    "bot_integration": false,
+    "automatic_playbook_promotion": false,
+    "live_card_text_parsing": false
+  },
+  "mapping_policy": {
+    "review_required": true,
+    "executable_schema_change": false,
+    "runtime_promotion_allowed": false,
+    "source_is_triage_artifact": true,
+    "card_text_not_parsed": true
+  },
+  "summary": {
+    "mapping_candidate_count": 5,
+    "structural_mapping_candidate_count": 2,
+    "timing_mapping_candidate_count": 1,
+    "review_only_candidate_count": 2,
+    "line_mapping_link_count": 49,
+    "runtime_promotion_allowed": false,
+    "ready_for_m37_05": true
+  },
+  "mapping_candidates": [
+    {
+      "candidate_id": "m37_04_map_01_broad_timing_review",
+      "gap_label": "broad_timing_review",
+      "mapping_type": "timing_window_specificity_mapping",
+      "candidate_kind": "timing_semantic_mapping",
+      "target_schema_area": "timing_window_tags",
+      "line_count": 10,
+      "source_line_ids": [
+        "line_004",
+        "line_005",
+        "line_006",
+        "line_007",
+        "line_008",
+        "line_019",
+        "line_021",
+        "line_022",
+        "line_023",
+        "line_024"
+      ],
+      "linked_lines": [
+        {
+          "line_id": "line_004",
+          "anchor_card_id": "BT01-028TH",
+          "anchor_name_th": "Mr. อินวิซิเบิ้ล",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "broad_timing_review",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_005",
+          "anchor_card_id": "EB04-016TH",
+          "anchor_name_th": "Mr.อินวิซิเบิ้ล",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "broad_timing_review",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_006",
+          "anchor_card_id": "TD03-003TH",
+          "anchor_name_th": "Mr. อินวิซิเบิ้ล",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "broad_timing_review",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_007",
+          "anchor_card_id": "EB04-008TH",
+          "anchor_name_th": "โกลด์ รูไทล์",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "broad_timing_review",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_008",
+          "anchor_card_id": "TD03-001TH",
+          "anchor_name_th": "โกลด์ รูไทล์",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "broad_timing_review",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_019",
+          "anchor_card_id": "BT04-076TH",
+          "anchor_name_th": "ทูลคิท บอย",
+          "triage_priority": "P3_manual_confirmation",
+          "gap_labels": [
+            "broad_timing_review",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_021",
+          "anchor_card_id": "BT09-072TH",
+          "anchor_name_th": "เบิร์สไรเซอร์",
+          "triage_priority": "P3_manual_confirmation",
+          "gap_labels": [
+            "broad_timing_review"
+          ]
+        },
+        {
+          "line_id": "line_022",
+          "anchor_card_id": "EB04-009TH",
+          "anchor_name_th": "เจโนไซด์ โจ๊กเกอร์",
+          "triage_priority": "P3_manual_confirmation",
+          "gap_labels": [
+            "broad_timing_review"
+          ]
+        },
+        {
+          "line_id": "line_023",
+          "anchor_card_id": "EB04-023TH",
+          "anchor_name_th": "โอเอซิส เกิร์ล",
+          "triage_priority": "P3_manual_confirmation",
+          "gap_labels": [
+            "broad_timing_review"
+          ]
+        },
+        {
+          "line_id": "line_024",
+          "anchor_card_id": "TD03-008TH",
+          "anchor_name_th": "โอเอซิส เกิร์ล",
+          "triage_priority": "P3_manual_confirmation",
+          "gap_labels": [
+            "broad_timing_review"
+          ]
+        }
+      ],
+      "abstract_requirements": [
+        "specific_timing_window"
+      ],
+      "candidate_provider_checks": [
+        "main_phase_window",
+        "battle_phase_window",
+        "on_attack_window",
+        "on_hit_window"
+      ],
+      "acceptance_criteria": [
+        "Broad timing must be narrowed to a known timing enum or kept manual.",
+        "Ordering claims require a source line and cannot be inferred from score alone."
+      ],
+      "recommended_action": "Tighten timing-window mapping or keep manual review.",
+      "review_required": true,
+      "runtime_promotion_allowed": false,
+      "executable_schema_change": false
+    },
+    {
+      "candidate_id": "m37_04_map_02_detector_gap_not_found_manual_review",
+      "gap_label": "detector_gap_not_found_manual_review",
+      "mapping_type": "human_acceptance_without_new_mapping",
+      "candidate_kind": "review_only_gate",
+      "target_schema_area": "human_review_status",
+      "line_count": 10,
+      "source_line_ids": [
+        "line_004",
+        "line_005",
+        "line_006",
+        "line_007",
+        "line_008",
+        "line_014",
+        "line_015",
+        "line_016",
+        "line_018",
+        "line_019"
+      ],
+      "linked_lines": [
+        {
+          "line_id": "line_004",
+          "anchor_card_id": "BT01-028TH",
+          "anchor_name_th": "Mr. อินวิซิเบิ้ล",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "broad_timing_review",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_005",
+          "anchor_card_id": "EB04-016TH",
+          "anchor_name_th": "Mr.อินวิซิเบิ้ล",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "broad_timing_review",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_006",
+          "anchor_card_id": "TD03-003TH",
+          "anchor_name_th": "Mr. อินวิซิเบิ้ล",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "broad_timing_review",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_007",
+          "anchor_card_id": "EB04-008TH",
+          "anchor_name_th": "โกลด์ รูไทล์",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "broad_timing_review",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_008",
+          "anchor_card_id": "TD03-001TH",
+          "anchor_name_th": "โกลด์ รูไทล์",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "broad_timing_review",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_014",
+          "anchor_card_id": "BT06-099TH",
+          "anchor_name_th": "ฮานิ ผู้ชั่วร้าย",
+          "triage_priority": "P3_manual_confirmation",
+          "gap_labels": [
+            "detector_gap_not_found_manual_review",
+            "no_resource_dependency_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_015",
+          "anchor_card_id": "EB04-021TH",
+          "anchor_name_th": "มาเวลรัส ฮานิ",
+          "triage_priority": "P3_manual_confirmation",
+          "gap_labels": [
+            "detector_gap_not_found_manual_review",
+            "no_resource_dependency_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_016",
+          "anchor_card_id": "BT02-018TH",
+          "anchor_name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_018",
+          "anchor_card_id": "EB04-004TH",
+          "anchor_name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_019",
+          "anchor_card_id": "BT04-076TH",
+          "anchor_name_th": "ทูลคิท บอย",
+          "triage_priority": "P3_manual_confirmation",
+          "gap_labels": [
+            "broad_timing_review",
+            "detector_gap_not_found_manual_review"
+          ]
+        }
+      ],
+      "abstract_requirements": [
+        "human_acceptance"
+      ],
+      "candidate_provider_checks": [
+        "reviewer_accept_or_keep_rejected",
+        "no_new_structural_mapping_needed"
+      ],
+      "acceptance_criteria": [
+        "Reviewer must explicitly accept the line or keep it rejected.",
+        "No schema expansion is implied by this candidate."
+      ],
+      "recommended_action": "Confirm whether line can be accepted after human review.",
+      "review_required": true,
+      "runtime_promotion_allowed": false,
+      "executable_schema_change": false
+    },
+    {
+      "candidate_id": "m37_04_map_03_no_resource_dependency_manual_review",
+      "gap_label": "no_resource_dependency_manual_review",
+      "mapping_type": "false_dependency_or_acceptance_review",
+      "candidate_kind": "review_only_gate",
+      "target_schema_area": "dependency_review_status",
+      "line_count": 5,
+      "source_line_ids": [
+        "line_013",
+        "line_014",
+        "line_015",
+        "line_020",
+        "line_025"
+      ],
+      "linked_lines": [
+        {
+          "line_id": "line_013",
+          "anchor_card_id": "TD03-005TH",
+          "anchor_name_th": "สุดยอดแม่เหล็กไฟฟ้ามีชีวิต สตอร์ม",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "no_resource_dependency_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_014",
+          "anchor_card_id": "BT06-099TH",
+          "anchor_name_th": "ฮานิ ผู้ชั่วร้าย",
+          "triage_priority": "P3_manual_confirmation",
+          "gap_labels": [
+            "detector_gap_not_found_manual_review",
+            "no_resource_dependency_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_015",
+          "anchor_card_id": "EB04-021TH",
+          "anchor_name_th": "มาเวลรัส ฮานิ",
+          "triage_priority": "P3_manual_confirmation",
+          "gap_labels": [
+            "detector_gap_not_found_manual_review",
+            "no_resource_dependency_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_020",
+          "anchor_card_id": "BT04-019TH",
+          "anchor_name_th": "เบลาคลูเกอร์",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "no_resource_dependency_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_025",
+          "anchor_card_id": "BT02-072TH",
+          "anchor_name_th": "เครย์ โซลเจอร์",
+          "triage_priority": "P1_resource_and_zone_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "zone_access_gap",
+            "no_resource_dependency_manual_review"
+          ]
+        }
+      ],
+      "abstract_requirements": [
+        "false_dependency_check"
+      ],
+      "candidate_provider_checks": [
+        "confirm_no_resource_dependency",
+        "remove_false_dependency_or_keep_manual"
+      ],
+      "acceptance_criteria": [
+        "If no resource dependency exists, remove that blocker in a reviewed artifact.",
+        "If evidence is unclear, keep the line rejected."
+      ],
+      "recommended_action": "Confirm this is not a false dependency before accepting the line.",
+      "review_required": true,
+      "runtime_promotion_allowed": false,
+      "executable_schema_change": false
+    },
+    {
+      "candidate_id": "m37_04_map_04_resource_pressure_gap",
+      "gap_label": "resource_pressure_gap",
+      "mapping_type": "resource_requirement_provider_mapping",
+      "candidate_kind": "structural_semantic_mapping",
+      "target_schema_area": "resource_requirements_and_providers",
+      "line_count": 9,
+      "source_line_ids": [
+        "line_001",
+        "line_002",
+        "line_009",
+        "line_010",
+        "line_011",
+        "line_012",
+        "line_016",
+        "line_018",
+        "line_025"
+      ],
+      "linked_lines": [
+        {
+          "line_id": "line_001",
+          "anchor_card_id": "BT04-038TH",
+          "anchor_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "triage_priority": "P1_resource_and_zone_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "zone_access_gap"
+          ]
+        },
+        {
+          "line_id": "line_002",
+          "anchor_card_id": "EB04-017TH",
+          "anchor_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "triage_priority": "P1_resource_and_zone_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "zone_access_gap"
+          ]
+        },
+        {
+          "line_id": "line_009",
+          "anchor_card_id": "BT01-032TH",
+          "anchor_name_th": "แบทเทิลไรเซอร์",
+          "triage_priority": "P1_resource_and_zone_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "zone_access_gap"
+          ]
+        },
+        {
+          "line_id": "line_010",
+          "anchor_card_id": "EB01-020TH",
+          "anchor_name_th": "แบทเทิล ไรเซอร์",
+          "triage_priority": "P1_resource_and_zone_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "zone_access_gap"
+          ]
+        },
+        {
+          "line_id": "line_011",
+          "anchor_card_id": "EB04-034TH",
+          "anchor_name_th": "เทอร์โบไรเซอร์",
+          "triage_priority": "P1_resource_and_zone_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "zone_access_gap"
+          ]
+        },
+        {
+          "line_id": "line_012",
+          "anchor_card_id": "EB04-035TH",
+          "anchor_name_th": "แบทเทิลไรเซอร์",
+          "triage_priority": "P1_resource_and_zone_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "zone_access_gap"
+          ]
+        },
+        {
+          "line_id": "line_016",
+          "anchor_card_id": "BT02-018TH",
+          "anchor_name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_018",
+          "anchor_card_id": "EB04-004TH",
+          "anchor_name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_025",
+          "anchor_card_id": "BT02-072TH",
+          "anchor_name_th": "เครย์ โซลเจอร์",
+          "triage_priority": "P1_resource_and_zone_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "zone_access_gap",
+            "no_resource_dependency_manual_review"
+          ]
+        }
+      ],
+      "abstract_requirements": [
+        "resource_pressure"
+      ],
+      "candidate_provider_checks": [
+        "resource_recovery_cards",
+        "counter_charge_or_soul_support_review",
+        "costless_line_review"
+      ],
+      "acceptance_criteria": [
+        "Each source line must identify which resource pressure exists.",
+        "A provider/support card must be source-backed or the line stays rejected.",
+        "No runtime cost resolver changes are allowed from this candidate alone."
+      ],
+      "recommended_action": "Map resource requirements/providers or keep line rejected.",
+      "review_required": true,
+      "runtime_promotion_allowed": false,
+      "executable_schema_change": false
+    },
+    {
+      "candidate_id": "m37_04_map_05_zone_access_gap",
+      "gap_label": "zone_access_gap",
+      "mapping_type": "zone_target_requirement_provider_mapping",
+      "candidate_kind": "structural_semantic_mapping",
+      "target_schema_area": "zone_target_requirements_and_providers",
+      "line_count": 15,
+      "source_line_ids": [
+        "line_001",
+        "line_002",
+        "line_004",
+        "line_005",
+        "line_006",
+        "line_007",
+        "line_008",
+        "line_009",
+        "line_010",
+        "line_011",
+        "line_012",
+        "line_013",
+        "line_017",
+        "line_020",
+        "line_025"
+      ],
+      "linked_lines": [
+        {
+          "line_id": "line_001",
+          "anchor_card_id": "BT04-038TH",
+          "anchor_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "triage_priority": "P1_resource_and_zone_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "zone_access_gap"
+          ]
+        },
+        {
+          "line_id": "line_002",
+          "anchor_card_id": "EB04-017TH",
+          "anchor_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "triage_priority": "P1_resource_and_zone_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "zone_access_gap"
+          ]
+        },
+        {
+          "line_id": "line_004",
+          "anchor_card_id": "BT01-028TH",
+          "anchor_name_th": "Mr. อินวิซิเบิ้ล",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "broad_timing_review",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_005",
+          "anchor_card_id": "EB04-016TH",
+          "anchor_name_th": "Mr.อินวิซิเบิ้ล",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "broad_timing_review",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_006",
+          "anchor_card_id": "TD03-003TH",
+          "anchor_name_th": "Mr. อินวิซิเบิ้ล",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "broad_timing_review",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_007",
+          "anchor_card_id": "EB04-008TH",
+          "anchor_name_th": "โกลด์ รูไทล์",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "broad_timing_review",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_008",
+          "anchor_card_id": "TD03-001TH",
+          "anchor_name_th": "โกลด์ รูไทล์",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "broad_timing_review",
+            "detector_gap_not_found_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_009",
+          "anchor_card_id": "BT01-032TH",
+          "anchor_name_th": "แบทเทิลไรเซอร์",
+          "triage_priority": "P1_resource_and_zone_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "zone_access_gap"
+          ]
+        },
+        {
+          "line_id": "line_010",
+          "anchor_card_id": "EB01-020TH",
+          "anchor_name_th": "แบทเทิล ไรเซอร์",
+          "triage_priority": "P1_resource_and_zone_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "zone_access_gap"
+          ]
+        },
+        {
+          "line_id": "line_011",
+          "anchor_card_id": "EB04-034TH",
+          "anchor_name_th": "เทอร์โบไรเซอร์",
+          "triage_priority": "P1_resource_and_zone_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "zone_access_gap"
+          ]
+        },
+        {
+          "line_id": "line_012",
+          "anchor_card_id": "EB04-035TH",
+          "anchor_name_th": "แบทเทิลไรเซอร์",
+          "triage_priority": "P1_resource_and_zone_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "zone_access_gap"
+          ]
+        },
+        {
+          "line_id": "line_013",
+          "anchor_card_id": "TD03-005TH",
+          "anchor_name_th": "สุดยอดแม่เหล็กไฟฟ้ามีชีวิต สตอร์ม",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "no_resource_dependency_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_017",
+          "anchor_card_id": "BT09-075TH",
+          "anchor_name_th": "ไลโอเนท ฮีท",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap"
+          ]
+        },
+        {
+          "line_id": "line_020",
+          "anchor_card_id": "BT04-019TH",
+          "anchor_name_th": "เบลาคลูเกอร์",
+          "triage_priority": "P2_single_structural_gap",
+          "gap_labels": [
+            "zone_access_gap",
+            "no_resource_dependency_manual_review"
+          ]
+        },
+        {
+          "line_id": "line_025",
+          "anchor_card_id": "BT02-072TH",
+          "anchor_name_th": "เครย์ โซลเจอร์",
+          "triage_priority": "P1_resource_and_zone_gap",
+          "gap_labels": [
+            "resource_pressure_gap",
+            "zone_access_gap",
+            "no_resource_dependency_manual_review"
+          ]
+        }
+      ],
+      "abstract_requirements": [
+        "rear_guard_zone_access",
+        "target_zone_access"
+      ],
+      "candidate_provider_checks": [
+        "normal_board_setup_note",
+        "call_or_move_to_rear_guard_mapping",
+        "target_zone_supported_by_source"
+      ],
+      "acceptance_criteria": [
+        "Each line must state whether normal setup is enough or another card is required.",
+        "Zone provider evidence must be attached before line acceptance.",
+        "No board mutation shortcut is allowed."
+      ],
+      "recommended_action": "Map zone/target requirements/providers or require normal setup note.",
+      "review_required": true,
+      "runtime_promotion_allowed": false,
+      "executable_schema_change": false
+    }
+  ],
+  "next_target": {
+    "milestone": "M37-05",
+    "task": "Revised recipe validation rerun"
+  }
+}

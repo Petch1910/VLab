@@ -1,0 +1,74 @@
+﻿[
+    {
+        "id":  "pl_01_dear_days_2_playthrough",
+        "title":  "cardfight vanguard dear days 2 playthrough",
+        "count":  22,
+        "status":  "ok",
+        "exitCode":  0,
+        "output":  "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\vanguard_video_game_ux_research\\letsplay_research_2026-06-28\\yt_dlp_metadata\\pl_01_dear_days_2_playthrough.json",
+        "stderr":  "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\vanguard_video_game_ux_research\\letsplay_research_2026-06-28\\yt_dlp_metadata\\pl_01_dear_days_2_playthrough.stderr.txt"
+    },
+    {
+        "id":  "pl_02_dear_days",
+        "title":  "Cardfight Vanguard Dear Days",
+        "count":  100,
+        "status":  "ok",
+        "exitCode":  0,
+        "output":  "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\vanguard_video_game_ux_research\\letsplay_research_2026-06-28\\yt_dlp_metadata\\pl_02_dear_days.json",
+        "stderr":  "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\vanguard_video_game_ux_research\\letsplay_research_2026-06-28\\yt_dlp_metadata\\pl_02_dear_days.stderr.txt"
+    },
+    {
+        "id":  "pl_03_ride_to_victory",
+        "title":  "Gundamfinal Plays Cardfight!! Vanguard: Ride to Victory",
+        "count":  100,
+        "status":  "ok",
+        "exitCode":  0,
+        "output":  "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\vanguard_video_game_ux_research\\letsplay_research_2026-06-28\\yt_dlp_metadata\\pl_03_ride_to_victory.json",
+        "stderr":  "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\vanguard_video_game_ux_research\\letsplay_research_2026-06-28\\yt_dlp_metadata\\pl_03_ride_to_victory.stderr.txt"
+    },
+    {
+        "id":  "pl_04_lock_on_victory",
+        "title":  "Cardfight!! Vanguard: Lock on Victory!!",
+        "count":  11,
+        "status":  "ok",
+        "exitCode":  0,
+        "output":  "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\vanguard_video_game_ux_research\\letsplay_research_2026-06-28\\yt_dlp_metadata\\pl_04_lock_on_victory.json",
+        "stderr":  "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\vanguard_video_game_ux_research\\letsplay_research_2026-06-28\\yt_dlp_metadata\\pl_04_lock_on_victory.stderr.txt"
+    },
+    {
+        "id":  "pl_05_stride_to_victory",
+        "title":  "Cardfight!! Vanguard G: Stride To Victory Playthrough",
+        "count":  100,
+        "status":  "ok",
+        "exitCode":  0,
+        "output":  "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\vanguard_video_game_ux_research\\letsplay_research_2026-06-28\\yt_dlp_metadata\\pl_05_stride_to_victory.json",
+        "stderr":  "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\vanguard_video_game_ux_research\\letsplay_research_2026-06-28\\yt_dlp_metadata\\pl_05_stride_to_victory.stderr.txt"
+    },
+    {
+        "id":  "pl_06_vanguard_ex",
+        "title":  "Cardfight!! Vanguard EX",
+        "count":  38,
+        "status":  "ok",
+        "exitCode":  0,
+        "output":  "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\vanguard_video_game_ux_research\\letsplay_research_2026-06-28\\yt_dlp_metadata\\pl_06_vanguard_ex.json",
+        "stderr":  "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\vanguard_video_game_ux_research\\letsplay_research_2026-06-28\\yt_dlp_metadata\\pl_06_vanguard_ex.stderr.txt"
+    },
+    {
+        "id":  "video_01_cardfight_online_closed_beta",
+        "title":  "Cardfight!! Online: Closed Beta Stream #1",
+        "count":  1,
+        "status":  "ok",
+        "exitCode":  0,
+        "output":  "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\vanguard_video_game_ux_research\\letsplay_research_2026-06-28\\yt_dlp_metadata\\video_01_cardfight_online_closed_beta.json",
+        "stderr":  "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\vanguard_video_game_ux_research\\letsplay_research_2026-06-28\\yt_dlp_metadata\\video_01_cardfight_online_closed_beta.stderr.txt"
+    },
+    {
+        "id":  "video_02_cardfight_online_stream",
+        "title":  "Cardfight!! Online Stream 1 (No Commentary)",
+        "count":  1,
+        "status":  "ok",
+        "exitCode":  0,
+        "output":  "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\vanguard_video_game_ux_research\\letsplay_research_2026-06-28\\yt_dlp_metadata\\video_02_cardfight_online_stream.json",
+        "stderr":  "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\vanguard_video_game_ux_research\\letsplay_research_2026-06-28\\yt_dlp_metadata\\video_02_cardfight_online_stream.stderr.txt"
+    }
+]

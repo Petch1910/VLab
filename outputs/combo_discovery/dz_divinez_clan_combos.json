@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "generator": "tools/combo/discover_clan_combos.py",
+  "scope": {
+    "set_codes": [
+      "DZ-SD01",
+      "DZ-SD02",
+      "DZ-SD03",
+      "DZ-SD04",
+      "DZ-SD05",
+      "DZ-SD06",
+      "DZ-BT01",
+      "DZ-BT02",
+      "DZ-BT03",
+      "DZ-BT04",
+      "DZ-BT05",
+      "DZ-SS01",
+      "DZ-SS02",
+      "DZ-SS03"
+    ],
+    "available_set_codes": [],
+    "missing_set_codes": [
+      "DZ-SD01",
+      "DZ-SD02",
+      "DZ-SD03",
+      "DZ-SD04",
+      "DZ-SD05",
+      "DZ-SD06",
+      "DZ-BT01",
+      "DZ-BT02",
+      "DZ-BT03",
+      "DZ-BT04",
+      "DZ-BT05",
+      "DZ-SS01",
+      "DZ-SS02",
+      "DZ-SS03"
+    ],
+    "top_per_clan": 20,
+    "min_score": 60,
+    "group_mode": "auto",
+    "note": "offline advisory only; not live effect resolution"
+  },
+  "card_count": 0,
+  "clan_count": 0,
+  "group_count": 0,
+  "clans": []
+}

@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "generator": "tools/deck/analyze_deck_possibilities.py",
+  "note": "offline theoretical deck possibility summary, not full official deck legality",
+  "reports": [
+    {
+      "preset": "full_runtime",
+      "card_count": 10836,
+      "group_count": 45,
+      "basic_50_feasible_groups": 39,
+      "exact_16_trigger_feasible_groups": 37,
+      "ride_deck_feasible_groups": 39,
+      "g_zone_16_feasible_groups": 27,
+      "missing_set_codes": []
+    },
+    {
+      "preset": "classic_part1",
+      "card_count": 1052,
+      "group_count": 21,
+      "basic_50_feasible_groups": 20,
+      "exact_16_trigger_feasible_groups": 20,
+      "ride_deck_feasible_groups": 21,
+      "g_zone_16_feasible_groups": 0,
+      "missing_set_codes": []
+    },
+    {
+      "preset": "link_joker_legion_mate",
+      "card_count": 1329,
+      "group_count": 23,
+      "basic_50_feasible_groups": 21,
+      "exact_16_trigger_feasible_groups": 18,
+      "ride_deck_feasible_groups": 23,
+      "g_zone_16_feasible_groups": 0,
+      "missing_set_codes": []
+    },
+    {
+      "preset": "g_series_first",
+      "card_count": 1328,
+      "group_count": 25,
+      "basic_50_feasible_groups": 24,
+      "exact_16_trigger_feasible_groups": 24,
+      "ride_deck_feasible_groups": 24,
+      "g_zone_16_feasible_groups": 18,
+      "missing_set_codes": [
+        "G-SD01",
+        "G-SD02"
+      ]
+    },
+    {
+      "preset": "g_next_z",
+      "card_count": 1109,
+      "group_count": 28,
+      "basic_50_feasible_groups": 23,
+      "exact_16_trigger_feasible_groups": 23,
+      "ride_deck_feasible_groups": 23,
+      "g_zone_16_feasible_groups": 23,
+      "missing_set_codes": []
+    },
+    {
+      "preset": "v_reboot",
+      "card_count": 1183,
+      "group_count": 26,
+      "basic_50_feasible_groups": 24,
+      "exact_16_trigger_feasible_groups": 24,
+      "ride_deck_feasible_groups": 24,
+      "g_zone_16_feasible_groups": 0,
+      "missing_set_codes": []
+    },
+    {
+      "preset": "v_shinemon_if",
+      "card_count": 1055,
+      "group_count": 32,
+      "basic_50_feasible_groups": 24,
+      "exact_16_trigger_feasible_groups": 24,
+      "ride_deck_feasible_groups": 24,
+      "g_zone_16_feasible_groups": 0,
+      "missing_set_codes": [
+        "V-BT13",
+        "V-BT14",
+        "V-SS02",
+        "V-SS03",
+        "V-SS04",
+        "V-SS05",
+        "V-SS06",
+        "V-SS08",
+        "V-SS09",
+        "V-SS10"
+      ]
+    },
+    {
+      "preset": "d_overdress",
+      "card_count": 848,
+      "group_count": 10,
+      "basic_50_feasible_groups": 6,
+      "exact_16_trigger_feasible_groups": 6,
+      "ride_deck_feasible_groups": 8,
+      "g_zone_16_feasible_groups": 0,
+      "missing_set_codes": []
+    },
+    {
+      "preset": "d_willdress",
+      "card_count": 808,
+      "group_count": 10,
+      "basic_50_feasible_groups": 8,
+      "exact_16_trigger_feasible_groups": 8,
+      "ride_deck_feasible_groups": 9,
+      "g_zone_16_feasible_groups": 0,
+      "missing_set_codes": [
+        "D-BT11",
+        "D-BT12",
+        "D-BT13",
+        "D-LBT04",
+        "D-SS02",
+        "D-SS06",
+        "D-SS07",
+        "D-SS08",
+        "D-SS09",
+        "D-SS10",
+        "D-SS11"
+      ]
+    },
+    {
+      "preset": "dz_divinez",
+      "card_count": 0,
+      "group_count": 0,
+      "basic_50_feasible_groups": 0,
+      "exact_16_trigger_feasible_groups": 0,
+      "ride_deck_feasible_groups": 0,
+      "g_zone_16_feasible_groups": 0,
+      "missing_set_codes": [
+        "DZ-SD01",
+        "DZ-SD02",
+        "DZ-SD03",
+        "DZ-SD04",
+        "DZ-SD05",
+        "DZ-SD06",
+        "DZ-BT01",
+        "DZ-BT02",
+        "DZ-BT03",
+        "DZ-BT04",
+        "DZ-BT05",
+        "DZ-SS01",
+        "DZ-SS02",
+        "DZ-SS03"
+      ]
+    }
+  ]
+}

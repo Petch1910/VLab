@@ -1,0 +1,5209 @@
+{
+  "version": "M35-B2",
+  "description": "Offline semantic extractor output for selected first slice",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "target_report": "outputs\\target_slice\\m35_a2_first_target_slice_report.json",
+    "semantic_vocabulary": "outputs\\target_slice\\m35_b1_first_slice_semantic_vocabulary.json",
+    "runtime_database": "data/packs/vanguard_th/cards.sqlite"
+  },
+  "scope": {
+    "advisory_only": true,
+    "runtime_effect_execution": false,
+    "live_card_text_parser": false,
+    "selected_slice_only": true
+  },
+  "summary": {
+    "card_count": 112,
+    "cards_with_any_semantic_tag": 112,
+    "manual_review_count": 6,
+    "tag_counts": {
+      "ability_types": {
+        "ACT": 19,
+        "AUTO": 74,
+        "CONT": 20
+      },
+      "conditions": {
+        "if_attack_hits": 26,
+        "if_boosted": 18,
+        "if_limit_break_4": 2,
+        "if_rear_guard": 43,
+        "if_vanguard": 28
+      },
+      "costs": {
+        "counter_blast": 27,
+        "soul_blast": 5
+      },
+      "durations": {
+        "during_battle": 47,
+        "one_shot": 81,
+        "until_end_of_turn": 38
+      },
+      "effects": {
+        "counter_charge": 12,
+        "critical_plus": 3,
+        "draw": 11,
+        "move_to_soul": 10,
+        "power_plus": 38,
+        "search_deck": 6,
+        "shuffle_deck": 11,
+        "soul_charge": 3,
+        "stand_unit": 28,
+        "superior_call": 8
+      },
+      "mechanic_groups": {
+        "core": 112,
+        "limit_break": 2,
+        "trigger_icon": 19
+      },
+      "timing": {
+        "end_phase": 6,
+        "on_attack": 40,
+        "on_call": 11,
+        "on_ride": 12,
+        "when_attack_hits": 26,
+        "when_boosts": 18,
+        "when_revealed_as_trigger": 19
+      },
+      "trigger_icons": {
+        "critical": 4,
+        "draw": 4,
+        "heal": 3,
+        "stand": 8
+      },
+      "zones": {
+        "damage": 16,
+        "drop": 1,
+        "rear_guard_circle": 43,
+        "vanguard_circle": 28
+      }
+    }
+  },
+  "excluded_first_slice_tags_used": [],
+  "ready_for_m35_b3": true,
+  "cards": [
+    {
+      "card_id": "BT01-008TH",
+      "name_th": "อาชูร่า ไกเซอร์",
+      "series_code": "BT01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "cont_ability",
+        "grade_3",
+        "stand_unit",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO",
+          "CONT"
+        ],
+        "zones": [
+          "vanguard_circle"
+        ],
+        "timing": [],
+        "conditions": [
+          "if_vanguard"
+        ],
+        "costs": [],
+        "effects": [
+          "stand_unit"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-028TH",
+      "name_th": "Mr. อินวิซิเบิ้ล",
+      "series_code": "BT01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "counter_blast_cost",
+        "counter_charge",
+        "damage_zone",
+        "grade_3",
+        "on_hit",
+        "soul_blast_cost",
+        "soul_charge",
+        "stand_unit",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "damage",
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_vanguard"
+        ],
+        "costs": [
+          "counter_blast",
+          "soul_blast"
+        ],
+        "effects": [
+          "counter_charge",
+          "soul_charge",
+          "stand_unit"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-029TH",
+      "name_th": "บลูทัล แจ็ค",
+      "series_code": "BT01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "attack_related",
+        "auto_ability",
+        "boost_related",
+        "cont_ability",
+        "counter_blast_cost",
+        "grade_2",
+        "power_plus",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT",
+          "AUTO",
+          "CONT"
+        ],
+        "zones": [
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_boosts"
+        ],
+        "conditions": [
+          "if_boosted",
+          "if_vanguard"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-030TH",
+      "name_th": "คิง ออฟ ซอร์ด",
+      "series_code": "BT01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "grade_2"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-031TH",
+      "name_th": "ควีน ออฟ ฮาร์ท",
+      "series_code": "BT01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "boost_related",
+        "grade_1",
+        "power_plus",
+        "rc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "when_boosts"
+        ],
+        "conditions": [
+          "if_boosted",
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-032TH",
+      "name_th": "แบทเทิลไรเซอร์",
+      "series_code": "BT01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Stand",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "boost_related",
+        "deck_recycle",
+        "end_phase",
+        "grade_0",
+        "power_plus",
+        "rc",
+        "ride_related",
+        "superior_call",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "end_phase",
+          "on_ride",
+          "when_boosts",
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [
+          "if_boosted",
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "power_plus",
+          "shuffle_deck",
+          "superior_call"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "stand"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-059TH",
+      "name_th": "ฮังกรี่ ดัมตี้",
+      "series_code": "BT01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "counter_charge",
+        "damage_zone",
+        "grade_2",
+        "rc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "damage",
+          "rear_guard_circle"
+        ],
+        "timing": [],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "counter_charge"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-060TH",
+      "name_th": "ทอชบอย",
+      "series_code": "BT01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "grade_1"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-061TH",
+      "name_th": "ผู้ประกาศร้องเล่นเต้นเดิน เชาท์",
+      "series_code": "BT01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "draw",
+        "grade_1"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT"
+        ],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [],
+        "effects": [
+          "draw"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-062TH",
+      "name_th": "เคลย์-ดอล เมคานิค",
+      "series_code": "BT01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "grade_1"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-063TH",
+      "name_th": "ไชนิ่ง เลดี้",
+      "series_code": "BT01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "grade_0"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-064TH",
+      "name_th": "ลัคกี้เกิร์ล",
+      "series_code": "BT01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Stand",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "grade_0",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "stand"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT01-065TH",
+      "name_th": "ริงเกิร์ล, คลาล่า",
+      "series_code": "BT01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Heal",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "grade_0",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "heal"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT02-008TH",
+      "name_th": "ไลออน ฮีท",
+      "series_code": "BT02",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "counter_blast_cost",
+        "grade_3",
+        "on_hit",
+        "rc",
+        "stand_unit",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle",
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_rear_guard",
+          "if_vanguard"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "stand_unit"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT02-018TH",
+      "name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+      "series_code": "BT02",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "counter_blast_cost",
+        "draw",
+        "grade_2",
+        "on_hit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "draw"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT02-019TH",
+      "name_th": "ทวิน เบลดเดอร์",
+      "series_code": "BT02",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "cont_ability",
+        "grade_1",
+        "on_call"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO",
+          "CONT"
+        ],
+        "zones": [],
+        "timing": [
+          "on_attack",
+          "on_call"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [
+          "during_battle"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT02-071TH",
+      "name_th": "NGM โปรโตไทป์",
+      "series_code": "BT02",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "grade_2"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT02-072TH",
+      "name_th": "เครย์ โซลเจอร์",
+      "series_code": "BT02",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "boost_related",
+        "grade_1",
+        "on_hit",
+        "rc",
+        "stand_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_attack_hits",
+          "when_boosts"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_boosted",
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "stand_unit"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT02-073TH",
+      "name_th": "ทรี มินิทส์",
+      "series_code": "BT02",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Draw",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "grade_0",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "draw"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT02-074TH",
+      "name_th": "เรด ไลท์นิ่ง",
+      "series_code": "BT02",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Critical",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "counter_charge",
+        "damage_zone",
+        "grade_0",
+        "rc",
+        "soul_resource",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT"
+        ],
+        "zones": [
+          "damage",
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "counter_charge",
+          "move_to_soul"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "critical"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT03-008TH",
+      "name_th": "สิ่งมีชีวิตขั้นสุดยอด คอสโม่ลอร์ด",
+      "series_code": "BT03",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "grade_3",
+        "power_plus",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT"
+        ],
+        "zones": [
+          "vanguard_circle"
+        ],
+        "timing": [],
+        "conditions": [
+          "if_vanguard"
+        ],
+        "costs": [],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT03-039TH",
+      "name_th": "เดท อาร์มี่ เลดี้",
+      "series_code": "BT03",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "grade_2",
+        "rc",
+        "stand_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "stand_unit"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT03-040TH",
+      "name_th": "เดท อาร์มี่ กาย",
+      "series_code": "BT03",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "grade_1",
+        "rc",
+        "stand_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "stand_unit"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT03-077TH",
+      "name_th": "แคนนอน บอล",
+      "series_code": "BT03",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Stand",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "grade_0",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "stand"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT04-008TH",
+      "name_th": "สเทิร์น เบลาคลูเกอร์",
+      "series_code": "BT04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "cont_ability",
+        "counter_blast_cost",
+        "grade_3",
+        "on_hit",
+        "power_plus",
+        "stand_unit",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO",
+          "CONT"
+        ],
+        "zones": [
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_vanguard"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "power_plus",
+          "stand_unit"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT04-019TH",
+      "name_th": "เบลาคลูเกอร์",
+      "series_code": "BT04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "cont_ability",
+        "counter_charge",
+        "damage_zone",
+        "grade_2",
+        "on_hit",
+        "power_plus",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO",
+          "CONT"
+        ],
+        "zones": [
+          "damage",
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_vanguard"
+        ],
+        "costs": [],
+        "effects": [
+          "counter_charge",
+          "power_plus"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT04-038TH",
+      "name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+      "series_code": "BT04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "boost_related",
+        "draw",
+        "grade_3",
+        "on_hit",
+        "power_plus",
+        "soul_blast_cost",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_attack_hits",
+          "when_boosts"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_boosted",
+          "if_vanguard"
+        ],
+        "costs": [
+          "soul_blast"
+        ],
+        "effects": [
+          "draw",
+          "power_plus"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT04-039TH",
+      "name_th": "เบลาจังเกอร์",
+      "series_code": "BT04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "bounce_to_hand",
+        "deck_recycle",
+        "grade_0",
+        "ride_related",
+        "search_deck"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [
+          "on_ride"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [
+          "search_deck",
+          "shuffle_deck"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "manual_review_required": true,
+      "manual_review_reasons": [
+        "unmapped_feature_tags"
+      ]
+    },
+    {
+      "card_id": "BT04-073TH",
+      "name_th": "ไอเซนคูเกล",
+      "series_code": "BT04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "cont_ability",
+        "grade_2",
+        "power_plus",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO",
+          "CONT"
+        ],
+        "zones": [
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_attack"
+        ],
+        "conditions": [
+          "if_vanguard"
+        ],
+        "costs": [],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT04-074TH",
+      "name_th": "แดนซ์ซิ่ง วูลฟ์",
+      "series_code": "BT04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "grade_1",
+        "power_plus",
+        "rc",
+        "stand_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "power_plus",
+          "stand_unit"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT04-075TH",
+      "name_th": "เบลาแพนเซอร์",
+      "series_code": "BT04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "bounce_to_hand",
+        "cont_ability",
+        "deck_recycle",
+        "grade_1",
+        "on_call",
+        "power_plus",
+        "rc",
+        "search_deck",
+        "soul_resource",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO",
+          "CONT"
+        ],
+        "zones": [
+          "rear_guard_circle",
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_call"
+        ],
+        "conditions": [
+          "if_rear_guard",
+          "if_vanguard"
+        ],
+        "costs": [],
+        "effects": [
+          "move_to_soul",
+          "power_plus",
+          "search_deck",
+          "shuffle_deck"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "manual_review_required": true,
+      "manual_review_reasons": [
+        "unmapped_feature_tags"
+      ]
+    },
+    {
+      "card_id": "BT04-076TH",
+      "name_th": "ทูลคิท บอย",
+      "series_code": "BT04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "boost_related",
+        "counter_charge",
+        "damage_zone",
+        "grade_1",
+        "on_hit",
+        "rc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "damage",
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_attack_hits",
+          "when_boosts"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_boosted",
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "counter_charge"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT04-077TH",
+      "name_th": "เรือรบประจัญบาน,โพรมีเทอุส",
+      "series_code": "BT04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Critical",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "grade_0",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "critical"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT04-078TH",
+      "name_th": "แกรปเปิล มาเนีย",
+      "series_code": "BT04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Stand",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "boost_related",
+        "counter_charge",
+        "damage_zone",
+        "deck_recycle",
+        "end_phase",
+        "grade_0",
+        "on_hit",
+        "rc",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "damage",
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "end_phase",
+          "on_attack",
+          "when_attack_hits",
+          "when_boosts",
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_boosted",
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "counter_charge",
+          "shuffle_deck"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "stand"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT05-020TH",
+      "name_th": "สตรีท บราวเซอร์",
+      "series_code": "BT05",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "draw",
+        "grade_2",
+        "on_call",
+        "rc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "on_call"
+        ],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "draw"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT05-071TH",
+      "name_th": "ท็อปกัน",
+      "series_code": "BT05",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "grade_3",
+        "power_plus",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "vanguard_circle"
+        ],
+        "timing": [],
+        "conditions": [
+          "if_vanguard"
+        ],
+        "costs": [],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT05-072TH",
+      "name_th": "แอนโทรรอยด์",
+      "series_code": "BT05",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "counter_blast_cost",
+        "grade_1",
+        "rc",
+        "stand_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "stand_unit"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT05-073TH",
+      "name_th": "เดอะ ก๊อง",
+      "series_code": "BT05",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Draw",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "grade_0",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "draw"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT06-008TH",
+      "name_th": "สัตว์เทวะ,เอเซอร์ ดราก้อน",
+      "series_code": "BT06",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "cont_ability",
+        "grade_3",
+        "on_hit",
+        "rc",
+        "stand_unit",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO",
+          "CONT"
+        ],
+        "zones": [
+          "rear_guard_circle",
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_rear_guard",
+          "if_vanguard"
+        ],
+        "costs": [],
+        "effects": [
+          "stand_unit"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT06-042TH",
+      "name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+      "series_code": "BT06",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "boost_related",
+        "counter_blast_cost",
+        "grade_0",
+        "on_hit",
+        "rc",
+        "ride_related",
+        "soul_resource",
+        "stand_unit",
+        "superior_call"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "on_ride",
+          "when_attack_hits",
+          "when_boosts"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_boosted",
+          "if_rear_guard"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "move_to_soul",
+          "stand_unit",
+          "superior_call"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT06-097TH",
+      "name_th": "โมอาย เดอะ เกรท",
+      "series_code": "BT06",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "boost_related",
+        "grade_3",
+        "power_plus"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [
+          "when_boosts"
+        ],
+        "conditions": [
+          "if_boosted"
+        ],
+        "costs": [],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT06-098TH",
+      "name_th": "สัตว์เทวะ,แบล็ค โททัส",
+      "series_code": "BT06",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "bounce_to_hand",
+        "grade_2",
+        "on_hit",
+        "search_deck"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits"
+        ],
+        "costs": [],
+        "effects": [
+          "search_deck"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "manual_review_required": true,
+      "manual_review_reasons": [
+        "unmapped_feature_tags"
+      ]
+    },
+    {
+      "card_id": "BT06-099TH",
+      "name_th": "ฮานิ ผู้ชั่วร้าย",
+      "series_code": "BT06",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "draw",
+        "grade_2",
+        "on_hit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits"
+        ],
+        "costs": [],
+        "effects": [
+          "draw"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT06-100TH",
+      "name_th": "ออลไมท์ตี้ รีพอตเตอร์",
+      "series_code": "BT06",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "boost_related",
+        "bounce_to_hand",
+        "grade_1",
+        "on_hit",
+        "rc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_attack_hits",
+          "when_boosts"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_boosted",
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [],
+        "durations": [
+          "during_battle"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "manual_review_required": true,
+      "manual_review_reasons": [
+        "unmapped_feature_tags"
+      ]
+    },
+    {
+      "card_id": "BT06-101TH",
+      "name_th": "สัตว์เทวะ,สกาเล็ท เบิร์ด",
+      "series_code": "BT06",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "bounce_to_hand",
+        "grade_1",
+        "on_hit",
+        "search_deck"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits"
+        ],
+        "costs": [],
+        "effects": [
+          "search_deck"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "manual_review_required": true,
+      "manual_review_reasons": [
+        "unmapped_feature_tags"
+      ]
+    },
+    {
+      "card_id": "BT06-102TH",
+      "name_th": "เรดการ์ด ดีลเลอร์",
+      "series_code": "BT06",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Stand",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "grade_0",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "stand"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-004TH",
+      "name_th": "สัตว์เทวะขั้นสุดยอด,อิลลูมินัล ดราก้อน",
+      "series_code": "BT09",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "cont_ability",
+        "counter_blast_cost",
+        "damage_zone",
+        "grade_3",
+        "power_plus",
+        "stand_unit",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO",
+          "CONT"
+        ],
+        "zones": [
+          "damage",
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_attack"
+        ],
+        "conditions": [
+          "if_limit_break_4",
+          "if_vanguard"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "power_plus",
+          "stand_unit"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core",
+          "limit_break"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-031TH",
+      "name_th": "สัตว์เทวะ,ยามาตะโนะเดรค",
+      "series_code": "BT09",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "grade_3",
+        "power_plus",
+        "rc",
+        "stand_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "power_plus",
+          "stand_unit"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-032TH",
+      "name_th": "ฮอลโลว์ โนแมด",
+      "series_code": "BT09",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "grade_3",
+        "power_plus"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [
+          "on_attack"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-033TH",
+      "name_th": "สัตว์เทวะ,โกลเด้น แองเกล็ท",
+      "series_code": "BT09",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "grade_2",
+        "power_plus",
+        "rc",
+        "stand_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "power_plus",
+          "stand_unit"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-034TH",
+      "name_th": "สัตว์เทวะ,แบล็ง มาร์ช",
+      "series_code": "BT09",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "boost_related",
+        "counter_blast_cost",
+        "grade_1",
+        "on_hit",
+        "rc",
+        "soul_resource",
+        "stand_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_attack_hits",
+          "when_boosts"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_boosted",
+          "if_rear_guard"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "move_to_soul",
+          "stand_unit"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-070TH",
+      "name_th": "ฮีโรอิค ฮานิ",
+      "series_code": "BT09",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "counter_blast_cost",
+        "damage_zone",
+        "deck_recycle",
+        "end_phase",
+        "grade_2",
+        "on_call",
+        "rc",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "damage",
+          "rear_guard_circle",
+          "vanguard_circle"
+        ],
+        "timing": [
+          "end_phase",
+          "on_call"
+        ],
+        "conditions": [
+          "if_rear_guard",
+          "if_vanguard"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "shuffle_deck"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-071TH",
+      "name_th": "ทรานไรเซอร์",
+      "series_code": "BT09",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "deck_recycle",
+        "grade_2",
+        "on_call",
+        "rc",
+        "search_deck",
+        "superior_call",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle",
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_call"
+        ],
+        "conditions": [
+          "if_rear_guard",
+          "if_vanguard"
+        ],
+        "costs": [],
+        "effects": [
+          "search_deck",
+          "shuffle_deck",
+          "superior_call"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-072TH",
+      "name_th": "เบิร์สไรเซอร์",
+      "series_code": "BT09",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "counter_blast_cost",
+        "grade_1",
+        "power_plus"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT"
+        ],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-073TH",
+      "name_th": "สโตอิค ฮานิ",
+      "series_code": "BT09",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "counter_blast_cost",
+        "damage_zone",
+        "deck_recycle",
+        "end_phase",
+        "grade_1",
+        "on_call",
+        "rc",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "damage",
+          "rear_guard_circle",
+          "vanguard_circle"
+        ],
+        "timing": [
+          "end_phase",
+          "on_call"
+        ],
+        "conditions": [
+          "if_rear_guard",
+          "if_vanguard"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "shuffle_deck"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "BT09-074TH",
+      "name_th": "วิวัฒนาการแห่งการเคลื่อนย้าย,มิไรโอ",
+      "series_code": "BT09",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "auto_ability",
+        "bounce_to_hand",
+        "counter_blast_cost",
+        "deck_recycle",
+        "grade_0",
+        "rc",
+        "ride_related",
+        "search_deck",
+        "soul_resource"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT",
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "on_ride"
+        ],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "move_to_soul",
+          "search_deck",
+          "shuffle_deck"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "manual_review_required": true,
+      "manual_review_reasons": [
+        "unmapped_feature_tags"
+      ]
+    },
+    {
+      "card_id": "BT09-075TH",
+      "name_th": "ไลโอเนท ฮีท",
+      "series_code": "BT09",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "auto_ability",
+        "grade_0",
+        "power_plus",
+        "rc",
+        "ride_related",
+        "soul_resource"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT",
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "on_ride"
+        ],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "move_to_soul",
+          "power_plus"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB01-001TH",
+      "name_th": "เพอร์เฟค ไรเซอร์",
+      "series_code": "EB01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "cont_ability",
+        "critical_plus",
+        "grade_3",
+        "on_call",
+        "power_plus",
+        "rc",
+        "soul_resource",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO",
+          "CONT"
+        ],
+        "zones": [
+          "rear_guard_circle",
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_call"
+        ],
+        "conditions": [
+          "if_rear_guard",
+          "if_vanguard"
+        ],
+        "costs": [],
+        "effects": [
+          "critical_plus",
+          "move_to_soul",
+          "power_plus"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB01-003TH",
+      "name_th": "ไฮพาวเวอร์ไรเซอร์คัสต้อม",
+      "series_code": "EB01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "cont_ability",
+        "grade_2"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "CONT"
+        ],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB01-008TH",
+      "name_th": "มิส สเปนเดอร์",
+      "series_code": "EB01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "grade_3"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [
+          "on_attack"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [
+          "during_battle"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB01-009TH",
+      "name_th": "ร็อคเก็ตแฮมเมอร์แมน",
+      "series_code": "EB01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "grade_1",
+        "power_plus",
+        "rc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB01-016TH",
+      "name_th": "บูมเมอแรง โทรลเวอร์",
+      "series_code": "EB01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "cont_ability",
+        "grade_2",
+        "ride_related",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO",
+          "CONT"
+        ],
+        "zones": [
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "on_ride"
+        ],
+        "conditions": [
+          "if_vanguard"
+        ],
+        "costs": [],
+        "effects": [],
+        "durations": [
+          "during_battle"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB01-017TH",
+      "name_th": "ไรเซอร์ คัสต้อม",
+      "series_code": "EB01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "cont_ability",
+        "grade_1",
+        "power_plus"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "CONT"
+        ],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB01-018TH",
+      "name_th": "วอลบอย",
+      "series_code": "EB01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Heal",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "grade_0",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "heal"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB01-019TH",
+      "name_th": "แมวพ่อบ้าน",
+      "series_code": "EB01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "drop_zone",
+        "grade_0",
+        "rc",
+        "stand_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "drop",
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "on_attack"
+        ],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "stand_unit"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB01-020TH",
+      "name_th": "แบทเทิล ไรเซอร์",
+      "series_code": "EB01",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Stand",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "boost_related",
+        "deck_recycle",
+        "grade_0",
+        "power_plus",
+        "rc",
+        "ride_related",
+        "superior_call",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "on_ride",
+          "when_boosts",
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [
+          "if_boosted",
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "power_plus",
+          "shuffle_deck",
+          "superior_call"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "stand"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-001TH",
+      "name_th": "เพอร์เฟค ไรเซอร์",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "cont_ability",
+        "critical_plus",
+        "grade_3",
+        "on_call",
+        "power_plus",
+        "rc",
+        "soul_resource",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO",
+          "CONT"
+        ],
+        "zones": [
+          "rear_guard_circle",
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_call"
+        ],
+        "conditions": [
+          "if_rear_guard",
+          "if_vanguard"
+        ],
+        "costs": [],
+        "effects": [
+          "critical_plus",
+          "move_to_soul",
+          "power_plus"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-002TH",
+      "name_th": "สุดยอดร่างกัดกร่อนไร้ที่สิ้นสุด,เดทอาร์มี่ คอสโม่ลอร์ด",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "counter_blast_cost",
+        "critical_plus",
+        "damage_zone",
+        "grade_3",
+        "power_plus",
+        "stand_unit",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT"
+        ],
+        "zones": [
+          "damage",
+          "vanguard_circle"
+        ],
+        "timing": [],
+        "conditions": [
+          "if_limit_break_4",
+          "if_vanguard"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "critical_plus",
+          "power_plus",
+          "stand_unit"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core",
+          "limit_break"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-003TH",
+      "name_th": "สัตว์เทวะ,เอเซอร์ ดราก้อน",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "cont_ability",
+        "grade_3",
+        "on_hit",
+        "rc",
+        "stand_unit",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO",
+          "CONT"
+        ],
+        "zones": [
+          "rear_guard_circle",
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_rear_guard",
+          "if_vanguard"
+        ],
+        "costs": [],
+        "effects": [
+          "stand_unit"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-004TH",
+      "name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "counter_blast_cost",
+        "draw",
+        "grade_2",
+        "on_hit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "draw"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-005TH",
+      "name_th": "ไฮพาวเวอร์ไรเซอร์คัสต้อม",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "cont_ability",
+        "grade_2"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "CONT"
+        ],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-006TH",
+      "name_th": "เดทอาร์มี่ บิชอป",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "counter_blast_cost",
+        "grade_1",
+        "rc",
+        "stand_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "stand_unit"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-007TH",
+      "name_th": "ทวิน เบลดเดอร์",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "cont_ability",
+        "grade_1",
+        "on_call"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO",
+          "CONT"
+        ],
+        "zones": [],
+        "timing": [
+          "on_attack",
+          "on_call"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [
+          "during_battle"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-008TH",
+      "name_th": "โกลด์ รูไทล์",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "counter_blast_cost",
+        "counter_charge",
+        "damage_zone",
+        "grade_3",
+        "on_hit",
+        "stand_unit",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "damage",
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_vanguard"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "counter_charge",
+          "stand_unit"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-009TH",
+      "name_th": "เจโนไซด์ โจ๊กเกอร์",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "counter_blast_cost",
+        "grade_3",
+        "power_plus"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT"
+        ],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-010TH",
+      "name_th": "เดทเมทัล ดรอยด์",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "counter_blast_cost",
+        "grade_3",
+        "power_plus"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [
+          "on_attack"
+        ],
+        "conditions": [],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-011TH",
+      "name_th": "เจโนไซด์ แจ็ค",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "attack_related",
+        "auto_ability",
+        "boost_related",
+        "cont_ability",
+        "counter_blast_cost",
+        "grade_2",
+        "power_plus",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT",
+          "AUTO",
+          "CONT"
+        ],
+        "zones": [
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_boosts"
+        ],
+        "conditions": [
+          "if_boosted",
+          "if_vanguard"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-012TH",
+      "name_th": "เดทอาร์มี่ ไนท์",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "grade_2",
+        "on_call",
+        "rc",
+        "stand_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "on_call"
+        ],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "stand_unit"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-013TH",
+      "name_th": "เดทอาร์มี่ เลดี้",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "grade_2",
+        "rc",
+        "stand_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "stand_unit"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-014TH",
+      "name_th": "สตรีท บราวเซอร์",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "draw",
+        "grade_2",
+        "on_call",
+        "rc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "on_call"
+        ],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "draw"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-015TH",
+      "name_th": "เดทอาร์มี่ กาย",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "grade_1",
+        "rc",
+        "stand_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "stand_unit"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-016TH",
+      "name_th": "Mr.อินวิซิเบิ้ล",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "counter_blast_cost",
+        "counter_charge",
+        "damage_zone",
+        "grade_3",
+        "on_hit",
+        "soul_blast_cost",
+        "soul_charge",
+        "stand_unit",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "damage",
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_vanguard"
+        ],
+        "costs": [
+          "counter_blast",
+          "soul_blast"
+        ],
+        "effects": [
+          "counter_charge",
+          "soul_charge",
+          "stand_unit"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-017TH",
+      "name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "boost_related",
+        "draw",
+        "grade_3",
+        "on_hit",
+        "power_plus",
+        "soul_blast_cost",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_attack_hits",
+          "when_boosts"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_boosted",
+          "if_vanguard"
+        ],
+        "costs": [
+          "soul_blast"
+        ],
+        "effects": [
+          "draw",
+          "power_plus"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-018TH",
+      "name_th": "เดทอาร์มี่ รุค",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "grade_2"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-019TH",
+      "name_th": "บูมเมอแรง โทรลเวอร์",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "cont_ability",
+        "grade_2",
+        "ride_related",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO",
+          "CONT"
+        ],
+        "zones": [
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "on_ride"
+        ],
+        "conditions": [
+          "if_vanguard"
+        ],
+        "costs": [],
+        "effects": [],
+        "durations": [
+          "during_battle"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-020TH",
+      "name_th": "NGM โปรโตไทป์",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "grade_2"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-021TH",
+      "name_th": "มาเวลรัส ฮานิ",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "draw",
+        "grade_2",
+        "on_hit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits"
+        ],
+        "costs": [],
+        "effects": [
+          "draw"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-022TH",
+      "name_th": "ทอชบอย",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "grade_1"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-023TH",
+      "name_th": "โอเอซิส เกิร์ล",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "counter_blast_cost",
+        "grade_1",
+        "power_plus"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT"
+        ],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-024TH",
+      "name_th": "ผู้ประกาศร้องเล่นเต้นเดิน,เชาท์",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "draw",
+        "grade_1"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT"
+        ],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [],
+        "effects": [
+          "draw"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-025TH",
+      "name_th": "แดนซ์ซิ่ง วูลฟ์",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "grade_1",
+        "power_plus",
+        "rc",
+        "stand_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "power_plus",
+          "stand_unit"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-026TH",
+      "name_th": "ไรเซอร์ คัสต้อม",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "cont_ability",
+        "grade_1",
+        "power_plus"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "CONT"
+        ],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-027TH",
+      "name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "boost_related",
+        "counter_blast_cost",
+        "grade_0",
+        "on_hit",
+        "rc",
+        "ride_related",
+        "soul_resource",
+        "stand_unit",
+        "superior_call"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "on_ride",
+          "when_attack_hits",
+          "when_boosts"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_boosted",
+          "if_rear_guard"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "move_to_soul",
+          "stand_unit",
+          "superior_call"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-028TH",
+      "name_th": "เดทอาร์มี่ พอว์น",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "auto_ability",
+        "grade_0",
+        "power_plus",
+        "rc",
+        "ride_related",
+        "superior_call"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT",
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "on_ride"
+        ],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "power_plus",
+          "superior_call"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-029TH",
+      "name_th": "มินิมั่ม ไรเซอร์",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Critical",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "grade_0",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "critical"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-030TH",
+      "name_th": "ทรี มินิทส์",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Draw",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "grade_0",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "draw"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-031TH",
+      "name_th": "เดอะ ก๊อง",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Draw",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "grade_0",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "draw"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-032TH",
+      "name_th": "วอลบอย",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Heal",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "grade_0",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "heal"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-033TH",
+      "name_th": "เรด ไลท์นิ่ง",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Critical",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "counter_charge",
+        "damage_zone",
+        "grade_0",
+        "rc",
+        "soul_resource",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT"
+        ],
+        "zones": [
+          "damage",
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "counter_charge",
+          "move_to_soul"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "critical"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-034TH",
+      "name_th": "เทอร์โบไรเซอร์",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Stand",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "boost_related",
+        "deck_recycle",
+        "end_phase",
+        "grade_0",
+        "power_plus",
+        "rc",
+        "ride_related",
+        "superior_call",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "end_phase",
+          "on_ride",
+          "when_boosts",
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [
+          "if_boosted",
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "power_plus",
+          "shuffle_deck",
+          "superior_call"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "stand"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "EB04-035TH",
+      "name_th": "แบทเทิลไรเซอร์",
+      "series_code": "EB04",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 0,
+      "trigger": "Stand",
+      "type_1": "Trigger Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "boost_related",
+        "deck_recycle",
+        "end_phase",
+        "grade_0",
+        "power_plus",
+        "rc",
+        "ride_related",
+        "superior_call",
+        "trigger_unit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "end_phase",
+          "on_ride",
+          "when_boosts",
+          "when_revealed_as_trigger"
+        ],
+        "conditions": [
+          "if_boosted",
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "power_plus",
+          "shuffle_deck",
+          "superior_call"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core",
+          "trigger_icon"
+        ],
+        "trigger_icons": [
+          "stand"
+        ]
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-001TH",
+      "name_th": "โกลด์ รูไทล์",
+      "series_code": "TD03",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "counter_blast_cost",
+        "counter_charge",
+        "damage_zone",
+        "grade_3",
+        "on_hit",
+        "stand_unit",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "damage",
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_vanguard"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "counter_charge",
+          "stand_unit"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-002TH",
+      "name_th": "เดธเมทัล ดรอยด์",
+      "series_code": "TD03",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "counter_blast_cost",
+        "grade_3",
+        "power_plus"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [
+          "on_attack"
+        ],
+        "conditions": [],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-003TH",
+      "name_th": "Mr. อินวิซิเบิ้ล",
+      "series_code": "TD03",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 3,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "counter_blast_cost",
+        "counter_charge",
+        "damage_zone",
+        "grade_3",
+        "on_hit",
+        "soul_blast_cost",
+        "soul_charge",
+        "stand_unit",
+        "vc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "damage",
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_vanguard"
+        ],
+        "costs": [
+          "counter_blast",
+          "soul_blast"
+        ],
+        "effects": [
+          "counter_charge",
+          "soul_charge",
+          "stand_unit"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-004TH",
+      "name_th": "คิง ออฟ ซอร์ด",
+      "series_code": "TD03",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "grade_2"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-005TH",
+      "name_th": "สุดยอดแม่เหล็กไฟฟ้ามีชีวิต สตอร์ม",
+      "series_code": "TD03",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "counter_charge",
+        "damage_zone",
+        "grade_2",
+        "on_hit"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "damage"
+        ],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits"
+        ],
+        "costs": [],
+        "effects": [
+          "counter_charge"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-006TH",
+      "name_th": "NGM โปรโตไทป์",
+      "series_code": "TD03",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "grade_2"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-007TH",
+      "name_th": "ทอชบอย",
+      "series_code": "TD03",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "grade_1"
+      ],
+      "semantic_tags": {
+        "ability_types": [],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [],
+        "effects": [],
+        "durations": [],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-008TH",
+      "name_th": "โอเอซิส เกิร์ล",
+      "series_code": "TD03",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "counter_blast_cost",
+        "grade_1",
+        "power_plus"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT"
+        ],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-009TH",
+      "name_th": "ผู้ประกาศร้องเล่นเต้นเดิน เชาท์",
+      "series_code": "TD03",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "act_ability",
+        "draw",
+        "grade_1"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT"
+        ],
+        "zones": [],
+        "timing": [],
+        "conditions": [],
+        "costs": [],
+        "effects": [
+          "draw"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-010TH",
+      "name_th": "ควีน ออฟ ฮาร์ท",
+      "series_code": "TD03",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "auto_ability",
+        "boost_related",
+        "grade_1",
+        "power_plus",
+        "rc"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "when_boosts"
+        ],
+        "conditions": [
+          "if_boosted",
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    },
+    {
+      "card_id": "TD03-011TH",
+      "name_th": "แบทเทอริ่ง มิโนทอร์",
+      "series_code": "TD03",
+      "clan": "โนว่า เกรปเปอร์",
+      "nation": "สตาร์เกท",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "raw_feature_tags": [
+        "attack_related",
+        "auto_ability",
+        "grade_1",
+        "power_plus"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [
+          "on_attack"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [
+          "power_plus"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "unmapped_feature_tags": [],
+      "manual_review_required": false,
+      "manual_review_reasons": []
+    }
+  ],
+  "next_target": "M35-B3"
+}

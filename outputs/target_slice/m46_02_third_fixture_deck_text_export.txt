@@ -1,0 +1,47 @@
+# Vanguard Thai Sim Deck List
+# M46-02 review-only export from an offline runtime fixture.
+# FixtureId: runtime_fixture_m44_recipe_001_link_joker_legion_bermuda_triangle_m45_04
+# RecipeId: m44_recipe_001
+# Slice: Third Offline Slice
+# Scope: review_only_offline_fixture
+Name: Link Joker Legion Bermuda Triangle Fixture (m44_recipe_001)
+Format: link_joker_legion_mate
+PackId: vanguard_th
+PackVersion: 251
+PackDefinitionHash: e1d568ec103786c3a9a782e6a011e6307f612be28ba6e6b677c281f367cdd7c4
+
+[Main]
+# Card: PR♥ISM-Image,เวล | G3 | Normal Unit | EB06
+4 EB06-003TH
+# Card: PR♥ISM-Smile,ริคเรียร์ | G2 | Normal Unit | EB06
+4 EB06-009TH
+# Card: PR♥ISM-Romance,ลูมิเอล | G2 | Normal Unit | EB06
+4 EB06-011TH
+# Card: PR♥ISM-Romance,เมอร์เคียว | G1 | Normal Unit | EB06
+2 EB06-013TH
+# Card: เมอร์เมดไอดอล,เซดน่า | G1 | Normal Unit | EB06
+1 EB06-021TH
+# Card: เฟรชสตาร์,คอรัล | G1 | Normal Unit | EB06
+3 EB06-022TH
+# Card: PR♥ISM-Promise,เลเต้ | G1 | Normal Unit | EB06
+4 EB06-023TH
+# Card: ดอลฟินเฟรนด์,พราจ | G0 | Normal Unit | EB06
+1 EB06-026TH
+# Card: กันสลิงเกอร์สตาร์,ฟลอริด้า | G0 | Trigger Unit | Critical | EB06
+4 EB06-029TH
+# Card: PR♥ISM-Miracle,อาเดรีย | G0 | Trigger Unit | Draw | EB06
+4 EB06-031TH
+# Card: มิสเทรี่สไมล์,อารัล | G0 | Trigger Unit | Stand | EB06
+4 EB06-032TH
+# Card: PR♥ISM-Miracle,ทีโมล | G0 | Trigger Unit | Heal | EB06
+4 EB06-033TH
+# Card: อีเทอนอลไอดอล,พาซิฟิก้า | G3 | Normal Unit | EB06
+4 EB06-S01TH
+# Card: PR♥ISM-Promise,เคลท์ | G2 | Normal Unit | EB06
+3 EB06-S05TH
+# Card: Duo วันแห่งคำสัญญา,โคลิม่า | G1 | Normal Unit | EB10
+4 EB10-007TH-B
+
+[Ride]
+
+[G]

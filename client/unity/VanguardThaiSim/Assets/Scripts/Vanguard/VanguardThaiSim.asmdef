@@ -1,0 +1,16 @@
+{
+  "name": "VanguardThaiSim",
+  "rootNamespace": "VanguardThaiSim",
+  "references": [
+    "Photon.Realtime"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

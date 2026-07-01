@@ -1,0 +1,260 @@
+{
+  "version": "M45-04",
+  "description": "Third-slice runtime fixture promotion gate",
+  "source_inputs": {
+    "human_accepted_repair_artifact": "outputs\\target_slice\\m45_02_third_slice_human_accepted_repair_artifact.json",
+    "repaired_recipe_validation": "outputs\\target_slice\\m45_03_third_slice_repaired_recipe_validation_report.json"
+  },
+  "scope": {
+    "offline_promotion_gate": true,
+    "creates_runtime_test_fixture_artifact": true,
+    "mutates_runtime_deck_library": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_integration": false,
+    "automatic_playbook_promotion": false,
+    "live_card_text_parsing": false,
+    "GameState_mutation": false
+  },
+  "gate_policy": {
+    "requires_human_acceptance": true,
+    "requires_validation_pass": true,
+    "requires_grade_profile_clear": true,
+    "requires_combo_pair_consistency": true,
+    "requires_manual_review_cleared_after_repair": true,
+    "requires_combined_repair_integrity": true,
+    "fixture_only_not_live_deck": true
+  },
+  "gate_checks": [
+    {
+      "check_id": "human_acceptance",
+      "passed": true,
+      "evidence": {
+        "decision": "accepted",
+        "accepted_review_item_id": "m45_01_m44_recipe_001_repair_review",
+        "accepted_combined_repair_package_id": "m44_recipe_001_combined_manual_grade_pkg_001"
+      }
+    },
+    {
+      "check_id": "validation",
+      "passed": true,
+      "evidence": {
+        "validation_status": "validator_passed",
+        "runtime_ready": true,
+        "blocking_issue_count": 0,
+        "main_deck_count": 50,
+        "trigger_count": 16,
+        "ready_for_m45_04": true
+      }
+    },
+    {
+      "check_id": "grade_profile_review",
+      "passed": true,
+      "evidence": {
+        "grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        }
+      }
+    },
+    {
+      "check_id": "combo_pair_consistency",
+      "passed": true,
+      "evidence": {
+        "required_pair_card_ids": [
+          "EB10-007TH-B",
+          "EB06-023TH"
+        ],
+        "missing_pair_card_ids": [],
+        "pair_cards_present": true
+      }
+    },
+    {
+      "check_id": "manual_review_cleared_after_repair",
+      "passed": true,
+      "evidence": {
+        "manual_review_overlap_recipe_count": 0,
+        "issue_codes": []
+      }
+    },
+    {
+      "check_id": "combined_repair_integrity",
+      "passed": true,
+      "evidence": {
+        "ready_for_m45_03": true,
+        "repair_application_issue_count": 0,
+        "combined_grade_repair_recomputed": true,
+        "source_grade_package_conflict_count": 2,
+        "grade_counts_after_repair": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        }
+      }
+    },
+    {
+      "check_id": "runtime_boundary",
+      "passed": true,
+      "evidence": {
+        "accepted_creates_runtime_fixture": false,
+        "accepted_saved_deck_injection": false,
+        "accepted_ui_deck_list_publication": false,
+        "accepted_bot_playbook": false,
+        "accepted_direct_GameState_mutation": false,
+        "validation_creates_runtime_fixture": false,
+        "validation_saved_deck_injection": false,
+        "validation_ui_deck_list_publication": false,
+        "validation_bot_playbook": false,
+        "validation_direct_GameState_mutation": false
+      }
+    }
+  ],
+  "promotion_decision": {
+    "promotion_allowed": true,
+    "fixture_created": true,
+    "fixture_path": "outputs/target_slice/runtime_fixtures/m44_recipe_001_link_joker_legion_bermuda_triangle_m45_04.json",
+    "runtime_deck_library_mutated": false,
+    "saved_deck_injected": false,
+    "ui_deck_list_published": false,
+    "bot_playbook_enabled": false,
+    "next_action": "M45-closeout"
+  },
+  "runtime_fixture": {
+    "schema_version": "deck_recipe_runtime_fixture_v1",
+    "fixture_id": "runtime_fixture_m44_recipe_001_link_joker_legion_bermuda_triangle_m45_04",
+    "fixture_scope": "offline_runtime_test_fixture",
+    "recipe_id": "m44_recipe_001",
+    "source_artifact": "outputs/target_slice/m45_02_third_slice_human_accepted_repair_artifact.json",
+    "selected_target": {
+      "slice": "Third Offline Slice",
+      "era_preset": "link_joker_legion_mate",
+      "group": "เบอร์มิวด้า ไทรแองเกิล",
+      "group_field": "clan",
+      "rank": 1,
+      "priority_score": 95.0,
+      "best_era_candidates": 2179,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "rich_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    "format_policy": {
+      "slice": "Third Offline Slice",
+      "era_preset": "link_joker_legion_mate",
+      "group": "เบอร์มิวด้า ไทรแองเกิล",
+      "group_field": "clan"
+    },
+    "main_deck": [
+      {
+        "card_id": "EB06-003TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "EB06-009TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "EB06-011TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "EB06-013TH",
+        "quantity": 2
+      },
+      {
+        "card_id": "EB06-021TH",
+        "quantity": 1
+      },
+      {
+        "card_id": "EB06-022TH",
+        "quantity": 3
+      },
+      {
+        "card_id": "EB06-023TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "EB06-026TH",
+        "quantity": 1
+      },
+      {
+        "card_id": "EB06-029TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "EB06-031TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "EB06-032TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "EB06-033TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "EB06-S01TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "EB06-S05TH",
+        "quantity": 3
+      },
+      {
+        "card_id": "EB10-007TH-B",
+        "quantity": 4
+      }
+    ],
+    "count_summary": {
+      "main_deck_count": 50,
+      "trigger_count": 16,
+      "trigger_counts": {
+        "Critical": 4,
+        "Draw": 4,
+        "Heal": 4,
+        "Stand": 4
+      },
+      "grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "clan_counts": {
+        "เบอร์มิวด้า ไทรแองเกิล": 50
+      }
+    },
+    "source_packages": {
+      "manual_repair_package_id": "m44_recipe_001_manual_overlap_pkg_001",
+      "source_grade_profile_package_id": "m44_recipe_001_grade_profile_pkg_001",
+      "combined_repair_package_id": "m44_recipe_001_combined_manual_grade_pkg_001"
+    },
+    "runtime_boundaries": {
+      "test_fixture_only": true,
+      "auto_injected_into_player_decks": false,
+      "bot_playbook_enabled": false,
+      "ui_deck_library_mutated": false,
+      "game_state_mutated": false
+    }
+  },
+  "summary": {
+    "recipe_id": "m44_recipe_001",
+    "promotion_allowed": true,
+    "passed_check_count": 7,
+    "failed_check_count": 0,
+    "fixture_created": true,
+    "ready_for_m45_closeout": true
+  },
+  "next_target": {
+    "milestone": "M45-closeout",
+    "task": "Third-slice fixture closeout"
+  }
+}

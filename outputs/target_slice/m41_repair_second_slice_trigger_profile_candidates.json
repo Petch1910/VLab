@@ -1,0 +1,443 @@
+{
+  "version": "M41-repair",
+  "description": "Second-slice trigger/profile repair candidates after M41-03 validation",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โอราเคิล ทิงค์ แทงค์",
+    "group_field": "clan",
+    "rank": 10,
+    "priority_score": 63.74,
+    "best_era_candidates": 875,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "MEDIUM_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool"
+    ]
+  },
+  "source_inputs": {
+    "human_accepted_repair_artifact": "outputs\\target_slice\\m41_02_second_slice_human_accepted_repair_artifact.json",
+    "repaired_recipe_validation_rerun": "outputs\\target_slice\\m41_03_second_slice_repaired_recipe_validation_rerun.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "scope": {
+    "offline_repair_candidates": true,
+    "changes_accepted_artifact": false,
+    "records_human_acceptance": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false
+  },
+  "repair_policy": {
+    "source_backed_candidates": true,
+    "trigger_count_target": 16,
+    "grade_count_must_remain_target": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "human_acceptance_required_after_candidate": true,
+    "runtime_promotion_allowed": false
+  },
+  "summary": {
+    "trigger_blocker_present": true,
+    "candidate_package_count": 3,
+    "complete_candidate_count": 3,
+    "ready_for_human_review_count": 3,
+    "runtime_promotion_allowed": false,
+    "ready_for_repair_acceptance": true
+  },
+  "repair_candidates": [
+    {
+      "package_id": "m41_repair_pkg_001",
+      "profile_id": "balanced_classic_trigger_restore",
+      "repair_type": "trigger_profile_substitution",
+      "advisory_only": true,
+      "resolves_issue_codes": [
+        "trigger_count_mismatch"
+      ],
+      "additions": [
+        {
+          "card_id": "BT01-056TH",
+          "name_th": "โอราเคิลกาเดี้ยน, ไนเก้",
+          "quantity": 4,
+          "grade": "0",
+          "trigger": "Critical",
+          "series_code": "BT01",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT01-058TH",
+          "name_th": "มิราเคิล คิด",
+          "quantity": 2,
+          "grade": "0",
+          "trigger": "Draw",
+          "series_code": "BT01",
+          "current_quantity": 2,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT01-027TH",
+          "name_th": "โลเซน เมกัส",
+          "quantity": 4,
+          "grade": "0",
+          "trigger": "Heal",
+          "series_code": "BT01",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT02-067TH",
+          "name_th": "อีเมอร์เจนซี่ อาลามเมอร์",
+          "quantity": 4,
+          "grade": "0",
+          "trigger": "Stand",
+          "series_code": "BT02",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "removals": [
+        {
+          "card_id": "BT03-038TH",
+          "name_th": "เหยี่ยวเทพ อิจิเบียวชิ",
+          "quantity": 3,
+          "grade": "0",
+          "trigger": "",
+          "series_code": "BT03",
+          "source": "m41_02_accepted_repair_preview"
+        },
+        {
+          "card_id": "BT05-067TH",
+          "name_th": "วีรสตรีสงคราม ทาจิซึฮิเมะ",
+          "quantity": 3,
+          "grade": "0",
+          "trigger": "",
+          "series_code": "BT05",
+          "source": "m41_02_accepted_repair_preview"
+        },
+        {
+          "card_id": "BT07-039TH",
+          "name_th": "ลิทเติ้ลวิช,ลูลู่",
+          "quantity": 3,
+          "grade": "0",
+          "trigger": "",
+          "series_code": "BT07",
+          "source": "m41_02_accepted_repair_preview"
+        },
+        {
+          "card_id": "BT09-069TH",
+          "name_th": "เจ้าหญิงกระบอกไม้ไผ่,คางุยะ",
+          "quantity": 3,
+          "grade": "0",
+          "trigger": "",
+          "series_code": "BT09",
+          "source": "m41_02_accepted_repair_preview"
+        },
+        {
+          "card_id": "EB05-028TH",
+          "name_th": "แบทเทิลซิสเตอร์,วาฟเฟิล",
+          "quantity": 2,
+          "grade": "0",
+          "trigger": "",
+          "series_code": "EB05",
+          "source": "m41_02_accepted_repair_preview"
+        }
+      ],
+      "addition_issue_count": 0,
+      "addition_issues": [],
+      "removal_complete": true,
+      "counts_after": {
+        "main_deck_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        }
+      },
+      "complete_candidate": true,
+      "runtime_promotion_allowed": false,
+      "ready_for_human_review": true
+    },
+    {
+      "package_id": "m41_repair_pkg_002",
+      "profile_id": "critical_pressure_trigger_restore",
+      "repair_type": "trigger_profile_substitution",
+      "advisory_only": true,
+      "resolves_issue_codes": [
+        "trigger_count_mismatch"
+      ],
+      "additions": [
+        {
+          "card_id": "BT01-056TH",
+          "name_th": "โอราเคิลกาเดี้ยน, ไนเก้",
+          "quantity": 4,
+          "grade": "0",
+          "trigger": "Critical",
+          "series_code": "BT01",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT02-068TH",
+          "name_th": "ไซคิก เบิร์ด",
+          "quantity": 4,
+          "grade": "0",
+          "trigger": "Critical",
+          "series_code": "BT02",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT01-058TH",
+          "name_th": "มิราเคิล คิด",
+          "quantity": 2,
+          "grade": "0",
+          "trigger": "Draw",
+          "series_code": "BT01",
+          "current_quantity": 2,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT01-027TH",
+          "name_th": "โลเซน เมกัส",
+          "quantity": 4,
+          "grade": "0",
+          "trigger": "Heal",
+          "series_code": "BT01",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "removals": [
+        {
+          "card_id": "BT03-038TH",
+          "name_th": "เหยี่ยวเทพ อิจิเบียวชิ",
+          "quantity": 3,
+          "grade": "0",
+          "trigger": "",
+          "series_code": "BT03",
+          "source": "m41_02_accepted_repair_preview"
+        },
+        {
+          "card_id": "BT05-067TH",
+          "name_th": "วีรสตรีสงคราม ทาจิซึฮิเมะ",
+          "quantity": 3,
+          "grade": "0",
+          "trigger": "",
+          "series_code": "BT05",
+          "source": "m41_02_accepted_repair_preview"
+        },
+        {
+          "card_id": "BT07-039TH",
+          "name_th": "ลิทเติ้ลวิช,ลูลู่",
+          "quantity": 3,
+          "grade": "0",
+          "trigger": "",
+          "series_code": "BT07",
+          "source": "m41_02_accepted_repair_preview"
+        },
+        {
+          "card_id": "BT09-069TH",
+          "name_th": "เจ้าหญิงกระบอกไม้ไผ่,คางุยะ",
+          "quantity": 3,
+          "grade": "0",
+          "trigger": "",
+          "series_code": "BT09",
+          "source": "m41_02_accepted_repair_preview"
+        },
+        {
+          "card_id": "EB05-028TH",
+          "name_th": "แบทเทิลซิสเตอร์,วาฟเฟิล",
+          "quantity": 2,
+          "grade": "0",
+          "trigger": "",
+          "series_code": "EB05",
+          "source": "m41_02_accepted_repair_preview"
+        }
+      ],
+      "addition_issue_count": 0,
+      "addition_issues": [],
+      "removal_complete": true,
+      "counts_after": {
+        "main_deck_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 8,
+          "Draw": 4,
+          "Heal": 4
+        },
+        "grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        }
+      },
+      "complete_candidate": true,
+      "runtime_promotion_allowed": false,
+      "ready_for_human_review": true
+    },
+    {
+      "package_id": "m41_repair_pkg_003",
+      "profile_id": "stand_pressure_trigger_restore",
+      "repair_type": "trigger_profile_substitution",
+      "advisory_only": true,
+      "resolves_issue_codes": [
+        "trigger_count_mismatch"
+      ],
+      "additions": [
+        {
+          "card_id": "BT02-067TH",
+          "name_th": "อีเมอร์เจนซี่ อาลามเมอร์",
+          "quantity": 4,
+          "grade": "0",
+          "trigger": "Stand",
+          "series_code": "BT02",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB05-032TH",
+          "name_th": "แบทเทิลซิสเตอร์,อัสซัม",
+          "quantity": 4,
+          "grade": "0",
+          "trigger": "Stand",
+          "series_code": "EB05",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT01-058TH",
+          "name_th": "มิราเคิล คิด",
+          "quantity": 2,
+          "grade": "0",
+          "trigger": "Draw",
+          "series_code": "BT01",
+          "current_quantity": 2,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT01-027TH",
+          "name_th": "โลเซน เมกัส",
+          "quantity": 4,
+          "grade": "0",
+          "trigger": "Heal",
+          "series_code": "BT01",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "removals": [
+        {
+          "card_id": "BT03-038TH",
+          "name_th": "เหยี่ยวเทพ อิจิเบียวชิ",
+          "quantity": 3,
+          "grade": "0",
+          "trigger": "",
+          "series_code": "BT03",
+          "source": "m41_02_accepted_repair_preview"
+        },
+        {
+          "card_id": "BT05-067TH",
+          "name_th": "วีรสตรีสงคราม ทาจิซึฮิเมะ",
+          "quantity": 3,
+          "grade": "0",
+          "trigger": "",
+          "series_code": "BT05",
+          "source": "m41_02_accepted_repair_preview"
+        },
+        {
+          "card_id": "BT07-039TH",
+          "name_th": "ลิทเติ้ลวิช,ลูลู่",
+          "quantity": 3,
+          "grade": "0",
+          "trigger": "",
+          "series_code": "BT07",
+          "source": "m41_02_accepted_repair_preview"
+        },
+        {
+          "card_id": "BT09-069TH",
+          "name_th": "เจ้าหญิงกระบอกไม้ไผ่,คางุยะ",
+          "quantity": 3,
+          "grade": "0",
+          "trigger": "",
+          "series_code": "BT09",
+          "source": "m41_02_accepted_repair_preview"
+        },
+        {
+          "card_id": "EB05-028TH",
+          "name_th": "แบทเทิลซิสเตอร์,วาฟเฟิล",
+          "quantity": 2,
+          "grade": "0",
+          "trigger": "",
+          "series_code": "EB05",
+          "source": "m41_02_accepted_repair_preview"
+        }
+      ],
+      "addition_issue_count": 0,
+      "addition_issues": [],
+      "removal_complete": true,
+      "counts_after": {
+        "main_deck_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 8
+        },
+        "grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        }
+      },
+      "complete_candidate": true,
+      "runtime_promotion_allowed": false,
+      "ready_for_human_review": true
+    }
+  ],
+  "next_target": {
+    "milestone": "M41-repair-accept",
+    "task": "Second-slice trigger repair acceptance artifact"
+  }
+}

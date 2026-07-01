@@ -1,0 +1,55 @@
+{
+  "version": "M39-02",
+  "description": "Fixture-to-deck text exporter",
+  "source_inputs": {
+    "runtime_fixture": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\runtime_fixtures\\recipe_003_classic_core_nova_grappler_m38_04.json",
+    "m39_01_validation_report": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m39_01_offline_fixture_schema_validation.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite",
+    "pack_manifest": "data\\packs\\vanguard_th\\manifest.json"
+  },
+  "scope": {
+    "offline_fixture_deck_text_export": true,
+    "review_text_only": true,
+    "mutates_fixture_artifact": false,
+    "mutates_runtime_deck_library": false,
+    "bot_integration": false,
+    "GameState_mutation": false
+  },
+  "deck_text_policy": {
+    "format": "count_line_deck_text",
+    "compatible_with_count_line_deck_codec": true,
+    "comment_lines_are_review_only": true,
+    "card_lines_shape": "<quantity> <card_id>",
+    "empty_ride_and_g_sections_preserved": true
+  },
+  "fixture_summary": {
+    "fixture_id": "runtime_fixture_recipe_003_classic_core_nova_grappler_m38_04",
+    "recipe_id": "recipe_003",
+    "main_deck_count": 50,
+    "unique_card_count": 17
+  },
+  "pack_metadata": {
+    "pack_id": "vanguard_th",
+    "pack_version": "251",
+    "definition_hash": "e1d568ec103786c3a9a782e6a011e6307f612be28ba6e6b677c281f367cdd7c4"
+  },
+  "outputs": {
+    "deck_text": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m39_02_fixture_deck_text_export.txt",
+    "json_report": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m39_02_fixture_deck_text_export.json",
+    "markdown_report": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m39_02_fixture_deck_text_export.md",
+    "deck_text_sha256": "c31765a587b8d66c3f454fcde7cf0a528b7eab2084b33fa773c9b4bb647e248a"
+  },
+  "issues": [],
+  "summary": {
+    "export_ready": true,
+    "blocking_issue_count": 0,
+    "issue_count": 0,
+    "main_deck_count": 50,
+    "exported_card_line_count": 17,
+    "ready_for_m39_03": true
+  },
+  "next_target": {
+    "milestone": "M39-03",
+    "task": "Headless fixture load smoke"
+  }
+}

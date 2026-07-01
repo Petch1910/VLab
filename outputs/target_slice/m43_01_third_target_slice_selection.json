@@ -1,0 +1,141 @@
+{
+  "version": "M43-01",
+  "description": "Third target slice selection",
+  "source_inputs": {
+    "multi_fixture_scale_decision": "outputs\\target_slice\\m42_04_multi_fixture_scale_decision.json"
+  },
+  "scope": {
+    "offline_target_selection": true,
+    "creates_recipe_draft": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "GameState_mutation": false
+  },
+  "selection_policy": {
+    "requires_m42_scale_allowed": true,
+    "selects_first_available_candidate": true,
+    "excludes_completed_fixture_groups": true,
+    "selection_is_for_offline_analysis_only": true
+  },
+  "selected_target": {
+    "slice": "Third Offline Slice",
+    "era_preset": "link_joker_legion_mate",
+    "group": "เบอร์มิวด้า ไทรแองเกิล",
+    "group_field": "clan",
+    "rank": 1,
+    "priority_score": 95.0,
+    "best_era_candidates": 2179,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "candidate_queue_snapshot": [
+    {
+      "rank": 1,
+      "group": "เบอร์มิวด้า ไทรแองเกิล",
+      "group_field": "clan",
+      "best_era": "link_joker_legion_mate",
+      "best_era_candidates": 2179,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 95.0,
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "rich_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    {
+      "rank": 2,
+      "group": "รอยัล พาลาดิน",
+      "group_field": "clan",
+      "best_era": "g_series_first",
+      "best_era_candidates": 1024,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 86.19,
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "rich_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    {
+      "rank": 3,
+      "group": "โกลด์ พาลาดิน",
+      "group_field": "clan",
+      "best_era": "link_joker_legion_mate",
+      "best_era_candidates": 2006,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 77.85,
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "rich_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    {
+      "rank": 4,
+      "group": "ชาโดว์ พาลาดิน",
+      "group_field": "clan",
+      "best_era": "g_next_z",
+      "best_era_candidates": 864,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 73.61,
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    {
+      "rank": 6,
+      "group": "เนโอ เนคต้า",
+      "group_field": "clan",
+      "best_era": "g_series_first",
+      "best_era_candidates": 1208,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 69.26,
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool"
+      ]
+    }
+  ],
+  "decision": {
+    "selection_allowed": true,
+    "third_slice_selected": true,
+    "offline_analysis_only": true,
+    "live_runtime_deck_enabled": false,
+    "saved_deck_enabled": false,
+    "ui_deck_list_enabled": false,
+    "bot_playbook_enabled": false
+  },
+  "summary": {
+    "third_slice_selected": true,
+    "selected_group": "เบอร์มิวด้า ไทรแองเกิล",
+    "selected_era_preset": "link_joker_legion_mate",
+    "selected_rank": 1,
+    "candidate_count": 5,
+    "ready_for_m43_02": true
+  },
+  "next_target": {
+    "milestone": "M43-02",
+    "task": "Third-slice fixture/format readiness"
+  }
+}

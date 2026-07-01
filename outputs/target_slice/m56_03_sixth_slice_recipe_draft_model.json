@@ -1,0 +1,4597 @@
+{
+  "version": "M56-03",
+  "description": "Sixth-slice advisory recipe draft model from M56-02 candidate edges",
+  "selected_target": {
+    "slice": "Sixth Offline Slice",
+    "era_preset": "g_next_z",
+    "group": "ชาโดว์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 4,
+    "priority_score": 73.61,
+    "best_era_candidates": 864,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "sixth_slice_review_packet": "outputs\\target_slice\\m56_02_sixth_slice_review_packet.json",
+    "sixth_slice_fixture_scaffold": "outputs\\target_slice\\m56_01_sixth_slice_fixture_scaffold.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "scope": {
+    "offline_recipe_draft_model": true,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "runtime_deck": false,
+    "bot_playbook": false,
+    "automatic_deck_injection": false,
+    "direct_GameState_mutation": false
+  },
+  "draft_policy": {
+    "pair_anchored_from_m56_02_candidate_edges": true,
+    "fixture_scaffold_source": "m56_01_sixth_slice_fixture_scaffold",
+    "draft_limit": 25,
+    "card_quantities_are_advisory": true,
+    "copy_limit_from_sqlite_deck_limit": true,
+    "human_selection_required_before_runtime": true,
+    "grade4_cards_excluded_until_g_zone_support": true,
+    "no_live_card_text_parsing": true,
+    "no_direct_GameState_mutation": true
+  },
+  "summary": {
+    "candidate_edge_input_count": 70,
+    "candidate_edges_skipped_for_trigger_grade4_or_missing": 58,
+    "recipe_draft_count": 12,
+    "quantity_complete_recipe_count": 12,
+    "manual_overlap_recipe_count": 12,
+    "fixture_scaffold_card_count": 14,
+    "fixture_scaffold_total_cards": 50,
+    "ready_for_m56_04": true
+  },
+  "base_fixture_quantities": [
+    {
+      "card_id": "G-BT09-006TH",
+      "quantity": 4,
+      "name_th": "แดรกวิซาร์ด, โมลเฟสซ่า",
+      "grade": 2,
+      "trigger": ""
+    },
+    {
+      "card_id": "G-BT09-014TH",
+      "quantity": 4,
+      "name_th": "แดรกเซฟเวอร์, เอสราส",
+      "grade": 1,
+      "trigger": ""
+    },
+    {
+      "card_id": "G-BT09-026TH",
+      "quantity": 4,
+      "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+      "grade": 3,
+      "trigger": ""
+    },
+    {
+      "card_id": "G-BT09-027TH",
+      "quantity": 4,
+      "name_th": "รีเวนเจอร์, สเลย์เฮกซ์・ดราก้อน",
+      "grade": 3,
+      "trigger": ""
+    },
+    {
+      "card_id": "G-BT09-028TH",
+      "quantity": 4,
+      "name_th": "รีเวนเจอร์, ดีโทเนต・ดราก้อน",
+      "grade": 2,
+      "trigger": ""
+    },
+    {
+      "card_id": "G-BT09-029TH",
+      "quantity": 4,
+      "name_th": "อบิซัล・อาว",
+      "grade": 1,
+      "trigger": ""
+    },
+    {
+      "card_id": "G-BT09-056TH",
+      "quantity": 3,
+      "name_th": "รีเวนเจอร์แห่งการจู่โจมอันเกรี้ยวกราด, ดีแลน",
+      "grade": 2,
+      "trigger": ""
+    },
+    {
+      "card_id": "G-BT09-058TH",
+      "quantity": 4,
+      "name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+      "grade": 1,
+      "trigger": ""
+    },
+    {
+      "card_id": "G-BT09-059TH",
+      "quantity": 2,
+      "name_th": "รีเวนเจอร์แห่งจิตสัมผัส, ออยเฟ",
+      "grade": 1,
+      "trigger": ""
+    },
+    {
+      "card_id": "G-BT09-061TH",
+      "quantity": 1,
+      "name_th": "อัศวินผู้ห้าวหาญ, เนซ่า",
+      "grade": 0,
+      "trigger": ""
+    },
+    {
+      "card_id": "G-BT09-063TH",
+      "quantity": 4,
+      "name_th": "แรบิดมิว",
+      "grade": 0,
+      "trigger": "Critical"
+    },
+    {
+      "card_id": "G-BT09-064TH",
+      "quantity": 4,
+      "name_th": "อัศวินแห่งตุ้มเหล็ก, คราฟทิเน่",
+      "grade": 0,
+      "trigger": "Stand"
+    },
+    {
+      "card_id": "G-BT10-052TH",
+      "quantity": 4,
+      "name_th": "แดรกวิซาร์ด, ซีรุ",
+      "grade": 0,
+      "trigger": "Draw"
+    },
+    {
+      "card_id": "G-BT14-018TH",
+      "quantity": 4,
+      "name_th": "รีเวนเจอร์แห่งความกรุณา, อาริล",
+      "grade": 0,
+      "trigger": "Heal"
+    }
+  ],
+  "skipped_candidate_edges": [
+    {
+      "edge": "G-BT10-001TH->G-BT12-066TH",
+      "source_card_id": "G-BT10-001TH",
+      "target_card_id": "G-BT12-066TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT10-001TH"
+      ]
+    },
+    {
+      "edge": "G-BT14-018TH->G-BT12-066TH",
+      "source_card_id": "G-BT14-018TH",
+      "target_card_id": "G-BT12-066TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT14-018TH"
+      ]
+    },
+    {
+      "edge": "G-BT10-026TH->G-BT12-005TH",
+      "source_card_id": "G-BT10-026TH",
+      "target_card_id": "G-BT12-005TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-005TH"
+      ]
+    },
+    {
+      "edge": "G-BT10-026TH->G-BT12-069TH",
+      "source_card_id": "G-BT10-026TH",
+      "target_card_id": "G-BT12-069TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-069TH"
+      ]
+    },
+    {
+      "edge": "G-BT10-026TH->G-TD10-018TH",
+      "source_card_id": "G-BT10-026TH",
+      "target_card_id": "G-TD10-018TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-TD10-018TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-001TH->G-BT09-058TH",
+      "source_card_id": "G-BT12-001TH",
+      "target_card_id": "G-BT09-058TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-001TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-001TH->G-BT09-060TH",
+      "source_card_id": "G-BT12-001TH",
+      "target_card_id": "G-BT09-060TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-001TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-001TH->G-BT09-062TH",
+      "source_card_id": "G-BT12-001TH",
+      "target_card_id": "G-BT09-062TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-001TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-001TH->G-BT12-065TH",
+      "source_card_id": "G-BT12-001TH",
+      "target_card_id": "G-BT12-065TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-001TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-001TH->G-BT12-066TH",
+      "source_card_id": "G-BT12-001TH",
+      "target_card_id": "G-BT12-066TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-001TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-001TH->G-BT12-069TH",
+      "source_card_id": "G-BT12-001TH",
+      "target_card_id": "G-BT12-069TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-001TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-001TH->G-TD10-018TH",
+      "source_card_id": "G-BT12-001TH",
+      "target_card_id": "G-TD10-018TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-001TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-030TH->G-BT09-056TH",
+      "source_card_id": "G-BT12-030TH",
+      "target_card_id": "G-BT09-056TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-030TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-030TH->G-BT09-058TH",
+      "source_card_id": "G-BT12-030TH",
+      "target_card_id": "G-BT09-058TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-030TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-030TH->G-BT09-060TH",
+      "source_card_id": "G-BT12-030TH",
+      "target_card_id": "G-BT09-060TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-030TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-030TH->G-BT09-062TH",
+      "source_card_id": "G-BT12-030TH",
+      "target_card_id": "G-BT09-062TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-030TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-030TH->G-BT12-005TH",
+      "source_card_id": "G-BT12-030TH",
+      "target_card_id": "G-BT12-005TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-030TH",
+        "G-BT12-005TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-030TH->G-BT12-031TH",
+      "source_card_id": "G-BT12-030TH",
+      "target_card_id": "G-BT12-031TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-030TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-030TH->G-BT12-065TH",
+      "source_card_id": "G-BT12-030TH",
+      "target_card_id": "G-BT12-065TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-030TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-030TH->G-BT12-066TH",
+      "source_card_id": "G-BT12-030TH",
+      "target_card_id": "G-BT12-066TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-030TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-030TH->G-BT12-069TH",
+      "source_card_id": "G-BT12-030TH",
+      "target_card_id": "G-BT12-069TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-030TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-030TH->G-TD10-010TH",
+      "source_card_id": "G-BT12-030TH",
+      "target_card_id": "G-TD10-010TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-030TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-030TH->G-TD10-018TH",
+      "source_card_id": "G-BT12-030TH",
+      "target_card_id": "G-TD10-018TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-030TH"
+      ]
+    },
+    {
+      "edge": "G-BT14-032TH->G-BT09-056TH",
+      "source_card_id": "G-BT14-032TH",
+      "target_card_id": "G-BT09-056TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT14-032TH"
+      ]
+    },
+    {
+      "edge": "G-BT14-032TH->G-BT09-058TH",
+      "source_card_id": "G-BT14-032TH",
+      "target_card_id": "G-BT09-058TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT14-032TH"
+      ]
+    },
+    {
+      "edge": "G-BT14-032TH->G-BT09-060TH",
+      "source_card_id": "G-BT14-032TH",
+      "target_card_id": "G-BT09-060TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT14-032TH"
+      ]
+    },
+    {
+      "edge": "G-BT14-032TH->G-BT09-062TH",
+      "source_card_id": "G-BT14-032TH",
+      "target_card_id": "G-BT09-062TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT14-032TH"
+      ]
+    },
+    {
+      "edge": "G-BT14-032TH->G-BT12-005TH",
+      "source_card_id": "G-BT14-032TH",
+      "target_card_id": "G-BT12-005TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT14-032TH",
+        "G-BT12-005TH"
+      ]
+    },
+    {
+      "edge": "G-BT14-032TH->G-BT12-031TH",
+      "source_card_id": "G-BT14-032TH",
+      "target_card_id": "G-BT12-031TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT14-032TH"
+      ]
+    },
+    {
+      "edge": "G-BT14-032TH->G-BT12-065TH",
+      "source_card_id": "G-BT14-032TH",
+      "target_card_id": "G-BT12-065TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT14-032TH"
+      ]
+    },
+    {
+      "edge": "G-BT14-032TH->G-BT12-066TH",
+      "source_card_id": "G-BT14-032TH",
+      "target_card_id": "G-BT12-066TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT14-032TH"
+      ]
+    },
+    {
+      "edge": "G-BT14-032TH->G-BT12-069TH",
+      "source_card_id": "G-BT14-032TH",
+      "target_card_id": "G-BT12-069TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT14-032TH"
+      ]
+    },
+    {
+      "edge": "G-BT14-032TH->G-TD10-010TH",
+      "source_card_id": "G-BT14-032TH",
+      "target_card_id": "G-TD10-010TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT14-032TH"
+      ]
+    },
+    {
+      "edge": "G-BT14-032TH->G-TD10-018TH",
+      "source_card_id": "G-BT14-032TH",
+      "target_card_id": "G-TD10-018TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT14-032TH"
+      ]
+    },
+    {
+      "edge": "G-BT09-013TH->G-BT09-058TH",
+      "source_card_id": "G-BT09-013TH",
+      "target_card_id": "G-BT09-058TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT09-013TH"
+      ]
+    },
+    {
+      "edge": "G-BT09-013TH->G-BT09-060TH",
+      "source_card_id": "G-BT09-013TH",
+      "target_card_id": "G-BT09-060TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT09-013TH"
+      ]
+    },
+    {
+      "edge": "G-BT09-013TH->G-BT09-062TH",
+      "source_card_id": "G-BT09-013TH",
+      "target_card_id": "G-BT09-062TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT09-013TH"
+      ]
+    },
+    {
+      "edge": "G-BT09-013TH->G-BT12-065TH",
+      "source_card_id": "G-BT09-013TH",
+      "target_card_id": "G-BT12-065TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT09-013TH"
+      ]
+    },
+    {
+      "edge": "G-BT09-013TH->G-BT12-066TH",
+      "source_card_id": "G-BT09-013TH",
+      "target_card_id": "G-BT12-066TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT09-013TH"
+      ]
+    },
+    {
+      "edge": "G-BT09-013TH->G-TD10-010TH",
+      "source_card_id": "G-BT09-013TH",
+      "target_card_id": "G-TD10-010TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT09-013TH"
+      ]
+    },
+    {
+      "edge": "G-BT10-052TH->G-BT09-058TH",
+      "source_card_id": "G-BT10-052TH",
+      "target_card_id": "G-BT09-058TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT10-052TH"
+      ]
+    },
+    {
+      "edge": "G-BT10-052TH->G-BT09-060TH",
+      "source_card_id": "G-BT10-052TH",
+      "target_card_id": "G-BT09-060TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT10-052TH"
+      ]
+    },
+    {
+      "edge": "G-BT10-052TH->G-BT09-062TH",
+      "source_card_id": "G-BT10-052TH",
+      "target_card_id": "G-BT09-062TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT10-052TH"
+      ]
+    },
+    {
+      "edge": "G-BT10-052TH->G-BT12-065TH",
+      "source_card_id": "G-BT10-052TH",
+      "target_card_id": "G-BT12-065TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT10-052TH"
+      ]
+    },
+    {
+      "edge": "G-BT10-052TH->G-BT12-066TH",
+      "source_card_id": "G-BT10-052TH",
+      "target_card_id": "G-BT12-066TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT10-052TH"
+      ]
+    },
+    {
+      "edge": "G-BT10-052TH->G-TD10-010TH",
+      "source_card_id": "G-BT10-052TH",
+      "target_card_id": "G-TD10-010TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT10-052TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-062TH->G-BT12-069TH",
+      "source_card_id": "G-BT12-062TH",
+      "target_card_id": "G-BT12-069TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT12-069TH"
+      ]
+    },
+    {
+      "edge": "G-BT12-062TH->G-TD10-018TH",
+      "source_card_id": "G-BT12-062TH",
+      "target_card_id": "G-TD10-018TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-TD10-018TH"
+      ]
+    },
+    {
+      "edge": "G-TD10-015TH->G-BT09-058TH",
+      "source_card_id": "G-TD10-015TH",
+      "target_card_id": "G-BT09-058TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-TD10-015TH"
+      ]
+    },
+    {
+      "edge": "G-TD10-015TH->G-BT09-060TH",
+      "source_card_id": "G-TD10-015TH",
+      "target_card_id": "G-BT09-060TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-TD10-015TH"
+      ]
+    },
+    {
+      "edge": "G-TD10-015TH->G-BT09-062TH",
+      "source_card_id": "G-TD10-015TH",
+      "target_card_id": "G-BT09-062TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-TD10-015TH"
+      ]
+    },
+    {
+      "edge": "G-TD10-015TH->G-BT12-065TH",
+      "source_card_id": "G-TD10-015TH",
+      "target_card_id": "G-BT12-065TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-TD10-015TH"
+      ]
+    },
+    {
+      "edge": "G-TD10-015TH->G-BT12-066TH",
+      "source_card_id": "G-TD10-015TH",
+      "target_card_id": "G-BT12-066TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-TD10-015TH"
+      ]
+    },
+    {
+      "edge": "G-TD10-015TH->G-TD10-010TH",
+      "source_card_id": "G-TD10-015TH",
+      "target_card_id": "G-TD10-010TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-TD10-015TH"
+      ]
+    },
+    {
+      "edge": "G-BT10-001TH->G-BT09-058TH",
+      "source_card_id": "G-BT10-001TH",
+      "target_card_id": "G-BT09-058TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT10-001TH"
+      ]
+    },
+    {
+      "edge": "G-BT10-001TH->G-BT09-060TH",
+      "source_card_id": "G-BT10-001TH",
+      "target_card_id": "G-BT09-060TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT10-001TH"
+      ]
+    },
+    {
+      "edge": "G-BT10-001TH->G-BT09-062TH",
+      "source_card_id": "G-BT10-001TH",
+      "target_card_id": "G-BT09-062TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT10-001TH"
+      ]
+    },
+    {
+      "edge": "G-BT10-001TH->G-BT12-065TH",
+      "source_card_id": "G-BT10-001TH",
+      "target_card_id": "G-BT12-065TH",
+      "reason": "trigger_grade4_or_missing_from_main_deck_pool",
+      "missing_or_deferred_card_ids": [
+        "G-BT10-001TH"
+      ]
+    }
+  ],
+  "recipe_drafts": [
+    {
+      "recipe_id": "m56_recipe_001",
+      "source_candidate_edge": "G-BT12-062TH->G-BT12-066TH",
+      "source_edge_rank": 2,
+      "source_line_id": "G-BT12-062TH->G-BT12-066TH",
+      "source_package_id": "m56_03_pair_anchored_fixture_scaffold",
+      "anchor_card_id": "G-BT12-062TH",
+      "anchor_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "pair": {
+        "source_card_id": "G-BT12-062TH",
+        "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+        "target_card_id": "G-BT12-066TH",
+        "target_name_th": "บลูเอสปาด้า・ดราก้อน",
+        "net_score": 10,
+        "resource_verdict": "resource_support",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "target_zone_need_not_supported_by_source",
+        "synergy_reasons": [
+          "pair_graph_provider_requirement_match",
+          "resource:resource_support",
+          "timing:target_timing_not_constrained"
+        ]
+      },
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "review_blockers": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "m56_05_combo_recipe_consistency_check",
+        "g_zone_support_decision",
+        "manual_card_semantic_review"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "G-BT09-006TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, โมลเฟสซ่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกเซฟเวอร์, เอสราส",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, สเลย์เฮกซ์・ดราก้อน",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ดีโทเนต・ดราก้อน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อบิซัล・อาว",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-056TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งการจู่โจมอันเกรี้ยวกราด, ดีแลน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "quantity": 1,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งจิตสัมผัส, ออยเฟ",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-063TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แรบิดมิว",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-064TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อัศวินแห่งตุ้มเหล็ก, คราฟทิเน่",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT10-052TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, ซีรุ",
+          "grade": 0,
+          "trigger": "Draw",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT12-062TH",
+          "quantity": 4,
+          "roles": [
+            "combo_source"
+          ],
+          "name_th": "กิกันต์เท็ค・ชัตเตอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT12-066TH",
+          "quantity": 4,
+          "roles": [
+            "combo_target"
+          ],
+          "name_th": "บลูเอสปาด้า・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT14-018TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งความกรุณา, อาริล",
+          "grade": 0,
+          "trigger": "Heal",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        }
+      ],
+      "quantity_adjustments": [
+        {
+          "card_id": "G-BT12-062TH",
+          "role": "combo_source",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT12-066TH",
+          "role": "combo_target",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "before": 2,
+          "after": 1,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-061TH",
+          "before": 1,
+          "after": 0,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "total_unfilled_slots": 0,
+        "main_deck_delta": 0,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 14,
+          "2": 10,
+          "3": 10
+        },
+        "max_copy_limit_from_sqlite": true,
+        "grade4_main_deck_count": 0
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m56_04_validator": true,
+        "requires_human_selection": true,
+        "contains_manual_review_cards": true,
+        "manual_review_card_ids": [
+          "G-BT09-014TH",
+          "G-BT09-026TH",
+          "G-BT09-027TH",
+          "G-BT09-028TH",
+          "G-BT09-029TH",
+          "G-BT09-059TH",
+          "G-BT09-064TH"
+        ],
+        "grade4_cards_excluded_from_main_deck": true,
+        "g_zone_support_deferred": true,
+        "not_runtime_deck": true,
+        "not_saved_deck": true,
+        "not_ui_published": true,
+        "not_bot_playbook": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "m56_recipe_002",
+      "source_candidate_edge": "G-BT10-026TH->G-BT09-058TH",
+      "source_edge_rank": 4,
+      "source_line_id": "G-BT10-026TH->G-BT09-058TH",
+      "source_package_id": "m56_03_pair_anchored_fixture_scaffold",
+      "anchor_card_id": "G-BT10-026TH",
+      "anchor_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "pair": {
+        "source_card_id": "G-BT10-026TH",
+        "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+        "target_card_id": "G-BT09-058TH",
+        "target_name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+        "net_score": 8,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "zone_support",
+        "synergy_reasons": [
+          "pair_graph_provider_requirement_match",
+          "timing:target_timing_not_constrained",
+          "zone:zone_support"
+        ]
+      },
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "review_blockers": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "m56_05_combo_recipe_consistency_check",
+        "g_zone_support_decision",
+        "manual_card_semantic_review"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "G-BT09-006TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, โมลเฟสซ่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกเซฟเวอร์, เอสราส",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, สเลย์เฮกซ์・ดราก้อน",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ดีโทเนต・ดราก้อน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อบิซัล・อาว",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-056TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งการจู่โจมอันเกรี้ยวกราด, ดีแลน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "quantity": 4,
+          "roles": [
+            "combo_target",
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "quantity": 1,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งจิตสัมผัส, ออยเฟ",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-061TH",
+          "quantity": 1,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อัศวินผู้ห้าวหาญ, เนซ่า",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-063TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แรบิดมิว",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-064TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อัศวินแห่งตุ้มเหล็ก, คราฟทิเน่",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT10-026TH",
+          "quantity": 4,
+          "roles": [
+            "combo_source"
+          ],
+          "name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT10-052TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, ซีรุ",
+          "grade": 0,
+          "trigger": "Draw",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT14-018TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งความกรุณา, อาริล",
+          "grade": 0,
+          "trigger": "Heal",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        }
+      ],
+      "quantity_adjustments": [
+        {
+          "card_id": "G-BT10-026TH",
+          "role": "combo_source",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "before": 2,
+          "after": 1,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "total_unfilled_slots": 0,
+        "main_deck_delta": 0,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 17,
+          "1": 15,
+          "2": 10,
+          "3": 8
+        },
+        "max_copy_limit_from_sqlite": true,
+        "grade4_main_deck_count": 0
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m56_04_validator": true,
+        "requires_human_selection": true,
+        "contains_manual_review_cards": true,
+        "manual_review_card_ids": [
+          "G-BT09-014TH",
+          "G-BT09-026TH",
+          "G-BT09-027TH",
+          "G-BT09-028TH",
+          "G-BT09-029TH",
+          "G-BT09-059TH",
+          "G-BT09-064TH"
+        ],
+        "grade4_cards_excluded_from_main_deck": true,
+        "g_zone_support_deferred": true,
+        "not_runtime_deck": true,
+        "not_saved_deck": true,
+        "not_ui_published": true,
+        "not_bot_playbook": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "m56_recipe_003",
+      "source_candidate_edge": "G-BT10-026TH->G-BT09-060TH",
+      "source_edge_rank": 5,
+      "source_line_id": "G-BT10-026TH->G-BT09-060TH",
+      "source_package_id": "m56_03_pair_anchored_fixture_scaffold",
+      "anchor_card_id": "G-BT10-026TH",
+      "anchor_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "pair": {
+        "source_card_id": "G-BT10-026TH",
+        "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+        "target_card_id": "G-BT09-060TH",
+        "target_name_th": "ลีดบาว",
+        "net_score": 8,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "zone_support",
+        "synergy_reasons": [
+          "pair_graph_provider_requirement_match",
+          "timing:target_timing_not_constrained",
+          "zone:zone_support"
+        ]
+      },
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "review_blockers": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "m56_05_combo_recipe_consistency_check",
+        "g_zone_support_decision",
+        "manual_card_semantic_review"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "G-BT09-006TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, โมลเฟสซ่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกเซฟเวอร์, เอสราส",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, สเลย์เฮกซ์・ดราก้อน",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ดีโทเนต・ดราก้อน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อบิซัล・อาว",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-056TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งการจู่โจมอันเกรี้ยวกราด, ดีแลน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "quantity": 1,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งจิตสัมผัส, ออยเฟ",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-060TH",
+          "quantity": 4,
+          "roles": [
+            "combo_target"
+          ],
+          "name_th": "ลีดบาว",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-063TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แรบิดมิว",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-064TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อัศวินแห่งตุ้มเหล็ก, คราฟทิเน่",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT10-026TH",
+          "quantity": 4,
+          "roles": [
+            "combo_source"
+          ],
+          "name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT10-052TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, ซีรุ",
+          "grade": 0,
+          "trigger": "Draw",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT14-018TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งความกรุณา, อาริล",
+          "grade": 0,
+          "trigger": "Heal",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        }
+      ],
+      "quantity_adjustments": [
+        {
+          "card_id": "G-BT10-026TH",
+          "role": "combo_source",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT09-060TH",
+          "role": "combo_target",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "before": 2,
+          "after": 1,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-061TH",
+          "before": 1,
+          "after": 0,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "total_unfilled_slots": 0,
+        "main_deck_delta": 0,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 18,
+          "2": 10,
+          "3": 6
+        },
+        "max_copy_limit_from_sqlite": true,
+        "grade4_main_deck_count": 0
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m56_04_validator": true,
+        "requires_human_selection": true,
+        "contains_manual_review_cards": true,
+        "manual_review_card_ids": [
+          "G-BT09-014TH",
+          "G-BT09-026TH",
+          "G-BT09-027TH",
+          "G-BT09-028TH",
+          "G-BT09-029TH",
+          "G-BT09-059TH",
+          "G-BT09-064TH"
+        ],
+        "grade4_cards_excluded_from_main_deck": true,
+        "g_zone_support_deferred": true,
+        "not_runtime_deck": true,
+        "not_saved_deck": true,
+        "not_ui_published": true,
+        "not_bot_playbook": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "m56_recipe_004",
+      "source_candidate_edge": "G-BT10-026TH->G-BT09-062TH",
+      "source_edge_rank": 6,
+      "source_line_id": "G-BT10-026TH->G-BT09-062TH",
+      "source_package_id": "m56_03_pair_anchored_fixture_scaffold",
+      "anchor_card_id": "G-BT10-026TH",
+      "anchor_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "pair": {
+        "source_card_id": "G-BT10-026TH",
+        "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+        "target_card_id": "G-BT09-062TH",
+        "target_name_th": "รีเวนเจอร์แห่งค่ำคืนที่หลงเหลือ, คอนร่า",
+        "net_score": 8,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "zone_support",
+        "synergy_reasons": [
+          "pair_graph_provider_requirement_match",
+          "timing:target_timing_not_constrained",
+          "zone:zone_support"
+        ]
+      },
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "review_blockers": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "m56_05_combo_recipe_consistency_check",
+        "g_zone_support_decision",
+        "manual_card_semantic_review"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "G-BT09-006TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, โมลเฟสซ่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกเซฟเวอร์, เอสราส",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, สเลย์เฮกซ์・ดราก้อน",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ดีโทเนต・ดราก้อน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อบิซัล・อาว",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-056TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งการจู่โจมอันเกรี้ยวกราด, ดีแลน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "quantity": 1,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งจิตสัมผัส, ออยเฟ",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-062TH",
+          "quantity": 4,
+          "roles": [
+            "combo_target"
+          ],
+          "name_th": "รีเวนเจอร์แห่งค่ำคืนที่หลงเหลือ, คอนร่า",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-063TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แรบิดมิว",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-064TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อัศวินแห่งตุ้มเหล็ก, คราฟทิเน่",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT10-026TH",
+          "quantity": 4,
+          "roles": [
+            "combo_source"
+          ],
+          "name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT10-052TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, ซีรุ",
+          "grade": 0,
+          "trigger": "Draw",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT14-018TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งความกรุณา, อาริล",
+          "grade": 0,
+          "trigger": "Heal",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        }
+      ],
+      "quantity_adjustments": [
+        {
+          "card_id": "G-BT10-026TH",
+          "role": "combo_source",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT09-062TH",
+          "role": "combo_target",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "before": 2,
+          "after": 1,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-061TH",
+          "before": 1,
+          "after": 0,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "total_unfilled_slots": 0,
+        "main_deck_delta": 0,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 20,
+          "1": 14,
+          "2": 10,
+          "3": 6
+        },
+        "max_copy_limit_from_sqlite": true,
+        "grade4_main_deck_count": 0
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m56_04_validator": true,
+        "requires_human_selection": true,
+        "contains_manual_review_cards": true,
+        "manual_review_card_ids": [
+          "G-BT09-014TH",
+          "G-BT09-026TH",
+          "G-BT09-027TH",
+          "G-BT09-028TH",
+          "G-BT09-029TH",
+          "G-BT09-059TH",
+          "G-BT09-064TH"
+        ],
+        "grade4_cards_excluded_from_main_deck": true,
+        "g_zone_support_deferred": true,
+        "not_runtime_deck": true,
+        "not_saved_deck": true,
+        "not_ui_published": true,
+        "not_bot_playbook": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "m56_recipe_005",
+      "source_candidate_edge": "G-BT10-026TH->G-BT12-031TH",
+      "source_edge_rank": 8,
+      "source_line_id": "G-BT10-026TH->G-BT12-031TH",
+      "source_package_id": "m56_03_pair_anchored_fixture_scaffold",
+      "anchor_card_id": "G-BT10-026TH",
+      "anchor_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "pair": {
+        "source_card_id": "G-BT10-026TH",
+        "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+        "target_card_id": "G-BT12-031TH",
+        "target_name_th": "โมริออนสเปียร์・ดราก้อน",
+        "net_score": 8,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "zone_support",
+        "synergy_reasons": [
+          "pair_graph_provider_requirement_match",
+          "timing:timing_can_precede",
+          "zone:zone_support"
+        ]
+      },
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "review_blockers": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "m56_05_combo_recipe_consistency_check",
+        "g_zone_support_decision",
+        "manual_card_semantic_review"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "G-BT09-006TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, โมลเฟสซ่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกเซฟเวอร์, เอสราส",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, สเลย์เฮกซ์・ดราก้อน",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ดีโทเนต・ดราก้อน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อบิซัล・อาว",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-056TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งการจู่โจมอันเกรี้ยวกราด, ดีแลน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "quantity": 1,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งจิตสัมผัส, ออยเฟ",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-063TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แรบิดมิว",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-064TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อัศวินแห่งตุ้มเหล็ก, คราฟทิเน่",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT10-026TH",
+          "quantity": 4,
+          "roles": [
+            "combo_source"
+          ],
+          "name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT10-052TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, ซีรุ",
+          "grade": 0,
+          "trigger": "Draw",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT12-031TH",
+          "quantity": 4,
+          "roles": [
+            "combo_target"
+          ],
+          "name_th": "โมริออนสเปียร์・ดราก้อน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT14-018TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งความกรุณา, อาริล",
+          "grade": 0,
+          "trigger": "Heal",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        }
+      ],
+      "quantity_adjustments": [
+        {
+          "card_id": "G-BT10-026TH",
+          "role": "combo_source",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT12-031TH",
+          "role": "combo_target",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "before": 2,
+          "after": 1,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-061TH",
+          "before": 1,
+          "after": 0,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "total_unfilled_slots": 0,
+        "main_deck_delta": 0,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 14,
+          "2": 14,
+          "3": 6
+        },
+        "max_copy_limit_from_sqlite": true,
+        "grade4_main_deck_count": 0
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m56_04_validator": true,
+        "requires_human_selection": true,
+        "contains_manual_review_cards": true,
+        "manual_review_card_ids": [
+          "G-BT09-014TH",
+          "G-BT09-026TH",
+          "G-BT09-027TH",
+          "G-BT09-028TH",
+          "G-BT09-029TH",
+          "G-BT09-059TH",
+          "G-BT09-064TH"
+        ],
+        "grade4_cards_excluded_from_main_deck": true,
+        "g_zone_support_deferred": true,
+        "not_runtime_deck": true,
+        "not_saved_deck": true,
+        "not_ui_published": true,
+        "not_bot_playbook": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "m56_recipe_006",
+      "source_candidate_edge": "G-BT10-026TH->G-BT12-065TH",
+      "source_edge_rank": 9,
+      "source_line_id": "G-BT10-026TH->G-BT12-065TH",
+      "source_package_id": "m56_03_pair_anchored_fixture_scaffold",
+      "anchor_card_id": "G-BT10-026TH",
+      "anchor_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "pair": {
+        "source_card_id": "G-BT10-026TH",
+        "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+        "target_card_id": "G-BT12-065TH",
+        "target_name_th": "แดรกวิซาร์ด, อีนิด",
+        "net_score": 8,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "zone_support",
+        "synergy_reasons": [
+          "pair_graph_provider_requirement_match",
+          "timing:target_timing_not_constrained",
+          "zone:zone_support"
+        ]
+      },
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "review_blockers": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "m56_05_combo_recipe_consistency_check",
+        "g_zone_support_decision",
+        "manual_card_semantic_review"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "G-BT09-006TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, โมลเฟสซ่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกเซฟเวอร์, เอสราส",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, สเลย์เฮกซ์・ดราก้อน",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ดีโทเนต・ดราก้อน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อบิซัล・อาว",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-056TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งการจู่โจมอันเกรี้ยวกราด, ดีแลน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "quantity": 1,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งจิตสัมผัส, ออยเฟ",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-063TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แรบิดมิว",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-064TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อัศวินแห่งตุ้มเหล็ก, คราฟทิเน่",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT10-026TH",
+          "quantity": 4,
+          "roles": [
+            "combo_source"
+          ],
+          "name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT10-052TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, ซีรุ",
+          "grade": 0,
+          "trigger": "Draw",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT12-065TH",
+          "quantity": 4,
+          "roles": [
+            "combo_target"
+          ],
+          "name_th": "แดรกวิซาร์ด, อีนิด",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT14-018TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งความกรุณา, อาริล",
+          "grade": 0,
+          "trigger": "Heal",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        }
+      ],
+      "quantity_adjustments": [
+        {
+          "card_id": "G-BT10-026TH",
+          "role": "combo_source",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT12-065TH",
+          "role": "combo_target",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "before": 2,
+          "after": 1,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-061TH",
+          "before": 1,
+          "after": 0,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "total_unfilled_slots": 0,
+        "main_deck_delta": 0,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 18,
+          "2": 10,
+          "3": 6
+        },
+        "max_copy_limit_from_sqlite": true,
+        "grade4_main_deck_count": 0
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m56_04_validator": true,
+        "requires_human_selection": true,
+        "contains_manual_review_cards": true,
+        "manual_review_card_ids": [
+          "G-BT09-014TH",
+          "G-BT09-026TH",
+          "G-BT09-027TH",
+          "G-BT09-028TH",
+          "G-BT09-029TH",
+          "G-BT09-059TH",
+          "G-BT09-064TH"
+        ],
+        "grade4_cards_excluded_from_main_deck": true,
+        "g_zone_support_deferred": true,
+        "not_runtime_deck": true,
+        "not_saved_deck": true,
+        "not_ui_published": true,
+        "not_bot_playbook": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "m56_recipe_007",
+      "source_candidate_edge": "G-BT10-026TH->G-TD10-010TH",
+      "source_edge_rank": 11,
+      "source_line_id": "G-BT10-026TH->G-TD10-010TH",
+      "source_package_id": "m56_03_pair_anchored_fixture_scaffold",
+      "anchor_card_id": "G-BT10-026TH",
+      "anchor_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "pair": {
+        "source_card_id": "G-BT10-026TH",
+        "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+        "target_card_id": "G-TD10-010TH",
+        "target_name_th": "คิลเลอร์มิว",
+        "net_score": 8,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "zone_support",
+        "synergy_reasons": [
+          "pair_graph_provider_requirement_match",
+          "timing:target_timing_not_constrained",
+          "zone:zone_support"
+        ]
+      },
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "review_blockers": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "m56_05_combo_recipe_consistency_check",
+        "g_zone_support_decision",
+        "manual_card_semantic_review"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "G-BT09-006TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, โมลเฟสซ่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกเซฟเวอร์, เอสราส",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, สเลย์เฮกซ์・ดราก้อน",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ดีโทเนต・ดราก้อน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อบิซัล・อาว",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-056TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งการจู่โจมอันเกรี้ยวกราด, ดีแลน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "quantity": 1,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งจิตสัมผัส, ออยเฟ",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-063TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แรบิดมิว",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-064TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อัศวินแห่งตุ้มเหล็ก, คราฟทิเน่",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT10-026TH",
+          "quantity": 4,
+          "roles": [
+            "combo_source"
+          ],
+          "name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT10-052TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, ซีรุ",
+          "grade": 0,
+          "trigger": "Draw",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT14-018TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งความกรุณา, อาริล",
+          "grade": 0,
+          "trigger": "Heal",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-TD10-010TH",
+          "quantity": 4,
+          "roles": [
+            "combo_target"
+          ],
+          "name_th": "คิลเลอร์มิว",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        }
+      ],
+      "quantity_adjustments": [
+        {
+          "card_id": "G-BT10-026TH",
+          "role": "combo_source",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-TD10-010TH",
+          "role": "combo_target",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "before": 2,
+          "after": 1,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-061TH",
+          "before": 1,
+          "after": 0,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "total_unfilled_slots": 0,
+        "main_deck_delta": 0,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 18,
+          "2": 10,
+          "3": 6
+        },
+        "max_copy_limit_from_sqlite": true,
+        "grade4_main_deck_count": 0
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m56_04_validator": true,
+        "requires_human_selection": true,
+        "contains_manual_review_cards": true,
+        "manual_review_card_ids": [
+          "G-BT09-014TH",
+          "G-BT09-026TH",
+          "G-BT09-027TH",
+          "G-BT09-028TH",
+          "G-BT09-029TH",
+          "G-BT09-059TH",
+          "G-BT09-064TH"
+        ],
+        "grade4_cards_excluded_from_main_deck": true,
+        "g_zone_support_deferred": true,
+        "not_runtime_deck": true,
+        "not_saved_deck": true,
+        "not_ui_published": true,
+        "not_bot_playbook": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "m56_recipe_008",
+      "source_candidate_edge": "G-BT12-062TH->G-BT09-058TH",
+      "source_edge_rank": 54,
+      "source_line_id": "G-BT12-062TH->G-BT09-058TH",
+      "source_package_id": "m56_03_pair_anchored_fixture_scaffold",
+      "anchor_card_id": "G-BT12-062TH",
+      "anchor_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "pair": {
+        "source_card_id": "G-BT12-062TH",
+        "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+        "target_card_id": "G-BT09-058TH",
+        "target_name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+        "net_score": 5,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "target_zone_need_not_supported_by_source",
+        "synergy_reasons": [
+          "pair_graph_provider_requirement_match",
+          "timing:target_timing_not_constrained"
+        ]
+      },
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "review_blockers": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "m56_05_combo_recipe_consistency_check",
+        "g_zone_support_decision",
+        "manual_card_semantic_review"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "G-BT09-006TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, โมลเฟสซ่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกเซฟเวอร์, เอสราส",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, สเลย์เฮกซ์・ดราก้อน",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ดีโทเนต・ดราก้อน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อบิซัล・อาว",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-056TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งการจู่โจมอันเกรี้ยวกราด, ดีแลน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "quantity": 4,
+          "roles": [
+            "combo_target",
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "quantity": 1,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งจิตสัมผัส, ออยเฟ",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-061TH",
+          "quantity": 1,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อัศวินผู้ห้าวหาญ, เนซ่า",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-063TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แรบิดมิว",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-064TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อัศวินแห่งตุ้มเหล็ก, คราฟทิเน่",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT10-052TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, ซีรุ",
+          "grade": 0,
+          "trigger": "Draw",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT12-062TH",
+          "quantity": 4,
+          "roles": [
+            "combo_source"
+          ],
+          "name_th": "กิกันต์เท็ค・ชัตเตอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT14-018TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งความกรุณา, อาริล",
+          "grade": 0,
+          "trigger": "Heal",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        }
+      ],
+      "quantity_adjustments": [
+        {
+          "card_id": "G-BT12-062TH",
+          "role": "combo_source",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "before": 2,
+          "after": 1,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "total_unfilled_slots": 0,
+        "main_deck_delta": 0,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 17,
+          "1": 11,
+          "2": 10,
+          "3": 12
+        },
+        "max_copy_limit_from_sqlite": true,
+        "grade4_main_deck_count": 0
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m56_04_validator": true,
+        "requires_human_selection": true,
+        "contains_manual_review_cards": true,
+        "manual_review_card_ids": [
+          "G-BT09-014TH",
+          "G-BT09-026TH",
+          "G-BT09-027TH",
+          "G-BT09-028TH",
+          "G-BT09-029TH",
+          "G-BT09-059TH",
+          "G-BT09-064TH"
+        ],
+        "grade4_cards_excluded_from_main_deck": true,
+        "g_zone_support_deferred": true,
+        "not_runtime_deck": true,
+        "not_saved_deck": true,
+        "not_ui_published": true,
+        "not_bot_playbook": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "m56_recipe_009",
+      "source_candidate_edge": "G-BT12-062TH->G-BT09-060TH",
+      "source_edge_rank": 55,
+      "source_line_id": "G-BT12-062TH->G-BT09-060TH",
+      "source_package_id": "m56_03_pair_anchored_fixture_scaffold",
+      "anchor_card_id": "G-BT12-062TH",
+      "anchor_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "pair": {
+        "source_card_id": "G-BT12-062TH",
+        "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+        "target_card_id": "G-BT09-060TH",
+        "target_name_th": "ลีดบาว",
+        "net_score": 5,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "target_zone_need_not_supported_by_source",
+        "synergy_reasons": [
+          "pair_graph_provider_requirement_match",
+          "timing:target_timing_not_constrained"
+        ]
+      },
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "review_blockers": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "m56_05_combo_recipe_consistency_check",
+        "g_zone_support_decision",
+        "manual_card_semantic_review"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "G-BT09-006TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, โมลเฟสซ่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกเซฟเวอร์, เอสราส",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, สเลย์เฮกซ์・ดราก้อน",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ดีโทเนต・ดราก้อน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อบิซัล・อาว",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-056TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งการจู่โจมอันเกรี้ยวกราด, ดีแลน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "quantity": 1,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งจิตสัมผัส, ออยเฟ",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-060TH",
+          "quantity": 4,
+          "roles": [
+            "combo_target"
+          ],
+          "name_th": "ลีดบาว",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-063TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แรบิดมิว",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-064TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อัศวินแห่งตุ้มเหล็ก, คราฟทิเน่",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT10-052TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, ซีรุ",
+          "grade": 0,
+          "trigger": "Draw",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT12-062TH",
+          "quantity": 4,
+          "roles": [
+            "combo_source"
+          ],
+          "name_th": "กิกันต์เท็ค・ชัตเตอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT14-018TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งความกรุณา, อาริล",
+          "grade": 0,
+          "trigger": "Heal",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        }
+      ],
+      "quantity_adjustments": [
+        {
+          "card_id": "G-BT12-062TH",
+          "role": "combo_source",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT09-060TH",
+          "role": "combo_target",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "before": 2,
+          "after": 1,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-061TH",
+          "before": 1,
+          "after": 0,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "total_unfilled_slots": 0,
+        "main_deck_delta": 0,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 14,
+          "2": 10,
+          "3": 10
+        },
+        "max_copy_limit_from_sqlite": true,
+        "grade4_main_deck_count": 0
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m56_04_validator": true,
+        "requires_human_selection": true,
+        "contains_manual_review_cards": true,
+        "manual_review_card_ids": [
+          "G-BT09-014TH",
+          "G-BT09-026TH",
+          "G-BT09-027TH",
+          "G-BT09-028TH",
+          "G-BT09-029TH",
+          "G-BT09-059TH",
+          "G-BT09-064TH"
+        ],
+        "grade4_cards_excluded_from_main_deck": true,
+        "g_zone_support_deferred": true,
+        "not_runtime_deck": true,
+        "not_saved_deck": true,
+        "not_ui_published": true,
+        "not_bot_playbook": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "m56_recipe_010",
+      "source_candidate_edge": "G-BT12-062TH->G-BT09-062TH",
+      "source_edge_rank": 56,
+      "source_line_id": "G-BT12-062TH->G-BT09-062TH",
+      "source_package_id": "m56_03_pair_anchored_fixture_scaffold",
+      "anchor_card_id": "G-BT12-062TH",
+      "anchor_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "pair": {
+        "source_card_id": "G-BT12-062TH",
+        "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+        "target_card_id": "G-BT09-062TH",
+        "target_name_th": "รีเวนเจอร์แห่งค่ำคืนที่หลงเหลือ, คอนร่า",
+        "net_score": 5,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "target_zone_need_not_supported_by_source",
+        "synergy_reasons": [
+          "pair_graph_provider_requirement_match",
+          "timing:target_timing_not_constrained"
+        ]
+      },
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "review_blockers": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "m56_05_combo_recipe_consistency_check",
+        "g_zone_support_decision",
+        "manual_card_semantic_review"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "G-BT09-006TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, โมลเฟสซ่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกเซฟเวอร์, เอสราส",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, สเลย์เฮกซ์・ดราก้อน",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ดีโทเนต・ดราก้อน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อบิซัล・อาว",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-056TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งการจู่โจมอันเกรี้ยวกราด, ดีแลน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "quantity": 1,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งจิตสัมผัส, ออยเฟ",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-062TH",
+          "quantity": 4,
+          "roles": [
+            "combo_target"
+          ],
+          "name_th": "รีเวนเจอร์แห่งค่ำคืนที่หลงเหลือ, คอนร่า",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-063TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แรบิดมิว",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-064TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อัศวินแห่งตุ้มเหล็ก, คราฟทิเน่",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT10-052TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, ซีรุ",
+          "grade": 0,
+          "trigger": "Draw",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT12-062TH",
+          "quantity": 4,
+          "roles": [
+            "combo_source"
+          ],
+          "name_th": "กิกันต์เท็ค・ชัตเตอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT14-018TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งความกรุณา, อาริล",
+          "grade": 0,
+          "trigger": "Heal",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        }
+      ],
+      "quantity_adjustments": [
+        {
+          "card_id": "G-BT12-062TH",
+          "role": "combo_source",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT09-062TH",
+          "role": "combo_target",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "before": 2,
+          "after": 1,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-061TH",
+          "before": 1,
+          "after": 0,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "total_unfilled_slots": 0,
+        "main_deck_delta": 0,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 20,
+          "1": 10,
+          "2": 10,
+          "3": 10
+        },
+        "max_copy_limit_from_sqlite": true,
+        "grade4_main_deck_count": 0
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m56_04_validator": true,
+        "requires_human_selection": true,
+        "contains_manual_review_cards": true,
+        "manual_review_card_ids": [
+          "G-BT09-014TH",
+          "G-BT09-026TH",
+          "G-BT09-027TH",
+          "G-BT09-028TH",
+          "G-BT09-029TH",
+          "G-BT09-059TH",
+          "G-BT09-064TH"
+        ],
+        "grade4_cards_excluded_from_main_deck": true,
+        "g_zone_support_deferred": true,
+        "not_runtime_deck": true,
+        "not_saved_deck": true,
+        "not_ui_published": true,
+        "not_bot_playbook": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "m56_recipe_011",
+      "source_candidate_edge": "G-BT12-062TH->G-BT12-065TH",
+      "source_edge_rank": 57,
+      "source_line_id": "G-BT12-062TH->G-BT12-065TH",
+      "source_package_id": "m56_03_pair_anchored_fixture_scaffold",
+      "anchor_card_id": "G-BT12-062TH",
+      "anchor_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "pair": {
+        "source_card_id": "G-BT12-062TH",
+        "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+        "target_card_id": "G-BT12-065TH",
+        "target_name_th": "แดรกวิซาร์ด, อีนิด",
+        "net_score": 5,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "target_zone_need_not_supported_by_source",
+        "synergy_reasons": [
+          "pair_graph_provider_requirement_match",
+          "timing:target_timing_not_constrained"
+        ]
+      },
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "review_blockers": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "m56_05_combo_recipe_consistency_check",
+        "g_zone_support_decision",
+        "manual_card_semantic_review"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "G-BT09-006TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, โมลเฟสซ่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกเซฟเวอร์, เอสราส",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, สเลย์เฮกซ์・ดราก้อน",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ดีโทเนต・ดราก้อน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อบิซัล・อาว",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-056TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งการจู่โจมอันเกรี้ยวกราด, ดีแลน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "quantity": 1,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งจิตสัมผัส, ออยเฟ",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-063TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แรบิดมิว",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-064TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อัศวินแห่งตุ้มเหล็ก, คราฟทิเน่",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT10-052TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, ซีรุ",
+          "grade": 0,
+          "trigger": "Draw",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT12-062TH",
+          "quantity": 4,
+          "roles": [
+            "combo_source"
+          ],
+          "name_th": "กิกันต์เท็ค・ชัตเตอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT12-065TH",
+          "quantity": 4,
+          "roles": [
+            "combo_target"
+          ],
+          "name_th": "แดรกวิซาร์ด, อีนิด",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT14-018TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งความกรุณา, อาริล",
+          "grade": 0,
+          "trigger": "Heal",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        }
+      ],
+      "quantity_adjustments": [
+        {
+          "card_id": "G-BT12-062TH",
+          "role": "combo_source",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT12-065TH",
+          "role": "combo_target",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "before": 2,
+          "after": 1,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-061TH",
+          "before": 1,
+          "after": 0,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "total_unfilled_slots": 0,
+        "main_deck_delta": 0,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 14,
+          "2": 10,
+          "3": 10
+        },
+        "max_copy_limit_from_sqlite": true,
+        "grade4_main_deck_count": 0
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m56_04_validator": true,
+        "requires_human_selection": true,
+        "contains_manual_review_cards": true,
+        "manual_review_card_ids": [
+          "G-BT09-014TH",
+          "G-BT09-026TH",
+          "G-BT09-027TH",
+          "G-BT09-028TH",
+          "G-BT09-029TH",
+          "G-BT09-059TH",
+          "G-BT09-064TH"
+        ],
+        "grade4_cards_excluded_from_main_deck": true,
+        "g_zone_support_deferred": true,
+        "not_runtime_deck": true,
+        "not_saved_deck": true,
+        "not_ui_published": true,
+        "not_bot_playbook": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "m56_recipe_012",
+      "source_candidate_edge": "G-BT12-062TH->G-TD10-010TH",
+      "source_edge_rank": 59,
+      "source_line_id": "G-BT12-062TH->G-TD10-010TH",
+      "source_package_id": "m56_03_pair_anchored_fixture_scaffold",
+      "anchor_card_id": "G-BT12-062TH",
+      "anchor_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "pair": {
+        "source_card_id": "G-BT12-062TH",
+        "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+        "target_card_id": "G-TD10-010TH",
+        "target_name_th": "คิลเลอร์มิว",
+        "net_score": 5,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "target_zone_need_not_supported_by_source",
+        "synergy_reasons": [
+          "pair_graph_provider_requirement_match",
+          "timing:target_timing_not_constrained"
+        ]
+      },
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "review_blockers": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "m56_05_combo_recipe_consistency_check",
+        "g_zone_support_decision",
+        "manual_card_semantic_review"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "G-BT09-006TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, โมลเฟสซ่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกเซฟเวอร์, เอสราส",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, สเลย์เฮกซ์・ดราก้อน",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ดีโทเนต・ดราก้อน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อบิซัล・อาว",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-056TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งการจู่โจมอันเกรี้ยวกราด, ดีแลน",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "quantity": 3,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "quantity": 1,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งจิตสัมผัส, ออยเฟ",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-063TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แรบิดมิว",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT09-064TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "อัศวินแห่งตุ้มเหล็ก, คราฟทิเน่",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT10-052TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "แดรกวิซาร์ด, ซีรุ",
+          "grade": 0,
+          "trigger": "Draw",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT12-062TH",
+          "quantity": 4,
+          "roles": [
+            "combo_source"
+          ],
+          "name_th": "กิกันต์เท็ค・ชัตเตอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-BT14-018TH",
+          "quantity": 4,
+          "roles": [
+            "fixture_scaffold"
+          ],
+          "name_th": "รีเวนเจอร์แห่งความกรุณา, อาริล",
+          "grade": 0,
+          "trigger": "Heal",
+          "type_1": "Trigger Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        },
+        {
+          "card_id": "G-TD10-010TH",
+          "quantity": 4,
+          "roles": [
+            "combo_target"
+          ],
+          "name_th": "คิลเลอร์มิว",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit",
+          "quantity_source": "m56_03_fixture_scaffold_plus_candidate_edge_pair"
+        }
+      ],
+      "quantity_adjustments": [
+        {
+          "card_id": "G-BT12-062TH",
+          "role": "combo_source",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-TD10-010TH",
+          "role": "combo_target",
+          "before": 0,
+          "after": 4,
+          "delta": 4,
+          "reason": "force_candidate_edge_pair_card"
+        },
+        {
+          "card_id": "G-BT09-014TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-059TH",
+          "before": 2,
+          "after": 1,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-028TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-027TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-061TH",
+          "before": 1,
+          "after": 0,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        },
+        {
+          "card_id": "G-BT09-058TH",
+          "before": 4,
+          "after": 3,
+          "delta": -1,
+          "reason": "trim_non_trigger_scaffold_filler"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "total_unfilled_slots": 0,
+        "main_deck_delta": 0,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 14,
+          "2": 10,
+          "3": 10
+        },
+        "max_copy_limit_from_sqlite": true,
+        "grade4_main_deck_count": 0
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m56_04_validator": true,
+        "requires_human_selection": true,
+        "contains_manual_review_cards": true,
+        "manual_review_card_ids": [
+          "G-BT09-014TH",
+          "G-BT09-026TH",
+          "G-BT09-027TH",
+          "G-BT09-028TH",
+          "G-BT09-029TH",
+          "G-BT09-059TH",
+          "G-BT09-064TH"
+        ],
+        "grade4_cards_excluded_from_main_deck": true,
+        "g_zone_support_deferred": true,
+        "not_runtime_deck": true,
+        "not_saved_deck": true,
+        "not_ui_published": true,
+        "not_bot_playbook": true,
+        "not_auto_injected": true
+      }
+    }
+  ],
+  "next_target": {
+    "milestone": "M56-04",
+    "task": "Sixth-slice recipe validator"
+  }
+}

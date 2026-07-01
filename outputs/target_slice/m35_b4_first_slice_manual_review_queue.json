@@ -1,0 +1,351 @@
+{
+  "version": "M35-B4",
+  "description": "Manual review queue for selected first-slice semantic cards",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "semantic_tags": "outputs\\target_slice\\m35_b2_first_slice_semantic_tags.json",
+    "requirement_provider_model": "outputs\\target_slice\\m35_b3_first_slice_requirement_provider_model.json"
+  },
+  "queue_policy": {
+    "blocks_playbook_promotion": true,
+    "blocks_high_confidence_compatibility": true,
+    "does_not_remove_cards_from_dataset": true,
+    "advisory_only": true
+  },
+  "summary": {
+    "card_count": 112,
+    "manual_review_count": 6,
+    "ready_for_phase_c": true
+  },
+  "manual_review_queue": [
+    {
+      "card_id": "BT04-039TH",
+      "name_th": "เบลาจังเกอร์",
+      "series_code": "BT04",
+      "grade": 0,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "manual_review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [
+          "on_ride"
+        ],
+        "conditions": [],
+        "costs": [],
+        "effects": [
+          "search_deck",
+          "shuffle_deck"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "requirements": [
+        "requires_on_ride_timing"
+      ],
+      "providers": [
+        "provides_deck_recycle",
+        "provides_search"
+      ],
+      "allowed_next_use": "manual_review_required_before_playbook_or_high_confidence_compatibility"
+    },
+    {
+      "card_id": "BT04-075TH",
+      "name_th": "เบลาแพนเซอร์",
+      "series_code": "BT04",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "manual_review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO",
+          "CONT"
+        ],
+        "zones": [
+          "rear_guard_circle",
+          "vanguard_circle"
+        ],
+        "timing": [
+          "on_call"
+        ],
+        "conditions": [
+          "if_rear_guard",
+          "if_vanguard"
+        ],
+        "costs": [],
+        "effects": [
+          "move_to_soul",
+          "power_plus",
+          "search_deck",
+          "shuffle_deck"
+        ],
+        "durations": [
+          "one_shot",
+          "until_end_of_turn"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "requirements": [
+        "requires_on_call_timing",
+        "requires_rear_guard_circle",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_deck_recycle",
+        "provides_power_pressure",
+        "provides_search",
+        "provides_soul_resource"
+      ],
+      "allowed_next_use": "manual_review_required_before_playbook_or_high_confidence_compatibility"
+    },
+    {
+      "card_id": "BT06-098TH",
+      "name_th": "สัตว์เทวะ,แบล็ค โททัส",
+      "series_code": "BT06",
+      "grade": 2,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "manual_review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits"
+        ],
+        "costs": [],
+        "effects": [
+          "search_deck"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "requirements": [
+        "requires_attack_hit",
+        "requires_hit_timing",
+        "requires_on_attack_timing"
+      ],
+      "providers": [
+        "provides_search"
+      ],
+      "allowed_next_use": "manual_review_required_before_playbook_or_high_confidence_compatibility"
+    },
+    {
+      "card_id": "BT06-100TH",
+      "name_th": "ออลไมท์ตี้ รีพอตเตอร์",
+      "series_code": "BT06",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "manual_review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "on_attack",
+          "when_attack_hits",
+          "when_boosts"
+        ],
+        "conditions": [
+          "if_attack_hits",
+          "if_boosted",
+          "if_rear_guard"
+        ],
+        "costs": [],
+        "effects": [],
+        "durations": [
+          "during_battle"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "requirements": [
+        "requires_attack_hit",
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [],
+      "allowed_next_use": "manual_review_required_before_playbook_or_high_confidence_compatibility"
+    },
+    {
+      "card_id": "BT06-101TH",
+      "name_th": "สัตว์เทวะ,สกาเล็ท เบิร์ด",
+      "series_code": "BT06",
+      "grade": 1,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "manual_review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "AUTO"
+        ],
+        "zones": [],
+        "timing": [
+          "on_attack",
+          "when_attack_hits"
+        ],
+        "conditions": [
+          "if_attack_hits"
+        ],
+        "costs": [],
+        "effects": [
+          "search_deck"
+        ],
+        "durations": [
+          "during_battle",
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "requirements": [
+        "requires_attack_hit",
+        "requires_hit_timing",
+        "requires_on_attack_timing"
+      ],
+      "providers": [
+        "provides_search"
+      ],
+      "allowed_next_use": "manual_review_required_before_playbook_or_high_confidence_compatibility"
+    },
+    {
+      "card_id": "BT09-074TH",
+      "name_th": "วิวัฒนาการแห่งการเคลื่อนย้าย,มิไรโอ",
+      "series_code": "BT09",
+      "grade": 0,
+      "trigger": "",
+      "type_1": "Normal Unit",
+      "manual_review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "semantic_tags": {
+        "ability_types": [
+          "ACT",
+          "AUTO"
+        ],
+        "zones": [
+          "rear_guard_circle"
+        ],
+        "timing": [
+          "on_ride"
+        ],
+        "conditions": [
+          "if_rear_guard"
+        ],
+        "costs": [
+          "counter_blast"
+        ],
+        "effects": [
+          "move_to_soul",
+          "search_deck",
+          "shuffle_deck"
+        ],
+        "durations": [
+          "one_shot"
+        ],
+        "mechanic_groups": [
+          "core"
+        ],
+        "trigger_icons": []
+      },
+      "requirements": [
+        "requires_counter_blast",
+        "requires_on_ride_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_deck_recycle",
+        "provides_search",
+        "provides_soul_resource"
+      ],
+      "allowed_next_use": "manual_review_required_before_playbook_or_high_confidence_compatibility"
+    }
+  ],
+  "excluded_from_playbook_inputs": [
+    "BT04-039TH",
+    "BT04-075TH",
+    "BT06-098TH",
+    "BT06-100TH",
+    "BT06-101TH",
+    "BT09-074TH"
+  ],
+  "next_target": "M35-C1"
+}

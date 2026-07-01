@@ -1,0 +1,108 @@
+{
+  "version": "M55-04",
+  "description": "Sixth-slice recipe pipeline entry gate",
+  "source_inputs": {
+    "sixth_slice_fixture_readiness": "outputs\\target_slice\\m55_02_sixth_slice_fixture_readiness.json",
+    "sixth_slice_semantic_compatibility_probe": "outputs\\target_slice\\m55_03_sixth_slice_semantic_compatibility_probe.json"
+  },
+  "selected_target": {
+    "slice": "Sixth Offline Slice",
+    "era_preset": "g_next_z",
+    "group": "ชาโดว์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 4,
+    "priority_score": 73.61,
+    "best_era_candidates": 864,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "evidence_summary": {
+    "fixture_readiness_passed": true,
+    "semantic_probe_passed": true,
+    "source_card_count": 77,
+    "semantic_card_count": 77,
+    "manual_review_card_count": 11,
+    "pair_graph_edge_count": 2069,
+    "candidate_edge_count": 70,
+    "policy_reuse_decision": "requires_sixth_slice_fixture_scaffold",
+    "new_format_or_mechanic_fixtures_required": true
+  },
+  "decision": {
+    "offline_recipe_pipeline_allowed": true,
+    "fixture_scaffold_required_before_recipe_validation": true,
+    "runtime_deck_promotion_allowed": false,
+    "saved_deck_or_ui_publication_allowed": false,
+    "bot_playbook_promotion_allowed": false,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "recommended_next_queue": "M56 Sixth-slice offline recipe pipeline",
+    "reason": "Sixth slice has source-backed readiness plus a passed semantic/compatibility probe; offline recipe work may start with a new fixture scaffold."
+  },
+  "proposed_m56_queue": [
+    {
+      "milestone": "M56-01",
+      "task": "Sixth-slice fixture scaffold",
+      "scope": "Define source-backed fixture policy for the Shadow Paladin G NEXT/Z slice before validator work."
+    },
+    {
+      "milestone": "M56-02",
+      "task": "Sixth-slice review packet",
+      "scope": "Export candidate edges, manual-review cards, and format notes for human review."
+    },
+    {
+      "milestone": "M56-03",
+      "task": "Sixth-slice recipe draft model",
+      "scope": "Create advisory recipe drafts only; no saved deck or UI injection."
+    },
+    {
+      "milestone": "M56-04",
+      "task": "Sixth-slice recipe validator",
+      "scope": "Validate count, trigger, grade, identity, copy limits, missing cards, and fixture scaffold constraints."
+    },
+    {
+      "milestone": "M56-05",
+      "task": "Sixth-slice combo-to-recipe consistency",
+      "scope": "Check candidate combo cards are present and not blocked by manual-review dependency."
+    },
+    {
+      "milestone": "M56-06",
+      "task": "Sixth-slice blocker repair candidates",
+      "scope": "Generate source-backed repair candidates for blocked recipes."
+    },
+    {
+      "milestone": "M56-closeout",
+      "task": "Sixth-slice runtime readiness decision",
+      "scope": "Decide whether any recipe can later enter human acceptance and runtime fixture gates."
+    }
+  ],
+  "runtime_boundary": {
+    "decision_artifact_only": true,
+    "does_not_create_deck": true,
+    "does_not_create_recipe_draft": true,
+    "does_not_create_runtime_fixture": true,
+    "does_not_mutate_runtime_pack": true,
+    "does_not_publish_to_ui": true,
+    "does_not_publish_to_bot": true,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "GameState_mutation": false
+  },
+  "issues": [],
+  "summary": {
+    "decision_ready": true,
+    "blocking_issue_count": 0,
+    "issue_count": 0,
+    "offline_recipe_pipeline_allowed": true,
+    "ready_for_m56": true
+  },
+  "next_target": {
+    "milestone": "M56-01",
+    "task": "Sixth-slice fixture scaffold"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "version": "M35-E4",
+  "description": "Bot integration gate for reviewed playbook hints only",
+  "source_inputs": {
+    "reviewed_playbook_seed": "outputs\\target_slice\\m35_d4_first_slice_reviewed_playbook_seed.json",
+    "generalized_semantic_compatibility_probe": "outputs\\target_slice\\m35_e3_generalized_semantic_compatibility_probe.json"
+  },
+  "allowed_hint_candidates": [
+    {
+      "seed_id": "seed_001",
+      "source_line_id": "line_003",
+      "anchor_card_id": "BT04-078TH",
+      "seed_status": "ai_static_reviewed_advisory",
+      "allowed_as_future_bot_hint_candidate": true,
+      "required_before_runtime_use": [
+        "human_acceptance",
+        "legal_action_mask",
+        "masked_state_view",
+        "RulesCore_command_validation",
+        "no_live_card_text_parser",
+        "player_readable_bot_trace"
+      ],
+      "checks": {
+        "human_acceptance_required_before_runtime": true,
+        "not_runtime_playbook": true,
+        "not_published_to_bot": true,
+        "not_auto_injected_into_decks": true,
+        "legal_action_mask_required_before_future_bot_use": true,
+        "masked_state_required_before_future_bot_use": true
+      }
+    }
+  ],
+  "blocked_sources": [
+    {
+      "source": "M35-E3 semantic/compatibility probe",
+      "selected_group": "โอราเคิล ทิงค์ แทงค์",
+      "edge_count": 2660,
+      "candidate_edge_count": 259,
+      "blocked_from_runtime_bot": true,
+      "reason": "E3 edges are generalized advisory compatibility evidence, not reviewed playbook hints.",
+      "source_declares_no_runtime_or_bot_promotion": true
+    }
+  ],
+  "gate_policy": {
+    "bot_may_consume_only_reviewed_hint_candidates": true,
+    "legal_action_mask_required": true,
+    "masked_state_view_required": true,
+    "RulesCore_command_validation_required": true,
+    "direct_GameState_mutation_forbidden": true,
+    "true_hidden_state_access_forbidden": true,
+    "live_card_text_parsing_forbidden": true,
+    "unreviewed_e3_probe_edges_forbidden": true,
+    "auto_publish_to_runtime_or_bot_forbidden": true
+  },
+  "evidence_checks": [
+    {
+      "path": "docs\\CORE_DEVELOPMENT_GUARDRAILS.md",
+      "exists": true
+    },
+    {
+      "path": "docs\\specs\\bot_and_headless\\BOT_LEGAL_ACTION_MASKED_STATE_GATE_SPEC.md",
+      "exists": true
+    },
+    {
+      "path": "docs\\specs\\bot_and_headless\\PLAYBOOK_INTEGRATION_SPEC.md",
+      "exists": true
+    }
+  ],
+  "readiness": {
+    "reviewed_hint_candidate_count": 1,
+    "blocked_source_count": 1,
+    "all_evidence_present": true,
+    "all_hint_candidates_require_safety_gates": true,
+    "all_unreviewed_sources_blocked": true,
+    "gate_passed": true,
+    "runtime_bot_integration_enabled": false,
+    "ready_for_future_runtime_implementation_after_tests": true
+  },
+  "next_target": {
+    "milestone": "M35-closeout",
+    "task": "Close Hybrid Vertical-Slice Strategy status and choose the next implementation queue",
+    "must_create": [
+      "phase closeout summary",
+      "explicit next queue selection",
+      "no runtime bot wiring until a Unity/C# implementation milestone is opened"
+    ]
+  }
+}

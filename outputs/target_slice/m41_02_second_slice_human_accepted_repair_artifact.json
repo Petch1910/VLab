@@ -1,0 +1,337 @@
+{
+  "version": "M41-02",
+  "description": "Second-slice human-accepted repair artifact for Oracle Think Tank",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โอราเคิล ทิงค์ แทงค์",
+    "group_field": "clan",
+    "rank": 10,
+    "priority_score": 63.74,
+    "best_era_candidates": 875,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "MEDIUM_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool"
+    ]
+  },
+  "source_inputs": {
+    "human_repair_review_packet": "outputs\\target_slice\\m41_01_second_slice_human_repair_review_packet.json",
+    "m40_recipe_drafts": "outputs\\target_slice\\m40_02_second_slice_recipe_draft_model.json"
+  },
+  "scope": {
+    "offline_human_accepted_artifact": true,
+    "records_human_acceptance": true,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false,
+    "declares_recipe_valid": false
+  },
+  "acceptance_record": {
+    "decision": "accepted",
+    "accepted_by": "user",
+    "accepted_at": "2026-06-30",
+    "acceptance_text": "งั้นจัดไป",
+    "interpreted_decision": "accept_first_ranked_complete_repair_candidate",
+    "accepted_review_item_id": "m41_01_m40_recipe_001_repair_review",
+    "accepted_recipe_id": "m40_recipe_001",
+    "accepted_repair_package_id": "m40_recipe_001_grade_profile_pkg_001",
+    "source_note": "Recorded from the user's go-ahead for continuing M41 after the M41-01 review packet."
+  },
+  "accepted_repair": {
+    "recipe_id": "m40_recipe_001",
+    "source_candidate_edge": "BT01-006TH->BT02-033TH",
+    "pair": {
+      "source_card_id": "BT01-006TH",
+      "source_name_th": "CEO อามาเทราสึ",
+      "target_card_id": "BT02-033TH",
+      "target_name_th": "ลัค เบิร์ด",
+      "net_score": 13,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source"
+    },
+    "grade_profile_package_id": "m40_recipe_001_grade_profile_pkg_001",
+    "manual_review_card_ids": [
+      "BT07-096TH",
+      "BT09-068TH"
+    ],
+    "additions": [
+      {
+        "card_id": "TD04-007TH",
+        "name_th": "โอราเคิล กาเดี้ยน, เจมินิ",
+        "quantity": 4,
+        "grade": "1",
+        "series_code": "TD04",
+        "source": "data/packs/vanguard_th/cards.sqlite:cards"
+      },
+      {
+        "card_id": "TD04-008TH",
+        "name_th": "ดาร์ค แคท",
+        "quantity": 2,
+        "grade": "1",
+        "series_code": "TD04",
+        "source": "data/packs/vanguard_th/cards.sqlite:cards"
+      },
+      {
+        "card_id": "TD04-004TH",
+        "name_th": "โอราเคิลกาเดี้ยน, ไวส์แมน",
+        "quantity": 4,
+        "grade": "2",
+        "series_code": "TD04",
+        "source": "data/packs/vanguard_th/cards.sqlite:cards"
+      },
+      {
+        "card_id": "TD04-005TH",
+        "name_th": "ซิเคียวริตี้ การ์เดี้ยน",
+        "quantity": 4,
+        "grade": "2",
+        "series_code": "TD04",
+        "source": "data/packs/vanguard_th/cards.sqlite:cards"
+      },
+      {
+        "card_id": "TD04-006TH",
+        "name_th": "ซอร์ดแดนซ์เซอร์ แองเจิล",
+        "quantity": 2,
+        "grade": "2",
+        "series_code": "TD04",
+        "source": "data/packs/vanguard_th/cards.sqlite:cards"
+      },
+      {
+        "card_id": "TD04-001TH",
+        "name_th": "โอราเคิลกาเดี้ยน, อโพลอน",
+        "quantity": 4,
+        "grade": "3",
+        "series_code": "TD04",
+        "source": "data/packs/vanguard_th/cards.sqlite:cards"
+      }
+    ],
+    "removals": [
+      {
+        "card_id": "BT07-096TH",
+        "name_th": "แบทเทิล ซิสเตอร์,เอแคลร์",
+        "quantity": 3,
+        "grade": "0",
+        "series_code": "BT07",
+        "source": "m40_02_second_slice_recipe_draft_model"
+      },
+      {
+        "card_id": "BT09-068TH",
+        "name_th": "วีรสตรีแห่งสุริยัน,อุสุเมะ",
+        "quantity": 3,
+        "grade": "0",
+        "series_code": "BT09",
+        "source": "m40_02_second_slice_recipe_draft_model"
+      },
+      {
+        "card_id": "BT01-027TH",
+        "name_th": "โลเซน เมกัส",
+        "quantity": 4,
+        "grade": "0",
+        "series_code": "BT01",
+        "source": "m40_02_second_slice_recipe_draft_model"
+      },
+      {
+        "card_id": "BT01-056TH",
+        "name_th": "โอราเคิลกาเดี้ยน, ไนเก้",
+        "quantity": 4,
+        "grade": "0",
+        "series_code": "BT01",
+        "source": "m40_02_second_slice_recipe_draft_model"
+      },
+      {
+        "card_id": "BT01-057TH",
+        "name_th": "ดรีม อีทเตอร์",
+        "quantity": 4,
+        "grade": "0",
+        "series_code": "BT01",
+        "source": "m40_02_second_slice_recipe_draft_model"
+      },
+      {
+        "card_id": "BT01-058TH",
+        "name_th": "มิราเคิล คิด",
+        "quantity": 2,
+        "grade": "0",
+        "series_code": "BT01",
+        "source": "m40_02_second_slice_recipe_draft_model"
+      }
+    ],
+    "repaired_quantities": [
+      {
+        "card_id": "BT01-006TH",
+        "name_th": "CEO อามาเทราสึ",
+        "quantity": 4,
+        "grade": "3",
+        "trigger": "",
+        "series_code": "",
+        "source": "m41_02_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT01-007TH",
+        "name_th": "แบทเทิล ซิสเตอร์, โคโคอา",
+        "quantity": 4,
+        "grade": "1",
+        "trigger": "",
+        "series_code": "",
+        "source": "m41_02_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT01-017TH",
+        "name_th": "ไมเดน ออฟ ไลบร้า",
+        "quantity": 1,
+        "grade": "2",
+        "trigger": "",
+        "series_code": "",
+        "source": "m41_02_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT01-058TH",
+        "name_th": "มิราเคิล คิด",
+        "quantity": 2,
+        "grade": "0",
+        "trigger": "Draw",
+        "series_code": "",
+        "source": "m41_02_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT02-033TH",
+        "name_th": "ลัค เบิร์ด",
+        "quantity": 4,
+        "grade": "1",
+        "trigger": "",
+        "series_code": "",
+        "source": "m41_02_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT03-038TH",
+        "name_th": "เหยี่ยวเทพ อิจิเบียวชิ",
+        "quantity": 3,
+        "grade": "0",
+        "trigger": "",
+        "series_code": "",
+        "source": "m41_02_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT05-067TH",
+        "name_th": "วีรสตรีสงคราม ทาจิซึฮิเมะ",
+        "quantity": 3,
+        "grade": "0",
+        "trigger": "",
+        "series_code": "",
+        "source": "m41_02_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT07-039TH",
+        "name_th": "ลิทเติ้ลวิช,ลูลู่",
+        "quantity": 3,
+        "grade": "0",
+        "trigger": "",
+        "series_code": "",
+        "source": "m41_02_accepted_repair_preview"
+      },
+      {
+        "card_id": "BT09-069TH",
+        "name_th": "เจ้าหญิงกระบอกไม้ไผ่,คางุยะ",
+        "quantity": 3,
+        "grade": "0",
+        "trigger": "",
+        "series_code": "",
+        "source": "m41_02_accepted_repair_preview"
+      },
+      {
+        "card_id": "EB05-028TH",
+        "name_th": "แบทเทิลซิสเตอร์,วาฟเฟิล",
+        "quantity": 3,
+        "grade": "0",
+        "trigger": "",
+        "series_code": "",
+        "source": "m41_02_accepted_repair_preview"
+      },
+      {
+        "card_id": "TD04-001TH",
+        "name_th": "โอราเคิลกาเดี้ยน, อโพลอน",
+        "quantity": 4,
+        "grade": "3",
+        "trigger": "",
+        "series_code": "TD04",
+        "source": "m41_02_accepted_repair_preview"
+      },
+      {
+        "card_id": "TD04-004TH",
+        "name_th": "โอราเคิลกาเดี้ยน, ไวส์แมน",
+        "quantity": 4,
+        "grade": "2",
+        "trigger": "",
+        "series_code": "TD04",
+        "source": "m41_02_accepted_repair_preview"
+      },
+      {
+        "card_id": "TD04-005TH",
+        "name_th": "ซิเคียวริตี้ การ์เดี้ยน",
+        "quantity": 4,
+        "grade": "2",
+        "trigger": "",
+        "series_code": "TD04",
+        "source": "m41_02_accepted_repair_preview"
+      },
+      {
+        "card_id": "TD04-006TH",
+        "name_th": "ซอร์ดแดนซ์เซอร์ แองเจิล",
+        "quantity": 2,
+        "grade": "2",
+        "trigger": "",
+        "series_code": "TD04",
+        "source": "m41_02_accepted_repair_preview"
+      },
+      {
+        "card_id": "TD04-007TH",
+        "name_th": "โอราเคิล กาเดี้ยน, เจมินิ",
+        "quantity": 4,
+        "grade": "1",
+        "trigger": "",
+        "series_code": "TD04",
+        "source": "m41_02_accepted_repair_preview"
+      },
+      {
+        "card_id": "TD04-008TH",
+        "name_th": "ดาร์ค แคท",
+        "quantity": 2,
+        "grade": "1",
+        "trigger": "",
+        "series_code": "TD04",
+        "source": "m41_02_accepted_repair_preview"
+      }
+    ],
+    "repair_application_issues": [],
+    "main_deck_count_after_repair": 50,
+    "grade_counts_after_repair_package": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "runtime_promotion_allowed": false,
+    "requires_m41_03_validation": true,
+    "ready_for_m41_03_validation_rerun": true
+  },
+  "summary": {
+    "accepted_review_item_id": "m41_01_m40_recipe_001_repair_review",
+    "accepted_recipe_id": "m40_recipe_001",
+    "accepted_repair_package_id": "m40_recipe_001_grade_profile_pkg_001",
+    "human_acceptance_recorded": true,
+    "main_deck_count_after_repair": 50,
+    "repair_application_issue_count": 0,
+    "runtime_promotion_allowed": false,
+    "declares_recipe_valid": false,
+    "ready_for_m41_03": true
+  },
+  "next_target": {
+    "milestone": "M41-03",
+    "task": "Second-slice repaired recipe validation rerun"
+  }
+}

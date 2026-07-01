@@ -1,0 +1,425 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Cardfight Vanguard field layout blueprints by anime part for UI and rule engine prototyping.",
+  "orientation": "Each template describes one player's board. A full arena mirrors two PlayerBoard instances.",
+  "base_circles": [
+    {
+      "id": "rc_fl",
+      "row": "front",
+      "column": "left",
+      "base_type": "rear_guard"
+    },
+    {
+      "id": "vc",
+      "row": "front",
+      "column": "center",
+      "base_type": "vanguard"
+    },
+    {
+      "id": "rc_fr",
+      "row": "front",
+      "column": "right",
+      "base_type": "rear_guard"
+    },
+    {
+      "id": "rc_bl",
+      "row": "back",
+      "column": "left",
+      "base_type": "rear_guard"
+    },
+    {
+      "id": "rc_bc",
+      "row": "back",
+      "column": "center",
+      "base_type": "rear_guard"
+    },
+    {
+      "id": "rc_br",
+      "row": "back",
+      "column": "right",
+      "base_type": "rear_guard"
+    },
+    {
+      "id": "gc",
+      "row": "guardian",
+      "column": "center",
+      "base_type": "guardian"
+    }
+  ],
+  "core_zones": [
+    "deck",
+    "hand",
+    "drop",
+    "damage",
+    "soul",
+    "bind",
+    "trigger"
+  ],
+  "templates": {
+    "FIELD-01_CLASSIC_CORE": {
+      "name": "Classic Core",
+      "visible_special_zones": [],
+      "dynamic_circles": false,
+      "required_modules": [
+        "basic_field",
+        "soul",
+        "damage",
+        "trigger_zone"
+      ],
+      "notes": [
+        "Base seven-circle field.",
+        "Used as the foundation for every later template."
+      ]
+    },
+    "FIELD-02_CLASSIC_LOCK": {
+      "name": "Classic Core with Lock Overlay",
+      "inherits": "FIELD-01_CLASSIC_CORE",
+      "visible_special_zones": [],
+      "dynamic_circles": false,
+      "required_modules": [
+        "lock"
+      ],
+      "circle_extensions": [
+        "current_types",
+        "original_type",
+        "locked_state"
+      ]
+    },
+    "FIELD-03_LEGION": {
+      "name": "Legion Vanguard Circle",
+      "inherits": "FIELD-01_CLASSIC_CORE",
+      "visible_special_zones": [],
+      "dynamic_circles": false,
+      "required_modules": [
+        "legion"
+      ],
+      "circle_extensions": [
+        "vanguard_multiple_units",
+        "leader_mate_association"
+      ]
+    },
+    "FIELD-04_G_STRIDE": {
+      "name": "G / Stride Field",
+      "inherits": "FIELD-01_CLASSIC_CORE",
+      "visible_special_zones": [
+        "g_zone"
+      ],
+      "dynamic_circles": false,
+      "required_modules": [
+        "g_zone",
+        "stride",
+        "heart",
+        "generation_break",
+        "g_guardian"
+      ],
+      "circle_extensions": [
+        "top_unit",
+        "heart_cards"
+      ]
+    },
+    "FIELD-05_V_GIFTS": {
+      "name": "V Reboot with Imaginary Gifts",
+      "inherits": "FIELD-01_CLASSIC_CORE",
+      "visible_special_zones": [
+        "gift_marker_area"
+      ],
+      "dynamic_circles": true,
+      "required_modules": [
+        "imaginary_gift",
+        "force",
+        "accel",
+        "protect",
+        "pseudo_cards"
+      ],
+      "circle_extensions": [
+        "markers",
+        "dynamic_front_row_circles"
+      ]
+    },
+    "FIELD-06_D_OVERDRESS": {
+      "name": "D / overDress Standard Field",
+      "inherits": "FIELD-01_CLASSIC_CORE",
+      "visible_special_zones": [
+        "ride_deck",
+        "order_zone",
+        "order_area",
+        "crest_zone_optional"
+      ],
+      "dynamic_circles": false,
+      "required_modules": [
+        "ride_deck",
+        "order",
+        "persona_ride",
+        "overdress",
+        "xoverdress"
+      ],
+      "circle_extensions": [
+        "original_dress_association",
+        "stack_viewer"
+      ]
+    },
+    "FIELD-07_DZ_ENERGY": {
+      "name": "DZ / DivineZ Field",
+      "inherits": "FIELD-06_D_OVERDRESS",
+      "visible_special_zones": [
+        "ride_deck",
+        "order_zone",
+        "crest_zone",
+        "energy_counter"
+      ],
+      "dynamic_circles": false,
+      "required_modules": [
+        "energy",
+        "energy_generator",
+        "crest",
+        "divine_skill"
+      ],
+      "player_extensions": [
+        "energy",
+        "energy_limit",
+        "used_divine_skill"
+      ]
+    },
+    "FIELD-08_SET_SPECIFIC_OVERLAY": {
+      "name": "Set-specific Field Overlay",
+      "inherits": "FIELD-01_CLASSIC_CORE",
+      "visible_special_zones": [
+        "conditional"
+      ],
+      "dynamic_circles": true,
+      "required_modules": [
+        "astral_plane",
+        "music_order_on_circle",
+        "prison",
+        "arms",
+        "gauge",
+        "stage",
+        "associated_objects"
+      ],
+      "circle_extensions": [
+        "multiple_current_types",
+        "associated_objects",
+        "non_unit_cards_on_circle"
+      ]
+    }
+  },
+  "anime_parts": [
+    {
+      "part": 1,
+      "name": "Cardfight!! Vanguard",
+      "template": "FIELD-01_CLASSIC_CORE",
+      "overlays": []
+    },
+    {
+      "part": 2,
+      "name": "Asia Circuit",
+      "template": "FIELD-01_CLASSIC_CORE",
+      "overlays": [
+        "limit_break_condition"
+      ]
+    },
+    {
+      "part": 3,
+      "name": "Link Joker",
+      "template": "FIELD-02_CLASSIC_LOCK",
+      "overlays": [
+        "lock",
+        "unlock"
+      ]
+    },
+    {
+      "part": 4,
+      "name": "Legion Mate",
+      "template": "FIELD-03_LEGION",
+      "overlays": [
+        "legion",
+        "seek_mate"
+      ]
+    },
+    {
+      "part": 5,
+      "name": "Cardfight!! Vanguard G",
+      "template": "FIELD-04_G_STRIDE",
+      "overlays": [
+        "stride",
+        "heart",
+        "generation_break"
+      ]
+    },
+    {
+      "part": 6,
+      "name": "G: GIRS Crisis",
+      "template": "FIELD-04_G_STRIDE",
+      "overlays": [
+        "stride",
+        "heart",
+        "generation_break"
+      ]
+    },
+    {
+      "part": 7,
+      "name": "G: Stride Gate",
+      "template": "FIELD-04_G_STRIDE",
+      "overlays": [
+        "stride",
+        "g_guardian"
+      ]
+    },
+    {
+      "part": 8,
+      "name": "G NEXT",
+      "template": "FIELD-04_G_STRIDE",
+      "overlays": [
+        "stride",
+        "g_guardian",
+        "clan_keywords"
+      ]
+    },
+    {
+      "part": 9,
+      "name": "G Z",
+      "template": "FIELD-04_G_STRIDE",
+      "overlays": [
+        "stride",
+        "ultimate_stride",
+        "gyze_related"
+      ]
+    },
+    {
+      "part": 10,
+      "name": "Cardfight!! Vanguard 2018",
+      "template": "FIELD-05_V_GIFTS",
+      "overlays": [
+        "force",
+        "accel",
+        "protect"
+      ]
+    },
+    {
+      "part": 11,
+      "name": "High School Arc Cont.",
+      "template": "FIELD-05_V_GIFTS",
+      "overlays": [
+        "imaginary_gift"
+      ]
+    },
+    {
+      "part": 12,
+      "name": "Shinemon Arc",
+      "template": "FIELD-05_V_GIFTS",
+      "overlays": [
+        "imaginary_gift",
+        "astral_plane"
+      ]
+    },
+    {
+      "part": 13,
+      "name": "Extra Story -if-",
+      "template": "FIELD-05_V_GIFTS",
+      "overlays": [
+        "imaginary_gift",
+        "pseudo_cards"
+      ]
+    },
+    {
+      "part": 14,
+      "name": "overDress Season 1",
+      "template": "FIELD-06_D_OVERDRESS",
+      "overlays": [
+        "ride_deck",
+        "order_zone",
+        "overdress"
+      ]
+    },
+    {
+      "part": 15,
+      "name": "overDress Season 2",
+      "template": "FIELD-06_D_OVERDRESS",
+      "overlays": [
+        "overdress",
+        "xoverdress"
+      ]
+    },
+    {
+      "part": 16,
+      "name": "will+Dress Season 1",
+      "template": "FIELD-06_D_OVERDRESS",
+      "overlays": [
+        "ride_deck",
+        "orders",
+        "persona_ride"
+      ]
+    },
+    {
+      "part": 17,
+      "name": "will+Dress Season 2",
+      "template": "FIELD-06_D_OVERDRESS",
+      "overlays": [
+        "ride_deck",
+        "orders",
+        "deck_specific_modules"
+      ]
+    },
+    {
+      "part": 18,
+      "name": "will+Dress Season 3",
+      "template": "FIELD-06_D_OVERDRESS",
+      "overlays": [
+        "ride_deck",
+        "orders",
+        "crest_zone_optional"
+      ]
+    },
+    {
+      "part": 19,
+      "name": "Divinez Season 1",
+      "template": "FIELD-07_DZ_ENERGY",
+      "overlays": [
+        "energy",
+        "divine_skill",
+        "fated_one"
+      ]
+    },
+    {
+      "part": 20,
+      "name": "Divinez Season 2",
+      "template": "FIELD-07_DZ_ENERGY",
+      "overlays": [
+        "energy",
+        "divine_skill",
+        "destined_one"
+      ]
+    },
+    {
+      "part": 21,
+      "name": "Divinez DELUXE Arc",
+      "template": "FIELD-07_DZ_ENERGY",
+      "overlays": [
+        "energy",
+        "crest",
+        "deck_specific_modules"
+      ]
+    },
+    {
+      "part": 22,
+      "name": "Divinez DELUXE Finals",
+      "template": "FIELD-07_DZ_ENERGY",
+      "overlays": [
+        "energy",
+        "crest",
+        "deck_specific_modules"
+      ]
+    },
+    {
+      "part": 23,
+      "name": "Divinez Parallactic Clash",
+      "template": "FIELD-07_DZ_ENERGY",
+      "overlays": [
+        "energy",
+        "crest",
+        "fantome_or_parallactic_modules",
+        "set_specific_overlay"
+      ]
+    }
+  ]
+}

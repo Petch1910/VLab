@@ -1,0 +1,436 @@
+{
+  "version": "M37-02",
+  "description": "Trigger package repair proposal for the accepted seed recipe",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "accepted_seed_slot_gap_candidates": "outputs\\target_slice\\m37_01_accepted_seed_slot_gap_candidates.json",
+    "deck_recipe_validation_report": "outputs\\target_slice\\m36_03_deck_recipe_validation_report.json"
+  },
+  "scope": {
+    "offline_repair_proposal": true,
+    "changes_recipe_draft": false,
+    "creates_runtime_deck": false,
+    "bot_integration": false,
+    "automatic_deck_injection": false,
+    "live_card_text_parsing": false
+  },
+  "accepted_seed": {
+    "recipe_id": "recipe_003",
+    "source_skeleton_id": "skel_003",
+    "source_line_id": "line_003",
+    "anchor_card_id": "BT04-078TH",
+    "anchor_name_th": "แกรปเปิล มาเนีย",
+    "validation_status": "invalid_draft",
+    "current_trigger_counts": {
+      "Stand": 4
+    },
+    "slot_summary": {
+      "main_deck_target": 50,
+      "explicit_card_count": 38,
+      "trigger_slots_target": 16,
+      "trigger_slots_assigned": 4,
+      "trigger_slots_unfilled": 12,
+      "normal_slots_target": 34,
+      "normal_slots_assigned": 34,
+      "normal_slots_unfilled": 0,
+      "total_unfilled_slots": 12,
+      "max_copy_limit_assumed": 4
+    }
+  },
+  "original_validation": {
+    "validation_status": "invalid_draft",
+    "blocking_issue_count": 3,
+    "blocker_codes": [
+      "main_deck_size_mismatch",
+      "unfilled_slots",
+      "trigger_count_mismatch"
+    ],
+    "review_codes": [
+      "grade_profile_review",
+      "human_acceptance_pending"
+    ],
+    "count_summary": {
+      "main_deck_target": 50,
+      "explicit_card_count": 38,
+      "trigger_count": 4,
+      "trigger_counts": {
+        "Stand": 4
+      },
+      "grade_counts": {
+        "0": 4,
+        "2": 6,
+        "3": 28
+      },
+      "clan_counts": {
+        "โนว่า เกรปเปอร์": 38
+      }
+    }
+  },
+  "package_simulations": [
+    {
+      "package_id": "m37_01_pkg_001",
+      "profile_id": "balanced_classic",
+      "score": 135,
+      "status": "trigger_blockers_resolved_pending_review",
+      "resolved_blockers": [
+        "main_deck_size_mismatch",
+        "trigger_count_mismatch",
+        "unfilled_slots"
+      ],
+      "unresolved_blockers": [],
+      "carried_review_issues": [
+        "grade_profile_review",
+        "human_acceptance_pending"
+      ],
+      "explicit_card_count_after": 50,
+      "trigger_count_after": 16,
+      "final_trigger_counts": {
+        "Critical": 4,
+        "Draw": 4,
+        "Heal": 4,
+        "Stand": 4
+      },
+      "grade_counts_after": {
+        "0": 16,
+        "2": 6,
+        "3": 28
+      },
+      "quantity_delta": [
+        {
+          "card_id": "BT04-077TH",
+          "name_th": "เรือรบประจัญบาน,โพรมีเทอุส",
+          "quantity": 4,
+          "trigger": "Critical",
+          "series_code": "BT04",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT02-073TH",
+          "name_th": "ทรี มินิทส์",
+          "quantity": 4,
+          "trigger": "Draw",
+          "series_code": "BT02",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT01-065TH",
+          "name_th": "ริงเกิร์ล, คลาล่า",
+          "quantity": 4,
+          "trigger": "Heal",
+          "series_code": "BT01",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "runtime_promotion_allowed": false
+    },
+    {
+      "package_id": "m37_01_pkg_002",
+      "profile_id": "eb04_local_balanced",
+      "score": 130,
+      "status": "trigger_blockers_resolved_pending_review",
+      "resolved_blockers": [
+        "main_deck_size_mismatch",
+        "trigger_count_mismatch",
+        "unfilled_slots"
+      ],
+      "unresolved_blockers": [],
+      "carried_review_issues": [
+        "grade_profile_review",
+        "human_acceptance_pending"
+      ],
+      "explicit_card_count_after": 50,
+      "trigger_count_after": 16,
+      "final_trigger_counts": {
+        "Critical": 4,
+        "Draw": 4,
+        "Heal": 4,
+        "Stand": 4
+      },
+      "grade_counts_after": {
+        "0": 16,
+        "2": 6,
+        "3": 28
+      },
+      "quantity_delta": [
+        {
+          "card_id": "EB04-029TH",
+          "name_th": "มินิมั่ม ไรเซอร์",
+          "quantity": 4,
+          "trigger": "Critical",
+          "series_code": "EB04",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB04-030TH",
+          "name_th": "ทรี มินิทส์",
+          "quantity": 4,
+          "trigger": "Draw",
+          "series_code": "EB04",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB04-032TH",
+          "name_th": "วอลบอย",
+          "quantity": 4,
+          "trigger": "Heal",
+          "series_code": "EB04",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "runtime_promotion_allowed": false
+    },
+    {
+      "package_id": "m37_01_pkg_003",
+      "profile_id": "critical_pressure",
+      "score": 125,
+      "status": "trigger_blockers_resolved_pending_review",
+      "resolved_blockers": [
+        "main_deck_size_mismatch",
+        "trigger_count_mismatch",
+        "unfilled_slots"
+      ],
+      "unresolved_blockers": [],
+      "carried_review_issues": [
+        "grade_profile_review",
+        "human_acceptance_pending"
+      ],
+      "explicit_card_count_after": 50,
+      "trigger_count_after": 16,
+      "final_trigger_counts": {
+        "Critical": 8,
+        "Heal": 4,
+        "Stand": 4
+      },
+      "grade_counts_after": {
+        "0": 16,
+        "2": 6,
+        "3": 28
+      },
+      "quantity_delta": [
+        {
+          "card_id": "BT04-077TH",
+          "name_th": "เรือรบประจัญบาน,โพรมีเทอุส",
+          "quantity": 4,
+          "trigger": "Critical",
+          "series_code": "BT04",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB04-029TH",
+          "name_th": "มินิมั่ม ไรเซอร์",
+          "quantity": 4,
+          "trigger": "Critical",
+          "series_code": "EB04",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT01-065TH",
+          "name_th": "ริงเกิร์ล, คลาล่า",
+          "quantity": 4,
+          "trigger": "Heal",
+          "series_code": "BT01",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "runtime_promotion_allowed": false
+    },
+    {
+      "package_id": "m37_01_pkg_004",
+      "profile_id": "stand_pressure",
+      "score": 125,
+      "status": "trigger_blockers_resolved_pending_review",
+      "resolved_blockers": [
+        "main_deck_size_mismatch",
+        "trigger_count_mismatch",
+        "unfilled_slots"
+      ],
+      "unresolved_blockers": [],
+      "carried_review_issues": [
+        "grade_profile_review",
+        "human_acceptance_pending"
+      ],
+      "explicit_card_count_after": 50,
+      "trigger_count_after": 16,
+      "final_trigger_counts": {
+        "Critical": 4,
+        "Heal": 4,
+        "Stand": 8
+      },
+      "grade_counts_after": {
+        "0": 16,
+        "2": 6,
+        "3": 28
+      },
+      "quantity_delta": [
+        {
+          "card_id": "BT01-064TH",
+          "name_th": "ลัคกี้เกิร์ล",
+          "quantity": 4,
+          "trigger": "Stand",
+          "series_code": "BT01",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT04-077TH",
+          "name_th": "เรือรบประจัญบาน,โพรมีเทอุส",
+          "quantity": 4,
+          "trigger": "Critical",
+          "series_code": "BT04",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT01-065TH",
+          "name_th": "ริงเกิร์ล, คลาล่า",
+          "quantity": 4,
+          "trigger": "Heal",
+          "series_code": "BT01",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "runtime_promotion_allowed": false
+    },
+    {
+      "package_id": "m37_01_pkg_005",
+      "profile_id": "draw_stand_guarded",
+      "score": 120,
+      "status": "trigger_blockers_resolved_pending_review",
+      "resolved_blockers": [
+        "main_deck_size_mismatch",
+        "trigger_count_mismatch",
+        "unfilled_slots"
+      ],
+      "unresolved_blockers": [],
+      "carried_review_issues": [
+        "grade_profile_review",
+        "human_acceptance_pending"
+      ],
+      "explicit_card_count_after": 50,
+      "trigger_count_after": 16,
+      "final_trigger_counts": {
+        "Draw": 4,
+        "Heal": 4,
+        "Stand": 8
+      },
+      "grade_counts_after": {
+        "0": 16,
+        "2": 6,
+        "3": 28
+      },
+      "quantity_delta": [
+        {
+          "card_id": "BT02-073TH",
+          "name_th": "ทรี มินิทส์",
+          "quantity": 4,
+          "trigger": "Draw",
+          "series_code": "BT02",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT01-064TH",
+          "name_th": "ลัคกี้เกิร์ล",
+          "quantity": 4,
+          "trigger": "Stand",
+          "series_code": "BT01",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT01-065TH",
+          "name_th": "ริงเกิร์ล, คลาล่า",
+          "quantity": 4,
+          "trigger": "Heal",
+          "series_code": "BT01",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "runtime_promotion_allowed": false
+    }
+  ],
+  "recommended_repair": {
+    "package_id": "m37_01_pkg_001",
+    "profile_id": "balanced_classic",
+    "reason": "highest_scoring_complete_candidate_that_resolves_trigger_blockers",
+    "quantity_delta": [
+      {
+        "card_id": "BT04-077TH",
+        "name_th": "เรือรบประจัญบาน,โพรมีเทอุส",
+        "quantity": 4,
+        "trigger": "Critical",
+        "series_code": "BT04",
+        "source": "data/packs/vanguard_th/cards.sqlite:cards"
+      },
+      {
+        "card_id": "BT02-073TH",
+        "name_th": "ทรี มินิทส์",
+        "quantity": 4,
+        "trigger": "Draw",
+        "series_code": "BT02",
+        "source": "data/packs/vanguard_th/cards.sqlite:cards"
+      },
+      {
+        "card_id": "BT01-065TH",
+        "name_th": "ริงเกิร์ล, คลาล่า",
+        "quantity": 4,
+        "trigger": "Heal",
+        "series_code": "BT01",
+        "source": "data/packs/vanguard_th/cards.sqlite:cards"
+      }
+    ],
+    "resolved_blockers": [
+      "main_deck_size_mismatch",
+      "trigger_count_mismatch",
+      "unfilled_slots"
+    ],
+    "remaining_review_issues": [
+      "grade_profile_review",
+      "human_acceptance_pending"
+    ],
+    "final_trigger_counts": {
+      "Critical": 4,
+      "Draw": 4,
+      "Heal": 4,
+      "Stand": 4
+    },
+    "grade_counts_after": {
+      "0": 16,
+      "2": 6,
+      "3": 28
+    },
+    "runtime_promotion_allowed": false,
+    "requires_human_acceptance": true
+  },
+  "summary": {
+    "recipe_id": "recipe_003",
+    "package_count": 5,
+    "packages_resolving_trigger_blockers": 5,
+    "recommended_package_id": "m37_01_pkg_001",
+    "recommended_profile_id": "balanced_classic",
+    "resolved_blockers": [
+      "main_deck_size_mismatch",
+      "trigger_count_mismatch",
+      "unfilled_slots"
+    ],
+    "remaining_review_issue_count": 2,
+    "runtime_promotion_allowed": false,
+    "ready_for_m37_03": true
+  },
+  "next_target": {
+    "milestone": "M37-03",
+    "task": "Rejected-line support-gap triage"
+  }
+}

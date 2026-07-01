@@ -1,0 +1,111 @@
+{
+  "version": "M41-03",
+  "description": "Second-slice repaired recipe validation rerun for Oracle Think Tank",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โอราเคิล ทิงค์ แทงค์",
+    "group_field": "clan",
+    "rank": 10,
+    "priority_score": 63.74,
+    "best_era_candidates": 875,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "MEDIUM_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool"
+    ]
+  },
+  "source_inputs": {
+    "human_accepted_repair_artifact": "outputs\\target_slice\\m41_02_second_slice_human_accepted_repair_artifact.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "scope": {
+    "offline_validator": true,
+    "changes_accepted_artifact": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false
+  },
+  "validation_policy": {
+    "classic_main_deck_size": 50,
+    "classic_trigger_count": 16,
+    "heal_trigger_max": 4,
+    "classic_grade_target": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "manual_review_card_overlap_is_blocking": true,
+    "runtime_promotion_requires_zero_blockers": true
+  },
+  "summary": {
+    "recipe_id": "m40_recipe_001",
+    "validation_status": "invalid_repaired_recipe",
+    "runtime_ready": false,
+    "promotion_allowed": false,
+    "blocking_issue_count": 1,
+    "main_deck_count": 50,
+    "trigger_count": 2,
+    "grade_counts": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "manual_review_card_overlap_cleared": true,
+    "issue_counts": {
+      "trigger_count_mismatch": 1
+    },
+    "ready_for_m41_04": false,
+    "ready_for_repair_loop": true
+  },
+  "recipe_validation": {
+    "recipe_id": "m40_recipe_001",
+    "source_candidate_edge": "BT01-006TH->BT02-033TH",
+    "accepted_repair_package_id": "m40_recipe_001_grade_profile_pkg_001",
+    "validation_status": "invalid_repaired_recipe",
+    "blocking_issue_count": 1,
+    "issues": [
+      {
+        "code": "trigger_count_mismatch",
+        "severity": "blocker",
+        "message": "Classic trigger count must be 16 before fixture promotion.",
+        "details": {
+          "expected": 16,
+          "actual": 2,
+          "by_trigger": {
+            "Draw": 2
+          }
+        }
+      }
+    ],
+    "count_summary": {
+      "main_deck_count": 50,
+      "trigger_count": 2,
+      "trigger_counts": {
+        "Draw": 2
+      },
+      "grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "clan_counts": {
+        "โอราเคิล ทิงค์ แทงค์": 50
+      },
+      "manual_review_card_ids_present": []
+    },
+    "runtime_ready": false,
+    "promotion_allowed": false
+  },
+  "next_target": {
+    "milestone": "M41-repair",
+    "task": "Second-slice trigger/profile repair loop"
+  }
+}

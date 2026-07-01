@@ -1,0 +1,144 @@
+{
+  "version": "M51-01",
+  "description": "Fifth target slice selection",
+  "source_inputs": {
+    "four_fixture_scale_decision": "outputs\\target_slice\\m50_04_four_fixture_scale_decision.json"
+  },
+  "scope": {
+    "offline_target_selection": true,
+    "creates_recipe_draft": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "GameState_mutation": false
+  },
+  "selection_policy": {
+    "requires_m50_scale_allowed": true,
+    "selects_first_available_candidate": true,
+    "excludes_completed_fixture_groups": true,
+    "selection_is_for_offline_analysis_only": true
+  },
+  "selected_target": {
+    "slice": "Fifth Offline Slice",
+    "era_preset": "link_joker_legion_mate",
+    "group": "โกลด์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 3,
+    "priority_score": 77.85,
+    "best_era_candidates": 2006,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "candidate_queue_snapshot": [
+    {
+      "rank": 3,
+      "group": "โกลด์ พาลาดิน",
+      "group_field": "clan",
+      "best_era": "link_joker_legion_mate",
+      "best_era_candidates": 2006,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 77.85,
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "rich_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    {
+      "rank": 4,
+      "group": "ชาโดว์ พาลาดิน",
+      "group_field": "clan",
+      "best_era": "g_next_z",
+      "best_era_candidates": 864,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 73.61,
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    {
+      "rank": 6,
+      "group": "เนโอ เนคต้า",
+      "group_field": "clan",
+      "best_era": "g_series_first",
+      "best_era_candidates": 1208,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 69.26,
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool"
+      ]
+    },
+    {
+      "rank": 7,
+      "group": "คาเงโร่",
+      "group_field": "clan",
+      "best_era": "link_joker_legion_mate",
+      "best_era_candidates": 1283,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 68.56,
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    {
+      "rank": 8,
+      "group": "อควอฟอร์ซ",
+      "group_field": "clan",
+      "best_era": "g_series_first",
+      "best_era_candidates": 999,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 68.42,
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool"
+      ]
+    }
+  ],
+  "decision": {
+    "selection_allowed": true,
+    "fifth_slice_selected": true,
+    "offline_analysis_only": true,
+    "live_runtime_deck_enabled": false,
+    "saved_deck_enabled": false,
+    "ui_deck_list_enabled": false,
+    "bot_playbook_enabled": false,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false
+  },
+  "summary": {
+    "fifth_slice_selected": true,
+    "selected_group": "โกลด์ พาลาดิน",
+    "selected_era_preset": "link_joker_legion_mate",
+    "selected_rank": 3,
+    "candidate_count": 5,
+    "ready_for_m51_02": true
+  },
+  "next_target": {
+    "milestone": "M51-02",
+    "task": "Fifth-slice fixture/format readiness"
+  }
+}

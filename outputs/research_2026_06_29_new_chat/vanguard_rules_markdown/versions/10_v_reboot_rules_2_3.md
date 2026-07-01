@@ -1,0 +1,5904 @@
+---
+title: "Cardfight!! Vanguard Comprehensive Rules 2.3"
+source_pdf: "https://en.cf-vanguard.com/wordpress/wp-content/uploads/Cardfight-Vanguard-Comprehensive-Rules-2.3.pdf"
+local_pdf: "C:/Users/Phet/Documents/Codex/2026-06-29/new-chat/work/rules_archive/2_3_unknown.pdf"
+source_sha256: fb056d9bb154fb4135477b2f6e17b03032d8f6277d913b519f6c7ec87007a24f
+era: "V Reboot 2020"
+last_updated: "March 11, 2020"
+pages: 41
+extracted_characters: 195068
+---
+
+# Cardfight!! Vanguard Comprehensive Rules 2.3
+
+> This Markdown is an unabridged page-by-page text extraction from the official PDF listed above. PDF icon glyphs and diagram-only details may not extract as normal text, so the source PDF link and hash are preserved for audit.
+
+## Metadata
+
+- Source: https://en.cf-vanguard.com/wordpress/wp-content/uploads/Cardfight-Vanguard-Comprehensive-Rules-2.3.pdf
+- Local PDF: `C:\Users\Phet\Documents\Codex\2026-06-29\new-chat\work\rules_archive\2_3_unknown.pdf`
+- SHA-256: `fb056d9bb154fb4135477b2f6e17b03032d8f6277d913b519f6c7ec87007a24f`
+- Era mapping: V Reboot 2020
+- Study focus: V consolidated reference before D series
+- Detected version: 2.3
+- Detected last updated: March 11, 2020
+- Pages: 41
+- Extracted characters: 195068
+
+## Detected Mechanics
+
+Limit Break, Lock, Delete, Legion, Seek Mate, Stride, Heart, Generation Break, G Guardian, Ultimate Stride, Gyze, Resist, Brave, Oracle, Ritual, Unite, Revelation, Blaze, Afterimage, Dominate, Engorge, Shadowstitch, Thunderstrike, Rush, Burst, Charge, Darkness, Magia, Time Leap, Hollow, Harmony, Wave, Dark Device, Success, Bloom, Melody, Imaginary Gift, Front Trigger, Accel, Force, Protect, Order
+
+## Detected Headings
+
+- Section 1. Outline of the Game ....................................... 1
+- Section 2. Card Information ............................................ 2
+- Section 3. Basic Concepts .............................................. 5
+- Section 4. Zones of the Game ........................................ 7
+- Section 5. Setting Up the Game ................................... 10
+- Section 6. Game Procedure...........................................11
+- Section 7. Attack and Battle .......................................... 12
+- Section 8. Play and Resolve Cards and Abilities .......... 16
+- Section 9. Rule Action ................................................... 21
+- Section 10. Specific Actions .......................................... 22
+- Section 11. Keywords ................................................... 30
+- Section 12. Miscellaneous ............................................ 35
+- Section 1. Outline of the Game
+- 1.1. Number of Players
+- 1.1.1. This game is played by two players. These
+- 1.2. Winning and Losing
+- 1.2.1. If any player loses, then the game ends
+- 1.2.2. If any player fulfils any losing conditions during
+- 1.2.3. If all players lose simultaneously, then the
+- 1.2.4. Any player may concede the game at any time.
+- 1.2.5. Players may win or lose the game by an effect.
+- 1.3. Golden Rules of the Game
+- 1.3.1. If the comprehensive rules and the text of a
+- 1.3.2. If anything attempts to make a player do
+- 1.3.3. If an effect from a card attempts to do
+- 1.3.4. If anything asks more than one players to
+- 1.3.5. If anything asks a player to choose a number,
+- Section 2. Card Information
+- 2.1. Name
+- 2.1.1. The proper name to identify a card.
+- 2.2. Clan
+- 2.2.1. The name of the clan a card belongs to.
+- 2.2.2. The clan is referred to by some abilities and
+- 2.2.3. In text, the name of a clan is expressed as
+- 2.3. Race
+- 2.3.1. The name of the race of a card.
+- 2.4. Grade
+- 2.4.1. It is the numeric value that is referred to when
+- 2.4.2. The grade can give limitations when playing a
+- 2.5. Power
+- 2.5.1. The numeric value that expresses the combat
+- 2.5.2. In card text, the power is indicated by a
+- 2.5.3. Some cards have a “+“ after the numerical
+- 2.5.4. If a unit’s power becomes larger than its
+- 2.6. Shield
+- 2.6.1. The numeric value that expresses the combat
+- 2.6.2. In card text, the shield is indicated by a
+- 2.6.3. Some cards do not have a shield.
+- 2.7. Critical
+- 2.7.1. The numeric value that determines how much
+- 2.7.2. In card text, the critical is indicated by a
+- 2.8. Trigger Icon
+- 2.8.1. The icon that indicates what to do for a card’s
+- 2.8.2. If a trigger asks you to do more than one
+- 2.8.3. When a unit gets power according to the
+- 2.9. Type
+- 2.9.1. The type of this card. The type is written on the
+- 2.9.2. For types, there are G units, trigger units,
+- 2.9.3. There are some cards and pseudo-cards
+- 2.10. Skill Icon
+- 2.10.1. It shows the common abilities that many
+- 2.11. Text Frame
+- 2.11.1. The set of abilities a card has is written inside
+- 2.11.2. Some text is colored differently to put an
+- 2.11.3. Some cards have text in ( ) to show the
+- 2.12. Flavor
+- 2.12.1. The descriptive text of this card.
+- 2.12.2. The flavor is not part of the information of a
+- 2.13. Art
+- 2.13.1. The image of this card.
+- 2.13.2. The art is not part of the information of a card
+- 2.14. Collection Data
+- 2.14.1. The location where the collection ID, rarity,
+- 2.14.2. The collection data is not part of the
+- 2.15. Nation
+- 2.15.1. The name of the nation a card belongs to.
+- 2.15.2. The nation is referred to by some abilities and
+- 2.15.3. There are 6 nations, and their respective
+- 2.16. Imaginary Gift Icon
+- 2.16.1. If this icon is on the card, this card has an
+- 2.16.2. This card has the imaginary gift of the
+- 2.17. Drive
+- 2.17.1. The numeric value that determines the
+- 2.17.2. The drive is not indicated on a card, and the
+- Section 3. Basic Concepts
+- 3.1. Abilities and Effects
+- 3.1.1. An ability is an instruction generated by a
+- 3.1.2. An effect is the instruction given by an ability.
+- 3.2. Player
+- 3.2.1. The player (or “fighter“) is a person playing the
+- 3.3. Owner
+- 3.3.1. The owner is the player who owns the card.
+- 3.3.2. The owner of a card is the player who had it in
+- 3.3.3. At the end of each game, each player retrieves
+- 3.4. Master
+- 3.4.1. The master is the player who is currently using
+- 3.4.2. The master of a card in a zone (Section 4.
+- 3.4.3. The master of an effect is the master of the
+- 3.4.4. The master of an activated ability is the player
+- 3.4.5. The master of an automatic ability is the
+- 3.4.6. The master of a continuous ability is the
+- 3.5. Check Timing
+- 3.5.1. The check timing is the time that is used to
+- 3.5.2. In a check timing, resolve all rule actions, then,
+- 3.6. Play Timing
+- 3.6.1. The play timing is the time that a player can
+- 3.6.2. Whenever a player gets a play timing, just
+- 3.6.3. A player who gets a play timing chooses an
+- 3.7. Information and status
+- 3.7.1. Information is any value, phrase, or icon that
+- 3.7.2. A status is a state of a card that can be
+- 3.8. Unit
+- 3.8.1. Units are cards put on the field (4.5) excluding
+- 3.8.2. Units are categorized into vanguards, rear-
+- 3.9. Vanguard
+- 3.9.1. A vanguard is a unit on a vanguard circle
+- 3.9.2. Each vanguard has a value called “vanguard
+- 3.10. Rear-guard
+- 3.10.1. A rear-guard is a unit on a rear-guard circle
+- 3.11. Guardian
+- 3.11.1. A guardian is a unit on a guardian circle
+- 3.11.2. If a unit without a shield value is placed on a
+- 3.11.3. When guardian(s) is/are put on the guardian
+- 3.11.4. There is no limit to how many guardians you
+- 3.12. Drawing, and moving cards
+- 3.12.2. If an effect says “draw a card“, the designated
+- 3.12.3. If an effect says “draw [number] cards“,
+- 3.12.4. If an effect says “draw up to [number] cards“,
+- 3.12.5. Unless otherwise stated, for moves like “put it
+- 3.13. Looking at Cards from the Deck
+- 3.13.2. If an effect says “look at [number] cards from
+- 3.13.3. If an effect says “look at up to [number] cards
+- 3.13.4. If a continuous ability allows a player to look
+- 3.13.5. For automatic abilities that include looking at
+- 3.14. Source
+- 3.14.1. Some effects will see where another effect
+- 3.14.2. Some effects will see where damage came
+- 3.14.3. Some processes will see which units effects
+- 3.15. At Random
+- 3.15.1. To choose something “at random“ means to
+- 3.15.2. When choosing at random, you choose from
+- 3.16. Card Orientation
+- 3.16.1. Each unit on the field (4.5) has one of two
+- 3.16.2. If a player is asked to stand standing cards or
+- 3.16.3. Each card on the field, in a damage zone or
+- 3.16.4. If a player is asked to turn a face up card face
+- Section 4. Zones of the Game
+- 4.1. General
+- 4.1.1. For each zone, each player has his or her own
+- 4.1.2. The number of cards in each zone is public to
+- 4.1.3. Whether information of cards are public or
+- 4.1.4. If a card moves from a zone to another zone, if
+- 4.1.5. When multiple cards move from a zone to
+- 4.1.6. If a card would move to a zone without the
+- 4.1.7. If cards in a public zone are face down for
+- 4.1.8. When the effect of a single card moves a card
+- 4.1.9. When cards would move from a hidden zone
+- 4.1.10. If a card would move to a zone belonging to a
+- 4.2. Deck Zone
+- 4.2.1. The zone you put your main deck in at the
+- 4.2.2. The deck zone is a hidden zone. All cards in
+- 4.2.3. When multiple cards move from the deck zone
+- 4.3. Hand
+- 4.3.1. The zone where you put the cards that you
+- 4.3.2. The hand is a hidden zone, but you can see
+- 4.4. Drop Zone
+- 4.4.1. The zone you put cards that have left the field
+- 4.4.2. The drop zone is a public zone. Cards in this
+- 4.5. Field
+- 4.5.1. The zone to put all your units on.
+- 4.5.2. In general, this zone has seven circles. A Card
+- 4.5.3. The field is a public zone.
+- 4.6. Circle
+- 4.6.1. The zone to put your unit on individually. Each
+- 4.6.2. Each pair of circles, left front and left back,
+- 4.6.3. All of the circles in the front row, and all of the
+- 4.6.4. Types of Circles
+- 4.6.5. Circles are public zones. The cards in these
+- 4.6.6. Other than moving G units not in the G zone
+- 4.6.7. Circles can be classified as having the “Astral
+- 4.7. Soul
+- 4.7.1. Some cards will go into this zone during a
+- 4.7.2. Cards in the soul are stacked under the
+- 4.7.3. The soul is a public zone. Cards in this zone
+- 4.8. Damage Zone
+- 4.8.1. The zone you will put cards in as the game
+- 4.8.2. The damage zone is a public zone. Cards in
+- 4.8.3. If you have six or more cards in your damage
+- 4.9. Bind Zone
+- 4.9.1. The zone that you put cards that have been
+- 4.9.2. The bind zone is a public zone. All players may
+- 4.9.3. Bound cards or cards referring to bound cards
+- 4.10. Trigger Zone
+- 4.10.1. The zone where cards are put in temporarily
+- 4.10.2. Cards revealed by a drive check (7.6.1.2.3)
+- 4.10.3. Cards revealed by a damage check (9.6.3)
+- 4.10.4. The trigger zone is a public zone. All the
+- 4.11. G Zone
+- 4.11.1. The zone you put your G deck in at the
+- 4.11.2. The G zone is a hidden zone, but you can
+- 4.11.3. When cards in this zone are put to face up,
+- 4.11.4. At the beginning of a game, all cards in the G
+- 4.11.5. When a process puts a card from outside of
+- 4.12. Gauge Zone
+- 4.12.1. The zone where cards that are put as a
+- 4.12.2. The gauge zone is a hidden zone, but you
+- 4.12.3. There are cards in the gauge zone that are
+- 4.12.4. There are cards in the gauge zone with name
+- Section 5. Setting Up the Game
+- 5.1. Preparing the Decks
+- 5.1.1. Each player prepares his or her own main
+- 5.1.2. Continuous abilities regarding deck
+- 5.2. Preparing the Main Deck
+- 5.2.1. Each player prepares his or her own main
+- 5.2.2. Constructed main deck
+- 5.3. Preparing the G Deck
+- 5.3.1. Each player prepares his or her own G deck
+- 5.3.2. A G deck must be constructed of 0 to 16 cards.
+- 5.3.3. A G deck must be constructed only of G units.
+- 5.4. Preparing the Game
+- 5.4.1. Before the start of each game, prepare for the
+- 5.4.2. Present the main deck and G deck you will use
+- 5.4.3. Choose a grade 0 card from your main deck,
+- Section 6. Game Procedure
+- 6.1. Stand Up
+- 6.1.1. At the beginning of the game, each player
+- 6.2. Turn Procedure
+- 6.2.1. During a game, players take turns progressing
+- 6.2.2. Usually, the phases and steps of each phase
+- 6.3. Stand Phase
+- 6.3.1. The phase in which the turn player stands
+- 6.4. Draw Phase
+- 6.4.1. The phase in which the turn player draws a
+- 6.5. Ride Phase
+- 6.5.1. The phase in which the turn player can normal
+- 6.6. Main Phase
+- 6.6.1. The phase in which the turn player can
+- 6.7. Battle Phase
+- 6.7.1. The phase in which the turn player can attack
+- 6.8. End Phase
+- 6.8.1. The phase in which several actions are
+- Section 7. Attack and Battle
+- 7.1. Basics
+- 7.1.1. In each battle phase, the turn player can attack
+- 7.1.2. The series of steps from the start step to the
+- 7.2. Attack Resolution
+- 7.2.1. The resolution of the steps from the attack step
+- 7.2.2. For an attack, both the attacking unit and the
+- 7.3. Start Step
+- 7.3.1. The step in which the turn player chooses
+- 7.4. Attack Step
+- 7.4.1. The step in which the turn player chooses
+- 7.5. Guard Step
+- 7.5.1. The step in which the non-turn player can call
+- 7.6. Drive Step
+- 7.6.1. The step to check for additional effects during
+- 7.7. Damage Step
+- 7.7.1. The step to resolve the damage to the
+- 7.8. Close Step
+- 7.8.1. The step to resolve all actions that happen at
+- Section 8. Play and Resolve Cards and Abilities
+- 8.1. Categories of Abilities
+- 8.1.1. Abilities are divided into three categories;
+- 8.2. Category of Effects
+- 8.2.1. Effects are divided into three categories; one
+- 8.3. Active Effects and Inactive Effects
+- 8.3.1. Some effects make an effect “active“ or
+- 8.3.2. If a part of or the entire effect is inactive under
+- 8.3.3. If a part of or the entire effect is active under a
+- 8.4. Check Timing/Play Timing, Abilities, and Effects
+- 8.4.1. When a check timing resolves, the game
+- 8.4.2. When a play timing is given to a player, the
+- 8.5. Play and Resolve Cards and Abilities
+- 8.5.1. Activated abilities, automatic ability, and cards
+- 8.5.2. When you play a card or an ability, process it
+- 8.5.3. Resolve the card or ability.
+- 8.5.4. If the card or ability has a text that says
+- 8.5.5. The player or unit has been omitted in parts of
+- 8.5.6. When an effect’s resolution refers to the
+- 8.5.7. Automatic abilities are abilities that are played
+- 8.5.8. If an automatic ability’s trigger condition is met,
+- 8.5.9. When a check timing resolves, a player that
+- 8.5.10. When an automatic ability requires a cost to
+- 8.5.11. Some automatic abilities trigger when a card
+- 8.5.12. Some effects create automatic abilities that
+- 8.5.13. Some automatic abilities have trigger
+- 8.5.14. When you play an automatic ability, even if
+- 8.6. Applying Continuous Effects
+- 8.6.1. If any continuous effects or rules that modify
+- 8.6.2. If there are multiple continuous effects whose
+- 8.6.3. If the order in which to apply two continuous
+- 8.6.4. If a continuous effect that changes information
+- 8.6.5. Continuous effects that are applied from an
+- 8.6.6. If a continuous effect changes information on
+- 8.6.7. If an automatic ability’s trigger condition refers
+- 8.6.8. There are automatic abilities that
+- 8.7. Applying Replacement Effects
+- 8.7.1. When a replacement effect is applied, when
+- 8.7.2. When multiple replacement effects are applied
+- 8.7.3. If a replacement effect is an optional
+- 8.8. Final Information
+- 8.8.1. If an ability references a specific card’s
+- Section 9. Rule Action
+- 9.1. General
+- 9.1.1. Rule actions are actions made automatically
+- 9.1.2. Rule actions check the situation only during
+- 9.1.3. If multiple rule actions are needed to be
+- 9.2. Losing the Game
+- 9.2.1. If any player fulfills 1 or more losing conditions,
+- 9.2.2. If a player has six or more cards in his or her
+- 9.2.3. If a player has no cards in his or her deck, then
+- 9.2.4. If a player has no vanguards on his or her
+- 9.3. Overloaded Units
+- 9.3.1. If you have a Legion Mate on any which no
+- 9.3.2. If you have a unit in the legion state and unit
+- 9.3.3. If you did not perform any of the processes of
+- 9.3.4. If you have two or more Legion Mates on any
+- 9.3.5. If you have multiple units on any , move all
+- 9.3.6. If you have multiple units that were placed last
+- 9.4. Illegal Guardians
+- 9.4.1. If any units are placed on when there is no
+- 9.5. Having No Vanguard
+- 9.5.1. If you have no vanguards on your vanguard
+- 9.6. Damage Application Process
+- 9.6.1. When any vanguard’s vanguard damage is 1
+- 9.6.2. Reduce that vanguard’s vanguard damage by
+- 9.6.3. The master of that vanguard puts the top card
+- 9.6.4. If the master of that vanguard has a unit on his
+- 9.7. Damage Resolution Process
+- 9.7.1. If a card put into the trigger zone from the
+- 9.7.2. Put the card in that trigger zone into the
+- 9.8. Erasure of pseudo-cards
+- 9.8.1. If a pseudo-card (12.12) is in its erase zone
+- 9.9. Illegal Gauge
+- 9.9.1. If card A in the gauge zone is associated with
+- 9.9.2. When a card in the gauge zone becomes
+- 9.10. Illegal Trigger
+- 9.10.1. If there is a card remaining in the trigger
+- 9.11. Illegal Astral Plane Unit
+- 9.11.1. If there is a unit whose race is not <Astral
+- 9.11.2. If there is a locked card on a circle with the
+- Section 10. Specific Actions
+- 10.1. Some actions are defined as specific actions.
+- 10.2. Draw
+- 10.3. Discard
+- 10.3.2. When a card is put into your drop zone from
+- 10.4. Retire
+- 10.4.2. When a unit is put into your drop zone from
+- 10.5. Place
+- 10.6. Ride
+- 10.6.2. If multiple cards with the same master are to
+- 10.6.3. When you would ride a card, if that card you
+- 10.6.4. A card that is placed on a vanguard circle by
+- 10.7. Call
+- 10.7.2. A card that is placed on a rear-guard circle by
+- 10.8. Heal
+- 10.9. Reveal
+- 10.10. Search
+- 10.11. Shuffle
+- 10.12. Stand/Rest
+- 10.12.1. To change the orientation of cards to a stand
+- 10.13. Turn Face Up/Down
+- 10.13.1. To change the state of a card to face up is
+- 10.14. Drive Check
+- 10.15. Counter-blast
+- 10.15.1. In order to activate an ability, turning over a
+- 10.16. Soul-blast
+- 10.16.1. In order to activate an ability, moving a
+- 10.17. Soul-charge
+- 10.17.1. Soul-charge is indicated by an icon like “
+- 10.18. Bind
+- 10.19. Battle
+- 10.20. Give/Lose/Get
+- 10.20.4. When a player “gets a (specified clan type’s
+- 10.20.5. When card A with any numerical information
+- 10.21. Lock
+- 10.21.2. A locked card is turned face down, put it to
+- 10.21.3. A card in the locked state is known as a
+- 10.21.4. When a locked card is to be referenced as
+- 10.21.5. When a locked card ceases to be in a
+- 10.21.6. As long as a locked card is in a circle, it
+- 10.21.7. If a circle ceases to be a lock type, it shall
+- 10.21.8. If a G unit on a rear-guard circle is locked,
+- 10.21.9. If the text says “put it as a locked card“, that
+- 10.21.10. A card in the locked state does not
+- 10.22. Declare
+- 10.22.2. If declaring information, you must provide
+- 10.23. Unlock
+- 10.23.2. An unlocked card is not considered as the
+- 10.23.3. When unlocked, the card is in stand. It is not
+- 10.23.4. An unlocked card is not considered placing
+- 10.24. Legion
+- 10.24.2. As long as they are in a legion state, the unit
+- 10.24.3. Both the Legion Leader and the Legion
+- 10.24.4. The Legion Leader and Legion Mate are two
+- 10.24.5. When a unit that is in legion attacks, rest
+- 10.24.6. The power of the Legion Leader in legion
+- 10.24.7. If for any reason, a unit that is in legion
+- 10.24.8. When a unit that is in legion is attacked, the
+- 10.24.9. During your ride phase, if your vanguard is
+- 10.24.10. When a Legion Leader or Legion Mate is
+- 10.24.11. If a Legion Leader or Legion Mate is
+- 10.24.15. The Legion Mate cannot attack, nor can it
+- 10.24.16. The Legion Mate vanguard cannot activate
+- 10.24.17. If referencing card A as “card that can
+- 10.24.18. If specified to become legion state while
+- 10.25. Delete
+- 10.25.2. When a unit changes to the deleted state, it
+- 10.25.3. A unit in the deleted state is known as a
+- 10.25.4. A deleted unit has a stand/rest orientation,
+- 10.25.5. When a deleted unit ceases to be in a
+- 10.25.6. All players can check the face up side of a
+- 10.25.7. If a deleted unit is given or gets an ability, it
+- 10.25.8. If the power of a unit in the deleted state is
+- 10.25.9. If a deleted unit has its information modified
+- 10.25.10. A unit in a legion state maintains its legion
+- 10.25.11. When a deleted unit is ridden on, that unit
+- 10.26. Becoming a Heart
+- 10.26.2. A card that changes to the heart state does
+- 10.26.3. A card in the heart state is known as a
+- 10.26.4. When cards in the legion state changes to
+- 10.26.5. Cards that change to the heart state are
+- 10.26.6. When a card in the heart state loses that
+- 10.26.7. If a card in the heart state moves anywhere
+- 10.27. Stride
+- 10.27.2. Stride is done with the following steps.
+- 10.27.3. When a G unit is to be placed in the G zone,
+- 10.27.4. To stride is not a ride or call.
+- 10.27.5. When a G unit that was placed on the
+- 10.28. Losing cost
+- 10.29. Counter-charge
+- 10.29.1. Counter-charge is indicated by an icon like
+- 10.30. Time Leap
+- 10.31. To Move
+- 10.31.1. When “move“ or “put a unit on a circle“ is
+- 10.31.2. When intercepting or exchanging the
+- 10.31.3. With regards to the text, riding and calling
+- 10.31.4. When other units are moved to a vanguard
+- 10.32. Dealing Damage
+- 10.32.1. When a rule or text says “deal (number)
+- 10.32.2. The damage process for damage dealt here,
+- 10.33. To Attack
+- 10.33.1. If “(unit A) attacks (unit B)“ is directed by the
+- 10.33.2. If there is an instruction for multiple units to
+- 10.33.3. If there are processes following the direction
+- 10.34. To Dominate
+- 10.34.1. If “dominate“ a unit is specified in the text,
+- 10.34.2. When referencing units whose master is a
+- 10.34.3. The position of units in dominated state will
+- 10.34.4. If a unit in dominated state is moved to other
+- 10.34.5. The master of the circle that the unit in
+- 10.34.6. A rear-guard in dominated state cannot
+- 10.34.7. If a vanguard in dominated state is
+- 10.34.8. If a dominated unit is on a circle designated
+- 10.35. To Remove
+- 10.35.1. When the text requires you “to
+- 10.36. Flip over
+- 10.36.1. If a Gyze card (12.10.1) needs to “flip
+- 10.36.2. It is different from the action to turn a card
+- 10.36.3. If a card that is not the Gyze card is to be
+- 10.37. Switch
+- 10.37.1. When the text requires you to “switch” cards
+- 10.37.2. When the text requires you to “switch” zones
+- 10.38. Put as gauge / Move gauge
+- 10.38.1. If a card is “put as gauge” from card text,
+- 10.38.2. If a “move gauge” action is performed on a
+- 10.39. Increase / Decrease
+- 10.39.1. If the numerical value of actions denoted by
+- 10.39.2. If a process states that the numerical value
+- 10.40. To Activate
+- 10.40.1. If a card text says that an ability will activate,
+- 10.42. Changing of (Attack Target)
+- 10.42.1. When there is a direction to “change the
+- 10.42.2. When the attack target of a unit that is
+- Section 11. Keywords
+- 11.1. Overview
+- 11.1.1. Some actions are defined as keyword
+- 11.2. Drive Abilities
+- 11.2.1. A collective term for abilities that increase a
+- 11.2.2. If a unit has multiple drive abilities, only the
+- 11.2.3. Twin Drive!! ( )
+- 11.2.4. Triple Drive!!! ( )
+- 11.3. Intercept ( )
+- 11.4. Boost ( )
+- 11.5. Restraint
+- 11.6. Limit Break
+- 11.6.1. Limit break is a collective term for abilities
+- 11.6.2. Units that have the ability with the icon
+- 11.6.3. Limit break can be divided into the following 3
+- 11.7. Forerunner
+- 11.8. Lord
+- 11.9. Sentinel
+- 11.9.2. Cards with the sentinel ability are referred to
+- 11.10. Seek Mate
+- 11.11. Stride Skill
+- 11.11.1. Stride Skill is a collective term for abilities
+- 11.11.2. The stride skill is written as “
+- 11.12. Generation Break
+- 11.12.1. Generation break is a collective term for
+- 11.12.2. Units that have the ability with the icon
+- 11.12.3. Generation break can be divided into the
+- 11.13. Resist
+- 11.14. G Guardian
+- 11.14.1. G guardian is a continuous ability that allows
+- 11.14.2. During the guard step, the non-turn player
+- 11.15. Brave
+- 11.15.1. Brave is an ability. Abilities with brave refer
+- 11.15.2. If it is written as “CONT Brave:“, then it
+- 11.15.3. If it is written as “AUTO Brave:“, then it
+- 11.15.4. If it is written as “ACT Brave:“, then it means
+- 11.16. Oracle
+- 11.16.1. Oracle is an ability. Abilities with oracle refer
+- 11.16.2. If it is written as “CONT Oracle:“, then it
+- 11.16.3. If it is written as “AUTO Oracle:“, then it
+- 11.16.4. If it is written as “ACT Oracle:“, then it
+- 11.17. Rescue
+- 11.17.1. Rescue is a keyword that specifies an ability
+- 11.18. Ritual
+- 11.18.1. Ritual is an ability. Abilities with ritual refer to
+- 11.18.2. If it is written as “CONT Ritual (number):“,
+- 11.18.3. If it is written as “AUTO Ritual:“, then it
+- 11.18.4. If it is written as “ACT Ritual:“, then it means
+- 11.19. Unite
+- 11.19.1. Unite is an ability. This ability refers to the
+- 11.20. Revelation
+- 11.20.1. Revelation is an auto ability that is triggered
+- 11.20.3. When resolving the revelation ability, if the
+- 11.21. Blaze
+- 11.21.1. Blaze is an automatic ability with the text “At
+- 11.21.2. If your vanguard is in the legion state when
+- 11.22. Afterimage
+- 11.22.1. Afterimage is an automatic ability with the
+- 11.23. Dominate
+- 11.23.1. Dominate is an ability text. It may be
+- 11.24. Engorge
+- 11.24.1. Engorge is an automatic ability with the text
+- 11.24.2. The retiring of units due to engorge is an
+- 11.25. Shadowstitch
+- 11.25.1. Shadowstitch is a keyword that represents a
+- 11.26. Thunderstrike
+- 11.26.1. Thunderstrike is an ability. Thunderstrike is
+- 11.27. Rush
+- 11.27.1. Rush is an automatic ability with the trigger
+- 11.28. Burst
+- 11.28.1. Burst is a keyword that specifies an ability
+- 11.29. Charge
+- 11.29.1. Charge is an automatic ability with the text
+- 11.29.2. A charging unit is placed on the bottom of
+- 11.30. Darkness
+- 11.30.1. Darkness is an ability. Abilities with darkness
+- 11.30.2. With regards to the darkness ability’s “If
+- 11.31. Magia
+- 11.31.1. Magia is a keyword that specifies a series of
+- 11.32. Time Leap
+- 11.32.1. Time Leap is a keyword that specifies that
+- 11.33. Hollow
+- 11.33.1. Hollow is an automatic ability with the text
+- 11.33.2. At the end of turn, if there are hollowed
+- 11.34. Harmony
+- 11.34.1. Harmony is an automatic ability with the text
+- 11.35. Wave
+- 11.35.1. Wave is an automatic ability that is “only
+- 11.35.2. The battles that wave is active is specified
+- 11.36. Dark Device
+- 11.36.1. Dark Device is an ability. Abilities with dark
+- 11.37. Success
+- 11.37.1. Success is an auto ability that triggers when
+- 11.37.3. To trigger the success ability (8.5.13), the
+- 11.37.4. If the power of the rear-guard that triggers
+- 11.38. Bloom
+- 11.38.1. Bloom is an automatic ability with the trigger
+- 11.39. Shinken Hissatsu
+- 11.39.2. Cards with the Shinken Hissatsu ability are
+- 11.40. Homare
+- 11.40.1. Homare is an ability for which, out of all the
+- 11.40.2. Cards with the Homare ability are referred to
+- 11.41. Nitou Kaigan
+- 11.41.1. Nitou Kaigan is an auto ability that resolves
+- 11.42. Ultimate Stride Skill
+- 11.42.1. Ultimate Stride Skill is an ability that is
+- 11.42.2. The text on the ultimate stride skill of a
+- 11.42.3. Though the ultimate stride skill is regarded
+- 11.43. Melody
+- 11.43.1. Melody is a continuous ability that shares
+- 11.43.2. Units with 1 or more melody get the
+- Section 12. Miscellaneous
+- 12.1. Loop
+- 12.1.1. When some effects are applied, sometimes
+- 12.2. Abilities that “cannot be used“
+- 12.2.1. If some effect says “you cannot use the
+- 12.3. Nullifying trigger effects
+- 12.3.1. If there is an active ability which “nullifies
+- 12.3.2. If there is an active ability which “nullifies
+- 12.4. Extra Turn
+- 12.4.1. When a player gets an “extra turn“, the extra
+- 12.4.2. If 2 or more turns are added within the same
+- 12.5. Restriction Icons
+- 12.6. For each X do Y / Do Y equal to number of X
+- 12.6.1. When Y is to be done for each X / equal to
+- 12.6.2. The value of X is set before beginning to do
+- 12.6.3. While doing Y X times, if Y includes an
+- 12.7. Cards with the same/different card name(s)
+- 12.7.1. Cards with the same card name refer to
+- 12.7.2. Cards may have multiple card names due to
+- 12.8. Enabling Keyword Abilities
+- 12.8.1. When enabling a specific keyword ability, if
+- 12.9. Boosted
+- 12.9.1. When the unit boosting a unit that attacked is
+- 12.10. Gyze card
+- 12.10.1. There is a card with information written on
+- 12.10.2. There are two different sides to the Gyze
+- 12.10.3. The state of the Gyze card in all of the areas
+- 12.10.4. Gyze card has two states (3.17.3), a face up
+- 12.10.5. Unlike normal cards, the face up state and
+- 12.11. Cannot be affected
+- 12.11.1. When a “cannot be affected“ effect with
+- 12.11.2. If an effect originates from a unit, and that
+- 12.12. Pseudo-cards
+- 12.12.1. There are “pseudo-cards” created in a zone
+- 12.13. Paying of Costs
+- 12.13.1. Costs must be simultaneously paid with
+- 12.14. Number of different cards
+- 12.14.1. When counting the number of different
+- 12.15. Imaginary Gift Resolution
+- 12.15.1. Imaginary Gifts have different clan types
+- 12.15.2. When you perform the Imaginary Gift
+- 12.16. End Turn Resolution
+- 12.16.1. If an instruction to end the turn is to be
+- 12.16.2. If there is any vanguard damage remaining
+- 12.16.3. The playing of automatic abilities that are
+- 12.17. Circles with the Astral Plane type
+- 12.17.1. Specified circles may additionally gain the
+
+## Full Extracted Text
+
+### Page 1
+
+```text
+Cardfight!! Vanguard Comprehensive Rules ver. 2.3 
+Last Updated: March 11, 2020 
+ 
+ 
+Table of Contents      Page 
+Section 1. Outline of the Game ....................................... 1 
+Section 2. Card Information ............................................ 2 
+Section 3. Basic Concepts .............................................. 5 
+Section 4. Zones of the Game ........................................ 7 
+Section 5. Setting Up the Game ................................... 10 
+Section 6. Game Procedure...........................................11 
+Section 7. Attack and Battle .......................................... 12 
+Section 8. Play and Resolve Cards and Abilities .......... 16 
+Section 9. Rule Action ................................................... 21 
+Section 10. Specific Actions .......................................... 22 
+Section 11. Keywords ................................................... 30 
+Section 12. Miscellaneous ............................................ 35 
+ 
+ 
+Rules 
+ 
+Section 1. Outline of the Game 
+ 
+1.1. Number of Players 
+1.1.1. This game is played by two players. These 
+comprehensive rules do not apply to games 
+played outside of two players. 
+ 
+1.2. Winning and Losing 
+1.2.1. If any player loses, then the game ends 
+immediately. If you do not lose and your 
+opponent does, then you win the game. 
+1.2.2. If any player fulfils any losing conditions during 
+a check timing (3.5), then that player loses the 
+game by rule action (Section 9. Rule Action). 
+1.2.2.1. During a game, if a player has six or more 
+cards in his or her damage zone, then he or 
+she fulfills a losing condition. 
+1.2.2.2. During a game, if a player has no cards in 
+his or her deck, then he or she fulfills a losing 
+condition. 
+1.2.2.3. During a game, if a player has no 
+vanguards on his or her vanguard circle, and 
+has no cards in his or her soul, then he or she 
+fulfills a losing condition. 
+1.2.3. If all players lose simultaneously, then the 
+game ends in a draw. 
+1.2.4. Any player may concede the game at any time. 
+Any player who concedes the game is eliminated 
+from it immediately, loses the game without 
+proceeding to a check timing, and the game 
+ends. 
+1.2.4.1. No effects can interfere with conceding. No 
+effects can force a player to concede, and no 
+effects can replace losing the game with a 
+concession. 
+1.2.5. Players may win or lose the game by an effect. 
+In this case, that player wins or loses while 
+resolving the effect, and the game ends before 
+check timing. 
+ 
+1.3. Golden Rules of the Game 
+1.3.1. If the comprehensive rules and the text of a 
+card contradict with each other, then the text 
+takes precedence. 
+1.3.2. If anything attempts to make a player do 
+something he or she cannot perform, then 
+nothing happens. If anything attempts to make a 
+player do something he or she can only partially 
+perform, then the player only performs the part 
+that he or she can. 
+1.3.2.1. If anything attempts to turn a game state 
+into a state that it is already in, then it does not 
+become the state again, and that action never 
+happens. 
+1.3.2.2. If anything attempts to perform a certain 
+action zero or a negative number of times, then 
+nothing happens. No reverse action will take 
+place even if it is a negative number of times. 
+1.3.2.3. If anything attempts to perform actions that 
+are being done as part of the cost of a card, 
+ability, or effect, zero or a negative number of 
+times, you can choose to do those actions as 
+part of the cost, and that part of the cost is 
+considered to be performed without anything 
+being performed as a result. 
+1.3.2.4. When performing an action, if there is an 
+instruction to perform a process a specified 
+number of times “(as much) as possible”, the 
+number of times the player performing the 
+process chooses to perform the process needs 
+to be as close to the specified number as 
+possible. 
+1.3.2.4.1. If an effect has an instruction to 
+perform a process a specified number of 
+times “(as much) as possible”, and it cannot 
+be performed the specified number of times 
+because of a card’s information that is 
+hidden from any player, that card’s 
+information must be revealed to all players. 
+- For example, if there is an instruction to 
+perform a “call a card from your hand to 
+a rear-guard circle as much as possible” 
+effect, if there are cards in your hand that 
+can be called to rear-guard circles, and 
+cards that cannot be called, you need to 
+choose a card that can be called. On the 
+other hand, if all of the cards in your 
+hand cannot be called, you need to 
+reveal them. 
+1.3.3. If an effect from a card attempts to do 
+something, and at the same time an effect from a 
+card restricts the action from taking place, then 
+the effect that restricts the action takes 
+precedence. 
+1.3.4. If anything asks more than one players to 
+make a choice at the same time, then the turn 
+player makes the choice first. The non-turn 
+player will make his or her choice after knowing 
+the decision made by the turn player. 
+1.3.5. If anything asks a player to choose a number, 
+then you must choose zero or a positive integer, 
+if not specified. You cannot choose any fractions 
+or negative numbers.
+```
+
+### Page 2
+
+```text
+Section 2. Card Information 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+① Name 
+ 
+⑨ Type 
+② Clan ⑩ Skill Icon 
+③ Race ⑪ Text 
+④ Grade ⑫ Flavor 
+⑤ Power ⑬ Art 
+⑥ Shield ⑭ Collection Data 
+⑦ Critical ⑮ Nation 
+⑧ Trigger Icon ⑯ Imaginary Gift Icon 
+  
+2.1. Name 
+2.1.1. The proper name to identify a card. 
+2.1.1.1. Some Japanese cards have small letters 
+above the name to help show how to read it. 
+This is not a part of the name and has no 
+meaning in terms of rules. 
+2.1.1.2. In text, the name of a card is expressed as 
+“(card name)“. 
+2.2. Clan 
+2.2.1. The name of the clan a card belongs to. 
+2.2.1.1. The clan is referred to during drive checks 
+(7.6.1.2) and damage checks (9.6.4). 
+2.2.2. The clan is referred to by some abilities and 
+effects. 
+2.2.3. In text, the name of a clan is expressed as 
+<<(clan name)>>. 
+2.2.4. “This card is also a <<(clan name)>>“ is an 
+effect that adds a clan to the card with the ability. 
+2.2.5. <<Cray Elemental>> cards are from all clans 
+and nations. 
+ 
+2.3. Race 
+2.3.1. The name of the race of a card. 
+2.3.1.1. The race is referred to by some abilities 
+and effects. 
+2.3.1.2. In text, the name of a race is expressed as 
+<(race name)>. 
+ 
+2.4. Grade 
+2.4.1. It is the numeric value that is referred to when 
+you normal ride or normal call a card. See “Play 
+and Resolve Cards and Abilities“ (8.5) for how to 
+ride and call. 
+2.4.2. The grade can give limitations when playing a 
+card. See “Play and Resolve Cards and 
+Abilities“ (8.5) for further details. 
+ 
+2.5. Power 
+2.5.1. The numeric value that expresses the combat 
+strength of a card. The higher this value is, the 
+better it is in battle. See “Attack and 
+Battle“ (Section 7. Attack and Battle) for further 
+details. 
+2.5.2. In card text, the power is indicated by a  
+icon. 
+2.5.3. Some cards have a “+“ after the numerical 
+value. It has no meaning in terms of rules. 
+2.5.4. If a unit’s power becomes larger than its 
+current value, its power is “increased“, and if 
+becomes smaller, its power is “decreased“. 
+2.5.4.1. If the value of the increase or decrease is 
+0, no increase or decrease will occur. 
+2.5.4.2. If the value of the increase in power refers 
+to some value, and the value referred to is 
+negative, the power decreases. 
+ 
+2.6. Shield 
+2.6.1. The numeric value that expresses the combat 
+strength while a card is used as a guardian 
+(3.11). The higher this value is, the better it is 
+able to defend your units. See “Attack and 
+Battle“ (Section 7. Attack and Battle) for further 
+details. 
+2.6.2. In card text, the shield is indicated by a  
+icon. 
+2.6.3. Some cards do not have a shield. 
+ 
+2.7. Critical 
+2.7.1. The numeric value that determines how much 
+damage this card deals to a vanguard (3.9). See
+```
+
+### Page 3
+
+```text
+“Attack and Battle“ (Section 7. Attack and Battle) 
+for further details. 
+2.7.2. In card text, the critical is indicated by a  
+icon. 
+ 
+2.8. Trigger Icon 
+2.8.1. The icon that indicates what to do for a card’s 
+effect when that card with the icon is placed in 
+the trigger zone during a drive check or a trigger 
+check. See “Attack and Battle“ (Section 7. Attack 
+and Battle) and “Damage Process“ (9.6) for 
+further details. 
+2.8.1.1. Each icon means, and has the following 
+effects: 
+2.8.1.1.1. No icon: Nothing happens. 
+2.8.1.1.2.  (Critical Trigger): Choose one of 
+your units and give it +1 critical until the end 
+of this turn. Choose one of your units, and it 
+gets power according to the trigger icon until 
+the end of this turn (2.8.3). You can choose 
+different units for each effect. 
+2.8.1.1.2.1. In card text, the critical trigger is 
+indicated by a  or  icon. 
+2.8.1.1.3.  (Draw Trigger): You draw a card. 
+Choose one of your units, and it gets power 
+according to the trigger icon until the end of 
+this turn (2.8.3). 
+2.8.1.1.3.1. In card text, the draw trigger is 
+indicated by a  or  icon. 
+2.8.1.1.4.  (Stand Trigger): Choose one of your 
+units, and if it is a rear-guard, stand it. 
+Choose one of your units, and it gets power 
+according to the trigger icon until the end of 
+this turn (2.8.3). You can choose different 
+units for each effect. 
+2.8.1.1.4.1. In card text, the stand trigger is 
+indicated by a  icon. 
+2.8.1.1.5.  (Heal Trigger): If you have equal or 
+more number of cards in your damage zone 
+than your opponent's damage zone, then 
+choose one of your cards in your damage 
+zone and heal it (i.e. put it into your drop 
+zone). Choose one of your units, and it gets 
+power according to the trigger icon until the 
+end of this turn (2.8.3). 
+2.8.1.1.5.1. In card text, the heal trigger is 
+indicated by a  or  icon. 
+2.8.1.1.6.  (Front Trigger): All of the units on 
+your front row circles get power according to 
+the trigger icon until the end of this turn 
+(2.8.3). 
+2.8.1.1.6.1. In card text, the front trigger is 
+indicated by a  icon. 
+2.8.1.1.7. The processing of the triggers listed 
+above, and the resulting continuous effects, 
+are called “trigger effects”. 
+2.8.1.1.7.1.  If an effect gives the trigger effect 
+given to a unit to another unit, the given 
+effect is also a trigger effect. 
+2.8.2. If a trigger asks you to do more than one 
+action, you can choose the order in which to do 
+them. 
+2.8.3. When a unit gets power according to the 
+trigger icon, the designated unit gains power 
+equal to the number written at the bottom of the 
+trigger icon. 
+ 
+2.9. Type 
+2.9.1. The type of this card. The type is written on the 
+left of the name. 
+2.9.2. For types, there are G units, trigger units, 
+normal units, and token units.  
+2.9.3. There are some cards and pseudo-cards 
+(12.12) with a special type. 
+2.9.3.1. Special types are different and 
+independent of types. Effects that add, 
+remove, or change types do not affect special 
+types, and vice versa. 
+2.9.3.2. There are some special types with 
+accompanying rules. 
+ 
+2.10. Skill Icon 
+2.10.1. It shows the common abilities that many 
+cards have. Each icon shows which ability the 
+card has: 
+2.10.1.1.  indicates the card has “Twin 
+Drive!!“ (11.2.3). 
+2.10.1.2.  indicates the card has 
+“Intercept“ (11.3). 
+2.10.1.3.  indicates the card has “Boost“ (11.4). 
+2.10.1.4.  indicates the card has “Triple 
+Drive!!!“ (11.2.4). 
+ 
+2.11. Text Frame 
+2.11.1. The set of abilities a card has is written inside 
+the text frame. The contents within the frame is 
+referred to as “text“. 
+2.11.2. Some text is colored differently to put an 
+emphasis on it. The difference in colors has no 
+meaning in terms of rules. 
+2.11.3. Some cards have text in ( ) to show the 
+description of a keyword or a keyword ability. 
+This is called reminder text. Reminder text is part 
+of the text, but it is just for explanatory purposes, 
+and does not affect the game. 
+ 
+2.12. Flavor 
+2.12.1. The descriptive text of this card. 
+2.12.2. The flavor is not part of the information of a 
+card and has no meaning in terms of rules. 
+ 
+2.13. Art 
+2.13.1. The image of this card. 
+2.13.2. The art is not part of the information of a card 
+and has no meaning in terms of rules. 
+ 
+2.14. Collection Data 
+2.14.1. The location where the collection ID, rarity, 
+artist’s name, and other data of this card can be 
+found. 
+2.14.2. The collection data is not part of the 
+information of this card and has no meaning in 
+terms of rules. 
+2.14.2.1. There are some effects that refer to the 
+collection ID during deck construction (5.2.2.7).
+```
+
+### Page 4
+
+```text
+2.15. Nation 
+2.15.1. The name of the nation a card belongs to. 
+2.15.2. The nation is referred to by some abilities and 
+effects. 
+2.15.3. There are 6 nations, and their respective 
+icons are listed below. 
+ 
+United Sanctuary  
+ 
+ 
+ 
+Dragon Empire  
+ 
+ 
+ 
+Star Gate  
+ 
+ 
+ 
+Dark Zone  
+ 
+ 
+ 
+Magallanica  
+ 
+ 
+ 
+Zoo  
+ 
+ 
+ 
+ 
+2.15.3.1. Cards with icons that are not any of the 6 
+listed above, do not belong to any nation, and 
+do not have any nation information. 
+2.15.3.2. There are cards without the nation icon. If 
+they belong to a clan, they belong to the 
+following nations. 
+2.15.3.3. Cards without a nation icon, and cards 
+that do not belong to any of the following clans 
+in the table below, nor <<Cray Elemental>>, do 
+not belong to any nation. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2.15.3.4. Cards with a nation icon, but do not 
+belong to any specific clan, are regarded as 
+belonging to all of the clans of the respective 
+nation stated in the table below. 
+ 
+Royal Paladin 
+United Sanctuary 
+Oracle Think Tank 
+Angel Feather 
+Shadow Paladin 
+Gold Paladin 
+Genesis 
+Kagero 
+Dragon Empire 
+Nubatama 
+Tachikaze 
+Murakumo 
+Narukami 
+Nova Grappler 
+Star Gate Dimension Police 
+Etranger 
+Link Joker 
+Spike Brothers 
+Dark Zone Dark Irregulars 
+Pale Moon 
+Gear Chronicle 
+Granblue 
+Magallanica Bermuda Triangle 
+Aqua Force 
+Megacolony 
+Zoo Great Nature 
+Neo Nectar 
+ 
+2.16. Imaginary Gift Icon 
+2.16.1. If this icon is on the card, this card has an 
+imaginary gift (10.6.3). 
+2.16.2. This card has the imaginary gift of the 
+following clan types (12.15.1.1), according to the 
+type of icon it has. 
+2.16.2.1. Cards with 
+  have the Imaginary Gift of 
+clan type “Force”. 
+2.16.2.2. Cards with  have the Imaginary Gift of 
+clan type “Accel”. 
+2.16.2.3. Cards with 
+  have the Imaginary Gift of 
+clan type “Protect”. 
+ 
+2.17. Drive 
+2.17.1. The numeric value that determines the 
+number of drive checks resolved during the 
+battle that a card attacks, if it is a vanguard, or if 
+it is in a legion state, if it is a Legion Leader. 
+2.17.2. The drive is not indicated on a card, and the 
+default value for all cards is 1. It can be 
+increased or modified by effects or abilities such 
+as Twin Drive!!.
+```
+
+### Page 5
+
+```text
+Section 3. Basic Concepts 
+ 
+3.1. Abilities and Effects 
+3.1.1. An ability is an instruction generated by a 
+card’s text or an effect. 
+3.1.1.1. Abilities are divided into three categories: 
+continuous ability, activated ability, and 
+automatic ability. See “Play and Resolve Cards 
+and Abilities“ (Section 8. Play and Resolve 
+Cards and Abilities) for further details. 
+3.1.1.2. The card text after 【(zone name)】 is 
+active only if the card is in that zone. See 
+“Zones of the Game“ (Section 4. Zones of the 
+Game) for further descriptions. 
+3.1.1.2.1. The card text after 【 】 is active only 
+while the card is on a vanguard circle. 
+3.1.1.2.2. The card text after 【 】 is active only 
+while the card is on a rear- guard circle. 
+3.1.1.2.3. The card text after 【 】 is active only 
+while the card is on a guardian circle. 
+3.1.1.2.4. Card text without a zone specified is 
+active while the card is in any zone. 
+3.1.1.3. Some card text have 【(zone 1)/(zone2)】 
+as the active zone. This text is active while this 
+card is in either of those zones. 
+3.1.1.4. The actions written within [ ] are the cost. 
+Regarding the cost, please refer to “Play and 
+Resolve Cards and Abilities“ (Section 8. Play 
+and Resolve Cards and Abilities). 
+3.1.1.4.1. If there are multiple costs that need to 
+be performed at the same time, the costs are 
+divided by a “&“. 
+3.1.2. An effect is the instruction given by an ability. 
+3.1.2.1. Effects are divided into three categories; 
+one shot effect, continuous effect, and 
+replacement effect. See “Play and Resolve 
+Cards and Abilities“ (Section 8. Play and 
+Resolve Cards and Abilities) for further details. 
+ 
+3.2. Player 
+3.2.1. The player (or “fighter“) is a person playing the 
+game. 
+ 
+3.3. Owner 
+3.3.1. The owner is the player who owns the card. 
+3.3.2. The owner of a card is the player who had it in 
+his or her deck at the beginning of the game. 
+3.3.3. At the end of each game, each player retrieves 
+each card that he or she owns. 
+ 
+3.4. Master 
+3.4.1. The master is the player who is currently using 
+a card, ability, or effects. 
+3.4.2. The master of a card in a zone (Section 4. 
+Zones of the Game) is the player whom the zone 
+belongs to. 
+3.4.3. The master of an effect is the master of the 
+ability that generated that effect. 
+3.4.4. The master of an activated ability is the player 
+who played it. 
+3.4.5. The master of an automatic ability is the 
+master of the card that has that ability, or the 
+master of an effect that created that ability. 
+3.4.6. The master of a continuous ability is the 
+master of the card that has that ability, or the 
+master of an effect that created that ability. 
+ 
+3.5. Check Timing 
+3.5.1. The check timing is the time that is used to 
+resolve rule actions (Section 9. Rule Action) or 
+play automatic abilities (8.5.7). 
+3.5.2. In a check timing, resolve all rule actions, then, 
+when there are no rule actions to resolve, play 
+and resolve an automatic ability that had been 
+triggered. See “Check Timing/Play Timing, 
+abilities, and effects“ (8.4) for further details. 
+ 
+3.6. Play Timing 
+3.6.1. The play timing is the time that a player can 
+perform an action. 
+3.6.2. Whenever a player gets a play timing, just 
+before he or she chooses to do something, there 
+is always a check timing. After all rule actions 
+and automatic abilities have been resolved, that 
+player gets a play timing. 
+3.6.3. A player who gets a play timing chooses an 
+action that can be chosen at that time and 
+performs it, or chooses to pass and do nothing. 
+3.6.3.1. If he or she chooses an action, after it 
+resolves and if it is not specified, then that 
+player gets a play timing again. 
+3.6.3.2. If he or she chooses to pass, and if there 
+are no rule actions (Section 9. Rule Action) or 
+automatic abilities (8.5.7) left to resolve, then 
+the game progresses. 
+ 
+3.7. Information and status 
+3.7.1. Information is any value, phrase, or icon that 
+has any meaning or is referred to during a game. 
+Information can be modified by some effects. 
+See “Card Information“ (Section 2. Card) to find 
+out what is considered information. 
+3.7.1.1. Information can be modified by some 
+effects. If a card has multiple copies of the 
+same information that are not an abilities, the 
+overlapping ones are ignored. E.g. If an effect 
+that says “This card is also a <<Royal 
+Paladin>>“ is applied to a unit that is already a 
+<<Royal Paladin>>, then the second one is 
+ignored, because it is multiple copies of the 
+same information. 
+3.7.1.2. If the text states “original“, refer to the 
+information written on the card. 
+3.7.2. A status is a state of a card that can be 
+referred to during a game. 
+3.7.2.1. Owner or master, orientation, and position 
+of a card fall under status. 
+ 
+3.8. Unit 
+3.8.1. Units are cards put on the field (4.5) excluding 
+locked cards. 
+3.8.1.1. When the type (2.9) is being referred to by 
+card effects, they can be referred to as units. 
+For types, there are G units, trigger units, 
+normal units, and token units, broadly referred 
+to as “units“ at times.
+```
+
+### Page 6
+
+```text
+3.8.2. Units are categorized into vanguards, rear- 
+guards, and guardians. 
+ 
+3.9. Vanguard 
+3.9.1. A vanguard is a unit on a vanguard circle 
+(4.6.4.3). 
+3.9.1.1. A vanguard is a special unit and each 
+player can have only one vanguard. However, 
+if the vanguard is in a legion state (10.24), a 
+single vanguard circle can have two 
+vanguards, the Legion Leader and the Legion 
+Mate. 
+3.9.2. Each vanguard has a value called “vanguard 
+damage“. It is the amount of damage dealt to 
+that vanguard that has yet to undergo the 
+“Damage Process“ (9.6). 
+ 
+3.10. Rear-guard 
+3.10.1. A rear-guard is a unit on a rear-guard circle 
+(4.6.4.5). 
+3.10.1.1. Each player can have up to one rear-
+guard on each of his or her rear- guard circles. 
+ 
+3.11. Guardian 
+3.11.1. A guardian is a unit on a guardian circle 
+(4.6.4.4). 
+3.11.2. If a unit without a shield value is placed on a 
+guardian circle, it is considered to have a shield 
+value of 0. 
+3.11.3. When guardian(s) is/are put on the guardian 
+circle, increase the power of the chosen unit 
+being attacked by the total amount of shield of 
+the guardian(s) (7.5.1.2). 
+3.11.4. There is no limit to how many guardians you 
+may have. 
+ 
+3.12. Drawing, and moving cards 
+3.12.1. “Draw (cards)“ is an action that moves cards 
+from your deck to your hand. 
+3.12.2. If an effect says “draw a card“, the designated 
+player moves the top card of his or her deck to 
+his or her hand without revealing it. 
+3.12.3. If an effect says “draw [number] cards“, 
+repeat “draw a card“ that number of times. 
+3.12.4. If an effect says “draw up to [number] cards“, 
+if [number] is 0, nothing happens. If [number] is 1 
+or more, perform the following. 
+3.12.4.1. The player can choose to end this set of 
+actions. 
+3.12.4.2. The player draws a card. 
+3.12.4.3. If the number of times 3.12.4.2 has been 
+performed in this set of actions has reached 
+[number] of times, end this set of actions. 
+Otherwise, return to 3.12.4.1. 
+3.12.5. Unless otherwise stated, for moves like “put it 
+into your drop zone“ and “bind“, moving the top 
+card of your deck to another zone shall be 
+performed as usual. 
+ 
+3.13. Looking at Cards from the Deck 
+3.13.1. “Looking at cards from the top of the deck“ is 
+an action that checks the information of cards in 
+the deck. 
+3.13.2. If an effect says “look at [number] cards from 
+the top of [player's] deck“, if [number] is 0, 
+nothing happens. If [number] is 1 or more, the 
+player checks the information of the top [number] 
+cards of [player's] deck. 
+3.13.3. If an effect says “look at up to [number] cards 
+from the top of [player's] deck“, if [number] is 0, 
+nothing happens. If [number] is 1 or more, 
+perform the following. 
+3.13.3.1. The player can choose to end this set of 
+actions. 
+3.13.3.2. The player adds 1 to the number of times 
+3.13.3.3 has been reached in this set of 
+actions to get N, and looks at the Nth card from 
+the top of [player's] deck. 
+3.13.3.3. If the number of times 3.13.3.2 has been 
+performed in this set of actions has reached 
+[number] of times, end this set of actions. 
+Otherwise, return to 3.13.3.1. 
+3.13.4. If a continuous ability allows a player to look 
+at the cards in a portion of the deck without 
+designating a specific time, the player can check 
+the information of those cards at any time. 
+3.13.4.1. When checking the information of a card 
+with such an ability, as long as the position of 
+that card within the deck does not change, 
+regardless of the number of times that 
+information is checked, the “look” action is 
+considered to have only been performed once. 
+3.13.5. For automatic abilities that include looking at 
+cards from the deck as a trigger condition, when 
+cards from the deck are looked at multiple times 
+in a single effect, they are only put into stand by 
+from the first action of looking at the deck, and 
+are not put into stand by from the second and 
+subsequent actions of looking at the deck in the 
+same effect. 
+ 
+3.14. Source 
+3.14.1. Some effects will see where another effect 
+came from. This is called the “source of an 
+effect“, and is defined as below: 
+3.14.1.1. If an ability generated the effect, then the 
+card that has that ability is the source of the 
+effect. 
+3.14.1.2. Rule actions (Section 9. Rule Action) are 
+not effects, and have no sources. 
+3.14.2. Some effects will see where damage came 
+from. This is called the “source of damage“, and 
+is defined as below: 
+3.14.2.1. During the damage step, if a unit deals 
+another unit under the rules of battle, then that 
+damage is called “battle damage“. Source of 
+battle damage is the card that dealt that 
+damage. 
+3.14.2.2. If an effect from an ability on a card deals 
+damage, then that damage is called “skill 
+damage“. Source of skill damage, if not 
+specified by that effect, is the source of the 
+effect that generated the damage. 
+3.14.2.2.1. Even if the text can be read as if the 
+source of damage is a player, the source is 
+still that card itself.
+```
+
+### Page 7
+
+```text
+3.14.3. Some processes will see which units effects 
+came from. This is called the “source of effect”, 
+and is defined as below. 
+3.14.3.1. If an effect is generated by a unit’s ability, 
+that unit is the source of the effect. 
+3.14.3.2. If an effect with a unit as the source 
+creates a timed trigger (8.5.12), the source of 
+the effects of that timed trigger is the source of 
+the effect that created that timed trigger. 
+ 
+3.15. At Random 
+3.15.1. To choose something “at random“ means to 
+choose from among the choices with even 
+probability and with no intentions. 
+3.15.2. When choosing at random, you choose from 
+among the specified cards or abilities with no 
+intention. 
+ 
+3.16. Card Orientation 
+3.16.1. Each unit on the field (4.5) has one of two 
+orientation statuses. 
+3.16.1.1. Standing: cards placed vertically. 
+Changing orientation of a card into a standing 
+state is called “to stand (a card)“. 
+3.16.1.1.1. In card text, the word “stand“ or 
+“standing“ is indicated by a  icon. 
+3.16.1.2. Resting: cards placed horizontally. 
+Changing orientation of a card into a resting 
+state is called “to rest (a card)“. 
+3.16.1.2.1. In card text, the word “rest“ or 
+“resting“ is indicated by a  icon. 
+3.16.2. If a player is asked to stand standing cards or 
+rest resting cards, then the player does nothing. 
+3.16.3. Each card on the field, in a damage zone or 
+in the G zone is in one of the two following 
+states. 
+3.16.3.1. Face up: cards placed with art side up. 
+Changing a card into face up is called “to turn 
+face up“. 
+3.16.3.2. Face down: cards placed with back side 
+up. Changing a card into face down is called 
+“to turn face down“. 
+3.16.4. If a player is asked to turn a face up card face 
+up or turn a face down card face down, then the 
+player does nothing. 
+ 
+Section 4. Zones of the Game 
+ 
+4.1. General 
+4.1.1. For each zone, each player has his or her own 
+one if not specified. 
+4.1.2. The number of cards in each zone is public to 
+all players and can be verified at any time. 
+4.1.3. Whether information of cards are public or 
+hidden will depend on the zone it is in. Zones 
+with public information are called “public 
+zones“ and zones with hidden information are 
+called “hidden zones“.  
+4.1.4. If a card moves from a zone to another zone, if 
+it's not “from a circle to another 
+circle“ movement, then the card is considered as 
+a new card in a new zone. All effects applied in 
+previous zones do not apply in the new zone. 
+4.1.5. When multiple cards move from a zone to 
+another zone at the same time, unless otherwise 
+specified, the order of the cards to be moved to 
+the new zone is decided by the owner of those 
+cards, and those cards are moved to the new 
+zone simultaneously. 
+4.1.5.1. When multiple cards move to a hidden 
+zone at the same time, or when the order of 
+cards within a hidden zone would be changed, 
+if the owner of those cards, or the master of 
+the effect that caused the move in the case of 
+movement due to card effects, can decide the 
+order in which to place them, players other 
+than that player cannot know the order of those 
+cards in the new zone.  
+4.1.5.1.1. When cards are moved to a specific 
+position in a hidden zone, the number of 
+cards moved to that position is known to all 
+players. 
+4.1.6. If a card would move to a zone without the 
+master of the zone specified, then the card 
+moves to the zone of the owner. 
+4.1.7. If cards in a public zone are face down for 
+some reason, then all players may see the 
+information of the cards. While cards are 
+revealed in a hidden zone, all players may 
+generally see the information of the cards. 
+4.1.8. When the effect of a single card moves a card 
+to another zone, if any action would be 
+performed on the card that was moved, that 
+ability follows the card that was moved, and 
+performs the action on it. 
+4.1.9. When cards would move from a hidden zone 
+to a public zone, if any effect restricts the 
+movement of those cards due to the information 
+of those cards, the information of those cards is 
+revealed. 
+4.1.10. If a card would move to a zone belonging to a 
+player that is not that card’s owner, that move is 
+not performed.
+```
+
+### Page 8
+
+```text
+1) Deck Zone 
+2) Hand 
+3) Drop Zone 
+4) Field 
+5) Circle 
+6) Soul 
+7) Damage Zone 
+8) Bind Zone 
+9) Trigger Zone 
+G Zone 
+Gauge Zone 
+ 
+4.2. Deck Zone 
+4.2.1. The zone you put your main deck in at the 
+beginning of a game. 
+4.2.2. The deck zone is a hidden zone. All cards in 
+this zone are put face down, and no player can 
+see the information or order of these cards, and 
+cannot change the order. 
+4.2.3. When multiple cards move from the deck zone 
+to another zone at the same time, move cards 
+one by one. 
+ 
+4.3. Hand 
+4.3.1. The zone where you put the cards that you 
+draw. 
+4.3.2. The hand is a hidden zone, but you can see 
+information of cards in your own hand. You may 
+not see information of cards in your opponent’s 
+hand. You may change the order of your cards in 
+your hand. 
+ 
+4.4. Drop Zone 
+4.4.1. The zone you put cards that have left the field 
+or have been discarded from hand if not 
+specified. 
+4.4.2. The drop zone is a public zone. Cards in this 
+zone are stacked face up, and the information of 
+cards are open to all players. You can change 
+the order of cards in your drop zone. When you 
+put a card into this zone, put it on top of the 
+already existing ones. 
+ 
+4.5. Field 
+4.5.1. The zone to put all your units on. 
+4.5.2. In general, this zone has seven circles. A Card 
+on a circle is also regarded as being on the field 
+that the circle belongs to. 
+4.5.3. The field is a public zone. 
+ 
+4.6. Circle 
+4.6.1. The zone to put your unit on individually. Each 
+player has 7 circles: left front, center front, right 
+front, left back, center back, right back, and 
+center far front. 
+4.6.2. Each pair of circles, left front and left back, 
+center front and center back, and right front and 
+right back, is called a column. 
+4.6.2.1. Your opponent's column directly across 
+your own column is the same column. 
+Specifically, your left column and your 
+opponent's right column, your center column 
+and your opponent's center column, your right 
+column and your opponent's left column, are 
+the same columns. 
+4.6.3. All of the circles in the front row, and all of the 
+circles in the back row, are each called a row. 
+4.6.3.1. Circles in the front row, and circles in the 
+back row, are each circles in the same row for 
+that row. 
+4.6.4. Types of Circles 
+4.6.4.1. Circles on the field can be classified as 
+having 1 of the following types, namely 
+“Vanguard“, “Rear-guard“, “Guardian“, “Lock“, 
+or “Astral Plane”. 
+4.6.4.2. A circle that is classified as having a 
+certain type will have the name of “(Type) 
+circle“. 
+- For example, a circle that is classified as 
+having the Vanguard type is called a 
+“Vanguard circle”. 
+4.6.4.3. The type of the center front circle at the 
+beginning of the game is a vanguard type. 
+4.6.4.3.1. When a card is moved to the vanguard 
+circle from anywhere other than by striding, 
+including a rear-guard circle, it is put there in 
+the stand state. 
+4.6.4.4. The type of the center far front circle at the 
+beginning of the game is a guardian type. 
+4.6.4.4.1. When a card is placed on this zone, 
+unless otherwise specified, it is placed in the 
+rest state. 
+4.6.4.5. The type of each circle, other than the 
+center front and center far front circles, at the 
+beginning of the game is a rear-guard type. If 
+⑦ Damage Zone 
+⑨ Trigger Zone 
+① Deck Zone 
+③ Drop Zone 
+⑤ Circle (Guardian) 
+⑤ Circle (Vanguard) 
+⑤ Circle (Rear-guard) 
+④ Field 
+ 
+⑥ Soul
+```
+
+### Page 9
+
+```text
+there are no cards or a face up card on those 
+circles, they are rear-guard types. 
+4.6.4.5.1. When a card is moved to a rear-guard 
+circle from anywhere other than another rear-
+guard circle, including a vanguard circle, it is 
+put there in the stand state. 
+4.6.4.5.2. When a card is moved to a rear-guard 
+circle from another rear-guard circle, it is put 
+there in the same orientation as the previous 
+circle. 
+4.6.4.6. The type of circle with a locked card on it is 
+a lock circle. 
+4.6.5. Circles are public zones. The cards in these 
+zones are face up, and all information is open to 
+all players. 
+4.6.5.1. Cards that are face down on a circle due to 
+effects or costs are still in a public zone. The 
+information is open to all players. 
+4.6.5.2. Generally, only one card can be put on 
+each vanguard, rear-guard, and lock circles. 
+Multiple cards can be put on a guardian circle. 
+4.6.6. Other than moving G units not in the G zone 
+between rear-guard circles, when a G unit that is 
+not in the G zone moves to another area, after 
+moving, or after finishing a chain of moving, that 
+G unit is put back into the owner’s G zone in a 
+face up state. 
+4.6.7. Circles can be classified as having the “Astral 
+Plane” (12.17) type in addition to their other 
+types. 
+ 
+4.7. Soul 
+4.7.1. Some cards will go into this zone during a 
+game. The soul is not a part of the field. 
+4.7.2. Cards in the soul are stacked under the 
+vanguard. If the vanguard is in a legion state 
+(10.24), they are stacked under the Legion 
+Leader. 
+4.7.3. The soul is a public zone. Cards in this zone 
+are stacked face up, and all information is open 
+to all players. You can change the order of cards 
+in your soul. 
+ 
+4.8. Damage Zone 
+4.8.1. The zone you will put cards in as the game 
+progresses. Generally, you will put cards in this 
+zone when your vanguard is dealt damage. 
+4.8.2. The damage zone is a public zone. Cards in 
+this zone are stacked face up, and all 
+information is open to all players. You can 
+change the order of cards in your damage zone. 
+When you put a card into this zone, put it on top 
+of the existing ones. 
+4.8.2.1. Even if an effect or cost turns cards in a 
+damage zone face down, they are still public 
+information. Each player may see the face of 
+the cards. 
+4.8.2.2. Cards that are face down in the damage 
+zone do not have any card information and 
+cannot be given any information. 
+4.8.3. If you have six or more cards in your damage 
+zone, you lose the game by rule action. See 
+“Rule Action“ (Section 9. Rule Action) for more 
+details. 
+ 
+4.9. Bind Zone 
+4.9.1. The zone that you put cards that have been 
+bound. 
+4.9.2. The bind zone is a public zone. All players may 
+see the information of face up cards in this zone. 
+4.9.2.1. Due to an effect, cards in the bind zone 
+that are face up can be turned face down, and 
+cards in other zones can be move to the bind 
+zone face down. Only the owner of the face 
+down cards in a bind zone may see the face. 
+Other players may not see the face of these 
+cards. 
+4.9.2.2. Bound cards that are faced down do not 
+have any card information and cannot be given 
+any information. 
+4.9.3. Bound cards or cards referring to bound cards 
+may sometimes affect the game. As such, 
+players are required to split the pile of bound 
+cards so that they can be distinguished which 
+effect they were bound by. You may change the 
+order of your bound cards within the same pile. 
+ 
+4.10. Trigger Zone 
+4.10.1. The zone where cards are put in temporarily 
+during the game. 
+4.10.2. Cards revealed by a drive check (7.6.1.2.3) 
+are placed in the trigger zone. After resolving the 
+effects of icons on it, the card moves to the 
+owner's hand. 
+4.10.3. Cards revealed by a damage check (9.6.3) 
+are placed in the trigger zone. After resolving the 
+effects of icons on it, the card moves to the 
+owner's damage zone. 
+4.10.4. The trigger zone is a public zone. All the 
+cards in this zone are placed face up, and any 
+player may see the information or order of these 
+cards, but may not change the order. When you 
+put a card into this zone, put it on top of the 
+existing cards. 
+ 
+4.11. G Zone 
+4.11.1. The zone you put your G deck in at the 
+beginning of a game. 
+4.11.2. The G zone is a hidden zone, but you can 
+see the information of, and change the order of 
+cards in your G zone. The face down cards in 
+this zone are stacked, and other players cannot 
+see the information of the face down cards. 
+4.11.3. When cards in this zone are put to face up, 
+they are placed separately from the face down 
+cards, and only stacked with face up cards. All 
+players can see the information of, and change 
+the order of face up cards in the G zone. 
+4.11.4. At the beginning of a game, all cards in the G 
+deck are placed face down on the G zone in a 
+hidden state. 
+4.11.5. When a process puts a card from outside of 
+the G zone into the G zone during a game, that 
+card is placed face up unless otherwise 
+specified.
+```
+
+### Page 10
+
+```text
+4.12. Gauge Zone 
+4.12.1. The zone where cards that are put as a 
+gauge are placed. 
+4.12.2. The gauge zone is a hidden zone, but you 
+can see the information of cards in your gauge 
+zone. You may not see the information of cards 
+in your opponent’s gauge zone. You may change 
+the order of cards in your gauge zone, as long 
+as it is clear which cards they are associated 
+with. 
+4.12.2.1. When cards put into a gauge zone from a 
+hidden zone, the owner of that gauge zone 
+may look at the information of that card after all 
+the cards have been put into the gauge zone. 
+4.12.3. There are cards in the gauge zone that are 
+associated with other cards. 
+4.12.3.1. When a reference is made to a card’s 
+“gauge”, it refers to the cards in the gauge 
+zone that are associated that card. 
+4.12.3.2. When a unit is moved between circles, 
+the cards in the gauge zone associated with 
+that unit maintain the association. 
+4.12.3.3. When a unit is moved from a circle to a 
+non-circle zone, or when a unit is locked 
+(10.21), the cards in the gauge zone that are 
+associated with that unit are placed into the 
+drop zone by rule action (9.9.1). 
+4.12.3.3.1. The cards in a gauge zone that are 
+associated with a unit can be referenced as 
+part of the final information (8.8) of that unit, 
+as long as they remain in the gauge zone. 
+4.12.3.3.2. When cards in the gauge zone that 
+are associated with unit A become 
+associated with a different unit B, their 
+association with unit A is canceled. 
+4.12.4. There are cards in the gauge zone with name 
+information. 
+4.12.4.1. When referring to “(name) gauge”, it 
+refers to cards in the gauge zone with (name) 
+in their name information. 
+4.12.4.2. Cards in the gauge zone with no 
+particular name specified do not have name 
+information. 
+ 
+Section 5. Setting Up the Game 
+ 
+5.1. Preparing the Decks 
+5.1.1. Each player prepares his or her own main 
+deck and up to 1 G deck before the game. 
+5.1.2. Continuous abilities regarding deck 
+construction of the main deck and G deck, are 
+applied as a replacement effect that changes the 
+rules below (Section 8. Play and Resolve Cards 
+and Abilities). 
+ 
+5.2. Preparing the Main Deck 
+5.2.1. Each player prepares his or her own main 
+deck before the game. 
+5.2.2. Constructed main deck 
+5.2.2.1. A main deck must contain exactly fifty 
+cards. 
+5.2.2.2. Each deck can only contain up to four 
+copies of cards with the same name. You can 
+put up to four copies of cards with the same 
+name in your main deck and G deck each. 
+5.2.2.2.1. Even if any other information is 
+different, if two cards have the same name, 
+your main deck can only have up to four 
+cards in total among them. 
+5.2.2.3. A main deck must contain exactly sixteen 
+cards with a trigger. These cards must follow 
+the “up to four“ rule at the same time. 
+5.2.2.4. A main deck can only contain up to four 
+cards with a  or  (heal) trigger. 
+5.2.2.5. A main deck can only contain up to four 
+cards with the “Sentinel“ ability. 
+5.2.2.6. A main deck must be constructed of normal 
+units and trigger units. 
+5.2.2.7. When a deck construction condition 
+replacement effect refer to “this card”, that 
+refers to cards with the same collection ID as 
+that card’s collection ID. 
+ 
+5.3. Preparing the G Deck 
+5.3.1. Each player prepares his or her own G deck 
+before the game. 
+5.3.2. A G deck must be constructed of 0 to 16 cards. 
+5.3.2.1. Each deck can only contain up to four 
+copies of cards with the same name. You can 
+put up to four copies of cards with the same 
+name in your main deck and G deck each. 
+5.3.3. A G deck must be constructed only of G units. 
+ 
+5.4. Preparing the Game 
+5.4.1. Before the start of each game, prepare for the 
+game in the following steps: 
+5.4.2. Present the main deck and G deck you will use 
+for this game to your opponent. The main deck 
+and G deck will need to fulfill rule 5.1.1 and 5.3 
+at this time. 
+5.4.3. Choose a grade 0 card from your main deck, 
+and put it face down on your vanguard circle. 
+This card is not revealed until you begin the 
+game. This unit is called your “first vanguard“. 
+5.4.3.1. Each player places all the cards in his or 
+her G deck in his or her G zone face down in a 
+stack, and shuffles his or her main deck. Then, 
+each player may shuffle his or her opponent's 
+main deck. Each player puts his or her main 
+deck face down on his or her deck zone 
+afterwards. 
+5.4.3.2. Randomly determine which player goes 
+first. 
+5.4.3.2.1. You may not determine who goes first 
+in any other way, and you may not use a 
+random method to decide who gets to 
+choose who goes first. 
+5.4.3.3. Each vanguard’s vanguard damage is set 
+to 0. 
+5.4.3.4. Each player draws five cards from his or 
+her deck and makes the initial hand. Then, 
+from the player going first, each player 
+chooses any number of cards in his or her 
+hand and puts them on the bottom of his or her 
+deck, then draws the same number of cards as 
+he or she returned to the deck, and players
+```
+
+### Page 11
+
+```text
+that returned one or more cards shuffle their 
+deck. 
+ 
+Section 6. Game Procedure 
+ 
+6.1. Stand Up 
+6.1.1. At the beginning of the game, each player 
+turns his or her vanguard face up. This is called 
+“Stand Up“. 
+ 
+6.2. Turn Procedure 
+6.2.1. During a game, players take turns progressing 
+the game by becoming the turn player. The turn 
+player performs actions in the following order of 
+phases. This sequence of phases is called a 
+turn. 
+6.2.2. Usually, the phases and steps of each phase 
+will proceed in the order below. 
+▶ Stand Phase 
+▶ Draw Phase 
+▷ Draw Step 
+▷ G Assist Step 
+▶ Ride Phase 
+▷ Ride Step 
+▷ Stride Step 
+▶ Main Phase 
+▶ Battle Phase 
+▷ Attack Sub Phase 
+    ▪ Start Step 
+    ▪ Attack Step 
+  ▪ Guard Step 
+  ▪ Drive Step 
+  ▪ Damage Step 
+  ▪ Close Step 
+▶ End Phase 
+ 
+6.3. Stand Phase 
+6.3.1. The phase in which the turn player stands 
+units that he or she is a master of. This phase is 
+done in the following order: 
+6.3.1.1. Each active automatic ability with the 
+timing “at the beginning of turn“ or “at the 
+beginning of stand phase“ becomes stand by. 
+Resolve a check timing. 
+6.3.1.2. The turn player stands all of his or her units 
+on the field. 
+6.3.1.3. Resolve a check timing. After completing 
+all actions in the check timing, advance to the 
+next phase. 
+ 
+6.4. Draw Phase 
+6.4.1. The phase in which the turn player draws a 
+card from his or her deck. This phase is done in 
+the following order: 
+6.4.1.1. Draw Step 
+6.4.1.1.1. Each active automatic ability with the 
+timing “at the beginning of draw 
+phase“ becomes stand by. Resolve a check 
+timing. 
+6.4.1.1.2. The turn player draws a card. 
+6.4.1.1.3. Resolve a check timing. After 
+completing all actions in the check timing, 
+advance to the G assist step. 
+6.4.1.2. G Assist Step 
+6.4.1.2.1. The step in which the turn player can 
+search his or her deck for a card. 
+6.4.1.2.1.1. Each active automatic ability with 
+the timing “at the beginning of G assist 
+step“ becomes stand by. Resolve a check 
+timing. 
+6.4.1.2.1.2. The turn player can search his or 
+her deck for a card. This is called “G 
+Assist“, and is done according to the steps 
+below. 
+6.4.1.2.1.3. If the turn player does not search 
+his or her deck for a card, proceed to 
+6.4.1.3. 
+6.4.1.2.2. If you search your deck for a card, the 
+following 2 conditions must be fulfilled. 
+6.4.1.2.2.1. Your vanguard is not grade 3 or 
+greater. 
+6.4.1.2.2.2. Your hand does not have any card 
+that is 1 grade greater than your vanguard. 
+6.4.1.2.3. If any of the above conditions are not 
+fulfilled, proceed to 6.4.1.3. 
+6.4.1.2.4. The turn player reveals his or her hand, 
+and after his or her opponent confirms that 
+the conditions in 6.4.1.2.2 are fulfilled, the 
+revealed hand returns to being a hidden 
+zone. 
+6.4.1.2.5. The turn player looks at 5 cards from 
+the top of his or her deck, chooses up to 1 
+card that is 1 grade greater than his or her 
+vanguard from among them, shows it to his 
+or her opponent, and puts it in his or her 
+hand. If the turn player put a card in his or 
+her hand, the turn player chooses 2 cards 
+from his or her hand, and removes them from 
+the game. Even if no card was put into his or 
+her hand, shuffle the deck. 
+6.4.1.3. Resolve a check timing. After completing 
+all actions in the check timing, advance to the 
+next phase. 
+ 
+6.5. Ride Phase 
+6.5.1. The phase in which the turn player can normal 
+ride (8.5.1.1) or normal stride (8.5.1.3) his or her 
+vanguard. This phase is done in the following 
+order: 
+6.5.1.1. Ride Step 
+6.5.1.1.1. Each active automatic ability with the 
+timing “at the beginning of ride 
+phase“ becomes stand by. Resolve a check 
+timing. 
+6.5.1.1.2. The turn player can ride a card from his 
+or her hand on the vanguard, or vanguard in 
+a legion state, that he or she is the master of. 
+This is a normal ride (8.5.1.1). This can only 
+be performed once per turn. 
+6.5.1.1.2.1. The only circle that you can play a 
+card on during the ride step is the 
+vanguard circle. 
+6.5.1.1.3. Resolve a check timing. After 
+completing all actions in the check timing, 
+advance to the stride step. 
+6.5.1.2. Stride Step
+```
+
+### Page 12
+
+```text
+6.5.1.2.1. Each active automatic ability with the 
+timing “at the beginning of stride 
+step“ becomes stand by. Resolve a check 
+timing. 
+6.5.1.2.2. The turn player can normal stride 
+(8.5.1.3) a G unit with a stride condition of 
+“stride step“ on the vanguard, or vanguard in 
+a legion state, that he or she is the master of. 
+This can only be performed once per turn. 
+6.5.1.2.3. The only circle that you can play a card 
+on during the stride step is the vanguard 
+circle. 
+6.5.1.3. Resolve a check timing. After completing 
+all actions in the check timing, advance to the 
+next phase. 
+ 
+6.6. Main Phase 
+6.6.1. The phase in which the turn player can 
+perform several actions. This phase is done in 
+the following order: 
+6.6.1.1. Each active automatic ability with the 
+timing “at the beginning of main 
+phase“ becomes stand by. 
+6.6.1.2. The turn player gets a play timing. In this 
+play timing, the turn player can do any of the 
+actions below, in any order and any number of 
+times. 
+6.6.1.2.1. The turn player can designate one of 
+his or her rear-guard circles, and call a card 
+from his or her hand. This is a normal call 
+(8.5.1.2). The normal called card is placed on 
+the chosen circle. 
+6.6.1.2.1.1. The only circle you can play a card 
+on during the main phase is the rear-guard 
+circle. 
+6.6.1.2.2. The turn player can play any of the 
+activated abilities (8.5) on his or her cards. 
+6.6.1.2.3. If two circles in the same column are 
+both rear-guard circles, the turn player can 
+exchange the cards in those circles. If both of 
+those circles have a card on it, then put both 
+of them on the other circles simultaneously. If 
+only one of those circles has a card, then put 
+it on the other circle. If there are no cards in 
+either of the circles, then nothing happens. 
+6.6.1.3. When the turn player chooses to do 
+nothing, advance to the next phase. 
+ 
+6.7. Battle Phase 
+6.7.1. The phase in which the turn player can attack 
+his or her opponent’s units with units that he or 
+she is the master of. See “Attack and 
+Battle“ (Section 7. Attack and Battle) for the 
+description of this phase. 
+ 
+6.8. End Phase 
+6.8.1. The phase in which several actions are 
+resolved at the end of a turn. This phase is done 
+in the following order: 
+6.8.1.1. The turn player performs the following in 
+the order shown. 
+6.8.1.1.1. Put all G units on the vanguard and 
+rear-guard circles to the G zone in a face up 
+state. 
+6.8.1.1.2. Return all locked cards and deleted 
+units on that player’s field to a normal state 
+by turning the cards face up. 
+6.8.1.1.3. If there is a unit on an Astral Plane type 
+circle, that unit’s owner puts it on the bottom 
+of their deck. 
+6.8.1.2. Each active automatic ability with the 
+timing “when a card is unlocked“, “when a card 
+is put to face up“, and “when put to G 
+zone“ triggers are put to stand by. Then, 
+resolve a check timing. 
+6.8.1.3. Each active automatic ability with the 
+timing “At the beginning of end phase“ and “at 
+the end of turn“ that have not become stand by 
+in this end phase becomes stand by. 
+6.8.1.4. Resolve a checking timing. After 
+completing all the actions in the check timing, 
+all effects with “until end of this turn“ will cease 
+to exist. 
+6.8.1.5. At this point, if there are no automatic 
+abilities standing by, no rule actions (Section 9. 
+Rule Action) to resolve, and no cards in public 
+zones or hidden zones that both players are 
+able to check the information of with automatic 
+abilities that have “at the beginning of end 
+phase“ or “at the end of turn“ trigger conditions 
+and have not become stand by during this end 
+phase, the opponent of the current turn player 
+becomes the new turn player and the game 
+advances to the next turn's stand phase. This 
+turn ends. Otherwise, go back to 6.8.1.3. 
+ 
+Section 7. Attack and Battle 
+ 
+7.1. Basics 
+7.1.1. In each battle phase, the turn player can attack 
+with his or her standing units in the front row 
+against his or her opponent's units. During a 
+battle phase, the turn player performs a 
+progression of steps beginning with the start 
+step. 
+7.1.2. The series of steps from the start step to the 
+close step is called the “Attack Sub Phase“. The 
+process from 7.4.1.1 to 7.8.1.4 is called the 
+“Battle“. 
+7.1.2.1. A battle is counted as one battle from the 
+moment a battle begins. Even if the process of 
+a battle is cut off midway and proceeds to the 
+close step, it is still counted as one battle. 
+7.1.2.2. If the unit chosen in 7.4.1.6 for a battle 
+includes a vanguard, it is referred to as “a 
+battle where (this unit) attacked (is attacking) a 
+vanguard“ and “a battle where a vanguard is 
+attacked (being attacked)“ till the close step. If 
+the unit chosen includes a rear-guard, it is 
+referred to as “a battle where this unit attacked 
+(is attacking) a rear-guard“ and “a battle where 
+a rear-guard is attacked (being attacked)“ till 
+the close step.
+```
+
+### Page 13
+
+```text
+7.1.2.3. If an effect causes all of the “units being 
+attacked“ in “a battle where (this unit) attacked 
+(is attacking) a vanguard“ or “a battle where a 
+vanguard is attacked (being attacked)“ to 
+change from a vanguard to a rear-guard after 
+7.4.1.6, that battle is no longer “a battle where 
+(this unit) attacked (is attacking) a vanguard“ or 
+“a battle where a vanguard is attacked (being 
+attacked)“, and becomes “a battle where this 
+unit attacked (is attacking) a rear- guard“ and 
+“a battle where a rear-guard is attacked (being 
+attacked)“. Similarly, when all of the “units 
+being attacked“ in “a battle where this unit 
+attacked (is attacking) a rear-guard“ or “a battle 
+where a rear-guard is attacked (being 
+attacked)“ are changed from a rear-guard to a 
+vanguard, that battle is no longer “a battle 
+where this unit attacked (is attacking) a rear-
+guard“ or “a battle where a rear-guard is 
+attacked (being attacked)“, and becomes “a 
+battle where (this unit) attacked (is attacking) a 
+vanguard“ and “a battle where a vanguard is 
+attacked (being attacked)“. If the unit chosen in 
+7.4.1.6 for a battle includes a vanguard, it is 
+referred to as “a battle where a vanguard is 
+being attacked“ till the close step. If the unit 
+chosen includes a rear-guard, it is referred to 
+as “a battle where a rear-guard is being 
+attacked“ till the close step. 
+7.1.2.4. Following 7.4.1.6, should the “unit being 
+attacked“ be changed from vanguard to rear-
+guard, abilities with “the battle that your 
+vanguard was attacked“ will not occur, and 
+abilities with “the battle that your rear-guard 
+was attacked“ will occur. Likewise, should the 
+“unit being attacked“ be changed from rear-
+guard to vanguard, abilities with “the battle that 
+your rear- guard was attacked“ will not occur, 
+and abilities with “the battle that your vanguard 
+was attacked“ will occur. 
+ 
+7.2. Attack Resolution 
+7.2.1. The resolution of the steps from the attack step 
+to the close step is known as the attack 
+resolution, and is referred to as the specific 
+action “To Attack“ (10.33). 
+7.2.2. For an attack, both the attacking unit and the 
+unit being attacked must exist, and they are 
+either specified units or non-specified units. 
+7.2.2.1. If the units being attacked includes a unit 
+that cannot be designated due to an effect, that 
+unit does not battle. The reverse is also true. 
+ 
+7.3. Start Step 
+7.3.1. The step in which the turn player chooses 
+whether to attack or not. This step is done in the 
+following order: 
+7.3.1.1. In the situation where this step is the first 
+start step of this Battle Phase, Each active 
+automatic ability with the timing “at the 
+beginning of start step“ and “at the beginning 
+of your battle phase“ becomes stand by. 
+Resolve a check timing. 
+7.3.1.2. The turn player chooses whether to attack 
+or not. 
+7.3.1.2.1. If he or she chooses to attack, then 
+resolve a check timing. After completing all 
+the actions in the check timing, both the 
+specified attacking unit and the specified unit 
+being attacked are no longer specified, and 
+advance to the attack step. 
+7.3.1.2.2. If he or she chooses not to attack, then 
+advance to the next phase. 
+7.3.1.3. If this is the very first turn of the game or 
+there are units that cannot attack or be 
+attacked, or by some combination which 
+results in a situation where an attack is unable 
+to take place, then the turn player cannot 
+choose to attack. It is automatically regarded 
+that the turn player chose not to attack. 
+ 
+7.4. Attack Step 
+7.4.1. The step in which the turn player chooses 
+which unit he or she will attack with or not to 
+attack. This step is done in the following order: 
+7.4.1.1. The battle begins. 
+7.4.1.2. Each active automatic ability with the 
+timing “at the beginning of attack 
+step“ becomes stand by. Resolve a check 
+timing. 
+7.4.1.3. If the specified attacking unit is 
+unspecified, the turn player chooses one of his 
+or her standing units, that is not restricted by 
+rules nor effects, on a vanguard or rear- guard 
+circle in the front row (or if the vanguard is in a 
+legion state (10.24), both units on a vanguard 
+circle) as the unit to attack with for this battle, 
+and the unit chosen becomes the specified 
+attacking unit. 
+7.4.1.3.1. If there are no units that can be 
+appropriately chosen as the specified 
+attacking unit for any reason, the battle and 
+this attack step ends, and advance to the 
+next phase. 
+7.4.1.4. Confirm if the specified attacking unit may 
+attack. 
+7.4.1.4.1. If the specified attacking unit is 
+unspecified, or rested, or unable to attack 
+due to any effect, proceed to the close step. 
+7.4.1.5. Rest the attacking unit. 
+7.4.1.5.1. From here onwards until the end of the 
+close step, the specified attacking unit is 
+referred to as the “attacking unit“. 
+7.4.1.5.2. From here onwards until the end of 
+battle, if the specified attacking unit becomes 
+unable to attack, the process of the battle still 
+proceeds. 
+7.4.1.6. If the specified unit being attacked is 
+unspecified, the turn player chooses one of his 
+or her opponent's units on a vanguard circle 
+that is not a Legion Mate, or on a rear-guard 
+circle in the front row, that is not restricted by 
+rules nor effects, as the unit being attacked for 
+this battle, and it becomes the specified unit 
+being attacked.
+```
+
+### Page 14
+
+```text
+7.4.1.7. Confirm if the specified unit being attacked 
+may be attacked. 
+7.4.1.7.1. If the specified unit being attacked 
+becomes unspecified, or the attacking unit 
+becomes unable to attack due to some 
+combination of rules or effects, proceed to 
+the close step immediately. 
+7.4.1.8. From here onwards until the end of the 
+close step, the specified unit being attacked is 
+referred to as the “unit being attacked“. 
+7.4.1.8.1. During the battle, if the unit being 
+attacked changes, or ceases to exist, the 
+process of the battle still proceeds. 
+7.4.1.8.2. The “attacking unit“ and the “unit being 
+attacked“ will only continue to be the 
+“attacking unit“ and the “unit being 
+attacked“ if they are in their present circles. 
+Should the “attacking unit“ leaves its current 
+position, it will cease to be an “attacking 
+unit“, while a “unit being attacked“ will cease 
+to be a “unit being attacked“ should it leave 
+its current position. 
+7.4.1.8.2.1. Even if the “attacking unit“ or the 
+“unit being attacked“ cease to exist, they 
+will continue to be referred to as the 
+“attacking unit“ and the “unit being 
+attacked“ during the attack sub phase. 
+7.4.1.8.3. For the attacking unit, the unit being 
+attacked becomes the “battle opponent“. At 
+the same time, for the unit being attacked, 
+the attacking unit becomes the “battle 
+opponent“. 
+7.4.1.8.4. If a “this unit (may) battle(s)“ effect 
+increases the number of units chosen for the 
+attack, or changes the method of choosing 
+the unit for the attack, those effects are 
+applied. 
+7.4.1.8.5. If there are multiple units being 
+attacked, all of those units are referred to as 
+“units that are being attacked“, and proceed 
+with the battle phase. 
+7.4.1.8.6. A Legion Mate cannot be forced to be 
+attacked by an effect. 
+7.4.1.9. From here onwards, when the non-turn 
+player’s unit is placed on the guardian circle, 
+they choose one of their units being attacked. 
+That guardian guards for that chosen unit. 
+7.4.1.9.1. If there is only one unit being attacked, 
+that guardian automatically guards for that 
+unit. 
+7.4.1.10. Between 7.4.1.3 and the close step, if 
+another unit is placed on a circle with a unit 
+that is being attacked, that unit does not 
+become a unit that is being attacked. 
+7.4.1.11. The turn player may choose a unit with 
+ in the back circle of the same column as 
+the attacking unit to make it boost the attacking 
+unit (if it is a vanguard in a legion state, it 
+boosts either of those units). If it boosts, rest 
+that unit with boost. 
+7.4.1.11.1. From the time it is chosen until the 
+end of the close step, the unit chosen in this 
+step becomes a “boosting unit“ and the 
+attacking unit becomes a “boosted unit“. 
+7.4.1.11.1.1. These two units shall continue to 
+be the “boosting unit“ and “boosted unit“ in 
+their respective circles. If one of these 2 
+units moves out of its original circle, the 
+remaining unit will no longer be the 
+“boosting unit“ or “boosted unit“. 
+7.4.1.12. Until the end of the close step, as long as 
+both units stay the respective “boosting 
+unit“ and “boosted unit“, the power of the 
+“boosting unit“ will continuously be added to 
+the power of the “boosted unit“. At the same 
+time, if a vanguard in a legion state is 
+“attacking“, the power of the Legion Mate will 
+continuously be added to the power of the 
+Legion Leader. 
+7.4.1.13. Resolve a check timing. Automatic 
+abilities with the timing “when unit attacks“ and 
+“when unit boosts“ resolve during this timing. 
+7.4.1.14. Resolve a check timing. After finishing all 
+actions in the check timing, advance to the 
+guard step. 
+ 
+7.5. Guard Step 
+7.5.1. The step in which the non-turn player can call 
+guardians to prevent the attack. This step is 
+done in the following order: 
+7.5.1.1. Each active automatic ability with the 
+timing “at the beginning of guard 
+step“ becomes stand by. 
+7.5.1.2. The non-turn player gets one play timing 
+(and a check timing before it). During this play 
+timing, the non-turn player performs 1 of the 
+following 4 actions from 7.5.1.2.1. to 7.5.1.2.4. 
+7.5.1.2.1. The non-turn player may choose to 
+pass. If pass was chosen, proceed to the 
+drive step if a unit that performs drive checks 
+is attacking, and proceed to damage step if a 
+rear- guard is attacking. 
+7.5.1.2.1.1. If the non-turn player is restricted 
+from calling or intercepting, or the unit 
+being attacked no longer exist, the non-turn 
+player is automatically considered to have 
+chosen to pass. 
+7.5.1.2.2. The non-turn player may choose one or 
+more cards from his or her hand, and call 
+them to his or her guardian circle. This is a 
+normal call (8.5.2.2). 
+7.5.1.2.3. The non-turn player may, if both 
+players’ vanguards are grade 3 or greater, 
+and if the number of face up cards in the 
+non-turn player’s G zone with  is 3 
+or less, and there is a card with  
+among the face down cards in his or her G 
+zone, choose one or more of those face 
+down cards, pay the cost specified by that 
+card’s G Guardian ability, and superior call it 
+to his or her guardian circle as face up 
+7.5.1.2.4. The non-turn player may choose one or 
+more units with  on his or her front rear-
+guard circles that are not being attacked
+```
+
+### Page 15
+
+```text
+during this battle, and put it into his or her 
+guardian circle in the rest state. 
+7.5.1.2.4.1. Automatic abilities with the timing 
+“when unit intercepts” become stand by 
+when that unit is chosen to perform an 
+intercept, but if that unit does not move to 
+the guardian circle for any reason, the 
+stand by state is cancelled. 
+7.5.1.2.5. Resolve a check timing. After finishing 
+all actions in the check timing, return to 
+7.5.1.2. 
+ 
+7.6. Drive Step 
+7.6.1. The step to check for additional effects during 
+the attack by a unit. This step is done in the 
+following order: 
+7.6.1.1. Each active automatic ability with the 
+timing “at the beginning of drive step“ becomes 
+stand by. Resolve a check timing. 
+7.6.1.2. If the attacking unit is a vanguard, or a 
+rear-guard that gained drive, the turn player 
+checks for additional effects for the attack. This 
+action is called a “drive check“ and resolves in 
+the following order from 7.6.1.2.1 to 7.6.1.3. 
+7.6.1.2.1. The attacking vanguard, or Legion 
+Leader in legion, or unit that gained drive due 
+to effects, is referred to as a drive unit. 
+7.6.1.2.2. If the drive of the drive unit is 0 or less, 
+proceed to 7.6.1.4. If it is not, proceed to 
+7.6.1.2.3. 
+7.6.1.2.3. The turn player puts the top card of his 
+or her deck into the trigger zone face up. 
+7.6.1.2.4. If the card is the same clan as one of 
+the units in the turn player’s vanguard circle 
+or rear-guard circle, then resolve the actions 
+indicated by the trigger icon on the card. 
+7.6.1.2.5. Resolve a check timing. 
+7.6.1.2.6. If the card is still in the trigger zone, 
+then the turn player puts the cards into his or 
+her hand regardless of whether it has a 
+trigger or not. 
+7.6.1.3. Resolve a check timing. If the number of 
+drive checks resolved during this battle’s drive 
+step is less than the drive of the drive unit, go 
+back to 7.6.1.2. Otherwise, proceed to 7.6.1.4. 
+7.6.1.4. Resolve a check timing. After completing 
+all actions in the check timing, advance to the 
+damage step. 
+ 
+7.7. Damage Step 
+7.7.1. The step to resolve the damage to the 
+attacked unit. This step is done in the following 
+order: 
+7.7.1.1. Each active automatic ability with the 
+timing “at the beginning of damage 
+step“ becomes stand by. Resolve a check 
+timing. 
+7.7.1.2. Compare the power of the attacking unit 
+(the combined power for a vanguard in a legion 
+state (10.24)) with the power of the attacked 
+unit. If the attacked unit’s power is less than or 
+equal to the attacking unit, then the attack hits. 
+7.7.1.3. If the attacking unit or the attacked unit had 
+left the field, or if the master of any of these 
+unit changed, or if any of these units moved to 
+another circle, then the powers are not 
+compared, and the attack does not hit. 
+7.7.1.4. Resolve a check timing. Abilities with the 
+timing “when attack hits“ and “when attack did 
+not hit“ do not become stand by at this point. 
+They will become stand by in 7.7.1.7. 
+7.7.1.5. If the attack hits, and the attacked unit is a 
+vanguard, then the attacking unit deals 
+damage equal to its critical (if it is a vanguard 
+in a legion state (10.24), it deals damage equal 
+to the Legion Leader’s critical). 
+7.7.1.5.1. If the attacking unit's critical (if it is a 
+vanguard in a legion state (10.24), the critical 
+of the Legion Leader) is 0 or less, then it 
+does not deal damage. Zero or negative 
+damage will not be dealt. 
+7.7.1.5.2. If the attacking unit had left the field, or 
+if the master of the attacking unit changed, or 
+if the attacking unit moved to another circle, 
+then the attacking unit does not deal 
+damage. 
+7.7.1.6. Resolve a check timing. 
+7.7.1.7. With regards to the unit, the event of 
+whether the attack “hits“ or “does not 
+hit“ occurs at this time. 
+7.7.1.7.1. A “when attack hits (specified unit)” 
+event for the attacking unit occurs if the unit 
+being attacked at this point is the specified 
+unit, and this attack hit. 
+7.7.1.7.2. A “when it attacks (specified unit) and 
+hits” event for the attacking unit occurs if the 
+unit being attacked specified at 7.4.1.8 is the 
+specified unit, and this attack hit. 
+7.7.1.7.3. If the attacking unit did not hit, a “did 
+not hit” event occurs for that unit. This 
+includes cases where the attacking unit 
+ceases to be an attacking unit during the 
+battle for any reason. 
+7.7.1.7.4. If a “”when attack hits” effect activates 
+even if the attack did not hit” effect exists for 
+this battle, and there exists an automatic 
+ability with the timing “when the attacking unit 
+hits in the current battle”, that automatic 
+ability is put into stand by once. 
+7.7.1.8. Resolve a check timing. 
+7.7.1.9. Retire all , then retire all 
+guardians, then retire all rear-guards that were 
+hit. 
+7.7.1.10. Resolve a check timing. After completing 
+all actions in the check timing, advance to the 
+close step. 
+ 
+7.8. Close Step 
+7.8.1. The step to resolve all actions that happen at 
+the end of an attack. This step is done in the 
+following order: 
+7.8.1.1. Each active automatic ability with the 
+timing “At the beginning of close step“ and “at 
+the end of battle“ that have not become stand 
+by in this close step becomes stand by.
+```
+
+### Page 16
+
+```text
+7.8.1.2. Resolve a check timing. After completing 
+all actions in the check timing, the battle will 
+end, and all effects with the duration of “until 
+the end of that battle“ and “during this 
+battle“ cease to exist. At the same time, 
+attacking units stop being “attacking units“, and 
+attacked units stop being “attacked units“. 
+7.8.1.3. At this point, if there are no automatic 
+abilities standing by, no rule actions (Section 9. 
+Rule Action) to resolve, and no cards in public 
+zones or hidden zones that both players are 
+able to check the information of with automatic 
+abilities that have “at the beginning of close 
+step” or “at the end of battle” trigger conditions 
+and have not become stand by during this 
+close step, proceed to 7.8.1.4. Otherwise, go 
+back to 7.8.1.1. 
+7.8.1.4. Attacking units stop being “attacking units“, 
+and attacked units stop being “attacked units“. 
+7.8.1.5. If the specified action “To Attack“ is 
+ongoing, this will complete the attack 
+resolution. If it is not, after this, return to start 
+step. 
+ 
+Section 8. Play and Resolve Cards and Abilities 
+ 
+8.1. Categories of Abilities 
+8.1.1. Abilities are divided into three categories; 
+continuous abilities, activated abilities, and 
+automatic abilities. 
+8.1.1.1. Activated abilities are abilities that a player 
+with a play timing can pay the cost to get the 
+effect. 
+8.1.1.1.1. Activated abilities are written on cards 
+as “ ACT 【zone】:(condition) [(cost)] (effect)“. 
+The text within the 【 】 indicates the zone in 
+which the ability can be used, (condition) 
+indicates the condition required to play it, 
+(cost) indicates the cost to play it, and the 
+text that follows is the effect that occurs by 
+resolving the activated ability. 
+8.1.1.1.2. Some activated abilities have a 
+requirement stated as “If (requirement), “. 
+8.1.1.1.2.1. For the effects “This ability cannot 
+be used for the rest of that turn.“ and “This 
+ability cannot be used for the rest of the 
+game.“, if the cost of the effect was paid, or 
+if the game state has changed after the 
+resolution of the effect, they are still applied 
+even if the requirement was not met. 
+8.1.1.1.2.1.1. If there is no cost, or if the cost 
+is changed from a cost where a card 
+changes zones or state for the cost, to a 
+cost where it no longer does so, the 
+effects “This ability cannot be used for 
+the rest of that turn.” and “This ability 
+cannot be used for the rest of the game.” 
+are still applied even if the requirement of 
+the ability is not met. 
+8.1.1.1.2.2. The portion of an ability with a 
+requirement that resolves only if the 
+requirement is met, is only the text that is 
+before the next succeeding full-stop. 
+8.1.1.1.2.3. There are cases where abilities with 
+requirements indicated by “if“ will refer to 
+text prior to it as a basis for determining if 
+the requirement is met. 
+8.1.1.1.2.4. There are cases where after the full 
+stop succeeding a portion of an ability with 
+a requirement indicated by “if“, the text 
+starts with an “if“. If that text refers to the 
+result of text prior to it, if the requirement of 
+the prior text is not met, it will not resolve. 
+8.1.1.1.2.5. There are cases where portions of 
+text start with “Then“. In these cases, there 
+will be text prior to it. If the text prior to it 
+has a requirement, if that requirement is 
+not met, it will not resolve. 
+8.1.1.1.2.6. If the activated ability does not have 
+a cost, declaring that the ability is being 
+played will play the ability. 
+8.1.1.1.2.6.1. Activated abilities without a cost 
+are not automatically played. 
+8.1.1.2. Automatic abilities are abilities that are 
+played automatically when a certain event 
+happens during the game. 
+8.1.1.2.1. Automatic abilities are written on card 
+as “AUTO 【zone】:When (event), (effect)“ or 
+“ AUTO 【zone】:At the beginning of (phase 
+or step), (effect)“. If the automatic ability 
+would be triggered by the movement of the 
+card itself, then the ability is written as 
+“AUTO:When (event), (effect)“. The 
+“event“ or “phase“ or “step“ is called the 
+“trigger condition“, and when the “trigger 
+condition“ is fulfilled, the automatic ability is 
+considered to be “triggered“. 
+8.1.1.2.1.1. Automatic abilities that trigger in a 
+hidden zone become stand by if their 
+master states that they do so. If it is not 
+stated, they do not become stand by. 
+8.1.1.2.2. Some automatic abilities have the text 
+“AUTO:[cost] (effect)“ instead of “ AUTO 
+(effect)“. The cost here is the cost referred to 
+and paid during resolution of the ability. 
+8.1.1.2.3. Some automatic abilities have the text 
+“AUTO 【zone】:When (event), if 
+(requirement)“. These abilities will trigger if 
+the event happens, even if the requirement is 
+not met. 
+8.1.1.2.3.1. For the effects “This ability cannot 
+be used for the rest of that turn.“, “This 
+ability cannot be used for the rest of the 
+game.“, and , if the game state has 
+changed after the resolution of the effect, 
+they are still applied even if the 
+requirement of the ability is not met. 
+8.1.1.2.3.1.1. When automatic abilities that fit 
+this description are standing by, when the 
+master of that ability plays an automatic 
+ability, he or she can choose this ability, 
+and have it cease to exist without playing 
+it. 
+8.1.1.2.3.2. The portion of an ability with a 
+requirement that resolves only if the
+```
+
+### Page 17
+
+```text
+requirement is met, is only the text that is 
+before the next succeeding full-stop. 
+8.1.1.2.3.3. There are cases where abilities with 
+requirements indicated by “if“ will refer to 
+text prior to it as a basis for determining if 
+the requirement is met. 
+8.1.1.2.3.4. There are cases where after the full 
+stop succeeding a portion of an ability with 
+a requirement indicated by “if“, the text 
+starts with an “if“. If that text refers to the 
+result of text prior to it, if the requirement of 
+the prior text is not met, it will not resolve. 
+8.1.1.2.3.5. There are cases where portions of 
+text start with “Then“. In these cases, there 
+will be text prior to it. If the text prior to it 
+has a requirement, if that requirement is 
+not met, it will not resolve. 
+8.1.1.2.3.5.1. If the prior text includes the 
+paying of a cost, the paying of that cost 
+becomes the requirement of the prior 
+text. 
+8.1.1.3. Continuous abilities are abilities that affect 
+the game as long as the ability is active. 
+8.1.1.4. Continuous abilities are written on cards as 
+“CONT 【zone】:(effect)“. If it is a continuous 
+ability that is active in all zones, it is written as 
+“CONT:(effect)“. 
+ 
+8.2. Category of Effects 
+8.2.1. Effects are divided into three categories; one 
+shot effect, continuous effect, and replacement 
+effect. 
+8.2.1.1. One shot effects are effects that do the 
+instructed actions while resolving, and ends 
+when the resolution is finished. 
+- For example, if an ability has text that says 
+“draw a card“ or “retire an opponent's 
+grade 1 or less rear-guard“, then the effect 
+from that ability is a one shot effect. 
+8.2.1.2. Continuous effects are effects that are 
+active for a specified duration (or, if it is not 
+specified, “during this game“). For abilities 
+such as “this unit gets +2000 until end of 
+that battle” or “this unit gets +1 until end of 
+turn”, the effect generated by those abilities are 
+continuous effects. 
+8.2.1.2.1. When a continuous effect with a 
+duration is created, if that duration 
+contradicts the current game state, that 
+continuous effect will not be created. 
+- For example, if a continuous effect with the 
+duration “until end of that battle” is created 
+during the main phase, as the game is not 
+currently in a battle, that continuous effect 
+will not be created. 
+8.2.1.3. Replacement effects are effects that 
+replace an event that is about to occur with 
+another event instead. 
+8.2.1.3.1. If an ability has a text that says “If you 
+would do A, instead do B“, then the effect 
+from that ability is a replacement effect. 
+8.2.1.3.2. If an ability has a text that says “If you 
+would do A, then you may (choose an option) 
+instead. If you do, do B“, then the effect from 
+that ability is an optional replacement effect. 
+8.2.1.3.3. Effects that change the modifications of 
+effects that modify information are 
+replacement effects. 
+8.2.1.3.4. Effects that change the contents of 
+actions that occur from then onward are 
+replacement effects. 
+ 
+8.3. Active Effects and Inactive Effects 
+8.3.1. Some effects make an effect “active“ or 
+“inactive“. If this happens, then follow the 
+process below: 
+8.3.2. If a part of or the entire effect is inactive under 
+a specific condition, then that part still exists 
+under that condition, but simply does not do 
+anything. If that part asks for a choice to be 
+made, that choice is not made. 
+8.3.3. If a part of or the entire effect is active under a 
+specific condition, then that part is inactive while 
+the condition is not met. 
+ 
+8.4. Check Timing/Play Timing, Abilities, and Effects 
+8.4.1. When a check timing resolves, the game 
+proceeds in the following order: 
+8.4.1.1. If there are any rule actions (Section 9. 
+Rule Action) that need to be resolved, then 
+resolve them simultaneously. Next, if there are 
+other rule actions to be resolved, then repeat 
+this step until there are no rule actions left to 
+be resolved. 
+8.4.1.2. If the turn player acquires any imaginary 
+gift, the turn player chooses one of them, 
+performs its imaginary gift resolution (12.15), 
+and returns to 8.4.1.1. 
+8.4.1.3. If the non-turn player acquires any 
+imaginary gift, the non-turn player chooses one 
+of them, performs its imaginary gift resolution 
+(12.15), and returns to 8.4.1.1. 
+8.4.1.4. If any automatic abilities controlled by the 
+turn player are standing by, then the turn 
+player chooses one of them, plays it, and 
+resolves it. Then, go to 8.4.1.1. 
+8.4.1.5. If any automatic abilities controlled by the 
+non-turn player are standing by, then the non-
+turn player chooses one of them, plays it, and 
+resolve it. Then go to 8.4.1.1. 
+8.4.1.6. End the check timing. 
+8.4.2. When a play timing is given to a player, the 
+game proceeds in the following order: 
+8.4.2.1. Resolve a check timing. The player gets 
+the play timing at this point. 
+8.4.2.2. The player chooses to do an action that 
+can be done at that time, or chooses to do 
+nothing. If he or she chose an action, if not 
+specified, then that player gets a play timing 
+again. 
+8.4.2.3. If he or she chose to do nothing, then that 
+play timing ends, and the phase or step 
+advances.
+```
+
+### Page 18
+
+```text
+8.5. Play and Resolve Cards and Abilities 
+8.5.1. Activated abilities, automatic ability, and cards 
+in hand need to be played and resolved to get its 
+effect. Continuous abilities are not played, and 
+the effect is always in effect. 
+8.5.1.1. Playing a card on to a vanguard circle is 
+called “normal ride“. 
+8.5.1.1.1. The status of the vanguard that rode 
+does not depend on the status of the ridden 
+vanguard, and is placed on that circle 
+standing. 
+8.5.1.2. Playing a card on to a rear-guard circle or 
+guardian circle is called “normal call“. 
+8.5.1.3. Playing a G unit on to a vanguard circle is 
+called “normal stride“. 
+8.5.1.3.1. When a G unit is put on a vanguard 
+circle by “normal stride“, it is put in the same 
+stand or rest state as the unit that was 
+stridden over. Other states do not depend on 
+the status of the unit that was stridden. 
+8.5.2. When you play a card or an ability, process it 
+in the following steps: 
+8.5.2.1. If you are playing a card, choose one of 
+your circles as appropriate. 
+8.5.2.1.1. If you are performing a ride, designate 
+one of your vanguard circles. 
+8.5.2.1.2. If you are performing a call, designate 
+one of your rear-guard circles if you are 
+calling a rear-guard, and designate the 
+guardian circle if you are calling a guardian. 
+8.5.2.1.3. If you are playing a card from the G 
+zone, choose your front row center vanguard 
+circle if you are striding, and choose the 
+guardian circle if it is a G guardian. 
+8.5.2.2. Choose an ability or a card in your hand. 
+When you choose a card in your hand this 
+way, you can only choose and reveal a card 
+that meets the grade requirement. When you 
+choose a card in the G zone, you can only 
+choose and reveal a card that meets the 
+requirement. 
+8.5.2.2.1. The grade requirement is different 
+between a normal ride, a normal call and a 
+normal stride. 
+8.5.2.2.1.1. When you normal ride, the grade of 
+the card you ride needs to be the same 
+grade as or one grade higher than your 
+current vanguard (or if your vanguard is in 
+a legion state, your Legion Leader). 
+8.5.2.2.1.2. When you normal call to a rear-
+guard circle, the grade of the card needs to 
+be less than or equal to the grade of your 
+current vanguard. There are no grade 
+restrictions when you normal call to the 
+guardian circle. 
+8.5.2.2.1.2.1. A player with no vanguard due 
+to some situation cannot normal call. 
+8.5.2.2.1.3. When you normal stride, the grade 
+of both players' vanguards needs to be 3 or 
+greater, or the grade of your vanguard 
+needs to be 3 or greater at the beginning of 
+your turn. 
+8.5.2.2.2. When you play a stride due to an 
+ultimate stride skill, the following conditions 
+must be met. 
+8.5.2.2.2.1. The card with that ultimate stride 
+skill and the unit on that master’s vanguard 
+circle must be from the same nation. 
+8.5.2.2.2.1.1. If the unit on the vanguard circle 
+has no nation information, you can only 
+perform ultimate stride with <<Cray 
+Elemental>>. 
+8.5.2.2.2.2. If it is due to the ultimate stride skill 
+(11.42) of a non-Gyze card (12.10), stride 
+can only be performed if there are 3 or 
+more face-up cards in the G zone of that 
+skill’s master. 
+8.5.2.2.2.3. If it is due to the ultimate stride skill 
+of a Gyze card, stride can only be 
+performed if that skill’s master’s vanguard 
+is grade 3 or greater, and there are 5 or 
+more types of <Zeroth Dragons> in the 
+bind zone. 
+8.5.2.3. If you are playing an activated ability or a 
+card other than a card from your G zone due to 
+striding, check the cost to play it and pay all 
+costs simultaneously. If you cannot pay a part 
+of or the entire cost, then you may not pay any 
+of the cost and the card or activated ability that 
+was attempted to be played is cancelled and 
+rewound. 
+8.5.2.3.1. If the activated ability to be played 
+originates from a hidden zone, and the cost 
+does not specify that the card with the ability 
+needs to be revealed, the origin of the 
+activated ability needs to be specified from 
+the corresponding hidden zone by revealing 
+that card. 
+8.5.2.4. If you are playing a card from your G zone 
+due to striding, check the cost to play it, and if 
+you can pay all of the costs, pay for all costs 
+simultaneously. If payment for any part of the 
+cost, or payment for all of the costs cannot be 
+fulfilled, the cost cannot be paid, and the play 
+of that card is cancelled. 
+8.5.2.5. If you are playing an activated ability, pay 
+its cost. 
+8.5.3. Resolve the card or ability. 
+8.5.3.1. If you are riding the card, perform the ride 
+(10.6) process. 
+8.5.3.2. If you are calling the card to your rear-
+guard circle, put that unit on that rear- guard 
+circle standing. 
+8.5.3.3. If you are calling the card to your guardian 
+circle, put that unit on the guardian circle 
+resting. 
+8.5.3.4. If you played an activated ability or 
+automatic ability, then perform the effects 
+indicated in that ability. 
+8.5.3.4.1. Effects are always performed in the 
+order written. 
+8.5.3.4.2. If part of the effect is written as a list, 
+perform the items among them whose 
+conditions are satisfied from the top 
+downwards.
+```
+
+### Page 19
+
+```text
+8.5.3.4.2.1. When determining which items in a 
+list should be performed, if the condition is 
+stipulated in the text prior to the list, 
+whether the listed item should be 
+performed is fixed when resolving the 
+stipulated portion. Even if there are 
+changes to the condition while performing 
+an item in the list, the items in the list that 
+should be performed does not change. 
+8.5.3.4.3. If multiple processes within an effect 
+are separated by “/”, it means to perform 
+both what comes before and after. 
+8.5.4. If the card or ability has a text that says 
+“choose (something)“, then you make the choice 
+when the effect resolves. 
+8.5.4.1. If the number to choose is specified, then 
+you need to make that many number of 
+choices as much as possible. You cannot 
+choose to not choose while it is possible for 
+you to choose. 
+8.5.4.1.1. If the number is specified as “up to“, 
+then you can choose any number between 0 
+and the number written in the text. If you 
+choose 0, then nothing is chosen. 
+8.5.4.1.2. If the number to choose is specified, 
+but it is impossible to make that many 
+choices, then you will make as many choices 
+as possible, and apply the effects on them. 
+8.5.4.1.3. If the number to choose is specified, 
+but cannot choose at all, then that choice is 
+not made. Effects that rely on the choice is 
+ignored. 
+8.5.4.1.4. If you need to choose any non- 
+revealed cards in a hidden zone, and the 
+condition to choose requires certain 
+information of the card, then there is the 
+possibility that the card in the hidden zone 
+does not have that information. In this case, 
+you can choose not to choose a card from 
+that zone even if there are cards with the 
+information in that zone. 
+8.5.5. The player or unit has been omitted in parts of 
+some abilities. 
+8.5.5.1. When an effect would have some action 
+performed, and the player who should perform 
+that action is not explicitly specified, the master 
+of that effect performs the action. 
+- For example, for a “draw a card” effect that 
+does not specify a player, the master of the 
+effect draws a card. 
+8.5.5.2. When an effect would have a card moved 
+to a specified zone, and which player’s zone is 
+not explicitly specified, move that card to its 
+owner’s zone. 
+- For example, for a “put this unit into the 
+drop zone” effect that does not specify 
+which player’s zone, put that unit into its 
+owner’s drop zone. 
+8.5.5.3. When an ability or effect refers to some 
+unit’s information or state, or would perform 
+some resolution or action on that unit, and that 
+unit is not explicitly specified, refer to the 
+information or state of the unit that is the 
+source of that ability or effect, or perform the 
+resolution or action on that unit. 
+- For example, when resolving a “when 
+placed, it gets Power +10000” effect that 
+does not specify a unit with “choose”, it 
+means “when this unit is placed, this unit 
+gets Power +10000”. 
+8.5.6. When an effect’s resolution refers to the 
+information of cards with a specified condition, if 
+there are multiple cards with the specified 
+condition, the master of that effect performs the 
+resolution with the information of each of those 
+cards being referred to in any order they wish. 
+- For example, for the resolution of “this unit 
+gets the card names of your rear-guards”, 
+if you have multiple rear-guards, you 
+decide the order of those rear-guards, and 
+this unit gets the card name of each of 
+those rear-guards in that order. 
+- For example, if you have 2 vanguards, unit 
+A with 10000 power and unit B with 20000 
+power, when you resolve a rear-guard’s 
+“increase or decrease this unit’s power to 
+match your vanguard’s power”, you decide 
+the order in which to resolve A and B, and 
+increase or decrease this unit’s power 
+match the value of the vanguard’s power in 
+that order. And the result is that this unit’s 
+current power is increased or decreased to 
+match the power of the vanguard that was 
+resolved last. 
+8.5.7. Automatic abilities are abilities that are played 
+during the check timing right after a specific 
+event happens. 
+8.5.8. If an automatic ability’s trigger condition is met, 
+then that automatic ability becomes stand by. 
+8.5.8.1. If an automatic ability’s trigger condition is 
+met multiple times, then that automatic ability 
+becomes stand by that many times. 
+8.5.9. When a check timing resolves, a player that 
+needs to play any automatic abilities chooses 
+any automatic abilities in stand by that he or she 
+is the master of and plays it, as long as it is not 
+in a “cannot be used“(12.2) state. After the ability 
+resolves, one of the chosen abilities that had 
+been standing by ceases to exist. 
+8.5.9.1. You must play your automatic abilities that 
+are standing by, and cannot choose not to play. 
+However, if multiple automatic abilities that you 
+are the master of is standing by, then you can 
+choose the order in which to play them. 
+8.5.9.2. If the master of a card whose automatic 
+ability is in stand by has changed when that 
+automatic ability is played, that automatic 
+ability is played as the automatic ability of its 
+master when it became stand by. 
+8.5.10. When an automatic ability requires a cost to 
+be paid, check the cost to play it and pay all 
+costs simultaneously. If you cannot pay a part of 
+or the entire cost, then you may not pay any of 
+the cost. 
+8.5.10.1. For an automatic ability that has a cost, if 
+the action written in the cost is not performed,
+```
+
+### Page 20
+
+```text
+the actions after “you may pay the cost. If you 
+do“ or [COST] will not be performed, unless 
+there was a fork due to a condition before the 
+payment of the cost or the usage restriction in 
+8.1.1.2.3.1. 
+8.5.10.1.1. For an automatic ability with options, if 
+an option with a “cannot activate the same 
+effect” restriction is chosen, even if nothing 
+was performed for that option, it can no 
+longer be chosen. 
+8.5.10.2. When you are to pay the cost for 
+“[COST]”, you can choose not to pay the cost. 
+8.5.11. Some automatic abilities trigger when a card 
+moves from one zone to another. This is called 
+“zone changing trigger“. 
+8.5.11.1. Some automatic abilities with zone 
+changing triggers refer to the information of 
+cards that triggered them. In that case, refer to 
+the information in the following manner: 
+8.5.11.1.1. If the card that triggered the ability 
+moved from a public zone to a hidden zone 
+or vice versa, then the ability refers to the 
+information while the card is in the public 
+zone. 
+8.5.11.1.2. If the card that triggered the ability 
+moved from the field to any other zone, then 
+the ability refers to the information while the 
+card was on the field. 
+8.5.11.1.3. Excluding the case mentioned in 
+8.5.11.1.2, if the card that triggered the ability 
+moved from a public zone to another public 
+zone, then the ability refers to the information 
+of the cards in the new zone. 
+8.5.11.1.4. If a unit has an automatic ability that 
+triggers when moving itself to the soul by any 
+type of ride, then that card has the ability as 
+though it were a unit until that automatic 
+ability is resolved. 
+8.5.11.1.5. If a unit has an automatic ability that 
+triggers when becoming a heart by any type 
+of stride, then that card has the ability as 
+though it were a unit until that automatic 
+ability is resolved. 
+8.5.12. Some effects create automatic abilities that 
+trigger at a later point in the game. This is called 
+a “timed trigger“. 
+8.5.12.1. Timed triggers trigger only once if not 
+specified. 
+8.5.13. Some automatic abilities have trigger 
+conditions that is not an event but a situation 
+(e.g. “When you do not have any cards in your 
+hand,“). This is called a “situation trigger“. 
+8.5.13.1. Situation triggers trigger only once when 
+the game meets that situation and it is not in 
+stand by. If the automatic ability resolves, and 
+the game is still in that situation, then the ability 
+triggers again. 
+8.5.14. When you play an automatic ability, even if 
+the card with that ability had changed its zone 
+after triggering, or even if that ability has been 
+nullified or no longer exists, you still need to play 
+that automatic ability. 
+ 
+8.6. Applying Continuous Effects 
+8.6.1. If any continuous effects or rules that modify 
+information are applied in the game and you 
+need to refer to any information of cards, then 
+apply each of effect in the following order: 
+8.6.1.1. Information printed on the card is the base 
+value. 
+8.6.1.2. Next, apply all modifications of information 
+from rules that are not due to effects, other 
+than from boosts (7.4.1.11.1) or guardians 
+(3.11.3). 
+8.6.1.3. Next, apply all gaining and losing of 
+abilities. 
+8.6.1.4. Next, apply all modifications that do not 
+change any numerical values. 
+8.6.1.5. Next, apply all modifications that increase 
+or decrease a numeric value by a specific 
+value. 
+8.6.1.6. Perform modifications from boosts 
+(7.4.1.11.1) and guardians (3.11.3), 
+8.6.1.7. Next, apply all modifications that set a 
+numerical value to a specific value. 
+8.6.2. If there are multiple continuous effects whose 
+order of application is not clear from the above 
+order, if any of those has an effect to set any 
+information to a particular value, that effect is 
+applied after the others. 
+8.6.3. If the order in which to apply two continuous 
+effects, effect A and effect B, cannot be decided 
+by 8.6.1.1-8.6.1.5 at this point, and whether 
+effect A is applied first changes what effect B 
+applies to or how it applies, effect B depends on 
+effect A. If an effect depends on another, and 
+there is no dependency in the opposite direction, 
+that effect is applied after the effect it depends 
+on. 
+8.6.3.1. If the order in which to apply multiple 
+continuous effects cannot be decided by 
+8.6.1.1-8.6.1.5, apply them in the order of time 
+stamp. 
+8.6.3.1.1. If the source of a continuous effect is a 
+continuous ability, the base time stamp is the 
+time that the card with that ability came into 
+the current zone. However, if the source of a 
+continuous effect is a continuous ability of a 
+unit on the field, the base time stamp is the 
+time that the card came on to the field from 
+other zones. 
+8.6.3.1.1.1. All other abilities' base time stamp 
+is the time that it was played. 
+8.6.3.2. If multiple continuous effects were 
+generated at the same time for any reason, the 
+turn’s player’s effects are considered to have 
+been generated first if the masters of the 
+effects are different, and the order they were 
+generated in is determined when they were 
+generated by their master if the effects have 
+the same master. 
+8.6.4. If a continuous effect that changes information 
+on a card was not generated from a continuous 
+ability, the card or player it applies to is 
+determined when it is generated, and cannot be 
+changed after that. Similarly, if that continuous
+```
+
+### Page 21
+
+```text
+effect refers to a specified value, that value is 
+determined when it is resolved, and does not 
+change after that. 
+- For example, when an “all of your front row 
+rear-guards get Power +5000 this turn” 
+continuous effect is generated from an 
+activated ability, the power of the rear-
+guards that were in the front row when that 
+ability resolved is modified. The 
+modification remains applied if that rear-
+guard is moved to the back row during that 
+turn, and does not apply to rear-guards 
+that are placed in the front row after the 
+resolution of this ability. 
+- For example, when a “your vanguard gets 
+Power +1000 for each of your rear-guards 
+this turn” continuous effect is generated 
+from an automatic ability, the number of 
+rear-guards considered by the effect is 
+determined when the effect resolves, and 
+does not change even if the number of 
+rear-guards changes after that. 
+8.6.4.1. For effects that “increase or decrease” 
+specific information to a numerical value, the 
+value of the increase or decrease is 
+determined by the difference when it is 
+resolved, and does not change after that. 
+- For example, when unit A’s power is 
+10000, and your opponent’s vanguard’s 
+power is 15000, if a “this unit’s power 
+increases or decreases to match one of 
+your opponent’s vanguards” process is 
+resolved, a continuous effect for power 
++5000 is created. That value does not 
+change after that during the duration. 
+8.6.4.1.1. For effects that “double” specific 
+information, it is applied as an effect that 
+increases by that information’s value when it 
+resolved. 
+8.6.5. Continuous effects that are applied from an 
+ability other than a continuous ability, other than 
+the continuous effects mentioned in 8.6.4, are 
+continuous effects that change the rules of the 
+game. These continuous effects will apply to 
+cards that changed zones after the time stamp of 
+the ability. 
+8.6.6. If a continuous effect changes information on 
+cards in a certain zone, then the effect is applied 
+to a card the moment the card comes into the 
+zone. 
+8.6.7. If an automatic ability’s trigger condition refers 
+to certain information on cards that enter the 
+zone, then the ability refers to that information 
+after all continuous effects in that zone have 
+been applied. 
+8.6.8. There are automatic abilities that 
+“nullify“ continuous effects even after it has 
+already been applied. A continuous effect which 
+has been “nullified“ will lose the effect at the 
+point when it has been nullified. 
+8.6.8.1. A continuous effect that has been 
+“nullified“ will lose the entirety of the effect. 
+Effects will never be partially nullified. 
+8.7. Applying Replacement Effects 
+8.7.1. When a replacement effect is applied, when 
+the event that replacement effect is applied to 
+would occur, it does not occur, and is replaced 
+by another event as directed by the indicated 
+target by a replacement effect. 
+8.7.1.1. In this case, the original event that was 
+replaced did not occur at all. 
+8.7.2. When multiple replacement effects are applied 
+to the same event, the order the replacement 
+effects are applied is determined by the player 
+that would be affected. 
+8.7.2.1. If the event being affected is a card or an 
+ability, its master determines the order. 
+8.7.2.2. If the event being affected is an action, the 
+player performing the action, or the master of 
+the card that action is applied to determines 
+the order. 
+8.7.2.3. Each replacement effect can be applied to 
+the same event 1 time at most 
+8.7.3. If a replacement effect is an optional 
+replacement effect (“when ~, you may ~ instead. 
+If you do, ~”), if that choice cannot be performed, 
+that replacement effect is not applied. 
+ 
+8.8. Final Information 
+8.8.1. If an ability references a specific card’s 
+information, orientation, the circle that card was 
+on, or any information or values that are 
+associated with that card, and during resolution 
+of the ability that card had moved from the 
+original zone to another zone, other than a circle 
+to circle movement, the ability will reference the 
+state from the zone it was originally in. 
+ 
+Section 9. Rule Action 
+ 
+9.1. General 
+9.1.1. Rule actions are actions made automatically 
+by the game when specific situations are 
+created. 
+9.1.2. Rule actions check the situation only during 
+check timings, and performs the action if the 
+situation is met. If the situation is met at any 
+other time, then rule actions are not performed at 
+that time. 
+9.1.3. If multiple rule actions are needed to be 
+performed, then they are done simultaneously. 
+ 
+9.2. Losing the Game 
+9.2.1. If any player fulfills 1 or more losing conditions, 
+then that player loses the game once. 
+9.2.2. If a player has six or more cards in his or her 
+damage zone, then he or she fulfills a losing 
+condition. 
+9.2.3. If a player has no cards in his or her deck, then 
+he or she fulfills a losing condition. 
+9.2.4. If a player has no vanguards on his or her 
+vanguard circle, and has no cards in his or her 
+soul, then he or she fulfills a losing condition.
+```
+
+### Page 22
+
+```text
+9.3. Overloaded Units 
+9.3.1. If you have a Legion Mate on any  which no 
+longer has an associated Legion Leader, move 
+that unit to your soul. 
+9.3.2. If you have a unit in the legion state and unit 
+that is not in a legion state nor heart state on any 
+, choose one of them that was placed last, and 
+move all of the other units on that circle to your 
+soul. 
+9.3.2.1. If you have multiple units that are not in a 
+legion state nor heart state that were placed 
+last on any , choose one of the units on that 
+circle, and move all of the others into your soul. 
+9.3.3. If you did not perform any of the processes of 
+9.3.1-9.3.2, and if you have multiple units that 
+are neither in a legion state nor a heart state, 
+move all units on that circle other than the one 
+last placed to your soul. 
+9.3.4. If you have two or more Legion Mates on any 
+, then move all Legion Mates other than the 
+one last placed to your soul. 
+9.3.4.1. If you have multiple Legion Mates that 
+were placed last on any , choose one of the 
+Legion Mates on that circle, and move all of 
+the others into your soul. 
+9.3.5. If you have multiple units on any , move all 
+of the units other than the one last placed to your 
+drop zone. 
+9.3.6. If you have multiple units that were placed last 
+on a , choose one of them and move all of the 
+others to your drop zone. 
+ 
+9.4. Illegal Guardians 
+9.4.1. If any units are placed on  when there is no 
+unit being attacked, or when a unit with the same 
+master as the attacking unit is placed on , 
+move that units to your drop zone. 
+ 
+9.5. Having No Vanguard 
+9.5.1. If you have no vanguards on your vanguard 
+circle, choose a card from your soul, and ride it. 
+9.5.1.1. If a player has no vanguards and no cards 
+that can be ridden in his or her soul, that player 
+loses the game by rule action. 
+9.5.1.2. If you have cards in the heart state, they 
+lose their heart state, and you choose 1 of 
+them to become the vanguard. 
+ 
+9.6. Damage Application Process 
+9.6.1. When any vanguard’s vanguard damage is 1 
+or greater, and there no cards in any player’s 
+trigger zone, carry out the damage application 
+process for that vanguard. 
+9.6.1.1. If there are multiple vanguards whose 
+vanguard damage is 1 or more, only carry out 
+the damage application process for the turn 
+player’s vanguard. 
+9.6.2. Reduce that vanguard’s vanguard damage by 
+1. 
+9.6.3. The master of that vanguard puts the top card 
+of his or her deck into his or her trigger zone 
+(4.10) face up. 
+9.6.4. If the master of that vanguard has a unit on his 
+or her vanguard circle or rear-guard circle with 
+the same clan as the card put into his or her 
+trigger zone from this process, carry out the 
+action indicated by the trigger icon of the card 
+(2.8.1.1) that was put into the trigger zone. This 
+is called a “damage check”. 
+ 
+9.7. Damage Resolution Process 
+9.7.1. If a card put into the trigger zone from the 
+damage application process is still in that trigger 
+zone, there are no rule actions to be resolved, 
+and there are no automatic abilities in stand by, 
+perform the damage resolution process. 
+9.7.2. Put the card in that trigger zone into the 
+damage zone of the master of that trigger zone. 
+ 
+9.8. Erasure of pseudo-cards 
+9.8.1. If a pseudo-card (12.12) is in its erase zone 
+(12.12.1.4.2) for any reason, erase that pseudo-
+card (12.12.1.3). 
+ 
+9.9. Illegal Gauge 
+9.9.1. If card A in the gauge zone is associated with 
+card B (4.12.3), and card B no longer exists, or 
+is a unit in the locked state, if there are no rule 
+actions other than illegal gauge rule actions or 
+damage process to be resolved, and there are 
+no automatic abilities in stand by (8.5.8), card A 
+is put into its owner’s drop zone. 
+9.9.2. When a card in the gauge zone becomes 
+associated with multiple cards, choose one of 
+the last cards to be associated, and cancel all of 
+the associations with other units. 
+ 
+9.10. Illegal Trigger 
+9.10.1. If there is a card remaining in the trigger 
+zone, other than when processing a drive check 
+(7.6.1.3) or damage check (9.6.3), put that card 
+into its owner’s drop zone. 
+ 
+9.11. Illegal Astral Plane Unit 
+9.11.1. If there is a unit whose race is not <Astral 
+Deity> on a circle with the Astral Plane type, that 
+unit is retired as a rule action. 
+9.11.2. If there is a locked card on a circle with the 
+Astral Plane type, that locked card is put into the 
+drop zone as a rule action. 
+ 
+Section 10. Specific Actions 
+ 
+10.1. Some actions are defined as specific actions. 
+ 
+10.2. Draw 
+10.2.1. “To draw“ is a specific action to move a card 
+from the top of your deck to your hand. See 3.12 
+for more details. 
+10.2.2. “When you draw by a card’s ability” refers to 
+all actions to draw cards, other than the normal 
+draw process in a draw phase (6.4.1.1.2). 
+10.2.2.1. Drawing from draw triggers (2.8.1.1.3) 
+and Accel II (12.15.2.4.4) is included in “when 
+you draw by a card’s ability”.
+```
+
+### Page 23
+
+```text
+10.3. Discard 
+10.3.1. “To discard“ is a specific action to move a 
+card from your hand or gauge zone to your drop 
+zone. 
+10.3.1.1. Discarding a card can happen as a cost 
+or an effect. 
+10.3.1.2. Discarding a card includes discarding a 
+card you chose, discarding a card your 
+opponent chose and discarding a card at 
+random. 
+10.3.2. When a card is put into your drop zone from 
+your hand, that card is considered to have been 
+discarded. 
+ 
+10.4. Retire 
+10.4.1. “To retire“ is a specific action to move a card 
+from your field to your drop zone. 
+10.4.2. When a unit is put into your drop zone from 
+the field, that unit is considered to have been 
+“retired“. 
+ 
+10.5. Place 
+10.5.1. “To place on (a circle)“ is a specific action to 
+move a card from a non-circle zone to a circle 
+zone. 
+10.5.1.1. If a unit is moved from a non-circle zone 
+to a circle zone, then it is “placed on“ that 
+circle, regardless of whether it was played or 
+not. 
+ 
+10.6. Ride 
+10.6.1. “To ride“ is a specific action to move a card 
+from a non-field and non-G zone to a vanguard 
+circle. 
+10.6.1.1. A ride played during the play timing of the 
+ride phase (6.5.1.1.2) is called a “normal ride“. 
+Otherwise, it is called a “superior ride“. See 
+8.5.1.1 for more details. 
+10.6.1.2. When you ride a unit, after that unit is 
+placed on the vanguard circle, the previous 
+vanguard is put into your soul. 
+10.6.1.2.1. The “when you ride” and “when rode 
+upon” trigger conditions are fulfilled at the 
+point that the new unit is placed on the 
+vanguard circle by riding. 
+10.6.1.2.1.1. If an automatic ability with the 
+“when rode upon” trigger condition 
+references a unit that moved to another 
+public zone or a unit that moved to another 
+zone and changed to the public state 
+immediately after the ride, it only 
+references the unit in the zone that it had 
+moved to. 
+- For example, when a vanguard has an 
+“when rode upon, call this unit to the 
+rear-guard circle” automatic ability, you 
+ride on this unit, and this card is put 
+from your soul to your drop zone 
+before this automatic ability resolves, 
+as the drop zone was not the zone it 
+moved to immediately after the ride, 
+this unit cannot be called from the drop 
+zone. 
+10.6.1.3. If you ride over your vanguard that is in a 
+legion state, the cards that were the Legion 
+Leader and Legion Mate move to the soul. 
+10.6.1.4. If you ride over your vanguard when it is a 
+G unit, the G unit does not move to soul, and is 
+returned to the G zone. 
+10.6.1.5. When there are heart cards on the 
+vanguard circle when you ride, the heart cards 
+move to soul. 
+10.6.1.6. When a Legion Mate is placed on the 
+vanguard circle due to legion, it is not a ride. 
+10.6.2. If multiple cards with the same master are to 
+be ridden simultaneously for some reason, that 
+master specifies an order for those cards, and 
+rides them one at a time in that order. 
+10.6.3. When you would ride a card, if that card you 
+are riding has an imaginary gift icon (2.16), 
+perform the imaginary gift resolution (12.15) for 
+the clan type indicated by that icon. 
+10.6.4. A card that is placed on a vanguard circle by 
+riding is considered as a new card in that 
+vanguard circle. Effects from its previous zone 
+do not persist. 
+ 
+10.7. Call 
+10.7.1. “To call” is a specific action to move a card 
+from a non-field zone to a rear-guard circle or 
+guardian circle. 
+10.7.1.1. This action is performed in the following 
+manner: 
+10.7.1.1.1. Choose the specified number of units 
+to call. 
+10.7.1.1.1.1. If the units being called are token 
+units, you do not choose any units at this 
+point. 
+10.7.1.1.2. Choose the circles on which each of 
+those units will be placed. 
+10.7.1.1.2.1. If the units being called are token 
+units, choose a circle for each token unit 
+being called to be placed.  
+10.7.1.1.2.2. If multiple units are being called 
+simultaneously due to an effect, then the 
+effect and the requirements for the units 
+being called cannot contradict with each 
+other, and you must call as many units as 
+possible according to 1.3.2. 
+10.7.1.1.2.2.1. If multiple units are being 
+called simultaneously to rear-guard 
+circles, you cannot choose the same 
+circle. Each of them must be called to a 
+separate circle. 
+10.7.1.1.3. Place all units being called 
+simultaneously. 
+10.7.1.1.3.1. If the units being called are token 
+units, create the specified token unit on 
+each of those circles (12.12.3.3). 
+10.7.1.1.4. If there are other units on the circle 
+the called unit is on that are not guardians, 
+retire those units. 
+10.7.1.2. Calls that can be performed in the play 
+timing of the main phase (6.6.1.2.1) or the play
+```
+
+### Page 24
+
+```text
+timing during the guard step of the battle phase 
+(7.5.1.2.2) are called normal calls. 
+10.7.1.2.1. There are two kinds of normal calls: 
+Calls made during the main phase and calls 
+of guardians made in a guard step during the 
+battle phase. 
+10.7.1.3. Calls besides normal calls are called 
+“superior call“. 
+10.7.1.3.1. Units superior called to a guardian 
+circle are called in the rest state. At this time, 
+for each of these units called, the non-turn 
+player chooses which of his attacked units it 
+guards. 
+10.7.1.4. The cards are called face up unless 
+specified otherwise by an effect. Also, the 
+information of that card become known when it 
+is being called. 
+- For example, if an ability has a text that 
+says “call the top card of (player’s) deck to 
+a rear-guard circle“ or “choose a random 
+card from (player’s) hand, and call it to a 
+rear-guard circle“, the player calling the 
+card would know the information of the 
+card, before choosing which rear-guard 
+circle to call it to. 
+10.7.2. A card that is placed on a rear-guard circle by 
+calling is considered as a new card in that rear-
+guard circle. Effects from its previous zone do 
+not persist. 
+ 
+10.8. Heal 
+10.8.1. “To heal“ is a specific action to move a card 
+from your damage zone to your drop zone. 
+ 
+10.9. Reveal 
+10.9.1. “To reveal“ is a specific action to show cards 
+to all players for a certain time. 
+10.9.1.1. When revealing cards as a cost, decide 
+all costs first, and reveal the cards at the same 
+time (8.5.2.3) that all other costs are paid. 
+10.9.1.2. If an effect asks you to reveal cards, then 
+show them until the end of the effect. 
+10.9.1.2.1. Cards return to being hidden after the 
+end of the revealing period. 
+10.9.1.3. Revealing cards do not change the zones 
+that they are in. 
+ 
+10.10. Search 
+10.10.1. “To search“ is a specific action to look 
+through cards in that zone to find a card. 
+10.10.1.1. If the zone is a hidden zone, then you 
+can choose not to find the cards even if you 
+know that there are cards with the appropriate 
+information. 
+10.10.1.2. If the zone is a public zone, if you have 
+any appropriate cards there, then you must 
+find them. 
+ 
+10.11. Shuffle 
+10.11.1. “To shuffle“ is a specific action to randomize 
+the order of cards in a hidden zone. 
+10.11.1.1. When a “to shuffle“ instruction follows a 
+“to search“ instruction, unless otherwise 
+specified, the card that was found is not 
+randomized, while the rest of the cards are 
+randomized. 
+10.11.1.2. When shuffling, even if the cards in a 
+hidden zone are made public or a player is 
+able to look at it due to an effect, the 
+information of the cards should not be 
+revealed, or looked at while shuffling. 
+ 
+10.12. Stand/Rest 
+10.12.1. To change the orientation of cards to a stand 
+state is called “to stand“, and to change cards to 
+a resting state is called “to rest“. See 3.16 for 
+more details. Each of them is a specific action. 
+ 
+10.13. Turn Face Up/Down 
+10.13.1. To change the state of a card to face up is 
+called “to turn face up“, and to change the state 
+of a card to face down is called “to turn face 
+down“. Each of these actions are specific 
+actions. 
+ 
+10.14. Drive Check 
+10.14.1. “To drive check” is a specific action to check 
+the trigger in a drive step. See “Section 3. Basic 
+Concepts” for more details. 
+  
+10.15. Counter-blast 
+10.15.1. In order to activate an ability, turning over a 
+specific number of face up cards in your damage 
+zone face down as a cost is the action “counter-
+blast“, and is indicated by the icon  or 
+ . 
+This is a specific action to pay a cost. 
+10.15.1.1. If it is written as [(counter-blast icon) 
+(number)-(requirement)], the specified number 
+of face up cards in the damage zone that 
+meets the requirement indicated after “-“ needs 
+to be turned face down in order to pay the cost. 
+10.15.1.2. If it is written as “(counter-blast icon) 
+(number)“ not as a cost but as a part of an 
+effect, the player specified by that effect, or the 
+master of the card that was chosen, chooses a 
+number of face up cards in his or her damage 
+zone equal to the number specified, and turn 
+them face down. If the number of face up cards 
+equal to the number specified cannot be 
+chosen, that action cannot be performed. 
+10.15.2. “To counter-blast” is to put face up cards in 
+the damage zone to face down by counter-blast. 
+10.15.2.1. “Counter-blast (number)” is to put that 
+number of face up cards in the damage zone 
+to face down by counter-blast. 
+ 
+10.16. Soul-blast 
+10.16.1. In order to activate an ability, moving a 
+specific number of cards in your soul to your 
+drop zone as a cost is called “to soul-blast“, and 
+is indicated by the icon  or 
+ . This is a 
+specific action to pay a cost. 
+10.16.1.1. If it is written as [(soul-blast icon) 
+(number)–(requirement)], the specified number 
+of cards in the soul that meets the requirement
+```
+
+### Page 25
+
+```text
+indicated after “-“ needs to be put into the drop 
+zone in order to pay the cost. 
+10.16.2. “To soul-blast” is to put cards from the soul 
+to the drop zone by soul-blast. 
+10.16.2.1. “Soul-blast (number)” is to put that 
+number of cards from the soul to the drop zone 
+by soul-blast. 
+ 
+10.17. Soul-charge 
+10.17.1. Soul-charge is indicated by an icon like “
+(1)“ or “
+ “. This means to move the 
+specified number of cards from the top of your 
+deck to your soul.  
+10.17.2. “To soul-charge” is to put cards from the top 
+of the deck into the soul by soul-charge. 
+10.17.2.1. “Soul-charge (number)” is to put that 
+number of cards from the top of the deck into 
+the soul by soul-charge. 
+ 
+10.18. Bind 
+10.18.1. “To bind” is a specific action to move cards 
+from a specific zone to the bind zone of the 
+owner of that card. 
+ 
+10.19. Battle 
+10.19.1. “To battle” is a specific action to change the 
+unit to be attacked in 7.4.1.6. 
+ 
+10.20. Give/Lose/Get 
+10.20.1. “To give (abilities)“ is a specific action that 
+treats as though a specific text is on a specific 
+card during a specific time. 
+10.20.2. “To lose (abilities)“ is a specific action that 
+treats the text as though it is not on a specific 
+card during a specific time. 
+10.20.3. “To get (abilities)“ is a specific action that 
+treats the text as though it is on a specific card 
+during a specific time. 
+10.20.4. When a player “gets a (specified clan type’s 
+imaginary gift)”, perform the imaginary gift 
+resolution (12.15) for the specified clan type. 
+10.20.4.1. This process does not wait for the check 
+timing, and is immediately carried out. 
+10.20.4.2. If the player that gets the imaginary gift 
+from the imaginary gift resolution is not 
+specified, the master of that effect gets the 
+imaginary gift. 
+10.20.5. When card A with any numerical information 
+“gets” that numerical information of card B with 
+the same type of numerical information, the 
+value of that numerical information of card B is 
+added to that numerical information of card A. 
+ 
+10.21. Lock 
+10.21.1. “To lock” is a specific action to change the 
+state of a card. By locking a card, the card 
+changes to the locked state. 
+10.21.2. A locked card is turned face down, put it to 
+stand and this card is regarded as a different 
+card from the original one. 
+10.21.3. A card in the locked state is known as a 
+“locked card“. A locked card is classified as a 
+type of card, but loses all card information stated 
+on the card, given to it as well as received. 
+10.21.4. When a locked card is to be referenced as 
+standing or resting, it will not be referenced as it 
+is neither standing nor resting. 
+10.21.5. When a locked card ceases to be in a 
+locked state, the card is turned face up. Also, 
+when a locked card is turned face up due to any 
+reason, it will cease to be a locked card, and can 
+be regarded as being unlocked (10.23), and the 
+lock type circle shall revert back to its circle type. 
+10.21.6. As long as a locked card is in a circle, it 
+shall continue to be a lock type circle. 
+10.21.7. If a circle ceases to be a lock type, it shall 
+revert back to its original circle type unless 
+otherwise stated. 
+10.21.8. If a G unit on a rear-guard circle is locked, 
+right after that card is turned face down, put that 
+card to the owner’s G zone face up. 
+10.21.9. If the text says “put it as a locked card“, that 
+card is put face down as a locked card and not 
+as a unit. 
+10.21.9.1. When a card “is placed as a locked 
+card” from a hidden zone such as the deck, 
+unless the effect instructs otherwise, that 
+card’s owner checks the information of that 
+card before deciding the circle to place it. 
+10.21.9.2. When a  that a unit or card is on 
+becomes a locked circle as a result of actions 
+like “put it as a locked card“, the unit or card 
+that was on that  is put into the owner’s 
+drop zone. 
+10.21.10. A card in the locked state does not 
+reference any other card. 
+ 
+10.22. Declare 
+10.22.1. “To declare“ is a specific action to point out 
+information specified by the card. 
+10.22.2. If declaring information, you must provide 
+the information of what is specified. 
+- For example, when “declaring“ a card 
+name, you must refer to a card that is 
+existing and be able to point out 
+specifically and uniquely the card you are 
+referring to. 
+ 
+10.23. Unlock 
+10.23.1. “To unlock“ is a specific action to change the 
+state of a card. By unlocking a card, a card is put 
+face up from a locked state. 
+10.23.2. An unlocked card is not considered as the 
+same card as the original card. 
+10.23.3. When unlocked, the card is in stand. It is not 
+regarded as standing from rest state, and cannot 
+be used for abilities and effects that require units 
+to become standing. 
+10.23.4. An unlocked card is not considered placing 
+the card on a circle. 
+ 
+10.24. Legion 
+10.24.1. “To legion“ is to put the card specified by a 
+Seek Mate ability on the vanguard circle of a 
+vanguard with that Seek Mate ability that is not
+```
+
+### Page 26
+
+```text
+in a legion state, in the same orientation as that 
+vanguard, and making them in a legion state. 
+10.24.1.1. In card text, legion may be indicated as 
+. 
+10.24.1.2. If vanguards that are already in a legion 
+state and vanguards that do not have the Seek 
+Mate ability wish to legion, it does not occur. 
+10.24.2. As long as they are in a legion state, the unit 
+with the Seek Mate icon is referred to as the 
+Legion Leader, the unit named by the Legion 
+Leader's Seek Mate icon is referred to as the 
+Legion Mate, and those units are associated with 
+each other. If either of them should change 
+zones, they will no longer be in a legion state. 
+10.24.3. Both the Legion Leader and the Legion 
+Mate are vanguards. 
+10.24.4. The Legion Leader and Legion Mate are two 
+different cards, and each have their own card 
+information. 
+10.24.5. When a unit that is in legion attacks, rest 
+both the Legion Leader and the Legion Mate, 
+and both of them become the attacking unit. 
+Neither can attack alone, nor can they be forced 
+to attack by an effect. 
+10.24.5.1. If either of the units that is in legion is 
+restricted from attacking a specific unit by an 
+effect, both the Legion Leader and the Legion 
+Mate cannot attack that unit. 
+10.24.5.2. If an effect allows either of the units that 
+is in legion is to attack a specific unit, as long 
+as the other unit is not restricted from attacking 
+that unit by an effect, both the Legion Leader 
+and the Legion Mate attack that unit. 
+10.24.6. The power of the Legion Leader in legion 
+while it attacks, is equal to the sum of the power 
+of the Legion Leader and the Legion Mate. If the 
+sum is greater than the power of your opponent’s 
+unit, the attack only hits once, and if it hits, it 
+deals damage equal to the critical of the Legion 
+Leader. 
+10.24.6.1. If for any reason, a “cannot deal 
+damage” effect is applied to a Legion Leader 
+or Legion Mate that is attacking, the Legion 
+Leader or Legion Mate associated with that 
+unit will be unable to deal damage as well. 
+10.24.7. If for any reason, a unit that is in legion 
+would be dealt damage, the vanguard damage is 
+increased by the damage dealt. 
+10.24.8. When a unit that is in legion is attacked, the 
+power of the Legion Leader is referred to. 
+10.24.9. During your ride phase, if your vanguard is 
+in legion, you can only ride a card with the same 
+grade as or one grade higher than your Legion 
+Leader. 
+10.24.10. When a Legion Leader or Legion Mate is 
+put to stand or rest, the state of the Legion 
+Leader or Legion Mate associated with that unit 
+changes to be the same. 
+10.24.11. If a Legion Leader or Legion Mate is 
+restricted from changing its state, the Legion 
+Leader or Legion Mate associated with that unit 
+is also restricted from changing its state. 
+10.24.12. “When (unit) “ refers to when a unit 
+changes from not being in legion, to being in 
+legion. 
+10.24.13. “If (unit) is “ refers to whether that unit 
+is in a legion state at that point of time. 
+10.24.14. “During the turn that this unit “ refers 
+to the turn in which a unit changed from not 
+being in legion, to being in legion. 
+10.24.15. The Legion Mate cannot attack, nor can it 
+be forced to attack by any effect. 
+10.24.16. The Legion Mate vanguard cannot activate 
+its Legion ability. The Legion Mate vanguard 
+cannot  as a Legion Leader. 
+10.24.17. If referencing card A as “card that can 
+legion“, either card A as the card specified by the 
+seek mate ability, or the card specified by card 
+A’s seek mate ability is referenced. 
+10.24.18. If specified to become legion state while 
+card A is in heart state (10.26) and card B is a 
+possible legion mate, the procedure is as 
+follows. If card A has the seek mate ability, and 
+card B has been specified in the seek mate 
+ability, they become in legion state with card A 
+being the legion leader and card B being the 
+legion mate, and both cards become associated 
+with the current vanguard that does not have a 
+legion mate. If not, they become in legion state 
+with card B being the legion leader and card A 
+being the legion mate, and both cards become 
+associated with the current vanguard that does 
+not have a legion mate. 
+10.24.18.1. If card A is already in the legion state, it 
+will not become in the legion state with other 
+cards. 
+ 
+10.25. Delete 
+10.25.1. “To delete“ is a special action to change the 
+state of a unit. By deleting a card, the card 
+changes to the deleted state. 
+10.25.2. When a unit changes to the deleted state, it 
+maintains its orientation, and is turned face 
+down. That unit is considered to be the same 
+unit as the original unit. 
+10.25.3. A unit in the deleted state is known as a 
+“deleted unit“. A deleted unit is a type of unit, but 
+its power is reduced by the power written on the 
+card, and it loses the text that is written on the 
+face up side. Skill icons and other card 
+information are maintained. However, effects of 
+the continuous abilities of a deleted unit that 
+modify its power, or gives it or has it lose 
+abilities, are not maintained. 
+- For example, when a “King of Knights, 
+Alfred“ vanguard that gets +2000 power 
+from the ability of “Starlight Unicorn“, is 
+deleted, its power becomes 2000. Also, 
+since it has no text, it can be boosted. 
+10.25.4. A deleted unit has a stand/rest orientation, 
+and battles as a unit that is not deleted would. 
+10.25.5. When a deleted unit ceases to be in a 
+deleted state, the unit is turn faced up. Similarly, 
+when a deleted unit is turned face up for any 
+reason, it ceases to be in a deleted state.
+```
+
+### Page 27
+
+```text
+10.25.6. All players can check the face up side of a 
+deleted unit. 
+10.25.7. If a deleted unit is given or gets an ability, it 
+is given or gets the ability as per normal. 
+10.25.8. If the power of a unit in the deleted state is 
+reduced, it is reduced as per normal. 
+10.25.9. If a deleted unit has its information modified 
+by any continuous effect, and ceases to be in a 
+deleted state during the duration of that effect, 
+that modification continues to be in effect. 
+10.25.10. A unit in a legion state maintains its legion 
+state regardless of whether it is in a deleted 
+state. 
+10.25.11. When a deleted unit is ridden on, that unit 
+(and that unit’s associated Legion Mate if it 
+exists) are put into the soul face up. 
+ 
+10.26. Becoming a Heart 
+10.26.1. “Becoming a heart“ is a special action that 
+changes the state of a card on the vanguard 
+circle. By becoming a heart, a card changes to 
+the heart state. Even when a card changes to 
+the heart state, it does not change zones. 
+10.26.2. A card that changes to the heart state does 
+not maintain its orientation, and is put in a face 
+up standing state, but its legion state persists. 
+10.26.3. A card in the heart state is known as a 
+“heart card“. A heart card is a type of card, but it 
+is not a unit, and only has its card name and 
+power. However, when being referred to as a 
+card, all the information written/given/gained on 
+its front can be referred to. 
+10.26.4. When cards in the legion state changes to 
+the heart state, both cards become heart cards. 
+When the heart cards lose their heart state, they 
+become a vanguard in the legion state. However, 
+this is not considered as “to legion“. 
+10.26.5. Cards that change to the heart state are 
+associated with a new vanguard which is a 
+vanguard that is not a Legion Mate. 
+10.26.5.1. Choose 1 of the associated cards in a 
+heart state that is not a G unit. The vanguard 
+gains the card name of the chosen card, and 
+the power written on the chosen card is added 
+to the vanguard's power. 
+10.26.5.2. If an associated card in the heart state is 
+moved from the vanguard circle, if it was a 
+card that was chosen in 10.26.5.1 or 10.27.2.2, 
+the vanguard loses the card name and power it 
+had gained. After that, if there are other cards 
+in the heart state that are not G units, choose 1 
+card from among them, and the vanguard 
+gains the card name of that card, and the 
+power written on the chosen card is added to 
+the vanguard’s power. Also, if that card is not 
+associated with the G unit it becomes 
+associated with it. 
+10.26.6. When a card in the heart state loses that 
+state, it is not considered as “being placed on“. 
+10.26.7. If a card in the heart state moves anywhere 
+other than the vanguard circle, it loses its heart 
+state, and loses its association with the 
+vanguard. 
+10.27. Stride 
+10.27.1. “To stride“ is a special action puts a face 
+down G unit from your G zone on your vanguard 
+circle. It is may be indicated as  in card 
+text. 
+10.27.2. Stride is done with the following steps. 
+10.27.2.1. Place the G unit in the G zone being 
+stridden on the front row middle vanguard 
+circle as the vanguard. 
+10.27.2.1.1. When a G unit is placed on the 
+vanguard circle by stride, it is placed in the 
+same stand or rest orientation as the stridden 
+unit. All other orientations do not persist. 
+10.27.2.2. All of the vanguards that were originally 
+on the vanguard circle become a heart. The 
+cards that change to a heart state are 
+associated with the G unit that became the 
+new vanguard. 
+10.27.2.3. Choose 1 of the associated cards in a 
+heart state that is not a G unit. The G unit that 
+was placed on the vanguard circle gains the 
+card name of the chosen card, and the power 
+written on the chosen card is added to the G 
+unit that was placed on the vanguard circle. 
+10.27.3. When a G unit is to be placed in the G zone, 
+all of the cards in a heart state associated with it 
+change to no longer in a heart state, and to be in 
+the same orientation as the G unit. After that, the 
+G unit is placed in the G zone. 
+10.27.4. To stride is not a ride or call. 
+10.27.5. When a G unit that was placed on the 
+vanguard circle by ultimate stride is returned to 
+the G zone, after returning it to the G zone, 
+remove all of the cards from that G zone. 
+ 
+10.28. Losing cost 
+10.28.1. “To lose its cost“ is a specific action where 
+for the specified duration, when the cost for the 
+applicable ability is to be paid, the actions 
+indicated by the cost are not performed. 
+ 
+10.29. Counter-charge 
+10.29.1. Counter-charge is indicated by an icon like 
+“ (1)“ or “
+ “. This means to choose a 
+specific number of cards in your damage zone, 
+and turn them face up. 
+10.29.2. “To counter-charge” is to put face down 
+cards in the damage zone to face up by counter-
+-charge. 
+10.29.2.1. “Counter-charge (number)” is to put that 
+number of face down cards in the damage 
+zone to face up by counter -charge. 
+10.29.3.  
+ 
+10.30. Time Leap 
+10.30.1. “To time leap“ is a special action. 
+10.30.2. “To time leap“ is to bind the chosen rear- 
+guard if a rear-guard is chosen, or that unit itself 
+if that is the case. If it was bound, for each card 
+that was bound, search your deck for up to one 
+card with a grade that is 1 grade greater than the 
+card that was bound and call it, and shuffle your 
+deck. At the end of that turn, put the unit that
+```
+
+### Page 28
+
+```text
+was called on the bottom of its owner’s deck. If it 
+was put this way, the owner of the card that was 
+bound by time leap calls it. 
+ 
+10.31. To Move 
+10.31.1. When “move“ or “put a unit on a circle“ is 
+written in text, it refers to a unit placed within the 
+field being placed on another circle within the 
+field. 
+10.31.2. When intercepting or exchanging the 
+position of cards placed on circles, with regards 
+to the text, the cards are considered as being 
+moved. 
+10.31.3. With regards to the text, riding and calling 
+units are not considered as moving. 
+10.31.4. When other units are moved to a vanguard 
+circle with a G unit, the original G unit is not put 
+into the soul, and is returned to the G zone. 
+ 
+10.32. Dealing Damage 
+10.32.1. When a rule or text says “deal (number) 
+damage“ to a vanguard, increase that 
+vanguard’s vanguard damage by the specified 
+number. 
+10.32.2. The damage process for damage dealt here, 
+is carried out in the damage process within the 
+rule action. 
+ 
+10.33. To Attack 
+10.33.1. If “(unit A) attacks (unit B)“ is directed by the 
+text, after the resolution of the effect currently 
+being processed, and after the check timing 
+specified in the rules, it is resolved in the 
+following manner. 
+10.33.1.1. Unit A is a specified attacking unit in the 
+standing state that is not restricted from 
+attacking by effects, and unit B is a specified 
+unit being attacked that is not restricted from 
+being attacked by effects. If this combination 
+cannot be specified, the action to attack 
+concludes. 
+10.33.1.2. Attack resolution (7.2) occurs. You 
+cannot specify a boosting unit (7.4.1.11) for 
+this attack resolution. Then, return to 
+10.33.1.1. 
+10.33.1.3. After the battle begins, if there is text 
+during that battle that states “attack a unit“, 
+after the ongoing battle ends, the resolution for 
+that “attack a unit“ occurs. 
+10.33.2. If there is an instruction for multiple units to 
+attack, if there are units whose master is the turn 
+player among them, the turn player chooses one 
+of the units they are the master of from among 
+them, and if not, the non-turn player chooses 
+one of the units they are the master of from 
+among them, and carries out the direction to 
+attack, and this is repeated until there are no 
+more units directed to attack. 
+10.33.3. If there are processes following the direction 
+to attack that reference “that attack”, it refers to 
+the battle from the attack process performed 
+from that direction to attack. 
+ 
+10.34. To Dominate 
+10.34.1. If “dominate“ a unit is specified in the text, 
+the master of the effect that contains those text 
+will become the master of that unit and can use 
+that unit temporarily. 
+10.34.1.1. During this period while the master is 
+changed, with regards to the master of that 
+effect, that unit becomes in “dominated state“, 
+and that master is now regarded as the 
+“dominating player“ of that unit. The master of 
+that unit before it became dominated is 
+regarded as the “original master“. 
+10.34.1.1.1. While in dominated state, the unit in 
+dominated state is not referenced as a rear-
+guard of the original master. 
+10.34.1.1.2. A unit in dominated state cannot 
+further become in dominate state. 
+10.34.1.2. If the duration of domination is not 
+specified, that card is in dominated state only 
+during the resolution of the effect that contains 
+the “dominate“ action. 
+10.34.1.3. If the master of a unit in dominated state 
+is referenced at specified points of time from 
+then on, the master of that unit at those points 
+in time will be confirmed, and referenced. As a 
+result, players other than the dominating player 
+may be referenced as the master at those 
+points of time. 
+- For example, if a rear-guard in the 
+dominated state uses a “You do not stand 
+on your next stand phase“ effect, and it is 
+no longer in dominated state after that 
+effect, the original master of that rear-
+guard cannot stand it during the next stand 
+phase. 
+10.34.1.4. If a legion leader or legion mate in the 
+legion state becomes in dominated state, the 
+associated unit becomes in dominated state as 
+well. 
+10.34.2. When referencing units whose master is a 
+dominating player, the units in dominated state 
+are included. At the same time, when referencing 
+the master of a unit in dominated state or related 
+information, the dominating player and those 
+related information are referenced. 
+10.34.2.1. When referencing the number of units 
+whose master is a dominating player, the units 
+in dominated state are included. 
+10.34.2.2. Effects applied by the units whose 
+master is a dominating player can be applied 
+by the units in dominated state. 
+10.34.2.3. The dominating player can use the 
+abilities of the units in dominated state as 
+though he or she is the master. 
+10.34.2.3.1. If a unit in dominated state activates 
+an automatic ability with a specific event 
+(8.5.12), and the conditions are fulfilled, the 
+dominating player at the time that automatic 
+ability is activated can play the ability. 
+10.34.2.4. When a unit in dominated state is 
+locked, it is no longer in dominated state. 
+10.34.2.5. When the dominating player’s deck is to 
+be shuffled during an effect of a unit where the
+```
+
+### Page 29
+
+```text
+master is a dominating player after moving 
+cards to the dominating player’s deck and 
+other decks, all players will shuffle their decks. 
+10.34.3. The position of units in dominated state will 
+reference the dominating player as a standard. 
+10.34.3.1. If the rear-guard on the opponent’s right 
+column is dominated, it becomes a rear-guard 
+on the left column of the dominating player, 
+and is considered to be in the same column as 
+the other rear-guards of the dominating player 
+in his or her left column. Vice versa for the 
+opponent’s left column. 
+10.34.3.2. Even when different circles with the 
+same master are circles of the same row, they 
+do not consider each other to be in another 
+front or back row. 
+10.34.4. If a unit in dominated state is moved to other 
+areas due to rule or effect, the rules are as 
+follows. 
+10.34.4.1. If it is moving to an area that is not a 
+circle, it will move to that area of its owner. 
+10.34.4.2. If it is moving to another rear-guard 
+circle or the vanguard circle, and the master of 
+that circle is different from the owner of that 
+unit, that move cannot occur. 
+10.34.4.3. All other movements aside from the 
+above will be resolved according to the usual 
+ruling. 
+10.34.5. The master of the circle that the unit in 
+dominated state is in does not change. 
+10.34.5.1. If riding or calling a rear-guard whose 
+owner is different from the master of the circle 
+that the unit in dominated state is on, it does 
+not occur. 
+10.34.6. A rear-guard in dominated state cannot 
+boost nor intercept. 
+10.34.7. If a vanguard in dominated state is 
+attacking, the dominating player reveals cards 
+from his or her deck onto his or her trigger zone 
+during the drive check of the drive step. 
+10.34.8. If a dominated unit is on a circle designated 
+by any Imaginary gift resolution, the changes 
+applied to that circle are not applied. 
+ 
+10.35. To Remove 
+10.35.1. When the text requires you “to 
+remove“ cards, those cards will be removed from 
+the game. 
+10.35.1.1. All players may see the information of 
+removed cards. 
+ 
+10.36. Flip over 
+10.36.1. If a Gyze card (12.10.1) needs to “flip 
+over“ according to the text, change active side of 
+the Gyze card (12.10.3) to the non-active side. 
+10.36.2. It is different from the action to turn a card 
+face down (10.13). 
+10.36.3. If a card that is not the Gyze card is to be 
+flipped over due to any reason, nothing will be 
+performed. 
+ 
+10.37. Switch 
+10.37.1. When the text requires you to “switch” cards 
+A and B, card A moves to card B’s zone, and 
+card B moves to card A’s zone at the same time. 
+10.37.1.1. If any card is no longer in the specified 
+zone when this effect resolves for any reason, 
+or if it cannot be moved out of the zone, the 
+“switch” action will not be performed. 
+10.37.2. When the text requires you to “switch” zones 
+A and B, the cards in zone A and the cards in 
+zone B move to each other’s zones at the same 
+time. 
+ 
+10.38. Put as gauge / Move gauge 
+10.38.1. If a card is “put as gauge” from card text, 
+move that card to its owner’s gauge zone (4.12). 
+10.38.1.1. If card A is “put as gauge” of card B, on 
+top of putting card A as gauge, that card is 
+associated with card B (4.12.3). 
+10.38.1.1.1. If card and card B have different 
+owners, the “put as gauge” action is not 
+performed. 
+10.38.1.2. If a card is “put as (name) gauge” from 
+card text, on top of putting that card as gauge, 
+that card gains (name) as name information 
+(4.12.4). 
+10.38.1.3. If multiple gauges are put in a single 
+action, choose the number to be put if there is 
+a choice of quantity, and move the specified or 
+chosen number of cards to the gauge zone. 
+- For example, When resolving a single 
+action “put up to three cards from the top 
+of your deck as gauge” with “two cards”, 
+move 2 cards from the deck as “two cards” 
+was decided. You may not look at the 
+information of the first card before deciding 
+whether to put a second card. 
+10.38.2. If a “move gauge” action is performed on a 
+card that is a gauge, that card’s association with 
+the card it is currently associated with is 
+cancelled, and that card becomes associated 
+with the card specified as the target of the move. 
+10.38.2.1. Gauge cards do not change zones from 
+the move gauge process. 
+10.38.2.2. If the card specified as the target of the 
+move and the gauge card being moved have 
+different owners or masters, that “move gauge” 
+action is not performed. 
+ 
+10.39. Increase / Decrease 
+10.39.1. If the numerical value of actions denoted by 
+an icon, such as counter-blast, are “increased” 
+or “reduced”, it means that the numerical value 
+for the action denoted by the icon is increased or 
+reduced by the specified value when performed. 
+10.39.2. If a process states that the numerical value 
+for the “next time” of a process is increased or 
+reduced, when it is performed, it means that 
+numerical value is increased or reduced for the 
+next instance the process is performed. It does 
+not matter whether other processes are 
+performed before that process.
+```
+
+### Page 30
+
+```text
+10.39.2.1. If there are multiple processes that 
+increase or reduce the numerical value for the 
+“next time” a process is performed, they are 
+added together. 
+ 
+10.40. To Activate 
+10.40.1. If a card text says that an ability will activate, 
+then the meaning will depend on which category 
+the ability is in. 
+10.40.1.1. "To activate" a continuous ability is to put 
+the ability into effect. 
+10.40.1.2. "To activate" an activated ability is to 
+play the ability. 
+10.40.1.3. "To activate" an automatic ability means 
+that the ability was triggered by an event, and 
+becomes "stand by". 
+10.40.1.3.1. “To activate (a specific) automatic 
+ability (number) of times” means that when 
+the automatic ability is played, its state of 
+standing by is not cancelled (8.5.9) until that 
+state of standing by of that automatic ability 
+is replayed the specified number of times. 
+10.40.1.4. “To activate” a process that is not an 
+ability means to perform that process. 
+10.40.1.5. If “abilities do not activate” from a 
+specific state, it means that automatic abilities 
+with the specified state as a trigger will not 
+become stand by from that specified state. 
+ 
+10.41. (Trigger Unit) is Revealed 
+10.41.1. “When (trigger unit) is revealed” means that 
+trigger unit’s card is placed in the trigger zone 
+from a drive check (7.6.1.2) or damage check 
+(9.6.3). 
+ 
+10.42. Changing of (Attack Target) 
+10.42.1. When there is a direction to “change the 
+attack target (to a specified unit)” for an attacking 
+unit, the specified unit being attacked by that 
+attacking unit becomes that specified unit. 
+10.42.2. When the attack target of a unit that is 
+attacking multiple units is changed to a specified 
+unit by an effect, the specified unit being 
+attacked by that attacking unit becomes that 
+specified unit alone. 
+ 
+Section 11. Keywords 
+ 
+11.1. Overview 
+11.1.1. Some actions are defined as keyword 
+abilities. 
+ 
+11.2. Drive Abilities 
+11.2.1. A collective term for abilities that increase a 
+unit's drive, and are indicated with skill icons. 
+11.2.2. If a unit has multiple drive abilities, only the 
+drive ability with the largest increase to drive is in 
+effect. If there are multiple drive abilities with the 
+largest increase, only the drive ability that was 
+most recently obtained is in effect. 
+11.2.3. Twin Drive!! ( ) 
+11.2.3.1. “Twin Drive!!“ is a drive ability. “Twin 
+Drive!!“ gives the unit with the ability +1 drive. 
+11.2.4. Triple Drive!!! ( ) 
+11.2.4.1. “Triple Drive!!!“ is a drive ability. “Triple 
+Drive!!!“ gives the unit with the ability +2 drive. 
+ 
+11.3. Intercept ( ) 
+11.3.1. “Intercept“ is an ability. During your 
+opponent’s guard step, if your unit with 
+“Intercept“ is in a front rear-guard circle, the unit 
+is not being attacked, and another of your units 
+is being attacked, then you can move the card 
+with intercept to your guardian circle. You can 
+intercept with a unit even if it is resting. 
+ 
+11.4. Boost ( ) 
+11.4.1. “Boost“ is an ability. If your unit attacks in a 
+battle phase, you can choose your unit with 
+“Boost“ in stand in the same column and boost 
+the attacking unit. The boosting unit is rested, 
+and the power of the boosted unit increases by 
+the power of the boosting unit. See 7.4.1.11 for 
+more details. 
+ 
+11.5. Restraint 
+11.5.1. “Restraint“ is an ability. Units with restraint 
+cannot be chosen as an attacking unit in an 
+attack step. 
+ 
+11.6. Limit Break 
+11.6.1. Limit break is a collective term for abilities 
+with the limit break icon directly following CONT, 
+AUTO, ACT, or 【(zone)】. The limit break icon is 
+indicated as  or . The ability with limit 
+break becomes active when the specified 
+number or more cards are in the master’s 
+damage zone. 
+11.6.2. Units that have the ability with the icon 
+defined in 11.6.1 are defined as units “with 
+“ or “with “. 
+11.6.3. Limit break can be divided into the following 3 
+categories according to the type of ability. 
+11.6.3.1. If it is written as “CONT LB (number):“, 
+then it means “CONT As long as you have 
+(number) or more cards in your damage zone“. 
+11.6.3.1.1. Limit break on continuous abilities 
+check the number of cards in your damage 
+zone continuously. 
+11.6.3.2. If it is written as “AUTO LB (number):“, 
+then it means “AUTO This ability is active while 
+you have (number) or more cards in your 
+damage zone.“. 
+11.6.3.2.1. If the condition of an automatic ability 
+is met but the number of cards in your 
+damage zone is less than then specified 
+number, then that ability will not trigger. If it 
+triggers, then it will resolve even if the 
+number of cards in your damage zone 
+changes after that point. 
+11.6.3.3. If it is written as “ACT LB (number):“, then 
+it means “ACT You can activate this ability 
+while you have (number) or more cards in your 
+damage zone.“. 
+11.6.3.3.1. It checks the number of cards in your 
+damage zone when it is played. If it is
+```
+
+### Page 31
+
+```text
+played, then it resolves even if the number of 
+cards in your damage zone changes after 
+that. 
+ 
+11.7. Forerunner 
+11.7.1. “Forerunner“ is an automatic ability. 
+11.7.2. “Forerunner” means “when a unit of the same 
+clan rides on this unit, you may call this unit to 
+your rear-guard circle. 
+ 
+11.8. Lord 
+11.8.1. “Lord“ is an ability. If a player has a unit with 
+“Lord“ and another unit without a same clan as 
+the unit with “Lord“, the unit with “Lord“ cannot 
+attack. 
+ 
+11.9. Sentinel 
+11.9.1. “Sentinel“ is an ability. A deck can only 
+contain up to four cards with the 
+“Sentinel“ ability. 
+11.9.2. Cards with the sentinel ability are referred to 
+as “Sentinels“. 
+ 
+11.10. Seek Mate 
+11.10.1. “Seek Mate“ is a collective term for abilities 
+with the Seek Mate icon directly after a “:“. The 
+Seek Mate icon is indicated with icons similar to 
+ and , with the “Legion“ word 
+and a number, and one or more [card 
+information] directly after it. As there are multiple 
+types of Seek Mate icons, within this document, 
+it will be represented by . 
+11.10.1.1. The [card information] written directly 
+after a Seek Mate icon is the card name of the 
+card that the unit with the Seek Mate icon can 
+legion with, or the limits on the cards that can 
+be searched by that Seek Mate ability. 
+11.10.2. “ACT 【 】  [card information]“ has 
+the meaning of “If this unit has never been in a 
+legion state, and your opponent's vanguard is 
+grade 3 or greater, “ACT 【 】:[Choose four 
+cards from your drop zone, and put them on the 
+top of your deck in any order] Search your deck 
+for up to one card that matches [card 
+information], legion, and shuffle your deck. This 
+ability cannot be used for the rest of that game.“. 
+11.10.2.1. Multiple [card information] and ‘or’ may 
+be written directly after the Seek Mate icon in 
+the form of “[card information] or [card 
+information]“. You can only Legion with, or 
+search for with Seek Mate, one card that 
+matches one or more of the [card information] 
+written. 
+- For example, if a unit has the ability 
+“  “Blaster Blade“ or “Blaster Blade 
+Seeker““, it can legion with, or search for 
+with seek mate, either “Blaster Blade“ or 
+“Blaster Blade Seeker“. 
+ 
+11.11. Stride Skill 
+11.11.1. Stride Skill is a collective term for abilities 
+that begin with . It specifies the timing and 
+cost for that card to normal stride, as well as 
+provide a simple explanation of how to stride. 
+11.11.2. The stride skill is written as “  
+(Released when both players' vanguards are 
+grade 3 or greater!)-(timing)-(cost)  this 
+card on your  from face down“. 
+ 
+11.12. Generation Break 
+11.12.1. Generation break is a collective term for 
+abilities with the generation break icon directly 
+following CONT, AUTO, ACT, or “【(zone)】“. The 
+generation break icon is indicated as  or 
+. The ability with generation break becomes 
+active when the total number of face up G units 
+on the master's  and G zone is equal to or 
+more than the specified number. 
+11.12.2. Units that have the ability with the icon 
+defined in 11.12.1 are defined as units “with 
+“ or “with “. 
+11.12.3. Generation break can be divided into the 
+following 3 categories according to the type of 
+ability. 
+11.12.3.1. If it is written as “CONT GB(number):“, 
+then it means “CONT As long as you have 
+(number) or more face up G units on your     
+and G zone“. 
+11.12.3.1.1. Generation break on continuous 
+abilities check the number of face up G units 
+on your  and G zone continuously. 
+11.12.3.2. If it is written as “AUTO GB(number)“, 
+then it means “AUTO This ability is active while 
+you have (number) or more face up G units on 
+your  and G zone“. 
+11.12.3.2.1. If the condition of an automatic ability 
+is met but the number of face up G units on 
+your  and G zone is less than the 
+specified number, then that ability will not 
+trigger. If it triggers, then it will resolve even if 
+the number of face up G units in your    
+and G zone changes after that point. 
+11.12.3.3. If it is written as “ACT GB(number)“, then 
+it means “ ACT You can activate this ability 
+while you have (number) or more face up G 
+units in your  and G zone“. 
+11.12.3.3.1. It checks the number of face up G 
+units in your  and G zone when it is 
+played. If it is played, then it resolves even if 
+the number of face up G units in your     
+and G zone changes after that point. 
+ 
+11.13. Resist 
+11.13.1. “Resist“ is an ability. A card with 
+“resist“ cannot be chosen by your opponent's 
+effect that says “choose“. 
+ 
+11.14. G Guardian 
+11.14.1. G guardian is a continuous ability that allows 
+the card with that ability to be called to the 
+guardian circle under certain conditions. It is 
+written as “ -Opponent Turn’s Guard 
+Step-[(Cost)] Call this card to your  from face 
+down.“
+```
+
+### Page 32
+
+```text
+11.14.2. During the guard step, the non-turn player 
+may, if the conditions specified in 7.5.1.2.2 are 
+fulfilled, pay the cost specified for the  
+ability of a face down card in his or her G zone, 
+and call it to his or her guardian circle. 
+ 
+11.15. Brave 
+11.15.1. Brave is an ability. Abilities with brave refer 
+to the number of cards in the master’s hand, and 
+are processed according to the type of ability 
+specified by brave when it is 3 or less. Brave can 
+be divided into the following 3 categories 
+according to the type of ability. 
+11.15.2. If it is written as “CONT Brave:“, then it 
+means “CONT As long as you have 3 or less 
+cards in your hand“. 
+11.15.2.1. Brave on continuous abilities check the 
+number of cards in your hand continuously. 
+11.15.3. If it is written as “AUTO Brave:“, then it 
+means “AUTO This ability is active when you 
+have 3 or less cards in your hand“. 
+11.15.3.1. If the condition of an automatic ability is 
+met but the number of cards in your hand is 
+more than the specified number, then that 
+ability will not trigger. If it triggers, then it will 
+resolve even if the number of cards in your 
+hand changes after that point. 
+11.15.4. If it is written as “ACT Brave:“, then it means 
+“ACT You can activate this ability while you have 
+3 or less cards in your hand“. 
+11.15.4.1. It checks the number of cards in your 
+hand when it is played. If it is played, then it 
+will resolve even if the number of cards in your 
+hand changes after that. 
+ 
+11.16. Oracle 
+11.16.1. Oracle is an ability. Abilities with oracle refer 
+to the number of cards in the master’s hand, and 
+are processed according to the type of ability 
+specified by oracle when it is 5 or more. Oracle 
+can be divided into the following 3 categories 
+according to the type of ability. 
+11.16.2. If it is written as “CONT Oracle:“, then it 
+means “CONT As long as you have 5 or more 
+cards in your hand“. 
+11.16.2.1. Oracle on continuous abilities check the 
+number of cards in your hand continuously. 
+11.16.3. If it is written as “AUTO Oracle:“, then it 
+means “AUTO This ability is active when you 
+have 5 or more cards in your hand“. 
+11.16.3.1. If the condition of an automatic ability is 
+met but the number of cards in your hand is 
+less than the specified number, then that ability 
+will not trigger. If it triggers, then it will resolve 
+even if the number of cards in your hand 
+changes after that point. 
+11.16.4. If it is written as “ACT Oracle:“, then it 
+means “ACT You can activate this ability while 
+you have 5 or more cards in your hand“. 
+11.16.4.1. It checks the number of cards in your 
+hand when it is played. If it is played, then it 
+will resolve even if the number of cards in your 
+hand changes after that. 
+11.17. Rescue 
+11.17.1. Rescue is a keyword that specifies an ability 
+where part of the effect is “Heal your damage, 
+and deal damage to your vanguard“. 
+11.17.1.1. Abilities with the “Rescue 
+(number)“ keyword have effects where part of 
+it is “Choose (number) cards from your 
+damage zone, heal them, choose one of your 
+vanguards, and deal (number) damage.“. 
+11.17.1.2. Abilities with the “Rescue 
+(number)“ keyword are considered to have the 
+“Rescue“ keyword. 
+ 
+11.18. Ritual 
+11.18.1. Ritual is an ability. Abilities with ritual refer to 
+the number of grade 1 cards in the player’s drop 
+zone, and are processed according to the type of 
+ability specified by ritual. Ritual can be divided 
+into the following 3 categories according to the 
+type of ability. 
+11.18.2. If it is written as “CONT Ritual (number):“, 
+then it means “CONT If there are (number) or 
+more grade 1 cards in your drop zone“. 
+11.18.3. If it is written as “AUTO Ritual:“, then it 
+means “AUTO This ability activates if there are 
+(number) or more grade 1 cards in your drop 
+zone“. 
+11.18.3.1. The auto ability of ritual triggers when a 
+card is put into the drop zone from your field, 
+and the card placed into the drop zone is 
+added to the number of cards in drop zone for 
+ritual. 
+11.18.3.2. When resolving the ritual ability, even if 
+the number of grade 1 cards in your drop zone 
+becomes insufficient to the specified number of 
+cards, that ability resolves. 
+11.18.4. If it is written as “ACT Ritual:“, then it means 
+“ACT You may activate this ability if there are 
+(number) or more grade 1 cards in your drop 
+zone“. 
+11.18.4.1. When resolving the ritual ability, even if 
+the number of grade 1 cards in your drop zone 
+becomes insufficient to the specified number of 
+cards, that ability resolves. 
+ 
+11.19. Unite 
+11.19.1. Unite is an ability. This ability refers to the 
+number of cards the master of the card with this 
+ability has called to his or her rear-guard circles 
+or guardian circle, and is divided into the 
+following 3 categories according to the type of 
+ability. 
+11.19.1.1. If it is written as “CONT Unite:“, then it 
+means “CONT If you have called 2 or more 
+cards to your rear-guard circles or guardian 
+circle during this turn“. 
+11.19.1.1.1. Unite on continuous abilities check 
+the number of cards called continuously. 
+11.19.1.2. If it is written as “AUTO Unite:“, then it 
+means “AUTO This ability is active if you have 
+called 2 or more cards to your rear- guard 
+circles or guardian circle during this turn“.
+```
+
+### Page 33
+
+```text
+11.19.1.3. If it is written as “ACT Unite:“, then   it 
+means “ACT You can activate this ability if you 
+have called 2 or more cards to your rear-guard 
+circles or guardian circle during this turn“. 
+ 
+11.20. Revelation 
+11.20.1. Revelation is an auto ability that is triggered 
+when units are placed on the field. 
+11.20.2. “Revelation-(circle)“ means “When this unit 
+is placed on the specified circle, look at the top 
+card of your deck, and you may put that card into 
+your soul. If you do, choose one of your standing 
+rear-guards, and rest it.“. 
+11.20.2.1. If all of the rear-guards are rested when 
+resolving the revelation ability for any reason, 
+the part of the revelation ability that rests a 
+rear- guard does not occur. 
+11.20.3. When resolving the revelation ability, if the 
+top card of the deck is put into soul, it is 
+considered as a card “put into soul due to the 
+effect of the revelation ability. 
+ 
+11.21. Blaze 
+11.21.1. Blaze is an automatic ability with the text “At 
+the beginning of each of your attack steps, if the 
+number of rear-guards you are the master of is 
+greater than the number of rear-guards your 
+opponent is the master of, your vanguard 
+becomes blazing until end of turn.“. 
+11.21.2. If your vanguard is in the legion state when 
+the blaze ability resolves, both your legion leader 
+and legion mate become blazing. 
+ 
+11.22. Afterimage 
+11.22.1. Afterimage is an automatic ability with the 
+text “When a card is put into your opponent’s 
+hand from the bind zone, if the number of cards 
+in your hand is six or less, you may return this 
+unit to your hand 
+. 
+11.23. Dominate 
+11.23.1. Dominate is an ability text. It may be 
+referenced in card text. 
+ 
+11.24. Engorge 
+11.24.1. Engorge is an automatic ability with the text 
+“When this unit attacks, choose one or more of 
+your other rear-guards, and you may retire them. 
+If one or more were retired, this unit becomes 
+engorged until end of turn.“ 
+11.24.2. The retiring of units due to engorge is an 
+effect. Abilities that change the paying of cost, do 
+not affect the retiring of units due to engorge. 
+ 
+11.25. Shadowstitch 
+11.25.1. Shadowstitch is a keyword that represents a 
+series of abilities that have trigger conditions or 
+resolution conditions that involve the “when an 
+attack against a vanguard does not hit“ event. 
+ 
+11.26. Thunderstrike 
+11.26.1. Thunderstrike is an ability. Thunderstrike is 
+specified by “Thunderstrike (number)“, it refers to 
+the number of cards in your opponent’s bind 
+zone, and is processed according to the type of 
+ability specified by thunderstrike when it is equal 
+to or more than the specified number. 
+Thunderstrike can be divided into the following 3 
+categories according to the type of ability. 
+11.26.1.1. If it is written as “CONT Thunderstrike:“, 
+then it means “CONT As long as your 
+opponent’s bind zone has (number) or more 
+card Thunderstrike on continuous abilities 
+check the number of cards in the bind zone 
+continuously. 
+11.26.1.2. If it is written as “AUTO Thunderstrike:“, 
+then it means “AUTO This ability is active 
+when your opponent’s bind zone has (number) 
+or more cards“. 
+11.26.1.2.1. If the condition of an automatic ability 
+is met but the number of cards in the bind 
+zone is less than the specified number, then 
+that ability will not trigger. If it triggers, then it 
+will resolve even if the number of cards in the 
+bind zone changes after that point. 
+11.26.1.3. If it is written as “ACT Thunderstrike:“, 
+then it means “ACT You can activate this ability 
+while your opponent’s bind zone has (number) 
+or more cards“. 
+11.26.1.3.1. It checks the number of cards in the 
+bind zone when it is played. If it is played, 
+then it will resolve even if the number of 
+cards in the bind zone changes after that. 
+ 
+11.27. Rush 
+11.27.1. Rush is an automatic ability with the trigger 
+“When this unit stands due to an effect from one 
+of your cards“. 
+ 
+11.28. Burst 
+11.28.1. Burst is a keyword that specifies an ability 
+where part of the effect refers to whether the 
+power of a specified unit is above a particular 
+amount. 
+ 
+11.29. Charge 
+11.29.1. Charge is an automatic ability with the text 
+“When this unit is placed on  due to an effect, 
+you may have this unit become charging until 
+end of turn.“ 
+11.29.2. A charging unit is placed on the bottom of 
+the deck at the end of the battle that unit 
+participates in. 
+ 
+11.30. Darkness 
+11.30.1. Darkness is an ability. Abilities with darkness 
+refer to whether cards have been put into that 
+master’s soul other than by riding during that 
+turn, and are processed according to the type of 
+ability specified by darkness if there were. 
+Darkness can be divided into the following 3 
+categories according to the type of ability. 
+11.30.1.1. If it is written as “CONT Darkness:“, then 
+it means “CONT If cards have been put into 
+your soul this turn other than by riding“.
+```
+
+### Page 34
+
+```text
+11.30.1.2. If it is written as “AUTO Darkness:“, then 
+it means “AUTO This ability activates if cards 
+have been put into your soul this turn other 
+than by riding“. 
+11.30.1.3. If it is written as “ACT Darkness:“, then it 
+means “ACT You may activate this ability if 
+cards have been put into your soul this turn 
+other than by riding“. 
+11.30.2. With regards to the darkness ability’s “If 
+cards have been put into your soul other than by 
+riding“, of the cases where cards are put into the 
+soul, the cases where “the unit on the circle is 
+put into the soul due to ride (8.5.3.1)“ and “as 
+there is a heart card present when riding, that 
+heart card is put into the soul (10.6)“ are 
+excluded. 
+ 
+11.31. Magia 
+11.31.1. Magia is a keyword that specifies a series of 
+abilities that include “call units from your soul, 
+and at the end of that turn, put the units called 
+with this effect into your soul“. 
+ 
+11.32. Time Leap 
+11.32.1. Time Leap is a keyword that specifies that 
+an ability is one that includes the special action 
+“to time leap“. See 10.30 for more details. 
+ 
+11.33. Hollow 
+11.33.1. Hollow is an automatic ability with the text 
+“When this unit is placed on , you may have 
+this unit become hollowed until end of turn“. 
+11.33.2. At the end of turn, if there are hollowed 
+units, move them to the owner’s drop zone. If 
+this movement is performed, it can be counted 
+as being retired. 
+ 
+11.34. Harmony 
+11.34.1. Harmony is an automatic ability with the text 
+“when your other unit is placed in the same 
+column, until end of turn, as long as this unit and 
+that unit that was placed remain on the field and 
+belong to the same master, they are associated 
+with each other in a harmony state“. 
+11.34.1.1. If either of the units that are to be 
+associated leaves the field before 11.34.1 
+resolves, they will not be in a harmony state. 
+11.34.1.2. Even when either of the units that are 
+associated with each other in a harmony state 
+is moved to another column, those units will 
+continue to be associated with other in a 
+harmony state. 
+11.34.1.2.1. Multiple associations are possible, 
+such as when unit A with the harmony ability 
+and in the harmony state moves to another 
+column, and after that, another unit is placed 
+in the same column as unit A. In that case, 
+unit A will continue to be in the harmony state 
+as long as there are units associated with 
+unit A that have not left the field. 
+11.34.1.3. If an automatic ability that says “when 
+(unit) becomes in harmony“ is in stand by, 
+even if the associated unit that became in the 
+harmony state leaves the field, that automatic 
+ability will resolve. 
+11.34.1.3.1. Even when a unit that is already in 
+the harmony state becomes associated with 
+yet another unit, abilities that say “when 
+(unit) becomes in harmony“ will not trigger. 
+ 
+11.35. Wave 
+11.35.1. Wave is an automatic ability that is “only 
+active during the specified battles of each turn“. 
+11.35.2. The battles that wave is active is specified 
+by “Nth time only“, or “Nth time“. 
+ 
+11.36. Dark Device 
+11.36.1. Dark Device is an ability. Abilities with dark 
+device refer to the opponent’s units in the same 
+column as the card with this ability, and are 
+processed according to the type of ability 
+specified by dark device. Dark device can be 
+divided into the following 3 categories according 
+to the type of ability. 
+11.36.1.1. If it is written as “CONT Dark Device:“, 
+then it means “CONT If your opponent has no 
+standing units in the same column as this unit“. 
+11.36.1.2. If it is written as “AUTO Dark Device:“, 
+then it means “AUTO This ability activates if 
+your opponent has no standing units in the 
+same column as this unit“. 
+11.36.1.3. If it is written as “ACT Dark Device:“, 
+then it means “ACT You may activate this 
+ability when your opponent has no standing 
+units in the same column as this unit“. 
+ 
+11.37. Success 
+11.37.1. Success is an auto ability that triggers when 
+referring to your rear-guards’ power. 
+11.37.2. “Success (number)“ represents “When this 
+unit is not successful, and your rear- guard's 
+power is (number) or greater during your turn, 
+this unit becomes successful until end of turn“. 
+11.37.3. To trigger the success ability (8.5.13), the 
+rule must be followed. 
+11.37.4. If the power of the rear-guard that triggers 
+the success ability becomes lesser than the 
+specified power before resolving, that unit does 
+not become successful. 
+ 
+11.38. Bloom 
+11.38.1. Bloom is an automatic ability with the trigger 
+“When your other specific unit is placed on the 
+specified zone“. 
+ 
+11.39. Shinken Hissatsu 
+11.39.1. “Shinken Hissatsu“ is an ability. This ability 
+refers to the number of cards in the master’s 
+damage zone, and can be divided into the 
+following 3 categories according to the type of 
+ability. 
+11.39.1.1. If it is written as “CONT Shinken 
+Hissatsu:“, then it means “CONT As long as 
+you have 3 or more cards in your damage 
+zoneageShinken Hissatsu on continuous
+```
+
+### Page 35
+
+```text
+abilities check the number of cards in your 
+damage zone continuously. 
+11.39.1.2. If it is written as “AUTO Shinken 
+Hissatsu:“, then it means “AUTO This ability is 
+active while you have 3 or more cards in your 
+damage zone“. 
+11.39.1.2.1. If the condition of an automatic ability 
+is met but the number of cards in your 
+damage zone is less than 3, then that ability 
+will not trigger. If it triggers, then it will resolve 
+even if the number of cards in your damage 
+zone changes after that point. 
+11.39.1.3. If it is written as “ACT Shinken 
+Hissatsu:“, then it means “ACT You can 
+activate this ability while you have 3 or more 
+cards in your damage zone“. 
+11.39.1.3.1. It checks the number of cards in your 
+damage zone when it is played. If it is 
+played, then it resolves even if the number of 
+cards in your damage zone changes after 
+that. 
+11.39.2. Cards with the Shinken Hissatsu ability are 
+referred to as “with the Shinken Hissatsu ability“. 
+ 
+11.40. Homare 
+11.40.1. Homare is an ability for which, out of all the 
+abilities with Homare, the number of times the 
+cost can be paid is restricted. If a player pays the 
+cost for any Homare ability he or she is the 
+master of in a turn, he or she cannot pay the 
+cost for a Homare ability for the rest of that turn. 
+11.40.2. Cards with the Homare ability are referred to 
+as “with the Homare ability“. 
+ 
+11.41. Nitou Kaigan 
+11.41.1. Nitou Kaigan is an auto ability that resolves 
+when the trigger condition “When this unit is 
+boosted by a specified unit“ or “When this unit 
+boosts a specified unit“. 
+11.41.1.1. Cards with the Nitou Kaigan ability are 
+referred to as “with the Nitou Kaigan ability“. 
+ 
+11.42. Ultimate Stride Skill 
+11.42.1. Ultimate Stride Skill is an ability that is 
+referred to by . 
+11.42.2. The text on the ultimate stride skill of a 
+normal card is different from that of a Gyze card 
+(12.10.1). 
+11.42.2.1. The text on the ultimate stride skill of a 
+normal card is written as “ -(timing)-
+[cost]  this card on your  from face 
+down.“ 
+11.42.2.2. The text on the ultimate stride skill of a 
+Gyze card is written as “ -(the card 
+name of this card’s Dragon Deity of 
+Destruction, Gyze side)-(timing)-[cost] Remove 
+all of your other cards from your circles, soul, 
+and G zone, flip this card over, and  this 
+card on your .“ 
+11.42.2.2.1. While resolving the ultimate stride 
+skill of the Gyze card, follow what is stated 
+on the text, remove all of your other cards 
+from your G zone, circles, and soul first, then 
+perform the stride. 
+11.42.3. Though the ultimate stride skill is regarded 
+as a stride skill (11.11), effects that modify the 
+cost for stride will not be applied to the cost for 
+ultimate stride. 
+ 
+11.43. Melody 
+11.43.1. Melody is a continuous ability that shares 
+abilities. 
+11.43.1.1. Melody abilities are indicated by “ -
+(specified ability) This is shared by all of your 
+units with .”. 
+11.43.2. Units with 1 or more melody get the 
+specified abilities specified by the melody 
+abilities of all units with the same master as that 
+unit (including itself). 
+ 
+Section 12. Miscellaneous 
+ 
+12.1. Loop 
+12.1.1. When some effects are applied, sometimes 
+you can do a set of actions any number of times, 
+or you must repeat a set of actions an infinite 
+number of times. This is called a loop, and the 
+cycle of actions is called a “loop action set“. If it 
+happens, then proceed in the following manner: 
+12.1.1.1. If nobody can stop the loop, then the 
+game ends in draw. 
+12.1.1.2. If only one player can choose to stop the 
+loop, then he or she chooses the number of 
+times that loop repeats, assumes that the loop 
+action set was performed that number of times, 
+then chooses to stop at any action that can 
+stop the loop. Then, if all game situations are 
+the same as when the loop had occurred, then 
+players cannot choose to do the loop again 
+except if it were to be forced by automatic 
+abilities. 
+12.1.1.3. If both players can choose to stop the 
+loop, then the turn player chooses the number 
+of times that loop repeats, then the non-turn 
+player chooses the number of times to repeat. 
+The smaller number is chosen as the number 
+of times to repeat the loop action set, and the 
+player who chose the smaller number chooses 
+to stop at any action that can stop the loop. 
+Then, if all game situations are the same as 
+when the loop had occurred) all cards in all 
+zones are the same), then the player who 
+chose the bigger number cannot choose to do 
+the loop again except if it were to be forced by 
+automatic abilities. 
+12.1.1.4. The actions in a loop action set are not 
+resolved individually, but are all resolved at the 
+same time, omitting the intermediate actions. 
+However, even though the actions are omitted, 
+they are considered to have been performed. 
+- For example, if “gains Power +1000“ is 
+infinitely looped, and is chosen to be 
+stopped after 200 times, the master of the
+```
+
+### Page 36
+
+```text
+effect does not perform Power +1000 200 
+times, but just performs Power +200000. 
+12.1.1.5. Great discretion should be exercised in 
+recognizing a loop. Both players should agree, 
+or a judge’s decision should be sought. 
+ 
+12.2. Abilities that “cannot be used“ 
+12.2.1. If some effect says “you cannot use the 
+ability“, then it has the following meaning, and 
+the following restrictions and resolutions apply: 
+12.2.1.1. If you cannot use an activated ability, then 
+you cannot play it. 
+12.2.1.2. If you cannot use an automatic ability, the 
+following resolutions apply. 
+12.2.1.2.1. Even if the event occurs, that 
+automatic ability does not trigger. 
+12.2.1.2.2. If you cannot use an automatic ability 
+that has already become stand by, then that 
+stand by state is canceled. 
+ 
+12.3. Nullifying trigger effects 
+12.3.1. If there is an active ability which “nullifies 
+trigger effect“, icon effects of cards that are put 
+to trigger zone by drive check or damage check 
+will not occur. 
+12.3.2. If there is an active ability which “nullifies 
+trigger effect“, fulfill it to the furthest of its ability. 
+Icons triggered during drive check or damage 
+check cannot be partially resolved. 
+ 
+12.4. Extra Turn 
+12.4.1. When a player gets an “extra turn“, the extra 
+turn for that player is added immediately after 
+the current turn. 
+12.4.2. If 2 or more turns are added within the same 
+turn, the turns will take place from the turn that 
+was added from the text that resolved last. 
+- For example, if each player resolves the 
+text “you get an extra turn“ in the order of 
+turn player → non-turn player → turn 
+player, the resulting order of turns would 
+be “current turn → turn player’s extra turn 
+→ non-turn player’s extra turn → turn 
+player’s extra turn → non- turn player’s 
+turn“. “ 
+ 
+12.5. Restriction Icons 
+12.5.1. “Restriction icons“ are icons that indicate that 
+there is a limit on the use of an ability, such as 
+on the number of times it can be used. 
+12.5.1.1.  is a usage restriction icon. 
+12.5.1.1.1.  When this icon is present right after 
+the leading AUTO or ACT of an ability, or 
+present right after 【(zone)】, if there is a 
+change in the game state after the resolution 
+of the effect, “this ability cannot be used for 
+the rest of that turn” is in effect. 
+12.5.1.1.2. When an automatic ability with this 
+icon is standing by, the master of that ability 
+can choose this automatic ability when he or 
+she plays an automatic ability, and have it 
+cease to exist without playing it.  
+ 
+12.6. For each X do Y / Do Y equal to number of X 
+12.6.1. When Y is to be done for each X / equal to 
+number of X, Y is done X number of times. 
+12.6.2. The value of X is set before beginning to do 
+Y , and does not change from then until all of Y 
+has finished resolution. 
+12.6.3. While doing Y X times, if Y includes an 
+instruction to make a choice, until all the 
+instructions of the Xth time have ended, you 
+cannot choose the same object. 
+ 
+12.7. Cards with the same/different card name(s) 
+12.7.1. Cards with the same card name refer to 
+multiple cards that when compared to each 
+other, have a card name common to all of them. 
+At the same time, cards with different card 
+names refer to multiple cards that when 
+compared to each other, have card names not 
+common to all of them 
+12.7.2. Cards may have multiple card names due to 
+effects like stride and “also regarded as a card 
+with the same card name“. 
+12.7.2.1. When a card with card name A is also 
+regarded as card with card name B, that card 
+simultaneously has both card name A and B. 
+The card name is not changed, such as having 
+the names joined into the single name. 
+12.7.2.2. When a card with more than one card 
+name is compared to other cards, even if there 
+is only one card name common to both of 
+them, they are considered as cards with the 
+same card name. If there is no common card 
+name between the two, they are considered as 
+cards with different card names. 
+12.7.2.2.1. “With different card names” means 
+that none of the cards being compared has 
+the same card name as another card. 
+ 
+12.8. Enabling Keyword Abilities 
+12.8.1. When enabling a specific keyword ability, if 
+the ability to be enabled holds more than one 
+keyword ability, only the relevant part of the 
+keyword ability becomes enabled. 
+ 
+12.9. Boosted 
+12.9.1. When the unit boosting a unit that attacked is 
+moved to a different area, even if both the 
+attacking unit and boosted unit are no longer 
+associated (7.4.1.11.1.1) as such, the attacking 
+unit’s “when boosted“ condition during that attack 
+sub phase is active. 
+ 
+12.10. Gyze card 
+12.10.1. There is a card with information written on 
+both sides known as the “Gyze card“. 
+12.10.1.1. When using Gyze card as a card in a 
+deck, there is a need to use opaque sleeves so 
+it cannot be differentiated from the other cards 
+of the deck. 
+12.10.2. There are two different sides to the Gyze 
+card. The side with the normal unit is known as 
+the “Neon Gyze side“, while the side with the G
+```
+
+### Page 37
+
+```text
+unit is known as the “Dragon Deity of 
+Destruction, Gyze side“. 
+12.10.3. The state of the Gyze card in all of the areas 
+are called the “active side“. This state is known 
+as either the “Neon Gyze side“ or the “Dragon 
+Deity of Destruction, Gyze side“. 
+12.10.3.1. When referring to the information of the 
+specified Gyze card for the rule or ability or 
+effect during the game, the information on the 
+active side of the Gyze card is referenced. 
+12.10.3.1.1. Other than otherwise specified, the 
+information on the non-active side is 
+regarded as inexistent. 
+12.10.3.2. At the beginning of each game, the 
+active side of all Gyze cards will be the Neon 
+Gyze side. 
+12.10.3.3. When the Gyze card is moved to an 
+area that is neither a circle nor the G zone for 
+any reason, the active side will be the Neon 
+Gyze side. When moving to a circle or the G 
+zone, the active side will remain the same 
+unless otherwise specified. 
+12.10.3.4. Even if the active side changes, it is 
+regarded as the same card. All effects and 
+states applied to that card will be maintained 
+as is. 
+12.10.3.5. The active side of the card in the sleeve 
+during the game shall be made visible. 
+12.10.4. Gyze card has two states (3.17.3), a face up 
+state and face down state, just like other cards. 
+12.10.5. Unlike normal cards, the face up state and 
+face down state of Gyze’s state are such that 
+“the active side is shown“ and “the side where 
+the information is hidden by the sleeve is 
+shown“ respectively. 
+ 
+12.11. Cannot be affected 
+12.11.1. When a “cannot be affected“ effect with 
+special conditions is applied to a card, when an 
+effect that meets that condition would be applied, 
+that effect is not applied to that card. The effect 
+cannot choose that card, does not change the 
+information of that card, and if the effect would 
+change the zone or state of that card, it is not 
+performed. It also cannot be used as the cost for 
+the ability or effect that meets that condition. 
+12.11.2. If an effect originates from a unit, and that 
+unit cannot be affected by certain conditions, that 
+effect cannot be affected by those conditions as 
+well.  
+ 
+12.12. Pseudo-cards 
+12.12.1. There are “pseudo-cards” created in a zone 
+during a game that are handled in a similar 
+fashion to a card. 
+12.12.1.1. Pseudo-cards are not cards, but are 
+handled in a similar fashion to cards, count 
+towards the number of cards in the zone they 
+are in, and are affected by effects that affect 
+cards. 
+12.12.1.1.1. As pseudo-cards are not cards, they 
+must be clearly differentiated from the other 
+cards in the zone they are in. 
+12.12.1.1.1.1. If a pseudo-card is in a hidden 
+zone (4.1.3), that pseudo-card must be 
+differentiated from the other cards with 
+hidden information, and any player can see 
+its information. 
+12.12.1.2. “Creating” a pseudo-card in a zone 
+means that the specified pseudo-card is in the 
+state of existence in that zone. 
+12.12.1.2.1. The owner and master of a created 
+pseudo-card is the player the zone that 
+pseudo-card was created in belongs to. 
+12.12.1.2.2. When a pseudo-card is created in a 
+zone, it is regarded as that pseudo-card 
+being put in that zone. If that zone is a circle, 
+it is regarded as being placed (10.5) on that 
+circle. 
+12.12.1.3. “Erasing” a pseudo-card means to 
+remove that pseudo-card from its current zone, 
+and it no longer is in the state of existence in 
+that zone 
+12.12.1.3.1. When a pseudo-card is erased from 
+a zone, it is regarded as that pseudo-card 
+leaving that zone. 
+12.12.1.3.2. When a pseudo-card is removed, 
+that pseudo-card is erased from the zone it is 
+currently it. 
+12.12.1.4. There are pseudo-cards with restrictions 
+on the zones they can exist in. 
+12.12.1.4.1. A pseudo-card’s “effective zones” 
+are the zones that pseudo-card can exist in. 
+12.12.1.4.1.1. When a pseudo-card moves to a 
+zone that among its “effective zones”, that 
+pseudo-card moves to that zone in a 
+similar fashion to a normal card. 
+12.12.1.4.2. A pseudo-card’s “erase zones” are 
+zones where that pseudo-card is forcibly 
+erased immediately after moving to that 
+zone. 
+12.12.1.4.2.1. When a pseudo-card moves to 
+its erase zone, it is erased from the zone it 
+moves to immediately after moving. This 
+process does not wait for the check timing 
+to take place, and if it moved as part of an 
+effect, it is performed before the steps 
+following the move. 
+- For example, when performing a “move 
+pseudo-card A to erase zone X, and 
+draw a card” effect, after moving 
+pseudo-card A to X, pseudo-card A in 
+zone X is erased before drawing a 
+card. 
+12.12.1.4.2.2. When a pseudo-card is created 
+in its erase zone, that creation is not 
+performed. 
+12.12.1.4.3. There are pseudo-cards that do not 
+have information a normal card has. 
+12.12.1.4.3.1. When a pseudo-card is created, 
+it does not have any information other than 
+the information rules or effects explicitly 
+state it has. 
+- For example, as rules and effects do 
+not explicitly state that “protect”
+```
+
+### Page 38
+
+```text
+pseudo-cards have a card name, they 
+do not have a card name. 
+12.12.1.4.3.2. When referring to information 
+that a pseudo-card does not have, it is 
+regarded as 0 if it is a numerical value, and 
+regarded as not existing otherwise. 
+12.12.1.5. When using pseudo-cards in a game, 
+please use a card-shaped object that both 
+players agree on, that both players can clearly 
+differentiate from a normal card. 
+12.12.2. “Protect” pseudo-cards have the following 
+regulations. 
+12.12.2.1. “Protect” pseudo-cards have the special 
+type “protect”, and do not have a type. 
+12.12.2.2. “Protect” pseudo-cards have the grade 
+“protect”. 
+12.12.2.2.1. The grade “protect” cannot be 
+increased or reduced as a numerical value. 
+12.12.2.3. “Protect” pseudo-cards” have the “CONT 
+Sentinel” and “AUTO【 】 When placed, 
+[COST][discard a card from your hand], and 
+one of your units cannot be hit until end of that 
+battle.” abilities. 
+12.12.2.4. The effective zones of “protect” pseudo-
+cards” are their master’s hand and guardian 
+type circles, and all other zones are their erase 
+zones. 
+12.12.2.4.1. This pseudo-card is regarded as a 
+unit while it is on a guardian circle. 
+12.12.2.5. “Protect” pseudo-cards are not units, but 
+can be called to the guardian circle as if they 
+were units. All other call or ride processes are 
+not performed. 
+12.12.2.6. When a “protect” pseudo-card is locked 
+by an effect that locks cards in the hand, after 
+putting it on the circle, it is erased from that 
+circle. 
+12.12.2.7. When card effects reference “Imaginary 
+Gift:Protect in (player’s) hand)”, it refers to the 
+“protect” pseudo-card in the hand. 
+12.12.3. “Token” pseudo-cards have the following 
+regulations. 
+12.12.3.1. “Token” pseudo-cards have type, grade, 
+power, critical, name, race, skill icon, and text, 
+and do not have any other information. 
+12.12.3.1.1. The type of “token” pseudo-cards is 
+token unit. 
+12.12.3.1.2. The name and race of “token” 
+pseudo-cards are specified when that token 
+is called (12.12.3.3). 
+12.12.3.1.3. All other information of “token” 
+pseudo-cards are stipulated according to the 
+name of that pseudo-card when it was 
+created, and that pseudo-card possesses 
+that information from the point it was created. 
+Please refer to the “token information” 
+supplement below for the actual information 
+each “token” pseudo-card possesses. 
+12.12.3.2. The effective zone of “token” pseudo-
+cards is the field, and all other zones are their 
+erase zones. 
+12.12.3.2.1. As the soul is not part of the field, 
+when a “token” pseudo-card is moved to the 
+soul, it is erased after moving. 
+12.12.3.3. When an ability or effect refers to a 
+“(name) token”, that refers to a token unit with 
+(name) in its card name. 
+12.12.3.3.1. When performing a call from the 
+resolution of “call a (name) token to (circle)”, 
+when the unit is to be placed on the circle 
+(10.7.1.1.3.1), create a “token” pseudo-card 
+with (name) as its name and race on (circle). 
+12.12.3.4. When a “token” pseudo-card is locked, 
+after that unit is locked, it is immediately 
+erased from that circle. 
+ 
+12.13. Paying of Costs 
+12.13.1. Costs must be simultaneously paid with 
+resources the ability’s master is the master of. 
+12.13.1.1. This includes costs that are indicated in 
+text by [ ] (3.1.1.4), as well as “may (specific 
+action) to call” alternative costs for calling. 
+12.13.1.2. If an effect should remove the cost, or if 
+there is effectively no cost, the cost can be 
+paid by declaring it paid. 
+12.13.1.3. When a cost specifies “all”, even if the 
+“all’ is effectively 0, it can be paid. 
+- For example, even when there are 0 cards 
+in your hand, the cost “discard all of the 
+cards from your hand” can be paid. 
+ 
+12.14. Number of different cards 
+12.14.1. When counting the number of different 
+cards, the number of different card names is 
+counted unless a particular type of information to 
+be counted is specified. 
+12.14.1.1. When counting the number of different 
+card names, the number of cards is not 
+referenced. 
+- For example, if a player is the master of 1 
+unit, and it has both the card names 
+“Blaster Blade” and “Blaster Arrow”, that 
+player has two different “Blaster” card 
+names among their units. 
+12.14.1.2. If grade or some other information is 
+specified, it is determined by that information. 
+ 
+12.15. Imaginary Gift Resolution 
+12.15.1. Imaginary Gifts have different clan types 
+and gift types. 
+12.15.1.1. An Imaginary Gift’s clan type is specified 
+by the effect or Imaginary Gift icon to be 1 of 
+the 3 types “Force”, “Accel”, or “Protect”. 
+12.15.1.2. An Imaginary Gift’s gift type is 
+determined in the Imaginary Gift resolution for 
+each clan type to be either 1 or 2. 
+12.15.1.2.1. This value is written as roman 
+numerals (I or II) in the rules and text. 
+12.15.1.3. Gift markers are created when resolving 
+gifts, with some exceptions. 
+12.15.1.3.1. Gift markers are objects that are 
+placed on circles to represent the result of 
+the Imaginary Gift resolution. They are not
+```
+
+### Page 39
+
+```text
+cards, and are not affected by effects that 
+affect units or cards. 
+12.15.1.3.2. Gift markers have clan type, gift 
+type, and text information. 
+12.15.1.3.2.1. Gift marker text is applied as a 
+modification from rules (8.6.1.2). It is not an 
+effect from an ability. 
+12.15.1.3.3. If for any reason the process of 
+removing a gift marker is to be performed, 
+that gift marker ceases to exist. 
+12.15.2. When you perform the Imaginary Gift 
+resolution from a ride or an effect, the following 
+steps are done. 
+12.15.2.1. When this Imaginary Gift resolution is 
+being performed due to riding a unit with an 
+Imaginary Gift icon, if that unit’s master has 
+performed the Imaginary Gift resolution due to 
+a ride prior to this, and the clan types for that 
+resolution and the resolution being performed 
+are different, that Imaginary Gift resolution is 
+not performed. 
+- For example, after you have ridden a card 
+with “Imaginary Gift: Force” and resolved 
+it, when you ride a card with “Imaginary 
+Gift: Accel”, you will not resolve “Imaginary 
+Gift: Accel”. In addition, you will not lose 
+“Imaginary Gift: Force”. 
+12.15.2.2. If this Imaginary Gift resolution is the first 
+time the player specified by the unit ridden or 
+that effect is resolving for that clan type, 
+choose 1 gift type to use for that clan type. If 
+that player has already chosen a gift type for 
+that clan type, they must choose the same gift 
+type. 
+12.15.2.3. For clan type “Force”, perform the 
+following. 
+12.15.2.3.1. Specify your vanguard circle or 1 of 
+your rear-guard circles, and place a clan type 
+“Force” gift marker of the chosen gift type 
+there. 
+12.15.2.3.1.1. Circles that already have another 
+clan type “Force” gift marker placed on 
+them can be specified. In that case, the 
+effects are cumulative. 
+12.15.2.3.2. For gift type I, the gift marker placed 
+has the text “during your turn, the unit on this 
+circle gets Power +10000.”. 
+12.15.2.3.3. For gift type II, the gift marker placed 
+has the text “the original critical of the unit on 
+this circle becomes 2.”. 
+12.15.2.4. For clan type “Accel”, perform the 
+following. 
+12.15.2.4.1. Gain 1 rear-guard type circle 
+(4.6.4.5). 
+12.15.2.4.1.1. That circle is considered to be in 
+the front row. 
+12.15.2.4.1.2. The first time that circle is 
+gained, it is gained to the left of the 
+leftmost circle in the front row. The second 
+time it is gained, it is gained to the right of 
+the rightmost circle in the front row. It is 
+gained in the order of left and right in a 
+similar manner for subsequent times. 
+12.15.2.4.1.2.1. When both players gain 
+circles with “Imaginary Gift: Accel”, the 
+first circle gained by one player and the 
+second circle gained by the other player 
+are in the same column, as are the third 
+and the fourth, and the fifth and the sixth, 
+and similarly so on and so forth. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+12.15.2.4.2. Place a clan type “Accel” gift marker 
+of the chosen gift marker on the gained 
+circle. 
+12.15.2.4.2.1. If the clan type “Accel” gift 
+marker is removed from the circle for any 
+reason, the unit on that circle is retired 
+immediately after without waiting for the 
+check timing, and the circle disappears 
+after that. 
+12.15.2.4.3. For gift type I, the gift marker placed 
+has the text “during your turn, the unit on this 
+circle gets Power +10000.”. 
+12.15.2.4.4. For gift type II, the player resolving 
+that imaginary gift draws a card immediately 
+after the circle is created. The gift marker 
+placed has the text “during your turn, the unit 
+on this circle gets Power +5000.”. 
+12.15.2.5. For clan type “Protect”, perform the 
+following. 
+12.15.2.5.1. For gift type I, create a “protect” 
+pseudo-card (12.12.2) in the hand of the 
+master of the card or ability performing this 
+Imaginary Gift resolution. 
+12.15.2.5.2. For gift type II, specify 1 of your rear-
+guard circles, and place a gift marker with 
+clan type “Protect”, gift type II, and the text 
+“AUTO:When this unit intercepts, this unit 
+gets Shield +10000.” on that circle. 
+  
+12.16. End Turn Resolution 
+12.16.1. If an instruction to end the turn is to be 
+performed for any reason during the game, 
+perform the following. 
+12.16.1.1. End the durations of all continuous 
+effects currently active, other than those with 
+the durations “until end of turn” or “during this 
+turn” or have durations that expire in the next 
+turn or later. 
+12.16.1.2. If it is not currently the end phase, after 
+that effect has fully finished resolving, the
+```
+
+### Page 40
+
+```text
+game moves to the end phase without 
+performing a check timing. 
+12.16.2. If there is any vanguard damage remaining 
+after the end of turn resolution, perform the 
+damage application process (9.6) as a rule 
+action during the end phase. 
+12.16.3. The playing of automatic abilities that are 
+standing by (8.5.9) during the end turn resolution 
+is performed during the check timing of the end 
+phase. 
+ 
+12.17. Circles with the Astral Plane type 
+12.17.1. Specified circles may additionally gain the 
+Astral Plane type from card effects. The following 
+rules apply to circles with the Astral Plane type. 
+12.17.1.1. A circle with the Astral Plane type cannot 
+be designated for the normal call of units 
+whose race is not <Astral Deity> (8.5.2.1.2). 
+12.17.1.2. When this circle is designated for the 
+call of a unit whose race is <Astral Deity>, the 
+grade requirement (8.5.2.2.1) can be ignored 
+for the call of that unit. 
+12.17.1.3. The unit on this circle can attack, even if 
+this circle is in the back row. 
+12.17.1.4. When the unit on this circle attacks, that 
+unit performs drive checks. 
+12.17.1.4.1. When the card in the trigger zone 
+would be put into your hand during the drive 
+checks performed by the unit on this circle, it 
+is put into the soul instead of your hand. This 
+is not a replacement effect, and is applied 
+before replacement effects. 
+12.17.1.5. The unit on this circle is put on the 
+bottom of its owner’s deck (6.8.1.1.3) as part of 
+the end phase resolution. 
+12.17.1.6. If a unit whose race is not <Astral Deity> 
+is on this circle for any reason, that unit is 
+retired (9.11.1) as a rule action. 
+12.17.1.7. If this circle becomes a lock type, that 
+locked card is put into the drop zone (9.11.2) 
+as a rule action. 
+Supplement: Token Information 
+“Plant” Token 
+Grade: 0 
+Power: 5000 
+Critical: 1 
+Skill Icon: Boost 
+Text: None 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+“Vision” Token 
+Grade: 3 
+Power: 13000 
+Critical: 1 
+Skill Icon: Twin Drive 
+Text: [CONT](RC):Perform 
+drive checks for the battle 
+it attacked.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+“Evil Decoy” Token 
+Grade: 0 
+Power: 0 
+Critical: 1 
+Skill Icon: Intercept 
+Text: [CONT](RC):It 
+cannot attack, and can 
+intercept from the back 
+row.
+```
+
+### Page 41
+
+```text
+Changelog 
+ 
+June 1st, 2018 – ver. 2.01 update 
+Updated definition of trigger icons. 
+Added definition of Imaginary Gifts. 
+Updated procedure for G Assist. 
+Updated procedure for setting up the game. 
+Updated procedure for calling to circles. 
+Updated procedure for playing and resolving cards and 
+abilities 
+Added procedure for switching cards. 
+Updated definition regarding restriction icons. 
+ 
+August 2nd, 2018 – ver. 2.1 update 
+Added definition of special types. 
+Added definition of pseudo-cards, and updated rules 
+regarding Imaginary Gift: Protect in line with it. 
+Added rules regarding gauge. 
+ 
+October 19th, 2018 – ver. 2.11 update 
+Added definition of paying of costs. 
+Updated rules regarding triggered abilities in hidden 
+zones. 
+Updated definition of triggers. 
+Updated definition regarding overloaded units. 
+Updated definition regarding “protect” pseudo-cards. 
+ 
+December 14th, 2018 – ver. 2.12 update 
+Added table of contents. 
+Added rules regarding tokens. 
+ 
+September 10th, 2019 – ver. 2.19 update 
+Added definition that cost is still paid when action is 
+performed 0 times. 
+Added definition of trigger effects. 
+Updated rules for “look” regarding effects of continuous 
+abilities that allow a player to look at the deck at any 
+time. 
+Added definition of source of effects. 
+Updated rules for moving cards to and from hidden 
+zones. 
+Updated definition of “rows”. 
+Updated rules regarding attacking and battling. 
+Added rules regarding rear-guards performing drive 
+checks. 
+Updated rules regarding guarding and intercepting. 
+Updated rules regarding "when attack hits". 
+Updated rules regarding paying of costs and prior 
+requirements for "then". 
+Added rules regarding continuous effects with durations 
+that contradict the game state. 
+Added definition of effects that change modification 
+effects. 
+Updated rules regarding riding, calling, and striding. 
+Updated rules regarding order effects are performed. 
+Added rules regarding effects containing lists. 
+Added definition of "/" in effects. 
+Updated rules regarding costs and options for abilities. 
+Updated rules regarding order continuous effects are 
+applied. 
+Updated definition of final information. 
+Updated rules regarding legion. 
+Updated rules regarding resolution of damage. 
+Added definition of illegal triggers. 
+Updated definition of "draw", "discard", "call", "to 
+counter-blast", "to soul-blast", "to soul-charge", and "to 
+counter-charge". 
+Updated definition of "switch". 
+Updated rules regarding putting of and moving of 
+gauges. 
+Added definition of "increase/decrease". 
+Added definition of "to activate". 
+Added definition of "when trigger unit is revealed". 
+Added definition of melody. 
+Updated definition of "with different card names". 
+Updated rules regarding "cannot be affected". 
+Updated rules regarding alternative costs for calling. 
+Updated rules regarding imaginary gifts and imaginary 
+gift resolution. 
+Added definition of end turn resolution. 
+Added definition of "vision" tokens. 
+ 
+November 15th, 2019 – ver. 2.21 update 
+Updated procedure for a player having no vanguard. 
+Added rules regarding performing processes "(as 
+much) as possible". 
+Added rules regarding "Astral Plane" type circles. 
+Added rules regarding referencing card information of 
+multiple cards that meet a condition. 
+Added definition that cards ridden or called are a new 
+card in that zone. 
+Added rules regarding cards getting another card's 
+numerical information. 
+Added definition of "evil decoy" tokens. 
+ 
+March 11th, 2020 – ver. 2.3 update 
+Updated rules regarding “as much as possible”. 
+Added rules regarding looking at cards from deck 
+multiple times in a single effect. 
+Added rules regarding cards placed in the G zone. 
+Added definition for "this card" with regards to deck 
+construction. 
+Updated rules regarding choosing of attacking units. 
+Updated rules regarding units guarded by guardians. 
+Updated rules regarding when boosting units are 
+rested. 
+Updated definition of replacement effects. 
+Added rules regarding playing of automatic abilities 
+whose source has changed master. 
+Updated rules regarding triggering of automatic ability 
+situation triggers. 
+Updated rules regarding application of dependent 
+continuous effects. 
+Added definition for doubling of card information. 
+Added rules regarding application of replacement 
+effects. 
+Updated rules regarding illegal guardians. 
+Added rules regarding resolving instructions for units of 
+multiple players to attack. 
+Updated rules regarding changing of attack target. 
+Updated definition of "(name) tokens".
+```

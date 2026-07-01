@@ -1,0 +1,23 @@
+{
+    "accepted": true,
+    "failure_reason": "",
+    "seed": 5403,
+    "ruleset": "Premium",
+    "deck_source": "deck_code",
+    "result_path": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m54_03_fifth_fixture_unity_result.json",
+    "replay_path": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m54_03_fifth_fixture_unity_replay.json",
+    "actions_executed": 4,
+    "event_count": 4,
+    "final_phase": "Main",
+    "player_count": 2,
+    "player0_deck_count": 44,
+    "player0_hand_count": 5,
+    "player0_rear_guard_count": 1,
+    "player0_protect_markers": 1,
+    "action_types": [
+        "Draw",
+        "MoveCard",
+        "SetPhase",
+        "AddGiftMarker"
+    ]
+}

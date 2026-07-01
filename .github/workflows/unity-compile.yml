@@ -1,0 +1,46 @@
+name: Unity Compile
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  unity-compile:
+    name: Unity batchmode compile
+    runs-on: [self-hosted, Windows, Unity]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compile Unity project
+        shell: powershell
+        run: |
+          $projectPath = (Resolve-Path "client\unity\VanguardThaiSim").Path
+          $unityExe = $env:UNITY_EXE
+          if ([string]::IsNullOrWhiteSpace($unityExe)) {
+            $unityExe = Join-Path $env:LOCALAPPDATA "Unity\Hub\Editor\6000.5.0f1\Editor\Unity.exe"
+          }
+          if (-not (Test-Path -LiteralPath $unityExe)) {
+            throw "Unity executable not found. Set UNITY_EXE or install Unity 6000.5.0f1 at the default Hub path."
+          }
+
+          $workPath = Join-Path $projectPath "work"
+          New-Item -ItemType Directory -Path $workPath -Force | Out-Null
+          if (-not (Get-Process Unity -ErrorAction SilentlyContinue)) {
+            Remove-Item -LiteralPath (Join-Path $projectPath "Library\ArtifactDB-lock") -Force -ErrorAction SilentlyContinue
+            Remove-Item -LiteralPath (Join-Path $projectPath "Library\SourceAssetDB-lock") -Force -ErrorAction SilentlyContinue
+          }
+
+          $logPath = Join-Path $workPath "ci_unity_compile.log"
+          & $unityExe -batchmode -nographics -quit -projectPath $projectPath -logFile $logPath
+          $exitCode = $LASTEXITCODE
+          if ($exitCode -ne 0) {
+            Get-Content $logPath -Tail 200
+            exit $exitCode
+          }
+
+          $errors = Select-String -Path $logPath -Pattern "fatal error|error CS|Compilation failed|Scripts have compiler errors" -CaseSensitive:$false
+          if ($errors) {
+            $errors | ForEach-Object { Write-Error $_.Line }
+            exit 1
+          }

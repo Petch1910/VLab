@@ -1,0 +1,95 @@
+{
+  "version": "M35-A4",
+  "description": "First-slice feasibility refresh after target selection and minimal legality fixtures",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "input_evidence": {
+    "m35_a2_report": "outputs\\target_slice\\m35_a2_first_target_slice_report.json",
+    "m35_a3_fixtures": "outputs\\target_slice\\m35_a3_first_slice_deck_legality_fixtures.json"
+  },
+  "capacity": {
+    "ready": true,
+    "card_count": 112,
+    "main_capacity": 448,
+    "trigger_capacity": 76,
+    "non_trigger_capacity": 372,
+    "grade_unique_count": {
+      "0": 27,
+      "1": 31,
+      "2": 29,
+      "3": 25,
+      "4": 0,
+      "unknown": 0
+    },
+    "trigger_capacity_by_type": {
+      "Critical": 16,
+      "Draw": 16,
+      "Heal": 12,
+      "Stand": 32
+    },
+    "missing_set_codes": []
+  },
+  "taxonomy": {
+    "ready": true,
+    "missing_required_terms": [],
+    "unsupported_modules_first_slice": [
+      "Legion/D-Legion",
+      "Stride and Becoming a Heart",
+      "G Guardian",
+      "Imaginary Gift",
+      "Front Trigger",
+      "Ride Deck Zone",
+      "Persona Ride",
+      "Over Trigger",
+      "Order Area",
+      "Order Zone",
+      "Gauge Zone",
+      "Crest Zone",
+      "Energy-charge",
+      "Energy-blast",
+      "overDress",
+      "XoverDress",
+      "Divine Skill"
+    ]
+  },
+  "legality_fixtures": {
+    "ready": true,
+    "fixture_count": 6,
+    "all_expectations_met": true,
+    "valid_fixture_accepts": true,
+    "expected_failure_coverage": {
+      "short_main": true,
+      "trigger_count": true,
+      "missing_setup_grade": true,
+      "copy_limit": true,
+      "identity_mismatch": true
+    },
+    "expected_failure_coverage_complete": true
+  },
+  "missing_rule_gate": {
+    "blocking_gaps_for_phase_b": [],
+    "deferred_before_full_legality": [
+      "official heal trigger maximum source fixture",
+      "format-wide copy-limit exceptions beyond runtime deck_limit",
+      "full official deck construction source citations"
+    ],
+    "not_a_full_official_legality_claim": true
+  },
+  "phase_a_ready_for_phase_b": true,
+  "recommended_next": "M35-B1"
+}

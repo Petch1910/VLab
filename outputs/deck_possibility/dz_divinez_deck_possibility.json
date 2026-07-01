@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "generator": "tools/deck/analyze_deck_possibilities.py",
+  "scope": {
+    "preset": "dz_divinez",
+    "set_codes": [
+      "DZ-SD01",
+      "DZ-SD02",
+      "DZ-SD03",
+      "DZ-SD04",
+      "DZ-SD05",
+      "DZ-SD06",
+      "DZ-BT01",
+      "DZ-BT02",
+      "DZ-BT03",
+      "DZ-BT04",
+      "DZ-BT05",
+      "DZ-SS01",
+      "DZ-SS02",
+      "DZ-SS03"
+    ],
+    "available_set_codes": [],
+    "missing_set_codes": [
+      "DZ-SD01",
+      "DZ-SD02",
+      "DZ-SD03",
+      "DZ-SD04",
+      "DZ-SD05",
+      "DZ-SD06",
+      "DZ-BT01",
+      "DZ-BT02",
+      "DZ-BT03",
+      "DZ-BT04",
+      "DZ-BT05",
+      "DZ-SS01",
+      "DZ-SS02",
+      "DZ-SS03"
+    ],
+    "group_mode": "auto",
+    "main_deck_size": 50,
+    "trigger_target": 16,
+    "non_trigger_target": 34,
+    "note": "offline theoretical count-distribution analysis, not full official deck legality"
+  },
+  "card_count": 0,
+  "group_count": 0,
+  "groups": []
+}

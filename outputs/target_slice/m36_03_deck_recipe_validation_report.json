@@ -1,0 +1,1908 @@
+{
+  "version": "M36-03",
+  "description": "Deck recipe validator for M36-02 draft recipes",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "deck_recipe_draft_model": "outputs\\target_slice\\m36_02_deck_recipe_draft_model.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "scope": {
+    "offline_validator": true,
+    "runtime_deck": false,
+    "bot_integration": false,
+    "automatic_deck_injection": false
+  },
+  "validation_policy": {
+    "classic_main_deck_size": 50,
+    "classic_trigger_count": 16,
+    "heal_trigger_max": 4,
+    "copy_limit_from_sqlite_deck_limit": true,
+    "grade_profile_mismatch_is_review_not_blocker": true,
+    "review_blockers_are_blocking": true
+  },
+  "summary": {
+    "recipe_count": 25,
+    "runtime_ready_recipe_count": 0,
+    "validator_passed_count": 0,
+    "validator_passed_pending_human_acceptance_count": 0,
+    "invalid_draft_count": 1,
+    "blocked_by_review_count": 24,
+    "missing_card_recipe_count": 0,
+    "copy_limit_violation_recipe_count": 0,
+    "slot_gap_recipe_count": 16,
+    "trigger_count_mismatch_recipe_count": 12,
+    "issue_counts": {
+      "grade_profile_review": 25,
+      "human_acceptance_pending": 1,
+      "main_deck_size_mismatch": 16,
+      "review_status_blocked": 24,
+      "trigger_count_mismatch": 12,
+      "unfilled_slots": 16
+    },
+    "ready_for_m36_04": true
+  },
+  "recipe_validations": [
+    {
+      "recipe_id": "recipe_001",
+      "source_line_id": "line_001",
+      "source_skeleton_id": "skel_001",
+      "anchor_card_id": "BT04-038TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 30
+            },
+            "1": {
+              "expected": 14,
+              "actual": 0
+            },
+            "2": {
+              "expected": 11,
+              "actual": 16
+            },
+            "3": {
+              "expected": 8,
+              "actual": 4
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Stand": 16
+        },
+        "grade_counts": {
+          "0": 30,
+          "2": 16,
+          "3": 4
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_002",
+      "source_line_id": "line_002",
+      "source_skeleton_id": "skel_002",
+      "anchor_card_id": "EB04-017TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 30
+            },
+            "1": {
+              "expected": 14,
+              "actual": 0
+            },
+            "2": {
+              "expected": 11,
+              "actual": 16
+            },
+            "3": {
+              "expected": 8,
+              "actual": 4
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Stand": 16
+        },
+        "grade_counts": {
+          "0": 30,
+          "2": 16,
+          "3": 4
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_003",
+      "source_line_id": "line_003",
+      "source_skeleton_id": "skel_003",
+      "anchor_card_id": "BT04-078TH",
+      "review_status": "accepted_seed_pending_recipe_validation",
+      "validation_status": "invalid_draft",
+      "blocking_issue_count": 3,
+      "issues": [
+        {
+          "code": "main_deck_size_mismatch",
+          "severity": "blocker",
+          "message": "Explicit quantities do not equal main deck target.",
+          "details": {
+            "expected": 50,
+            "actual": 38
+          }
+        },
+        {
+          "code": "unfilled_slots",
+          "severity": "blocker",
+          "message": "Draft still has unfilled slots.",
+          "details": {
+            "unfilled": 12
+          }
+        },
+        {
+          "code": "trigger_count_mismatch",
+          "severity": "blocker",
+          "message": "Classic trigger count must be 16 before recipe can be promoted.",
+          "details": {
+            "expected": 16,
+            "actual": 4,
+            "by_trigger": {
+              "Stand": 4
+            }
+          }
+        },
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 4
+            },
+            "1": {
+              "expected": 14,
+              "actual": 0
+            },
+            "2": {
+              "expected": 11,
+              "actual": 6
+            },
+            "3": {
+              "expected": 8,
+              "actual": 28
+            }
+          }
+        },
+        {
+          "code": "human_acceptance_pending",
+          "severity": "review",
+          "message": "Accepted seed still requires human acceptance.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 38,
+        "trigger_count": 4,
+        "trigger_counts": {
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 4,
+          "2": 6,
+          "3": 28
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 38
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_004",
+      "source_line_id": "line_004",
+      "source_skeleton_id": "skel_004",
+      "anchor_card_id": "BT01-028TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 20
+            },
+            "1": {
+              "expected": 14,
+              "actual": 22
+            },
+            "2": {
+              "expected": 11,
+              "actual": 0
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Stand": 16
+        },
+        "grade_counts": {
+          "0": 20,
+          "1": 22,
+          "3": 8
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_005",
+      "source_line_id": "line_005",
+      "source_skeleton_id": "skel_005",
+      "anchor_card_id": "EB04-016TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 20
+            },
+            "1": {
+              "expected": 14,
+              "actual": 22
+            },
+            "2": {
+              "expected": 11,
+              "actual": 0
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Stand": 16
+        },
+        "grade_counts": {
+          "0": 20,
+          "1": 22,
+          "3": 8
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_006",
+      "source_line_id": "line_006",
+      "source_skeleton_id": "skel_006",
+      "anchor_card_id": "TD03-003TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 20
+            },
+            "1": {
+              "expected": 14,
+              "actual": 22
+            },
+            "2": {
+              "expected": 11,
+              "actual": 0
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Stand": 16
+        },
+        "grade_counts": {
+          "0": 20,
+          "1": 22,
+          "3": 8
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_007",
+      "source_line_id": "line_007",
+      "source_skeleton_id": "skel_007",
+      "anchor_card_id": "EB04-008TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 3,
+      "issues": [
+        {
+          "code": "main_deck_size_mismatch",
+          "severity": "blocker",
+          "message": "Explicit quantities do not equal main deck target.",
+          "details": {
+            "expected": 50,
+            "actual": 48
+          }
+        },
+        {
+          "code": "unfilled_slots",
+          "severity": "blocker",
+          "message": "Draft still has unfilled slots.",
+          "details": {
+            "unfilled": 2
+          }
+        },
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 24
+            },
+            "2": {
+              "expected": 11,
+              "actual": 0
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 48,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Stand": 16
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 24,
+          "3": 8
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 48
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_008",
+      "source_line_id": "line_008",
+      "source_skeleton_id": "skel_008",
+      "anchor_card_id": "TD03-001TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 3,
+      "issues": [
+        {
+          "code": "main_deck_size_mismatch",
+          "severity": "blocker",
+          "message": "Explicit quantities do not equal main deck target.",
+          "details": {
+            "expected": 50,
+            "actual": 48
+          }
+        },
+        {
+          "code": "unfilled_slots",
+          "severity": "blocker",
+          "message": "Draft still has unfilled slots.",
+          "details": {
+            "unfilled": 2
+          }
+        },
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 24
+            },
+            "2": {
+              "expected": 11,
+              "actual": 0
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 48,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Stand": 16
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 24,
+          "3": 8
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 48
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_009",
+      "source_line_id": "line_009",
+      "source_skeleton_id": "skel_009",
+      "anchor_card_id": "BT01-032TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 4,
+      "issues": [
+        {
+          "code": "main_deck_size_mismatch",
+          "severity": "blocker",
+          "message": "Explicit quantities do not equal main deck target.",
+          "details": {
+            "expected": 50,
+            "actual": 38
+          }
+        },
+        {
+          "code": "unfilled_slots",
+          "severity": "blocker",
+          "message": "Draft still has unfilled slots.",
+          "details": {
+            "unfilled": 12
+          }
+        },
+        {
+          "code": "trigger_count_mismatch",
+          "severity": "blocker",
+          "message": "Classic trigger count must be 16 before recipe can be promoted.",
+          "details": {
+            "expected": 16,
+            "actual": 4,
+            "by_trigger": {
+              "Stand": 4
+            }
+          }
+        },
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 4
+            },
+            "1": {
+              "expected": 14,
+              "actual": 0
+            },
+            "2": {
+              "expected": 11,
+              "actual": 14
+            },
+            "3": {
+              "expected": 8,
+              "actual": 20
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 38,
+        "trigger_count": 4,
+        "trigger_counts": {
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 4,
+          "2": 14,
+          "3": 20
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 38
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_010",
+      "source_line_id": "line_010",
+      "source_skeleton_id": "skel_010",
+      "anchor_card_id": "EB01-020TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 4,
+      "issues": [
+        {
+          "code": "main_deck_size_mismatch",
+          "severity": "blocker",
+          "message": "Explicit quantities do not equal main deck target.",
+          "details": {
+            "expected": 50,
+            "actual": 38
+          }
+        },
+        {
+          "code": "unfilled_slots",
+          "severity": "blocker",
+          "message": "Draft still has unfilled slots.",
+          "details": {
+            "unfilled": 12
+          }
+        },
+        {
+          "code": "trigger_count_mismatch",
+          "severity": "blocker",
+          "message": "Classic trigger count must be 16 before recipe can be promoted.",
+          "details": {
+            "expected": 16,
+            "actual": 4,
+            "by_trigger": {
+              "Stand": 4
+            }
+          }
+        },
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 4
+            },
+            "1": {
+              "expected": 14,
+              "actual": 0
+            },
+            "2": {
+              "expected": 11,
+              "actual": 14
+            },
+            "3": {
+              "expected": 8,
+              "actual": 20
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 38,
+        "trigger_count": 4,
+        "trigger_counts": {
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 4,
+          "2": 14,
+          "3": 20
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 38
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_011",
+      "source_line_id": "line_011",
+      "source_skeleton_id": "skel_011",
+      "anchor_card_id": "EB04-034TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 4,
+      "issues": [
+        {
+          "code": "main_deck_size_mismatch",
+          "severity": "blocker",
+          "message": "Explicit quantities do not equal main deck target.",
+          "details": {
+            "expected": 50,
+            "actual": 38
+          }
+        },
+        {
+          "code": "unfilled_slots",
+          "severity": "blocker",
+          "message": "Draft still has unfilled slots.",
+          "details": {
+            "unfilled": 12
+          }
+        },
+        {
+          "code": "trigger_count_mismatch",
+          "severity": "blocker",
+          "message": "Classic trigger count must be 16 before recipe can be promoted.",
+          "details": {
+            "expected": 16,
+            "actual": 4,
+            "by_trigger": {
+              "Stand": 4
+            }
+          }
+        },
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 4
+            },
+            "1": {
+              "expected": 14,
+              "actual": 0
+            },
+            "2": {
+              "expected": 11,
+              "actual": 14
+            },
+            "3": {
+              "expected": 8,
+              "actual": 20
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 38,
+        "trigger_count": 4,
+        "trigger_counts": {
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 4,
+          "2": 14,
+          "3": 20
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 38
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_012",
+      "source_line_id": "line_012",
+      "source_skeleton_id": "skel_012",
+      "anchor_card_id": "EB04-035TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 4,
+      "issues": [
+        {
+          "code": "main_deck_size_mismatch",
+          "severity": "blocker",
+          "message": "Explicit quantities do not equal main deck target.",
+          "details": {
+            "expected": 50,
+            "actual": 38
+          }
+        },
+        {
+          "code": "unfilled_slots",
+          "severity": "blocker",
+          "message": "Draft still has unfilled slots.",
+          "details": {
+            "unfilled": 12
+          }
+        },
+        {
+          "code": "trigger_count_mismatch",
+          "severity": "blocker",
+          "message": "Classic trigger count must be 16 before recipe can be promoted.",
+          "details": {
+            "expected": 16,
+            "actual": 4,
+            "by_trigger": {
+              "Stand": 4
+            }
+          }
+        },
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 4
+            },
+            "1": {
+              "expected": 14,
+              "actual": 0
+            },
+            "2": {
+              "expected": 11,
+              "actual": 14
+            },
+            "3": {
+              "expected": 8,
+              "actual": 20
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 38,
+        "trigger_count": 4,
+        "trigger_counts": {
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 4,
+          "2": 14,
+          "3": 20
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 38
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_013",
+      "source_line_id": "line_013",
+      "source_skeleton_id": "skel_013",
+      "anchor_card_id": "TD03-005TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 23
+            },
+            "1": {
+              "expected": 14,
+              "actual": 8
+            },
+            "2": {
+              "expected": 11,
+              "actual": 7
+            },
+            "3": {
+              "expected": 8,
+              "actual": 12
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Stand": 16
+        },
+        "grade_counts": {
+          "0": 23,
+          "1": 8,
+          "2": 7,
+          "3": 12
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_014",
+      "source_line_id": "line_014",
+      "source_skeleton_id": "skel_014",
+      "anchor_card_id": "BT06-099TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 23
+            },
+            "1": {
+              "expected": 14,
+              "actual": 8
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Stand": 16
+        },
+        "grade_counts": {
+          "0": 23,
+          "1": 8,
+          "2": 11,
+          "3": 8
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_015",
+      "source_line_id": "line_015",
+      "source_skeleton_id": "skel_015",
+      "anchor_card_id": "EB04-021TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 23
+            },
+            "1": {
+              "expected": 14,
+              "actual": 8
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Stand": 16
+        },
+        "grade_counts": {
+          "0": 23,
+          "1": 8,
+          "2": 11,
+          "3": 8
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_016",
+      "source_line_id": "line_016",
+      "source_skeleton_id": "skel_016",
+      "anchor_card_id": "BT02-018TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 3,
+      "issues": [
+        {
+          "code": "main_deck_size_mismatch",
+          "severity": "blocker",
+          "message": "Explicit quantities do not equal main deck target.",
+          "details": {
+            "expected": 50,
+            "actual": 48
+          }
+        },
+        {
+          "code": "unfilled_slots",
+          "severity": "blocker",
+          "message": "Draft still has unfilled slots.",
+          "details": {
+            "unfilled": 2
+          }
+        },
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 12
+            },
+            "2": {
+              "expected": 11,
+              "actual": 8
+            },
+            "3": {
+              "expected": 8,
+              "actual": 12
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 48,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Stand": 16
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 12,
+          "2": 8,
+          "3": 12
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 48
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_017",
+      "source_line_id": "line_017",
+      "source_skeleton_id": "skel_017",
+      "anchor_card_id": "BT09-075TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 4,
+      "issues": [
+        {
+          "code": "main_deck_size_mismatch",
+          "severity": "blocker",
+          "message": "Explicit quantities do not equal main deck target.",
+          "details": {
+            "expected": 50,
+            "actual": 34
+          }
+        },
+        {
+          "code": "unfilled_slots",
+          "severity": "blocker",
+          "message": "Draft still has unfilled slots.",
+          "details": {
+            "unfilled": 16
+          }
+        },
+        {
+          "code": "trigger_count_mismatch",
+          "severity": "blocker",
+          "message": "Classic trigger count must be 16 before recipe can be promoted.",
+          "details": {
+            "expected": 16,
+            "actual": 0,
+            "by_trigger": {}
+          }
+        },
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 4
+            },
+            "1": {
+              "expected": 14,
+              "actual": 0
+            },
+            "2": {
+              "expected": 11,
+              "actual": 13
+            },
+            "3": {
+              "expected": 8,
+              "actual": 17
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 34,
+        "trigger_count": 0,
+        "trigger_counts": {},
+        "grade_counts": {
+          "0": 4,
+          "2": 13,
+          "3": 17
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 34
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_018",
+      "source_line_id": "line_018",
+      "source_skeleton_id": "skel_018",
+      "anchor_card_id": "EB04-004TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 3,
+      "issues": [
+        {
+          "code": "main_deck_size_mismatch",
+          "severity": "blocker",
+          "message": "Explicit quantities do not equal main deck target.",
+          "details": {
+            "expected": 50,
+            "actual": 48
+          }
+        },
+        {
+          "code": "unfilled_slots",
+          "severity": "blocker",
+          "message": "Draft still has unfilled slots.",
+          "details": {
+            "unfilled": 2
+          }
+        },
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 12
+            },
+            "2": {
+              "expected": 11,
+              "actual": 8
+            },
+            "3": {
+              "expected": 8,
+              "actual": 12
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 48,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Stand": 16
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 12,
+          "2": 8,
+          "3": 12
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 48
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_019",
+      "source_line_id": "line_019",
+      "source_skeleton_id": "skel_019",
+      "anchor_card_id": "BT04-076TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 4,
+      "issues": [
+        {
+          "code": "main_deck_size_mismatch",
+          "severity": "blocker",
+          "message": "Explicit quantities do not equal main deck target.",
+          "details": {
+            "expected": 50,
+            "actual": 34
+          }
+        },
+        {
+          "code": "unfilled_slots",
+          "severity": "blocker",
+          "message": "Draft still has unfilled slots.",
+          "details": {
+            "unfilled": 16
+          }
+        },
+        {
+          "code": "trigger_count_mismatch",
+          "severity": "blocker",
+          "message": "Classic trigger count must be 16 before recipe can be promoted.",
+          "details": {
+            "expected": 16,
+            "actual": 0,
+            "by_trigger": {}
+          }
+        },
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 0
+            },
+            "1": {
+              "expected": 14,
+              "actual": 7
+            },
+            "2": {
+              "expected": 11,
+              "actual": 5
+            },
+            "3": {
+              "expected": 8,
+              "actual": 22
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 34,
+        "trigger_count": 0,
+        "trigger_counts": {},
+        "grade_counts": {
+          "1": 7,
+          "2": 5,
+          "3": 22
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 34
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_020",
+      "source_line_id": "line_020",
+      "source_skeleton_id": "skel_020",
+      "anchor_card_id": "BT04-019TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 23
+            },
+            "1": {
+              "expected": 14,
+              "actual": 20
+            },
+            "2": {
+              "expected": 11,
+              "actual": 7
+            },
+            "3": {
+              "expected": 8,
+              "actual": 0
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Stand": 16
+        },
+        "grade_counts": {
+          "0": 23,
+          "1": 20,
+          "2": 7
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_021",
+      "source_line_id": "line_021",
+      "source_skeleton_id": "skel_021",
+      "anchor_card_id": "BT09-072TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 4,
+      "issues": [
+        {
+          "code": "main_deck_size_mismatch",
+          "severity": "blocker",
+          "message": "Explicit quantities do not equal main deck target.",
+          "details": {
+            "expected": 50,
+            "actual": 46
+          }
+        },
+        {
+          "code": "unfilled_slots",
+          "severity": "blocker",
+          "message": "Draft still has unfilled slots.",
+          "details": {
+            "unfilled": 4
+          }
+        },
+        {
+          "code": "trigger_count_mismatch",
+          "severity": "blocker",
+          "message": "Classic trigger count must be 16 before recipe can be promoted.",
+          "details": {
+            "expected": 16,
+            "actual": 12,
+            "by_trigger": {
+              "Critical": 8,
+              "Stand": 4
+            }
+          }
+        },
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 12
+            },
+            "1": {
+              "expected": 14,
+              "actual": 7
+            },
+            "3": {
+              "expected": 8,
+              "actual": 16
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 46,
+        "trigger_count": 12,
+        "trigger_counts": {
+          "Critical": 8,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 12,
+          "1": 7,
+          "2": 11,
+          "3": 16
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 46
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_022",
+      "source_line_id": "line_022",
+      "source_skeleton_id": "skel_022",
+      "anchor_card_id": "EB04-009TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 4,
+      "issues": [
+        {
+          "code": "main_deck_size_mismatch",
+          "severity": "blocker",
+          "message": "Explicit quantities do not equal main deck target.",
+          "details": {
+            "expected": 50,
+            "actual": 46
+          }
+        },
+        {
+          "code": "unfilled_slots",
+          "severity": "blocker",
+          "message": "Draft still has unfilled slots.",
+          "details": {
+            "unfilled": 4
+          }
+        },
+        {
+          "code": "trigger_count_mismatch",
+          "severity": "blocker",
+          "message": "Classic trigger count must be 16 before recipe can be promoted.",
+          "details": {
+            "expected": 16,
+            "actual": 12,
+            "by_trigger": {
+              "Critical": 8,
+              "Stand": 4
+            }
+          }
+        },
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 12
+            },
+            "1": {
+              "expected": 14,
+              "actual": 3
+            },
+            "3": {
+              "expected": 8,
+              "actual": 20
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 46,
+        "trigger_count": 12,
+        "trigger_counts": {
+          "Critical": 8,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 12,
+          "1": 3,
+          "2": 11,
+          "3": 20
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 46
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_023",
+      "source_line_id": "line_023",
+      "source_skeleton_id": "skel_023",
+      "anchor_card_id": "EB04-023TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 4,
+      "issues": [
+        {
+          "code": "main_deck_size_mismatch",
+          "severity": "blocker",
+          "message": "Explicit quantities do not equal main deck target.",
+          "details": {
+            "expected": 50,
+            "actual": 46
+          }
+        },
+        {
+          "code": "unfilled_slots",
+          "severity": "blocker",
+          "message": "Draft still has unfilled slots.",
+          "details": {
+            "unfilled": 4
+          }
+        },
+        {
+          "code": "trigger_count_mismatch",
+          "severity": "blocker",
+          "message": "Classic trigger count must be 16 before recipe can be promoted.",
+          "details": {
+            "expected": 16,
+            "actual": 12,
+            "by_trigger": {
+              "Critical": 8,
+              "Stand": 4
+            }
+          }
+        },
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 12
+            },
+            "1": {
+              "expected": 14,
+              "actual": 7
+            },
+            "3": {
+              "expected": 8,
+              "actual": 16
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 46,
+        "trigger_count": 12,
+        "trigger_counts": {
+          "Critical": 8,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 12,
+          "1": 7,
+          "2": 11,
+          "3": 16
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 46
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_024",
+      "source_line_id": "line_024",
+      "source_skeleton_id": "skel_024",
+      "anchor_card_id": "TD03-008TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 4,
+      "issues": [
+        {
+          "code": "main_deck_size_mismatch",
+          "severity": "blocker",
+          "message": "Explicit quantities do not equal main deck target.",
+          "details": {
+            "expected": 50,
+            "actual": 46
+          }
+        },
+        {
+          "code": "unfilled_slots",
+          "severity": "blocker",
+          "message": "Draft still has unfilled slots.",
+          "details": {
+            "unfilled": 4
+          }
+        },
+        {
+          "code": "trigger_count_mismatch",
+          "severity": "blocker",
+          "message": "Classic trigger count must be 16 before recipe can be promoted.",
+          "details": {
+            "expected": 16,
+            "actual": 12,
+            "by_trigger": {
+              "Critical": 8,
+              "Stand": 4
+            }
+          }
+        },
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 12
+            },
+            "1": {
+              "expected": 14,
+              "actual": 7
+            },
+            "3": {
+              "expected": 8,
+              "actual": 16
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 46,
+        "trigger_count": 12,
+        "trigger_counts": {
+          "Critical": 8,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 12,
+          "1": 7,
+          "2": 11,
+          "3": 16
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 46
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "recipe_025",
+      "source_line_id": "line_025",
+      "source_skeleton_id": "skel_025",
+      "anchor_card_id": "BT02-072TH",
+      "review_status": "blocked_rejected_line_support_gap",
+      "validation_status": "blocked_by_review",
+      "blocking_issue_count": 4,
+      "issues": [
+        {
+          "code": "main_deck_size_mismatch",
+          "severity": "blocker",
+          "message": "Explicit quantities do not equal main deck target.",
+          "details": {
+            "expected": 50,
+            "actual": 34
+          }
+        },
+        {
+          "code": "unfilled_slots",
+          "severity": "blocker",
+          "message": "Draft still has unfilled slots.",
+          "details": {
+            "unfilled": 16
+          }
+        },
+        {
+          "code": "trigger_count_mismatch",
+          "severity": "blocker",
+          "message": "Classic trigger count must be 16 before recipe can be promoted.",
+          "details": {
+            "expected": 16,
+            "actual": 0,
+            "by_trigger": {}
+          }
+        },
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 0
+            },
+            "1": {
+              "expected": 14,
+              "actual": 4
+            },
+            "2": {
+              "expected": 11,
+              "actual": 16
+            },
+            "3": {
+              "expected": 8,
+              "actual": 14
+            }
+          }
+        },
+        {
+          "code": "review_status_blocked",
+          "severity": "blocker",
+          "message": "Recipe source line is still rejected by M36-01.",
+          "details": {
+            "review_status": "blocked_rejected_line_support_gap"
+          }
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 34,
+        "trigger_count": 0,
+        "trigger_counts": {},
+        "grade_counts": {
+          "1": 4,
+          "2": 16,
+          "3": 14
+        },
+        "clan_counts": {
+          "โนว่า เกรปเปอร์": 34
+        }
+      },
+      "runtime_ready": false
+    }
+  ],
+  "next_target": {
+    "milestone": "M36-04",
+    "task": "Combo-line to recipe consistency check"
+  }
+}

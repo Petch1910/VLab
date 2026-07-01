@@ -1,0 +1,276 @@
+{
+  "version": "M38-03",
+  "description": "Human-accepted recipe artifact for recipe_003",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "deck_recipe_draft_model": "outputs\\target_slice\\m36_02_deck_recipe_draft_model.json",
+    "trigger_package_repair_proposal": "outputs\\target_slice\\m37_02_trigger_package_repair_proposal.json",
+    "revised_recipe_validation_rerun": "outputs\\target_slice\\m37_05_revised_recipe_validation_rerun.json",
+    "accepted_seed_human_review_packet": "outputs\\target_slice\\m38_01_accepted_seed_human_review_packet.json",
+    "grade_profile_repair_candidates": "outputs\\target_slice\\m38_02_grade_profile_repair_candidates.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "scope": {
+    "offline_human_accepted_artifact": true,
+    "records_human_acceptance": true,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_deck": false,
+    "bot_integration": false,
+    "automatic_playbook_promotion": false,
+    "live_card_text_parsing": false
+  },
+  "acceptance_record": {
+    "decision": "accepted",
+    "accepted_by": "user",
+    "accepted_at": "2026-06-30",
+    "acceptance_text": "งั้นจัดไป",
+    "interpreted_decision": "accept_first_complete_grade_profile_candidate",
+    "accepted_grade_package_id": "m38_02_grade_pkg_001",
+    "accepted_grade_package_title": "Classic target profile repair",
+    "accepted_trigger_package_id": "m37_01_pkg_001",
+    "accepted_trigger_profile_id": "balanced_classic",
+    "source_note": "Recorded from the user's go-ahead message for M38-03."
+  },
+  "accepted_recipe": {
+    "recipe_id": "recipe_003",
+    "source_recipe_id": "recipe_003",
+    "source_line_id": "line_003",
+    "anchor_card_id": "BT04-078TH",
+    "anchor_name_th": "แกรปเปิล มาเนีย",
+    "quantities": [
+      {
+        "card_id": "BT01-029TH",
+        "name_th": "บลูทัล แจ็ค",
+        "quantity": 4,
+        "grade": "2",
+        "trigger": "",
+        "series_code": "BT01",
+        "clan": "โนว่า เกรปเปอร์",
+        "source": "accepted_recipe_artifact_m38_03"
+      },
+      {
+        "card_id": "BT01-060TH",
+        "name_th": "ทอชบอย",
+        "quantity": 4,
+        "grade": "1",
+        "trigger": "",
+        "series_code": "BT01",
+        "clan": "โนว่า เกรปเปอร์",
+        "source": "accepted_recipe_artifact_m38_03"
+      },
+      {
+        "card_id": "BT01-063TH",
+        "name_th": "ไชนิ่ง เลดี้",
+        "quantity": 1,
+        "grade": "0",
+        "trigger": "",
+        "series_code": "BT01",
+        "clan": "โนว่า เกรปเปอร์",
+        "source": "accepted_recipe_artifact_m38_03"
+      },
+      {
+        "card_id": "BT01-065TH",
+        "name_th": "ริงเกิร์ล, คลาล่า",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Heal",
+        "series_code": "BT01",
+        "clan": "โนว่า เกรปเปอร์",
+        "source": "accepted_recipe_artifact_m38_03"
+      },
+      {
+        "card_id": "BT02-018TH",
+        "name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+        "quantity": 3,
+        "grade": "2",
+        "trigger": "",
+        "series_code": "BT02",
+        "clan": "โนว่า เกรปเปอร์",
+        "source": "accepted_recipe_artifact_m38_03"
+      },
+      {
+        "card_id": "BT02-073TH",
+        "name_th": "ทรี มินิทส์",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Draw",
+        "series_code": "BT02",
+        "clan": "โนว่า เกรปเปอร์",
+        "source": "accepted_recipe_artifact_m38_03"
+      },
+      {
+        "card_id": "BT04-077TH",
+        "name_th": "เรือรบประจัญบาน,โพรมีเทอุส",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Critical",
+        "series_code": "BT04",
+        "clan": "โนว่า เกรปเปอร์",
+        "source": "accepted_recipe_artifact_m38_03"
+      },
+      {
+        "card_id": "BT04-078TH",
+        "name_th": "แกรปเปิล มาเนีย",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Stand",
+        "series_code": "BT04",
+        "clan": "โนว่า เกรปเปอร์",
+        "source": "accepted_recipe_artifact_m38_03"
+      },
+      {
+        "card_id": "EB04-004TH",
+        "name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+        "quantity": 3,
+        "grade": "2",
+        "trigger": "",
+        "series_code": "EB04",
+        "clan": "โนว่า เกรปเปอร์",
+        "source": "accepted_recipe_artifact_m38_03"
+      },
+      {
+        "card_id": "EB04-010TH",
+        "name_th": "เดทเมทัล ดรอยด์",
+        "quantity": 1,
+        "grade": "3",
+        "trigger": "",
+        "series_code": "EB04",
+        "clan": "โนว่า เกรปเปอร์",
+        "source": "accepted_recipe_artifact_m38_03"
+      },
+      {
+        "card_id": "EB04-011TH",
+        "name_th": "เจโนไซด์ แจ็ค",
+        "quantity": 1,
+        "grade": "2",
+        "trigger": "",
+        "series_code": "EB04",
+        "clan": "โนว่า เกรปเปอร์",
+        "source": "accepted_recipe_artifact_m38_03"
+      },
+      {
+        "card_id": "EB04-016TH",
+        "name_th": "Mr.อินวิซิเบิ้ล",
+        "quantity": 3,
+        "grade": "3",
+        "trigger": "",
+        "series_code": "EB04",
+        "clan": "โนว่า เกรปเปอร์",
+        "source": "accepted_recipe_artifact_m38_03"
+      },
+      {
+        "card_id": "EB04-022TH",
+        "name_th": "ทอชบอย",
+        "quantity": 4,
+        "grade": "1",
+        "trigger": "",
+        "series_code": "EB04",
+        "clan": "โนว่า เกรปเปอร์",
+        "source": "accepted_recipe_artifact_m38_03"
+      },
+      {
+        "card_id": "TD03-002TH",
+        "name_th": "เดธเมทัล ดรอยด์",
+        "quantity": 2,
+        "grade": "3",
+        "trigger": "",
+        "series_code": "TD03",
+        "clan": "โนว่า เกรปเปอร์",
+        "source": "accepted_recipe_artifact_m38_03"
+      },
+      {
+        "card_id": "TD03-003TH",
+        "name_th": "Mr. อินวิซิเบิ้ล",
+        "quantity": 2,
+        "grade": "3",
+        "trigger": "",
+        "series_code": "TD03",
+        "clan": "โนว่า เกรปเปอร์",
+        "source": "accepted_recipe_artifact_m38_03"
+      },
+      {
+        "card_id": "TD03-007TH",
+        "name_th": "ทอชบอย",
+        "quantity": 4,
+        "grade": "1",
+        "trigger": "",
+        "series_code": "TD03",
+        "clan": "โนว่า เกรปเปอร์",
+        "source": "accepted_recipe_artifact_m38_03"
+      },
+      {
+        "card_id": "TD03-008TH",
+        "name_th": "โอเอซิส เกิร์ล",
+        "quantity": 2,
+        "grade": "1",
+        "trigger": "",
+        "series_code": "TD03",
+        "clan": "โนว่า เกรปเปอร์",
+        "source": "accepted_recipe_artifact_m38_03"
+      }
+    ],
+    "count_summary": {
+      "main_deck_count": 50,
+      "trigger_count": 16,
+      "trigger_counts": {
+        "Critical": 4,
+        "Draw": 4,
+        "Heal": 4,
+        "Stand": 4
+      },
+      "grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "clan_counts": {
+        "โนว่า เกรปเปอร์": 50
+      }
+    },
+    "validation_status": "accepted_review_artifact_ready_for_runtime_gate",
+    "validation_issues": [],
+    "human_acceptance_cleared": true,
+    "grade_profile_review_cleared": true,
+    "runtime_promotion_allowed": false,
+    "ready_for_m38_04_runtime_gate": true
+  },
+  "summary": {
+    "recipe_id": "recipe_003",
+    "accepted_grade_package_id": "m38_02_grade_pkg_001",
+    "accepted_trigger_package_id": "m37_01_pkg_001",
+    "human_acceptance_cleared": true,
+    "grade_profile_review_cleared": true,
+    "blocking_issue_count": 0,
+    "main_deck_count": 50,
+    "trigger_count": 16,
+    "grade_counts": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "runtime_promotion_allowed": false,
+    "ready_for_m38_04": true
+  },
+  "next_target": {
+    "milestone": "M38-04",
+    "task": "Runtime fixture promotion gate"
+  }
+}

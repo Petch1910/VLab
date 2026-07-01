@@ -1,0 +1,22 @@
+{
+  "schema": "vanguard-icon-pack-v1",
+  "pack_id": "private_user_icons",
+  "display_name": "Private User Icons",
+  "icons": {
+    "trigger_critical": "trigger_critical.png",
+    "trigger_draw": "trigger_draw.png",
+    "trigger_front": "trigger_front.png",
+    "trigger_heal": "trigger_heal.png",
+    "trigger_over": "trigger_over.png",
+    "trigger_stand_legacy": "trigger_stand_legacy.png",
+    "marker_force": "marker_force.png",
+    "marker_accel": "marker_accel.png",
+    "marker_protect": "marker_protect.png",
+    "marker_quick_shield": "marker_quick_shield.png",
+    "marker_persona": "marker_persona.png",
+    "marker_crest": "marker_crest.png",
+    "marker_energy": "marker_energy.png",
+    "marker_gauge": "marker_gauge.png"
+  }
+}
+

@@ -1,0 +1,788 @@
+{
+  "version": "M36-01",
+  "description": "First-slice human review packet before deck recipe drafting",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "manual_review_queue": "outputs\\target_slice\\m35_b4_first_slice_manual_review_queue.json",
+    "reviewed_playbook_seed": "outputs\\target_slice\\m35_d4_first_slice_reviewed_playbook_seed.json",
+    "m35_closeout": "outputs\\target_slice\\m35_closeout_hybrid_vertical_slice.json"
+  },
+  "scope": {
+    "offline_review_packet": true,
+    "runtime_playbook": false,
+    "bot_integration": false,
+    "deck_recipe_draft": false,
+    "automatic_deck_injection": false
+  },
+  "review_policy": {
+    "human_acceptance_required": true,
+    "manual_review_cards_blocked_from_recipe_until_resolved": true,
+    "rejected_lines_blocked_until_support_gap_resolved": true,
+    "accepted_seed_still_requires_recipe_validation": true,
+    "no_live_card_text_parsing": true,
+    "no_direct_GameState_mutation": true
+  },
+  "summary": {
+    "accepted_seed_item_count": 1,
+    "rejected_line_item_count": 24,
+    "manual_card_item_count": 6,
+    "total_review_item_count": 31,
+    "ready_for_m36_02": true
+  },
+  "accepted_seed_review_items": [
+    {
+      "item_type": "accepted_seed",
+      "item_id": "seed_001",
+      "source_line_id": "line_003",
+      "anchor_card_id": "BT04-078TH",
+      "anchor_name_th": "แกรปเปิล มาเนีย",
+      "review_priority": "P1_confirm_before_recipe",
+      "review_reasons": [
+        "accepted_by_static_review",
+        "requires_human_acceptance_before_runtime_or_recipe_promotion"
+      ],
+      "review_questions": [
+        "Does the seed line make sense as a human-playable Nova Grappler plan?",
+        "Are all involved cards acceptable for a draft deck recipe?",
+        "Does any step rely on unsupported or manually reviewed card text?"
+      ],
+      "cards_involved": [
+        "BT01-028TH",
+        "BT04-078TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH"
+      ],
+      "blocked_until": [
+        "human_acceptance",
+        "deck_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "confirm_or_demote_before_m36_02_recipe_draft"
+    }
+  ],
+  "rejected_line_review_items": [
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_001",
+      "source_skeleton_id": "skel_001",
+      "source_package_id": "pkg_001",
+      "anchor_card_id": "BT04-038TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_002",
+      "source_skeleton_id": "skel_002",
+      "source_package_id": "pkg_002",
+      "anchor_card_id": "EB04-017TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_004",
+      "source_skeleton_id": "skel_004",
+      "source_package_id": "pkg_004",
+      "anchor_card_id": "BT01-028TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_005",
+      "source_skeleton_id": "skel_005",
+      "source_package_id": "pkg_005",
+      "anchor_card_id": "EB04-016TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_006",
+      "source_skeleton_id": "skel_006",
+      "source_package_id": "pkg_006",
+      "anchor_card_id": "TD03-003TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_007",
+      "source_skeleton_id": "skel_007",
+      "source_package_id": "pkg_007",
+      "anchor_card_id": "EB04-008TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_008",
+      "source_skeleton_id": "skel_008",
+      "source_package_id": "pkg_008",
+      "anchor_card_id": "TD03-001TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_009",
+      "source_skeleton_id": "skel_009",
+      "source_package_id": "pkg_009",
+      "anchor_card_id": "BT01-032TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_010",
+      "source_skeleton_id": "skel_010",
+      "source_package_id": "pkg_010",
+      "anchor_card_id": "EB01-020TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_011",
+      "source_skeleton_id": "skel_011",
+      "source_package_id": "pkg_011",
+      "anchor_card_id": "EB04-034TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_012",
+      "source_skeleton_id": "skel_012",
+      "source_package_id": "pkg_012",
+      "anchor_card_id": "EB04-035TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_013",
+      "source_skeleton_id": "skel_013",
+      "source_package_id": "pkg_013",
+      "anchor_card_id": "TD03-005TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No resource dependency detected for this edge."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_014",
+      "source_skeleton_id": "skel_014",
+      "source_package_id": "pkg_014",
+      "anchor_card_id": "BT06-099TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "No resource dependency detected for this edge."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_015",
+      "source_skeleton_id": "skel_015",
+      "source_package_id": "pkg_015",
+      "anchor_card_id": "EB04-021TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "No resource dependency detected for this edge."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_016",
+      "source_skeleton_id": "skel_016",
+      "source_package_id": "pkg_016",
+      "anchor_card_id": "BT02-018TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "No additional support gap detected by C2-C4 advisory detectors."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_017",
+      "source_skeleton_id": "skel_017",
+      "source_package_id": "pkg_017",
+      "anchor_card_id": "BT09-075TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_018",
+      "source_skeleton_id": "skel_018",
+      "source_package_id": "pkg_018",
+      "anchor_card_id": "EB04-004TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "No additional support gap detected by C2-C4 advisory detectors."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_019",
+      "source_skeleton_id": "skel_019",
+      "source_package_id": "pkg_019",
+      "anchor_card_id": "BT04-076TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_020",
+      "source_skeleton_id": "skel_020",
+      "source_package_id": "pkg_020",
+      "anchor_card_id": "BT04-019TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No resource dependency detected for this edge."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_021",
+      "source_skeleton_id": "skel_021",
+      "source_package_id": "pkg_021",
+      "anchor_card_id": "BT09-072TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_022",
+      "source_skeleton_id": "skel_022",
+      "source_package_id": "pkg_022",
+      "anchor_card_id": "EB04-009TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_023",
+      "source_skeleton_id": "skel_023",
+      "source_package_id": "pkg_023",
+      "anchor_card_id": "EB04-023TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_024",
+      "source_skeleton_id": "skel_024",
+      "source_package_id": "pkg_024",
+      "anchor_card_id": "TD03-008TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    },
+    {
+      "item_type": "rejected_line",
+      "item_id": "line_025",
+      "source_skeleton_id": "skel_025",
+      "source_package_id": "pkg_025",
+      "anchor_card_id": "BT02-072TH",
+      "review_priority": "P2_support_gap_review",
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access.",
+        "No resource dependency detected for this edge."
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected"
+    }
+  ],
+  "manual_card_review_items": [
+    {
+      "item_type": "manual_review_card",
+      "item_id": "BT04-039TH",
+      "card_id": "BT04-039TH",
+      "name_th": "เบลาจังเกอร์",
+      "series_code": "BT04",
+      "grade": 0,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_on_ride_timing"
+      ],
+      "providers": [
+        "provides_deck_recycle",
+        "provides_search"
+      ],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_added_if_needed",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags"
+    },
+    {
+      "item_type": "manual_review_card",
+      "item_id": "BT04-075TH",
+      "card_id": "BT04-075TH",
+      "name_th": "เบลาแพนเซอร์",
+      "series_code": "BT04",
+      "grade": 1,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_on_call_timing",
+        "requires_rear_guard_circle",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_deck_recycle",
+        "provides_power_pressure",
+        "provides_search",
+        "provides_soul_resource"
+      ],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_added_if_needed",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags"
+    },
+    {
+      "item_type": "manual_review_card",
+      "item_id": "BT06-098TH",
+      "card_id": "BT06-098TH",
+      "name_th": "สัตว์เทวะ,แบล็ค โททัส",
+      "series_code": "BT06",
+      "grade": 2,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_attack_hit",
+        "requires_hit_timing",
+        "requires_on_attack_timing"
+      ],
+      "providers": [
+        "provides_search"
+      ],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_added_if_needed",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags"
+    },
+    {
+      "item_type": "manual_review_card",
+      "item_id": "BT06-100TH",
+      "card_id": "BT06-100TH",
+      "name_th": "ออลไมท์ตี้ รีพอตเตอร์",
+      "series_code": "BT06",
+      "grade": 1,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_attack_hit",
+        "requires_boost_timing",
+        "requires_boosted",
+        "requires_hit_timing",
+        "requires_on_attack_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_added_if_needed",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags"
+    },
+    {
+      "item_type": "manual_review_card",
+      "item_id": "BT06-101TH",
+      "card_id": "BT06-101TH",
+      "name_th": "สัตว์เทวะ,สกาเล็ท เบิร์ด",
+      "series_code": "BT06",
+      "grade": 1,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_attack_hit",
+        "requires_hit_timing",
+        "requires_on_attack_timing"
+      ],
+      "providers": [
+        "provides_search"
+      ],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_added_if_needed",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags"
+    },
+    {
+      "item_type": "manual_review_card",
+      "item_id": "BT09-074TH",
+      "card_id": "BT09-074TH",
+      "name_th": "วิวัฒนาการแห่งการเคลื่อนย้าย,มิไรโอ",
+      "series_code": "BT09",
+      "grade": 0,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_counter_blast",
+        "requires_on_ride_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_deck_recycle",
+        "provides_search",
+        "provides_soul_resource"
+      ],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_added_if_needed",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags"
+    }
+  ],
+  "next_target": {
+    "milestone": "M36-02",
+    "task": "Deck recipe draft model",
+    "blocked_until": [
+      "M36-01 review packet is available",
+      "human/team can inspect accepted seed, rejected lines, and manual-review cards"
+    ]
+  }
+}

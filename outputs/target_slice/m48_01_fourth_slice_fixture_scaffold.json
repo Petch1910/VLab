@@ -1,0 +1,237 @@
+{
+  "version": "M48-01",
+  "description": "Fourth-slice fixture scaffold",
+  "source_inputs": {
+    "fourth_slice_recipe_pipeline_entry_gate": "outputs\\target_slice\\m47_04_fourth_slice_recipe_pipeline_entry_gate.json",
+    "fourth_slice_applied_scope": "outputs\\target_slice\\m47_repair_apply_scope.json",
+    "fourth_slice_semantic_compatibility_probe": "outputs\\target_slice\\m47_03_fourth_slice_semantic_compatibility_probe.json"
+  },
+  "selected_target": {
+    "slice": "Fourth Offline Slice",
+    "era_preset": "g_series_first",
+    "group": "รอยัล พาลาดิน",
+    "group_field": "clan",
+    "rank": 2,
+    "priority_score": 86.19,
+    "best_era_candidates": 1024,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "fixture_scaffold": {
+    "policy_level": "fourth_slice_g_era_expanded_scope_fixture_scaffold_not_full_official_legality",
+    "identity_field": "clan",
+    "selected_identity": "รอยัล พาลาดิน",
+    "era_preset": "g_series_first",
+    "applied_expansion_id": "g_era_heal_expansion",
+    "set_scope": [
+      "G-BT01",
+      "G-BT02",
+      "G-BT03",
+      "G-BT04",
+      "G-BT05",
+      "G-BT06",
+      "G-BT07",
+      "G-BT08",
+      "G-BT14",
+      "G-CB01",
+      "G-CB02",
+      "G-CB03",
+      "G-CB04",
+      "G-CHB01",
+      "G-CMB01",
+      "G-FC04",
+      "G-LD03",
+      "G-MT01",
+      "G-SD01",
+      "G-SD02",
+      "G-TCB01",
+      "G-TCB02",
+      "G-TD01",
+      "G-TD02",
+      "G-TD03",
+      "G-TD04",
+      "G-TD05",
+      "G-TD06",
+      "G-TD07",
+      "G-TD08",
+      "G-TD09",
+      "G-TD11"
+    ],
+    "base_series_scope": [
+      "G-TD01",
+      "G-TD02",
+      "G-TD03",
+      "G-TD04",
+      "G-TD05",
+      "G-TD06",
+      "G-TD07",
+      "G-TD08",
+      "G-TD09",
+      "G-SD01",
+      "G-SD02",
+      "G-BT01",
+      "G-BT02",
+      "G-BT03",
+      "G-BT04",
+      "G-BT05",
+      "G-BT06",
+      "G-BT07",
+      "G-BT08",
+      "G-CB01",
+      "G-CB02",
+      "G-CB03",
+      "G-CB04",
+      "G-TCB01",
+      "G-TCB02"
+    ],
+    "added_series": [
+      "G-BT14",
+      "G-CHB01",
+      "G-CMB01",
+      "G-FC04",
+      "G-LD03",
+      "G-MT01",
+      "G-TD11"
+    ],
+    "source_series_present": [
+      "G-BT01",
+      "G-BT02",
+      "G-BT04",
+      "G-BT06",
+      "G-BT08",
+      "G-BT14",
+      "G-CHB01",
+      "G-CMB01",
+      "G-FC04",
+      "G-LD03",
+      "G-MT01",
+      "G-TD02",
+      "G-TD11"
+    ],
+    "main_deck_exact": 50,
+    "trigger_target": 16,
+    "required_trigger_types": [
+      "Critical",
+      "Draw",
+      "Heal",
+      "Stand"
+    ],
+    "recommended_trigger_profile": {
+      "Critical": 4,
+      "Draw": 4,
+      "Heal": 4,
+      "Stand": 4
+    },
+    "required_non_trigger_setup_grades": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "preferred_grade_profile": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "copy_limit_source": "runtime SQLite cards.deck_limit",
+    "deferred_source_backed_special_limits": [
+      "full official heal-trigger maximum beyond runtime deck_limit",
+      "card-specific special limits not represented in runtime SQLite",
+      "format-wide exceptions not represented in local source data",
+      "G Zone and stride deck-building limits"
+    ]
+  },
+  "mechanic_scope": {
+    "format_family": "G Series / Stride era",
+    "runtime_stride_enabled": false,
+    "g_zone_recipe_validation_deferred": true,
+    "grade4_cards_present": true,
+    "grade4_cards_advisory_only_until_g_zone_support": true,
+    "stride_or_generation_break_text_requires_manual_review": true,
+    "imaginary_gift_enabled": false,
+    "ride_deck_enabled": false,
+    "over_trigger_enabled": false,
+    "front_trigger_enabled": false,
+    "order_cards_enabled": false,
+    "notes": [
+      "This scaffold is a validator policy for offline recipes, not a full official ruleset.",
+      "G units and Stride/Generation Break text stay manual-review until dedicated G-zone rules exist."
+    ]
+  },
+  "validator_contract_for_m48_04": {
+    "must_validate_main_deck_count": true,
+    "must_validate_trigger_count": true,
+    "must_validate_required_trigger_types": true,
+    "must_validate_required_grade_coverage": true,
+    "must_validate_selected_identity": true,
+    "must_validate_set_scope": true,
+    "must_validate_runtime_deck_limit": true,
+    "must_block_missing_cards": true,
+    "must_keep_grade4_cards_out_of_main_deck_until_g_zone_support": true,
+    "must_not_accept_manual_review_dependencies_as_runtime_ready": true
+  },
+  "evidence_summary": {
+    "source_card_count": 190,
+    "series_counts": {
+      "G-BT01": 14,
+      "G-BT02": 6,
+      "G-BT04": 8,
+      "G-BT06": 15,
+      "G-BT08": 12,
+      "G-BT14": 13,
+      "G-CHB01": 26,
+      "G-CMB01": 22,
+      "G-FC04": 3,
+      "G-LD03": 18,
+      "G-MT01": 19,
+      "G-TD02": 16,
+      "G-TD11": 18
+    },
+    "grade_counts": {
+      "0": 47,
+      "1": 48,
+      "2": 46,
+      "3": 27,
+      "4": 22
+    },
+    "trigger_counts": {
+      "": 156,
+      "Critical": 15,
+      "Draw": 6,
+      "Heal": 7,
+      "Stand": 6
+    },
+    "trigger_capacity": 136,
+    "non_trigger_capacity": 624,
+    "candidate_edge_count": 785,
+    "manual_review_card_count": 15
+  },
+  "runtime_boundary": {
+    "scaffold_artifact_only": true,
+    "does_not_create_deck": true,
+    "does_not_create_recipe_draft": true,
+    "does_not_create_runtime_fixture": true,
+    "does_not_mutate_runtime_pack": true,
+    "does_not_publish_to_ui": true,
+    "does_not_publish_to_bot": true,
+    "GameState_mutation": false
+  },
+  "issues": [],
+  "summary": {
+    "scaffold_ready": true,
+    "blocking_issue_count": 0,
+    "issue_count": 0,
+    "ready_for_m48_02": true
+  },
+  "next_target": {
+    "milestone": "M48-02",
+    "task": "Fourth-slice review packet"
+  }
+}

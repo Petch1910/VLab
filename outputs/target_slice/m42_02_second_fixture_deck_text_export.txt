@@ -1,0 +1,47 @@
+# Vanguard Thai Sim Deck List
+# M42-02 review-only export from an offline runtime fixture.
+# FixtureId: runtime_fixture_m40_recipe_001_classic_core_oracle_think_tank_m41_04
+# RecipeId: m40_recipe_001
+# Slice: Classic Core
+# Scope: review_only_offline_fixture
+Name: Classic Core Oracle Think Tank Fixture (m40_recipe_001)
+Format: classic_part1
+PackId: vanguard_th
+PackVersion: 251
+PackDefinitionHash: e1d568ec103786c3a9a782e6a011e6307f612be28ba6e6b677c281f367cdd7c4
+
+[Main]
+# Card: CEO อามาเทราสึ | G3 | Normal Unit | BT01
+4 BT01-006TH
+# Card: แบทเทิล ซิสเตอร์, โคโคอา | G1 | Normal Unit | BT01
+4 BT01-007TH
+# Card: ไมเดน ออฟ ไลบร้า | G2 | Normal Unit | BT01
+1 BT01-017TH
+# Card: โลเซน เมกัส | G0 | Trigger Unit | Heal | BT01
+4 BT01-027TH
+# Card: โอราเคิลกาเดี้ยน, ไนเก้ | G0 | Trigger Unit | Critical | BT01
+4 BT01-056TH
+# Card: มิราเคิล คิด | G0 | Trigger Unit | Draw | BT01
+4 BT01-058TH
+# Card: ลัค เบิร์ด | G1 | Normal Unit | BT02
+4 BT02-033TH
+# Card: อีเมอร์เจนซี่ อาลามเมอร์ | G0 | Trigger Unit | Stand | BT02
+4 BT02-067TH
+# Card: แบทเทิลซิสเตอร์,วาฟเฟิล | G0 | Normal Unit | EB05
+1 EB05-028TH
+# Card: โอราเคิลกาเดี้ยน, อโพลอน | G3 | Normal Unit | TD04
+4 TD04-001TH
+# Card: โอราเคิลกาเดี้ยน, ไวส์แมน | G2 | Normal Unit | TD04
+4 TD04-004TH
+# Card: ซิเคียวริตี้ การ์เดี้ยน | G2 | Normal Unit | TD04
+4 TD04-005TH
+# Card: ซอร์ดแดนซ์เซอร์ แองเจิล | G2 | Normal Unit | TD04
+2 TD04-006TH
+# Card: โอราเคิล กาเดี้ยน, เจมินิ | G1 | Normal Unit | TD04
+4 TD04-007TH
+# Card: ดาร์ค แคท | G1 | Normal Unit | TD04
+2 TD04-008TH
+
+[Ride]
+
+[G]

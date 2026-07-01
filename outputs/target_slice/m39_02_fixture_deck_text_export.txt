@@ -1,0 +1,51 @@
+# Vanguard Thai Sim Deck List
+# M39-02 review-only export from an offline runtime fixture.
+# FixtureId: runtime_fixture_recipe_003_classic_core_nova_grappler_m38_04
+# RecipeId: recipe_003
+# Slice: Classic Core
+# Scope: review_only_offline_fixture
+Name: Classic Core Nova Grappler Fixture (recipe_003)
+Format: classic_part1
+PackId: vanguard_th
+PackVersion: 251
+PackDefinitionHash: e1d568ec103786c3a9a782e6a011e6307f612be28ba6e6b677c281f367cdd7c4
+
+[Main]
+# Card: บลูทัล แจ็ค | G2 | Normal Unit | BT01
+4 BT01-029TH
+# Card: ทอชบอย | G1 | Normal Unit | BT01
+4 BT01-060TH
+# Card: ไชนิ่ง เลดี้ | G0 | Normal Unit | BT01
+1 BT01-063TH
+# Card: ริงเกิร์ล, คลาล่า | G0 | Trigger Unit | Heal | BT01
+4 BT01-065TH
+# Card: เมจิคเชี่ยน เกิร์ล, คิราร่า | G2 | Normal Unit | BT02
+3 BT02-018TH
+# Card: ทรี มินิทส์ | G0 | Trigger Unit | Draw | BT02
+4 BT02-073TH
+# Card: เรือรบประจัญบาน,โพรมีเทอุส | G0 | Trigger Unit | Critical | BT04
+4 BT04-077TH
+# Card: แกรปเปิล มาเนีย | G0 | Trigger Unit | Stand | BT04
+4 BT04-078TH
+# Card: เมจิกเชี่ยลเกิร์ล,คิราร่า | G2 | Normal Unit | EB04
+3 EB04-004TH
+# Card: เดทเมทัล ดรอยด์ | G3 | Normal Unit | EB04
+1 EB04-010TH
+# Card: เจโนไซด์ แจ็ค | G2 | Normal Unit | EB04
+1 EB04-011TH
+# Card: Mr.อินวิซิเบิ้ล | G3 | Normal Unit | EB04
+3 EB04-016TH
+# Card: ทอชบอย | G1 | Normal Unit | EB04
+4 EB04-022TH
+# Card: เดธเมทัล ดรอยด์ | G3 | Normal Unit | TD03
+2 TD03-002TH
+# Card: Mr. อินวิซิเบิ้ล | G3 | Normal Unit | TD03
+2 TD03-003TH
+# Card: ทอชบอย | G1 | Normal Unit | TD03
+4 TD03-007TH
+# Card: โอเอซิส เกิร์ล | G1 | Normal Unit | TD03
+2 TD03-008TH
+
+[Ride]
+
+[G]

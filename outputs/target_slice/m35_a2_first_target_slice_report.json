@@ -1,0 +1,402 @@
+{
+  "version": "M35-A2",
+  "description": "First target slice selection + format policy + taxonomy gap report",
+  "selection_policy": {
+    "preferred_slice": "classic_core",
+    "reason": "User priority is Classic Core clan-era combo work (TD01-TD06 / BT01-BT09 / EB01-EB05). Within that slice, choose the highest-ranked feasible M34-03 group.",
+    "do_not_assume_standard_by_default": true
+  },
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "candidate_summary": [
+    {
+      "rank": 5,
+      "group": "โนว่า เกรปเปอร์",
+      "priority_score": 73.34,
+      "best_era": "classic_part1",
+      "best_era_candidates": 1326,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords"
+    },
+    {
+      "rank": 10,
+      "group": "โอราเคิล ทิงค์ แทงค์",
+      "priority_score": 63.74,
+      "best_era": "classic_part1",
+      "best_era_candidates": 875,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords"
+    },
+    {
+      "rank": 15,
+      "group": "เกรท เนเจอร์",
+      "priority_score": 53.06,
+      "best_era": "classic_part1",
+      "best_era_candidates": 568,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords"
+    },
+    {
+      "rank": 16,
+      "group": "ไดเมนชั่น โพลิส",
+      "priority_score": 52.73,
+      "best_era": "classic_part1",
+      "best_era_candidates": 234,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords"
+    },
+    {
+      "rank": 22,
+      "group": "ทาจิคาเสะ",
+      "priority_score": 49.33,
+      "best_era": "classic_part1",
+      "best_era_candidates": 224,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords"
+    }
+  ],
+  "input_evidence": {
+    "archetype_priority": "outputs\\archetype_priority\\archetype_priority_ranking.json",
+    "deck_possibility": "outputs\\deck_possibility\\classic_part1_deck_possibility.json",
+    "rule_taxonomy": "outputs\\research_2026_06_29_new_chat\\vanguard_development\\rule_taxonomy.json",
+    "mechanic_presence_matrix": "outputs\\research_2026_06_29_new_chat\\vanguard_rules_markdown\\mechanic_presence_matrix.md",
+    "missing_set_codes": []
+  },
+  "format_policy": {
+    "policy_level": "m35_a2_minimal_source_backed_policy_not_full_official_legality",
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "set_specs": [
+      "TD01-TD06",
+      "BT01-BT09",
+      "EB01-EB05"
+    ],
+    "set_codes": [
+      "TD01",
+      "TD02",
+      "TD03",
+      "TD04",
+      "TD05",
+      "TD06",
+      "BT01",
+      "BT02",
+      "BT03",
+      "BT04",
+      "BT05",
+      "BT06",
+      "BT07",
+      "BT08",
+      "BT09",
+      "EB01",
+      "EB02",
+      "EB03",
+      "EB04",
+      "EB05"
+    ],
+    "baseline_rules_source": "outputs/research_2026_06_29_new_chat/vanguard_rules_markdown/versions/01_og_link_joker_rules_1_19.md",
+    "baseline_rules_note": "Use the historical 1.19 rules snapshot as the first fixture source for early clan-era play, then confirm any card-specific behavior against the source map before promoting fixtures.",
+    "group_identity": {
+      "field": "clan",
+      "selected_group": "โนว่า เกรปเปอร์",
+      "selected_group_field": "clan"
+    },
+    "deck_limits_for_next_fixtures": {
+      "main_deck_exact": 50,
+      "trigger_target": 16,
+      "non_trigger_target": 34,
+      "ride_grade_0_1_2_3_choices_required_for_setup": true,
+      "ride_deck_required": false,
+      "g_zone_required": false,
+      "g_zone_max_for_first_slice": 0,
+      "repository_backed_copy_limits": "defer_to_M35_A3_fixtures",
+      "heal_trigger_limit": "defer_to_M35_A3_source_backed_fixture"
+    },
+    "current_count_evidence": {
+      "card_count": 112,
+      "main_card_count": 112,
+      "trigger_card_count": 19,
+      "non_trigger_card_count": 93,
+      "main_capacity": 448,
+      "trigger_capacity": 76,
+      "non_trigger_capacity": 372,
+      "grade_unique_count": {
+        "0": 27,
+        "1": 31,
+        "2": 29,
+        "3": 25,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 16,
+        "Draw": 16,
+        "Heal": 12,
+        "Stand": 32
+      },
+      "basic_50_card_main": true,
+      "main_with_16_triggers_34_non_triggers": true,
+      "ride_deck_grade_0_1_2_3_choice": true,
+      "issues": []
+    },
+    "unsupported_in_first_slice": [
+      "Legion/D-Legion",
+      "Stride and Becoming a Heart",
+      "G Guardian",
+      "Imaginary Gift",
+      "Front Trigger",
+      "Ride Deck Zone",
+      "Persona Ride",
+      "Over Trigger",
+      "Order Area",
+      "Order Zone",
+      "Gauge Zone",
+      "Crest Zone",
+      "Energy-charge",
+      "Energy-blast",
+      "overDress",
+      "XoverDress",
+      "Divine Skill"
+    ]
+  },
+  "taxonomy_gap_report": {
+    "taxonomy_source": "outputs\\research_2026_06_29_new_chat\\vanguard_development\\rule_taxonomy.json",
+    "mechanic_presence_source": "outputs\\research_2026_06_29_new_chat\\vanguard_rules_markdown\\mechanic_presence_matrix.md",
+    "required_categories": {
+      "zones": {
+        "required": [
+          "Deck Zone",
+          "Hand",
+          "Drop Zone",
+          "Field",
+          "Circle",
+          "Vanguard Circle",
+          "Rear-guard Circle",
+          "Guardian Circle",
+          "Soul",
+          "Damage Zone",
+          "Trigger Zone"
+        ],
+        "present": [
+          "Deck Zone",
+          "Hand",
+          "Drop Zone",
+          "Field",
+          "Circle",
+          "Vanguard Circle",
+          "Rear-guard Circle",
+          "Guardian Circle",
+          "Soul",
+          "Damage Zone",
+          "Trigger Zone"
+        ],
+        "missing": []
+      },
+      "placement_systems": {
+        "required": [
+          "Call",
+          "Ride"
+        ],
+        "present": [
+          "Call",
+          "Ride"
+        ],
+        "missing": []
+      },
+      "specific_actions": {
+        "required": [
+          "Stand/Rest",
+          "Shuffle",
+          "Move Cards from the Deck/Draw",
+          "Discard",
+          "Search",
+          "Retire",
+          "Heal",
+          "(Perform) Drive Check",
+          "(Perform) Damage Check",
+          "Counter-blast",
+          "Soul-blast",
+          "Counter-charge",
+          "Soul-charge",
+          "Attack",
+          "Battle",
+          "Boost"
+        ],
+        "present": [
+          "Stand/Rest",
+          "Shuffle",
+          "Move Cards from the Deck/Draw",
+          "Discard",
+          "Search",
+          "Retire",
+          "Heal",
+          "(Perform) Drive Check",
+          "(Perform) Damage Check",
+          "Counter-blast",
+          "Soul-blast",
+          "Counter-charge",
+          "Soul-charge",
+          "Attack",
+          "Battle",
+          "Boost"
+        ],
+        "missing": []
+      },
+      "turn_structure": {
+        "required": [
+          "Stand Phase",
+          "Draw Phase",
+          "Ride Phase",
+          "Main Phase",
+          "Battle Phase",
+          "End Phase"
+        ],
+        "present": [
+          "Stand Phase",
+          "Draw Phase",
+          "Ride Phase",
+          "Main Phase",
+          "Battle Phase",
+          "End Phase"
+        ],
+        "missing": []
+      },
+      "battle_steps": {
+        "required": [
+          "Start Step",
+          "Attack Step",
+          "Guard Step",
+          "Drive Step",
+          "Damage Step",
+          "Close Step"
+        ],
+        "present": [
+          "Start Step",
+          "Attack Step",
+          "Guard Step",
+          "Drive Step",
+          "Damage Step",
+          "Close Step"
+        ],
+        "missing": []
+      },
+      "ability_types": {
+        "required": [
+          "ACT",
+          "AUTO",
+          "CONT"
+        ],
+        "present": [
+          "ACT",
+          "AUTO",
+          "CONT"
+        ],
+        "missing": []
+      },
+      "triggers": {
+        "required": [
+          "Critical",
+          "Draw",
+          "Stand",
+          "Heal"
+        ],
+        "present": [
+          "Critical",
+          "Draw",
+          "Stand",
+          "Heal"
+        ],
+        "missing": []
+      }
+    },
+    "required_keywords": {
+      "basic": {
+        "required": [
+          "Drive Abilities",
+          "Intercept",
+          "Boost",
+          "Restraint",
+          "Sentinel"
+        ],
+        "present": [
+          "Drive Abilities",
+          "Intercept",
+          "Boost",
+          "Restraint",
+          "Sentinel"
+        ],
+        "missing": []
+      },
+      "activation_condition": {
+        "required": [
+          "Limit Break"
+        ],
+        "present": [
+          "Limit Break"
+        ],
+        "missing": []
+      },
+      "procedure": {
+        "required": [
+          "Forerunner"
+        ],
+        "present": [
+          "Forerunner"
+        ],
+        "missing": []
+      }
+    },
+    "missing_required_terms": [],
+    "unsupported_modules_for_first_slice": [
+      "Legion/D-Legion",
+      "Stride and Becoming a Heart",
+      "G Guardian",
+      "Imaginary Gift",
+      "Front Trigger",
+      "Ride Deck Zone",
+      "Persona Ride",
+      "Over Trigger",
+      "Order Area",
+      "Order Zone",
+      "Gauge Zone",
+      "Crest Zone",
+      "Energy-charge",
+      "Energy-blast",
+      "overDress",
+      "XoverDress",
+      "Divine Skill"
+    ],
+    "next_fixture_gaps": [
+      "source-backed copy-limit fixture",
+      "source-backed heal-trigger limit fixture",
+      "selected-group legal/illegal decklist fixtures",
+      "classic setup fixture without ride deck",
+      "classic trigger package fixture with Critical/Draw/Stand/Heal only"
+    ]
+  },
+  "next_target": {
+    "milestone": "M35-A3",
+    "task": "Minimal deck legality fixtures for selected slice",
+    "must_create": [
+      "passing Classic Core selected-group deck fixture",
+      "failing short-main deck fixture",
+      "failing trigger-count deck fixture",
+      "failing missing-grade setup fixture",
+      "source note for heal/copy limits before enforcing them broadly"
+    ]
+  }
+}

@@ -1,0 +1,2895 @@
+{
+  "version": "M56-02",
+  "description": "Sixth-slice review packet before advisory deck recipe drafting",
+  "selected_target": {
+    "slice": "Sixth Offline Slice",
+    "era_preset": "g_next_z",
+    "group": "ชาโดว์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 4,
+    "priority_score": 73.61,
+    "best_era_candidates": 864,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "sixth_target_slice_selection": "outputs\\target_slice\\m55_01_sixth_target_slice_selection.json",
+    "sixth_slice_fixture_readiness": "outputs\\target_slice\\m55_02_sixth_slice_fixture_readiness.json",
+    "sixth_slice_semantic_compatibility_probe": "outputs\\target_slice\\m55_03_sixth_slice_semantic_compatibility_probe.json",
+    "sixth_slice_recipe_pipeline_entry_gate": "outputs\\target_slice\\m55_04_sixth_slice_recipe_pipeline_entry_gate.json",
+    "sixth_slice_fixture_scaffold": "outputs\\target_slice\\m56_01_sixth_slice_fixture_scaffold.json"
+  },
+  "scope": {
+    "offline_review_packet": true,
+    "deck_recipe_draft": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "runtime_deck_promotion": false,
+    "bot_playbook_promotion": false,
+    "direct_GameState_mutation": false
+  },
+  "review_policy": {
+    "human_selection_required_before_recipe_draft": true,
+    "manual_review_cards_blocked_from_recipe_until_resolved": true,
+    "candidate_edges_are_advisory_inputs_only": true,
+    "fixture_scaffold_is_policy_evidence_not_saved_deck": true,
+    "g_zone_and_grade4_support_deferred": true,
+    "stride_generation_break_text_requires_manual_review": true,
+    "ritual_retire_text_requires_manual_review": true,
+    "no_live_card_text_parsing": true,
+    "no_direct_GameState_mutation": true
+  },
+  "evidence_summary": {
+    "m55_04_offline_recipe_pipeline_allowed": true,
+    "m55_04_runtime_promotion_closed": true,
+    "m56_01_scaffold_ready": true,
+    "probe_card_count": 77,
+    "probe_edge_count": 2069,
+    "expected_manual_review_count": 11,
+    "expected_candidate_edge_count": 70,
+    "rebuilt_manual_review_count": 11,
+    "rebuilt_candidate_edge_count": 70
+  },
+  "summary": {
+    "fixture_scaffold_item_count": 1,
+    "manual_card_item_count": 11,
+    "candidate_edge_item_count": 70,
+    "total_review_item_count": 82,
+    "ready_for_m56_03": true
+  },
+  "fixture_scaffold_items": [
+    {
+      "item_type": "fixture_scaffold_note",
+      "item_id": "m56_01_fixture_scaffold",
+      "review_priority": "P0_fixture_policy_review",
+      "policy_level": "sixth_slice_g_next_z_fixture_scaffold_not_full_official_legality",
+      "main_deck_exact": 50,
+      "trigger_target": 16,
+      "recommended_trigger_profile": {
+        "Critical": 4,
+        "Draw": 4,
+        "Heal": 4,
+        "Stand": 4
+      },
+      "preferred_grade_profile": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "mechanic_manual_review_required": true,
+      "g_zone_recipe_validation_deferred": true,
+      "grade4_cards_advisory_only": true,
+      "stride_or_generation_break_text_manual_review_required": true,
+      "ritual_or_retire_text_manual_review_required": true,
+      "review_reasons": [
+        "new_format_or_mechanic_fixture_scaffold",
+        "g_next_z_grade4_g_zone_boundary_review",
+        "shadow_paladin_ritual_retire_boundary_review",
+        "must_review_before_recipe_validator"
+      ],
+      "blocked_until": [
+        "fixture_scaffold_reviewed",
+        "m56_04_recipe_validator_uses_scaffold",
+        "g_zone_support_decision",
+        "ritual_retire_manual_review_policy_confirmed"
+      ],
+      "recommended_next_action": "confirm_fixture_scaffold_before_recipe_draft"
+    }
+  ],
+  "manual_card_review_items": [
+    {
+      "item_type": "manual_review_card",
+      "item_id": "G-BT09-014TH",
+      "card_id": "G-BT09-014TH",
+      "name_th": "แดรกเซฟเวอร์, เอสราส",
+      "series_code": "G-BT09",
+      "grade": 1,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_drop_zone_reference",
+        "requires_on_attack_timing",
+        "requires_on_call_timing"
+      ],
+      "providers": [
+        "provides_retire_pressure"
+      ],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_scaffold_considered",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags_before_recipe"
+    },
+    {
+      "item_type": "manual_review_card",
+      "item_id": "G-BT09-026TH",
+      "card_id": "G-BT09-026TH",
+      "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+      "series_code": "G-BT09",
+      "grade": 3,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_counter_blast",
+        "requires_drop_zone_reference",
+        "requires_on_attack_timing",
+        "requires_on_call_timing",
+        "requires_soul_blast",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_card_advantage",
+        "provides_deck_recycle",
+        "provides_power_pressure",
+        "provides_retire_pressure",
+        "provides_search"
+      ],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_scaffold_considered",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags_before_recipe"
+    },
+    {
+      "item_type": "manual_review_card",
+      "item_id": "G-BT09-027TH",
+      "card_id": "G-BT09-027TH",
+      "name_th": "รีเวนเจอร์, สเลย์เฮกซ์・ดราก้อน",
+      "series_code": "G-BT09",
+      "grade": 3,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_counter_blast",
+        "requires_on_ride_timing",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_deck_recycle",
+        "provides_restand_or_multi_attack",
+        "provides_search",
+        "provides_soul_resource"
+      ],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_scaffold_considered",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags_before_recipe"
+    },
+    {
+      "item_type": "manual_review_card",
+      "item_id": "G-BT09-028TH",
+      "card_id": "G-BT09-028TH",
+      "name_th": "รีเวนเจอร์, ดีโทเนต・ดราก้อน",
+      "series_code": "G-BT09",
+      "grade": 2,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_counter_blast",
+        "requires_limit_break_4",
+        "requires_on_attack_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_deck_recycle",
+        "provides_power_pressure",
+        "provides_retire_pressure",
+        "provides_search"
+      ],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_scaffold_considered",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags_before_recipe"
+    },
+    {
+      "item_type": "manual_review_card",
+      "item_id": "G-BT09-029TH",
+      "card_id": "G-BT09-029TH",
+      "name_th": "อบิซัล・อาว",
+      "series_code": "G-BT09",
+      "grade": 1,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_drop_zone_reference",
+        "requires_on_call_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_counter_charge",
+        "provides_retire_pressure",
+        "provides_search"
+      ],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_scaffold_considered",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags_before_recipe"
+    },
+    {
+      "item_type": "manual_review_card",
+      "item_id": "G-BT09-059TH",
+      "card_id": "G-BT09-059TH",
+      "name_th": "รีเวนเจอร์แห่งจิตสัมผัส, ออยเฟ",
+      "series_code": "G-BT09",
+      "grade": 1,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_deck_recycle",
+        "provides_power_pressure"
+      ],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_scaffold_considered",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags_before_recipe"
+    },
+    {
+      "item_type": "manual_review_card",
+      "item_id": "G-BT09-064TH",
+      "card_id": "G-BT09-064TH",
+      "name_th": "อัศวินแห่งตุ้มเหล็ก, คราฟทิเน่",
+      "series_code": "G-BT09",
+      "grade": 0,
+      "type_1": "Trigger Unit",
+      "trigger": "Stand",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_drop_zone_reference",
+        "requires_on_call_timing",
+        "requires_rear_guard_circle",
+        "requires_trigger_check_timing"
+      ],
+      "providers": [
+        "provides_retire_pressure",
+        "provides_stand_trigger",
+        "provides_trigger_check_value"
+      ],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_scaffold_considered",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags_before_recipe"
+    },
+    {
+      "item_type": "manual_review_card",
+      "item_id": "G-BT10-049TH",
+      "card_id": "G-BT10-049TH",
+      "name_th": "อัศวินแห่งการคัดแยก, ฟากัส",
+      "series_code": "G-BT10",
+      "grade": 2,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_drop_zone_reference",
+        "requires_on_call_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_scaffold_considered",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags_before_recipe"
+    },
+    {
+      "item_type": "manual_review_card",
+      "item_id": "G-BT12-014TH",
+      "card_id": "G-BT12-014TH",
+      "name_th": "มังกรผู้พิชิต, คลาเร็ต ซอร์ด・ดราก้อน・รีโวลต์",
+      "series_code": "G-BT12",
+      "grade": 3,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_counter_blast",
+        "requires_on_attack_timing",
+        "requires_rear_guard_circle",
+        "requires_vanguard_circle"
+      ],
+      "providers": [
+        "provides_deck_recycle",
+        "provides_power_pressure"
+      ],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_scaffold_considered",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags_before_recipe"
+    },
+    {
+      "item_type": "manual_review_card",
+      "item_id": "G-BT12-033TH",
+      "card_id": "G-BT12-033TH",
+      "name_th": "อัศวินแห่งความคร่ำครวญถึงสิ่งที่รัก, บรานเวน",
+      "series_code": "G-BT12",
+      "grade": 1,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_on_call_timing",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_deck_recycle",
+        "provides_search"
+      ],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_scaffold_considered",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags_before_recipe"
+    },
+    {
+      "item_type": "manual_review_card",
+      "item_id": "G-BT12-068TH",
+      "card_id": "G-BT12-068TH",
+      "name_th": "อัศวินแห่งการสืบสายเลือด, ทีเกรส",
+      "series_code": "G-BT12",
+      "grade": 0,
+      "type_1": "Normal Unit",
+      "trigger": "",
+      "review_priority": "P1_semantic_gap_review",
+      "review_reasons": [
+        "unmapped_feature_tags"
+      ],
+      "unmapped_feature_tags": [
+        "bounce_to_hand"
+      ],
+      "requirements": [
+        "requires_counter_blast",
+        "requires_rear_guard_circle"
+      ],
+      "providers": [
+        "provides_card_advantage",
+        "provides_deck_recycle",
+        "provides_retire_pressure",
+        "provides_search"
+      ],
+      "blocked_until": [
+        "semantic_mapping_reviewed",
+        "fixture_scaffold_considered",
+        "human_acceptance"
+      ],
+      "recommended_next_action": "map_or_defer_unmapped_feature_tags_before_recipe"
+    }
+  ],
+  "candidate_edge_review_items": [
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-001TH->G-BT12-066TH",
+      "edge_rank": 1,
+      "edge": "G-BT10-001TH->G-BT12-066TH",
+      "source_card_id": "G-BT10-001TH",
+      "source_name_th": "แดรกแองเกอร์, อ็อกม่า",
+      "target_card_id": "G-BT12-066TH",
+      "target_name_th": "บลูเอสปาด้า・ดราก้อน",
+      "status": "synergy",
+      "net_score": 11,
+      "pair_graph_score": 7,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "not_timing_relevant",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-062TH->G-BT12-066TH",
+      "edge_rank": 2,
+      "edge": "G-BT12-062TH->G-BT12-066TH",
+      "source_card_id": "G-BT12-062TH",
+      "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "target_card_id": "G-BT12-066TH",
+      "target_name_th": "บลูเอสปาด้า・ดราก้อน",
+      "status": "synergy",
+      "net_score": 10,
+      "pair_graph_score": 4,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT14-018TH->G-BT12-066TH",
+      "edge_rank": 3,
+      "edge": "G-BT14-018TH->G-BT12-066TH",
+      "source_card_id": "G-BT14-018TH",
+      "source_name_th": "รีเวนเจอร์แห่งความกรุณา, อาริล",
+      "target_card_id": "G-BT12-066TH",
+      "target_name_th": "บลูเอสปาด้า・ดราก้อน",
+      "status": "synergy",
+      "net_score": 9,
+      "pair_graph_score": 3,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "resource:resource_support",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-026TH->G-BT09-058TH",
+      "edge_rank": 4,
+      "edge": "G-BT10-026TH->G-BT09-058TH",
+      "source_card_id": "G-BT10-026TH",
+      "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "target_card_id": "G-BT09-058TH",
+      "target_name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-026TH->G-BT09-060TH",
+      "edge_rank": 5,
+      "edge": "G-BT10-026TH->G-BT09-060TH",
+      "source_card_id": "G-BT10-026TH",
+      "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "target_card_id": "G-BT09-060TH",
+      "target_name_th": "ลีดบาว",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-026TH->G-BT09-062TH",
+      "edge_rank": 6,
+      "edge": "G-BT10-026TH->G-BT09-062TH",
+      "source_card_id": "G-BT10-026TH",
+      "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "target_card_id": "G-BT09-062TH",
+      "target_name_th": "รีเวนเจอร์แห่งค่ำคืนที่หลงเหลือ, คอนร่า",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-026TH->G-BT12-005TH",
+      "edge_rank": 7,
+      "edge": "G-BT10-026TH->G-BT12-005TH",
+      "source_card_id": "G-BT10-026TH",
+      "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "target_card_id": "G-BT12-005TH",
+      "target_name_th": "มังกรแท้จริงผู้พิชิต, คลาเร็ตซอร์ด・เฮลไฮม์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-026TH->G-BT12-031TH",
+      "edge_rank": 8,
+      "edge": "G-BT10-026TH->G-BT12-031TH",
+      "source_card_id": "G-BT10-026TH",
+      "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "target_card_id": "G-BT12-031TH",
+      "target_name_th": "โมริออนสเปียร์・ดราก้อน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-026TH->G-BT12-065TH",
+      "edge_rank": 9,
+      "edge": "G-BT10-026TH->G-BT12-065TH",
+      "source_card_id": "G-BT10-026TH",
+      "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "target_card_id": "G-BT12-065TH",
+      "target_name_th": "แดรกวิซาร์ด, อีนิด",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-026TH->G-BT12-069TH",
+      "edge_rank": 10,
+      "edge": "G-BT10-026TH->G-BT12-069TH",
+      "source_card_id": "G-BT10-026TH",
+      "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "target_card_id": "G-BT12-069TH",
+      "target_name_th": "แดรกวิซาร์ด, บาบุโดะ",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-026TH->G-TD10-010TH",
+      "edge_rank": 11,
+      "edge": "G-BT10-026TH->G-TD10-010TH",
+      "source_card_id": "G-BT10-026TH",
+      "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "target_card_id": "G-TD10-010TH",
+      "target_name_th": "คิลเลอร์มิว",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-026TH->G-TD10-018TH",
+      "edge_rank": 12,
+      "edge": "G-BT10-026TH->G-TD10-018TH",
+      "source_card_id": "G-BT10-026TH",
+      "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "target_card_id": "G-TD10-018TH",
+      "target_name_th": "ฮาวล์ อาว",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-001TH->G-BT09-058TH",
+      "edge_rank": 13,
+      "edge": "G-BT12-001TH->G-BT09-058TH",
+      "source_card_id": "G-BT12-001TH",
+      "source_name_th": "แดรกสไตรเดอร์, ลูอาร์ด",
+      "target_card_id": "G-BT09-058TH",
+      "target_name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-001TH->G-BT09-060TH",
+      "edge_rank": 14,
+      "edge": "G-BT12-001TH->G-BT09-060TH",
+      "source_card_id": "G-BT12-001TH",
+      "source_name_th": "แดรกสไตรเดอร์, ลูอาร์ด",
+      "target_card_id": "G-BT09-060TH",
+      "target_name_th": "ลีดบาว",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-001TH->G-BT09-062TH",
+      "edge_rank": 15,
+      "edge": "G-BT12-001TH->G-BT09-062TH",
+      "source_card_id": "G-BT12-001TH",
+      "source_name_th": "แดรกสไตรเดอร์, ลูอาร์ด",
+      "target_card_id": "G-BT09-062TH",
+      "target_name_th": "รีเวนเจอร์แห่งค่ำคืนที่หลงเหลือ, คอนร่า",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-001TH->G-BT12-065TH",
+      "edge_rank": 16,
+      "edge": "G-BT12-001TH->G-BT12-065TH",
+      "source_card_id": "G-BT12-001TH",
+      "source_name_th": "แดรกสไตรเดอร์, ลูอาร์ด",
+      "target_card_id": "G-BT12-065TH",
+      "target_name_th": "แดรกวิซาร์ด, อีนิด",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-001TH->G-BT12-066TH",
+      "edge_rank": 17,
+      "edge": "G-BT12-001TH->G-BT12-066TH",
+      "source_card_id": "G-BT12-001TH",
+      "source_name_th": "แดรกสไตรเดอร์, ลูอาร์ด",
+      "target_card_id": "G-BT12-066TH",
+      "target_name_th": "บลูเอสปาด้า・ดราก้อน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-001TH->G-BT12-069TH",
+      "edge_rank": 18,
+      "edge": "G-BT12-001TH->G-BT12-069TH",
+      "source_card_id": "G-BT12-001TH",
+      "source_name_th": "แดรกสไตรเดอร์, ลูอาร์ด",
+      "target_card_id": "G-BT12-069TH",
+      "target_name_th": "แดรกวิซาร์ด, บาบุโดะ",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-001TH->G-TD10-018TH",
+      "edge_rank": 19,
+      "edge": "G-BT12-001TH->G-TD10-018TH",
+      "source_card_id": "G-BT12-001TH",
+      "source_name_th": "แดรกสไตรเดอร์, ลูอาร์ด",
+      "target_card_id": "G-TD10-018TH",
+      "target_name_th": "ฮาวล์ อาว",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-030TH->G-BT09-056TH",
+      "edge_rank": 20,
+      "edge": "G-BT12-030TH->G-BT09-056TH",
+      "source_card_id": "G-BT12-030TH",
+      "source_name_th": "แดรกไวเซอร์, โบรนาช",
+      "target_card_id": "G-BT09-056TH",
+      "target_name_th": "รีเวนเจอร์แห่งการจู่โจมอันเกรี้ยวกราด, ดีแลน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-030TH->G-BT09-058TH",
+      "edge_rank": 21,
+      "edge": "G-BT12-030TH->G-BT09-058TH",
+      "source_card_id": "G-BT12-030TH",
+      "source_name_th": "แดรกไวเซอร์, โบรนาช",
+      "target_card_id": "G-BT09-058TH",
+      "target_name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-030TH->G-BT09-060TH",
+      "edge_rank": 22,
+      "edge": "G-BT12-030TH->G-BT09-060TH",
+      "source_card_id": "G-BT12-030TH",
+      "source_name_th": "แดรกไวเซอร์, โบรนาช",
+      "target_card_id": "G-BT09-060TH",
+      "target_name_th": "ลีดบาว",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-030TH->G-BT09-062TH",
+      "edge_rank": 23,
+      "edge": "G-BT12-030TH->G-BT09-062TH",
+      "source_card_id": "G-BT12-030TH",
+      "source_name_th": "แดรกไวเซอร์, โบรนาช",
+      "target_card_id": "G-BT09-062TH",
+      "target_name_th": "รีเวนเจอร์แห่งค่ำคืนที่หลงเหลือ, คอนร่า",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-030TH->G-BT12-005TH",
+      "edge_rank": 24,
+      "edge": "G-BT12-030TH->G-BT12-005TH",
+      "source_card_id": "G-BT12-030TH",
+      "source_name_th": "แดรกไวเซอร์, โบรนาช",
+      "target_card_id": "G-BT12-005TH",
+      "target_name_th": "มังกรแท้จริงผู้พิชิต, คลาเร็ตซอร์ด・เฮลไฮม์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-030TH->G-BT12-031TH",
+      "edge_rank": 25,
+      "edge": "G-BT12-030TH->G-BT12-031TH",
+      "source_card_id": "G-BT12-030TH",
+      "source_name_th": "แดรกไวเซอร์, โบรนาช",
+      "target_card_id": "G-BT12-031TH",
+      "target_name_th": "โมริออนสเปียร์・ดราก้อน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-030TH->G-BT12-065TH",
+      "edge_rank": 26,
+      "edge": "G-BT12-030TH->G-BT12-065TH",
+      "source_card_id": "G-BT12-030TH",
+      "source_name_th": "แดรกไวเซอร์, โบรนาช",
+      "target_card_id": "G-BT12-065TH",
+      "target_name_th": "แดรกวิซาร์ด, อีนิด",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-030TH->G-BT12-066TH",
+      "edge_rank": 27,
+      "edge": "G-BT12-030TH->G-BT12-066TH",
+      "source_card_id": "G-BT12-030TH",
+      "source_name_th": "แดรกไวเซอร์, โบรนาช",
+      "target_card_id": "G-BT12-066TH",
+      "target_name_th": "บลูเอสปาด้า・ดราก้อน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-030TH->G-BT12-069TH",
+      "edge_rank": 28,
+      "edge": "G-BT12-030TH->G-BT12-069TH",
+      "source_card_id": "G-BT12-030TH",
+      "source_name_th": "แดรกไวเซอร์, โบรนาช",
+      "target_card_id": "G-BT12-069TH",
+      "target_name_th": "แดรกวิซาร์ด, บาบุโดะ",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-030TH->G-TD10-010TH",
+      "edge_rank": 29,
+      "edge": "G-BT12-030TH->G-TD10-010TH",
+      "source_card_id": "G-BT12-030TH",
+      "source_name_th": "แดรกไวเซอร์, โบรนาช",
+      "target_card_id": "G-TD10-010TH",
+      "target_name_th": "คิลเลอร์มิว",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-030TH->G-TD10-018TH",
+      "edge_rank": 30,
+      "edge": "G-BT12-030TH->G-TD10-018TH",
+      "source_card_id": "G-BT12-030TH",
+      "source_name_th": "แดรกไวเซอร์, โบรนาช",
+      "target_card_id": "G-TD10-018TH",
+      "target_name_th": "ฮาวล์ อาว",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT14-032TH->G-BT09-056TH",
+      "edge_rank": 31,
+      "edge": "G-BT14-032TH->G-BT09-056TH",
+      "source_card_id": "G-BT14-032TH",
+      "source_name_th": "มังกรทมิฬ, ดาร์คเวล・ดราก้อน",
+      "target_card_id": "G-BT09-056TH",
+      "target_name_th": "รีเวนเจอร์แห่งการจู่โจมอันเกรี้ยวกราด, ดีแลน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT14-032TH->G-BT09-058TH",
+      "edge_rank": 32,
+      "edge": "G-BT14-032TH->G-BT09-058TH",
+      "source_card_id": "G-BT14-032TH",
+      "source_name_th": "มังกรทมิฬ, ดาร์คเวล・ดราก้อน",
+      "target_card_id": "G-BT09-058TH",
+      "target_name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT14-032TH->G-BT09-060TH",
+      "edge_rank": 33,
+      "edge": "G-BT14-032TH->G-BT09-060TH",
+      "source_card_id": "G-BT14-032TH",
+      "source_name_th": "มังกรทมิฬ, ดาร์คเวล・ดราก้อน",
+      "target_card_id": "G-BT09-060TH",
+      "target_name_th": "ลีดบาว",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT14-032TH->G-BT09-062TH",
+      "edge_rank": 34,
+      "edge": "G-BT14-032TH->G-BT09-062TH",
+      "source_card_id": "G-BT14-032TH",
+      "source_name_th": "มังกรทมิฬ, ดาร์คเวล・ดราก้อน",
+      "target_card_id": "G-BT09-062TH",
+      "target_name_th": "รีเวนเจอร์แห่งค่ำคืนที่หลงเหลือ, คอนร่า",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT14-032TH->G-BT12-005TH",
+      "edge_rank": 35,
+      "edge": "G-BT14-032TH->G-BT12-005TH",
+      "source_card_id": "G-BT14-032TH",
+      "source_name_th": "มังกรทมิฬ, ดาร์คเวล・ดราก้อน",
+      "target_card_id": "G-BT12-005TH",
+      "target_name_th": "มังกรแท้จริงผู้พิชิต, คลาเร็ตซอร์ด・เฮลไฮม์",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT14-032TH->G-BT12-031TH",
+      "edge_rank": 36,
+      "edge": "G-BT14-032TH->G-BT12-031TH",
+      "source_card_id": "G-BT14-032TH",
+      "source_name_th": "มังกรทมิฬ, ดาร์คเวล・ดราก้อน",
+      "target_card_id": "G-BT12-031TH",
+      "target_name_th": "โมริออนสเปียร์・ดราก้อน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT14-032TH->G-BT12-065TH",
+      "edge_rank": 37,
+      "edge": "G-BT14-032TH->G-BT12-065TH",
+      "source_card_id": "G-BT14-032TH",
+      "source_name_th": "มังกรทมิฬ, ดาร์คเวล・ดราก้อน",
+      "target_card_id": "G-BT12-065TH",
+      "target_name_th": "แดรกวิซาร์ด, อีนิด",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT14-032TH->G-BT12-066TH",
+      "edge_rank": 38,
+      "edge": "G-BT14-032TH->G-BT12-066TH",
+      "source_card_id": "G-BT14-032TH",
+      "source_name_th": "มังกรทมิฬ, ดาร์คเวล・ดราก้อน",
+      "target_card_id": "G-BT12-066TH",
+      "target_name_th": "บลูเอสปาด้า・ดราก้อน",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT14-032TH->G-BT12-069TH",
+      "edge_rank": 39,
+      "edge": "G-BT14-032TH->G-BT12-069TH",
+      "source_card_id": "G-BT14-032TH",
+      "source_name_th": "มังกรทมิฬ, ดาร์คเวล・ดราก้อน",
+      "target_card_id": "G-BT12-069TH",
+      "target_name_th": "แดรกวิซาร์ด, บาบุโดะ",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT14-032TH->G-TD10-010TH",
+      "edge_rank": 40,
+      "edge": "G-BT14-032TH->G-TD10-010TH",
+      "source_card_id": "G-BT14-032TH",
+      "source_name_th": "มังกรทมิฬ, ดาร์คเวล・ดราก้อน",
+      "target_card_id": "G-TD10-010TH",
+      "target_name_th": "คิลเลอร์มิว",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT14-032TH->G-TD10-018TH",
+      "edge_rank": 41,
+      "edge": "G-BT14-032TH->G-TD10-018TH",
+      "source_card_id": "G-BT14-032TH",
+      "source_name_th": "มังกรทมิฬ, ดาร์คเวล・ดราก้อน",
+      "target_card_id": "G-TD10-018TH",
+      "target_name_th": "ฮาวล์ อาว",
+      "status": "synergy",
+      "net_score": 8,
+      "pair_graph_score": 2,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT09-013TH->G-BT09-058TH",
+      "edge_rank": 42,
+      "edge": "G-BT09-013TH->G-BT09-058TH",
+      "source_card_id": "G-BT09-013TH",
+      "source_name_th": "มังกรทมิฬ, พล็อตเมคเกอร์・ดราก้อน",
+      "target_card_id": "G-BT09-058TH",
+      "target_name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+      "status": "synergy",
+      "net_score": 6,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "not_timing_relevant",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT09-013TH->G-BT09-060TH",
+      "edge_rank": 43,
+      "edge": "G-BT09-013TH->G-BT09-060TH",
+      "source_card_id": "G-BT09-013TH",
+      "source_name_th": "มังกรทมิฬ, พล็อตเมคเกอร์・ดราก้อน",
+      "target_card_id": "G-BT09-060TH",
+      "target_name_th": "ลีดบาว",
+      "status": "synergy",
+      "net_score": 6,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "not_timing_relevant",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT09-013TH->G-BT09-062TH",
+      "edge_rank": 44,
+      "edge": "G-BT09-013TH->G-BT09-062TH",
+      "source_card_id": "G-BT09-013TH",
+      "source_name_th": "มังกรทมิฬ, พล็อตเมคเกอร์・ดราก้อน",
+      "target_card_id": "G-BT09-062TH",
+      "target_name_th": "รีเวนเจอร์แห่งค่ำคืนที่หลงเหลือ, คอนร่า",
+      "status": "synergy",
+      "net_score": 6,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "not_timing_relevant",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT09-013TH->G-BT12-065TH",
+      "edge_rank": 45,
+      "edge": "G-BT09-013TH->G-BT12-065TH",
+      "source_card_id": "G-BT09-013TH",
+      "source_name_th": "มังกรทมิฬ, พล็อตเมคเกอร์・ดราก้อน",
+      "target_card_id": "G-BT12-065TH",
+      "target_name_th": "แดรกวิซาร์ด, อีนิด",
+      "status": "synergy",
+      "net_score": 6,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "not_timing_relevant",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT09-013TH->G-BT12-066TH",
+      "edge_rank": 46,
+      "edge": "G-BT09-013TH->G-BT12-066TH",
+      "source_card_id": "G-BT09-013TH",
+      "source_name_th": "มังกรทมิฬ, พล็อตเมคเกอร์・ดราก้อน",
+      "target_card_id": "G-BT12-066TH",
+      "target_name_th": "บลูเอสปาด้า・ดราก้อน",
+      "status": "synergy",
+      "net_score": 6,
+      "pair_graph_score": 2,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "not_timing_relevant",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT09-013TH->G-TD10-010TH",
+      "edge_rank": 47,
+      "edge": "G-BT09-013TH->G-TD10-010TH",
+      "source_card_id": "G-BT09-013TH",
+      "source_name_th": "มังกรทมิฬ, พล็อตเมคเกอร์・ดราก้อน",
+      "target_card_id": "G-TD10-010TH",
+      "target_name_th": "คิลเลอร์มิว",
+      "status": "synergy",
+      "net_score": 6,
+      "pair_graph_score": 2,
+      "resource_verdict": "not_resource_relevant",
+      "timing_verdict": "not_timing_relevant",
+      "zone_verdict": "zone_support",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "zone:zone_support"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-052TH->G-BT09-058TH",
+      "edge_rank": 48,
+      "edge": "G-BT10-052TH->G-BT09-058TH",
+      "source_card_id": "G-BT10-052TH",
+      "source_name_th": "แดรกวิซาร์ด, ซีรุ",
+      "target_card_id": "G-BT09-058TH",
+      "target_name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-052TH->G-BT09-060TH",
+      "edge_rank": 49,
+      "edge": "G-BT10-052TH->G-BT09-060TH",
+      "source_card_id": "G-BT10-052TH",
+      "source_name_th": "แดรกวิซาร์ด, ซีรุ",
+      "target_card_id": "G-BT09-060TH",
+      "target_name_th": "ลีดบาว",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-052TH->G-BT09-062TH",
+      "edge_rank": 50,
+      "edge": "G-BT10-052TH->G-BT09-062TH",
+      "source_card_id": "G-BT10-052TH",
+      "source_name_th": "แดรกวิซาร์ด, ซีรุ",
+      "target_card_id": "G-BT09-062TH",
+      "target_name_th": "รีเวนเจอร์แห่งค่ำคืนที่หลงเหลือ, คอนร่า",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-052TH->G-BT12-065TH",
+      "edge_rank": 51,
+      "edge": "G-BT10-052TH->G-BT12-065TH",
+      "source_card_id": "G-BT10-052TH",
+      "source_name_th": "แดรกวิซาร์ด, ซีรุ",
+      "target_card_id": "G-BT12-065TH",
+      "target_name_th": "แดรกวิซาร์ด, อีนิด",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-052TH->G-BT12-066TH",
+      "edge_rank": 52,
+      "edge": "G-BT10-052TH->G-BT12-066TH",
+      "source_card_id": "G-BT10-052TH",
+      "source_name_th": "แดรกวิซาร์ด, ซีรุ",
+      "target_card_id": "G-BT12-066TH",
+      "target_name_th": "บลูเอสปาด้า・ดราก้อน",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-052TH->G-TD10-010TH",
+      "edge_rank": 53,
+      "edge": "G-BT10-052TH->G-TD10-010TH",
+      "source_card_id": "G-BT10-052TH",
+      "source_name_th": "แดรกวิซาร์ด, ซีรุ",
+      "target_card_id": "G-TD10-010TH",
+      "target_name_th": "คิลเลอร์มิว",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-062TH->G-BT09-058TH",
+      "edge_rank": 54,
+      "edge": "G-BT12-062TH->G-BT09-058TH",
+      "source_card_id": "G-BT12-062TH",
+      "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "target_card_id": "G-BT09-058TH",
+      "target_name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-062TH->G-BT09-060TH",
+      "edge_rank": 55,
+      "edge": "G-BT12-062TH->G-BT09-060TH",
+      "source_card_id": "G-BT12-062TH",
+      "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "target_card_id": "G-BT09-060TH",
+      "target_name_th": "ลีดบาว",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-062TH->G-BT09-062TH",
+      "edge_rank": 56,
+      "edge": "G-BT12-062TH->G-BT09-062TH",
+      "source_card_id": "G-BT12-062TH",
+      "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "target_card_id": "G-BT09-062TH",
+      "target_name_th": "รีเวนเจอร์แห่งค่ำคืนที่หลงเหลือ, คอนร่า",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-062TH->G-BT12-065TH",
+      "edge_rank": 57,
+      "edge": "G-BT12-062TH->G-BT12-065TH",
+      "source_card_id": "G-BT12-062TH",
+      "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "target_card_id": "G-BT12-065TH",
+      "target_name_th": "แดรกวิซาร์ด, อีนิด",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-062TH->G-BT12-069TH",
+      "edge_rank": 58,
+      "edge": "G-BT12-062TH->G-BT12-069TH",
+      "source_card_id": "G-BT12-062TH",
+      "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "target_card_id": "G-BT12-069TH",
+      "target_name_th": "แดรกวิซาร์ด, บาบุโดะ",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-062TH->G-TD10-010TH",
+      "edge_rank": 59,
+      "edge": "G-BT12-062TH->G-TD10-010TH",
+      "source_card_id": "G-BT12-062TH",
+      "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "target_card_id": "G-TD10-010TH",
+      "target_name_th": "คิลเลอร์มิว",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT12-062TH->G-TD10-018TH",
+      "edge_rank": 60,
+      "edge": "G-BT12-062TH->G-TD10-018TH",
+      "source_card_id": "G-BT12-062TH",
+      "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "target_card_id": "G-TD10-018TH",
+      "target_name_th": "ฮาวล์ อาว",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:timing_can_precede"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-TD10-015TH->G-BT09-058TH",
+      "edge_rank": 61,
+      "edge": "G-TD10-015TH->G-BT09-058TH",
+      "source_card_id": "G-TD10-015TH",
+      "source_name_th": "แดรกเพนทิซ, มิอาฮะ",
+      "target_card_id": "G-BT09-058TH",
+      "target_name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-TD10-015TH->G-BT09-060TH",
+      "edge_rank": 62,
+      "edge": "G-TD10-015TH->G-BT09-060TH",
+      "source_card_id": "G-TD10-015TH",
+      "source_name_th": "แดรกเพนทิซ, มิอาฮะ",
+      "target_card_id": "G-BT09-060TH",
+      "target_name_th": "ลีดบาว",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-TD10-015TH->G-BT09-062TH",
+      "edge_rank": 63,
+      "edge": "G-TD10-015TH->G-BT09-062TH",
+      "source_card_id": "G-TD10-015TH",
+      "source_name_th": "แดรกเพนทิซ, มิอาฮะ",
+      "target_card_id": "G-BT09-062TH",
+      "target_name_th": "รีเวนเจอร์แห่งค่ำคืนที่หลงเหลือ, คอนร่า",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-TD10-015TH->G-BT12-065TH",
+      "edge_rank": 64,
+      "edge": "G-TD10-015TH->G-BT12-065TH",
+      "source_card_id": "G-TD10-015TH",
+      "source_name_th": "แดรกเพนทิซ, มิอาฮะ",
+      "target_card_id": "G-BT12-065TH",
+      "target_name_th": "แดรกวิซาร์ด, อีนิด",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-TD10-015TH->G-BT12-066TH",
+      "edge_rank": 65,
+      "edge": "G-TD10-015TH->G-BT12-066TH",
+      "source_card_id": "G-TD10-015TH",
+      "source_name_th": "แดรกเพนทิซ, มิอาฮะ",
+      "target_card_id": "G-BT12-066TH",
+      "target_name_th": "บลูเอสปาด้า・ดราก้อน",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-TD10-015TH->G-TD10-010TH",
+      "edge_rank": 66,
+      "edge": "G-TD10-015TH->G-TD10-010TH",
+      "source_card_id": "G-TD10-015TH",
+      "source_name_th": "แดรกเพนทิซ, มิอาฮะ",
+      "target_card_id": "G-TD10-010TH",
+      "target_name_th": "คิลเลอร์มิว",
+      "status": "synergy",
+      "net_score": 5,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match",
+        "timing:target_timing_not_constrained"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-001TH->G-BT09-058TH",
+      "edge_rank": 67,
+      "edge": "G-BT10-001TH->G-BT09-058TH",
+      "source_card_id": "G-BT10-001TH",
+      "source_name_th": "แดรกแองเกอร์, อ็อกม่า",
+      "target_card_id": "G-BT09-058TH",
+      "target_name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+      "status": "synergy",
+      "net_score": 3,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "not_timing_relevant",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-001TH->G-BT09-060TH",
+      "edge_rank": 68,
+      "edge": "G-BT10-001TH->G-BT09-060TH",
+      "source_card_id": "G-BT10-001TH",
+      "source_name_th": "แดรกแองเกอร์, อ็อกม่า",
+      "target_card_id": "G-BT09-060TH",
+      "target_name_th": "ลีดบาว",
+      "status": "synergy",
+      "net_score": 3,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "not_timing_relevant",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-001TH->G-BT09-062TH",
+      "edge_rank": 69,
+      "edge": "G-BT10-001TH->G-BT09-062TH",
+      "source_card_id": "G-BT10-001TH",
+      "source_name_th": "แดรกแองเกอร์, อ็อกม่า",
+      "target_card_id": "G-BT09-062TH",
+      "target_name_th": "รีเวนเจอร์แห่งค่ำคืนที่หลงเหลือ, คอนร่า",
+      "status": "synergy",
+      "net_score": 3,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "not_timing_relevant",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    },
+    {
+      "item_type": "candidate_edge",
+      "item_id": "G-BT10-001TH->G-BT12-065TH",
+      "edge_rank": 70,
+      "edge": "G-BT10-001TH->G-BT12-065TH",
+      "source_card_id": "G-BT10-001TH",
+      "source_name_th": "แดรกแองเกอร์, อ็อกม่า",
+      "target_card_id": "G-BT12-065TH",
+      "target_name_th": "แดรกวิซาร์ด, อีนิด",
+      "status": "synergy",
+      "net_score": 3,
+      "pair_graph_score": 1,
+      "resource_verdict": "source_resource_profile_only",
+      "timing_verdict": "not_timing_relevant",
+      "zone_verdict": "target_zone_need_not_supported_by_source",
+      "synergy_reasons": [
+        "pair_graph_provider_requirement_match"
+      ],
+      "conflict_reasons": [],
+      "missing_data_reasons": [],
+      "manual_review_reasons": [],
+      "review_priority": "P2_candidate_edge_review",
+      "review_reasons": [
+        "sixth_slice_candidate_compatibility_edge",
+        "requires_human_recipe_selection_before_m56_03"
+      ],
+      "blocked_until": [
+        "human_recipe_selection",
+        "m56_04_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recommended_next_action": "consider_for_m56_03_advisory_recipe_draft"
+    }
+  ],
+  "next_target": {
+    "milestone": "M56-03",
+    "task": "Sixth-slice recipe draft model",
+    "blocked_until": [
+      "M56-02 review packet is available",
+      "human/team can inspect fixture scaffold, candidate edges, and manual-review cards"
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schema_version": "deck_recipe_runtime_fixture_v1",
+  "fixture_id": "runtime_fixture_m40_recipe_001_classic_core_oracle_think_tank_m41_04",
+  "fixture_scope": "offline_runtime_test_fixture",
+  "recipe_id": "m40_recipe_001",
+  "source_artifact": "outputs/target_slice/m41_repair_accept_second_slice_trigger_repair_artifact.json",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โอราเคิล ทิงค์ แทงค์",
+    "group_field": "clan",
+    "rank": 10,
+    "priority_score": 63.74,
+    "best_era_candidates": 875,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "MEDIUM_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool"
+    ]
+  },
+  "format_policy": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โอราเคิล ทิงค์ แทงค์",
+    "group_field": "clan"
+  },
+  "main_deck": [
+    {
+      "card_id": "BT01-006TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT01-007TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT01-017TH",
+      "quantity": 1
+    },
+    {
+      "card_id": "BT01-027TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT01-056TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT01-058TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT02-033TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT02-067TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "EB05-028TH",
+      "quantity": 1
+    },
+    {
+      "card_id": "TD04-001TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "TD04-004TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "TD04-005TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "TD04-006TH",
+      "quantity": 2
+    },
+    {
+      "card_id": "TD04-007TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "TD04-008TH",
+      "quantity": 2
+    }
+  ],
+  "count_summary": {
+    "main_deck_count": 50,
+    "trigger_count": 16,
+    "trigger_counts": {
+      "Critical": 4,
+      "Draw": 4,
+      "Heal": 4,
+      "Stand": 4
+    },
+    "grade_counts": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "clan_counts": {
+      "โอราเคิล ทิงค์ แทงค์": 50
+    }
+  },
+  "source_packages": {
+    "base_grade_package_id": "m40_recipe_001_grade_profile_pkg_001",
+    "trigger_repair_package_id": "m41_repair_pkg_001"
+  },
+  "runtime_boundaries": {
+    "test_fixture_only": true,
+    "auto_injected_into_player_decks": false,
+    "bot_playbook_enabled": false,
+    "ui_deck_library_mutated": false,
+    "game_state_mutated": false
+  }
+}

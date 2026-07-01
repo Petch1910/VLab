@@ -1,0 +1,3480 @@
+{
+  "version": "M35-D3",
+  "description": "Combo line explainer for selected first-slice skeletons",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "candidate_packages": "outputs\\target_slice\\m35_d1_first_slice_candidate_packages.json",
+    "deck_skeleton_ratio_plans": "outputs\\target_slice\\m35_d2_first_slice_deck_skeleton_ratio_plans.json",
+    "selected_compatibility_output": "outputs\\target_slice\\m35_c5_first_slice_selected_compatibility_output.json"
+  },
+  "scope": {
+    "advisory_only": true,
+    "combo_line_explainer": true,
+    "reviewed_playbook_seed": false,
+    "deck_quantities": false,
+    "bot_playbook": false,
+    "runtime_effect_execution": false
+  },
+  "policy": {
+    "uses_clean_m35_c5_edges_only": true,
+    "does_not_claim_final_play_sequence_legality": true,
+    "does_not_publish_to_runtime_or_bot": true,
+    "d4_review_required_before_playbook_seed": true
+  },
+  "summary": {
+    "source_skeleton_count": 25,
+    "combo_line_count": 25,
+    "ready_for_m35_d4": true
+  },
+  "combo_lines": [
+    {
+      "line_id": "line_001",
+      "source_skeleton_id": "skel_001",
+      "source_package_id": "pkg_001",
+      "anchor_card_id": "BT04-038TH",
+      "anchor_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+      "line_title": "BT04-038TH support package line",
+      "cards_involved": [
+        "BT01-032TH",
+        "BT04-038TH",
+        "BT06-042TH",
+        "BT09-075TH",
+        "EB04-027TH"
+      ],
+      "key_cards": [
+        "BT04-038TH"
+      ],
+      "support_cards": [
+        "BT02-018TH",
+        "BT06-042TH",
+        "BT06-099TH",
+        "BT09-075TH",
+        "EB04-004TH",
+        "EB04-012TH",
+        "EB04-027TH",
+        "EB04-028TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "resource_recovery_cards": [
+        "BT02-018TH",
+        "BT04-038TH",
+        "BT06-042TH",
+        "BT06-099TH",
+        "BT09-075TH",
+        "EB04-004TH",
+        "EB04-027TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT06-042TH->BT04-038TH",
+          "source_card_id": "BT06-042TH",
+          "source_name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+          "target_card_id": "BT04-038TH",
+          "target_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "EB04-027TH->BT04-038TH",
+          "source_card_id": "EB04-027TH",
+          "source_name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+          "target_card_id": "BT04-038TH",
+          "target_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "BT01-032TH->BT04-038TH",
+          "source_card_id": "BT01-032TH",
+          "source_name_th": "แบทเทิลไรเซอร์",
+          "target_card_id": "BT04-038TH",
+          "target_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "BT09-075TH->BT04-038TH",
+          "source_card_id": "BT09-075TH",
+          "source_name_th": "ไลโอเนท ฮีท",
+          "target_card_id": "BT04-038TH",
+          "target_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_002",
+      "source_skeleton_id": "skel_002",
+      "source_package_id": "pkg_002",
+      "anchor_card_id": "EB04-017TH",
+      "anchor_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+      "line_title": "EB04-017TH support package line",
+      "cards_involved": [
+        "BT01-032TH",
+        "BT06-042TH",
+        "BT09-075TH",
+        "EB04-017TH",
+        "EB04-027TH"
+      ],
+      "key_cards": [
+        "EB04-017TH"
+      ],
+      "support_cards": [
+        "BT02-018TH",
+        "BT06-042TH",
+        "BT06-099TH",
+        "BT09-075TH",
+        "EB04-004TH",
+        "EB04-012TH",
+        "EB04-027TH",
+        "EB04-028TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "resource_recovery_cards": [
+        "BT02-018TH",
+        "BT06-042TH",
+        "BT06-099TH",
+        "BT09-075TH",
+        "EB04-004TH",
+        "EB04-017TH",
+        "EB04-027TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT06-042TH->EB04-017TH",
+          "source_card_id": "BT06-042TH",
+          "source_name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+          "target_card_id": "EB04-017TH",
+          "target_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "EB04-027TH->EB04-017TH",
+          "source_card_id": "EB04-027TH",
+          "source_name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+          "target_card_id": "EB04-017TH",
+          "target_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "BT01-032TH->EB04-017TH",
+          "source_card_id": "BT01-032TH",
+          "source_name_th": "แบทเทิลไรเซอร์",
+          "target_card_id": "EB04-017TH",
+          "target_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "BT09-075TH->EB04-017TH",
+          "source_card_id": "BT09-075TH",
+          "source_name_th": "ไลโอเนท ฮีท",
+          "target_card_id": "EB04-017TH",
+          "target_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_003",
+      "source_skeleton_id": "skel_003",
+      "source_package_id": "pkg_003",
+      "anchor_card_id": "BT04-078TH",
+      "anchor_name_th": "แกรปเปิล มาเนีย",
+      "line_title": "BT04-078TH support package line",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT04-078TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH"
+      ],
+      "key_cards": [
+        "BT04-078TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT09-004TH",
+        "EB04-002TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-010TH",
+        "EB04-016TH",
+        "TD03-001TH"
+      ],
+      "trigger_cards": [
+        "BT04-078TH"
+      ],
+      "resource_recovery_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-078TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH",
+        "TD03-003TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT04-078TH->BT01-028TH",
+          "source_card_id": "BT04-078TH",
+          "source_name_th": "แกรปเปิล มาเนีย",
+          "target_card_id": "BT01-028TH",
+          "target_name_th": "Mr. อินวิซิเบิ้ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "zone_support",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede",
+            "zone:zone_support"
+          ],
+          "needs_to_work": [
+            "No additional support gap detected by C2-C4 advisory detectors."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "BT04-078TH->EB04-008TH",
+          "source_card_id": "BT04-078TH",
+          "source_name_th": "แกรปเปิล มาเนีย",
+          "target_card_id": "EB04-008TH",
+          "target_name_th": "โกลด์ รูไทล์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "zone_support",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede",
+            "zone:zone_support"
+          ],
+          "needs_to_work": [
+            "No additional support gap detected by C2-C4 advisory detectors."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "BT04-078TH->EB04-016TH",
+          "source_card_id": "BT04-078TH",
+          "source_name_th": "แกรปเปิล มาเนีย",
+          "target_card_id": "EB04-016TH",
+          "target_name_th": "Mr.อินวิซิเบิ้ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "zone_support",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede",
+            "zone:zone_support"
+          ],
+          "needs_to_work": [
+            "No additional support gap detected by C2-C4 advisory detectors."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "BT04-078TH->TD03-001TH",
+          "source_card_id": "BT04-078TH",
+          "source_name_th": "แกรปเปิล มาเนีย",
+          "target_card_id": "TD03-001TH",
+          "target_name_th": "โกลด์ รูไทล์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "zone_support",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede",
+            "zone:zone_support"
+          ],
+          "needs_to_work": [
+            "No additional support gap detected by C2-C4 advisory detectors."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "No additional support gap detected by C2-C4 advisory detectors."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_004",
+      "source_skeleton_id": "skel_004",
+      "source_package_id": "pkg_004",
+      "anchor_card_id": "BT01-028TH",
+      "anchor_name_th": "Mr. อินวิซิเบิ้ล",
+      "line_title": "BT01-028TH support package line",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT04-078TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "BT09-075TH"
+      ],
+      "key_cards": [
+        "BT01-028TH"
+      ],
+      "support_cards": [
+        "BT04-076TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "BT09-075TH",
+        "EB04-006TH",
+        "EB04-009TH",
+        "EB04-023TH",
+        "TD03-008TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "BT04-078TH",
+        "EB01-020TH",
+        "EB04-034TH"
+      ],
+      "resource_recovery_cards": [
+        "BT01-028TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "BT09-075TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT04-078TH->BT01-028TH",
+          "source_card_id": "BT04-078TH",
+          "source_name_th": "แกรปเปิล มาเนีย",
+          "target_card_id": "BT01-028TH",
+          "target_name_th": "Mr. อินวิซิเบิ้ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "zone_support",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede",
+            "zone:zone_support"
+          ],
+          "needs_to_work": [
+            "No additional support gap detected by C2-C4 advisory detectors."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "BT09-075TH->BT01-028TH",
+          "source_card_id": "BT09-075TH",
+          "source_name_th": "ไลโอเนท ฮีท",
+          "target_card_id": "BT01-028TH",
+          "target_name_th": "Mr. อินวิซิเบิ้ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "BT01-028TH->BT05-072TH",
+          "source_card_id": "BT01-028TH",
+          "source_name_th": "Mr. อินวิซิเบิ้ล",
+          "target_card_id": "BT05-072TH",
+          "target_name_th": "แอนโทรรอยด์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "BT01-028TH->BT09-072TH",
+          "source_card_id": "BT01-028TH",
+          "source_name_th": "Mr. อินวิซิเบิ้ล",
+          "target_card_id": "BT09-072TH",
+          "target_name_th": "เบิร์สไรเซอร์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_005",
+      "source_skeleton_id": "skel_005",
+      "source_package_id": "pkg_005",
+      "anchor_card_id": "EB04-016TH",
+      "anchor_name_th": "Mr.อินวิซิเบิ้ล",
+      "line_title": "EB04-016TH support package line",
+      "cards_involved": [
+        "BT04-078TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "BT09-075TH",
+        "EB04-016TH"
+      ],
+      "key_cards": [
+        "EB04-016TH"
+      ],
+      "support_cards": [
+        "BT04-076TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "BT09-075TH",
+        "EB04-006TH",
+        "EB04-009TH",
+        "EB04-023TH",
+        "TD03-008TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "BT04-078TH",
+        "EB01-020TH",
+        "EB04-034TH"
+      ],
+      "resource_recovery_cards": [
+        "BT04-076TH",
+        "BT04-078TH",
+        "BT09-075TH",
+        "EB04-016TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT04-078TH->EB04-016TH",
+          "source_card_id": "BT04-078TH",
+          "source_name_th": "แกรปเปิล มาเนีย",
+          "target_card_id": "EB04-016TH",
+          "target_name_th": "Mr.อินวิซิเบิ้ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "zone_support",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede",
+            "zone:zone_support"
+          ],
+          "needs_to_work": [
+            "No additional support gap detected by C2-C4 advisory detectors."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "BT09-075TH->EB04-016TH",
+          "source_card_id": "BT09-075TH",
+          "source_name_th": "ไลโอเนท ฮีท",
+          "target_card_id": "EB04-016TH",
+          "target_name_th": "Mr.อินวิซิเบิ้ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "EB04-016TH->BT05-072TH",
+          "source_card_id": "EB04-016TH",
+          "source_name_th": "Mr.อินวิซิเบิ้ล",
+          "target_card_id": "BT05-072TH",
+          "target_name_th": "แอนโทรรอยด์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "EB04-016TH->BT09-072TH",
+          "source_card_id": "EB04-016TH",
+          "source_name_th": "Mr.อินวิซิเบิ้ล",
+          "target_card_id": "BT09-072TH",
+          "target_name_th": "เบิร์สไรเซอร์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_006",
+      "source_skeleton_id": "skel_006",
+      "source_package_id": "pkg_006",
+      "anchor_card_id": "TD03-003TH",
+      "anchor_name_th": "Mr. อินวิซิเบิ้ล",
+      "line_title": "TD03-003TH support package line",
+      "cards_involved": [
+        "BT04-078TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "BT09-075TH",
+        "TD03-003TH"
+      ],
+      "key_cards": [
+        "TD03-003TH"
+      ],
+      "support_cards": [
+        "BT04-076TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "BT09-075TH",
+        "EB04-006TH",
+        "EB04-009TH",
+        "EB04-023TH",
+        "TD03-008TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "BT04-078TH",
+        "EB01-020TH",
+        "EB04-034TH"
+      ],
+      "resource_recovery_cards": [
+        "BT04-076TH",
+        "BT04-078TH",
+        "BT09-075TH",
+        "TD03-003TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT04-078TH->TD03-003TH",
+          "source_card_id": "BT04-078TH",
+          "source_name_th": "แกรปเปิล มาเนีย",
+          "target_card_id": "TD03-003TH",
+          "target_name_th": "Mr. อินวิซิเบิ้ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "zone_support",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede",
+            "zone:zone_support"
+          ],
+          "needs_to_work": [
+            "No additional support gap detected by C2-C4 advisory detectors."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "BT09-075TH->TD03-003TH",
+          "source_card_id": "BT09-075TH",
+          "source_name_th": "ไลโอเนท ฮีท",
+          "target_card_id": "TD03-003TH",
+          "target_name_th": "Mr. อินวิซิเบิ้ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "TD03-003TH->BT05-072TH",
+          "source_card_id": "TD03-003TH",
+          "source_name_th": "Mr. อินวิซิเบิ้ล",
+          "target_card_id": "BT05-072TH",
+          "target_name_th": "แอนโทรรอยด์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "TD03-003TH->BT09-072TH",
+          "source_card_id": "TD03-003TH",
+          "source_name_th": "Mr. อินวิซิเบิ้ล",
+          "target_card_id": "BT09-072TH",
+          "target_name_th": "เบิร์สไรเซอร์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_007",
+      "source_skeleton_id": "skel_007",
+      "source_package_id": "pkg_007",
+      "anchor_card_id": "EB04-008TH",
+      "anchor_name_th": "โกลด์ รูไทล์",
+      "line_title": "EB04-008TH support package line",
+      "cards_involved": [
+        "BT04-078TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "EB04-006TH",
+        "EB04-008TH"
+      ],
+      "key_cards": [
+        "EB04-008TH"
+      ],
+      "support_cards": [
+        "BT04-076TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "EB04-006TH",
+        "EB04-009TH",
+        "EB04-023TH",
+        "TD03-008TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "BT04-078TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "resource_recovery_cards": [
+        "BT04-076TH",
+        "BT04-078TH",
+        "EB04-008TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT04-078TH->EB04-008TH",
+          "source_card_id": "BT04-078TH",
+          "source_name_th": "แกรปเปิล มาเนีย",
+          "target_card_id": "EB04-008TH",
+          "target_name_th": "โกลด์ รูไทล์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "zone_support",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede",
+            "zone:zone_support"
+          ],
+          "needs_to_work": [
+            "No additional support gap detected by C2-C4 advisory detectors."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "EB04-008TH->BT05-072TH",
+          "source_card_id": "EB04-008TH",
+          "source_name_th": "โกลด์ รูไทล์",
+          "target_card_id": "BT05-072TH",
+          "target_name_th": "แอนโทรรอยด์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "EB04-008TH->BT09-072TH",
+          "source_card_id": "EB04-008TH",
+          "source_name_th": "โกลด์ รูไทล์",
+          "target_card_id": "BT09-072TH",
+          "target_name_th": "เบิร์สไรเซอร์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "EB04-008TH->EB04-006TH",
+          "source_card_id": "EB04-008TH",
+          "source_name_th": "โกลด์ รูไทล์",
+          "target_card_id": "EB04-006TH",
+          "target_name_th": "เดทอาร์มี่ บิชอป",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_008",
+      "source_skeleton_id": "skel_008",
+      "source_package_id": "pkg_008",
+      "anchor_card_id": "TD03-001TH",
+      "anchor_name_th": "โกลด์ รูไทล์",
+      "line_title": "TD03-001TH support package line",
+      "cards_involved": [
+        "BT04-078TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "EB04-006TH",
+        "TD03-001TH"
+      ],
+      "key_cards": [
+        "TD03-001TH"
+      ],
+      "support_cards": [
+        "BT04-076TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "EB04-006TH",
+        "EB04-009TH",
+        "EB04-023TH",
+        "TD03-008TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "BT04-078TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "resource_recovery_cards": [
+        "BT04-076TH",
+        "BT04-078TH",
+        "TD03-001TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT04-078TH->TD03-001TH",
+          "source_card_id": "BT04-078TH",
+          "source_name_th": "แกรปเปิล มาเนีย",
+          "target_card_id": "TD03-001TH",
+          "target_name_th": "โกลด์ รูไทล์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "zone_support",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede",
+            "zone:zone_support"
+          ],
+          "needs_to_work": [
+            "No additional support gap detected by C2-C4 advisory detectors."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "TD03-001TH->BT05-072TH",
+          "source_card_id": "TD03-001TH",
+          "source_name_th": "โกลด์ รูไทล์",
+          "target_card_id": "BT05-072TH",
+          "target_name_th": "แอนโทรรอยด์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "TD03-001TH->BT09-072TH",
+          "source_card_id": "TD03-001TH",
+          "source_name_th": "โกลด์ รูไทล์",
+          "target_card_id": "BT09-072TH",
+          "target_name_th": "เบิร์สไรเซอร์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "TD03-001TH->EB04-006TH",
+          "source_card_id": "TD03-001TH",
+          "source_name_th": "โกลด์ รูไทล์",
+          "target_card_id": "EB04-006TH",
+          "target_name_th": "เดทอาร์มี่ บิชอป",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_009",
+      "source_skeleton_id": "skel_009",
+      "source_package_id": "pkg_009",
+      "anchor_card_id": "BT01-032TH",
+      "anchor_name_th": "แบทเทิลไรเซอร์",
+      "line_title": "BT01-032TH support package line",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT01-032TH",
+        "BT02-018TH",
+        "BT04-038TH",
+        "EB04-017TH"
+      ],
+      "key_cards": [
+        "BT01-032TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH"
+      ],
+      "resource_recovery_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH",
+        "EB04-021TH",
+        "TD03-001TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT01-032TH->BT04-038TH",
+          "source_card_id": "BT01-032TH",
+          "source_name_th": "แบทเทิลไรเซอร์",
+          "target_card_id": "BT04-038TH",
+          "target_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "BT01-032TH->EB04-017TH",
+          "source_card_id": "BT01-032TH",
+          "source_name_th": "แบทเทิลไรเซอร์",
+          "target_card_id": "EB04-017TH",
+          "target_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "BT01-032TH->BT01-028TH",
+          "source_card_id": "BT01-032TH",
+          "source_name_th": "แบทเทิลไรเซอร์",
+          "target_card_id": "BT01-028TH",
+          "target_name_th": "Mr. อินวิซิเบิ้ล",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "BT01-032TH->BT02-018TH",
+          "source_card_id": "BT01-032TH",
+          "source_name_th": "แบทเทิลไรเซอร์",
+          "target_card_id": "BT02-018TH",
+          "target_name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_010",
+      "source_skeleton_id": "skel_010",
+      "source_package_id": "pkg_010",
+      "anchor_card_id": "EB01-020TH",
+      "anchor_name_th": "แบทเทิล ไรเซอร์",
+      "line_title": "EB01-020TH support package line",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-038TH",
+        "EB01-020TH",
+        "EB04-017TH"
+      ],
+      "key_cards": [
+        "EB01-020TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH"
+      ],
+      "trigger_cards": [
+        "EB01-020TH"
+      ],
+      "resource_recovery_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH",
+        "EB04-021TH",
+        "TD03-001TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "EB01-020TH->BT04-038TH",
+          "source_card_id": "EB01-020TH",
+          "source_name_th": "แบทเทิล ไรเซอร์",
+          "target_card_id": "BT04-038TH",
+          "target_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "EB01-020TH->EB04-017TH",
+          "source_card_id": "EB01-020TH",
+          "source_name_th": "แบทเทิล ไรเซอร์",
+          "target_card_id": "EB04-017TH",
+          "target_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "EB01-020TH->BT01-028TH",
+          "source_card_id": "EB01-020TH",
+          "source_name_th": "แบทเทิล ไรเซอร์",
+          "target_card_id": "BT01-028TH",
+          "target_name_th": "Mr. อินวิซิเบิ้ล",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "EB01-020TH->BT02-018TH",
+          "source_card_id": "EB01-020TH",
+          "source_name_th": "แบทเทิล ไรเซอร์",
+          "target_card_id": "BT02-018TH",
+          "target_name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_011",
+      "source_skeleton_id": "skel_011",
+      "source_package_id": "pkg_011",
+      "anchor_card_id": "EB04-034TH",
+      "anchor_name_th": "เทอร์โบไรเซอร์",
+      "line_title": "EB04-034TH support package line",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-038TH",
+        "EB04-017TH",
+        "EB04-034TH"
+      ],
+      "key_cards": [
+        "EB04-034TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH"
+      ],
+      "trigger_cards": [
+        "EB04-034TH"
+      ],
+      "resource_recovery_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH",
+        "EB04-021TH",
+        "TD03-001TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "EB04-034TH->BT04-038TH",
+          "source_card_id": "EB04-034TH",
+          "source_name_th": "เทอร์โบไรเซอร์",
+          "target_card_id": "BT04-038TH",
+          "target_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "EB04-034TH->EB04-017TH",
+          "source_card_id": "EB04-034TH",
+          "source_name_th": "เทอร์โบไรเซอร์",
+          "target_card_id": "EB04-017TH",
+          "target_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "EB04-034TH->BT01-028TH",
+          "source_card_id": "EB04-034TH",
+          "source_name_th": "เทอร์โบไรเซอร์",
+          "target_card_id": "BT01-028TH",
+          "target_name_th": "Mr. อินวิซิเบิ้ล",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "EB04-034TH->BT02-018TH",
+          "source_card_id": "EB04-034TH",
+          "source_name_th": "เทอร์โบไรเซอร์",
+          "target_card_id": "BT02-018TH",
+          "target_name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_012",
+      "source_skeleton_id": "skel_012",
+      "source_package_id": "pkg_012",
+      "anchor_card_id": "EB04-035TH",
+      "anchor_name_th": "แบทเทิลไรเซอร์",
+      "line_title": "EB04-035TH support package line",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-038TH",
+        "EB04-017TH",
+        "EB04-035TH"
+      ],
+      "key_cards": [
+        "EB04-035TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH"
+      ],
+      "trigger_cards": [
+        "EB04-035TH"
+      ],
+      "resource_recovery_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH",
+        "EB04-021TH",
+        "TD03-001TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "EB04-035TH->BT04-038TH",
+          "source_card_id": "EB04-035TH",
+          "source_name_th": "แบทเทิลไรเซอร์",
+          "target_card_id": "BT04-038TH",
+          "target_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "EB04-035TH->EB04-017TH",
+          "source_card_id": "EB04-035TH",
+          "source_name_th": "แบทเทิลไรเซอร์",
+          "target_card_id": "EB04-017TH",
+          "target_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "EB04-035TH->BT01-028TH",
+          "source_card_id": "EB04-035TH",
+          "source_name_th": "แบทเทิลไรเซอร์",
+          "target_card_id": "BT01-028TH",
+          "target_name_th": "Mr. อินวิซิเบิ้ล",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "EB04-035TH->BT02-018TH",
+          "source_card_id": "EB04-035TH",
+          "source_name_th": "แบทเทิลไรเซอร์",
+          "target_card_id": "BT02-018TH",
+          "target_name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_013",
+      "source_skeleton_id": "skel_013",
+      "source_package_id": "pkg_013",
+      "anchor_card_id": "TD03-005TH",
+      "anchor_name_th": "สุดยอดแม่เหล็กไฟฟ้ามีชีวิต สตอร์ม",
+      "line_title": "TD03-005TH support package line",
+      "cards_involved": [
+        "BT01-032TH",
+        "EB01-001TH",
+        "EB01-020TH",
+        "EB04-001TH",
+        "TD03-005TH"
+      ],
+      "key_cards": [
+        "TD03-005TH"
+      ],
+      "support_cards": [
+        "BT02-072TH",
+        "BT06-042TH",
+        "BT09-034TH",
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-002TH",
+        "EB04-012TH",
+        "EB04-027TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "resource_recovery_cards": [
+        "BT06-042TH",
+        "BT09-034TH",
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-027TH",
+        "TD03-005TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "EB01-001TH->TD03-005TH",
+          "source_card_id": "EB01-001TH",
+          "source_name_th": "เพอร์เฟค ไรเซอร์",
+          "target_card_id": "TD03-005TH",
+          "target_name_th": "สุดยอดแม่เหล็กไฟฟ้ามีชีวิต สตอร์ม",
+          "resource_verdict": "source_resource_profile_only",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "EB04-001TH->TD03-005TH",
+          "source_card_id": "EB04-001TH",
+          "source_name_th": "เพอร์เฟค ไรเซอร์",
+          "target_card_id": "TD03-005TH",
+          "target_name_th": "สุดยอดแม่เหล็กไฟฟ้ามีชีวิต สตอร์ม",
+          "resource_verdict": "source_resource_profile_only",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "BT01-032TH->TD03-005TH",
+          "source_card_id": "BT01-032TH",
+          "source_name_th": "แบทเทิลไรเซอร์",
+          "target_card_id": "TD03-005TH",
+          "target_name_th": "สุดยอดแม่เหล็กไฟฟ้ามีชีวิต สตอร์ม",
+          "resource_verdict": "not_resource_relevant",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "No resource dependency detected for this edge.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "EB01-020TH->TD03-005TH",
+          "source_card_id": "EB01-020TH",
+          "source_name_th": "แบทเทิล ไรเซอร์",
+          "target_card_id": "TD03-005TH",
+          "target_name_th": "สุดยอดแม่เหล็กไฟฟ้ามีชีวิต สตอร์ม",
+          "resource_verdict": "not_resource_relevant",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "No resource dependency detected for this edge.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No resource dependency detected for this edge."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_014",
+      "source_skeleton_id": "skel_014",
+      "source_package_id": "pkg_014",
+      "anchor_card_id": "BT06-099TH",
+      "anchor_name_th": "ฮานิ ผู้ชั่วร้าย",
+      "line_title": "BT06-099TH support package line",
+      "cards_involved": [
+        "BT01-032TH",
+        "BT06-099TH",
+        "EB01-001TH",
+        "EB01-020TH",
+        "EB04-001TH"
+      ],
+      "key_cards": [
+        "BT06-099TH"
+      ],
+      "support_cards": [
+        "BT01-029TH",
+        "BT02-072TH",
+        "BT06-042TH",
+        "BT09-034TH",
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-012TH",
+        "EB04-027TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "resource_recovery_cards": [
+        "BT06-042TH",
+        "BT06-099TH",
+        "BT09-034TH",
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-027TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "EB01-001TH->BT06-099TH",
+          "source_card_id": "EB01-001TH",
+          "source_name_th": "เพอร์เฟค ไรเซอร์",
+          "target_card_id": "BT06-099TH",
+          "target_name_th": "ฮานิ ผู้ชั่วร้าย",
+          "resource_verdict": "source_resource_profile_only",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "No additional support gap detected by C2-C4 advisory detectors."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "EB04-001TH->BT06-099TH",
+          "source_card_id": "EB04-001TH",
+          "source_name_th": "เพอร์เฟค ไรเซอร์",
+          "target_card_id": "BT06-099TH",
+          "target_name_th": "ฮานิ ผู้ชั่วร้าย",
+          "resource_verdict": "source_resource_profile_only",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "No additional support gap detected by C2-C4 advisory detectors."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "BT01-032TH->BT06-099TH",
+          "source_card_id": "BT01-032TH",
+          "source_name_th": "แบทเทิลไรเซอร์",
+          "target_card_id": "BT06-099TH",
+          "target_name_th": "ฮานิ ผู้ชั่วร้าย",
+          "resource_verdict": "not_resource_relevant",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "No resource dependency detected for this edge."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "EB01-020TH->BT06-099TH",
+          "source_card_id": "EB01-020TH",
+          "source_name_th": "แบทเทิล ไรเซอร์",
+          "target_card_id": "BT06-099TH",
+          "target_name_th": "ฮานิ ผู้ชั่วร้าย",
+          "resource_verdict": "not_resource_relevant",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "No resource dependency detected for this edge."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "No resource dependency detected for this edge."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_015",
+      "source_skeleton_id": "skel_015",
+      "source_package_id": "pkg_015",
+      "anchor_card_id": "EB04-021TH",
+      "anchor_name_th": "มาเวลรัส ฮานิ",
+      "line_title": "EB04-021TH support package line",
+      "cards_involved": [
+        "BT01-032TH",
+        "EB01-001TH",
+        "EB01-020TH",
+        "EB04-001TH",
+        "EB04-021TH"
+      ],
+      "key_cards": [
+        "EB04-021TH"
+      ],
+      "support_cards": [
+        "BT01-029TH",
+        "BT02-072TH",
+        "BT06-042TH",
+        "BT09-034TH",
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-012TH",
+        "EB04-027TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "resource_recovery_cards": [
+        "BT06-042TH",
+        "BT09-034TH",
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-021TH",
+        "EB04-027TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "EB01-001TH->EB04-021TH",
+          "source_card_id": "EB01-001TH",
+          "source_name_th": "เพอร์เฟค ไรเซอร์",
+          "target_card_id": "EB04-021TH",
+          "target_name_th": "มาเวลรัส ฮานิ",
+          "resource_verdict": "source_resource_profile_only",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "No additional support gap detected by C2-C4 advisory detectors."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "EB04-001TH->EB04-021TH",
+          "source_card_id": "EB04-001TH",
+          "source_name_th": "เพอร์เฟค ไรเซอร์",
+          "target_card_id": "EB04-021TH",
+          "target_name_th": "มาเวลรัส ฮานิ",
+          "resource_verdict": "source_resource_profile_only",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "No additional support gap detected by C2-C4 advisory detectors."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "BT01-032TH->EB04-021TH",
+          "source_card_id": "BT01-032TH",
+          "source_name_th": "แบทเทิลไรเซอร์",
+          "target_card_id": "EB04-021TH",
+          "target_name_th": "มาเวลรัส ฮานิ",
+          "resource_verdict": "not_resource_relevant",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "No resource dependency detected for this edge."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "EB01-020TH->EB04-021TH",
+          "source_card_id": "EB01-020TH",
+          "source_name_th": "แบทเทิล ไรเซอร์",
+          "target_card_id": "EB04-021TH",
+          "target_name_th": "มาเวลรัส ฮานิ",
+          "resource_verdict": "not_resource_relevant",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "No resource dependency detected for this edge."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "No resource dependency detected for this edge."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_016",
+      "source_skeleton_id": "skel_016",
+      "source_package_id": "pkg_016",
+      "anchor_card_id": "BT02-018TH",
+      "anchor_name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+      "line_title": "BT02-018TH support package line",
+      "cards_involved": [
+        "BT01-032TH",
+        "BT02-018TH",
+        "BT04-078TH",
+        "EB01-001TH",
+        "EB04-001TH"
+      ],
+      "key_cards": [
+        "BT02-018TH"
+      ],
+      "support_cards": [
+        "BT01-031TH",
+        "BT02-072TH",
+        "BT04-038TH",
+        "BT04-076TH",
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-012TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "BT04-078TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "resource_recovery_cards": [
+        "BT02-018TH",
+        "BT04-038TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "EB01-001TH",
+        "EB04-001TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT04-078TH->BT02-018TH",
+          "source_card_id": "BT04-078TH",
+          "source_name_th": "แกรปเปิล มาเนีย",
+          "target_card_id": "BT02-018TH",
+          "target_name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "No additional support gap detected by C2-C4 advisory detectors."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "EB01-001TH->BT02-018TH",
+          "source_card_id": "EB01-001TH",
+          "source_name_th": "เพอร์เฟค ไรเซอร์",
+          "target_card_id": "BT02-018TH",
+          "target_name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "EB04-001TH->BT02-018TH",
+          "source_card_id": "EB04-001TH",
+          "source_name_th": "เพอร์เฟค ไรเซอร์",
+          "target_card_id": "BT02-018TH",
+          "target_name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "BT01-032TH->BT02-018TH",
+          "source_card_id": "BT01-032TH",
+          "source_name_th": "แบทเทิลไรเซอร์",
+          "target_card_id": "BT02-018TH",
+          "target_name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "No additional support gap detected by C2-C4 advisory detectors."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_017",
+      "source_skeleton_id": "skel_017",
+      "source_package_id": "pkg_017",
+      "anchor_card_id": "BT09-075TH",
+      "anchor_name_th": "ไลโอเนท ฮีท",
+      "line_title": "BT09-075TH support package line",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT04-038TH",
+        "BT09-075TH",
+        "EB04-016TH",
+        "EB04-017TH"
+      ],
+      "key_cards": [
+        "BT09-075TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH"
+      ],
+      "trigger_cards": [],
+      "resource_recovery_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "BT09-075TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH",
+        "EB04-021TH",
+        "TD03-003TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT09-075TH->BT04-038TH",
+          "source_card_id": "BT09-075TH",
+          "source_name_th": "ไลโอเนท ฮีท",
+          "target_card_id": "BT04-038TH",
+          "target_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "BT09-075TH->EB04-017TH",
+          "source_card_id": "BT09-075TH",
+          "source_name_th": "ไลโอเนท ฮีท",
+          "target_card_id": "EB04-017TH",
+          "target_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "BT09-075TH->BT01-028TH",
+          "source_card_id": "BT09-075TH",
+          "source_name_th": "ไลโอเนท ฮีท",
+          "target_card_id": "BT01-028TH",
+          "target_name_th": "Mr. อินวิซิเบิ้ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "BT09-075TH->EB04-016TH",
+          "source_card_id": "BT09-075TH",
+          "source_name_th": "ไลโอเนท ฮีท",
+          "target_card_id": "EB04-016TH",
+          "target_name_th": "Mr.อินวิซิเบิ้ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_018",
+      "source_skeleton_id": "skel_018",
+      "source_package_id": "pkg_018",
+      "anchor_card_id": "EB04-004TH",
+      "anchor_name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+      "line_title": "EB04-004TH support package line",
+      "cards_involved": [
+        "BT01-032TH",
+        "BT04-078TH",
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-004TH"
+      ],
+      "key_cards": [
+        "EB04-004TH"
+      ],
+      "support_cards": [
+        "BT01-031TH",
+        "BT02-072TH",
+        "BT04-038TH",
+        "BT04-076TH",
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-012TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "BT04-078TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "resource_recovery_cards": [
+        "BT04-038TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-004TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT04-078TH->EB04-004TH",
+          "source_card_id": "BT04-078TH",
+          "source_name_th": "แกรปเปิล มาเนีย",
+          "target_card_id": "EB04-004TH",
+          "target_name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "No additional support gap detected by C2-C4 advisory detectors."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "EB01-001TH->EB04-004TH",
+          "source_card_id": "EB01-001TH",
+          "source_name_th": "เพอร์เฟค ไรเซอร์",
+          "target_card_id": "EB04-004TH",
+          "target_name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "EB04-001TH->EB04-004TH",
+          "source_card_id": "EB04-001TH",
+          "source_name_th": "เพอร์เฟค ไรเซอร์",
+          "target_card_id": "EB04-004TH",
+          "target_name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "BT01-032TH->EB04-004TH",
+          "source_card_id": "BT01-032TH",
+          "source_name_th": "แบทเทิลไรเซอร์",
+          "target_card_id": "EB04-004TH",
+          "target_name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "No additional support gap detected by C2-C4 advisory detectors."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_019",
+      "source_skeleton_id": "skel_019",
+      "source_package_id": "pkg_019",
+      "anchor_card_id": "BT04-076TH",
+      "anchor_name_th": "ทูลคิท บอย",
+      "line_title": "BT04-076TH support package line",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT04-076TH",
+        "BT09-004TH",
+        "EB04-002TH",
+        "EB04-008TH"
+      ],
+      "key_cards": [
+        "BT04-076TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT09-004TH",
+        "BT09-072TH",
+        "EB04-002TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-009TH",
+        "EB04-016TH"
+      ],
+      "trigger_cards": [],
+      "resource_recovery_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-076TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH",
+        "TD03-003TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT04-076TH->BT01-028TH",
+          "source_card_id": "BT04-076TH",
+          "source_name_th": "ทูลคิท บอย",
+          "target_card_id": "BT01-028TH",
+          "target_name_th": "Mr. อินวิซิเบิ้ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "zone_support",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede",
+            "zone:zone_support"
+          ],
+          "needs_to_work": [
+            "No additional support gap detected by C2-C4 advisory detectors."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "BT04-076TH->BT09-004TH",
+          "source_card_id": "BT04-076TH",
+          "source_name_th": "ทูลคิท บอย",
+          "target_card_id": "BT09-004TH",
+          "target_name_th": "สัตว์เทวะขั้นสุดยอด,อิลลูมินัล ดราก้อน",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "zone_support",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede",
+            "zone:zone_support"
+          ],
+          "needs_to_work": [
+            "No additional support gap detected by C2-C4 advisory detectors."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "BT04-076TH->EB04-002TH",
+          "source_card_id": "BT04-076TH",
+          "source_name_th": "ทูลคิท บอย",
+          "target_card_id": "EB04-002TH",
+          "target_name_th": "สุดยอดร่างกัดกร่อนไร้ที่สิ้นสุด,เดทอาร์มี่ คอสโม่ลอร์ด",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "zone_support",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained",
+            "zone:zone_support"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "BT04-076TH->EB04-008TH",
+          "source_card_id": "BT04-076TH",
+          "source_name_th": "ทูลคิท บอย",
+          "target_card_id": "EB04-008TH",
+          "target_name_th": "โกลด์ รูไทล์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "zone_support",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:timing_can_precede",
+            "zone:zone_support"
+          ],
+          "needs_to_work": [
+            "No additional support gap detected by C2-C4 advisory detectors."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_020",
+      "source_skeleton_id": "skel_020",
+      "source_package_id": "pkg_020",
+      "anchor_card_id": "BT04-019TH",
+      "anchor_name_th": "เบลาคลูเกอร์",
+      "line_title": "BT04-019TH support package line",
+      "cards_involved": [
+        "BT01-032TH",
+        "BT04-019TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "key_cards": [
+        "BT04-019TH"
+      ],
+      "support_cards": [
+        "BT02-072TH",
+        "BT05-072TH",
+        "BT06-042TH",
+        "BT09-034TH",
+        "BT09-072TH",
+        "EB04-006TH",
+        "EB04-012TH",
+        "EB04-027TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "resource_recovery_cards": [
+        "BT04-019TH",
+        "BT06-042TH",
+        "BT09-034TH",
+        "EB04-027TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT01-032TH->BT04-019TH",
+          "source_card_id": "BT01-032TH",
+          "source_name_th": "แบทเทิลไรเซอร์",
+          "target_card_id": "BT04-019TH",
+          "target_name_th": "เบลาคลูเกอร์",
+          "resource_verdict": "not_resource_relevant",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "No resource dependency detected for this edge.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "EB01-020TH->BT04-019TH",
+          "source_card_id": "EB01-020TH",
+          "source_name_th": "แบทเทิล ไรเซอร์",
+          "target_card_id": "BT04-019TH",
+          "target_name_th": "เบลาคลูเกอร์",
+          "resource_verdict": "not_resource_relevant",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "No resource dependency detected for this edge.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "EB04-034TH->BT04-019TH",
+          "source_card_id": "EB04-034TH",
+          "source_name_th": "เทอร์โบไรเซอร์",
+          "target_card_id": "BT04-019TH",
+          "target_name_th": "เบลาคลูเกอร์",
+          "resource_verdict": "not_resource_relevant",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "No resource dependency detected for this edge.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "EB04-035TH->BT04-019TH",
+          "source_card_id": "EB04-035TH",
+          "source_name_th": "แบทเทิลไรเซอร์",
+          "target_card_id": "BT04-019TH",
+          "target_name_th": "เบลาคลูเกอร์",
+          "resource_verdict": "not_resource_relevant",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "No resource dependency detected for this edge.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No resource dependency detected for this edge."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_021",
+      "source_skeleton_id": "skel_021",
+      "source_package_id": "pkg_021",
+      "anchor_card_id": "BT09-072TH",
+      "anchor_name_th": "เบิร์สไรเซอร์",
+      "line_title": "BT09-072TH support package line",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT09-072TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH"
+      ],
+      "key_cards": [
+        "BT09-072TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT01-059TH",
+        "BT04-019TH",
+        "BT04-076TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "trigger_cards": [
+        "BT02-074TH",
+        "BT04-078TH",
+        "EB04-033TH"
+      ],
+      "resource_recovery_cards": [
+        "BT01-028TH",
+        "BT01-059TH",
+        "BT02-074TH",
+        "BT04-019TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-033TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT01-028TH->BT09-072TH",
+          "source_card_id": "BT01-028TH",
+          "source_name_th": "Mr. อินวิซิเบิ้ล",
+          "target_card_id": "BT09-072TH",
+          "target_name_th": "เบิร์สไรเซอร์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "EB04-008TH->BT09-072TH",
+          "source_card_id": "EB04-008TH",
+          "source_name_th": "โกลด์ รูไทล์",
+          "target_card_id": "BT09-072TH",
+          "target_name_th": "เบิร์สไรเซอร์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "EB04-016TH->BT09-072TH",
+          "source_card_id": "EB04-016TH",
+          "source_name_th": "Mr.อินวิซิเบิ้ล",
+          "target_card_id": "BT09-072TH",
+          "target_name_th": "เบิร์สไรเซอร์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "TD03-001TH->BT09-072TH",
+          "source_card_id": "TD03-001TH",
+          "source_name_th": "โกลด์ รูไทล์",
+          "target_card_id": "BT09-072TH",
+          "target_name_th": "เบิร์สไรเซอร์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_022",
+      "source_skeleton_id": "skel_022",
+      "source_package_id": "pkg_022",
+      "anchor_card_id": "EB04-009TH",
+      "anchor_name_th": "เจโนไซด์ โจ๊กเกอร์",
+      "line_title": "EB04-009TH support package line",
+      "cards_involved": [
+        "BT01-028TH",
+        "EB04-008TH",
+        "EB04-009TH",
+        "EB04-016TH",
+        "TD03-001TH"
+      ],
+      "key_cards": [
+        "EB04-009TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT01-059TH",
+        "BT04-019TH",
+        "BT04-076TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "trigger_cards": [
+        "BT02-074TH",
+        "BT04-078TH",
+        "EB04-033TH"
+      ],
+      "resource_recovery_cards": [
+        "BT01-028TH",
+        "BT01-059TH",
+        "BT02-074TH",
+        "BT04-019TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-033TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT01-028TH->EB04-009TH",
+          "source_card_id": "BT01-028TH",
+          "source_name_th": "Mr. อินวิซิเบิ้ล",
+          "target_card_id": "EB04-009TH",
+          "target_name_th": "เจโนไซด์ โจ๊กเกอร์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "EB04-008TH->EB04-009TH",
+          "source_card_id": "EB04-008TH",
+          "source_name_th": "โกลด์ รูไทล์",
+          "target_card_id": "EB04-009TH",
+          "target_name_th": "เจโนไซด์ โจ๊กเกอร์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "EB04-016TH->EB04-009TH",
+          "source_card_id": "EB04-016TH",
+          "source_name_th": "Mr.อินวิซิเบิ้ล",
+          "target_card_id": "EB04-009TH",
+          "target_name_th": "เจโนไซด์ โจ๊กเกอร์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "TD03-001TH->EB04-009TH",
+          "source_card_id": "TD03-001TH",
+          "source_name_th": "โกลด์ รูไทล์",
+          "target_card_id": "EB04-009TH",
+          "target_name_th": "เจโนไซด์ โจ๊กเกอร์",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_023",
+      "source_skeleton_id": "skel_023",
+      "source_package_id": "pkg_023",
+      "anchor_card_id": "EB04-023TH",
+      "anchor_name_th": "โอเอซิส เกิร์ล",
+      "line_title": "EB04-023TH support package line",
+      "cards_involved": [
+        "BT01-028TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-023TH",
+        "TD03-001TH"
+      ],
+      "key_cards": [
+        "EB04-023TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT01-059TH",
+        "BT04-019TH",
+        "BT04-076TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "trigger_cards": [
+        "BT02-074TH",
+        "BT04-078TH",
+        "EB04-033TH"
+      ],
+      "resource_recovery_cards": [
+        "BT01-028TH",
+        "BT01-059TH",
+        "BT02-074TH",
+        "BT04-019TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-033TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT01-028TH->EB04-023TH",
+          "source_card_id": "BT01-028TH",
+          "source_name_th": "Mr. อินวิซิเบิ้ล",
+          "target_card_id": "EB04-023TH",
+          "target_name_th": "โอเอซิส เกิร์ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "EB04-008TH->EB04-023TH",
+          "source_card_id": "EB04-008TH",
+          "source_name_th": "โกลด์ รูไทล์",
+          "target_card_id": "EB04-023TH",
+          "target_name_th": "โอเอซิส เกิร์ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "EB04-016TH->EB04-023TH",
+          "source_card_id": "EB04-016TH",
+          "source_name_th": "Mr.อินวิซิเบิ้ล",
+          "target_card_id": "EB04-023TH",
+          "target_name_th": "โอเอซิส เกิร์ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "TD03-001TH->EB04-023TH",
+          "source_card_id": "TD03-001TH",
+          "source_name_th": "โกลด์ รูไทล์",
+          "target_card_id": "EB04-023TH",
+          "target_name_th": "โอเอซิส เกิร์ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_024",
+      "source_skeleton_id": "skel_024",
+      "source_package_id": "pkg_024",
+      "anchor_card_id": "TD03-008TH",
+      "anchor_name_th": "โอเอซิส เกิร์ล",
+      "line_title": "TD03-008TH support package line",
+      "cards_involved": [
+        "BT01-028TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH",
+        "TD03-008TH"
+      ],
+      "key_cards": [
+        "TD03-008TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT01-059TH",
+        "BT04-019TH",
+        "BT04-076TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "trigger_cards": [
+        "BT02-074TH",
+        "BT04-078TH",
+        "EB04-033TH"
+      ],
+      "resource_recovery_cards": [
+        "BT01-028TH",
+        "BT01-059TH",
+        "BT02-074TH",
+        "BT04-019TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-033TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT01-028TH->TD03-008TH",
+          "source_card_id": "BT01-028TH",
+          "source_name_th": "Mr. อินวิซิเบิ้ล",
+          "target_card_id": "TD03-008TH",
+          "target_name_th": "โอเอซิส เกิร์ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "EB04-008TH->TD03-008TH",
+          "source_card_id": "EB04-008TH",
+          "source_name_th": "โกลด์ รูไทล์",
+          "target_card_id": "TD03-008TH",
+          "target_name_th": "โอเอซิส เกิร์ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "EB04-016TH->TD03-008TH",
+          "source_card_id": "EB04-016TH",
+          "source_name_th": "Mr.อินวิซิเบิ้ล",
+          "target_card_id": "TD03-008TH",
+          "target_name_th": "โอเอซิส เกิร์ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "TD03-001TH->TD03-008TH",
+          "source_card_id": "TD03-001TH",
+          "source_name_th": "โกลด์ รูไทล์",
+          "target_card_id": "TD03-008TH",
+          "target_name_th": "โอเอซิส เกิร์ล",
+          "resource_verdict": "resource_support",
+          "timing_verdict": "target_timing_not_constrained",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "resource:resource_support",
+            "timing:target_timing_not_constrained"
+          ],
+          "needs_to_work": [
+            "Target timing is broad; confirm actual line during review."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    },
+    {
+      "line_id": "line_025",
+      "source_skeleton_id": "skel_025",
+      "source_package_id": "pkg_025",
+      "anchor_card_id": "BT02-072TH",
+      "anchor_name_th": "เครย์ โซลเจอร์",
+      "line_title": "BT02-072TH support package line",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT02-072TH",
+        "BT04-008TH",
+        "BT04-019TH"
+      ],
+      "key_cards": [
+        "BT02-072TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-021TH",
+        "TD03-001TH"
+      ],
+      "trigger_cards": [],
+      "resource_recovery_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-019TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-021TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "edge": "BT02-072TH->BT01-028TH",
+          "source_card_id": "BT02-072TH",
+          "source_name_th": "เครย์ โซลเจอร์",
+          "target_card_id": "BT01-028TH",
+          "target_name_th": "Mr. อินวิซิเบิ้ล",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 2,
+          "edge": "BT02-072TH->BT02-018TH",
+          "source_card_id": "BT02-072TH",
+          "source_name_th": "เครย์ โซลเจอร์",
+          "target_card_id": "BT02-018TH",
+          "target_name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "source_zone_profile_only",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure."
+          ]
+        },
+        {
+          "step_no": 3,
+          "edge": "BT02-072TH->BT04-008TH",
+          "source_card_id": "BT02-072TH",
+          "source_name_th": "เครย์ โซลเจอร์",
+          "target_card_id": "BT04-008TH",
+          "target_name_th": "สเทิร์น เบลาคลูเกอร์",
+          "resource_verdict": "target_resource_need_not_supported_by_source",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "Needs another card/package to cover target resource pressure.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        },
+        {
+          "step_no": 4,
+          "edge": "BT02-072TH->BT04-019TH",
+          "source_card_id": "BT02-072TH",
+          "source_name_th": "เครย์ โซลเจอร์",
+          "target_card_id": "BT04-019TH",
+          "target_name_th": "เบลาคลูเกอร์",
+          "resource_verdict": "not_resource_relevant",
+          "timing_verdict": "timing_can_precede",
+          "zone_verdict": "target_zone_need_not_supported_by_source",
+          "why_it_matters": [
+            "pair_graph_provider_requirement_match",
+            "timing:timing_can_precede"
+          ],
+          "needs_to_work": [
+            "No resource dependency detected for this edge.",
+            "Needs normal board setup or another package to cover target zone access."
+          ]
+        }
+      ],
+      "why_package_is_included": [
+        "Built from clean M35-C5 synergy edges.",
+        "Selected by M35-D1 anchor package scoring.",
+        "Attached to M35-D2 grade/trigger ratio skeleton for review."
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access.",
+        "No resource dependency detected for this edge."
+      ],
+      "known_limits": [
+        "Advisory explanation only.",
+        "No per-card quantities.",
+        "No final play sequence legality claim.",
+        "No runtime bot/playbook export."
+      ],
+      "candidate_for_m35_d4_review": true
+    }
+  ],
+  "next_target": "M35-D4"
+}

@@ -1,0 +1,68 @@
+{
+  "version": "M46-01",
+  "description": "Third runtime fixture schema validation",
+  "source_inputs": {
+    "runtime_fixture": "outputs\\target_slice\\runtime_fixtures\\m44_recipe_001_link_joker_legion_bermuda_triangle_m45_04.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "scope": {
+    "offline_fixture_schema_validator": true,
+    "mutates_fixture_artifact": false,
+    "mutates_runtime_deck_library": false,
+    "bot_integration": false,
+    "GameState_mutation": false,
+    "third_fixture_schema_validator": true
+  },
+  "validation_policy": {
+    "schema_version": "deck_recipe_runtime_fixture_v1",
+    "fixture_scope": "offline_runtime_test_fixture",
+    "main_deck_count": 50,
+    "trigger_profile": {
+      "Critical": 4,
+      "Draw": 4,
+      "Heal": 4,
+      "Stand": 4
+    },
+    "grade_profile": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "copy_limit_from_sqlite": true,
+    "selected_group_only": true,
+    "runtime_boundaries_enforced": true
+  },
+  "fixture_summary": {
+    "fixture_id": "runtime_fixture_m44_recipe_001_link_joker_legion_bermuda_triangle_m45_04",
+    "recipe_id": "m44_recipe_001",
+    "main_deck_count": 50,
+    "trigger_counts": {
+      "Critical": 4,
+      "Draw": 4,
+      "Heal": 4,
+      "Stand": 4
+    },
+    "grade_counts": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "clan_counts": {
+      "เบอร์มิวด้า ไทรแองเกิล": 50
+    },
+    "unique_card_count": 15
+  },
+  "issues": [],
+  "summary": {
+    "schema_valid": true,
+    "blocking_issue_count": 0,
+    "issue_count": 0,
+    "ready_for_m46_02": true
+  },
+  "next_target": {
+    "milestone": "M46-02",
+    "task": "Third fixture deck text exporter"
+  }
+}

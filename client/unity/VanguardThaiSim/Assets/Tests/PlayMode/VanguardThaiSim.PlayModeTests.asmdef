@@ -1,0 +1,21 @@
+{
+  "name": "VanguardThaiSim.PlayModeTests",
+  "rootNamespace": "VanguardThaiSim.PlayModeTests",
+  "references": [
+    "VanguardThaiSim"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [
+    "UNITY_INCLUDE_TESTS"
+  ],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

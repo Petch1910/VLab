@@ -1,0 +1,3758 @@
+{
+  "version": "M35-D1",
+  "description": "Candidate package selection from selected-slice compatibility output",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "pair_compatibility_graph": "outputs\\target_slice\\m35_c1_first_slice_pair_compatibility_graph.json",
+    "selected_compatibility_output": "outputs\\target_slice\\m35_c5_first_slice_selected_compatibility_output.json"
+  },
+  "scope": {
+    "advisory_only": true,
+    "candidate_package_selection": true,
+    "deck_skeleton": false,
+    "deck_quantities": false,
+    "bot_playbook": false,
+    "runtime_effect_execution": false
+  },
+  "policy": {
+    "only_clean_synergy_edges": true,
+    "no_manual_review_edges": true,
+    "no_missing_data_edges": true,
+    "no_conflict_edges": true,
+    "packages_are_inputs_not_final_deck_choices": true
+  },
+  "summary": {
+    "clean_edge_count": 604,
+    "package_count": 25,
+    "ready_for_m35_d2": true
+  },
+  "packages": [
+    {
+      "package_id": "pkg_001",
+      "anchor_card_id": "BT04-038TH",
+      "anchor_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+      "card_ids": [
+        "BT01-032TH",
+        "BT02-018TH",
+        "BT04-038TH",
+        "BT06-042TH",
+        "BT06-099TH",
+        "BT09-075TH",
+        "EB01-020TH",
+        "EB04-004TH",
+        "EB04-012TH",
+        "EB04-027TH",
+        "EB04-028TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-032TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-038TH",
+          "name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT06-042TH",
+          "name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT06-099TH",
+          "name_th": "ฮานิ ผู้ชั่วร้าย",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT09-075TH",
+          "name_th": "ไลโอเนท ฮีท",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "name_th": "แบทเทิล ไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-012TH",
+          "name_th": "เดทอาร์มี่ ไนท์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-027TH",
+          "name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-028TH",
+          "name_th": "เดทอาร์มี่ พอว์น",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "name_th": "เทอร์โบไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-035TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT06-042TH->BT04-038TH",
+        "EB04-027TH->BT04-038TH",
+        "BT01-032TH->BT04-038TH",
+        "BT09-075TH->BT04-038TH",
+        "EB01-020TH->BT04-038TH",
+        "EB04-034TH->BT04-038TH",
+        "EB04-035TH->BT04-038TH",
+        "EB04-028TH->BT04-038TH",
+        "EB04-012TH->BT04-038TH",
+        "BT04-038TH->BT02-018TH",
+        "BT04-038TH->BT06-099TH",
+        "BT04-038TH->EB04-004TH"
+      ],
+      "net_score": 16.245,
+      "grade_counts": {
+        "0": 8,
+        "2": 4,
+        "3": 1
+      },
+      "trigger_counts": {
+        "Stand": 4,
+        "none": 9
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 3,
+        "as_consumer_target": 9
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_002",
+      "anchor_card_id": "EB04-017TH",
+      "anchor_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+      "card_ids": [
+        "BT01-032TH",
+        "BT02-018TH",
+        "BT06-042TH",
+        "BT06-099TH",
+        "BT09-075TH",
+        "EB01-020TH",
+        "EB04-004TH",
+        "EB04-012TH",
+        "EB04-017TH",
+        "EB04-027TH",
+        "EB04-028TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-032TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT06-042TH",
+          "name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT06-099TH",
+          "name_th": "ฮานิ ผู้ชั่วร้าย",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT09-075TH",
+          "name_th": "ไลโอเนท ฮีท",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "name_th": "แบทเทิล ไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-012TH",
+          "name_th": "เดทอาร์มี่ ไนท์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-017TH",
+          "name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-027TH",
+          "name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-028TH",
+          "name_th": "เดทอาร์มี่ พอว์น",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "name_th": "เทอร์โบไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-035TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT06-042TH->EB04-017TH",
+        "EB04-027TH->EB04-017TH",
+        "BT01-032TH->EB04-017TH",
+        "BT09-075TH->EB04-017TH",
+        "EB01-020TH->EB04-017TH",
+        "EB04-034TH->EB04-017TH",
+        "EB04-035TH->EB04-017TH",
+        "EB04-028TH->EB04-017TH",
+        "EB04-012TH->EB04-017TH",
+        "EB04-017TH->BT02-018TH",
+        "EB04-017TH->BT06-099TH",
+        "EB04-017TH->EB04-004TH"
+      ],
+      "net_score": 16.245,
+      "grade_counts": {
+        "0": 8,
+        "2": 4,
+        "3": 1
+      },
+      "trigger_counts": {
+        "Stand": 4,
+        "none": 9
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 3,
+        "as_consumer_target": 9
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_003",
+      "anchor_card_id": "BT04-078TH",
+      "anchor_name_th": "แกรปเปิล มาเนีย",
+      "card_ids": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-078TH",
+        "BT09-004TH",
+        "EB04-002TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-010TH",
+        "EB04-016TH",
+        "TD03-001TH",
+        "TD03-002TH",
+        "TD03-003TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-028TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-008TH",
+          "name_th": "สเทิร์น เบลาคลูเกอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "name_th": "แกรปเปิล มาเนีย",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT09-004TH",
+          "name_th": "สัตว์เทวะขั้นสุดยอด,อิลลูมินัล ดราก้อน",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-002TH",
+          "name_th": "สุดยอดร่างกัดกร่อนไร้ที่สิ้นสุด,เดทอาร์มี่ คอสโม่ลอร์ด",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-010TH",
+          "name_th": "เดทเมทัล ดรอยด์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "name_th": "Mr.อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-002TH",
+          "name_th": "เดธเมทัล ดรอยด์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-003TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT04-078TH->BT01-028TH",
+        "BT04-078TH->EB04-008TH",
+        "BT04-078TH->EB04-016TH",
+        "BT04-078TH->TD03-001TH",
+        "BT04-078TH->TD03-003TH",
+        "BT04-078TH->BT02-018TH",
+        "BT04-078TH->BT04-008TH",
+        "BT04-078TH->BT09-004TH",
+        "BT04-078TH->EB04-004TH",
+        "BT04-078TH->EB04-002TH",
+        "BT04-078TH->EB04-010TH",
+        "BT04-078TH->TD03-002TH"
+      ],
+      "net_score": 15.745,
+      "grade_counts": {
+        "0": 1,
+        "2": 2,
+        "3": 10
+      },
+      "trigger_counts": {
+        "Stand": 1,
+        "none": 12
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 12,
+        "as_consumer_target": 0
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_004",
+      "anchor_card_id": "BT01-028TH",
+      "anchor_name_th": "Mr. อินวิซิเบิ้ล",
+      "card_ids": [
+        "BT01-028TH",
+        "BT01-032TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "BT09-075TH",
+        "EB01-020TH",
+        "EB04-006TH",
+        "EB04-009TH",
+        "EB04-023TH",
+        "EB04-034TH",
+        "TD03-008TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-028TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "name_th": "ทูลคิท บอย",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "name_th": "แกรปเปิล มาเนีย",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT05-072TH",
+          "name_th": "แอนโทรรอยด์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT09-072TH",
+          "name_th": "เบิร์สไรเซอร์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT09-075TH",
+          "name_th": "ไลโอเนท ฮีท",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "name_th": "แบทเทิล ไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-006TH",
+          "name_th": "เดทอาร์มี่ บิชอป",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-009TH",
+          "name_th": "เจโนไซด์ โจ๊กเกอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-023TH",
+          "name_th": "โอเอซิส เกิร์ล",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "name_th": "เทอร์โบไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "TD03-008TH",
+          "name_th": "โอเอซิส เกิร์ล",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT04-078TH->BT01-028TH",
+        "BT09-075TH->BT01-028TH",
+        "BT01-028TH->BT05-072TH",
+        "BT01-028TH->BT09-072TH",
+        "BT01-028TH->EB04-006TH",
+        "BT01-028TH->EB04-009TH",
+        "BT01-028TH->EB04-023TH",
+        "BT01-028TH->TD03-008TH",
+        "BT01-032TH->BT01-028TH",
+        "BT04-076TH->BT01-028TH",
+        "EB01-020TH->BT01-028TH",
+        "EB04-034TH->BT01-028TH"
+      ],
+      "net_score": 15.245,
+      "grade_counts": {
+        "0": 5,
+        "1": 6,
+        "3": 2
+      },
+      "trigger_counts": {
+        "Stand": 4,
+        "none": 9
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 6,
+        "as_consumer_target": 6
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_005",
+      "anchor_card_id": "EB04-016TH",
+      "anchor_name_th": "Mr.อินวิซิเบิ้ล",
+      "card_ids": [
+        "BT01-032TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "BT09-075TH",
+        "EB01-020TH",
+        "EB04-006TH",
+        "EB04-009TH",
+        "EB04-016TH",
+        "EB04-023TH",
+        "EB04-034TH",
+        "TD03-008TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-032TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "name_th": "ทูลคิท บอย",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "name_th": "แกรปเปิล มาเนีย",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT05-072TH",
+          "name_th": "แอนโทรรอยด์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT09-072TH",
+          "name_th": "เบิร์สไรเซอร์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT09-075TH",
+          "name_th": "ไลโอเนท ฮีท",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "name_th": "แบทเทิล ไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-006TH",
+          "name_th": "เดทอาร์มี่ บิชอป",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-009TH",
+          "name_th": "เจโนไซด์ โจ๊กเกอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "name_th": "Mr.อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-023TH",
+          "name_th": "โอเอซิส เกิร์ล",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "name_th": "เทอร์โบไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "TD03-008TH",
+          "name_th": "โอเอซิส เกิร์ล",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT04-078TH->EB04-016TH",
+        "BT09-075TH->EB04-016TH",
+        "EB04-016TH->BT05-072TH",
+        "EB04-016TH->BT09-072TH",
+        "EB04-016TH->EB04-006TH",
+        "EB04-016TH->EB04-009TH",
+        "EB04-016TH->EB04-023TH",
+        "EB04-016TH->TD03-008TH",
+        "BT01-032TH->EB04-016TH",
+        "BT04-076TH->EB04-016TH",
+        "EB01-020TH->EB04-016TH",
+        "EB04-034TH->EB04-016TH"
+      ],
+      "net_score": 15.245,
+      "grade_counts": {
+        "0": 5,
+        "1": 6,
+        "3": 2
+      },
+      "trigger_counts": {
+        "Stand": 4,
+        "none": 9
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 6,
+        "as_consumer_target": 6
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_006",
+      "anchor_card_id": "TD03-003TH",
+      "anchor_name_th": "Mr. อินวิซิเบิ้ล",
+      "card_ids": [
+        "BT01-032TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "BT09-075TH",
+        "EB01-020TH",
+        "EB04-006TH",
+        "EB04-009TH",
+        "EB04-023TH",
+        "EB04-034TH",
+        "TD03-003TH",
+        "TD03-008TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-032TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "name_th": "ทูลคิท บอย",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "name_th": "แกรปเปิล มาเนีย",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT05-072TH",
+          "name_th": "แอนโทรรอยด์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT09-072TH",
+          "name_th": "เบิร์สไรเซอร์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT09-075TH",
+          "name_th": "ไลโอเนท ฮีท",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "name_th": "แบทเทิล ไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-006TH",
+          "name_th": "เดทอาร์มี่ บิชอป",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-009TH",
+          "name_th": "เจโนไซด์ โจ๊กเกอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-023TH",
+          "name_th": "โอเอซิส เกิร์ล",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "name_th": "เทอร์โบไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "TD03-003TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-008TH",
+          "name_th": "โอเอซิส เกิร์ล",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT04-078TH->TD03-003TH",
+        "BT09-075TH->TD03-003TH",
+        "TD03-003TH->BT05-072TH",
+        "TD03-003TH->BT09-072TH",
+        "TD03-003TH->EB04-006TH",
+        "TD03-003TH->EB04-009TH",
+        "TD03-003TH->EB04-023TH",
+        "TD03-003TH->TD03-008TH",
+        "BT01-032TH->TD03-003TH",
+        "BT04-076TH->TD03-003TH",
+        "EB01-020TH->TD03-003TH",
+        "EB04-034TH->TD03-003TH"
+      ],
+      "net_score": 15.245,
+      "grade_counts": {
+        "0": 5,
+        "1": 6,
+        "3": 2
+      },
+      "trigger_counts": {
+        "Stand": 4,
+        "none": 9
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 6,
+        "as_consumer_target": 6
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_007",
+      "anchor_card_id": "EB04-008TH",
+      "anchor_name_th": "โกลด์ รูไทล์",
+      "card_ids": [
+        "BT01-032TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "EB01-020TH",
+        "EB04-006TH",
+        "EB04-008TH",
+        "EB04-009TH",
+        "EB04-023TH",
+        "EB04-034TH",
+        "EB04-035TH",
+        "TD03-008TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-032TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "name_th": "ทูลคิท บอย",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "name_th": "แกรปเปิล มาเนีย",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT05-072TH",
+          "name_th": "แอนโทรรอยด์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT09-072TH",
+          "name_th": "เบิร์สไรเซอร์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "name_th": "แบทเทิล ไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-006TH",
+          "name_th": "เดทอาร์มี่ บิชอป",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-009TH",
+          "name_th": "เจโนไซด์ โจ๊กเกอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-023TH",
+          "name_th": "โอเอซิส เกิร์ล",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "name_th": "เทอร์โบไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-035TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "TD03-008TH",
+          "name_th": "โอเอซิส เกิร์ล",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT04-078TH->EB04-008TH",
+        "EB04-008TH->BT05-072TH",
+        "EB04-008TH->BT09-072TH",
+        "EB04-008TH->EB04-006TH",
+        "EB04-008TH->EB04-009TH",
+        "EB04-008TH->EB04-023TH",
+        "EB04-008TH->TD03-008TH",
+        "BT01-032TH->EB04-008TH",
+        "BT04-076TH->EB04-008TH",
+        "EB01-020TH->EB04-008TH",
+        "EB04-034TH->EB04-008TH",
+        "EB04-035TH->EB04-008TH"
+      ],
+      "net_score": 15.078,
+      "grade_counts": {
+        "0": 5,
+        "1": 6,
+        "3": 2
+      },
+      "trigger_counts": {
+        "Stand": 5,
+        "none": 8
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 6,
+        "as_consumer_target": 6
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_008",
+      "anchor_card_id": "TD03-001TH",
+      "anchor_name_th": "โกลด์ รูไทล์",
+      "card_ids": [
+        "BT01-032TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "EB01-020TH",
+        "EB04-006TH",
+        "EB04-009TH",
+        "EB04-023TH",
+        "EB04-034TH",
+        "EB04-035TH",
+        "TD03-001TH",
+        "TD03-008TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-032TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "name_th": "ทูลคิท บอย",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "name_th": "แกรปเปิล มาเนีย",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT05-072TH",
+          "name_th": "แอนโทรรอยด์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT09-072TH",
+          "name_th": "เบิร์สไรเซอร์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "name_th": "แบทเทิล ไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-006TH",
+          "name_th": "เดทอาร์มี่ บิชอป",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-009TH",
+          "name_th": "เจโนไซด์ โจ๊กเกอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-023TH",
+          "name_th": "โอเอซิส เกิร์ล",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "name_th": "เทอร์โบไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-035TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-008TH",
+          "name_th": "โอเอซิส เกิร์ล",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT04-078TH->TD03-001TH",
+        "TD03-001TH->BT05-072TH",
+        "TD03-001TH->BT09-072TH",
+        "TD03-001TH->EB04-006TH",
+        "TD03-001TH->EB04-009TH",
+        "TD03-001TH->EB04-023TH",
+        "TD03-001TH->TD03-008TH",
+        "BT01-032TH->TD03-001TH",
+        "BT04-076TH->TD03-001TH",
+        "EB01-020TH->TD03-001TH",
+        "EB04-034TH->TD03-001TH",
+        "EB04-035TH->TD03-001TH"
+      ],
+      "net_score": 15.078,
+      "grade_counts": {
+        "0": 5,
+        "1": 6,
+        "3": 2
+      },
+      "trigger_counts": {
+        "Stand": 5,
+        "none": 8
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 6,
+        "as_consumer_target": 6
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_009",
+      "anchor_card_id": "BT01-032TH",
+      "anchor_name_th": "แบทเทิลไรเซอร์",
+      "card_ids": [
+        "BT01-028TH",
+        "BT01-032TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH",
+        "EB04-021TH",
+        "TD03-001TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-028TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-008TH",
+          "name_th": "สเทิร์น เบลาคลูเกอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "name_th": "เบลาคลูเกอร์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-038TH",
+          "name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT06-099TH",
+          "name_th": "ฮานิ ผู้ชั่วร้าย",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "name_th": "Mr.อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-017TH",
+          "name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-021TH",
+          "name_th": "มาเวลรัส ฮานิ",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT01-032TH->BT04-038TH",
+        "BT01-032TH->EB04-017TH",
+        "BT01-032TH->BT01-028TH",
+        "BT01-032TH->BT02-018TH",
+        "BT01-032TH->BT04-008TH",
+        "BT01-032TH->BT04-019TH",
+        "BT01-032TH->BT06-099TH",
+        "BT01-032TH->EB04-004TH",
+        "BT01-032TH->EB04-008TH",
+        "BT01-032TH->EB04-016TH",
+        "BT01-032TH->EB04-021TH",
+        "BT01-032TH->TD03-001TH"
+      ],
+      "net_score": 14.995,
+      "grade_counts": {
+        "0": 1,
+        "2": 5,
+        "3": 7
+      },
+      "trigger_counts": {
+        "Stand": 1,
+        "none": 12
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 12,
+        "as_consumer_target": 0
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_010",
+      "anchor_card_id": "EB01-020TH",
+      "anchor_name_th": "แบทเทิล ไรเซอร์",
+      "card_ids": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "EB01-020TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH",
+        "EB04-021TH",
+        "TD03-001TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-028TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-008TH",
+          "name_th": "สเทิร์น เบลาคลูเกอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "name_th": "เบลาคลูเกอร์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-038TH",
+          "name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT06-099TH",
+          "name_th": "ฮานิ ผู้ชั่วร้าย",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "name_th": "แบทเทิล ไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "name_th": "Mr.อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-017TH",
+          "name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-021TH",
+          "name_th": "มาเวลรัส ฮานิ",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "EB01-020TH->BT04-038TH",
+        "EB01-020TH->EB04-017TH",
+        "EB01-020TH->BT01-028TH",
+        "EB01-020TH->BT02-018TH",
+        "EB01-020TH->BT04-008TH",
+        "EB01-020TH->BT04-019TH",
+        "EB01-020TH->BT06-099TH",
+        "EB01-020TH->EB04-004TH",
+        "EB01-020TH->EB04-008TH",
+        "EB01-020TH->EB04-016TH",
+        "EB01-020TH->EB04-021TH",
+        "EB01-020TH->TD03-001TH"
+      ],
+      "net_score": 14.995,
+      "grade_counts": {
+        "0": 1,
+        "2": 5,
+        "3": 7
+      },
+      "trigger_counts": {
+        "Stand": 1,
+        "none": 12
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 12,
+        "as_consumer_target": 0
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_011",
+      "anchor_card_id": "EB04-034TH",
+      "anchor_name_th": "เทอร์โบไรเซอร์",
+      "card_ids": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH",
+        "EB04-021TH",
+        "EB04-034TH",
+        "TD03-001TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-028TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-008TH",
+          "name_th": "สเทิร์น เบลาคลูเกอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "name_th": "เบลาคลูเกอร์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-038TH",
+          "name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT06-099TH",
+          "name_th": "ฮานิ ผู้ชั่วร้าย",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "name_th": "Mr.อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-017TH",
+          "name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-021TH",
+          "name_th": "มาเวลรัส ฮานิ",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "name_th": "เทอร์โบไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "EB04-034TH->BT04-038TH",
+        "EB04-034TH->EB04-017TH",
+        "EB04-034TH->BT01-028TH",
+        "EB04-034TH->BT02-018TH",
+        "EB04-034TH->BT04-008TH",
+        "EB04-034TH->BT04-019TH",
+        "EB04-034TH->BT06-099TH",
+        "EB04-034TH->EB04-004TH",
+        "EB04-034TH->EB04-008TH",
+        "EB04-034TH->EB04-016TH",
+        "EB04-034TH->EB04-021TH",
+        "EB04-034TH->TD03-001TH"
+      ],
+      "net_score": 14.995,
+      "grade_counts": {
+        "0": 1,
+        "2": 5,
+        "3": 7
+      },
+      "trigger_counts": {
+        "Stand": 1,
+        "none": 12
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 12,
+        "as_consumer_target": 0
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_012",
+      "anchor_card_id": "EB04-035TH",
+      "anchor_name_th": "แบทเทิลไรเซอร์",
+      "card_ids": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH",
+        "EB04-021TH",
+        "EB04-035TH",
+        "TD03-001TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-028TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-008TH",
+          "name_th": "สเทิร์น เบลาคลูเกอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "name_th": "เบลาคลูเกอร์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-038TH",
+          "name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT06-099TH",
+          "name_th": "ฮานิ ผู้ชั่วร้าย",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "name_th": "Mr.อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-017TH",
+          "name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-021TH",
+          "name_th": "มาเวลรัส ฮานิ",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-035TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "EB04-035TH->BT04-038TH",
+        "EB04-035TH->EB04-017TH",
+        "EB04-035TH->BT01-028TH",
+        "EB04-035TH->BT02-018TH",
+        "EB04-035TH->BT04-008TH",
+        "EB04-035TH->BT04-019TH",
+        "EB04-035TH->BT06-099TH",
+        "EB04-035TH->EB04-004TH",
+        "EB04-035TH->EB04-008TH",
+        "EB04-035TH->EB04-016TH",
+        "EB04-035TH->EB04-021TH",
+        "EB04-035TH->TD03-001TH"
+      ],
+      "net_score": 14.995,
+      "grade_counts": {
+        "0": 1,
+        "2": 5,
+        "3": 7
+      },
+      "trigger_counts": {
+        "Stand": 1,
+        "none": 12
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 12,
+        "as_consumer_target": 0
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_013",
+      "anchor_card_id": "TD03-005TH",
+      "anchor_name_th": "สุดยอดแม่เหล็กไฟฟ้ามีชีวิต สตอร์ม",
+      "card_ids": [
+        "BT01-032TH",
+        "BT02-072TH",
+        "BT06-042TH",
+        "BT09-034TH",
+        "EB01-001TH",
+        "EB01-020TH",
+        "EB04-001TH",
+        "EB04-002TH",
+        "EB04-012TH",
+        "EB04-027TH",
+        "EB04-034TH",
+        "EB04-035TH",
+        "TD03-005TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-032TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT02-072TH",
+          "name_th": "เครย์ โซลเจอร์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT06-042TH",
+          "name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT09-034TH",
+          "name_th": "สัตว์เทวะ,แบล็ง มาร์ช",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB01-001TH",
+          "name_th": "เพอร์เฟค ไรเซอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "name_th": "แบทเทิล ไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-001TH",
+          "name_th": "เพอร์เฟค ไรเซอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-002TH",
+          "name_th": "สุดยอดร่างกัดกร่อนไร้ที่สิ้นสุด,เดทอาร์มี่ คอสโม่ลอร์ด",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-012TH",
+          "name_th": "เดทอาร์มี่ ไนท์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-027TH",
+          "name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "name_th": "เทอร์โบไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-035TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "TD03-005TH",
+          "name_th": "สุดยอดแม่เหล็กไฟฟ้ามีชีวิต สตอร์ม",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "EB01-001TH->TD03-005TH",
+        "EB04-001TH->TD03-005TH",
+        "BT01-032TH->TD03-005TH",
+        "EB01-020TH->TD03-005TH",
+        "EB04-034TH->TD03-005TH",
+        "EB04-035TH->TD03-005TH",
+        "TD03-005TH->EB04-002TH",
+        "BT02-072TH->TD03-005TH",
+        "BT06-042TH->TD03-005TH",
+        "BT09-034TH->TD03-005TH",
+        "EB04-012TH->TD03-005TH",
+        "EB04-027TH->TD03-005TH"
+      ],
+      "net_score": 14.078,
+      "grade_counts": {
+        "0": 6,
+        "1": 2,
+        "2": 2,
+        "3": 3
+      },
+      "trigger_counts": {
+        "Stand": 4,
+        "none": 9
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 1,
+        "as_consumer_target": 11
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_014",
+      "anchor_card_id": "BT06-099TH",
+      "anchor_name_th": "ฮานิ ผู้ชั่วร้าย",
+      "card_ids": [
+        "BT01-029TH",
+        "BT01-032TH",
+        "BT02-072TH",
+        "BT06-042TH",
+        "BT06-099TH",
+        "BT09-034TH",
+        "EB01-001TH",
+        "EB01-020TH",
+        "EB04-001TH",
+        "EB04-012TH",
+        "EB04-027TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-029TH",
+          "name_th": "บลูทัล แจ็ค",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT02-072TH",
+          "name_th": "เครย์ โซลเจอร์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT06-042TH",
+          "name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT06-099TH",
+          "name_th": "ฮานิ ผู้ชั่วร้าย",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT09-034TH",
+          "name_th": "สัตว์เทวะ,แบล็ง มาร์ช",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB01-001TH",
+          "name_th": "เพอร์เฟค ไรเซอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "name_th": "แบทเทิล ไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-001TH",
+          "name_th": "เพอร์เฟค ไรเซอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-012TH",
+          "name_th": "เดทอาร์มี่ ไนท์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-027TH",
+          "name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "name_th": "เทอร์โบไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-035TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "EB01-001TH->BT06-099TH",
+        "EB04-001TH->BT06-099TH",
+        "BT01-032TH->BT06-099TH",
+        "EB01-020TH->BT06-099TH",
+        "EB04-034TH->BT06-099TH",
+        "EB04-035TH->BT06-099TH",
+        "BT02-072TH->BT06-099TH",
+        "BT06-042TH->BT06-099TH",
+        "BT09-034TH->BT06-099TH",
+        "EB04-012TH->BT06-099TH",
+        "EB04-027TH->BT06-099TH",
+        "BT01-029TH->BT06-099TH"
+      ],
+      "net_score": 13.828,
+      "grade_counts": {
+        "0": 6,
+        "1": 2,
+        "2": 3,
+        "3": 2
+      },
+      "trigger_counts": {
+        "Stand": 4,
+        "none": 9
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 0,
+        "as_consumer_target": 12
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_015",
+      "anchor_card_id": "EB04-021TH",
+      "anchor_name_th": "มาเวลรัส ฮานิ",
+      "card_ids": [
+        "BT01-029TH",
+        "BT01-032TH",
+        "BT02-072TH",
+        "BT06-042TH",
+        "BT09-034TH",
+        "EB01-001TH",
+        "EB01-020TH",
+        "EB04-001TH",
+        "EB04-012TH",
+        "EB04-021TH",
+        "EB04-027TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-029TH",
+          "name_th": "บลูทัล แจ็ค",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT02-072TH",
+          "name_th": "เครย์ โซลเจอร์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT06-042TH",
+          "name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT09-034TH",
+          "name_th": "สัตว์เทวะ,แบล็ง มาร์ช",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB01-001TH",
+          "name_th": "เพอร์เฟค ไรเซอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "name_th": "แบทเทิล ไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-001TH",
+          "name_th": "เพอร์เฟค ไรเซอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-012TH",
+          "name_th": "เดทอาร์มี่ ไนท์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-021TH",
+          "name_th": "มาเวลรัส ฮานิ",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-027TH",
+          "name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "name_th": "เทอร์โบไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-035TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "EB01-001TH->EB04-021TH",
+        "EB04-001TH->EB04-021TH",
+        "BT01-032TH->EB04-021TH",
+        "EB01-020TH->EB04-021TH",
+        "EB04-034TH->EB04-021TH",
+        "EB04-035TH->EB04-021TH",
+        "BT02-072TH->EB04-021TH",
+        "BT06-042TH->EB04-021TH",
+        "BT09-034TH->EB04-021TH",
+        "EB04-012TH->EB04-021TH",
+        "EB04-027TH->EB04-021TH",
+        "BT01-029TH->EB04-021TH"
+      ],
+      "net_score": 13.828,
+      "grade_counts": {
+        "0": 6,
+        "1": 2,
+        "2": 3,
+        "3": 2
+      },
+      "trigger_counts": {
+        "Stand": 4,
+        "none": 9
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 0,
+        "as_consumer_target": 12
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_016",
+      "anchor_card_id": "BT02-018TH",
+      "anchor_name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+      "card_ids": [
+        "BT01-031TH",
+        "BT01-032TH",
+        "BT02-018TH",
+        "BT02-072TH",
+        "BT04-038TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "EB01-001TH",
+        "EB01-020TH",
+        "EB04-001TH",
+        "EB04-012TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-031TH",
+          "name_th": "ควีน ออฟ ฮาร์ท",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT02-072TH",
+          "name_th": "เครย์ โซลเจอร์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-038TH",
+          "name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "name_th": "ทูลคิท บอย",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "name_th": "แกรปเปิล มาเนีย",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB01-001TH",
+          "name_th": "เพอร์เฟค ไรเซอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "name_th": "แบทเทิล ไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-001TH",
+          "name_th": "เพอร์เฟค ไรเซอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-012TH",
+          "name_th": "เดทอาร์มี่ ไนท์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "name_th": "เทอร์โบไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-035TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT04-078TH->BT02-018TH",
+        "EB01-001TH->BT02-018TH",
+        "EB04-001TH->BT02-018TH",
+        "BT01-032TH->BT02-018TH",
+        "EB01-020TH->BT02-018TH",
+        "EB04-034TH->BT02-018TH",
+        "EB04-035TH->BT02-018TH",
+        "BT02-072TH->BT02-018TH",
+        "EB04-012TH->BT02-018TH",
+        "BT04-076TH->BT02-018TH",
+        "BT01-031TH->BT02-018TH",
+        "BT04-038TH->BT02-018TH"
+      ],
+      "net_score": 13.745,
+      "grade_counts": {
+        "0": 5,
+        "1": 3,
+        "2": 2,
+        "3": 3
+      },
+      "trigger_counts": {
+        "Stand": 5,
+        "none": 8
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 0,
+        "as_consumer_target": 12
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_017",
+      "anchor_card_id": "BT09-075TH",
+      "anchor_name_th": "ไลโอเนท ฮีท",
+      "card_ids": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "BT09-075TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH",
+        "EB04-021TH",
+        "TD03-003TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-028TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-008TH",
+          "name_th": "สเทิร์น เบลาคลูเกอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "name_th": "เบลาคลูเกอร์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-038TH",
+          "name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT06-099TH",
+          "name_th": "ฮานิ ผู้ชั่วร้าย",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT09-075TH",
+          "name_th": "ไลโอเนท ฮีท",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "name_th": "Mr.อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-017TH",
+          "name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-021TH",
+          "name_th": "มาเวลรัส ฮานิ",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-003TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT09-075TH->BT04-038TH",
+        "BT09-075TH->EB04-017TH",
+        "BT09-075TH->BT01-028TH",
+        "BT09-075TH->EB04-016TH",
+        "BT09-075TH->TD03-003TH",
+        "BT09-075TH->BT02-018TH",
+        "BT09-075TH->BT04-008TH",
+        "BT09-075TH->BT04-019TH",
+        "BT09-075TH->BT06-099TH",
+        "BT09-075TH->EB04-004TH",
+        "BT09-075TH->EB04-008TH",
+        "BT09-075TH->EB04-021TH"
+      ],
+      "net_score": 13.745,
+      "grade_counts": {
+        "0": 1,
+        "2": 5,
+        "3": 7
+      },
+      "trigger_counts": {
+        "none": 13
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 12,
+        "as_consumer_target": 0
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_018",
+      "anchor_card_id": "EB04-004TH",
+      "anchor_name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+      "card_ids": [
+        "BT01-031TH",
+        "BT01-032TH",
+        "BT02-072TH",
+        "BT04-038TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "EB01-001TH",
+        "EB01-020TH",
+        "EB04-001TH",
+        "EB04-004TH",
+        "EB04-012TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-031TH",
+          "name_th": "ควีน ออฟ ฮาร์ท",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT02-072TH",
+          "name_th": "เครย์ โซลเจอร์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-038TH",
+          "name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "name_th": "ทูลคิท บอย",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "name_th": "แกรปเปิล มาเนีย",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB01-001TH",
+          "name_th": "เพอร์เฟค ไรเซอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "name_th": "แบทเทิล ไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-001TH",
+          "name_th": "เพอร์เฟค ไรเซอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-012TH",
+          "name_th": "เดทอาร์มี่ ไนท์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "name_th": "เทอร์โบไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-035TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT04-078TH->EB04-004TH",
+        "EB01-001TH->EB04-004TH",
+        "EB04-001TH->EB04-004TH",
+        "BT01-032TH->EB04-004TH",
+        "EB01-020TH->EB04-004TH",
+        "EB04-034TH->EB04-004TH",
+        "EB04-035TH->EB04-004TH",
+        "BT02-072TH->EB04-004TH",
+        "EB04-012TH->EB04-004TH",
+        "BT04-076TH->EB04-004TH",
+        "BT01-031TH->EB04-004TH",
+        "BT04-038TH->EB04-004TH"
+      ],
+      "net_score": 13.745,
+      "grade_counts": {
+        "0": 5,
+        "1": 3,
+        "2": 2,
+        "3": 3
+      },
+      "trigger_counts": {
+        "Stand": 5,
+        "none": 8
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 0,
+        "as_consumer_target": 12
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_019",
+      "anchor_card_id": "BT04-076TH",
+      "anchor_name_th": "ทูลคิท บอย",
+      "card_ids": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-076TH",
+        "BT09-004TH",
+        "BT09-072TH",
+        "EB04-002TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-009TH",
+        "EB04-016TH",
+        "TD03-001TH",
+        "TD03-003TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-028TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-008TH",
+          "name_th": "สเทิร์น เบลาคลูเกอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "name_th": "ทูลคิท บอย",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT09-004TH",
+          "name_th": "สัตว์เทวะขั้นสุดยอด,อิลลูมินัล ดราก้อน",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT09-072TH",
+          "name_th": "เบิร์สไรเซอร์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-002TH",
+          "name_th": "สุดยอดร่างกัดกร่อนไร้ที่สิ้นสุด,เดทอาร์มี่ คอสโม่ลอร์ด",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-009TH",
+          "name_th": "เจโนไซด์ โจ๊กเกอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "name_th": "Mr.อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-003TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT04-076TH->BT01-028TH",
+        "BT04-076TH->BT09-004TH",
+        "BT04-076TH->EB04-002TH",
+        "BT04-076TH->EB04-008TH",
+        "BT04-076TH->EB04-016TH",
+        "BT04-076TH->TD03-001TH",
+        "BT04-076TH->TD03-003TH",
+        "BT04-076TH->BT02-018TH",
+        "BT04-076TH->BT04-008TH",
+        "BT04-076TH->BT09-072TH",
+        "BT04-076TH->EB04-004TH",
+        "BT04-076TH->EB04-009TH"
+      ],
+      "net_score": 13.495,
+      "grade_counts": {
+        "1": 2,
+        "2": 2,
+        "3": 9
+      },
+      "trigger_counts": {
+        "none": 13
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 12,
+        "as_consumer_target": 0
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_020",
+      "anchor_card_id": "BT04-019TH",
+      "anchor_name_th": "เบลาคลูเกอร์",
+      "card_ids": [
+        "BT01-032TH",
+        "BT02-072TH",
+        "BT04-019TH",
+        "BT05-072TH",
+        "BT06-042TH",
+        "BT09-034TH",
+        "BT09-072TH",
+        "EB01-020TH",
+        "EB04-006TH",
+        "EB04-012TH",
+        "EB04-027TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-032TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT02-072TH",
+          "name_th": "เครย์ โซลเจอร์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "name_th": "เบลาคลูเกอร์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT05-072TH",
+          "name_th": "แอนโทรรอยด์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT06-042TH",
+          "name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT09-034TH",
+          "name_th": "สัตว์เทวะ,แบล็ง มาร์ช",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT09-072TH",
+          "name_th": "เบิร์สไรเซอร์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "name_th": "แบทเทิล ไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-006TH",
+          "name_th": "เดทอาร์มี่ บิชอป",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-012TH",
+          "name_th": "เดทอาร์มี่ ไนท์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-027TH",
+          "name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+          "grade": 0,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "name_th": "เทอร์โบไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-035TH",
+          "name_th": "แบทเทิลไรเซอร์",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT01-032TH->BT04-019TH",
+        "EB01-020TH->BT04-019TH",
+        "EB04-034TH->BT04-019TH",
+        "EB04-035TH->BT04-019TH",
+        "BT02-072TH->BT04-019TH",
+        "BT06-042TH->BT04-019TH",
+        "BT09-034TH->BT04-019TH",
+        "EB04-012TH->BT04-019TH",
+        "EB04-027TH->BT04-019TH",
+        "BT04-019TH->BT05-072TH",
+        "BT04-019TH->BT09-072TH",
+        "BT04-019TH->EB04-006TH"
+      ],
+      "net_score": 13.412,
+      "grade_counts": {
+        "0": 6,
+        "1": 5,
+        "2": 2
+      },
+      "trigger_counts": {
+        "Stand": 4,
+        "none": 9
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 3,
+        "as_consumer_target": 9
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_021",
+      "anchor_card_id": "BT09-072TH",
+      "anchor_name_th": "เบิร์สไรเซอร์",
+      "card_ids": [
+        "BT01-028TH",
+        "BT01-059TH",
+        "BT02-074TH",
+        "BT04-019TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "BT09-072TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-033TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-028TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT01-059TH",
+          "name_th": "ฮังกรี่ ดัมตี้",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT02-074TH",
+          "name_th": "เรด ไลท์นิ่ง",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "name_th": "เบลาคลูเกอร์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "name_th": "ทูลคิท บอย",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "name_th": "แกรปเปิล มาเนีย",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT09-072TH",
+          "name_th": "เบิร์สไรเซอร์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "name_th": "Mr.อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-033TH",
+          "name_th": "เรด ไลท์นิ่ง",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-003TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-005TH",
+          "name_th": "สุดยอดแม่เหล็กไฟฟ้ามีชีวิต สตอร์ม",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT01-028TH->BT09-072TH",
+        "EB04-008TH->BT09-072TH",
+        "EB04-016TH->BT09-072TH",
+        "TD03-001TH->BT09-072TH",
+        "TD03-003TH->BT09-072TH",
+        "BT02-074TH->BT09-072TH",
+        "BT04-019TH->BT09-072TH",
+        "BT04-076TH->BT09-072TH",
+        "BT04-078TH->BT09-072TH",
+        "EB04-033TH->BT09-072TH",
+        "TD03-005TH->BT09-072TH",
+        "BT01-059TH->BT09-072TH"
+      ],
+      "net_score": 13.412,
+      "grade_counts": {
+        "0": 3,
+        "1": 2,
+        "2": 3,
+        "3": 5
+      },
+      "trigger_counts": {
+        "Critical": 2,
+        "Stand": 1,
+        "none": 10
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 0,
+        "as_consumer_target": 12
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_022",
+      "anchor_card_id": "EB04-009TH",
+      "anchor_name_th": "เจโนไซด์ โจ๊กเกอร์",
+      "card_ids": [
+        "BT01-028TH",
+        "BT01-059TH",
+        "BT02-074TH",
+        "BT04-019TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "EB04-008TH",
+        "EB04-009TH",
+        "EB04-016TH",
+        "EB04-033TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-028TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT01-059TH",
+          "name_th": "ฮังกรี่ ดัมตี้",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT02-074TH",
+          "name_th": "เรด ไลท์นิ่ง",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "name_th": "เบลาคลูเกอร์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "name_th": "ทูลคิท บอย",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "name_th": "แกรปเปิล มาเนีย",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-009TH",
+          "name_th": "เจโนไซด์ โจ๊กเกอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "name_th": "Mr.อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-033TH",
+          "name_th": "เรด ไลท์นิ่ง",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-003TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-005TH",
+          "name_th": "สุดยอดแม่เหล็กไฟฟ้ามีชีวิต สตอร์ม",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT01-028TH->EB04-009TH",
+        "EB04-008TH->EB04-009TH",
+        "EB04-016TH->EB04-009TH",
+        "TD03-001TH->EB04-009TH",
+        "TD03-003TH->EB04-009TH",
+        "BT02-074TH->EB04-009TH",
+        "BT04-019TH->EB04-009TH",
+        "BT04-076TH->EB04-009TH",
+        "BT04-078TH->EB04-009TH",
+        "EB04-033TH->EB04-009TH",
+        "TD03-005TH->EB04-009TH",
+        "BT01-059TH->EB04-009TH"
+      ],
+      "net_score": 13.412,
+      "grade_counts": {
+        "0": 3,
+        "1": 1,
+        "2": 3,
+        "3": 6
+      },
+      "trigger_counts": {
+        "Critical": 2,
+        "Stand": 1,
+        "none": 10
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 0,
+        "as_consumer_target": 12
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_023",
+      "anchor_card_id": "EB04-023TH",
+      "anchor_name_th": "โอเอซิส เกิร์ล",
+      "card_ids": [
+        "BT01-028TH",
+        "BT01-059TH",
+        "BT02-074TH",
+        "BT04-019TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-023TH",
+        "EB04-033TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-028TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT01-059TH",
+          "name_th": "ฮังกรี่ ดัมตี้",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT02-074TH",
+          "name_th": "เรด ไลท์นิ่ง",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "name_th": "เบลาคลูเกอร์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "name_th": "ทูลคิท บอย",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "name_th": "แกรปเปิล มาเนีย",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "name_th": "Mr.อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-023TH",
+          "name_th": "โอเอซิส เกิร์ล",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-033TH",
+          "name_th": "เรด ไลท์นิ่ง",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-003TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-005TH",
+          "name_th": "สุดยอดแม่เหล็กไฟฟ้ามีชีวิต สตอร์ม",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT01-028TH->EB04-023TH",
+        "EB04-008TH->EB04-023TH",
+        "EB04-016TH->EB04-023TH",
+        "TD03-001TH->EB04-023TH",
+        "TD03-003TH->EB04-023TH",
+        "BT02-074TH->EB04-023TH",
+        "BT04-019TH->EB04-023TH",
+        "BT04-076TH->EB04-023TH",
+        "BT04-078TH->EB04-023TH",
+        "EB04-033TH->EB04-023TH",
+        "TD03-005TH->EB04-023TH",
+        "BT01-059TH->EB04-023TH"
+      ],
+      "net_score": 13.412,
+      "grade_counts": {
+        "0": 3,
+        "1": 2,
+        "2": 3,
+        "3": 5
+      },
+      "trigger_counts": {
+        "Critical": 2,
+        "Stand": 1,
+        "none": 10
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 0,
+        "as_consumer_target": 12
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_024",
+      "anchor_card_id": "TD03-008TH",
+      "anchor_name_th": "โอเอซิส เกิร์ล",
+      "card_ids": [
+        "BT01-028TH",
+        "BT01-059TH",
+        "BT02-074TH",
+        "BT04-019TH",
+        "BT04-076TH",
+        "BT04-078TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-033TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH",
+        "TD03-008TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-028TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT01-059TH",
+          "name_th": "ฮังกรี่ ดัมตี้",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT02-074TH",
+          "name_th": "เรด ไลท์นิ่ง",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "name_th": "เบลาคลูเกอร์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "name_th": "ทูลคิท บอย",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "name_th": "แกรปเปิล มาเนีย",
+          "grade": 0,
+          "trigger": "Stand",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "name_th": "Mr.อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-033TH",
+          "name_th": "เรด ไลท์นิ่ง",
+          "grade": 0,
+          "trigger": "Critical",
+          "type_1": "Trigger Unit"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-003TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-005TH",
+          "name_th": "สุดยอดแม่เหล็กไฟฟ้ามีชีวิต สตอร์ม",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-008TH",
+          "name_th": "โอเอซิส เกิร์ล",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT01-028TH->TD03-008TH",
+        "EB04-008TH->TD03-008TH",
+        "EB04-016TH->TD03-008TH",
+        "TD03-001TH->TD03-008TH",
+        "TD03-003TH->TD03-008TH",
+        "BT02-074TH->TD03-008TH",
+        "BT04-019TH->TD03-008TH",
+        "BT04-076TH->TD03-008TH",
+        "BT04-078TH->TD03-008TH",
+        "EB04-033TH->TD03-008TH",
+        "TD03-005TH->TD03-008TH",
+        "BT01-059TH->TD03-008TH"
+      ],
+      "net_score": 13.412,
+      "grade_counts": {
+        "0": 3,
+        "1": 2,
+        "2": 3,
+        "3": 5
+      },
+      "trigger_counts": {
+        "Critical": 2,
+        "Stand": 1,
+        "none": 10
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 0,
+        "as_consumer_target": 12
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    },
+    {
+      "package_id": "pkg_025",
+      "anchor_card_id": "BT02-072TH",
+      "anchor_name_th": "เครย์ โซลเจอร์",
+      "card_ids": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT02-072TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-021TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "cards": [
+        {
+          "card_id": "BT01-028TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT02-072TH",
+          "name_th": "เครย์ โซลเจอร์",
+          "grade": 1,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-008TH",
+          "name_th": "สเทิร์น เบลาคลูเกอร์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "name_th": "เบลาคลูเกอร์",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "BT06-099TH",
+          "name_th": "ฮานิ ผู้ชั่วร้าย",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "name_th": "Mr.อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "EB04-021TH",
+          "name_th": "มาเวลรัส ฮานิ",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "name_th": "โกลด์ รูไทล์",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-003TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "grade": 3,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        },
+        {
+          "card_id": "TD03-005TH",
+          "name_th": "สุดยอดแม่เหล็กไฟฟ้ามีชีวิต สตอร์ม",
+          "grade": 2,
+          "trigger": "",
+          "type_1": "Normal Unit"
+        }
+      ],
+      "edge_count": 12,
+      "edge_keys": [
+        "BT02-072TH->BT01-028TH",
+        "BT02-072TH->BT02-018TH",
+        "BT02-072TH->BT04-008TH",
+        "BT02-072TH->BT04-019TH",
+        "BT02-072TH->BT06-099TH",
+        "BT02-072TH->EB04-004TH",
+        "BT02-072TH->EB04-008TH",
+        "BT02-072TH->EB04-016TH",
+        "BT02-072TH->EB04-021TH",
+        "BT02-072TH->TD03-001TH",
+        "BT02-072TH->TD03-003TH",
+        "BT02-072TH->TD03-005TH"
+      ],
+      "net_score": 13.328,
+      "grade_counts": {
+        "1": 1,
+        "2": 6,
+        "3": 6
+      },
+      "trigger_counts": {
+        "none": 13
+      },
+      "anchor_role_counts": {
+        "as_provider_source": 12,
+        "as_consumer_target": 0
+      },
+      "selection_reasons": [
+        "built_from_clean_m35_c5_synergy_edges",
+        "manual_review_missing_data_and_conflict_edges_excluded",
+        "candidate_package_only_no_deck_quantities"
+      ],
+      "candidate_for_m35_d2": true
+    }
+  ],
+  "next_target": "M35-D2"
+}

@@ -1,0 +1,46 @@
+rank,group,group_field,priority_score,feasible,card_count,trigger_capacity,non_trigger_capacity,has_ride_grade_choice,total_combo_candidates,best_era,best_era_candidates,mechanic_tier,mechanic_tier_label,priority_reasons
+1,เบอร์มิวด้า ไทรแองเกิล,clan,95.0,True,610,344,1934,True,6748,link_joker_legion_mate,2179,2,OG Keywords,HIGH_PRIORITY; simple_mechanics; rich_combo_pool; large_card_pool
+2,รอยัล พาลาดิน,clan,86.19,True,556,292,1792,True,4003,g_series_first,1024,2,OG Keywords,HIGH_PRIORITY; simple_mechanics; rich_combo_pool; large_card_pool
+3,โกลด์ พาลาดิน,clan,77.85,True,403,212,1316,True,3723,link_joker_legion_mate,2006,2,OG Keywords,HIGH_PRIORITY; simple_mechanics; rich_combo_pool; large_card_pool
+4,ชาโดว์ พาลาดิน,clan,73.61,True,439,252,1400,True,2903,g_next_z,864,2,OG Keywords,HIGH_PRIORITY; simple_mechanics; decent_combo_pool; large_card_pool
+5,โนว่า เกรปเปอร์,clan,73.34,True,424,308,1308,True,2953,classic_part1,1326,2,OG Keywords,HIGH_PRIORITY; simple_mechanics; decent_combo_pool; large_card_pool
+6,เนโอ เนคต้า,clan,69.26,True,366,228,1112,True,2716,g_series_first,1208,2,OG Keywords,MEDIUM_PRIORITY; simple_mechanics; decent_combo_pool
+7,คาเงโร่,clan,68.56,True,436,272,1384,True,2199,link_joker_legion_mate,1283,2,OG Keywords,MEDIUM_PRIORITY; simple_mechanics; decent_combo_pool; large_card_pool
+8,อควอฟอร์ซ,clan,68.42,True,362,240,1132,True,2620,g_series_first,999,2,OG Keywords,MEDIUM_PRIORITY; simple_mechanics; decent_combo_pool
+9,เกียร์โครนิเคิล,clan,64.72,True,395,268,1156,True,4037,g_series_first,3155,5,G/Stride,MEDIUM_PRIORITY; complex_mechanics; rich_combo_pool
+10,โอราเคิล ทิงค์ แทงค์,clan,63.74,True,371,244,1160,True,1898,classic_part1,875,2,OG Keywords,MEDIUM_PRIORITY; simple_mechanics; decent_combo_pool
+11,นารุคามิ,clan,60.17,True,388,212,1264,True,1286,link_joker_legion_mate,751,2,OG Keywords,MEDIUM_PRIORITY; simple_mechanics; decent_combo_pool
+12,เพลมูน,clan,59.71,True,306,196,944,True,1709,g_series_first,587,2,OG Keywords,MEDIUM_PRIORITY; simple_mechanics; decent_combo_pool
+13,ลิงค์โจ๊กเกอร์,clan,55.38,True,466,264,1464,True,1566,link_joker_legion_mate,861,4,Legion,MEDIUM_PRIORITY; moderate_mechanics; decent_combo_pool; large_card_pool
+14,มุราคุโมะ,clan,54.89,True,242,168,724,True,1401,g_series_first,403,2,OG Keywords,MEDIUM_PRIORITY; simple_mechanics; decent_combo_pool
+15,เกรท เนเจอร์,clan,53.06,True,264,184,780,True,1008,classic_part1,568,2,OG Keywords,MEDIUM_PRIORITY; simple_mechanics; decent_combo_pool
+16,ไดเมนชั่น โพลิส,clan,52.73,True,306,216,908,True,711,classic_part1,234,2,OG Keywords,MEDIUM_PRIORITY; simple_mechanics; decent_combo_pool
+17,ดาร์ค อิลเรกูลาร์ส,clan,51.96,True,281,184,856,True,750,g_series_first,312,2,OG Keywords,MEDIUM_PRIORITY; simple_mechanics; decent_combo_pool
+18,แกรนบลู,clan,51.63,True,246,176,728,True,912,g_series_first,319,2,OG Keywords,MEDIUM_PRIORITY; simple_mechanics; decent_combo_pool
+19,แองเจิล ฟิทเธอร์,clan,51.32,True,271,184,828,True,719,v_shinemon_if,241,2,OG Keywords,MEDIUM_PRIORITY; simple_mechanics; decent_combo_pool
+20,เจเนซิส,clan,50.79,True,319,208,984,True,1785,link_joker_legion_mate,1052,4,Legion,MEDIUM_PRIORITY; moderate_mechanics; decent_combo_pool
+21,สไปค์ บราเธอร์ส,clan,49.58,True,207,144,616,True,851,g_next_z,204,2,OG Keywords,MEDIUM_PRIORITY; simple_mechanics; decent_combo_pool
+22,ทาจิคาเสะ,clan,49.33,True,225,176,656,True,708,classic_part1,224,2,OG Keywords,MEDIUM_PRIORITY; simple_mechanics; decent_combo_pool
+23,เมก้าโคโลนี่,clan,47.35,True,218,168,628,True,466,g_series_first,175,2,OG Keywords,MEDIUM_PRIORITY; simple_mechanics
+24,ลิริคัลโมนาสเทริโอ้,nation,45.47,True,360,215,1216,True,2924,d_willdress,1636,7,D/Ride Deck/overDress,MEDIUM_PRIORITY; complex_mechanics; decent_combo_pool
+25,สโตยเคีย,nation,36.44,True,282,137,988,True,2099,d_willdress,1380,7,D/Ride Deck/overDress,LOW_PRIORITY; complex_mechanics; decent_combo_pool
+26,นุบาทามะ,clan,33.7,True,218,152,636,True,660,g_next_z,315,5,G/Stride,LOW_PRIORITY; complex_mechanics; decent_combo_pool
+27,ดาร์คสเตทส์,nation,33.56,True,254,121,892,True,1854,d_willdress,1028,7,D/Ride Deck/overDress,LOW_PRIORITY; complex_mechanics; decent_combo_pool
+28,ดราก้อนเอมไพร์,nation,33.4,True,264,122,920,True,1771,d_overdress,966,7,D/Ride Deck/overDress,LOW_PRIORITY; complex_mechanics; decent_combo_pool
+29,เคเทอร์แซงค์ทัวรี,nation,32.81,True,294,137,1036,True,1508,d_willdress,838,7,D/Ride Deck/overDress,LOW_PRIORITY; complex_mechanics; decent_combo_pool
+30,บรันท์เกต,nation,28.15,True,243,125,836,True,1146,d_willdress,686,7,D/Ride Deck/overDress,LOW_PRIORITY; complex_mechanics; decent_combo_pool
+31,Unknown,unknown,22.61,True,176,374,209,True,40,d_willdress,23,6,V/Gift,LOW_PRIORITY; complex_mechanics
+32,ไอคอนิค,clan,11.88,True,165,124,420,True,0,,0,8,D/DZ Advanced,LOW_PRIORITY; complex_mechanics
+33,เกม,clan,9.29,True,103,104,308,True,0,,0,8,D/DZ Advanced,LOW_PRIORITY; complex_mechanics
+34,ไลฟ์แอคชั่น,clan,9.17,True,100,92,308,True,0,,0,8,D/DZ Advanced,LOW_PRIORITY; complex_mechanics
+35,เดอะแมสค์คอลเลคชั่น,clan,8.33,True,80,52,224,True,0,,0,8,D/DZ Advanced,LOW_PRIORITY; complex_mechanics
+36,BanG Dream!,clan,8.12,True,75,148,224,True,0,,0,8,D/DZ Advanced,LOW_PRIORITY; complex_mechanics
+37,แอนิเมชั่น,clan,6.79,True,43,36,136,True,0,,0,8,D/DZ Advanced,LOW_PRIORITY; complex_mechanics
+38,ซู,nation,0.0,False,2,0,0,False,0,,0,8,D/DZ Advanced,NOT_FEASIBLE; insufficient_cards; insufficient_triggers; missing_ride_grades
+39,ดาร์คโซน,nation,0.0,False,2,0,0,False,0,,0,8,D/DZ Advanced,NOT_FEASIBLE; insufficient_cards; insufficient_triggers; missing_ride_grades
+40,มาร์คเกอร์,nation,0.0,False,1,0,0,False,0,,0,8,D/DZ Advanced,NOT_FEASIBLE; insufficient_cards; insufficient_triggers; missing_ride_grades
+41,ยูไนเต็ทแซงทัวรี่,nation,0.0,False,2,0,0,False,0,,0,8,D/DZ Advanced,NOT_FEASIBLE; insufficient_cards; insufficient_triggers; missing_ride_grades
+42,สตาร์เกท,nation,0.0,False,5,0,12,False,0,,0,8,D/DZ Advanced,NOT_FEASIBLE; insufficient_cards; insufficient_triggers; missing_ride_grades
+43,เครย์เอเลเมนทัล,clan,0.0,False,41,0,104,True,9,g_series_first,4,5,G/Stride,NOT_FEASIBLE; insufficient_triggers
+44,เมกาลานิก้า,nation,0.0,False,3,0,0,False,0,,0,8,D/DZ Advanced,NOT_FEASIBLE; insufficient_cards; insufficient_triggers; missing_ride_grades
+45,เอทรานเจอร์,clan,0.0,False,22,0,84,True,0,,0,8,D/DZ Advanced,NOT_FEASIBLE; insufficient_triggers

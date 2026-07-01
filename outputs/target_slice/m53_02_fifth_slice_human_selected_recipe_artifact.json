@@ -1,0 +1,132 @@
+{
+  "version": "M53-02",
+  "description": "Fifth-slice human-selected recipe artifact",
+  "selected_target": {
+    "slice": "Fifth Offline Slice",
+    "era_preset": "link_joker_legion_mate",
+    "group": "โกลด์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 3,
+    "priority_score": 77.85,
+    "best_era_candidates": 2006,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "m53_01_human_repair_review_packet": "outputs\\target_slice\\m53_01_fifth_slice_human_repair_review_packet.json"
+  },
+  "scope": {
+    "offline_human_selected_artifact": true,
+    "records_human_selection": true,
+    "records_human_acceptance": false,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false
+  },
+  "selection_policy": {
+    "requires_explicit_review_item_id": true,
+    "requires_non_empty_selection_text": true,
+    "exactly_one_recipe_selected": true,
+    "selection_is_not_acceptance": true,
+    "runtime_promotion_allowed": false,
+    "m53_03_must_record_explicit_acceptance": true,
+    "m53_04_must_rerun_validation": true
+  },
+  "selection": {
+    "selected_review_item_id": "m53_01_m52_recipe_001_repair_review",
+    "recipe_id": "m52_recipe_001",
+    "selected_at": "2026-07-01",
+    "selected_by": "user",
+    "selection_text": "ผู้ใช้เลือก m53_01_m52_recipe_001_repair_review เพื่อเดิน M53 pipeline ต่อ",
+    "selected_decision_option": "accept_recipe_and_grade_repair_for_validation_rerun",
+    "source_candidate_edge": "BT14-003TH->BT12-053TH",
+    "pair": {
+      "source_card_id": "BT14-003TH",
+      "source_name_th": "ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส",
+      "target_card_id": "BT12-053TH",
+      "target_name_th": "พีคกัล",
+      "net_score": 12,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "source_zone_profile_only"
+    },
+    "grade_profile_package_id": "m52_recipe_001_grade_profile_pkg_001",
+    "grade_repair_type": "grade_profile_substitution_preview",
+    "target_grade_counts": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "grade_counts_after": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "grade_additions": [
+      {
+        "card_id": "TD16-013TH",
+        "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+        "quantity": 1,
+        "grade": "0",
+        "series_code": "TD16",
+        "source": "data/packs/vanguard_th/cards.sqlite:cards"
+      },
+      {
+        "card_id": "TD08-009TH",
+        "name_th": "อัศวินผู้เพียบพร้อม,กาเร็ท",
+        "quantity": 4,
+        "grade": "1",
+        "series_code": "TD08",
+        "source": "data/packs/vanguard_th/cards.sqlite:cards"
+      }
+    ],
+    "grade_removals": [
+      {
+        "card_id": "BT10-012TH",
+        "name_th": "ลิเบอเรเตอร์แห่งขลุ่ย,เอสการ์ด",
+        "quantity": 1,
+        "grade": "2",
+        "series_code": "BT10",
+        "source": "m52_03_fifth_slice_recipe_draft_model"
+      },
+      {
+        "card_id": "BT10-003TH",
+        "name_th": "ลิเบอเรเตอร์อัศวินโต๊ะกลม,อัลเฟรด",
+        "quantity": 4,
+        "grade": "3",
+        "series_code": "BT10",
+        "source": "m52_03_fifth_slice_recipe_draft_model"
+      }
+    ],
+    "grade_added_card_count": 5,
+    "grade_removed_card_count": 5,
+    "grade_repair_complete": true,
+    "ready_for_human_repair_review": true,
+    "structural_blockers": []
+  },
+  "summary": {
+    "available_review_item_count": 25,
+    "selected_review_item_count": 1,
+    "selected_recipe_id": "m52_recipe_001",
+    "selected_grade_profile_package_id": "m52_recipe_001_grade_profile_pkg_001",
+    "records_human_selection": true,
+    "records_human_acceptance": false,
+    "runtime_promotion_allowed": false,
+    "ready_for_m53_03": true
+  },
+  "next_target": {
+    "milestone": "M53-03",
+    "task": "Fifth-slice human-accepted repair artifact"
+  }
+}

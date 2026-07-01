@@ -1,0 +1,106 @@
+{
+  "version": "M41-repair-validate",
+  "description": "Second-slice repaired recipe validation rerun after trigger repair",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โอราเคิล ทิงค์ แทงค์",
+    "group_field": "clan",
+    "rank": 10,
+    "priority_score": 63.74,
+    "best_era_candidates": 875,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "MEDIUM_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool"
+    ]
+  },
+  "source_inputs": {
+    "trigger_repair_acceptance_artifact": "outputs\\target_slice\\m41_repair_accept_second_slice_trigger_repair_artifact.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "scope": {
+    "offline_validator": true,
+    "changes_accepted_artifact": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false,
+    "changes_trigger_repair_acceptance_artifact": false
+  },
+  "validation_policy": {
+    "classic_main_deck_size": 50,
+    "classic_trigger_count": 16,
+    "heal_trigger_max": 4,
+    "classic_grade_target": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "manual_review_card_overlap_is_blocking": true,
+    "runtime_promotion_requires_zero_blockers": true
+  },
+  "summary": {
+    "recipe_id": "m40_recipe_001",
+    "validation_status": "validator_passed",
+    "runtime_ready": true,
+    "promotion_allowed": false,
+    "blocking_issue_count": 0,
+    "main_deck_count": 50,
+    "trigger_count": 16,
+    "grade_counts": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "manual_review_card_overlap_cleared": true,
+    "issue_counts": {},
+    "ready_for_m41_04": true,
+    "ready_for_repair_loop": false
+  },
+  "recipe_validation": {
+    "recipe_id": "m40_recipe_001",
+    "source_candidate_edge": "BT01-006TH->BT02-033TH",
+    "accepted_repair_package_id": "",
+    "validation_status": "validator_passed",
+    "blocking_issue_count": 0,
+    "issues": [],
+    "count_summary": {
+      "main_deck_count": 50,
+      "trigger_count": 16,
+      "trigger_counts": {
+        "Critical": 4,
+        "Draw": 4,
+        "Heal": 4,
+        "Stand": 4
+      },
+      "grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "clan_counts": {
+        "โอราเคิล ทิงค์ แทงค์": 50
+      },
+      "manual_review_card_ids_present": []
+    },
+    "runtime_ready": true,
+    "promotion_allowed": false
+  },
+  "next_target": {
+    "milestone": "M41-04",
+    "task": "Second-slice runtime fixture promotion gate"
+  },
+  "trigger_repair_acceptance": {
+    "accepted_package_id": "m41_repair_pkg_001",
+    "accepted_profile_id": "balanced_classic_trigger_restore",
+    "human_acceptance_recorded": true,
+    "ready_for_validation_rerun": true
+  }
+}

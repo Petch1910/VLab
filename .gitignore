@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+.utmp/
+client/unity/VanguardThaiSim/ProjectSettings/VanguardPhotonLocal.json
+*.csproj
+*.sln
+*.slnx
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+sysinfo.txt
+
+# Large generated/source card assets
+outputs/kk_cardfight_export/data/images/
+data/packs/vanguard_th/cards.sqlite
+work/
+*.part
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

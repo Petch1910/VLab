@@ -1,0 +1,140 @@
+{
+  "version": "M55-02",
+  "description": "Sixth-slice fixture/format readiness",
+  "source_inputs": {
+    "sixth_target_slice_selection": "outputs\\target_slice\\m55_01_sixth_target_slice_selection.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "selected_target": {
+    "slice": "Sixth Offline Slice",
+    "era_preset": "g_next_z",
+    "group": "ชาโดว์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 4,
+    "priority_score": 73.61,
+    "best_era_candidates": 864,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "format_scope": {
+    "era_preset": "g_next_z",
+    "series_scope": [
+      "G-TD10",
+      "G-TD11",
+      "G-TD12",
+      "G-TD13",
+      "G-TD14",
+      "G-TD15",
+      "G-BT09",
+      "G-BT10",
+      "G-BT11",
+      "G-BT12",
+      "G-BT13",
+      "G-BT14",
+      "G-CB05",
+      "G-CB06",
+      "G-CB07",
+      "G-CHB01",
+      "G-CHB02",
+      "G-CHB03"
+    ],
+    "trial_decks": [
+      "G-TD10",
+      "G-TD11",
+      "G-TD12",
+      "G-TD13",
+      "G-TD14",
+      "G-TD15"
+    ],
+    "booster_packs": [
+      "G-BT09",
+      "G-BT10",
+      "G-BT11",
+      "G-BT12",
+      "G-BT13",
+      "G-BT14"
+    ],
+    "clan_boosters": [
+      "G-CB05",
+      "G-CB06",
+      "G-CB07"
+    ],
+    "character_boosters": [
+      "G-CHB01",
+      "G-CHB02",
+      "G-CHB03"
+    ],
+    "new_format_or_mechanic_fixtures_required": true,
+    "policy_reuse_decision": "requires_sixth_slice_fixture_scaffold"
+  },
+  "card_pool_summary": {
+    "source_card_count": 77,
+    "series_counts": {
+      "G-BT09": 19,
+      "G-BT10": 9,
+      "G-BT12": 17,
+      "G-BT14": 14,
+      "G-TD10": 18
+    },
+    "grade_counts": {
+      "0": 19,
+      "1": 20,
+      "2": 16,
+      "3": 11,
+      "4": 11
+    },
+    "trigger_counts": {
+      "": 65,
+      "Critical": 4,
+      "Draw": 4,
+      "Heal": 2,
+      "Stand": 2
+    },
+    "trigger_capacity": 48,
+    "non_trigger_capacity": 260,
+    "trigger_type_gaps": []
+  },
+  "readiness": {
+    "source_backed": true,
+    "has_grade_setup": true,
+    "has_g_unit_pool": true,
+    "has_classic_trigger_capacity": true,
+    "has_main_deck_capacity": true,
+    "all_fixture_expectations_met": true,
+    "semantic_probe_ready": true,
+    "runtime_or_bot_promotion_allowed": false,
+    "repair_required": false,
+    "repair_reasons": []
+  },
+  "runtime_boundary": {
+    "offline_fixture_readiness_only": true,
+    "does_not_create_deck": true,
+    "does_not_create_runtime_fixture": true,
+    "does_not_mutate_runtime_pack": true,
+    "does_not_publish_to_ui": true,
+    "does_not_publish_to_bot": true,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "GameState_mutation": false
+  },
+  "next_target": {
+    "milestone": "M55-03",
+    "task": "Sixth-slice semantic/compatibility probe"
+  },
+  "summary": {
+    "selected_group": "ชาโดว์ พาลาดิน",
+    "era_preset": "g_next_z",
+    "source_card_count": 77,
+    "all_fixture_expectations_met": true,
+    "semantic_probe_ready": true,
+    "ready_for_m55_03": true,
+    "repair_required": false,
+    "repair_reasons": []
+  }
+}

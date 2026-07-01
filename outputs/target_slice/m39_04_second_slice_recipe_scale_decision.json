@@ -1,0 +1,97 @@
+{
+  "version": "M39-04",
+  "description": "Second-slice recipe scale decision",
+  "source_inputs": {
+    "m39_03_headless_fixture_load_smoke": "outputs\\target_slice\\m39_03_headless_fixture_load_smoke.json",
+    "m36_05_second_slice_readiness_comparison": "outputs\\target_slice\\m36_05_second_slice_readiness_comparison.json",
+    "m35_e2_second_slice_fixture_readiness": "outputs\\target_slice\\m35_e2_second_slice_fixture_readiness.json",
+    "m35_e3_generalized_semantic_compatibility_probe": "outputs\\target_slice\\m35_e3_generalized_semantic_compatibility_probe.json",
+    "m35_e4_bot_integration_gate": "outputs\\target_slice\\m35_e4_bot_integration_gate.json"
+  },
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โอราเคิล ทิงค์ แทงค์",
+    "group_field": "clan",
+    "rank": 10,
+    "priority_score": 63.74,
+    "best_era_candidates": 875,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "MEDIUM_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool"
+    ]
+  },
+  "evidence_summary": {
+    "first_fixture_headless_consumed": true,
+    "second_slice_fixture_ready": true,
+    "classic_core_policy_reusable": true,
+    "second_slice_probe_ready": true,
+    "probe_card_count": 103,
+    "probe_edge_count": 2660,
+    "probe_candidate_edges": 259,
+    "manual_review_count": 7,
+    "candidate_edge_ratio_vs_first": 0.429
+  },
+  "decision": {
+    "offline_recipe_pipeline_allowed": true,
+    "runtime_deck_promotion_allowed": false,
+    "saved_deck_or_ui_publication_allowed": false,
+    "bot_playbook_promotion_allowed": false,
+    "recommended_next_queue": "M40 Second-slice offline recipe pipeline",
+    "reason": "First fixture consumption passed and Oracle Think Tank has reusable Classic Core fixtures plus a passed semantic/compatibility probe."
+  },
+  "proposed_m40_queue": [
+    {
+      "milestone": "M40-01",
+      "task": "Second-slice review packet",
+      "scope": "Export Oracle Think Tank candidate edges, manual-review cards, and fixture notes for review."
+    },
+    {
+      "milestone": "M40-02",
+      "task": "Second-slice recipe draft model",
+      "scope": "Create advisory recipe drafts only; no saved deck injection."
+    },
+    {
+      "milestone": "M40-03",
+      "task": "Second-slice recipe validator",
+      "scope": "Validate count, trigger, grade, clan identity, copy limits, and missing cards."
+    },
+    {
+      "milestone": "M40-04",
+      "task": "Second-slice combo-to-recipe consistency",
+      "scope": "Check selected combo lines are present and not blocked by manual review."
+    },
+    {
+      "milestone": "M40-05",
+      "task": "Second-slice blocker repair candidates",
+      "scope": "Generate source-backed repair candidates for blocked recipes."
+    },
+    {
+      "milestone": "M40-closeout",
+      "task": "Second-slice runtime readiness decision",
+      "scope": "Decide whether any recipe can later enter a human-acceptance/runtime fixture gate."
+    }
+  ],
+  "runtime_boundary": {
+    "decision_artifact_only": true,
+    "does_not_create_deck": true,
+    "does_not_mutate_runtime_pack": true,
+    "does_not_publish_to_bot": true,
+    "does_not_mutate_GameState": true
+  },
+  "issues": [],
+  "summary": {
+    "decision_ready": true,
+    "blocking_issue_count": 0,
+    "issue_count": 0,
+    "offline_recipe_pipeline_allowed": true,
+    "ready_for_m40": true
+  },
+  "next_target": {
+    "milestone": "M40-01",
+    "task": "Second-slice review packet"
+  }
+}

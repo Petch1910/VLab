@@ -1,0 +1,78 @@
+{
+  "version": "M45-closeout",
+  "description": "Third-slice fixture closeout and next queue selection",
+  "source_inputs": {
+    "third_slice_runtime_fixture_promotion_gate": "outputs\\target_slice\\m45_04_third_slice_runtime_fixture_promotion_gate.json"
+  },
+  "scope": {
+    "closeout_report": true,
+    "changes_fixture_artifact": false,
+    "mutates_runtime_deck_library": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_integration": false,
+    "automatic_playbook_promotion": false,
+    "GameState_mutation": false
+  },
+  "key_results": {
+    "recipe_id": "m44_recipe_001",
+    "m45_complete": true,
+    "third_runtime_fixture_available": true,
+    "fixture_path": "outputs/target_slice/runtime_fixtures/m44_recipe_001_link_joker_legion_bermuda_triangle_m45_04.json",
+    "fixture_scope": "offline_runtime_test_fixture",
+    "promotion_allowed": true,
+    "gate_passed_check_count": 7,
+    "gate_failed_check_count": 0,
+    "runtime_deck_library_mutated": false,
+    "saved_deck_injected": false,
+    "ui_deck_list_published": false,
+    "bot_playbook_enabled": false
+  },
+  "decision": {
+    "third_recipe_enters_fixture_scope": true,
+    "third_recipe_remains_advisory_only": false,
+    "live_runtime_deck_enabled": false,
+    "saved_deck_enabled": false,
+    "ui_deck_list_enabled": false,
+    "bot_playbook_enabled": false,
+    "needs_user_team_review_before_live_deck_ui": true,
+    "decision_notes": [
+      "The third-slice Bermuda Triangle recipe can be used as an offline runtime/test fixture.",
+      "The fixture is not a saved player deck and is not automatically visible in UI.",
+      "Bot/playbook runtime use still needs a separate gate."
+    ]
+  },
+  "next_queue": {
+    "id": "M46",
+    "title": "Third Fixture Consumption and Multi-Fixture Scale Gate",
+    "goal": "Validate how the third runtime fixture can be consumed safely, export reviewable deck text, then decide whether the fixture set is ready for another scale step.",
+    "tasks": [
+      {
+        "id": "M46-01",
+        "title": "Third fixture schema validator",
+        "goal": "Validate the Bermuda Triangle runtime fixture independently from the M45 generator."
+      },
+      {
+        "id": "M46-02",
+        "title": "Third fixture deck text exporter",
+        "goal": "Export the Bermuda Triangle fixture as reviewable count-line deck text without adding it to saved decks."
+      },
+      {
+        "id": "M46-03",
+        "title": "Third fixture headless load smoke",
+        "goal": "Load the Bermuda Triangle fixture through offline/headless paths without UI or bot mutation."
+      },
+      {
+        "id": "M46-04",
+        "title": "Multi-fixture scale decision",
+        "goal": "Review Nova Grappler, Oracle Think Tank, and Bermuda Triangle fixture evidence before selecting any further slice."
+      }
+    ]
+  },
+  "summary": {
+    "m45_complete": true,
+    "third_runtime_fixture_available": true,
+    "next_queue_id": "M46",
+    "ready_for_next_queue": true
+  }
+}

@@ -1,0 +1,49 @@
+# Vanguard Thai Sim Deck List
+# M54-02 review-only export from an offline runtime fixture.
+# FixtureId: runtime_fixture_m52_recipe_001_gold_paladin_m53_05
+# RecipeId: m52_recipe_001
+# Slice: Fifth Offline Slice
+# Scope: review_only_offline_fixture
+Name: Link Joker Legion Gold Paladin Fixture (m52_recipe_001)
+Format: link_joker_legion_mate
+PackId: vanguard_th
+PackVersion: 251
+PackDefinitionHash: e1d568ec103786c3a9a782e6a011e6307f612be28ba6e6b677c281f367cdd7c4
+
+[Main]
+# Card: ลิเบอเรเตอร์ที่เปล่งรัศมี,มาร์ค | G1 | Normal Unit | BT10
+3 BT10-011TH
+# Card: ลิเบอเรเตอร์แห่งขลุ่ย,เอสการ์ด | G2 | Normal Unit | BT10
+2 BT10-012TH
+# Card: ลิเบอร์เรเตอร์นักล่าที่รวดเร็ว,โจเซฟ | G1 | Normal Unit | BT10
+3 BT10-025TH
+# Card: มูนกัล | G3 | Normal Unit | BT10
+4 BT10-053TH
+# Card: อัศวินลูกศรระยะไกล,ซัพเฟอร์ | G2 | Normal Unit | BT10
+3 BT10-054TH
+# Card: อัศวินพินาศหิน,เซควาริเดส | G2 | Normal Unit | BT10
+2 BT10-055TH
+# Card: กิลด์ดิ้ง・ฟอลคอนนี่ | G1 | Normal Unit | BT10
+3 BT10-056TH
+# Card: ลิเบอร์เรเตอร์,แฟลร์เมน・สตอลเลี่ยน | G1 | Normal Unit | BT10
+1 BT10-057TH
+# Card: ลิเบอร์เรเตอร์แห่งความหวัง,เอโพน่า | G0 | Trigger Unit | Critical | BT10
+4 BT10-059TH
+# Card: โฟลกัล・ลิเบอร์เรเตอร์ | G0 | Trigger Unit | Stand | BT10
+4 BT10-060TH
+# Card: พีคกัล | G2 | Normal Unit | BT12
+4 BT12-053TH
+# Card: ราชสีห์แห่งการกอบกู้,แกรนด์เอเซล・ซิสเซอร์ส | G3 | Normal Unit | BT14
+4 BT14-003TH
+# Card: อัศวินผู้เพียบพร้อม,กาเร็ท | G1 | Normal Unit | TD08
+4 TD08-009TH
+# Card: ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล | G0 | Normal Unit | TD16
+1 TD16-013TH
+# Card: ลิเบอเรเตอร์,ลัคกี้・ชาร์มมี่ | G0 | Trigger Unit | Draw | TD16
+4 TD16-015TH
+# Card: ลิเบอเรเตอร์แห่งต้นไม้ศักดิ์สิทธิ์,เอลเคียร์ | G0 | Trigger Unit | Heal | TD16
+4 TD16-017TH
+
+[Ride]
+
+[G]

@@ -1,0 +1,355 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.vanguard-thai-sim/schemas/ability_schema_v1.json",
+  "title": "Vanguard Thai Sim Ability Schema v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "abilities"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "ability_schema_v1"
+    },
+    "abilities": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ability"
+      }
+    }
+  },
+  "$defs": {
+    "ability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ability_id",
+        "card_id",
+        "kind",
+        "trigger",
+        "timing",
+        "costs",
+        "targets",
+        "effects",
+        "duration",
+        "manual_fallback"
+      ],
+      "properties": {
+        "ability_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "card_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "auto",
+            "act",
+            "cont",
+            "manual"
+          ]
+        },
+        "trigger": {
+          "$ref": "#/$defs/trigger"
+        },
+        "timing": {
+          "$ref": "#/$defs/timing"
+        },
+        "costs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/cost"
+          }
+        },
+        "targets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/target"
+          }
+        },
+        "effects": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/effect"
+          }
+        },
+        "duration": {
+          "$ref": "#/$defs/duration"
+        },
+        "manual_fallback": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "trigger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "manual",
+            "on_timing",
+            "on_event",
+            "continuous"
+          ]
+        },
+        "timing_window": {
+          "$ref": "#/$defs/timing_window"
+        },
+        "event_type": {
+          "type": "string"
+        },
+        "source_zone": {
+          "$ref": "#/$defs/zone"
+        },
+        "condition": {
+          "type": "string"
+        }
+      }
+    },
+    "timing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "phase",
+        "window"
+      ],
+      "properties": {
+        "phase": {
+          "$ref": "#/$defs/phase"
+        },
+        "window": {
+          "$ref": "#/$defs/timing_window"
+        },
+        "optional": {
+          "type": "boolean"
+        }
+      }
+    },
+    "cost": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "amount"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "none",
+            "counter_blast",
+            "soul_blast",
+            "energy_blast",
+            "discard",
+            "once_per_turn",
+            "once_per_fight"
+          ]
+        },
+        "amount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "target_ref": {
+          "type": "string"
+        },
+        "key": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "owner",
+        "zone",
+        "count"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "none",
+            "self",
+            "unit",
+            "circle",
+            "card"
+          ]
+        },
+        "owner": {
+          "type": "string",
+          "enum": [
+            "self",
+            "opponent",
+            "any"
+          ]
+        },
+        "zone": {
+          "$ref": "#/$defs/zone"
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "filters": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "optional": {
+          "type": "boolean"
+        }
+      }
+    },
+    "effect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "manual",
+            "draw",
+            "move_zone",
+            "counter_charge",
+            "counter_blast",
+            "soul_charge",
+            "soul_blast",
+            "power_plus",
+            "critical_plus"
+          ]
+        },
+        "amount": {
+          "type": "integer"
+        },
+        "target_ref": {
+          "type": "string"
+        },
+        "from_zone": {
+          "$ref": "#/$defs/zone"
+        },
+        "to_zone": {
+          "$ref": "#/$defs/zone"
+        },
+        "duration_ref": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "duration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "instant",
+            "until_end_of_battle",
+            "until_end_of_turn",
+            "continuous",
+            "manual"
+          ]
+        },
+        "cleanup_timing": {
+          "type": "string",
+          "enum": [
+            "none",
+            "end_of_battle",
+            "end_of_turn",
+            "manual"
+          ]
+        }
+      }
+    },
+    "phase": {
+      "type": "string",
+      "enum": [
+        "Mulligan",
+        "StandAndDraw",
+        "Ride",
+        "Main",
+        "Battle",
+        "End"
+      ]
+    },
+    "timing_window": {
+      "type": "string",
+      "enum": [
+        "None",
+        "PhaseTransition",
+        "StandAndDrawStep",
+        "RideStep",
+        "MainStep",
+        "BattleStep",
+        "AttackDeclaration",
+        "GuardStep",
+        "DriveCheck",
+        "DamageCheck",
+        "BattleResolution",
+        "CloseStep",
+        "EndPhase",
+        "OnDraw",
+        "OnMoveCard",
+        "OnSetPhase",
+        "OnAddGiftMarker",
+        "OnResourceFlip",
+        "PendingAutoResolution",
+        "CleanupEndOfBattle",
+        "CleanupEndOfTurn",
+        "ManualTriggerCheck"
+      ]
+    },
+    "zone": {
+      "type": "string",
+      "enum": [
+        "Deck",
+        "Hand",
+        "RideDeck",
+        "Vanguard",
+        "RearGuard",
+        "Drop",
+        "Damage",
+        "Bind",
+        "Trigger",
+        "Order",
+        "Soul",
+        "GZone"
+      ]
+    }
+  }
+}

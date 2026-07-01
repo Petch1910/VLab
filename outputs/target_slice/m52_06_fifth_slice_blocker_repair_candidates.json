@@ -1,0 +1,1934 @@
+{
+  "version": "M52-06",
+  "description": "Fifth-slice blocker repair candidates",
+  "selected_target": {
+    "slice": "Fifth Offline Slice",
+    "era_preset": "link_joker_legion_mate",
+    "group": "โกลด์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 3,
+    "priority_score": 77.85,
+    "best_era_candidates": 2006,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "fifth_slice_recipe_draft_model": "outputs\\target_slice\\m52_03_fifth_slice_recipe_draft_model.json",
+    "fifth_slice_recipe_validation_report": "outputs\\target_slice\\m52_04_fifth_slice_recipe_validation_report.json",
+    "fifth_slice_combo_recipe_consistency_report": "outputs\\target_slice\\m52_05_fifth_slice_combo_recipe_consistency_report.json",
+    "fifth_slice_fixture_scaffold": "outputs\\target_slice\\m52_01_fifth_slice_fixture_scaffold.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "scope": {
+    "offline_repair_candidates": true,
+    "changes_recipe_draft_file": false,
+    "records_human_acceptance": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "runtime_deck": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false
+  },
+  "repair_policy": {
+    "source_backed_candidates": true,
+    "substitution_only": true,
+    "series_scope_from_m52_01_fixture_scaffold": [
+      "TD07",
+      "TD08",
+      "TD09",
+      "TD10",
+      "TD11",
+      "TD12",
+      "TD13",
+      "TD14",
+      "TD15",
+      "TD16",
+      "TD17",
+      "BT10",
+      "BT11",
+      "BT12",
+      "BT13",
+      "BT14",
+      "BT15",
+      "BT16",
+      "BT17",
+      "EB06",
+      "EB07",
+      "EB08",
+      "EB09",
+      "EB10",
+      "EB11",
+      "EB12"
+    ],
+    "grade_profile_candidates_are_previews": true,
+    "human_selection_is_not_recorded_here": true,
+    "runtime_promotion_allowed": false
+  },
+  "repair_items": [
+    {
+      "recipe_id": "m52_recipe_001",
+      "source_candidate_edge": "BT14-003TH->BT12-053TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_001_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "1": 4
+        },
+        "surpluses": {
+          "2": 1,
+          "3": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-009TH",
+            "name_th": "อัศวินผู้เพียบพร้อม,กาเร็ท",
+            "quantity": 4,
+            "grade": "1",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 4,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-012TH",
+            "name_th": "ลิเบอเรเตอร์แห่งขลุ่ย,เอสการ์ด",
+            "quantity": 1,
+            "grade": "2",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          },
+          {
+            "card_id": "BT10-003TH",
+            "name_th": "ลิเบอเรเตอร์อัศวินโต๊ะกลม,อัลเฟรด",
+            "quantity": 4,
+            "grade": "3",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 5,
+        "removed_card_count": 5,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_002",
+      "source_candidate_edge": "BT14-003TH->TD08-011TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_002_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "2": 3
+        },
+        "surpluses": {
+          "3": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-004TH",
+            "name_th": "ลิเบอเรเตอร์แห่งความเงียบ,กาลลาติน",
+            "quantity": 3,
+            "grade": "2",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 3,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-003TH",
+            "name_th": "ลิเบอเรเตอร์อัศวินโต๊ะกลม,อัลเฟรด",
+            "quantity": 4,
+            "grade": "3",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 4,
+        "removed_card_count": 4,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_003",
+      "source_candidate_edge": "BT14-003TH->TD16-006TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_003_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "1": 4
+        },
+        "surpluses": {
+          "2": 1,
+          "3": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-009TH",
+            "name_th": "อัศวินผู้เพียบพร้อม,กาเร็ท",
+            "quantity": 4,
+            "grade": "1",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 4,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-012TH",
+            "name_th": "ลิเบอเรเตอร์แห่งขลุ่ย,เอสการ์ด",
+            "quantity": 1,
+            "grade": "2",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          },
+          {
+            "card_id": "BT10-003TH",
+            "name_th": "ลิเบอเรเตอร์อัศวินโต๊ะกลม,อัลเฟรด",
+            "quantity": 4,
+            "grade": "3",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 5,
+        "removed_card_count": 5,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_004",
+      "source_candidate_edge": "BT14-003TH->TD16-010TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_004_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "2": 3
+        },
+        "surpluses": {
+          "3": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-004TH",
+            "name_th": "ลิเบอเรเตอร์แห่งความเงียบ,กาลลาติน",
+            "quantity": 3,
+            "grade": "2",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 3,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-003TH",
+            "name_th": "ลิเบอเรเตอร์อัศวินโต๊ะกลม,อัลเฟรด",
+            "quantity": 4,
+            "grade": "3",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 4,
+        "removed_card_count": 4,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_005",
+      "source_candidate_edge": "BT14-S03TH->BT12-053TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_005_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "1": 4
+        },
+        "surpluses": {
+          "2": 1,
+          "3": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-009TH",
+            "name_th": "อัศวินผู้เพียบพร้อม,กาเร็ท",
+            "quantity": 4,
+            "grade": "1",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 4,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-012TH",
+            "name_th": "ลิเบอเรเตอร์แห่งขลุ่ย,เอสการ์ด",
+            "quantity": 1,
+            "grade": "2",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          },
+          {
+            "card_id": "BT10-003TH",
+            "name_th": "ลิเบอเรเตอร์อัศวินโต๊ะกลม,อัลเฟรด",
+            "quantity": 4,
+            "grade": "3",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 5,
+        "removed_card_count": 5,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_006",
+      "source_candidate_edge": "BT14-S03TH->TD08-011TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_006_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "2": 3
+        },
+        "surpluses": {
+          "3": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-004TH",
+            "name_th": "ลิเบอเรเตอร์แห่งความเงียบ,กาลลาติน",
+            "quantity": 3,
+            "grade": "2",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 3,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-003TH",
+            "name_th": "ลิเบอเรเตอร์อัศวินโต๊ะกลม,อัลเฟรด",
+            "quantity": 4,
+            "grade": "3",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 4,
+        "removed_card_count": 4,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_007",
+      "source_candidate_edge": "BT14-S03TH->TD16-006TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_007_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "1": 4
+        },
+        "surpluses": {
+          "2": 1,
+          "3": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-009TH",
+            "name_th": "อัศวินผู้เพียบพร้อม,กาเร็ท",
+            "quantity": 4,
+            "grade": "1",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 4,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-012TH",
+            "name_th": "ลิเบอเรเตอร์แห่งขลุ่ย,เอสการ์ด",
+            "quantity": 1,
+            "grade": "2",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          },
+          {
+            "card_id": "BT10-003TH",
+            "name_th": "ลิเบอเรเตอร์อัศวินโต๊ะกลม,อัลเฟรด",
+            "quantity": 4,
+            "grade": "3",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 5,
+        "removed_card_count": 5,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_008",
+      "source_candidate_edge": "BT14-S03TH->TD16-010TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_008_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "2": 3
+        },
+        "surpluses": {
+          "3": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-004TH",
+            "name_th": "ลิเบอเรเตอร์แห่งความเงียบ,กาลลาติน",
+            "quantity": 3,
+            "grade": "2",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 3,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-003TH",
+            "name_th": "ลิเบอเรเตอร์อัศวินโต๊ะกลม,อัลเฟรด",
+            "quantity": 4,
+            "grade": "3",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 4,
+        "removed_card_count": 4,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_009",
+      "source_candidate_edge": "BT10-054TH->BT14-003TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_009_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "1": 3
+        },
+        "surpluses": {
+          "3": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-009TH",
+            "name_th": "อัศวินผู้เพียบพร้อม,กาเร็ท",
+            "quantity": 3,
+            "grade": "1",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 3,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-003TH",
+            "name_th": "ลิเบอเรเตอร์อัศวินโต๊ะกลม,อัลเฟรด",
+            "quantity": 4,
+            "grade": "3",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 4,
+        "removed_card_count": 4,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_010",
+      "source_candidate_edge": "BT10-054TH->BT14-S03TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_010_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "1": 3
+        },
+        "surpluses": {
+          "3": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-009TH",
+            "name_th": "อัศวินผู้เพียบพร้อม,กาเร็ท",
+            "quantity": 3,
+            "grade": "1",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 3,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-003TH",
+            "name_th": "ลิเบอเรเตอร์อัศวินโต๊ะกลม,อัลเฟรด",
+            "quantity": 4,
+            "grade": "3",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 4,
+        "removed_card_count": 4,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_011",
+      "source_candidate_edge": "BT14-062TH->BT14-003TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_011_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "2": 3
+        },
+        "surpluses": {
+          "3": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-004TH",
+            "name_th": "ลิเบอเรเตอร์แห่งความเงียบ,กาลลาติน",
+            "quantity": 3,
+            "grade": "2",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 3,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-003TH",
+            "name_th": "ลิเบอเรเตอร์อัศวินโต๊ะกลม,อัลเฟรด",
+            "quantity": 4,
+            "grade": "3",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 4,
+        "removed_card_count": 4,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_012",
+      "source_candidate_edge": "BT14-062TH->BT14-S03TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_012_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "2": 3
+        },
+        "surpluses": {
+          "3": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-004TH",
+            "name_th": "ลิเบอเรเตอร์แห่งความเงียบ,กาลลาติน",
+            "quantity": 3,
+            "grade": "2",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 3,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-003TH",
+            "name_th": "ลิเบอเรเตอร์อัศวินโต๊ะกลม,อัลเฟรด",
+            "quantity": 4,
+            "grade": "3",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 4,
+        "removed_card_count": 4,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_013",
+      "source_candidate_edge": "BT14-012TH->BT10-057TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_013_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "2": 2
+        },
+        "surpluses": {
+          "1": 3
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-004TH",
+            "name_th": "ลิเบอเรเตอร์แห่งความเงียบ,กาลลาติน",
+            "quantity": 2,
+            "grade": "2",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 2,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-011TH",
+            "name_th": "ลิเบอเรเตอร์ที่เปล่งรัศมี,มาร์ค",
+            "quantity": 3,
+            "grade": "1",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 3,
+        "removed_card_count": 3,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_014",
+      "source_candidate_edge": "BT14-012TH->BT12-012TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_014_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "2": 3
+        },
+        "surpluses": {
+          "1": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-004TH",
+            "name_th": "ลิเบอเรเตอร์แห่งความเงียบ,กาลลาติน",
+            "quantity": 3,
+            "grade": "2",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 3,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-011TH",
+            "name_th": "ลิเบอเรเตอร์ที่เปล่งรัศมี,มาร์ค",
+            "quantity": 3,
+            "grade": "1",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          },
+          {
+            "card_id": "BT10-025TH",
+            "name_th": "ลิเบอร์เรเตอร์นักล่าที่รวดเร็ว,โจเซฟ",
+            "quantity": 1,
+            "grade": "1",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 4,
+        "removed_card_count": 4,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_015",
+      "source_candidate_edge": "BT14-012TH->TD08-012TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_015_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "2": 3
+        },
+        "surpluses": {
+          "1": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-004TH",
+            "name_th": "ลิเบอเรเตอร์แห่งความเงียบ,กาลลาติน",
+            "quantity": 3,
+            "grade": "2",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 3,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-011TH",
+            "name_th": "ลิเบอเรเตอร์ที่เปล่งรัศมี,มาร์ค",
+            "quantity": 3,
+            "grade": "1",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          },
+          {
+            "card_id": "BT10-025TH",
+            "name_th": "ลิเบอร์เรเตอร์นักล่าที่รวดเร็ว,โจเซฟ",
+            "quantity": 1,
+            "grade": "1",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 4,
+        "removed_card_count": 4,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_016",
+      "source_candidate_edge": "BT14-012TH->TD16-012TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_016_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "2": 3
+        },
+        "surpluses": {
+          "1": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-004TH",
+            "name_th": "ลิเบอเรเตอร์แห่งความเงียบ,กาลลาติน",
+            "quantity": 3,
+            "grade": "2",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 3,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-011TH",
+            "name_th": "ลิเบอเรเตอร์ที่เปล่งรัศมี,มาร์ค",
+            "quantity": 3,
+            "grade": "1",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          },
+          {
+            "card_id": "BT10-025TH",
+            "name_th": "ลิเบอร์เรเตอร์นักล่าที่รวดเร็ว,โจเซฟ",
+            "quantity": 1,
+            "grade": "1",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 4,
+        "removed_card_count": 4,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_017",
+      "source_candidate_edge": "BT10-026TH->BT17-049TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_017_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "1": 4,
+          "2": 3
+        },
+        "surpluses": {
+          "0": 3,
+          "3": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD08-009TH",
+            "name_th": "อัศวินผู้เพียบพร้อม,กาเร็ท",
+            "quantity": 4,
+            "grade": "1",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 4,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-004TH",
+            "name_th": "ลิเบอเรเตอร์แห่งความเงียบ,กาลลาติน",
+            "quantity": 3,
+            "grade": "2",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 3,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "TD16-015TH",
+            "name_th": "ลิเบอเรเตอร์,ลัคกี้・ชาร์มมี่",
+            "quantity": 3,
+            "grade": "0",
+            "series_code": "TD16",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          },
+          {
+            "card_id": "BT10-003TH",
+            "name_th": "ลิเบอเรเตอร์อัศวินโต๊ะกลม,อัลเฟรด",
+            "quantity": 4,
+            "grade": "3",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 7,
+        "removed_card_count": 7,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_018",
+      "source_candidate_edge": "BT10-054TH->BT10-055TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_018_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1
+        },
+        "surpluses": {
+          "2": 1
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-012TH",
+            "name_th": "ลิเบอเรเตอร์แห่งขลุ่ย,เอสการ์ด",
+            "quantity": 1,
+            "grade": "2",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 1,
+        "removed_card_count": 1,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_019",
+      "source_candidate_edge": "BT10-054TH->BT12-053TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_019_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "1": 3
+        },
+        "surpluses": {
+          "2": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-009TH",
+            "name_th": "อัศวินผู้เพียบพร้อม,กาเร็ท",
+            "quantity": 3,
+            "grade": "1",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 3,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-012TH",
+            "name_th": "ลิเบอเรเตอร์แห่งขลุ่ย,เอสการ์ด",
+            "quantity": 4,
+            "grade": "2",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 4,
+        "removed_card_count": 4,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_020",
+      "source_candidate_edge": "BT10-054TH->BT14-025TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_020_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "1": 3
+        },
+        "surpluses": {
+          "2": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-009TH",
+            "name_th": "อัศวินผู้เพียบพร้อม,กาเร็ท",
+            "quantity": 3,
+            "grade": "1",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 3,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-012TH",
+            "name_th": "ลิเบอเรเตอร์แห่งขลุ่ย,เอสการ์ด",
+            "quantity": 4,
+            "grade": "2",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 4,
+        "removed_card_count": 4,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_021",
+      "source_candidate_edge": "BT10-054TH->BT14-056TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_021_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "1": 3
+        },
+        "surpluses": {
+          "2": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-009TH",
+            "name_th": "อัศวินผู้เพียบพร้อม,กาเร็ท",
+            "quantity": 3,
+            "grade": "1",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 3,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-012TH",
+            "name_th": "ลิเบอเรเตอร์แห่งขลุ่ย,เอสการ์ด",
+            "quantity": 4,
+            "grade": "2",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 4,
+        "removed_card_count": 4,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_022",
+      "source_candidate_edge": "BT10-054TH->BT17-048TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_022_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "1": 3
+        },
+        "surpluses": {
+          "3": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-009TH",
+            "name_th": "อัศวินผู้เพียบพร้อม,กาเร็ท",
+            "quantity": 3,
+            "grade": "1",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 3,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-003TH",
+            "name_th": "ลิเบอเรเตอร์อัศวินโต๊ะกลม,อัลเฟรด",
+            "quantity": 4,
+            "grade": "3",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 4,
+        "removed_card_count": 4,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_023",
+      "source_candidate_edge": "BT10-054TH->BT17-049TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_023_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "1": 3
+        },
+        "surpluses": {
+          "3": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-009TH",
+            "name_th": "อัศวินผู้เพียบพร้อม,กาเร็ท",
+            "quantity": 3,
+            "grade": "1",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 3,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-003TH",
+            "name_th": "ลิเบอเรเตอร์อัศวินโต๊ะกลม,อัลเฟรด",
+            "quantity": 4,
+            "grade": "3",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 4,
+        "removed_card_count": 4,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_024",
+      "source_candidate_edge": "BT10-054TH->TD08-011TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_024_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1
+        },
+        "surpluses": {
+          "1": 1
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-011TH",
+            "name_th": "ลิเบอเรเตอร์ที่เปล่งรัศมี,มาร์ค",
+            "quantity": 1,
+            "grade": "1",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 1,
+        "removed_card_count": 1,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    },
+    {
+      "recipe_id": "m52_recipe_025",
+      "source_candidate_edge": "BT10-054TH->TD16-002TH",
+      "validation_status": "validator_passed_pending_human_selection",
+      "consistency_status": "consistent_pending_human_selection",
+      "structural_blockers": [],
+      "grade_profile_repair_package": {
+        "package_id": "m52_recipe_025_grade_profile_pkg_001",
+        "repair_type": "grade_profile_substitution_preview",
+        "advisory_only": true,
+        "target_grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "deficits": {
+          "0": 1,
+          "1": 3
+        },
+        "surpluses": {
+          "3": 4
+        },
+        "additions": [
+          {
+            "card_id": "TD16-013TH",
+            "name_th": "ลิเบอเรเตอร์อัจฉริยะ,วอร์ติเมล",
+            "quantity": 1,
+            "grade": "0",
+            "series_code": "TD16",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 1,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          },
+          {
+            "card_id": "TD08-009TH",
+            "name_th": "อัศวินผู้เพียบพร้อม,กาเร็ท",
+            "quantity": 3,
+            "grade": "1",
+            "series_code": "TD08",
+            "current_quantity": 0,
+            "final_quantity_if_chosen": 3,
+            "deck_limit": 4,
+            "source": "data/packs/vanguard_th/cards.sqlite:cards"
+          }
+        ],
+        "removals": [
+          {
+            "card_id": "BT10-003TH",
+            "name_th": "ลิเบอเรเตอร์อัศวินโต๊ะกลม,อัลเฟรด",
+            "quantity": 4,
+            "grade": "3",
+            "series_code": "BT10",
+            "source": "m52_03_fifth_slice_recipe_draft_model"
+          }
+        ],
+        "grade_counts_after": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "added_card_count": 4,
+        "removed_card_count": 4,
+        "complete_candidate": true,
+        "runtime_promotion_allowed": false
+      },
+      "human_selection_required": true,
+      "ready_for_human_repair_review": true,
+      "runtime_promotion_allowed": false
+    }
+  ],
+  "summary": {
+    "recipe_count": 25,
+    "grade_profile_repair_candidate_count": 25,
+    "grade_profile_complete_candidate_count": 25,
+    "human_selection_required_count": 25,
+    "unexpected_structural_blocker_recipe_count": 0,
+    "ready_for_human_repair_review_count": 25,
+    "runtime_promotion_allowed": false,
+    "ready_for_m52_closeout": true
+  },
+  "next_target": {
+    "milestone": "M52-closeout",
+    "task": "Fifth-slice runtime readiness decision"
+  }
+}

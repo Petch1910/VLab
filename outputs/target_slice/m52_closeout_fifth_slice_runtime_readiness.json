@@ -1,0 +1,154 @@
+{
+  "version": "M52-closeout",
+  "description": "Fifth-slice runtime readiness decision",
+  "source_inputs": {
+    "m52_01_fifth_slice_fixture_scaffold": "outputs\\target_slice\\m52_01_fifth_slice_fixture_scaffold.json",
+    "m52_02_fifth_slice_review_packet": "outputs\\target_slice\\m52_02_fifth_slice_review_packet.json",
+    "m52_03_fifth_slice_recipe_draft_model": "outputs\\target_slice\\m52_03_fifth_slice_recipe_draft_model.json",
+    "m52_04_fifth_slice_recipe_validation_report": "outputs\\target_slice\\m52_04_fifth_slice_recipe_validation_report.json",
+    "m52_05_fifth_slice_combo_recipe_consistency_report": "outputs\\target_slice\\m52_05_fifth_slice_combo_recipe_consistency_report.json",
+    "m52_06_fifth_slice_blocker_repair_candidates": "outputs\\target_slice\\m52_06_fifth_slice_blocker_repair_candidates.json"
+  },
+  "scope": {
+    "closeout_report": true,
+    "changes_recipe_draft_file": false,
+    "records_human_acceptance": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false
+  },
+  "input_checks": [
+    {
+      "milestone": "M52-01",
+      "title": "Fifth-slice fixture scaffold",
+      "path": "outputs\\target_slice\\m52_01_fifth_slice_fixture_scaffold.json",
+      "exists": true
+    },
+    {
+      "milestone": "M52-02",
+      "title": "Fifth-slice review packet",
+      "path": "outputs\\target_slice\\m52_02_fifth_slice_review_packet.json",
+      "exists": true
+    },
+    {
+      "milestone": "M52-03",
+      "title": "Fifth-slice recipe draft model",
+      "path": "outputs\\target_slice\\m52_03_fifth_slice_recipe_draft_model.json",
+      "exists": true
+    },
+    {
+      "milestone": "M52-04",
+      "title": "Fifth-slice recipe validator",
+      "path": "outputs\\target_slice\\m52_04_fifth_slice_recipe_validation_report.json",
+      "exists": true
+    },
+    {
+      "milestone": "M52-05",
+      "title": "Fifth-slice combo-to-recipe consistency",
+      "path": "outputs\\target_slice\\m52_05_fifth_slice_combo_recipe_consistency_report.json",
+      "exists": true
+    },
+    {
+      "milestone": "M52-06",
+      "title": "Fifth-slice blocker repair candidates",
+      "path": "outputs\\target_slice\\m52_06_fifth_slice_blocker_repair_candidates.json",
+      "exists": true
+    }
+  ],
+  "key_results": {
+    "selected_target": {
+      "slice": "Fifth Offline Slice",
+      "era_preset": "link_joker_legion_mate",
+      "group": "โกลด์ พาลาดิน",
+      "group_field": "clan",
+      "rank": 3,
+      "priority_score": 77.85,
+      "best_era_candidates": 2006,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "rich_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    "fixture_scaffold_ready": true,
+    "review_items": 147,
+    "recipe_drafts": 25,
+    "runtime_ready_recipe_count": 0,
+    "promotion_allowed_count": 0,
+    "validator_passed_pending_human_selection_count": 25,
+    "manual_review_overlap_recipe_count": 0,
+    "grade_profile_review_recipe_count": 25,
+    "repair_candidates_ready_for_human_review": 25,
+    "grade_profile_complete_candidate_count": 25,
+    "human_selection_required_count": 25,
+    "unexpected_structural_blocker_recipe_count": 0
+  },
+  "decision": {
+    "m52_complete": true,
+    "fifth_slice_runtime_ready_recipe_available": false,
+    "fifth_slice_can_enter_runtime_fixture_gate_now": false,
+    "fifth_slice_remains_advisory": true,
+    "human_selection_review_allowed": true,
+    "live_runtime_deck_enabled": false,
+    "saved_deck_or_ui_publication_allowed": false,
+    "bot_playbook_enabled": false,
+    "decision_blockers": [
+      "no_runtime_ready_recipe",
+      "no_promotion_allowed_consistency_check",
+      "human_recipe_selection_pending",
+      "grade_profile_review_requires_acceptance",
+      "repair_candidates_require_human_acceptance",
+      "runtime_fixture_gate_not_run"
+    ],
+    "recommendation": "open_m53_fifth_slice_human_selection_and_repair_gate"
+  },
+  "next_queue": {
+    "id": "M53",
+    "title": "Fifth-slice Human Selection and Repair Gate",
+    "goal": "Review M52-06 grade-profile substitution previews, select exactly one fifth-slice recipe, record explicit acceptance, and rerun validation before any runtime fixture gate.",
+    "tasks": [
+      {
+        "id": "M53-01",
+        "title": "Fifth-slice human repair review packet",
+        "goal": "Export a concise review packet for M52-06 repair packages and candidate recipes."
+      },
+      {
+        "id": "M53-02",
+        "title": "Fifth-slice human-selected recipe artifact",
+        "goal": "Record exactly one selected fifth-slice recipe id without mutating M52 drafts."
+      },
+      {
+        "id": "M53-03",
+        "title": "Fifth-slice human-accepted repair artifact",
+        "goal": "Record explicit acceptance or rejection of the selected grade-profile repair package."
+      },
+      {
+        "id": "M53-04",
+        "title": "Fifth-slice repaired recipe validation rerun",
+        "goal": "Apply accepted repair in memory and rerun count, trigger, grade, copy-limit, clan, and manual-overlap validation."
+      },
+      {
+        "id": "M53-05",
+        "title": "Fifth-slice runtime fixture promotion gate",
+        "goal": "Promote only if repaired validation, consistency, and human acceptance all pass."
+      },
+      {
+        "id": "M53-closeout",
+        "title": "Fifth-slice fixture closeout",
+        "goal": "Decide whether the fifth slice enters offline fixture scope or remains advisory."
+      }
+    ]
+  },
+  "summary": {
+    "m52_complete": true,
+    "runtime_ready_recipe_available": false,
+    "human_selection_review_allowed": true,
+    "next_queue_id": "M53",
+    "ready_for_next_queue": true
+  }
+}

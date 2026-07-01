@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "pack_id": "custom_starter_pack_v2",
+  "display_name": "Custom Starter Pack V2",
+  "source_version": "1.0.0",
+  "format": "custom",
+  "language": "th",
+  "cards_file": "cards.csv",
+  "image_root": "images",
+  "ruleset_profile": "custom",
+  "capabilities": {
+    "cards": true,
+    "images": true,
+    "abilities": true,
+    "custom_formats": false
+  },
+  "abilities_file": "abilities.json",
+  "dependencies": [],
+  "author": "Creator name",
+  "description": "Minimal v2 template for a custom card pack.",
+  "license": "personal-use"
+}

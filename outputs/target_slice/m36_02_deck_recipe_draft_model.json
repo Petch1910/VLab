@@ -1,0 +1,3776 @@
+{
+  "version": "M36-02",
+  "description": "Deck recipe draft model from first-slice advisory skeletons",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "deck_skeleton_ratio_plans": "outputs\\target_slice\\m35_d2_first_slice_deck_skeleton_ratio_plans.json",
+    "combo_line_explainer": "outputs\\target_slice\\m35_d3_first_slice_combo_line_explainer.json",
+    "first_slice_review_packet": "outputs\\target_slice\\m36_01_first_slice_review_packet.json"
+  },
+  "scope": {
+    "offline_recipe_draft_model": true,
+    "runtime_deck": false,
+    "bot_integration": false,
+    "deck_validator_result": false,
+    "automatic_deck_injection": false
+  },
+  "draft_policy": {
+    "card_quantities_are_advisory": true,
+    "slot_gaps_are_allowed_until_m36_03": true,
+    "copy_limit_assumption": 4,
+    "human_review_required_before_runtime": true,
+    "no_live_card_text_parsing": true,
+    "no_direct_GameState_mutation": true
+  },
+  "summary": {
+    "source_skeleton_count": 25,
+    "recipe_draft_count": 25,
+    "accepted_seed_recipe_count": 1,
+    "rejected_line_recipe_count": 24,
+    "manual_overlap_recipe_count": 0,
+    "recipes_with_slot_gaps": 16,
+    "ready_for_m36_03": true
+  },
+  "recipe_drafts": [
+    {
+      "recipe_id": "recipe_001",
+      "source_skeleton_id": "skel_001",
+      "source_package_id": "pkg_001",
+      "source_line_id": "line_001",
+      "anchor_card_id": "BT04-038TH",
+      "anchor_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "BT04-038TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT06-042TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT06-099TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT09-075TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-012TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-027TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-028TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-035TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 16,
+        "trigger_slots_unfilled": 0,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 0,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_002",
+      "source_skeleton_id": "skel_002",
+      "source_package_id": "pkg_002",
+      "source_line_id": "line_002",
+      "anchor_card_id": "EB04-017TH",
+      "anchor_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "EB04-017TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT06-042TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT06-099TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT09-075TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-012TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-027TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-028TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-035TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 16,
+        "trigger_slots_unfilled": 0,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 0,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_003",
+      "source_skeleton_id": "skel_003",
+      "source_package_id": "pkg_003",
+      "source_line_id": "line_003",
+      "anchor_card_id": "BT04-078TH",
+      "anchor_name_th": "แกรปเปิล มาเนีย",
+      "review_status": "accepted_seed_pending_recipe_validation",
+      "review_blockers": [
+        "human_acceptance",
+        "deck_recipe_validator",
+        "combo_line_to_recipe_consistency_check"
+      ],
+      "recipe_status": "draft_with_gaps",
+      "quantities": [
+        {
+          "card_id": "BT01-028TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT09-004TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-002TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-010TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-002TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-003TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 38,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 4,
+        "trigger_slots_unfilled": 12,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 12,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_004",
+      "source_skeleton_id": "skel_004",
+      "source_package_id": "pkg_004",
+      "source_line_id": "line_004",
+      "anchor_card_id": "BT01-028TH",
+      "anchor_name_th": "Mr. อินวิซิเบิ้ล",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "BT01-028TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT05-072TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT09-072TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT09-075TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-006TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-009TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-023TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 16,
+        "trigger_slots_unfilled": 0,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 0,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_005",
+      "source_skeleton_id": "skel_005",
+      "source_package_id": "pkg_005",
+      "source_line_id": "line_005",
+      "anchor_card_id": "EB04-016TH",
+      "anchor_name_th": "Mr.อินวิซิเบิ้ล",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "EB04-016TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT05-072TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT09-072TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT09-075TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-006TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-009TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-023TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 16,
+        "trigger_slots_unfilled": 0,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 0,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_006",
+      "source_skeleton_id": "skel_006",
+      "source_package_id": "pkg_006",
+      "source_line_id": "line_006",
+      "anchor_card_id": "TD03-003TH",
+      "anchor_name_th": "Mr. อินวิซิเบิ้ล",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "TD03-003TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT05-072TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT09-072TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT09-075TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-006TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-009TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-023TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 16,
+        "trigger_slots_unfilled": 0,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 0,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_007",
+      "source_skeleton_id": "skel_007",
+      "source_package_id": "pkg_007",
+      "source_line_id": "line_007",
+      "anchor_card_id": "EB04-008TH",
+      "anchor_name_th": "โกลด์ รูไทล์",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_with_gaps",
+      "quantities": [
+        {
+          "card_id": "EB04-008TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT05-072TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT09-072TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-006TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-009TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-023TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-008TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 48,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 16,
+        "trigger_slots_unfilled": 0,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 32,
+        "normal_slots_unfilled": 2,
+        "total_unfilled_slots": 2,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_008",
+      "source_skeleton_id": "skel_008",
+      "source_package_id": "pkg_008",
+      "source_line_id": "line_008",
+      "anchor_card_id": "TD03-001TH",
+      "anchor_name_th": "โกลด์ รูไทล์",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_with_gaps",
+      "quantities": [
+        {
+          "card_id": "TD03-001TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT05-072TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT09-072TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-006TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-009TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-023TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-008TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 48,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 16,
+        "trigger_slots_unfilled": 0,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 32,
+        "normal_slots_unfilled": 2,
+        "total_unfilled_slots": 2,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_009",
+      "source_skeleton_id": "skel_009",
+      "source_package_id": "pkg_009",
+      "source_line_id": "line_009",
+      "anchor_card_id": "BT01-032TH",
+      "anchor_name_th": "แบทเทิลไรเซอร์",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_with_gaps",
+      "quantities": [
+        {
+          "card_id": "BT01-028TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-038TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT06-099TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-017TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-021TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 38,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 4,
+        "trigger_slots_unfilled": 12,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 12,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_010",
+      "source_skeleton_id": "skel_010",
+      "source_package_id": "pkg_010",
+      "source_line_id": "line_010",
+      "anchor_card_id": "EB01-020TH",
+      "anchor_name_th": "แบทเทิล ไรเซอร์",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_with_gaps",
+      "quantities": [
+        {
+          "card_id": "BT01-028TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-038TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT06-099TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-017TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-021TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 38,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 4,
+        "trigger_slots_unfilled": 12,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 12,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_011",
+      "source_skeleton_id": "skel_011",
+      "source_package_id": "pkg_011",
+      "source_line_id": "line_011",
+      "anchor_card_id": "EB04-034TH",
+      "anchor_name_th": "เทอร์โบไรเซอร์",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_with_gaps",
+      "quantities": [
+        {
+          "card_id": "BT01-028TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-038TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT06-099TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-017TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-021TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 38,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 4,
+        "trigger_slots_unfilled": 12,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 12,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_012",
+      "source_skeleton_id": "skel_012",
+      "source_package_id": "pkg_012",
+      "source_line_id": "line_012",
+      "anchor_card_id": "EB04-035TH",
+      "anchor_name_th": "แบทเทิลไรเซอร์",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_with_gaps",
+      "quantities": [
+        {
+          "card_id": "BT01-028TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-038TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT06-099TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-017TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-021TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-035TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 38,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 4,
+        "trigger_slots_unfilled": 12,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 12,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_013",
+      "source_skeleton_id": "skel_013",
+      "source_package_id": "pkg_013",
+      "source_line_id": "line_013",
+      "anchor_card_id": "TD03-005TH",
+      "anchor_name_th": "สุดยอดแม่เหล็กไฟฟ้ามีชีวิต สตอร์ม",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "TD03-005TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-072TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT06-042TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT09-034TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-001TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-001TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-002TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-012TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-027TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-035TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 16,
+        "trigger_slots_unfilled": 0,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 0,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_014",
+      "source_skeleton_id": "skel_014",
+      "source_package_id": "pkg_014",
+      "source_line_id": "line_014",
+      "anchor_card_id": "BT06-099TH",
+      "anchor_name_th": "ฮานิ ผู้ชั่วร้าย",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "BT06-099TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-029TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-072TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT06-042TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT09-034TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-001TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-001TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-012TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-027TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-035TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 16,
+        "trigger_slots_unfilled": 0,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 0,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_015",
+      "source_skeleton_id": "skel_015",
+      "source_package_id": "pkg_015",
+      "source_line_id": "line_015",
+      "anchor_card_id": "EB04-021TH",
+      "anchor_name_th": "มาเวลรัส ฮานิ",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "EB04-021TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-029TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-072TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT06-042TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT09-034TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-001TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-001TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-012TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-027TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-035TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 16,
+        "trigger_slots_unfilled": 0,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 0,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_016",
+      "source_skeleton_id": "skel_016",
+      "source_package_id": "pkg_016",
+      "source_line_id": "line_016",
+      "anchor_card_id": "BT02-018TH",
+      "anchor_name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_with_gaps",
+      "quantities": [
+        {
+          "card_id": "BT02-018TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-031TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-072TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-038TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-001TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-001TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-012TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 48,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 16,
+        "trigger_slots_unfilled": 0,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 32,
+        "normal_slots_unfilled": 2,
+        "total_unfilled_slots": 2,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_017",
+      "source_skeleton_id": "skel_017",
+      "source_package_id": "pkg_017",
+      "source_line_id": "line_017",
+      "anchor_card_id": "BT09-075TH",
+      "anchor_name_th": "ไลโอเนท ฮีท",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_with_gaps",
+      "quantities": [
+        {
+          "card_id": "BT09-075TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-028TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-038TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT06-099TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-017TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-021TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-003TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 34,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 0,
+        "trigger_slots_unfilled": 16,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 16,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_018",
+      "source_skeleton_id": "skel_018",
+      "source_package_id": "pkg_018",
+      "source_line_id": "line_018",
+      "anchor_card_id": "EB04-004TH",
+      "anchor_name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_with_gaps",
+      "quantities": [
+        {
+          "card_id": "EB04-004TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-031TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-072TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-038TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-001TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-001TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-012TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 48,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 16,
+        "trigger_slots_unfilled": 0,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 32,
+        "normal_slots_unfilled": 2,
+        "total_unfilled_slots": 2,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_019",
+      "source_skeleton_id": "skel_019",
+      "source_package_id": "pkg_019",
+      "source_line_id": "line_019",
+      "anchor_card_id": "BT04-076TH",
+      "anchor_name_th": "ทูลคิท บอย",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_with_gaps",
+      "quantities": [
+        {
+          "card_id": "BT04-076TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-028TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT09-004TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT09-072TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-002TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-009TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-003TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 34,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 0,
+        "trigger_slots_unfilled": 16,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 16,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_020",
+      "source_skeleton_id": "skel_020",
+      "source_package_id": "pkg_020",
+      "source_line_id": "line_020",
+      "anchor_card_id": "BT04-019TH",
+      "anchor_name_th": "เบลาคลูเกอร์",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_quantity_complete",
+      "quantities": [
+        {
+          "card_id": "BT04-019TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-072TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT05-072TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT06-042TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT09-034TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT09-072TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-006TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-012TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-027TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-032TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB01-020TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-034TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-035TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 16,
+        "trigger_slots_unfilled": 0,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 0,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_021",
+      "source_skeleton_id": "skel_021",
+      "source_package_id": "pkg_021",
+      "source_line_id": "line_021",
+      "anchor_card_id": "BT09-072TH",
+      "anchor_name_th": "เบิร์สไรเซอร์",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_with_gaps",
+      "quantities": [
+        {
+          "card_id": "BT09-072TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-028TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-059TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-003TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-005TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-074TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-033TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 46,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 12,
+        "trigger_slots_unfilled": 4,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 4,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_022",
+      "source_skeleton_id": "skel_022",
+      "source_package_id": "pkg_022",
+      "source_line_id": "line_022",
+      "anchor_card_id": "EB04-009TH",
+      "anchor_name_th": "เจโนไซด์ โจ๊กเกอร์",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_with_gaps",
+      "quantities": [
+        {
+          "card_id": "EB04-009TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-028TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-059TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-003TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-005TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-074TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-033TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 46,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 12,
+        "trigger_slots_unfilled": 4,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 4,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_023",
+      "source_skeleton_id": "skel_023",
+      "source_package_id": "pkg_023",
+      "source_line_id": "line_023",
+      "anchor_card_id": "EB04-023TH",
+      "anchor_name_th": "โอเอซิส เกิร์ล",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_with_gaps",
+      "quantities": [
+        {
+          "card_id": "EB04-023TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-028TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-059TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-003TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-005TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-074TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-033TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 46,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 12,
+        "trigger_slots_unfilled": 4,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 4,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_024",
+      "source_skeleton_id": "skel_024",
+      "source_package_id": "pkg_024",
+      "source_line_id": "line_024",
+      "anchor_card_id": "TD03-008TH",
+      "anchor_name_th": "โอเอซิส เกิร์ล",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_with_gaps",
+      "quantities": [
+        {
+          "card_id": "TD03-008TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-028TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-059TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "quantity": 4,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-076TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-003TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-005TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-074TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-078TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-033TH",
+          "quantity": 4,
+          "roles": [
+            "trigger_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 46,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 12,
+        "trigger_slots_unfilled": 4,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 4,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    },
+    {
+      "recipe_id": "recipe_025",
+      "source_skeleton_id": "skel_025",
+      "source_package_id": "pkg_025",
+      "source_line_id": "line_025",
+      "anchor_card_id": "BT02-072TH",
+      "anchor_name_th": "เครย์ โซลเจอร์",
+      "review_status": "blocked_rejected_line_support_gap",
+      "review_blockers": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recipe_status": "draft_with_gaps",
+      "quantities": [
+        {
+          "card_id": "BT02-072TH",
+          "quantity": 4,
+          "roles": [
+            "key_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT01-028TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT02-018TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-008TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT04-019TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "BT06-099TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-004TH",
+          "quantity": 3,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-016TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "EB04-021TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-001TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-003TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        },
+        {
+          "card_id": "TD03-005TH",
+          "quantity": 2,
+          "roles": [
+            "support_cards",
+            "resource_recovery_cards"
+          ],
+          "quantity_source": "m36_02_role_based_draft_allocation"
+        }
+      ],
+      "slot_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 34,
+        "trigger_slots_target": 16,
+        "trigger_slots_assigned": 0,
+        "trigger_slots_unfilled": 16,
+        "normal_slots_target": 34,
+        "normal_slots_assigned": 34,
+        "normal_slots_unfilled": 0,
+        "total_unfilled_slots": 16,
+        "max_copy_limit_assumed": 4
+      },
+      "validation_metadata": {
+        "draft_only": true,
+        "requires_m36_03_validator": true,
+        "requires_human_acceptance": true,
+        "contains_manual_review_cards": false,
+        "manual_review_card_ids": [],
+        "not_runtime_deck": true,
+        "not_auto_injected": true
+      }
+    }
+  ],
+  "next_target": {
+    "milestone": "M36-03",
+    "task": "Deck recipe validator"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "version": "M44-01",
+  "description": "Third-slice fixture scaffold",
+  "source_inputs": {
+    "third_slice_recipe_pipeline_entry_gate": "outputs\\target_slice\\m43_04_third_slice_recipe_pipeline_entry_gate.json",
+    "third_slice_fixture_readiness": "outputs\\target_slice\\m43_02_third_slice_fixture_readiness.json",
+    "third_slice_semantic_compatibility_probe": "outputs\\target_slice\\m43_03_third_slice_semantic_compatibility_probe.json"
+  },
+  "selected_target": {
+    "slice": "Third Offline Slice",
+    "era_preset": "link_joker_legion_mate",
+    "group": "เบอร์มิวด้า ไทรแองเกิล",
+    "group_field": "clan",
+    "rank": 1,
+    "priority_score": 95.0,
+    "best_era_candidates": 2179,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "fixture_scaffold": {
+    "policy_level": "third_slice_source_backed_fixture_scaffold_not_full_official_legality",
+    "identity_field": "clan",
+    "selected_identity": "เบอร์มิวด้า ไทรแองเกิล",
+    "era_preset": "link_joker_legion_mate",
+    "set_scope": [
+      "TD07",
+      "TD08",
+      "TD09",
+      "TD10",
+      "TD11",
+      "TD12",
+      "TD13",
+      "TD14",
+      "TD15",
+      "TD16",
+      "TD17",
+      "BT10",
+      "BT11",
+      "BT12",
+      "BT13",
+      "BT14",
+      "BT15",
+      "BT16",
+      "BT17",
+      "EB06",
+      "EB07",
+      "EB08",
+      "EB09",
+      "EB10",
+      "EB11",
+      "EB12"
+    ],
+    "source_series_present": [
+      "EB06",
+      "EB10"
+    ],
+    "main_deck_exact": 50,
+    "trigger_target": 16,
+    "required_trigger_types": [
+      "Critical",
+      "Draw",
+      "Heal",
+      "Stand"
+    ],
+    "recommended_trigger_profile": {
+      "Critical": 4,
+      "Draw": 4,
+      "Heal": 4,
+      "Stand": 4
+    },
+    "required_non_trigger_setup_grades": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "preferred_grade_profile": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "copy_limit_source": "runtime SQLite cards.deck_limit",
+    "deferred_source_backed_special_limits": [
+      "full official heal-trigger maximum beyond runtime deck_limit",
+      "card-specific special limits not represented in runtime SQLite",
+      "format-wide exceptions not represented in local source data"
+    ]
+  },
+  "mechanic_scope": {
+    "format_family": "Link Joker / Legion Mate era",
+    "stride_enabled": false,
+    "imaginary_gift_enabled": false,
+    "ride_deck_enabled": false,
+    "over_trigger_enabled": false,
+    "front_trigger_enabled": false,
+    "order_cards_enabled": false,
+    "legion_or_lock_text_requires_manual_review": true,
+    "notes": [
+      "This scaffold is a validator policy for offline recipes, not a full official ruleset.",
+      "Any Legion/Lock-like text stays manual-review until a dedicated rules module exists."
+    ]
+  },
+  "validator_contract_for_m44_04": {
+    "must_validate_main_deck_count": true,
+    "must_validate_trigger_count": true,
+    "must_validate_required_trigger_types": true,
+    "must_validate_required_grade_coverage": true,
+    "must_validate_selected_identity": true,
+    "must_validate_set_scope": true,
+    "must_validate_runtime_deck_limit": true,
+    "must_block_missing_cards": true,
+    "must_not_accept_manual_review_dependencies_as_runtime_ready": true
+  },
+  "evidence_summary": {
+    "source_card_count": 127,
+    "series_counts": {
+      "EB06": 41,
+      "EB10": 86
+    },
+    "grade_counts": {
+      "0": 31,
+      "1": 35,
+      "2": 30,
+      "3": 31
+    },
+    "trigger_counts": {
+      "": 106,
+      "Critical": 6,
+      "Draw": 6,
+      "Heal": 3,
+      "Stand": 6
+    },
+    "trigger_capacity": 84,
+    "non_trigger_capacity": 424,
+    "candidate_edge_count": 109,
+    "manual_review_card_count": 61
+  },
+  "runtime_boundary": {
+    "scaffold_artifact_only": true,
+    "does_not_create_deck": true,
+    "does_not_create_recipe_draft": true,
+    "does_not_create_runtime_fixture": true,
+    "does_not_mutate_runtime_pack": true,
+    "does_not_publish_to_ui": true,
+    "does_not_publish_to_bot": true,
+    "GameState_mutation": false
+  },
+  "issues": [],
+  "summary": {
+    "scaffold_ready": true,
+    "blocking_issue_count": 0,
+    "issue_count": 0,
+    "ready_for_m44_02": true
+  },
+  "next_target": {
+    "milestone": "M44-02",
+    "task": "Third-slice review packet"
+  }
+}

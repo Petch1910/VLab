@@ -1,0 +1,126 @@
+{
+  "schema_version": "deck_recipe_runtime_fixture_v1",
+  "fixture_id": "runtime_fixture_m52_recipe_001_gold_paladin_m53_05",
+  "fixture_scope": "offline_runtime_test_fixture",
+  "recipe_id": "m52_recipe_001",
+  "source_artifact": "outputs/target_slice/m53_04_fifth_slice_repaired_recipe_validation_rerun.json",
+  "selected_target": {
+    "slice": "Fifth Offline Slice",
+    "era_preset": "link_joker_legion_mate",
+    "group": "โกลด์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 3,
+    "priority_score": 77.85,
+    "best_era_candidates": 2006,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "format_policy": {
+    "slice": "Fifth Offline Slice",
+    "era_preset": "link_joker_legion_mate",
+    "group": "โกลด์ พาลาดิน",
+    "group_field": "clan"
+  },
+  "main_deck": [
+    {
+      "card_id": "BT10-011TH",
+      "quantity": 3
+    },
+    {
+      "card_id": "BT10-012TH",
+      "quantity": 2
+    },
+    {
+      "card_id": "BT10-025TH",
+      "quantity": 3
+    },
+    {
+      "card_id": "BT10-053TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT10-054TH",
+      "quantity": 3
+    },
+    {
+      "card_id": "BT10-055TH",
+      "quantity": 2
+    },
+    {
+      "card_id": "BT10-056TH",
+      "quantity": 3
+    },
+    {
+      "card_id": "BT10-057TH",
+      "quantity": 1
+    },
+    {
+      "card_id": "BT10-059TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT10-060TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT12-053TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT14-003TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "TD08-009TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "TD16-013TH",
+      "quantity": 1
+    },
+    {
+      "card_id": "TD16-015TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "TD16-017TH",
+      "quantity": 4
+    }
+  ],
+  "count_summary": {
+    "main_deck_count": 50,
+    "trigger_count": 16,
+    "trigger_counts": {
+      "Critical": 4,
+      "Draw": 4,
+      "Heal": 4,
+      "Stand": 4
+    },
+    "grade_counts": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "clan_counts": {
+      "โกลด์ พาลาดิน": 50
+    }
+  },
+  "source_packages": {
+    "selected_review_item_id": "m53_01_m52_recipe_001_repair_review",
+    "grade_profile_package_id": "m52_recipe_001_grade_profile_pkg_001"
+  },
+  "runtime_boundaries": {
+    "test_fixture_only": true,
+    "auto_injected_into_player_decks": false,
+    "bot_playbook_enabled": false,
+    "ui_deck_library_mutated": false,
+    "game_state_mutated": false
+  }
+}

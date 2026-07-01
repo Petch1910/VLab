@@ -1,0 +1,240 @@
+{
+  "version": "M53-05",
+  "description": "Fifth-slice runtime fixture promotion gate",
+  "source_inputs": {
+    "m53_04_repaired_recipe_validation_rerun": "outputs\\target_slice\\m53_04_fifth_slice_repaired_recipe_validation_rerun.json"
+  },
+  "scope": {
+    "offline_promotion_gate": true,
+    "creates_runtime_test_fixture_artifact": true,
+    "mutates_runtime_deck_library": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_integration": false,
+    "automatic_playbook_promotion": false,
+    "live_card_text_parsing": false,
+    "GameState_mutation": false
+  },
+  "gate_policy": {
+    "requires_human_selection": true,
+    "requires_human_acceptance": true,
+    "requires_zero_blockers": true,
+    "requires_combo_consistency": true,
+    "requires_m53_04_ready": true,
+    "fixture_only_not_live_deck": true
+  },
+  "gate_checks": [
+    {
+      "check_id": "human_selection_and_acceptance",
+      "passed": true,
+      "evidence": {
+        "human_selection_recorded": true,
+        "human_acceptance_recorded": true,
+        "accepted_review_item_id": "m53_01_m52_recipe_001_repair_review"
+      }
+    },
+    {
+      "check_id": "validation",
+      "passed": true,
+      "evidence": {
+        "validation_status": "validator_passed",
+        "runtime_ready": true,
+        "blocking_issue_count": 0,
+        "count_summary": {
+          "main_deck_target": 50,
+          "explicit_card_count": 50,
+          "trigger_count": 16,
+          "trigger_counts": {
+            "Critical": 4,
+            "Draw": 4,
+            "Heal": 4,
+            "Stand": 4
+          },
+          "grade_counts": {
+            "0": 17,
+            "1": 14,
+            "2": 11,
+            "3": 8
+          },
+          "clan_counts": {
+            "โกลด์ พาลาดิน": 50
+          }
+        }
+      }
+    },
+    {
+      "check_id": "combo_consistency",
+      "passed": true,
+      "evidence": {
+        "consistency_status": "consistent_validator_passed",
+        "pair_cards_present": true,
+        "promotion_allowed_by_validation_and_consistency": true
+      }
+    },
+    {
+      "check_id": "rerun_ready",
+      "passed": true,
+      "evidence": {
+        "ready_for_m53_05": true
+      }
+    },
+    {
+      "check_id": "runtime_boundary",
+      "passed": true,
+      "evidence": {
+        "m53_04_runtime_fixture_promotion_allowed": false,
+        "m53_04_creates_runtime_fixture": false,
+        "m53_04_bot_playbook": false,
+        "m53_04_direct_GameState_mutation": false
+      }
+    }
+  ],
+  "promotion_decision": {
+    "promotion_allowed": true,
+    "fixture_created": true,
+    "fixture_path": "outputs/target_slice/runtime_fixtures/m52_recipe_001_gold_paladin_m53_05.json",
+    "runtime_deck_library_mutated": false,
+    "saved_deck_injected": false,
+    "ui_deck_list_published": false,
+    "bot_playbook_enabled": false,
+    "next_action": "M53-closeout"
+  },
+  "runtime_fixture": {
+    "schema_version": "deck_recipe_runtime_fixture_v1",
+    "fixture_id": "runtime_fixture_m52_recipe_001_gold_paladin_m53_05",
+    "fixture_scope": "offline_runtime_test_fixture",
+    "recipe_id": "m52_recipe_001",
+    "source_artifact": "outputs/target_slice/m53_04_fifth_slice_repaired_recipe_validation_rerun.json",
+    "selected_target": {
+      "slice": "Fifth Offline Slice",
+      "era_preset": "link_joker_legion_mate",
+      "group": "โกลด์ พาลาดิน",
+      "group_field": "clan",
+      "rank": 3,
+      "priority_score": 77.85,
+      "best_era_candidates": 2006,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "rich_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    "format_policy": {
+      "slice": "Fifth Offline Slice",
+      "era_preset": "link_joker_legion_mate",
+      "group": "โกลด์ พาลาดิน",
+      "group_field": "clan"
+    },
+    "main_deck": [
+      {
+        "card_id": "BT10-011TH",
+        "quantity": 3
+      },
+      {
+        "card_id": "BT10-012TH",
+        "quantity": 2
+      },
+      {
+        "card_id": "BT10-025TH",
+        "quantity": 3
+      },
+      {
+        "card_id": "BT10-053TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "BT10-054TH",
+        "quantity": 3
+      },
+      {
+        "card_id": "BT10-055TH",
+        "quantity": 2
+      },
+      {
+        "card_id": "BT10-056TH",
+        "quantity": 3
+      },
+      {
+        "card_id": "BT10-057TH",
+        "quantity": 1
+      },
+      {
+        "card_id": "BT10-059TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "BT10-060TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "BT12-053TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "BT14-003TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "TD08-009TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "TD16-013TH",
+        "quantity": 1
+      },
+      {
+        "card_id": "TD16-015TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "TD16-017TH",
+        "quantity": 4
+      }
+    ],
+    "count_summary": {
+      "main_deck_count": 50,
+      "trigger_count": 16,
+      "trigger_counts": {
+        "Critical": 4,
+        "Draw": 4,
+        "Heal": 4,
+        "Stand": 4
+      },
+      "grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "clan_counts": {
+        "โกลด์ พาลาดิน": 50
+      }
+    },
+    "source_packages": {
+      "selected_review_item_id": "m53_01_m52_recipe_001_repair_review",
+      "grade_profile_package_id": "m52_recipe_001_grade_profile_pkg_001"
+    },
+    "runtime_boundaries": {
+      "test_fixture_only": true,
+      "auto_injected_into_player_decks": false,
+      "bot_playbook_enabled": false,
+      "ui_deck_library_mutated": false,
+      "game_state_mutated": false
+    }
+  },
+  "summary": {
+    "recipe_id": "m52_recipe_001",
+    "promotion_allowed": true,
+    "passed_check_count": 5,
+    "failed_check_count": 0,
+    "fixture_created": true,
+    "ready_for_m53_closeout": true
+  },
+  "next_target": {
+    "milestone": "M53-closeout",
+    "task": "Fifth-slice fixture closeout"
+  }
+}

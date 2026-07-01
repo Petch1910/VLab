@@ -1,0 +1,67 @@
+{
+  "version": "M39-01",
+  "description": "Offline runtime fixture schema validation",
+  "source_inputs": {
+    "runtime_fixture": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\runtime_fixtures\\recipe_003_classic_core_nova_grappler_m38_04.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "scope": {
+    "offline_fixture_schema_validator": true,
+    "mutates_fixture_artifact": false,
+    "mutates_runtime_deck_library": false,
+    "bot_integration": false,
+    "GameState_mutation": false
+  },
+  "validation_policy": {
+    "schema_version": "deck_recipe_runtime_fixture_v1",
+    "fixture_scope": "offline_runtime_test_fixture",
+    "main_deck_count": 50,
+    "trigger_profile": {
+      "Critical": 4,
+      "Draw": 4,
+      "Heal": 4,
+      "Stand": 4
+    },
+    "grade_profile": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "copy_limit_from_sqlite": true,
+    "selected_group_only": true,
+    "runtime_boundaries_enforced": true
+  },
+  "fixture_summary": {
+    "fixture_id": "runtime_fixture_recipe_003_classic_core_nova_grappler_m38_04",
+    "recipe_id": "recipe_003",
+    "main_deck_count": 50,
+    "trigger_counts": {
+      "Critical": 4,
+      "Draw": 4,
+      "Heal": 4,
+      "Stand": 4
+    },
+    "grade_counts": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "clan_counts": {
+      "โนว่า เกรปเปอร์": 50
+    },
+    "unique_card_count": 17
+  },
+  "issues": [],
+  "summary": {
+    "schema_valid": true,
+    "blocking_issue_count": 0,
+    "issue_count": 0,
+    "ready_for_m39_02": true
+  },
+  "next_target": {
+    "milestone": "M39-02",
+    "task": "Fixture-to-deck text exporter"
+  }
+}

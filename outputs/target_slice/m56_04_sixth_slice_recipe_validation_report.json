@@ -1,0 +1,1046 @@
+{
+  "version": "M56-04",
+  "description": "Sixth-slice recipe validator for M56-03 advisory drafts",
+  "selected_target": {
+    "slice": "Sixth Offline Slice",
+    "era_preset": "g_next_z",
+    "group": "ชาโดว์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 4,
+    "priority_score": 73.61,
+    "best_era_candidates": 864,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "sixth_slice_recipe_draft_model": "outputs\\target_slice\\m56_03_sixth_slice_recipe_draft_model.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "scope": {
+    "offline_validator": true,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "runtime_deck": false,
+    "bot_playbook": false,
+    "automatic_deck_injection": false,
+    "direct_GameState_mutation": false
+  },
+  "validation_policy": {
+    "classic_main_deck_size": 50,
+    "classic_trigger_count": 16,
+    "heal_trigger_max": 4,
+    "grade4_main_deck_max_until_g_zone_support": 0,
+    "copy_limit_from_sqlite_deck_limit": true,
+    "grade_profile_mismatch_is_review_not_blocker": true,
+    "manual_review_card_overlap_is_blocking": true,
+    "human_selection_pending_is_review_not_blocker": true,
+    "g_zone_support_deferred_is_review_not_blocker": true
+  },
+  "summary": {
+    "recipe_count": 12,
+    "runtime_ready_recipe_count": 0,
+    "validator_passed_count": 0,
+    "validator_passed_pending_human_selection_count": 0,
+    "invalid_draft_count": 0,
+    "blocked_by_manual_review_count": 12,
+    "missing_card_recipe_count": 0,
+    "copy_limit_violation_recipe_count": 0,
+    "slot_gap_recipe_count": 0,
+    "trigger_count_mismatch_recipe_count": 0,
+    "grade4_main_deck_recipe_count": 0,
+    "manual_review_overlap_recipe_count": 12,
+    "grade_profile_review_recipe_count": 12,
+    "g_zone_deferred_recipe_count": 12,
+    "issue_counts": {
+      "g_zone_support_deferred": 12,
+      "grade_profile_review": 12,
+      "human_recipe_selection_pending": 12,
+      "manual_review_card_overlap": 12
+    },
+    "ready_for_m56_05": true
+  },
+  "recipe_validations": [
+    {
+      "recipe_id": "m56_recipe_001",
+      "source_candidate_edge": "G-BT12-062TH->G-BT12-066TH",
+      "source_edge_rank": 2,
+      "anchor_card_id": "G-BT12-062TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "2": {
+              "expected": 11,
+              "actual": 10
+            },
+            "3": {
+              "expected": 8,
+              "actual": 10
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M56-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT09-014TH",
+              "G-BT09-026TH",
+              "G-BT09-027TH",
+              "G-BT09-028TH",
+              "G-BT09-029TH",
+              "G-BT09-059TH",
+              "G-BT09-064TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 14,
+          "2": 10,
+          "3": 10
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "ชาโดว์ พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m56_recipe_002",
+      "source_candidate_edge": "G-BT10-026TH->G-BT09-058TH",
+      "source_edge_rank": 4,
+      "anchor_card_id": "G-BT10-026TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "1": {
+              "expected": 14,
+              "actual": 15
+            },
+            "2": {
+              "expected": 11,
+              "actual": 10
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M56-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT09-014TH",
+              "G-BT09-026TH",
+              "G-BT09-027TH",
+              "G-BT09-028TH",
+              "G-BT09-029TH",
+              "G-BT09-059TH",
+              "G-BT09-064TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 17,
+          "1": 15,
+          "2": 10,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "ชาโดว์ พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m56_recipe_003",
+      "source_candidate_edge": "G-BT10-026TH->G-BT09-060TH",
+      "source_edge_rank": 5,
+      "anchor_card_id": "G-BT10-026TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 18
+            },
+            "2": {
+              "expected": 11,
+              "actual": 10
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M56-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT09-014TH",
+              "G-BT09-026TH",
+              "G-BT09-027TH",
+              "G-BT09-028TH",
+              "G-BT09-029TH",
+              "G-BT09-059TH",
+              "G-BT09-064TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 18,
+          "2": 10,
+          "3": 6
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "ชาโดว์ พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m56_recipe_004",
+      "source_candidate_edge": "G-BT10-026TH->G-BT09-062TH",
+      "source_edge_rank": 6,
+      "anchor_card_id": "G-BT10-026TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 20
+            },
+            "2": {
+              "expected": 11,
+              "actual": 10
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M56-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT09-014TH",
+              "G-BT09-026TH",
+              "G-BT09-027TH",
+              "G-BT09-028TH",
+              "G-BT09-029TH",
+              "G-BT09-059TH",
+              "G-BT09-064TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 20,
+          "1": 14,
+          "2": 10,
+          "3": 6
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "ชาโดว์ พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m56_recipe_005",
+      "source_candidate_edge": "G-BT10-026TH->G-BT12-031TH",
+      "source_edge_rank": 8,
+      "anchor_card_id": "G-BT10-026TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "2": {
+              "expected": 11,
+              "actual": 14
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M56-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT09-014TH",
+              "G-BT09-026TH",
+              "G-BT09-027TH",
+              "G-BT09-028TH",
+              "G-BT09-029TH",
+              "G-BT09-059TH",
+              "G-BT09-064TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 14,
+          "2": 14,
+          "3": 6
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "ชาโดว์ พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m56_recipe_006",
+      "source_candidate_edge": "G-BT10-026TH->G-BT12-065TH",
+      "source_edge_rank": 9,
+      "anchor_card_id": "G-BT10-026TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 18
+            },
+            "2": {
+              "expected": 11,
+              "actual": 10
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M56-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT09-014TH",
+              "G-BT09-026TH",
+              "G-BT09-027TH",
+              "G-BT09-028TH",
+              "G-BT09-029TH",
+              "G-BT09-059TH",
+              "G-BT09-064TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 18,
+          "2": 10,
+          "3": 6
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "ชาโดว์ พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m56_recipe_007",
+      "source_candidate_edge": "G-BT10-026TH->G-TD10-010TH",
+      "source_edge_rank": 11,
+      "anchor_card_id": "G-BT10-026TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "1": {
+              "expected": 14,
+              "actual": 18
+            },
+            "2": {
+              "expected": 11,
+              "actual": 10
+            },
+            "3": {
+              "expected": 8,
+              "actual": 6
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M56-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT09-014TH",
+              "G-BT09-026TH",
+              "G-BT09-027TH",
+              "G-BT09-028TH",
+              "G-BT09-029TH",
+              "G-BT09-059TH",
+              "G-BT09-064TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 18,
+          "2": 10,
+          "3": 6
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "ชาโดว์ พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m56_recipe_008",
+      "source_candidate_edge": "G-BT12-062TH->G-BT09-058TH",
+      "source_edge_rank": 54,
+      "anchor_card_id": "G-BT12-062TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "1": {
+              "expected": 14,
+              "actual": 11
+            },
+            "2": {
+              "expected": 11,
+              "actual": 10
+            },
+            "3": {
+              "expected": 8,
+              "actual": 12
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M56-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT09-014TH",
+              "G-BT09-026TH",
+              "G-BT09-027TH",
+              "G-BT09-028TH",
+              "G-BT09-029TH",
+              "G-BT09-059TH",
+              "G-BT09-064TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 17,
+          "1": 11,
+          "2": 10,
+          "3": 12
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "ชาโดว์ พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m56_recipe_009",
+      "source_candidate_edge": "G-BT12-062TH->G-BT09-060TH",
+      "source_edge_rank": 55,
+      "anchor_card_id": "G-BT12-062TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "2": {
+              "expected": 11,
+              "actual": 10
+            },
+            "3": {
+              "expected": 8,
+              "actual": 10
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M56-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT09-014TH",
+              "G-BT09-026TH",
+              "G-BT09-027TH",
+              "G-BT09-028TH",
+              "G-BT09-029TH",
+              "G-BT09-059TH",
+              "G-BT09-064TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 14,
+          "2": 10,
+          "3": 10
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "ชาโดว์ พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m56_recipe_010",
+      "source_candidate_edge": "G-BT12-062TH->G-BT09-062TH",
+      "source_edge_rank": 56,
+      "anchor_card_id": "G-BT12-062TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 20
+            },
+            "1": {
+              "expected": 14,
+              "actual": 10
+            },
+            "2": {
+              "expected": 11,
+              "actual": 10
+            },
+            "3": {
+              "expected": 8,
+              "actual": 10
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M56-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT09-014TH",
+              "G-BT09-026TH",
+              "G-BT09-027TH",
+              "G-BT09-028TH",
+              "G-BT09-029TH",
+              "G-BT09-059TH",
+              "G-BT09-064TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 20,
+          "1": 10,
+          "2": 10,
+          "3": 10
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "ชาโดว์ พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m56_recipe_011",
+      "source_candidate_edge": "G-BT12-062TH->G-BT12-065TH",
+      "source_edge_rank": 57,
+      "anchor_card_id": "G-BT12-062TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "2": {
+              "expected": 11,
+              "actual": 10
+            },
+            "3": {
+              "expected": 8,
+              "actual": 10
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M56-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT09-014TH",
+              "G-BT09-026TH",
+              "G-BT09-027TH",
+              "G-BT09-028TH",
+              "G-BT09-029TH",
+              "G-BT09-059TH",
+              "G-BT09-064TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 14,
+          "2": 10,
+          "3": 10
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "ชาโดว์ พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    },
+    {
+      "recipe_id": "m56_recipe_012",
+      "source_candidate_edge": "G-BT12-062TH->G-TD10-010TH",
+      "source_edge_rank": 59,
+      "anchor_card_id": "G-BT12-062TH",
+      "review_status": "advisory_pair_draft_manual_card_overlap",
+      "validation_status": "blocked_by_manual_review",
+      "blocking_issue_count": 1,
+      "issues": [
+        {
+          "code": "grade_profile_review",
+          "severity": "review",
+          "message": "Grade profile differs from advisory target.",
+          "details": {
+            "0": {
+              "expected": 17,
+              "actual": 16
+            },
+            "2": {
+              "expected": 11,
+              "actual": 10
+            },
+            "3": {
+              "expected": 8,
+              "actual": 10
+            }
+          }
+        },
+        {
+          "code": "manual_review_card_overlap",
+          "severity": "blocker",
+          "message": "Recipe contains cards that M56-02 marked as manual-review required.",
+          "details": {
+            "card_ids": [
+              "G-BT09-014TH",
+              "G-BT09-026TH",
+              "G-BT09-027TH",
+              "G-BT09-028TH",
+              "G-BT09-029TH",
+              "G-BT09-059TH",
+              "G-BT09-064TH"
+            ]
+          }
+        },
+        {
+          "code": "g_zone_support_deferred",
+          "severity": "review",
+          "message": "G Zone support is deferred; this draft can only validate main-deck quantities.",
+          "details": {}
+        },
+        {
+          "code": "human_recipe_selection_pending",
+          "severity": "review",
+          "message": "Recipe is advisory until a human/team selects it for repair or promotion.",
+          "details": {}
+        }
+      ],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 16,
+          "1": 14,
+          "2": 10,
+          "3": 10
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "ชาโดว์ พาลาดิน": 50
+        }
+      },
+      "runtime_ready": false
+    }
+  ],
+  "next_target": {
+    "milestone": "M56-05",
+    "task": "Sixth-slice combo-to-recipe consistency"
+  }
+}

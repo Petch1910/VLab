@@ -1,0 +1,415 @@
+{
+  "version": "M38-02",
+  "description": "Grade profile repair candidates for accepted seed recipe",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "deck_recipe_draft_model": "outputs\\target_slice\\m36_02_deck_recipe_draft_model.json",
+    "trigger_package_repair_proposal": "outputs\\target_slice\\m37_02_trigger_package_repair_proposal.json",
+    "revised_recipe_validation_rerun": "outputs\\target_slice\\m37_05_revised_recipe_validation_rerun.json",
+    "accepted_seed_human_review_packet": "outputs\\target_slice\\m38_01_accepted_seed_human_review_packet.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "scope": {
+    "offline_grade_profile_candidates": true,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_deck": false,
+    "records_human_acceptance": false,
+    "bot_integration": false,
+    "live_card_text_parsing": false
+  },
+  "grade_profile_policy": {
+    "target_grade_counts": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "source_backed_candidates": true,
+    "substitution_only": true,
+    "runtime_promotion_allowed": false
+  },
+  "current_profile": {
+    "recipe_id": "recipe_003",
+    "grade_counts": {
+      "3": 28,
+      "2": 6,
+      "0": 16
+    },
+    "deficits": {
+      "0": 1,
+      "1": 14,
+      "2": 5,
+      "3": 0
+    },
+    "surpluses": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 20
+    },
+    "review_codes": [
+      "grade_profile_review",
+      "human_acceptance_pending"
+    ],
+    "human_review_packet_ready": true
+  },
+  "repair_candidates": [
+    {
+      "package_id": "m38_02_grade_pkg_001",
+      "title": "Classic target profile repair",
+      "advisory_only": true,
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "current_grade_counts": {
+        "3": 28,
+        "2": 6,
+        "0": 16
+      },
+      "additions": [
+        {
+          "card_id": "BT01-063TH",
+          "name_th": "ไชนิ่ง เลดี้",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "BT01",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 1,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "TD03-007TH",
+          "name_th": "ทอชบอย",
+          "quantity": 4,
+          "grade": "1",
+          "series_code": "TD03",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT01-060TH",
+          "name_th": "ทอชบอย",
+          "quantity": 4,
+          "grade": "1",
+          "series_code": "BT01",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB04-022TH",
+          "name_th": "ทอชบอย",
+          "quantity": 4,
+          "grade": "1",
+          "series_code": "EB04",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "TD03-008TH",
+          "name_th": "โอเอซิส เกิร์ล",
+          "quantity": 2,
+          "grade": "1",
+          "series_code": "TD03",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 2,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT01-029TH",
+          "name_th": "บลูทัล แจ็ค",
+          "quantity": 4,
+          "grade": "2",
+          "series_code": "BT01",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB04-011TH",
+          "name_th": "เจโนไซด์ แจ็ค",
+          "quantity": 1,
+          "grade": "2",
+          "series_code": "EB04",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 1,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "removals": [
+        {
+          "card_id": "TD03-001TH",
+          "name_th": "โกลด์ รูไทล์",
+          "quantity": 3,
+          "grade": "3",
+          "series_code": "TD03",
+          "source": "m36_02_deck_recipe_draft_model"
+        },
+        {
+          "card_id": "BT01-028TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "quantity": 3,
+          "grade": "3",
+          "series_code": "BT01",
+          "source": "m36_02_deck_recipe_draft_model"
+        },
+        {
+          "card_id": "BT04-008TH",
+          "name_th": "สเทิร์น เบลาคลูเกอร์",
+          "quantity": 3,
+          "grade": "3",
+          "series_code": "BT04",
+          "source": "m36_02_deck_recipe_draft_model"
+        },
+        {
+          "card_id": "BT09-004TH",
+          "name_th": "สัตว์เทวะขั้นสุดยอด,อิลลูมินัล ดราก้อน",
+          "quantity": 3,
+          "grade": "3",
+          "series_code": "BT09",
+          "source": "m36_02_deck_recipe_draft_model"
+        },
+        {
+          "card_id": "EB04-002TH",
+          "name_th": "สุดยอดร่างกัดกร่อนไร้ที่สิ้นสุด,เดทอาร์มี่ คอสโม่ลอร์ด",
+          "quantity": 3,
+          "grade": "3",
+          "series_code": "EB04",
+          "source": "m36_02_deck_recipe_draft_model"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "name_th": "โกลด์ รูไทล์",
+          "quantity": 3,
+          "grade": "3",
+          "series_code": "EB04",
+          "source": "m36_02_deck_recipe_draft_model"
+        },
+        {
+          "card_id": "EB04-010TH",
+          "name_th": "เดทเมทัล ดรอยด์",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB04",
+          "source": "m36_02_deck_recipe_draft_model"
+        }
+      ],
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "added_card_count": 20,
+      "removed_card_count": 20,
+      "net_card_count_change": 0,
+      "completion_status": "complete_candidate",
+      "runtime_promotion_allowed": false
+    },
+    {
+      "package_id": "m38_02_grade_pkg_002",
+      "title": "EB04-local target profile repair",
+      "advisory_only": true,
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "current_grade_counts": {
+        "3": 28,
+        "2": 6,
+        "0": 16
+      },
+      "additions": [
+        {
+          "card_id": "EB04-027TH",
+          "name_th": "สัตว์เทวะ,ไวท์ ไทเกอร์",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB04",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 1,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB04-022TH",
+          "name_th": "ทอชบอย",
+          "quantity": 4,
+          "grade": "1",
+          "series_code": "EB04",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB04-006TH",
+          "name_th": "เดทอาร์มี่ บิชอป",
+          "quantity": 4,
+          "grade": "1",
+          "series_code": "EB04",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB04-015TH",
+          "name_th": "เดทอาร์มี่ กาย",
+          "quantity": 4,
+          "grade": "1",
+          "series_code": "EB04",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB04-023TH",
+          "name_th": "โอเอซิส เกิร์ล",
+          "quantity": 2,
+          "grade": "1",
+          "series_code": "EB04",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 2,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB04-011TH",
+          "name_th": "เจโนไซด์ แจ็ค",
+          "quantity": 4,
+          "grade": "2",
+          "series_code": "EB04",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB04-018TH",
+          "name_th": "เดทอาร์มี่ รุค",
+          "quantity": 1,
+          "grade": "2",
+          "series_code": "EB04",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 1,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "removals": [
+        {
+          "card_id": "TD03-001TH",
+          "name_th": "โกลด์ รูไทล์",
+          "quantity": 3,
+          "grade": "3",
+          "series_code": "TD03",
+          "source": "m36_02_deck_recipe_draft_model"
+        },
+        {
+          "card_id": "BT01-028TH",
+          "name_th": "Mr. อินวิซิเบิ้ล",
+          "quantity": 3,
+          "grade": "3",
+          "series_code": "BT01",
+          "source": "m36_02_deck_recipe_draft_model"
+        },
+        {
+          "card_id": "BT04-008TH",
+          "name_th": "สเทิร์น เบลาคลูเกอร์",
+          "quantity": 3,
+          "grade": "3",
+          "series_code": "BT04",
+          "source": "m36_02_deck_recipe_draft_model"
+        },
+        {
+          "card_id": "BT09-004TH",
+          "name_th": "สัตว์เทวะขั้นสุดยอด,อิลลูมินัล ดราก้อน",
+          "quantity": 3,
+          "grade": "3",
+          "series_code": "BT09",
+          "source": "m36_02_deck_recipe_draft_model"
+        },
+        {
+          "card_id": "EB04-002TH",
+          "name_th": "สุดยอดร่างกัดกร่อนไร้ที่สิ้นสุด,เดทอาร์มี่ คอสโม่ลอร์ด",
+          "quantity": 3,
+          "grade": "3",
+          "series_code": "EB04",
+          "source": "m36_02_deck_recipe_draft_model"
+        },
+        {
+          "card_id": "EB04-008TH",
+          "name_th": "โกลด์ รูไทล์",
+          "quantity": 3,
+          "grade": "3",
+          "series_code": "EB04",
+          "source": "m36_02_deck_recipe_draft_model"
+        },
+        {
+          "card_id": "EB04-010TH",
+          "name_th": "เดทเมทัล ดรอยด์",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "EB04",
+          "source": "m36_02_deck_recipe_draft_model"
+        }
+      ],
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "added_card_count": 20,
+      "removed_card_count": 20,
+      "net_card_count_change": 0,
+      "completion_status": "complete_candidate",
+      "runtime_promotion_allowed": false
+    }
+  ],
+  "summary": {
+    "recipe_id": "recipe_003",
+    "repair_candidate_count": 2,
+    "complete_candidate_count": 2,
+    "grade_deficit_total": 20,
+    "grade_surplus_total": 20,
+    "runtime_promotion_allowed": false,
+    "ready_for_m38_03": true
+  },
+  "next_target": {
+    "milestone": "M38-03",
+    "task": "Human-accepted recipe artifact"
+  }
+}

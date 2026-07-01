@@ -1,0 +1,295 @@
+{
+  "version": "M49-05",
+  "description": "Fourth-slice runtime fixture gate",
+  "source_inputs": {
+    "human_accepted_repair_artifact": "outputs\\target_slice\\m49_03_fourth_slice_human_accepted_repair_artifact.json",
+    "repaired_recipe_validation": "outputs\\target_slice\\m49_04_fourth_slice_repaired_recipe_validation_report.json"
+  },
+  "scope": {
+    "offline_promotion_gate": true,
+    "creates_runtime_test_fixture_artifact": true,
+    "mutates_runtime_deck_library": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_integration": false,
+    "automatic_playbook_promotion": false,
+    "live_card_text_parsing": false,
+    "GameState_mutation": false,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false
+  },
+  "gate_policy": {
+    "requires_human_acceptance": true,
+    "requires_main_deck_only_g_zone_boundary": true,
+    "requires_validation_pass": true,
+    "requires_grade_profile_clear": true,
+    "requires_combo_pair_consistency": true,
+    "requires_manual_review_cleared_after_repair": true,
+    "requires_combined_repair_integrity": true,
+    "fixture_only_not_live_deck": true,
+    "g_zone_runtime_must_remain_disabled": true,
+    "stride_runtime_must_remain_disabled": true
+  },
+  "gate_checks": [
+    {
+      "check_id": "human_acceptance",
+      "passed": true,
+      "evidence": {
+        "decision": "accepted",
+        "accepted_review_item_id": "m49_01_m48_recipe_001_repair_review",
+        "accepted_combined_repair_package_id": "m48_recipe_001_combined_manual_grade_pkg_001"
+      }
+    },
+    {
+      "check_id": "g_zone_boundary",
+      "passed": true,
+      "evidence": {
+        "selected_option_id": "main_deck_only_for_current_windows_fixture",
+        "main_deck_only_validation_allowed": true,
+        "g_zone_runtime_enabled": false,
+        "stride_runtime_enabled": false,
+        "grade4_main_deck_allowed": false,
+        "g_units_allowed_in_main_deck": false
+      }
+    },
+    {
+      "check_id": "validation",
+      "passed": true,
+      "evidence": {
+        "validation_status": "validator_passed",
+        "runtime_ready": true,
+        "blocking_issue_count": 0,
+        "main_deck_count": 50,
+        "trigger_count": 16,
+        "ready_for_m49_05": true
+      }
+    },
+    {
+      "check_id": "grade_profile_review",
+      "passed": true,
+      "evidence": {
+        "grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0
+      }
+    },
+    {
+      "check_id": "combo_pair_consistency",
+      "passed": true,
+      "evidence": {
+        "required_pair_card_ids": [
+          "G-CMB01-003TH",
+          "G-TD02-004TH"
+        ],
+        "missing_pair_card_ids": [],
+        "pair_cards_present": true
+      }
+    },
+    {
+      "check_id": "manual_review_cleared_after_repair",
+      "passed": true,
+      "evidence": {
+        "manual_review_overlap_recipe_count": 0,
+        "issue_codes": []
+      }
+    },
+    {
+      "check_id": "combined_repair_integrity",
+      "passed": true,
+      "evidence": {
+        "ready_for_m49_04": true,
+        "repair_application_issue_count": 0,
+        "combined_grade_repair_recomputed": true,
+        "source_grade_package_conflict_count": 0,
+        "grade_counts_after_repair": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        }
+      }
+    },
+    {
+      "check_id": "runtime_boundary",
+      "passed": true,
+      "evidence": {
+        "accepted_creates_runtime_fixture": false,
+        "accepted_saved_deck_injection": false,
+        "accepted_ui_deck_list_publication": false,
+        "accepted_bot_playbook": false,
+        "accepted_direct_GameState_mutation": false,
+        "accepted_g_zone_runtime_enabled": false,
+        "accepted_stride_runtime_enabled": false,
+        "validation_creates_runtime_fixture": false,
+        "validation_saved_deck_injection": false,
+        "validation_ui_deck_list_publication": false,
+        "validation_bot_playbook": false,
+        "validation_direct_GameState_mutation": false,
+        "validation_g_zone_runtime_enabled": false,
+        "validation_stride_runtime_enabled": false
+      }
+    }
+  ],
+  "promotion_decision": {
+    "promotion_allowed": true,
+    "fixture_created": true,
+    "fixture_path": "outputs/target_slice/runtime_fixtures/m48_recipe_001_g_series_first_royal_paladin_m49_05.json",
+    "runtime_deck_library_mutated": false,
+    "saved_deck_injected": false,
+    "ui_deck_list_published": false,
+    "bot_playbook_enabled": false,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "next_action": "M49-closeout"
+  },
+  "runtime_fixture": {
+    "schema_version": "deck_recipe_runtime_fixture_v1",
+    "fixture_id": "runtime_fixture_m48_recipe_001_g_series_first_royal_paladin_m49_05",
+    "fixture_scope": "offline_runtime_test_fixture",
+    "recipe_id": "m48_recipe_001",
+    "source_artifact": "outputs/target_slice/m49_03_fourth_slice_human_accepted_repair_artifact.json",
+    "selected_target": {
+      "slice": "Fourth Offline Slice",
+      "era_preset": "g_series_first",
+      "group": "รอยัล พาลาดิน",
+      "group_field": "clan",
+      "rank": 2,
+      "priority_score": 86.19,
+      "best_era_candidates": 1024,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "rich_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    "format_policy": {
+      "slice": "Fourth Offline Slice",
+      "era_preset": "g_series_first",
+      "group": "รอยัล พาลาดิน",
+      "group_field": "clan",
+      "g_zone_boundary": "main_deck_only_for_current_windows_fixture"
+    },
+    "main_deck": [
+      {
+        "card_id": "G-BT01-010TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "G-BT01-011TH",
+        "quantity": 3
+      },
+      {
+        "card_id": "G-BT01-023TH",
+        "quantity": 3
+      },
+      {
+        "card_id": "G-BT01-045TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "G-BT01-046TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "G-BT01-047TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "G-BT01-048TH",
+        "quantity": 3
+      },
+      {
+        "card_id": "G-BT01-049TH",
+        "quantity": 1
+      },
+      {
+        "card_id": "G-BT01-050TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "G-BT01-051TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "G-BT14-016TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "G-CHB01-050TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "G-CMB01-003TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "G-TD02-004TH",
+        "quantity": 4
+      }
+    ],
+    "count_summary": {
+      "main_deck_count": 50,
+      "trigger_count": 16,
+      "trigger_counts": {
+        "Critical": 4,
+        "Draw": 4,
+        "Heal": 4,
+        "Stand": 4
+      },
+      "grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade4_main_deck_count": 0,
+      "clan_counts": {
+        "รอยัล พาลาดิน": 50
+      }
+    },
+    "source_packages": {
+      "manual_repair_package_id": "m48_recipe_001_manual_overlap_pkg_001",
+      "source_grade_profile_package_id": "m48_recipe_001_grade_profile_pkg_001",
+      "combined_repair_package_id": "m48_recipe_001_combined_manual_grade_pkg_001",
+      "g_zone_decision_item_id": "m49_02_m48_recipe_001_g_zone_boundary_decision"
+    },
+    "g_zone_boundary": {
+      "selected_option_id": "main_deck_only_for_current_windows_fixture",
+      "main_deck_only_validation_allowed": true,
+      "g_zone_runtime_enabled": false,
+      "stride_runtime_enabled": false,
+      "grade4_main_deck_allowed": false,
+      "g_units_allowed_in_main_deck": false
+    },
+    "runtime_boundaries": {
+      "test_fixture_only": true,
+      "auto_injected_into_player_decks": false,
+      "bot_playbook_enabled": false,
+      "ui_deck_library_mutated": false,
+      "game_state_mutated": false,
+      "g_zone_runtime_enabled": false,
+      "stride_runtime_enabled": false
+    }
+  },
+  "summary": {
+    "recipe_id": "m48_recipe_001",
+    "promotion_allowed": true,
+    "passed_check_count": 8,
+    "failed_check_count": 0,
+    "fixture_created": true,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "ready_for_m49_closeout": true
+  },
+  "next_target": {
+    "milestone": "M49-closeout",
+    "task": "Fourth-slice fixture closeout"
+  }
+}

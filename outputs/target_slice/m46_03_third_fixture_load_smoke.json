@@ -1,0 +1,62 @@
+{
+  "version": "M46-03",
+  "description": "Third fixture headless load smoke",
+  "source_inputs": {
+    "runtime_fixture": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\runtime_fixtures\\m44_recipe_001_link_joker_legion_bermuda_triangle_m45_04.json",
+    "m46_02_report": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m46_02_third_fixture_deck_text_export.json",
+    "deck_text": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m46_02_third_fixture_deck_text_export.txt",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "scope": {
+    "offline_headless_fixture_load_smoke": true,
+    "third_fixture_headless_load_smoke": true,
+    "creates_deck_code_artifact": true,
+    "mutates_saved_decks": false,
+    "mutates_ui_deck_library": false,
+    "bot_integration": false,
+    "GameState_mutation_from_python": false
+  },
+  "fixture_summary": {
+    "fixture_id": "runtime_fixture_m44_recipe_001_link_joker_legion_bermuda_triangle_m45_04",
+    "recipe_id": "m44_recipe_001",
+    "main_deck_count": 50,
+    "unique_card_count": 15
+  },
+  "headless_request": {
+    "seed": 4603,
+    "ruleset": "Premium",
+    "deck_code_path": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m46_03_third_fixture_deck_code.txt",
+    "deck_code_sha256": "a62e7d364ba5f1c5e319d8dc2326102275ea07ee44152c056c9663343fe7edf5",
+    "deck_code_prefix": "VGTH1.H4sIAAAAAA",
+    "deck_code_length": 385,
+    "unity_result_path": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m46_03_third_fixture_unity_result.json",
+    "unity_replay_path": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m46_03_third_fixture_unity_replay.json"
+  },
+  "unity_headless_result": {
+    "provided": true,
+    "accepted": true,
+    "result_path": "outputs\\target_slice\\m46_03_third_fixture_unity_result.json",
+    "replay_path": "outputs\\target_slice\\m46_03_third_fixture_unity_replay.json",
+    "replay_exists": true,
+    "seed": 4603,
+    "ruleset": "Premium",
+    "deck_source": "deck_code",
+    "actions_executed": 4,
+    "event_count": 4,
+    "failure_reason": ""
+  },
+  "issues": [],
+  "summary": {
+    "offline_load_ready": true,
+    "deck_code_created": true,
+    "unity_headless_result_provided": true,
+    "unity_headless_smoke_passed": true,
+    "blocking_issue_count": 0,
+    "issue_count": 0,
+    "ready_for_m46_04": true
+  },
+  "next_target": {
+    "milestone": "M46-04",
+    "task": "Multi-fixture scale decision"
+  }
+}

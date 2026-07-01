@@ -1,0 +1,218 @@
+{
+  "version": "M35-E1",
+  "description": "Second target slice selection after the first reviewed playbook seed export",
+  "selection_policy": {
+    "preferred_slice": "classic_core",
+    "reason": "Continue the current user/team Classic Core clan-era deck/combo scope before broad format scale-out. Exclude first-slice groups that already closed through M35-D4, then choose the highest-ranked feasible M34-03 candidate in the same era preset.",
+    "source_priority": "M34-03 archetype priority ranking",
+    "excluded_completed_groups": [
+      "โนว่า เกรปเปอร์"
+    ],
+    "do_not_assume_standard_by_default": true,
+    "no_runtime_or_bot_promotion": true
+  },
+  "previous_target": {
+    "version": "M35-A2",
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "rank": 5,
+    "priority_score": 73.34,
+    "d4_seed_entries": 1,
+    "d4_rejected_lines": 24
+  },
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โอราเคิล ทิงค์ แทงค์",
+    "group_field": "clan",
+    "rank": 10,
+    "priority_score": 63.74,
+    "best_era_candidates": 875,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "MEDIUM_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool"
+    ]
+  },
+  "candidate_summary": [
+    {
+      "rank": 10,
+      "group": "โอราเคิล ทิงค์ แทงค์",
+      "priority_score": 63.74,
+      "best_era": "classic_part1",
+      "best_era_candidates": 875,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool"
+      ]
+    },
+    {
+      "rank": 15,
+      "group": "เกรท เนเจอร์",
+      "priority_score": 53.06,
+      "best_era": "classic_part1",
+      "best_era_candidates": 568,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool"
+      ]
+    },
+    {
+      "rank": 16,
+      "group": "ไดเมนชั่น โพลิส",
+      "priority_score": 52.73,
+      "best_era": "classic_part1",
+      "best_era_candidates": 234,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool"
+      ]
+    },
+    {
+      "rank": 22,
+      "group": "ทาจิคาเสะ",
+      "priority_score": 49.33,
+      "best_era": "classic_part1",
+      "best_era_candidates": 224,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool"
+      ]
+    }
+  ],
+  "input_evidence": {
+    "archetype_priority": "outputs\\archetype_priority\\archetype_priority_ranking.json",
+    "first_target_slice": "outputs\\target_slice\\m35_a2_first_target_slice_report.json",
+    "first_slice_closeout": "outputs\\target_slice\\m35_d4_first_slice_reviewed_playbook_seed.json",
+    "deck_possibility": "outputs\\deck_possibility\\classic_part1_deck_possibility.json",
+    "missing_set_codes": []
+  },
+  "format_policy": {
+    "policy_level": "m35_a2_minimal_source_backed_policy_not_full_official_legality",
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "set_specs": [
+      "TD01-TD06",
+      "BT01-BT09",
+      "EB01-EB05"
+    ],
+    "set_codes": [
+      "TD01",
+      "TD02",
+      "TD03",
+      "TD04",
+      "TD05",
+      "TD06",
+      "BT01",
+      "BT02",
+      "BT03",
+      "BT04",
+      "BT05",
+      "BT06",
+      "BT07",
+      "BT08",
+      "BT09",
+      "EB01",
+      "EB02",
+      "EB03",
+      "EB04",
+      "EB05"
+    ],
+    "baseline_rules_source": "outputs/research_2026_06_29_new_chat/vanguard_rules_markdown/versions/01_og_link_joker_rules_1_19.md",
+    "baseline_rules_note": "Use the historical 1.19 rules snapshot as the first fixture source for early clan-era play, then confirm any card-specific behavior against the source map before promoting fixtures.",
+    "group_identity": {
+      "field": "clan",
+      "selected_group": "โอราเคิล ทิงค์ แทงค์",
+      "selected_group_field": "clan"
+    },
+    "deck_limits_for_next_fixtures": {
+      "main_deck_exact": 50,
+      "trigger_target": 16,
+      "non_trigger_target": 34,
+      "ride_grade_0_1_2_3_choices_required_for_setup": true,
+      "ride_deck_required": false,
+      "g_zone_required": false,
+      "g_zone_max_for_first_slice": 0,
+      "repository_backed_copy_limits": "defer_to_M35_A3_fixtures",
+      "heal_trigger_limit": "defer_to_M35_A3_source_backed_fixture"
+    },
+    "current_count_evidence": {
+      "card_count": 103,
+      "main_card_count": 103,
+      "trigger_card_count": 16,
+      "non_trigger_card_count": 87,
+      "main_capacity": 412,
+      "trigger_capacity": 64,
+      "non_trigger_capacity": 348,
+      "grade_unique_count": {
+        "0": 22,
+        "1": 32,
+        "2": 27,
+        "3": 22,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 20,
+        "Draw": 20,
+        "Heal": 16,
+        "Stand": 8
+      },
+      "basic_50_card_main": true,
+      "main_with_16_triggers_34_non_triggers": true,
+      "ride_deck_grade_0_1_2_3_choice": true,
+      "issues": []
+    },
+    "unsupported_in_first_slice": [
+      "Legion/D-Legion",
+      "Stride and Becoming a Heart",
+      "G Guardian",
+      "Imaginary Gift",
+      "Front Trigger",
+      "Ride Deck Zone",
+      "Persona Ride",
+      "Over Trigger",
+      "Order Area",
+      "Order Zone",
+      "Gauge Zone",
+      "Crest Zone",
+      "Energy-charge",
+      "Energy-blast",
+      "overDress",
+      "XoverDress",
+      "Divine Skill"
+    ]
+  },
+  "runtime_boundary": {
+    "advisory_selection_only": true,
+    "does_not_create_deck": true,
+    "does_not_mutate_runtime_pack": true,
+    "does_not_publish_to_bot": true,
+    "requires_m35_e2_fixture_or_slice_refresh_before_semantic_scaleout": true
+  },
+  "next_target": {
+    "milestone": "M35-E2",
+    "task": "Second-slice fixture/format readiness check before semantic scale-out",
+    "must_create": [
+      "selected second-slice source-backed deck fixture",
+      "selected second-slice failing trigger/count fixtures",
+      "decision on reusing Classic Core policy or adding new format/mechanic fixtures",
+      "no promotion to bot/runtime until the second slice repeats B-D gates or an explicit shortcut is approved"
+    ]
+  }
+}

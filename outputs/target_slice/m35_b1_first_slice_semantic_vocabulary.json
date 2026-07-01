@@ -1,0 +1,180 @@
+{
+  "version": "M35-B1",
+  "description": "Semantic vocabulary for selected Classic Core first slice",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "feasibility_refresh": "outputs\\target_slice\\m35_a4_first_slice_feasibility_refresh.json",
+    "rule_taxonomy": "outputs\\research_2026_06_29_new_chat\\vanguard_development\\rule_taxonomy.json"
+  },
+  "scope": {
+    "advisory_only": true,
+    "runtime_effect_execution": false,
+    "live_card_text_parser": false,
+    "selected_slice_only": true,
+    "notes": [
+      "Use these tags as the allowed vocabulary for M35-B2 offline extraction.",
+      "Unsupported mechanics are excluded from the first slice instead of generalized."
+    ]
+  },
+  "vocabulary": {
+    "ability_types": [
+      "ACT",
+      "AUTO",
+      "CONT"
+    ],
+    "zones": [
+      "deck",
+      "hand",
+      "drop",
+      "field",
+      "vanguard_circle",
+      "rear_guard_circle",
+      "guardian_circle",
+      "soul",
+      "damage",
+      "trigger_zone"
+    ],
+    "timing": [
+      "stand_phase",
+      "draw_phase",
+      "ride_phase",
+      "main_phase",
+      "battle_phase_start",
+      "attack_step",
+      "guard_step",
+      "drive_step",
+      "damage_step",
+      "close_step",
+      "end_phase",
+      "on_place",
+      "on_ride",
+      "on_call",
+      "on_attack",
+      "when_attack_hits",
+      "when_boosts",
+      "when_revealed_as_trigger"
+    ],
+    "conditions": [
+      "if_vanguard",
+      "if_rear_guard",
+      "if_boosted",
+      "if_attack_hits",
+      "if_limit_break_4",
+      "if_counter_blast_available",
+      "if_soul_available",
+      "if_same_clan",
+      "if_opponent_vanguard",
+      "if_unit_stand",
+      "if_unit_rest",
+      "if_grade_requirement"
+    ],
+    "costs": [
+      "counter_blast",
+      "soul_blast",
+      "discard",
+      "rest_this_unit",
+      "retire_this_unit",
+      "put_to_soul",
+      "no_cost"
+    ],
+    "effects": [
+      "power_plus",
+      "critical_plus",
+      "stand_unit",
+      "draw",
+      "search_deck",
+      "superior_call",
+      "retire",
+      "counter_charge",
+      "soul_charge",
+      "move_to_soul",
+      "guard_restrict",
+      "sentinel_guard",
+      "shuffle_deck"
+    ],
+    "durations": [
+      "one_shot",
+      "until_end_of_turn",
+      "during_battle",
+      "continuous_while_condition",
+      "until_end_of_that_battle"
+    ],
+    "mechanic_groups": [
+      "core",
+      "classic_keyword",
+      "limit_break",
+      "forerunner",
+      "sentinel",
+      "trigger_icon"
+    ],
+    "trigger_icons": [
+      "critical",
+      "draw",
+      "stand",
+      "heal"
+    ]
+  },
+  "excluded_first_slice_tags": [
+    "legion",
+    "stride",
+    "g_guardian",
+    "imaginary_gift",
+    "front_trigger",
+    "over_trigger",
+    "ride_deck",
+    "order",
+    "gauge",
+    "crest",
+    "energy",
+    "overdress",
+    "xoverdress",
+    "divine_skill"
+  ],
+  "source_term_checks": {
+    "ability_types": {
+      "ACT": true,
+      "AUTO": true,
+      "CONT": true
+    },
+    "core_zones": {
+      "Deck Zone": true,
+      "Vanguard Circle": true,
+      "Rear-guard Circle": true,
+      "Guardian Circle": true,
+      "Soul": true,
+      "Trigger Zone": true
+    },
+    "classic_keywords": {
+      "Limit Break": true,
+      "Forerunner": true,
+      "Sentinel": true,
+      "Boost": true,
+      "Intercept": true
+    },
+    "classic_triggers": {
+      "Critical": true,
+      "Draw": true,
+      "Stand": true,
+      "Heal": true
+    }
+  },
+  "missing_source_terms": [],
+  "ready_for_m35_b2": true,
+  "next_target": "M35-B2"
+}

@@ -1,0 +1,826 @@
+[
+  {
+    "series": "[BT01] VG-BT01 : Descent of the King of Knights",
+    "count": 79
+  },
+  {
+    "series": "[BT02] VG-BT02 : Onslaught of Dragon Souls",
+    "count": 80
+  },
+  {
+    "series": "[BT03] VG-BT03 : Demonic Lord Invasion",
+    "count": 80
+  },
+  {
+    "series": "[BT04] VG-BT04 : Eclipse of Illusionary Shadows",
+    "count": 80
+  },
+  {
+    "series": "[BT05] VG-BT05 : Awakening of Twin Blades",
+    "count": 80
+  },
+  {
+    "series": "[BT06] VG-BT06 : Breaker of Limits",
+    "count": 102
+  },
+  {
+    "series": "[BT07] VG-BT07 : Rampage of the Beast King",
+    "count": 102
+  },
+  {
+    "series": "[BT08] VG-BT08 : Blue Storm Armada",
+    "count": 102
+  },
+  {
+    "series": "[BT09] VG-BT09 : Clash of the Knights & Dragons",
+    "count": 102
+  },
+  {
+    "series": "[BT10] VG-BT10 : Triumphant Return of the King of Knights",
+    "count": 102
+  },
+  {
+    "series": "[BT11] VG-BT11 : Seal Dragons Unleashed",
+    "count": 114
+  },
+  {
+    "series": "[BT12] VG-BT12 : Binding Force of the Black Rings",
+    "count": 113
+  },
+  {
+    "series": "[BT13] VG-BT13 : Catastrophic Outbreak",
+    "count": 114
+  },
+  {
+    "series": "[BT14] VG-BT14 : Brilliant Strike",
+    "count": 112
+  },
+  {
+    "series": "[BT15] VG-BT15 : Infinite Rebirth",
+    "count": 115
+  },
+  {
+    "series": "[BT16] VG-BT16 : Legion of Dragons & Blades",
+    "count": 102
+  },
+  {
+    "series": "[BT17] VG-BT17 : Blazing Perdition",
+    "count": 102
+  },
+  {
+    "series": "[CH-TD01] VG-CH-TD01 : Cyber Heroes Trial Deck 1",
+    "count": 15
+  },
+  {
+    "series": "[CH-TD02] VG-CH-TD02 : Cyber Heroes Trial Deck 2",
+    "count": 15
+  },
+  {
+    "series": "[CH-TD03] VG-CH-TD03 : Cyber Heroes Trial Deck 3",
+    "count": 15
+  },
+  {
+    "series": "[CH-TD04] VG-CH-TD04 : Cyber Heroes Trial Deck 4",
+    "count": 15
+  },
+  {
+    "series": "[D-BT01] D Booster Set 01: Genesis of the Five Greats",
+    "count": 121
+  },
+  {
+    "series": "[D-BT02] D Booster Set 02: A Brush with the Legends",
+    "count": 120
+  },
+  {
+    "series": "[D-BT03] D Booster Set 03: Advance of Intertwined Stars",
+    "count": 120
+  },
+  {
+    "series": "[D-BT04] D Booster Set 04: Awakening of Chakrabarthi",
+    "count": 120
+  },
+  {
+    "series": "[D-BT05] D Booster Set 05: Triumphant Return of the Brave Heroes",
+    "count": 92
+  },
+  {
+    "series": "[D-BT06] D Booster Set 06: Blazing Dragon Reborn",
+    "count": 105
+  },
+  {
+    "series": "[D-BT07] D Booster Set 07: Raging Flames Against Emerald Storm",
+    "count": 90
+  },
+  {
+    "series": "[D-BT08] D Booster Set 08: Minerva Rising",
+    "count": 93
+  },
+  {
+    "series": "[D-BT09] D Booster Set 09: Dragontree Invasion",
+    "count": 103
+  },
+  {
+    "series": "[D-BT10] D Booster Set 10: Dragon Masquerade",
+    "count": 97
+  },
+  {
+    "series": "[D-LBT01] D Lyrical Booster Set 01: Lyrical Melody",
+    "count": 120
+  },
+  {
+    "series": "[D-LBT02] D Lyrical Booster Set 02: Lyrical Monasterio ~It's a New School Term!~",
+    "count": 80
+  },
+  {
+    "series": "[D-LBT03] D Lyrical Booster Set 03: Lyrical Monasterio ~Summertime Memories!~",
+    "count": 108
+  },
+  {
+    "series": "[D-LTD01] D Lyrical Trial Deck 01: Ahoy! Lyrical Monasterio!",
+    "count": 15
+  },
+  {
+    "series": "[D-MBT01] D Masked Rider Booster Pack 01 : Walk the path of Science and Heaven",
+    "count": 40
+  },
+  {
+    "series": "[D-MTD01] D Masked Rider Trial Deck 01 : Masked Rider Kabuto",
+    "count": 17
+  },
+  {
+    "series": "[D-MTD02] D Masked Rider Trial Deck 02 : Masked Rider Build",
+    "count": 27
+  },
+  {
+    "series": "[D-MTD03] D Masked Rider Trial Deck 03 : Masked Rider Ryuki",
+    "count": 17
+  },
+  {
+    "series": "[D-SD01] D Start Deck 01: Yu-yu Kondo -Holy Dragon-",
+    "count": 15
+  },
+  {
+    "series": "[D-SD02] D Start Deck 02: Danji Momoyama -Tyrant Tiger-",
+    "count": 15
+  },
+  {
+    "series": "[D-SD03] D Start Deck 03: Tohya Ebata -Apex Ruler-",
+    "count": 15
+  },
+  {
+    "series": "[D-SD04] D Start Deck 04: Megumi Okura -Sylvan King-",
+    "count": 15
+  },
+  {
+    "series": "[D-SD05] D Start Deck 05: Tomari Seto -Aurora Valkyrie-",
+    "count": 15
+  },
+  {
+    "series": "[D-SD06] D Start Deck 06: Mirei Minae -Sealed Blaze Maiden-",
+    "count": 15
+  },
+  {
+    "series": "[D-SS01] D Special Series 01: Festival Collection 2021",
+    "count": 10
+  },
+  {
+    "series": "[D-SS03] D Special Series 03: Stride Deckset Chronojet",
+    "count": 19
+  },
+  {
+    "series": "[D-SS04] D Special Series 04: Stride Deckset Messiah",
+    "count": 19
+  },
+  {
+    "series": "[D-SS05] D Special Series 05: Festival Booster 2023",
+    "count": 95
+  },
+  {
+    "series": "[D-TD01] D Trial Deck 01: Urara Haneyama -Bandmaster of Blossoming Bonds-",
+    "count": 18
+  },
+  {
+    "series": "[D-TD02] D Trial Deck 02: Michiru Hazama -Demonic Jewel Dragon of the Four Flames-",
+    "count": 18
+  },
+  {
+    "series": "[D-TD03] D Trial Deck 03: Raika Koshiba -Skyfall Executors-",
+    "count": 18
+  },
+  {
+    "series": "[D-TPR] D-TH Promo Card",
+    "count": 122
+  },
+  {
+    "series": "[D-VS01] V Special Series 01: V CLAN COLLECTION Vol.1",
+    "count": 48
+  },
+  {
+    "series": "[D-VS02] V Special Series 02: V CLAN COLLECTION Vol.2",
+    "count": 48
+  },
+  {
+    "series": "[EB01] VG-EB01 : Comic Style Vol.1",
+    "count": 35
+  },
+  {
+    "series": "[EB02] VG-EB02 : Banquet of Divas",
+    "count": 35
+  },
+  {
+    "series": "[EB03] VG-EB03 : Cavalry of Black Steel",
+    "count": 35
+  },
+  {
+    "series": "[EB04] VG-EB04 : Infinite Phantom Legion",
+    "count": 35
+  },
+  {
+    "series": "[EB05] VG-EB05 : Celestial Valkyries",
+    "count": 35
+  },
+  {
+    "series": "[EB06] VG-EB06 : Dazzling Divas",
+    "count": 41
+  },
+  {
+    "series": "[EB07] VG-EB07 : Mystical Magus",
+    "count": 35
+  },
+  {
+    "series": "[EB08] VG-EB08 : Champions of the Cosmos",
+    "count": 35
+  },
+  {
+    "series": "[EB09] VG-EB09 : Divine Dragon Progression",
+    "count": 35
+  },
+  {
+    "series": "[EB10] VG-EB10 : Divas Duet",
+    "count": 86
+  },
+  {
+    "series": "[EB11] VG-EB11 : Requiem at Dusk",
+    "count": 35
+  },
+  {
+    "series": "[EB12] VG-EB12 : Waltz of the Goddess",
+    "count": 35
+  },
+  {
+    "series": "[FC01] VG-FC01 : Fighter's Collection 2013",
+    "count": 26
+  },
+  {
+    "series": "[G-BT01] VG-G-BT01:Generation Stride",
+    "count": 103
+  },
+  {
+    "series": "[G-BT02] VG-G-BT02 : Soaring Ascent of Gale & Blossom",
+    "count": 103
+  },
+  {
+    "series": "[G-BT03] VG-G-BT03 : Sovereign Star Dragon",
+    "count": 104
+  },
+  {
+    "series": "[G-BT04] VG-G-BT04 : Soul Strike Against The Supreme",
+    "count": 104
+  },
+  {
+    "series": "[G-BT05] VG-G-BT05 : Moonlit Dragonfang",
+    "count": 104
+  },
+  {
+    "series": "[G-BT06] VG-G-BT06 : Transcension of Blade and Blossom",
+    "count": 105
+  },
+  {
+    "series": "[G-BT07] VG-G-BT07 : Glorious Bravery of Radiant Sword",
+    "count": 104
+  },
+  {
+    "series": "[G-BT08] VG-G-BT08 : Absolute Judgment",
+    "count": 103
+  },
+  {
+    "series": "[G-BT09] VG-G-BT09 : Divine Dragon Caper",
+    "count": 104
+  },
+  {
+    "series": "[G-BT10] VG-G-BT10 : Swordfang Fierce Battle",
+    "count": 104
+  },
+  {
+    "series": "[G-BT11] VG-G-BT11 : Descent of the Rogue Deity",
+    "count": 104
+  },
+  {
+    "series": "[G-BT12] VG-G-BT12 : Dragon King's Awakening",
+    "count": 104
+  },
+  {
+    "series": "[G-BT13] VG-G-BT13 : Ultimate Stride",
+    "count": 110
+  },
+  {
+    "series": "[G-BT14] VG-G-BT14 : Divine Dragon Apocrypha",
+    "count": 101
+  },
+  {
+    "series": "[G-CB01] VG-G-CB01 : Academy of Divas",
+    "count": 46
+  },
+  {
+    "series": "[G-CB02] VG-G-CB02 : Commander of the Incessant Waves",
+    "count": 40
+  },
+  {
+    "series": "[G-CB03] VG-G-CB03: Blessing of Divas",
+    "count": 49
+  },
+  {
+    "series": "[G-CB04] VG-G-CB04 : Gear of Fate",
+    "count": 45
+  },
+  {
+    "series": "[G-CB05] VG-G-CB05 : Prismatic Divas",
+    "count": 64
+  },
+  {
+    "series": "[G-CB06] VG-G-CB06 : Rondeau of Chaos and Salvation",
+    "count": 45
+  },
+  {
+    "series": "[G-CB07] VG-G-CB07 : Diva's Festa",
+    "count": 54
+  },
+  {
+    "series": "[G-CHB01] VG-G-CHB01 : TRY3 NEXT",
+    "count": 75
+  },
+  {
+    "series": "[G-CHB02] VG-G-CHB02 : WE ARE!!! TRINITY DRAGON",
+    "count": 75
+  },
+  {
+    "series": "[G-CHB03] VG-G-CHB03 : Rummy Labyrinth Under the Moonlight",
+    "count": 60
+  },
+  {
+    "series": "[G-CMB01] VG-G-CMB01 : Vanguard & Deletor",
+    "count": 45
+  },
+  {
+    "series": "[G-EB01] VG-G-EB01 : Cosmic Roar",
+    "count": 35
+  },
+  {
+    "series": "[G-EB02] VGE-G-EB02 : The AWAKENING ZOO",
+    "count": 76
+  },
+  {
+    "series": "[G-EB03] VGE-G-EB03 : The GALAXY STAR GATE",
+    "count": 76
+  },
+  {
+    "series": "[G-FC01] VG-G-FC01 : Fighter's Collection 2015",
+    "count": 50
+  },
+  {
+    "series": "[G-FC02] VG-G-FC02 : Fighter's Collection 2015 Winter",
+    "count": 48
+  },
+  {
+    "series": "[G-FC03] VG-G-FC03 : Fighter's Collection 2016",
+    "count": 51
+  },
+  {
+    "series": "[G-FC04] VG-G-FC04 : Fighters Collection 2017",
+    "count": 75
+  },
+  {
+    "series": "[G-FTD01] VG-G-FTD01 : Knight of the Sun",
+    "count": 19
+  },
+  {
+    "series": "[G-LD01] VG-G-LD01 : The Dark “Ren Suzugamori”",
+    "count": 15
+  },
+  {
+    "series": "[G-LD02] VG-G-LD02 : The Overlord blaze",
+    "count": 16
+  },
+  {
+    "series": "[G-LD03] VG-G-LD03 : The Blaster Aichi Sendou",
+    "count": 18
+  },
+  {
+    "series": "[G-MT01] VG-G-MT01 : TRIAL DECK RISE TO ROYALTY",
+    "count": 19
+  },
+  {
+    "series": "[G-TCB01] VG-G-TCB01 : The RECKLESS RAMPAGE",
+    "count": 75
+  },
+  {
+    "series": "[G-TCB02] VG-G-TCB02 : The GENIUS STRATEGY",
+    "count": 75
+  },
+  {
+    "series": "[G-TD01] VG-G-TD01 : Awakening of the Interdimensional Dragon",
+    "count": 19
+  },
+  {
+    "series": "[G-TD02] VG-G-TD02 : Divine Swordsman of the Shiny Star",
+    "count": 16
+  },
+  {
+    "series": "[G-TD03] VG-G-TD03 : Flower Maiden of Purity",
+    "count": 19
+  },
+  {
+    "series": "[G-TD04] VG-G-TD04 : Blue Cavalry of the Divine Marine Spirits",
+    "count": 19
+  },
+  {
+    "series": "[G-TD05] VG-G-TD05 : Fateful Star Messiah",
+    "count": 19
+  },
+  {
+    "series": "[G-TD06] VG-G-TD06 : Rallying Call of the Interspectral Dragon",
+    "count": 19
+  },
+  {
+    "series": "[G-TD07] VG-G-TD07 : Illusionist of the Crescent Moon",
+    "count": 19
+  },
+  {
+    "series": "[G-TD08] VG-G-TD08 : Vampire Princess of the Nether Hour",
+    "count": 19
+  },
+  {
+    "series": "[G-TD09] VG-G-TD09 : True Zodiac Time Beasts",
+    "count": 19
+  },
+  {
+    "series": "[G-TD10] VG-G-TD10 : Ritual of Dragon Sorcery",
+    "count": 18
+  },
+  {
+    "series": "[G-TD11] VG-G-TD11 : Divine Knight of Heavenly Decree",
+    "count": 18
+  },
+  {
+    "series": "[G-TD12] VG-G-TD12 : Flower Princess of Abundant Blooming",
+    "count": 18
+  },
+  {
+    "series": "[G-TD13] VG-G-TD13 : Ruler of the Evil-eye",
+    "count": 18
+  },
+  {
+    "series": "[G-TD14] VG-G-TD14 : Debut of the Divas",
+    "count": 19
+  },
+  {
+    "series": "[G-TD15] VG-G-TD15 : Messiah Dragon of Rebirth",
+    "count": 18
+  },
+  {
+    "series": "[MBD01] Monthly Bushiroad Deck 1",
+    "count": 9
+  },
+  {
+    "series": "[MBT01] VG-MBT01 : Neon Messiah",
+    "count": 50
+  },
+  {
+    "series": "[MT01] VG-MT01 : DAIGO Special Set",
+    "count": 12
+  },
+  {
+    "series": "[MTD01] VG-MTD01 : Malefic Deletor",
+    "count": 17
+  },
+  {
+    "series": "[PR] Promo Card",
+    "count": 293
+  },
+  {
+    "series": "[SW-BT01] VG-SW-BT01 : Iconic Collection SWEAT16!",
+    "count": 55
+  },
+  {
+    "series": "[SW-PR] SWEAT16! Promo Card",
+    "count": 50
+  },
+  {
+    "series": "[T-BT01] VG-T-BT01 Booster Set : The Mask Collection",
+    "count": 32
+  },
+  {
+    "series": "[T-PR] TH Promo Card",
+    "count": 33
+  },
+  {
+    "series": "[T-TD01] VG-T-TD01 : The Mask Collection",
+    "count": 15
+  },
+  {
+    "series": "[T-TD02] VG-T-TD02 : The Mask Collection Neo Warriors Strengthen",
+    "count": 16
+  },
+  {
+    "series": "[TD01] VG-TD01 : Blaster Blade",
+    "count": 11
+  },
+  {
+    "series": "[TD02] VG-TD02 : Dragonic Overlord",
+    "count": 11
+  },
+  {
+    "series": "[TD03] VG-TD03 : Golden Mechanical Soldier",
+    "count": 11
+  },
+  {
+    "series": "[TD04] VG-TD04 : Maiden Princess of the Cherry Blossoms",
+    "count": 11
+  },
+  {
+    "series": "[TD05] VG-TD05 : Slash of Silver Wolf",
+    "count": 13
+  },
+  {
+    "series": "[TD06] VG-TD06 : Resonance of Thunder Dragon",
+    "count": 13
+  },
+  {
+    "series": "[TD07] VG-TD07 : Descendants of the Marine Emperor",
+    "count": 13
+  },
+  {
+    "series": "[TD08] VG-TD08 : Liberator of the Sanctuary",
+    "count": 12
+  },
+  {
+    "series": "[TD09] VG-TD09 : Eradicator of the Empire",
+    "count": 12
+  },
+  {
+    "series": "[TD10] VG-TD10 : Purgatory Revenger",
+    "count": 12
+  },
+  {
+    "series": "[TD11] VG-TD11 : Star-vader Invasion",
+    "count": 12
+  },
+  {
+    "series": "[TD12] VG-TD12 : Dimensional Brave Kaiser",
+    "count": 12
+  },
+  {
+    "series": "[TD13] VG-TD13 : Successor of the Sacred Regalia",
+    "count": 12
+  },
+  {
+    "series": "[TD14] VG-TD14 : Seeker of Hope",
+    "count": 17
+  },
+  {
+    "series": "[TD15] VG-TD15 : Brawler of Friendship",
+    "count": 17
+  },
+  {
+    "series": "[TD16] VG-TD16 : Divine Judgment of the Bluish Flames",
+    "count": 17
+  },
+  {
+    "series": "[TD17] VG-TD17 : Will of the Locked Dragon",
+    "count": 17
+  },
+  {
+    "series": "[V-ATD01] VG-V-ATD01 : V Animation Trial Deck 1",
+    "count": 18
+  },
+  {
+    "series": "[V-ATD02] VG-V-ATD02 : V Animation Trial Deck 2",
+    "count": 18
+  },
+  {
+    "series": "[V-BT01] VG-V-BT01 : Unite! Team Q4",
+    "count": 84
+  },
+  {
+    "series": "[V-BT02] VG-V-BT02 : Strongest! Team AL4",
+    "count": 84
+  },
+  {
+    "series": "[V-BT03] VG-V-BT03 : Miyaji Academy Cardfight Club",
+    "count": 84
+  },
+  {
+    "series": "[V-BT04] VG-V-BT04 : Vilest! Deletor",
+    "count": 84
+  },
+  {
+    "series": "[V-BT05] V Booster Set 05: Aerial Steed Liberation",
+    "count": 80
+  },
+  {
+    "series": "[V-BT06] V Booster Set 06: Phantasmal Steed Restoration",
+    "count": 84
+  },
+  {
+    "series": "[V-BT07] V Booster Set 07: Infinideity Cradle",
+    "count": 81
+  },
+  {
+    "series": "[V-BT08] V Booster Set 08: Silverdust Blaze",
+    "count": 89
+  },
+  {
+    "series": "[V-BT09] V Booster Set 09 : Butterfly d'Moonlight",
+    "count": 95
+  },
+  {
+    "series": "[V-BT10] V Booster Set 10: Phantom Dragon Aeon",
+    "count": 92
+  },
+  {
+    "series": "[V-BT11] V Booster Set 11: Storm of the Blue Cavalry",
+    "count": 90
+  },
+  {
+    "series": "[V-BT12] V Booster Set 12: Divine Lightning Radiance",
+    "count": 89
+  },
+  {
+    "series": "[V-EB01] VG-V-EB01 : The Destructive Roar",
+    "count": 66
+  },
+  {
+    "series": "[V-EB02] VG-V-EB02 : Champions of the Asia Circuit",
+    "count": 58
+  },
+  {
+    "series": "[V-EB03] VG-V-EB03: ULTRARARE MIRACLE COLLECTION",
+    "count": 68
+  },
+  {
+    "series": "[V-EB04] VG-V-EB04 : The Answer of Truth",
+    "count": 68
+  },
+  {
+    "series": "[V-EB05] V Extra Booster 05 : Primary Melody",
+    "count": 45
+  },
+  {
+    "series": "[V-EB06] V Extra Booster 06: Light of Salvation, Logic of Destruction",
+    "count": 46
+  },
+  {
+    "series": "[V-EB07] V Extra Booster 07: The Heroic Evolution",
+    "count": 66
+  },
+  {
+    "series": "[V-EB08] V Extra Booster 08: My Glorious Justice",
+    "count": 63
+  },
+  {
+    "series": "[V-EB09] V Extra Booster 09 : The Raging Tactics",
+    "count": 66
+  },
+  {
+    "series": "[V-EB10] V Extra Booster 10: The Mysterious Fortune",
+    "count": 70
+  },
+  {
+    "series": "[V-EB11] V Extra Booster 11: Crystal Melody",
+    "count": 48
+  },
+  {
+    "series": "[V-EB12] V Extra Booster 12: Team Dragon's Vanity!",
+    "count": 66
+  },
+  {
+    "series": "[V-EB13] V Extra Booster 13: The Astral Force",
+    "count": 62
+  },
+  {
+    "series": "[V-EB14] V Extra Booster 14: The Next Stage",
+    "count": 64
+  },
+  {
+    "series": "[V-EB15] V Extra Booster 15: Twinkle Melody",
+    "count": 51
+  },
+  {
+    "series": "[V-GTD01] VG-V-GTD01 : V Game Trial Deck 1",
+    "count": 18
+  },
+  {
+    "series": "[V-GTD02] VG-V-GTD02 : V Game Trial Deck 2",
+    "count": 18
+  },
+  {
+    "series": "[V-GTD03] VG-V-GTD03 : V Game Trial Deck 03",
+    "count": 20
+  },
+  {
+    "series": "[V-GTD04] VG-V-GTD04 : V Game Trial Deck 04",
+    "count": 18
+  },
+  {
+    "series": "[V-GTD05] VG-V-GTD05 : V Game Trial Deck 05",
+    "count": 25
+  },
+  {
+    "series": "[V-LTD01] VG-V-LTD01 : V Live Action Trial Deck 01",
+    "count": 15
+  },
+  {
+    "series": "[V-LTD02] VG-V-LTD02 : V Live Action Trial Deck 02",
+    "count": 15
+  },
+  {
+    "series": "[V-LTD03] VG-V-LTD03 : V Live Action Trial Deck 03",
+    "count": 18
+  },
+  {
+    "series": "[V-LTD04] VG-V-LTD04 : V Live Action Trial Deck 04",
+    "count": 18
+  },
+  {
+    "series": "[V-LTD05] VG-V-LTD05 : V Live Action Trial Deck 05",
+    "count": 19
+  },
+  {
+    "series": "[V-PR] V Promo Card",
+    "count": 247
+  },
+  {
+    "series": "[V-SS01] VG-V-SS01 : PREMIUM COLLECTION 2019",
+    "count": 54
+  },
+  {
+    "series": "[V-SS07] VG-V-SS07 : PREMIUM COLLECTION 2020",
+    "count": 57
+  },
+  {
+    "series": "[V-TB01] V Title Booster 01: BanG Dream! FILM LIVE",
+    "count": 75
+  },
+  {
+    "series": "[V-TD01] VG-V-TD01 : Aichi Sendou",
+    "count": 15
+  },
+  {
+    "series": "[V-TD02] VG-V-TD02 : Toshiki Kai",
+    "count": 15
+  },
+  {
+    "series": "[V-TD03] VG-V-TD03 : Leon Soryu",
+    "count": 14
+  },
+  {
+    "series": "[V-TD04] VG-V-TD04 : Ren Suzugamori",
+    "count": 15
+  },
+  {
+    "series": "[V-TD05] VG-V-TD05 : Misaki Tokura",
+    "count": 14
+  },
+  {
+    "series": "[V-TD06] VG-V-TD06 : Naoki Ishida",
+    "count": 14
+  },
+  {
+    "series": "[V-TD07] VG-V-Trial Deck 07 Kouji Ibuki",
+    "count": 14
+  },
+  {
+    "series": "[V-TD08] VG-V-TD08 : Schokolade Melody",
+    "count": 19
+  },
+  {
+    "series": "[V-TD09] V Trial Deck 09: Shinemon Nitta",
+    "count": 17
+  },
+  {
+    "series": "[V-TD10] V Trial Deck 10: Chronojet",
+    "count": 15
+  },
+  {
+    "series": "[V-TD11] V Trial Deck 11: Altmile",
+    "count": 15
+  },
+  {
+    "series": "[V-TD12] V Trial Deck 12: Ahsha",
+    "count": 17
+  },
+  {
+    "series": "[V-TPR] V-TH Promo Card",
+    "count": 37
+  }
+]

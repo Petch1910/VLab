@@ -1,0 +1,1051 @@
+# Documentation Index
+
+## Start Here
+
+- `AI_QUICK_START.md` one-file orientation for AI agents before opening deeper docs
+- `AI_CONTEXT_BRIEF.md` current project state and next target
+- `AI_WORKFLOW.md` standard workflow for future AI agents
+- `AI_COMMUNICATION_TOKEN_POLICY.md` concise team communication policy
+- `VANGUARD_AI_ENGINE_KNOWLEDGE_SUMMARY.md` source of truth for core/bot/research architecture
+- `VANGUARD_DIGITAL_CLIENT_UX_BLUEPRINT.md` active UX blueprint for PlayTable/Deck Builder direction from Vanguard Area, VangPro, Cardfight Connect, EX, Dear Days, and Dear Days 2 references
+- `../outputs/vanguard_video_game_ux_research/source_manifest.json` public screenshot/video-game reference capture manifest for M32 UX study
+- `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32 letsplay layout-only research summary; excludes story/character/dialogue/campaign scope
+- `../outputs/comparator_study/COMPARATOR_SYSTEM_UX_STUDY_TH.md` latest comparator study for VangPro, CGS, Vanguard Area, Dear Days, Card Game Simulator, and Cardfight Connect
+- `CORE_DEVELOPMENT_GUARDRAILS.md` short checklist before core/bot/simulation changes
+- `VANGUARD_CORE_RULE_ARCHITECTURE_REFERENCE.md` expanded core/rule/format/timing-window reference
+- `DO_NOT_DO.md` hard boundaries and forbidden behavior
+- `IMPLEMENTATION_PLAN.md` current milestone/task plan (M20+)
+- `IMPLEMENTATION_PLAN_ARCHIVE.md` historical milestones M0-M19 status table and guardrails
+- `WINDOWS_FIRST_PROGRAM_COMPLETION_SPEC.md` active M20-M27 Windows-first product direction
+- `WINDOWS_PLAYABLE_LOOP_CHECKLIST.md` Windows Home -> Deck Builder -> PlayTable -> Replay / Online Room checklist
+- `WINDOWS_ONLY_VERIFICATION_PROFILE.md` active verification gate while Android/mobile/release work is deferred
+- `history/M20_WINDOWS_PRODUCT_RESET_CLOSEOUT.md` M20 reset completion and next target
+- `PLAYTABLE_WINDOWS_UX_V2_SPEC.md` M21 board-first Windows PlayTable direction
+- `history/M21_02_PLAYTABLE_BOARD_FIRST_CLOSEOUT.md` M21-02 board/table prominence closeout
+- `history/M21_03_PLAYTABLE_ZONE_STATUS_CLOSEOUT.md` M21-03 PlayTable zone status closeout
+- `history/M21_04_HAND_STRIP_SELECTED_PREVIEW_CLOSEOUT.md` M21-04 hand strip and selected-card preview closeout
+- `history/M21_04B_SOUL_STATUS_LEDGER_CLOSEOUT.md` M21-04b Soul status and ResourceLedger closeout
+- `history/M21_04D_RIDE_SOUL_RESOURCE_COMMAND_CLOSEOUT.md` M21-04d ride-to-soul and Soul resource command closeout
+- `history/M21_04C_BOARD_THUMBNAIL_CLOSEOUT.md` M21-04c board thumbnail and card-face summary closeout
+- `history/M21_05A_ACTION_AVAILABILITY_CLOSEOUT.md` M21-05a action availability and phase button closeout
+- `history/M21_05A2_CHECK_GUARD_SURFACE_CLOSEOUT.md` M21-05a2 Check/Guard PlayTable surface closeout
+- `history/M21_05A3_TRIGGER_SOURCE_SPLIT_CLOSEOUT.md` M21-05a3 Drive/Damage trigger-check source split closeout
+- `history/M21_05A4_ATTACK_VANGUARD_SURFACE_CLOSEOUT.md` M21-05a4 attack-vanguard PlayTable surface closeout
+- `history/M21_05A5_ATTACK_TARGET_SELECTION_CLOSEOUT.md` M21-05a5 attack target selection closeout
+- `history/M21_05A6_BATTLE_FLOW_STATUS_CLOSEOUT.md` M21-05a6 battle flow status closeout
+- `history/M21_05A7_MANUAL_NOTE_SURFACE_CLOSEOUT.md` M21-05a7 manual note surface closeout
+- `history/M21_05B1_SETUP_READINESS_GUARD_CLOSEOUT.md` M21-05b1 setup readiness guard closeout
+- `history/M21_05B2_FIRST_VANGUARD_SETUP_CLOSEOUT.md` M21-05b2 first Vanguard setup closeout
+- `history/M21_05B3_MULLIGAN_SELECTED_CLOSEOUT.md` M21-05b3 selected-card mulligan closeout
+- `history/M21_05B4_PHASE_ACTIONS_CLOSEOUT.md` M21-05b4 phase actions closeout
+- `history/M21_05B5_SETUP_STATUS_GUIDANCE_CLOSEOUT.md` M21-05b5 setup status guidance closeout
+- `history/M21_06_ADVANCED_DEBUG_SURFACE_CLOSEOUT.md` M21-06 Advanced-only debug surface closeout
+- `history/M21_07_PLAYER_READABLE_EVENT_LOG_CLOSEOUT.md` M21-07 player-readable event log closeout
+- `history/M21_08_TESTS_WINDOWS_SMOKE_CLOSEOUT.md` M21-08 tests and Windows smoke closeout
+- `history/M21_09_PLAYTABLE_WINDOWS_UX_CLOSEOUT.md` M21-09 PlayTable Windows UX closeout
+- `specs/settings/PLAYER_SETTINGS_SPEC.md` M22-01 local player settings model
+- `history/M22_01_PLAYER_SETTINGS_CLOSEOUT.md` M22-01 PlayerSettings closeout
+- `specs/settings/DECK_APPEARANCE_METADATA_SPEC.md` M22-02 deck appearance metadata model
+- `history/M22_02_DECK_APPEARANCE_METADATA_CLOSEOUT.md` M22-02 DeckAppearanceMetadata closeout
+- `specs/settings/HOME_SETTINGS_SCREEN_SPEC.md` M22-03 Home settings screen
+- `history/M22_03_HOME_SETTINGS_SCREEN_CLOSEOUT.md` M22-03 Home settings screen closeout
+- `specs/settings/DECK_TYPE_ACCESSORIES_DIALOG_SPEC.md` M22-04 Deck Type / Accessories dialog
+- `history/M22_04_DECK_TYPE_ACCESSORIES_DIALOG_CLOSEOUT.md` M22-04 Deck Type / Accessories dialog closeout
+- `specs/settings/COSMETIC_METADATA_DECK_LEGALITY_SEPARATION_SPEC.md` M22-05 cosmetic metadata and deck legality separation
+- `history/M22_05_COSMETIC_LEGALITY_SEPARATION_CLOSEOUT.md` M22-05 cosmetic metadata and deck legality separation closeout
+- `specs/settings/USER_DECK_ASSET_SLOT_SPEC.md` M22-06 user deck asset slot manifest/hash/fallback validator
+- `history/M22_06_USER_DECK_ASSET_SLOT_CLOSEOUT.md` M22-06 user deck asset slot closeout
+- `history/M22_07_SETTINGS_ACCESSORIES_TEST_ROLLUP_CLOSEOUT.md` M22-07 settings/accessories test roll-up closeout
+- `history/M22_WINDOWS_SETTINGS_ACCESSORIES_CLOSEOUT.md` M22 Windows Settings / Deck Type / Accessories closeout
+- `specs/manual/MANUAL_CONTENT_SPEC.md` M23-01 in-app manual content structure
+- `specs/manual/LOADING_TIPS_SPEC.md` M23-03 loading tips spec
+- `specs/manual/ORIGINAL_CONTENT_GATE_SPEC.md` M23-04 original content gate spec
+- `specs/manual/MANUAL_FILTER_SPEC.md` M23-05 Manual search/category filter spec
+- `history/M23_01_MANUAL_CONTENT_SPEC_CLOSEOUT.md` M23-01 manual content spec closeout
+- `history/M23_02_MANUAL_SCREEN_CLOSEOUT.md` M23-02 Manual screen closeout
+- `history/M23_03_LOADING_TIPS_CLOSEOUT.md` M23-03 loading tips closeout
+- `history/M23_04_ORIGINAL_CONTENT_GATE_CLOSEOUT.md` M23-04 original content gate closeout
+- `history/M23_05_MANUAL_FILTER_CLOSEOUT.md` M23-05 Manual filter closeout
+- `history/M23_06_MANUAL_TESTS_CLOSEOUT.md` M23-06 Manual tests closeout
+- `history/M23_MANUAL_TUTORIAL_CLOSEOUT.md` M23 Manual/Tutorial closeout
+- `specs/deck_builder/DECK_BUILDER_WINDOWS_LANDSCAPE_SPEC.md` M24-01 Deck Builder Windows landscape spec
+- `specs/deck_builder/COUNT_LINE_DECK_TEXT_SPEC.md` M24-02 count-line deck text spec
+- `specs/deck_builder/DECK_IMPORT_MISMATCH_UI_SPEC.md` M24-03 deck import mismatch UI spec
+- `specs/deck_builder/DECK_IMAGE_EXPORT_SPEC.md` M24-08 Deck image export spec
+- `specs/formats_and_custom/CGS_LIKE_CUSTOM_PACK_ADAPTER_SPEC.md` M24-04 CGS-like custom pack adapter spec
+- `specs/formats_and_custom/VANGPRO_LIKE_CUSTOM_IMPORT_SPEC.md` M24-05 VangPro-like local custom import spec
+- `specs/formats_and_custom/LOCAL_CUSTOM_IMPORT_VALIDATOR_SPEC.md` M24-06 local custom import validator spec
+- `specs/formats_and_custom/PACK_VALIDATION_UI_SPEC.md` M24-07 Pack Validation UI spec
+- `specs/formats_and_custom/CUSTOM_IMPORT_WORKFLOW_TEST_ROLLUP_SPEC.md` M24-09 custom import workflow test rollup spec
+- `history/M24_01_DECK_BUILDER_WINDOWS_LANDSCAPE_CLOSEOUT.md` M24-01 Deck Builder Windows landscape closeout
+- `history/M24_02_COUNT_LINE_DECK_TEXT_CLOSEOUT.md` M24-02 count-line deck text closeout
+- `history/M24_03_DECK_IMPORT_MISMATCH_UI_CLOSEOUT.md` M24-03 deck import mismatch UI closeout
+- `history/M24_04_CGS_LIKE_CUSTOM_PACK_ADAPTER_SPEC_CLOSEOUT.md` M24-04 CGS-like custom pack adapter spec closeout
+- `history/M24_05_VANGPRO_LIKE_CUSTOM_IMPORT_SPEC_CLOSEOUT.md` M24-05 VangPro-like local custom import spec closeout
+- `history/M24_06_LOCAL_CUSTOM_IMPORT_VALIDATOR_CLOSEOUT.md` M24-06 local custom import validator closeout
+- `history/M24_07_PACK_VALIDATION_UI_CLOSEOUT.md` M24-07 Pack Validation UI closeout
+- `history/M24_08_DECK_IMAGE_EXPORT_CLOSEOUT.md` M24-08 Deck image export closeout
+- `history/M24_09_CUSTOM_IMPORT_WORKFLOW_TEST_ROLLUP_CLOSEOUT.md` M24-09 custom import workflow test rollup closeout
+- `history/M24_DECK_BUILDER_IMPORT_CUSTOM_PACK_UX_CLOSEOUT.md` M24 Deck Builder / Import / Custom Pack UX closeout
+- `specs/multiplayer/PHOTON_TRUSTED_CLIENT_ROOM_POLICY_SPEC.md` M25-01 Photon trusted-client room policy spec
+- `history/M25_01_PHOTON_TRUSTED_CLIENT_ROOM_POLICY_CLOSEOUT.md` M25-01 Photon trusted-client room policy closeout
+- `specs/multiplayer/WINDOWS_LOBBY_FLOW_SPEC.md` M25-02 Windows Online Room lobby flow spec
+- `history/M25_02_LOBBY_FLOW_CLOSEOUT.md` M25-02 lobby flow closeout
+- `specs/multiplayer/WINDOWS_ROOM_STATUS_SPEC.md` M25-03 Windows Online Room status spec
+- `history/M25_03_ROOM_STATUS_CLOSEOUT.md` M25-03 room status closeout
+- `specs/multiplayer/WINDOWS_RECONNECT_UX_SPEC.md` M25-04 Windows reconnect UX spec
+- `history/M25_04_RECONNECT_UX_CLOSEOUT.md` M25-04 reconnect UX closeout
+- `specs/multiplayer/ONLINE_PLAYTABLE_DEFAULT_UI_SPEC.md` M25-05 Online PlayTable default UI spec
+- `history/M25_05_ONLINE_PLAYTABLE_DEFAULT_UI_CLOSEOUT.md` M25-05 Online PlayTable default UI closeout
+- `specs/multiplayer/ONLINE_REPLAY_SYNC_STATUS_SPEC.md` M25-06 Online replay sync status spec
+- `history/M25_06_REPLAY_SYNC_STATUS_CLOSEOUT.md` M25-06 replay sync/status closeout
+- `specs/multiplayer/ONLINE_ROOM_TEST_ROLLUP_SPEC.md` M25-07 Online room test rollup spec
+- `history/M25_07_ONLINE_ROOM_TEST_ROLLUP_CLOSEOUT.md` M25-07 Online room test rollup closeout
+- `specs/multiplayer/WINDOWS_ONLINE_ROOM_CLOSEOUT_SPEC.md` M25-08 Windows Online Room closeout spec
+- `history/M25_WINDOWS_ONLINE_ROOM_USABILITY_CLOSEOUT.md` M25 Windows Online Room usability closeout
+- `specs/bot_and_headless/BOT_AUTOMATION_RETURN_AUDIT_SPEC.md` M26-01 bot/automation return audit spec
+- `history/M26_01_BOT_AUTOMATION_RETURN_AUDIT_CLOSEOUT.md` M26-01 bot/automation return audit closeout
+- `specs/bot_and_headless/BOT_LEGAL_ACTION_MASKED_STATE_GATE_SPEC.md` M26-02 bot legal-action/masked-state gate spec
+- `history/M26_02_BOT_LEGAL_ACTION_MASKED_STATE_GATE_CLOSEOUT.md` M26-02 bot legal-action/masked-state gate closeout
+- `specs/bot_and_headless/BOT_EXPLANATION_PANEL_SPEC.md` M26-03 bot explanation panel spec
+- `history/M26_03_BOT_EXPLANATION_PANEL_CLOSEOUT.md` M26-03 bot explanation panel closeout
+- `specs/bot_and_headless/STRUCTURED_ABILITY_TEMPLATE_TEST_GATE_SPEC.md` M26-04 structured ability template test gate spec
+- `history/M26_04_STRUCTURED_ABILITY_TEMPLATE_GATE_CLOSEOUT.md` M26-04 structured ability template gate closeout
+- `specs/bot_and_headless/LIVE_EFFECT_NO_TEXT_PARSING_GATE_SPEC.md` M26-05 live effect no text parsing gate spec
+- `history/M26_05_LIVE_EFFECT_NO_TEXT_PARSING_GATE_CLOSEOUT.md` M26-05 live effect no text parsing gate closeout
+- `specs/bot_and_headless/SOLO_PLAY_HOME_ENTRY_FLOW_SPEC.md` M26-06 Solo Play Home entry flow spec
+- `history/M26_06_SOLO_PLAY_HOME_ENTRY_FLOW_CLOSEOUT.md` M26-06 Solo Play Home entry flow closeout
+- `specs/bot_and_headless/BOT_AUTOMATION_SAFETY_REGRESSION_GATE_SPEC.md` M26-07 bot automation safety regression gate spec
+- `history/M26_07_BOT_AUTOMATION_SAFETY_REGRESSION_CLOSEOUT.md` M26-07 bot automation safety regression gate closeout
+- `specs/bot_and_headless/BOT_AUTOMATION_RETURN_GATE_CLOSEOUT_SPEC.md` M26-08 bot automation return gate closeout spec
+- `history/M26_BOT_AUTOMATION_RETURN_GATE_CLOSEOUT.md` M26 bot automation return gate closeout
+- `specs/ci_and_qa/WINDOWS_STABILITY_SMOKE_COVERAGE_SPEC.md` M27-01 Windows stability smoke coverage spec
+- `history/M27_01_WINDOWS_STABILITY_SMOKE_CLOSEOUT.md` M27-01 Windows stability smoke coverage closeout
+- `specs/ci_and_qa/WINDOWS_SMOKE_BLOCKER_REVIEW_SPEC.md` M27-02 Windows smoke blocker review spec
+- `history/M27_02_WINDOWS_SMOKE_BLOCKER_REVIEW_CLOSEOUT.md` M27-02 Windows smoke blocker review closeout
+- `specs/ci_and_qa/WINDOWS_PERFORMANCE_BASELINE_SPEC.md` M27-03 Windows performance baseline spec
+- `history/M27_03_WINDOWS_PERFORMANCE_BASELINE_CLOSEOUT.md` M27-03 Windows performance baseline closeout
+- `specs/ci_and_qa/WINDOWS_PERFORMANCE_GATE_SPEC.md` M27-04 Windows performance gate spec
+- `history/M27_04_WINDOWS_PERFORMANCE_GATE_CLOSEOUT.md` M27-04 Windows performance gate closeout
+- `specs/ci_and_qa/WINDOWS_GRACEFUL_ERROR_HANDLING_SPEC.md` M27-05 Windows graceful error handling spec
+- `history/M27_05_WINDOWS_GRACEFUL_ERROR_HANDLING_CLOSEOUT.md` M27-05 Windows graceful error handling closeout
+- `specs/ci_and_qa/WINDOWS_PLAYMODE_INTEGRATION_SPEC.md` M27-06 Windows PlayMode integration spec
+- `history/M27_06_WINDOWS_PLAYMODE_INTEGRATION_CLOSEOUT.md` M27-06 Windows PlayMode integration closeout
+- `WINDOWS_LOCAL_BUILD_KNOWN_LIMITATIONS.md` local Windows build known limitations
+- `specs/ci_and_qa/WINDOWS_KNOWN_LIMITATIONS_SPEC.md` M27-07 Windows known limitations spec
+- `history/M27_07_WINDOWS_KNOWN_LIMITATIONS_CLOSEOUT.md` M27-07 Windows known limitations closeout
+- `specs/ci_and_qa/WINDOWS_NO_PUBLIC_RELEASE_GATE_SPEC.md` M27-08 no public release gate spec
+- `history/M27_08_NO_PUBLIC_RELEASE_GATE_CLOSEOUT.md` M27-08 no public release gate closeout
+- `specs/ci_and_qa/WINDOWS_GAMEPLAY_COMPLETION_PASS_SPEC.md` M28-01 Windows gameplay completion gate spec
+- `history/M28_01_WINDOWS_GAMEPLAY_COMPLETION_GATE_CLOSEOUT.md` M28-01 Windows gameplay completion gate closeout
+- `history/M28_02_LOCAL_PLAYTABLE_SEAT_TOGGLE_CLOSEOUT.md` M28-02 local PlayTable seat toggle closeout
+- `history/M28_03_UI_TWO_SEAT_MATCH_SMOKE_CLOSEOUT.md` M28-03 UI-level two-seat match smoke closeout
+- `history/M28_04_WINDOWS_MANUAL_MATCH_GAP_AUDIT.md` M28-04 Windows manual match gap audit
+- `history/M28_05_PLAYTABLE_GUIDED_NEXT_ACTION_CLOSEOUT.md` M28-05 PlayTable guided next-action panel closeout
+- `history/M28_06_WINDOWS_BUILT_PLAYER_SMOKE_CLOSEOUT.md` M28-06 Windows built-player smoke closeout
+- `history/M28_07_PLAYTABLE_ACTION_GROUPING_POLISH_CLOSEOUT.md` M28-07 PlayTable action grouping polish closeout
+- `history/M28_08_PLAYTABLE_SIDE_PANEL_DENSITY_AUDIT.md` M28-08 PlayTable side-panel density audit
+- `history/M28_09_BOT_PLAN_ADVANCED_DRAWER_CLOSEOUT.md` M28-09 Bot Plan Advanced drawer closeout
+- `PLAYTABLE_MATCH_LOG_DENSITY_REVIEW_SPEC.md` M28-10 Match Log / Preview density review spec
+- `history/M28_10_MATCH_LOG_PREVIEW_DENSITY_CLOSEOUT.md` M28-10 Match Log / Preview density closeout
+- `history/M29_01_PHOTON_LOBBY_NAVIGATION_LOCKOUT_CLOSEOUT.md` M29-01 Photon lobby navigation lockout closeout
+- `history/M29_02_PHOTON_LOBBY_RECONNECT_FLOW_POLISH_CLOSEOUT.md` M29-02 Photon lobby reconnect flow polish closeout
+- `specs/multiplayer/PHOTON_LOBBY_QUICK_DECK_SELECTOR_SPEC.md` M29-03 Photon lobby Quick Deck Selector spec
+- `history/M29_03_PHOTON_LOBBY_QUICK_DECK_SELECTOR_CLOSEOUT.md` M29-03 Photon lobby Quick Deck Selector closeout
+- `history/M29_04_PHOTON_LOBBY_QUICK_EDIT_MODAL_CLOSEOUT.md` M29-04 Photon lobby Quick Edit modal closeout
+- `history/M29_05_ONLINE_ROOM_USABILITY_CLOSEOUT_AUDIT.md` M29-05 Online Room usability closeout audit
+- `specs/multiplayer/PHOTON_LOBBY_DECK_READINESS_GUARD_SPEC.md` M29-06 Photon lobby deck readiness guard spec
+- `history/M29_06_ONLINE_DECK_READINESS_GUARD_CLOSEOUT.md` M29-06 Online deck readiness guard closeout
+- `WINDOWS_PLAYABLE_LOOP_FINAL_AUDIT_SPEC.md` M30-01 Windows playable loop final audit spec
+- `history/M30_01_WINDOWS_PLAYABLE_LOOP_FINAL_AUDIT.md` M30-01 Windows playable loop final audit
+- `WINDOWS_REPLAY_ENTRY_BROWSER_SPEC.md` M30-02 Windows Replay entry/browser spec
+- `history/M30_02_WINDOWS_REPLAY_ENTRY_BROWSER_CLOSEOUT.md` M30-02 Windows Replay entry/browser closeout
+- `WINDOWS_REPLAY_LOCAL_FILE_IMPORT_SPEC.md` M30-03 Windows Replay local file import spec
+- `history/M30_03_WINDOWS_REPLAY_LOCAL_FILE_IMPORT_CLOSEOUT.md` M30-03 Windows Replay local file import closeout
+- `WINDOWS_REPLAY_VIEWER_LAUNCH_SPEC.md` M30-04 Windows Replay viewer launch spec
+- `history/M30_04_WINDOWS_REPLAY_VIEWER_LAUNCH_CLOSEOUT.md` M30-04 Windows Replay viewer launch closeout
+- `WINDOWS_PLAYTABLE_REPLAY_EXPORT_SPEC.md` M30-05 Windows PlayTable replay export spec
+- `history/M30_05_WINDOWS_PLAYTABLE_REPLAY_EXPORT_CLOSEOUT.md` M30-05 Windows PlayTable replay export closeout
+- `WINDOWS_PLAYABLE_LOOP_M30_CLOSEOUT_AUDIT_SPEC.md` M30-06 Windows playable loop M30 closeout audit spec
+- `history/M30_06_WINDOWS_PLAYABLE_LOOP_CLOSEOUT_AUDIT.md` M30-06 Windows playable loop closeout audit
+- `WINDOWS_UI_EVIDENCE_AUDIT_SPEC.md` M31-01 Windows UI evidence audit spec
+- `history/M31_01_WINDOWS_UI_EVIDENCE_AUDIT.md` M31-01 Windows UI evidence audit closeout
+- `CARD_WORKSHOP_FIRST_SCREEN_CLARITY_SPEC.md` M31-02 Card Workshop first-screen clarity spec
+- `history/M31_02_CARD_WORKSHOP_FIRST_SCREEN_CLARITY_CLOSEOUT.md` M31-02 Card Workshop first-screen clarity closeout
+- `CARD_WORKSHOP_TOOLBAR_DENSITY_SPEC.md` M31-03 Card Workshop toolbar density spec
+- `history/M31_03_CARD_WORKSHOP_TOOLBAR_DENSITY_CLOSEOUT.md` M31-03 Card Workshop toolbar density closeout
+- `WINDOWS_UI_VISUAL_EVIDENCE_PASS_SPEC.md` M31-04 Windows UI visual evidence pass spec
+- `history/M31_04_WINDOWS_UI_VISUAL_EVIDENCE_PASS_CLOSEOUT.md` M31-04 Windows UI visual evidence pass closeout
+- `CARD_DETAIL_PREVIEW_ASPECT_RATIO_SPEC.md` M31-05 Card detail preview aspect-ratio spec
+- `VANGUARD_AREA_STYLE_PLAYTABLE_RESET_SPEC.md` M32 Vanguard Area-style PlayTable reset spec
+- `VANGUARD_DIGITAL_CLIENT_UX_BLUEPRINT.md` M32 UX blueprint and reference-capture inventory
+- `history/M32_02_ZONE_PLACEMENT_POLISH_CLOSEOUT.md` M32-02 PlayTable zone placement polish closeout
+- `history/M32_02B_LETSPLAY_LAYOUT_RESEARCH_CLOSEOUT.md` M32-02b letsplay layout research closeout
+- `history/M32_03_PLAYTABLE_DE_DASHBOARD_FIELD_HUD_CLOSEOUT.md` M32-03 PlayTable de-dashboard field/HUD closeout
+- `history/M32_04_PLAYMAT_SLOT_LAYOUT_CLOSEOUT.md` M32-04 Playmat slot layout and Windows visual evidence closeout
+- `specs/bot_and_headless/CLAN_COMBO_PAIRING_OFFLINE_SPEC.md` M33-01 offline TD01-TD06/BT01-BT09/EB01-EB05 clan combo pairing spec
+- `history/M33_01_CLAN_COMBO_PAIRING_OFFLINE_CLOSEOUT.md` M33-01 offline clan combo pairing closeout and verification
+- `history/M33_02_ERA_COMBO_PRESET_EXPANSION_CLOSEOUT.md` M33-02 era combo preset expansion closeout and missing-set report
+- `history/M33_03_COMBO_MATRIX_ARTIFACTS_CLOSEOUT.md` M33-03 combo matrix CSV/JSON artifacts closeout
+- `specs/cards_and_decks/DECK_POSSIBILITY_ANALYSIS_SPEC.md` M34-01 offline deck construction possibility analysis spec
+- `history/M34_01_DECK_POSSIBILITY_ANALYSIS_CLOSEOUT.md` M34-01 deck possibility analysis closeout and verification
+- `specs/cards_and_decks/RULE_CORPUS_DECK_COMBO_PLAN_SPEC.md` M34-02 rule corpus driven deck/combo plan refresh and Hybrid Phase A-E sequence
+- `history/M34_02_RULE_CORPUS_PLAN_REFRESH_CLOSEOUT.md` M34-02 corpus intake and plan refresh closeout
+- `history/M34_03_ARCHETYPE_PRIORITY_CLOSEOUT.md` M34-03 Phase A1 archetype priority ranking closeout
+- `../outputs/archetype_priority/archetype_priority_ranking.json` M34-03 ranked clan/nation priority output
+- `../outputs/research_2026_06_29_new_chat/` copied 2026-06-29 rule/development corpus used for M34-02 planning
+- `history/M35_A2_FIRST_TARGET_SLICE_CLOSEOUT.md` M35-A2 first target slice closeout
+- `../outputs/target_slice/m35_a2_first_target_slice_report.json` M35-A2 selected target slice, format policy, and taxonomy gap output
+- `../outputs/target_slice/m35_a2_first_target_slice_report.md` M35-A2 human-readable selected target slice report
+- `specs/cards_and_decks/FIRST_SLICE_DECK_LEGALITY_FIXTURES_SPEC.md` M35-A3 first selected-slice deck legality fixture spec
+- `history/M35_A3_FIRST_SLICE_DECK_LEGALITY_FIXTURES_CLOSEOUT.md` M35-A3 first selected-slice deck legality fixture closeout
+- `../outputs/target_slice/m35_a3_first_slice_deck_legality_fixtures.json` M35-A3 selected-slice deck legality fixtures output
+- `../outputs/target_slice/m35_a3_first_slice_deck_legality_fixtures.md` M35-A3 human-readable fixture summary
+- `specs/cards_and_decks/FIRST_SLICE_FEASIBILITY_REFRESH_SPEC.md` M35-A4 first selected-slice feasibility refresh spec
+- `history/M35_A4_FIRST_SLICE_FEASIBILITY_REFRESH_CLOSEOUT.md` M35-A4 first selected-slice feasibility refresh closeout
+- `../outputs/target_slice/m35_a4_first_slice_feasibility_refresh.json` M35-A4 selected-slice feasibility refresh output
+- `../outputs/target_slice/m35_a4_first_slice_feasibility_refresh.md` M35-A4 human-readable feasibility refresh summary
+- `specs/cards_and_decks/FIRST_SLICE_SEMANTIC_VOCABULARY_SPEC.md` M35-B1 selected-slice semantic vocabulary spec
+- `history/M35_B1_FIRST_SLICE_SEMANTIC_VOCABULARY_CLOSEOUT.md` M35-B1 selected-slice semantic vocabulary closeout
+- `../outputs/target_slice/m35_b1_first_slice_semantic_vocabulary.json` M35-B1 selected-slice semantic vocabulary output
+- `../outputs/target_slice/m35_b1_first_slice_semantic_vocabulary.md` M35-B1 human-readable semantic vocabulary summary
+- `specs/cards_and_decks/FIRST_SLICE_SEMANTIC_EXTRACTOR_SPEC.md` M35-B2 selected-slice semantic extractor spec
+- `history/M35_B2_FIRST_SLICE_SEMANTIC_EXTRACTOR_CLOSEOUT.md` M35-B2 selected-slice semantic extractor closeout
+- `../outputs/target_slice/m35_b2_first_slice_semantic_tags.json` M35-B2 selected-slice semantic tags output
+- `../outputs/target_slice/m35_b2_first_slice_semantic_tags.md` M35-B2 human-readable semantic tags summary
+- `specs/cards_and_decks/FIRST_SLICE_REQUIREMENT_PROVIDER_MODEL_SPEC.md` M35-B3 selected-slice requirement/provider model spec
+- `history/M35_B3_FIRST_SLICE_REQUIREMENT_PROVIDER_MODEL_CLOSEOUT.md` M35-B3 selected-slice requirement/provider model closeout
+- `../outputs/target_slice/m35_b3_first_slice_requirement_provider_model.json` M35-B3 selected-slice requirement/provider model output
+- `../outputs/target_slice/m35_b3_first_slice_requirement_provider_model.md` M35-B3 human-readable requirement/provider summary
+- `specs/cards_and_decks/FIRST_SLICE_MANUAL_REVIEW_QUEUE_SPEC.md` M35-B4 selected-slice manual review queue spec
+- `history/M35_B4_FIRST_SLICE_MANUAL_REVIEW_QUEUE_CLOSEOUT.md` M35-B4 selected-slice manual review queue closeout
+- `../outputs/target_slice/m35_b4_first_slice_manual_review_queue.json` M35-B4 selected-slice manual review queue output
+- `../outputs/target_slice/m35_b4_first_slice_manual_review_queue.csv` M35-B4 selected-slice manual review queue CSV
+- `../outputs/target_slice/m35_b4_first_slice_manual_review_queue.md` M35-B4 human-readable manual review queue summary
+- `specs/cards_and_decks/FIRST_SLICE_PAIR_COMPATIBILITY_GRAPH_SPEC.md` M35-C1 selected-slice pair compatibility graph spec
+- `history/M35_C1_FIRST_SLICE_PAIR_COMPATIBILITY_GRAPH_CLOSEOUT.md` M35-C1 selected-slice pair compatibility graph closeout
+- `../outputs/target_slice/m35_c1_first_slice_pair_compatibility_graph.json` M35-C1 selected-slice pair compatibility graph output
+- `../outputs/target_slice/m35_c1_first_slice_pair_compatibility_graph.md` M35-C1 human-readable pair compatibility graph summary
+- `specs/cards_and_decks/FIRST_SLICE_RESOURCE_CONFLICT_DETECTOR_SPEC.md` M35-C2 selected-slice resource conflict detector spec
+- `history/M35_C2_FIRST_SLICE_RESOURCE_CONFLICT_DETECTOR_CLOSEOUT.md` M35-C2 selected-slice resource conflict detector closeout
+- `../outputs/target_slice/m35_c2_first_slice_resource_conflict_detector.json` M35-C2 selected-slice resource conflict detector output
+- `../outputs/target_slice/m35_c2_first_slice_resource_conflict_detector.md` M35-C2 human-readable resource conflict summary
+- `specs/cards_and_decks/FIRST_SLICE_TIMING_COMPATIBILITY_DETECTOR_SPEC.md` M35-C3 selected-slice timing compatibility detector spec
+- `history/M35_C3_FIRST_SLICE_TIMING_COMPATIBILITY_DETECTOR_CLOSEOUT.md` M35-C3 selected-slice timing compatibility detector closeout
+- `../outputs/target_slice/m35_c3_first_slice_timing_compatibility_detector.json` M35-C3 selected-slice timing compatibility detector output
+- `../outputs/target_slice/m35_c3_first_slice_timing_compatibility_detector.md` M35-C3 human-readable timing compatibility summary
+- `specs/cards_and_decks/FIRST_SLICE_ZONE_TARGET_DETECTOR_SPEC.md` M35-C4 selected-slice zone/target detector spec
+- `history/M35_C4_FIRST_SLICE_ZONE_TARGET_DETECTOR_CLOSEOUT.md` M35-C4 selected-slice zone/target detector closeout
+- `../outputs/target_slice/m35_c4_first_slice_zone_target_detector.json` M35-C4 selected-slice zone/target detector output
+- `../outputs/target_slice/m35_c4_first_slice_zone_target_detector.md` M35-C4 human-readable zone/target summary
+- `specs/cards_and_decks/FIRST_SLICE_SELECTED_COMPATIBILITY_OUTPUT_SPEC.md` M35-C5 selected-slice compatibility output spec
+- `history/M35_C5_FIRST_SLICE_SELECTED_COMPATIBILITY_OUTPUT_CLOSEOUT.md` M35-C5 selected-slice compatibility output closeout
+- `../outputs/target_slice/m35_c5_first_slice_selected_compatibility_output.json` M35-C5 selected-slice compatibility output
+- `../outputs/target_slice/m35_c5_first_slice_selected_compatibility_output.md` M35-C5 human-readable selected-slice compatibility summary
+- `specs/cards_and_decks/FIRST_SLICE_CANDIDATE_PACKAGES_SPEC.md` M35-D1 selected-slice candidate package spec
+- `history/M35_D1_FIRST_SLICE_CANDIDATE_PACKAGES_CLOSEOUT.md` M35-D1 selected-slice candidate package closeout
+- `../outputs/target_slice/m35_d1_first_slice_candidate_packages.json` M35-D1 selected-slice candidate packages output
+- `../outputs/target_slice/m35_d1_first_slice_candidate_packages.md` M35-D1 human-readable candidate package summary
+- `specs/cards_and_decks/FIRST_SLICE_DECK_SKELETON_RATIO_PLANNER_SPEC.md` M35-D2 selected-slice deck skeleton ratio planner spec
+- `history/M35_D2_FIRST_SLICE_DECK_SKELETON_RATIO_PLANNER_CLOSEOUT.md` M35-D2 selected-slice deck skeleton ratio planner closeout
+- `../outputs/target_slice/m35_d2_first_slice_deck_skeleton_ratio_plans.json` M35-D2 selected-slice deck skeleton ratio plans output
+- `../outputs/target_slice/m35_d2_first_slice_deck_skeleton_ratio_plans.md` M35-D2 human-readable deck skeleton ratio plan summary
+- `specs/cards_and_decks/FIRST_SLICE_COMBO_LINE_EXPLAINER_SPEC.md` M35-D3 selected-slice combo line explainer spec
+- `history/M35_D3_FIRST_SLICE_COMBO_LINE_EXPLAINER_CLOSEOUT.md` M35-D3 selected-slice combo line explainer closeout
+- `../outputs/target_slice/m35_d3_first_slice_combo_line_explainer.json` M35-D3 selected-slice combo line explainer output
+- `../outputs/target_slice/m35_d3_first_slice_combo_line_explainer.md` M35-D3 human-readable combo line summary
+- `specs/cards_and_decks/FIRST_SLICE_REVIEWED_PLAYBOOK_SEED_SPEC.md` M35-D4 selected-slice reviewed playbook seed spec
+- `history/M35_D4_FIRST_SLICE_REVIEWED_PLAYBOOK_SEED_CLOSEOUT.md` M35-D4 selected-slice reviewed playbook seed closeout
+- `../outputs/target_slice/m35_d4_first_slice_reviewed_playbook_seed.json` M35-D4 selected-slice reviewed playbook seed output
+- `../outputs/target_slice/m35_d4_first_slice_reviewed_playbook_seed.md` M35-D4 human-readable reviewed playbook seed summary
+- `specs/cards_and_decks/SECOND_SLICE_SELECTION_SPEC.md` M35-E1 second target slice selection spec
+- `history/M35_E1_SECOND_TARGET_SLICE_CLOSEOUT.md` M35-E1 second target slice closeout
+- `../outputs/target_slice/m35_e1_second_target_slice_report.json` M35-E1 second target slice output
+- `../outputs/target_slice/m35_e1_second_target_slice_report.md` M35-E1 human-readable second target slice report
+- `specs/cards_and_decks/SECOND_SLICE_FIXTURE_READINESS_SPEC.md` M35-E2 second slice fixture readiness spec
+- `history/M35_E2_SECOND_SLICE_FIXTURE_READINESS_CLOSEOUT.md` M35-E2 second slice fixture readiness closeout
+- `../outputs/target_slice/m35_e2_second_slice_fixture_readiness.json` M35-E2 second slice fixture readiness output
+- `../outputs/target_slice/m35_e2_second_slice_fixture_readiness.md` M35-E2 human-readable fixture readiness report
+- `specs/cards_and_decks/SELECTED_SLICE_SEMANTIC_COMPATIBILITY_PROBE_SPEC.md` M35-E3 selected-slice semantic/compatibility probe spec
+- `history/M35_E3_SELECTED_SLICE_SEMANTIC_COMPATIBILITY_PROBE_CLOSEOUT.md` M35-E3 selected-slice semantic/compatibility probe closeout
+- `../outputs/target_slice/m35_e3_generalized_semantic_compatibility_probe.json` M35-E3 selected-slice semantic/compatibility probe output
+- `../outputs/target_slice/m35_e3_generalized_semantic_compatibility_probe.md` M35-E3 human-readable semantic/compatibility probe report
+- `specs/cards_and_decks/BOT_INTEGRATION_GATE_SPEC.md` M35-E4 bot integration gate spec
+- `history/M35_E4_BOT_INTEGRATION_GATE_CLOSEOUT.md` M35-E4 bot integration gate closeout
+- `../outputs/target_slice/m35_e4_bot_integration_gate.json` M35-E4 bot integration gate output
+- `../outputs/target_slice/m35_e4_bot_integration_gate.md` M35-E4 human-readable bot integration gate report
+- `specs/cards_and_decks/HYBRID_VERTICAL_SLICE_CLOSEOUT_SPEC.md` M35 closeout spec and M36 next queue selection
+- `history/M35_HYBRID_VERTICAL_SLICE_CLOSEOUT.md` M35 Hybrid Vertical-Slice closeout
+- `../outputs/target_slice/m35_closeout_hybrid_vertical_slice.json` M35 closeout output and M36 next queue selection
+- `../outputs/target_slice/m35_closeout_hybrid_vertical_slice.md` M35 human-readable closeout report
+- `specs/cards_and_decks/FIRST_SLICE_REVIEW_PACKET_SPEC.md` M36-01 first-slice review packet spec
+- `history/M36_01_FIRST_SLICE_REVIEW_PACKET_CLOSEOUT.md` M36-01 first-slice review packet closeout
+- `../outputs/target_slice/m36_01_first_slice_review_packet.json` M36-01 first-slice review packet output
+- `../outputs/target_slice/m36_01_first_slice_review_packet.md` M36-01 human-readable review packet
+- `../outputs/target_slice/m36_01_first_slice_review_packet.csv` M36-01 review packet CSV
+- `specs/cards_and_decks/DECK_RECIPE_DRAFT_MODEL_SPEC.md` M36-02 deck recipe draft model spec
+- `history/M36_02_DECK_RECIPE_DRAFT_MODEL_CLOSEOUT.md` M36-02 deck recipe draft model closeout
+- `../outputs/target_slice/m36_02_deck_recipe_draft_model.json` M36-02 deck recipe draft model output
+- `../outputs/target_slice/m36_02_deck_recipe_draft_model.md` M36-02 human-readable draft model report
+- `specs/cards_and_decks/DECK_RECIPE_VALIDATOR_SPEC.md` M36-03 deck recipe validator spec
+- `history/M36_03_DECK_RECIPE_VALIDATOR_CLOSEOUT.md` M36-03 deck recipe validator closeout
+- `../outputs/target_slice/m36_03_deck_recipe_validation_report.json` M36-03 deck recipe validation output
+- `../outputs/target_slice/m36_03_deck_recipe_validation_report.md` M36-03 human-readable validation report
+- `specs/cards_and_decks/COMBO_RECIPE_CONSISTENCY_SPEC.md` M36-04 combo-line to recipe consistency spec
+- `history/M36_04_COMBO_RECIPE_CONSISTENCY_CLOSEOUT.md` M36-04 combo-line to recipe consistency closeout
+- `../outputs/target_slice/m36_04_combo_recipe_consistency_report.json` M36-04 combo recipe consistency output
+- `../outputs/target_slice/m36_04_combo_recipe_consistency_report.md` M36-04 human-readable consistency report
+- `specs/cards_and_decks/SECOND_SLICE_READINESS_COMPARISON_SPEC.md` M36-05 second-slice readiness comparison spec
+- `history/M36_05_SECOND_SLICE_READINESS_COMPARISON_CLOSEOUT.md` M36-05 second-slice readiness comparison closeout
+- `../outputs/target_slice/m36_05_second_slice_readiness_comparison.json` M36-05 second-slice readiness comparison output
+- `../outputs/target_slice/m36_05_second_slice_readiness_comparison.md` M36-05 human-readable comparison report
+- `specs/cards_and_decks/DECK_RECIPE_VALIDATION_CLOSEOUT_SPEC.md` M36 deck recipe validation closeout spec
+- `history/M36_DECK_RECIPE_VALIDATION_CLOSEOUT.md` M36 deck recipe validation closeout
+- `../outputs/target_slice/m36_closeout_deck_recipe_validation.json` M36 deck recipe validation closeout output
+- `../outputs/target_slice/m36_closeout_deck_recipe_validation.md` M36 human-readable deck recipe validation closeout
+- `specs/cards_and_decks/ACCEPTED_SEED_SLOT_GAP_CANDIDATES_SPEC.md` M37-01 accepted seed slot-gap completion candidates spec
+- `history/M37_01_ACCEPTED_SEED_SLOT_GAP_CANDIDATES_CLOSEOUT.md` M37-01 accepted seed slot-gap candidates closeout
+- `../outputs/target_slice/m37_01_accepted_seed_slot_gap_candidates.json` M37-01 accepted seed slot-gap candidates output
+- `../outputs/target_slice/m37_01_accepted_seed_slot_gap_candidates.md` M37-01 human-readable accepted seed slot-gap candidates
+- `specs/cards_and_decks/TRIGGER_PACKAGE_REPAIR_PROPOSAL_SPEC.md` M37-02 trigger package repair proposal spec
+- `history/M37_02_TRIGGER_PACKAGE_REPAIR_PROPOSAL_CLOSEOUT.md` M37-02 trigger package repair proposal closeout
+- `../outputs/target_slice/m37_02_trigger_package_repair_proposal.json` M37-02 trigger package repair proposal output
+- `../outputs/target_slice/m37_02_trigger_package_repair_proposal.md` M37-02 human-readable trigger package repair proposal
+- `specs/cards_and_decks/REJECTED_LINE_SUPPORT_GAP_TRIAGE_SPEC.md` M37-03 rejected-line support-gap triage spec
+- `history/M37_03_REJECTED_LINE_SUPPORT_GAP_TRIAGE_CLOSEOUT.md` M37-03 rejected-line support-gap triage closeout
+- `../outputs/target_slice/m37_03_rejected_line_support_gap_triage.json` M37-03 rejected-line support-gap triage output
+- `../outputs/target_slice/m37_03_rejected_line_support_gap_triage.md` M37-03 human-readable rejected-line support-gap triage
+- `specs/cards_and_decks/MANUAL_SEMANTIC_MAPPING_CANDIDATES_SPEC.md` M37-04 manual semantic mapping candidates spec
+- `history/M37_04_MANUAL_SEMANTIC_MAPPING_CANDIDATES_CLOSEOUT.md` M37-04 manual semantic mapping candidates closeout
+- `../outputs/target_slice/m37_04_manual_semantic_mapping_candidates.json` M37-04 manual semantic mapping candidates output
+- `../outputs/target_slice/m37_04_manual_semantic_mapping_candidates.md` M37-04 human-readable manual semantic mapping candidates
+- `specs/cards_and_decks/REVISED_RECIPE_VALIDATION_RERUN_SPEC.md` M37-05 revised recipe validation rerun spec
+- `history/M37_05_REVISED_RECIPE_VALIDATION_RERUN_CLOSEOUT.md` M37-05 revised recipe validation rerun closeout
+- `../outputs/target_slice/m37_05_revised_recipe_validation_rerun.json` M37-05 revised recipe validation rerun output
+- `../outputs/target_slice/m37_05_revised_recipe_validation_rerun.md` M37-05 human-readable revised recipe validation rerun
+- `specs/cards_and_decks/FIRST_RUNTIME_READY_RECIPE_DECISION_SPEC.md` M37 first runtime-ready recipe decision spec
+- `history/M37_FIRST_RUNTIME_READY_RECIPE_DECISION_CLOSEOUT.md` M37 first runtime-ready recipe decision closeout
+- `../outputs/target_slice/m37_closeout_first_runtime_ready_recipe_decision.json` M37 first runtime-ready recipe decision output
+- `../outputs/target_slice/m37_closeout_first_runtime_ready_recipe_decision.md` M37 human-readable first runtime-ready recipe decision
+- `specs/cards_and_decks/ACCEPTED_SEED_HUMAN_REVIEW_PACKET_SPEC.md` M38-01 accepted seed human review packet spec
+- `history/M38_01_ACCEPTED_SEED_HUMAN_REVIEW_PACKET_CLOSEOUT.md` M38-01 accepted seed human review packet closeout
+- `../outputs/target_slice/m38_01_accepted_seed_human_review_packet.json` M38-01 accepted seed human review packet output
+- `../outputs/target_slice/m38_01_accepted_seed_human_review_packet.md` M38-01 human-readable accepted seed human review packet
+- `../outputs/target_slice/m38_01_accepted_seed_human_review_packet.csv` M38-01 accepted seed human review packet CSV
+- `specs/cards_and_decks/GRADE_PROFILE_REPAIR_CANDIDATES_SPEC.md` M38-02 grade profile repair candidates spec
+- `history/M38_02_GRADE_PROFILE_REPAIR_CANDIDATES_CLOSEOUT.md` M38-02 grade profile repair candidates closeout
+- `../outputs/target_slice/m38_02_grade_profile_repair_candidates.json` M38-02 grade profile repair candidates output
+- `../outputs/target_slice/m38_02_grade_profile_repair_candidates.md` M38-02 human-readable grade profile repair candidates
+- `specs/cards_and_decks/HUMAN_ACCEPTED_RECIPE_ARTIFACT_SPEC.md` M38-03 human-accepted recipe artifact spec
+- `history/M38_03_HUMAN_ACCEPTED_RECIPE_ARTIFACT_CLOSEOUT.md` M38-03 human-accepted recipe artifact closeout
+- `../outputs/target_slice/m38_03_human_accepted_recipe_artifact.json` M38-03 human-accepted recipe artifact output
+- `../outputs/target_slice/m38_03_human_accepted_recipe_artifact.md` M38-03 human-readable accepted recipe artifact
+- `specs/cards_and_decks/RUNTIME_FIXTURE_PROMOTION_GATE_SPEC.md` M38-04 runtime fixture promotion gate spec
+- `history/M38_04_RUNTIME_FIXTURE_PROMOTION_GATE_CLOSEOUT.md` M38-04 runtime fixture promotion gate closeout
+- `../outputs/target_slice/m38_04_runtime_fixture_promotion_gate.json` M38-04 runtime fixture promotion gate output
+- `../outputs/target_slice/m38_04_runtime_fixture_promotion_gate.md` M38-04 human-readable runtime fixture promotion gate
+- `../outputs/target_slice/runtime_fixtures/recipe_003_classic_core_nova_grappler_m38_04.json` M38-04 offline runtime/test fixture artifact
+- `specs/cards_and_decks/FIRST_RUNTIME_FIXTURE_CLOSEOUT_SPEC.md` M38 first runtime fixture closeout spec
+- `history/M38_FIRST_RUNTIME_FIXTURE_CLOSEOUT.md` M38 first runtime fixture closeout
+- `../outputs/target_slice/m38_closeout_first_runtime_fixture.json` M38 first runtime fixture closeout output
+- `../outputs/target_slice/m38_closeout_first_runtime_fixture.md` M38 human-readable first runtime fixture closeout
+- `specs/cards_and_decks/OFFLINE_FIXTURE_SCHEMA_VALIDATOR_SPEC.md` M39-01 offline fixture schema validator spec
+- `history/M39_01_OFFLINE_FIXTURE_SCHEMA_VALIDATOR_CLOSEOUT.md` M39-01 offline fixture schema validator closeout
+- `../outputs/target_slice/m39_01_offline_fixture_schema_validation.json` M39-01 offline fixture schema validation output
+- `../outputs/target_slice/m39_01_offline_fixture_schema_validation.md` M39-01 human-readable fixture schema validation
+- `specs/cards_and_decks/FIXTURE_DECK_TEXT_EXPORT_SPEC.md` M39-02 fixture-to-deck text exporter spec
+- `history/M39_02_FIXTURE_DECK_TEXT_EXPORT_CLOSEOUT.md` M39-02 fixture-to-deck text exporter closeout
+- `../outputs/target_slice/m39_02_fixture_deck_text_export.txt` M39-02 reviewable count-line deck text output
+- `../outputs/target_slice/m39_02_fixture_deck_text_export.json` M39-02 fixture deck text export report
+- `../outputs/target_slice/m39_02_fixture_deck_text_export.md` M39-02 human-readable fixture deck text export
+- `specs/cards_and_decks/HEADLESS_FIXTURE_LOAD_SMOKE_SPEC.md` M39-03 headless fixture load smoke spec
+- `history/M39_03_HEADLESS_FIXTURE_LOAD_SMOKE_CLOSEOUT.md` M39-03 headless fixture load smoke closeout
+- `../outputs/target_slice/m39_03_headless_fixture_deck_code.txt` M39-03 generated fixture deck code artifact
+- `../outputs/target_slice/m39_03_headless_fixture_load_smoke.json` M39-03 headless fixture load smoke report
+- `../outputs/target_slice/m39_03_headless_fixture_load_smoke.md` M39-03 human-readable headless fixture load smoke
+- `../outputs/target_slice/m39_03_headless_fixture_unity_result.json` M39-03 Unity headless fixture result
+- `../outputs/target_slice/m39_03_headless_fixture_unity_replay.json` M39-03 Unity headless fixture replay
+- `specs/cards_and_decks/SECOND_SLICE_RECIPE_SCALE_DECISION_SPEC.md` M39-04 second-slice recipe scale decision spec
+- `history/M39_04_SECOND_SLICE_RECIPE_SCALE_DECISION_CLOSEOUT.md` M39-04 second-slice recipe scale decision closeout
+- `../outputs/target_slice/m39_04_second_slice_recipe_scale_decision.json` M39-04 second-slice recipe scale decision report
+- `../outputs/target_slice/m39_04_second_slice_recipe_scale_decision.md` M39-04 human-readable second-slice recipe scale decision
+- `specs/cards_and_decks/SECOND_SLICE_REVIEW_PACKET_SPEC.md` M40-01 second-slice review packet spec
+- `history/M40_01_SECOND_SLICE_REVIEW_PACKET_CLOSEOUT.md` M40-01 second-slice review packet closeout
+- `../outputs/target_slice/m40_01_second_slice_review_packet.json` M40-01 second-slice review packet output
+- `../outputs/target_slice/m40_01_second_slice_review_packet.md` M40-01 human-readable second-slice review packet
+- `../outputs/target_slice/m40_01_second_slice_review_packet.csv` M40-01 second-slice review packet CSV
+- `specs/cards_and_decks/SECOND_SLICE_RECIPE_DRAFT_MODEL_SPEC.md` M40-02 second-slice recipe draft model spec
+- `history/M40_02_SECOND_SLICE_RECIPE_DRAFT_MODEL_CLOSEOUT.md` M40-02 second-slice recipe draft model closeout
+- `../outputs/target_slice/m40_02_second_slice_recipe_draft_model.json` M40-02 second-slice recipe draft model output
+- `../outputs/target_slice/m40_02_second_slice_recipe_draft_model.md` M40-02 human-readable second-slice recipe draft model
+- `specs/cards_and_decks/SECOND_SLICE_RECIPE_VALIDATOR_SPEC.md` M40-03 second-slice recipe validator spec
+- `history/M40_03_SECOND_SLICE_RECIPE_VALIDATOR_CLOSEOUT.md` M40-03 second-slice recipe validator closeout
+- `../outputs/target_slice/m40_03_second_slice_recipe_validation_report.json` M40-03 second-slice recipe validation report
+- `../outputs/target_slice/m40_03_second_slice_recipe_validation_report.md` M40-03 human-readable second-slice recipe validation report
+- `specs/cards_and_decks/SECOND_SLICE_COMBO_RECIPE_CONSISTENCY_SPEC.md` M40-04 second-slice combo-to-recipe consistency spec
+- `history/M40_04_SECOND_SLICE_COMBO_RECIPE_CONSISTENCY_CLOSEOUT.md` M40-04 second-slice combo-to-recipe consistency closeout
+- `../outputs/target_slice/m40_04_second_slice_combo_recipe_consistency_report.json` M40-04 second-slice combo-to-recipe consistency report
+- `../outputs/target_slice/m40_04_second_slice_combo_recipe_consistency_report.md` M40-04 human-readable second-slice combo-to-recipe consistency report
+- `specs/cards_and_decks/SECOND_SLICE_BLOCKER_REPAIR_CANDIDATES_SPEC.md` M40-05 second-slice blocker repair candidates spec
+- `history/M40_05_SECOND_SLICE_BLOCKER_REPAIR_CANDIDATES_CLOSEOUT.md` M40-05 second-slice blocker repair candidates closeout
+- `../outputs/target_slice/m40_05_second_slice_blocker_repair_candidates.json` M40-05 second-slice blocker repair candidates report
+- `../outputs/target_slice/m40_05_second_slice_blocker_repair_candidates.md` M40-05 human-readable second-slice blocker repair candidates report
+- `specs/cards_and_decks/SECOND_SLICE_RUNTIME_READINESS_CLOSEOUT_SPEC.md` M40-closeout second-slice runtime readiness decision spec
+- `history/M40_SECOND_SLICE_RUNTIME_READINESS_CLOSEOUT.md` M40 second-slice runtime readiness closeout
+- `../outputs/target_slice/m40_closeout_second_slice_runtime_readiness.json` M40-closeout second-slice runtime readiness report
+- `../outputs/target_slice/m40_closeout_second_slice_runtime_readiness.md` M40-closeout human-readable second-slice runtime readiness report
+- `specs/cards_and_decks/SECOND_SLICE_HUMAN_REPAIR_REVIEW_PACKET_SPEC.md` M41-01 second-slice human repair review packet spec
+- `history/M41_01_SECOND_SLICE_HUMAN_REPAIR_REVIEW_PACKET_CLOSEOUT.md` M41-01 second-slice human repair review packet closeout
+- `../outputs/target_slice/m41_01_second_slice_human_repair_review_packet.json` M41-01 second-slice human repair review packet
+- `../outputs/target_slice/m41_01_second_slice_human_repair_review_packet.md` M41-01 human-readable second-slice human repair review packet
+- `../outputs/target_slice/m41_01_second_slice_human_repair_review_packet.csv` M41-01 second-slice human repair review packet CSV
+- `specs/cards_and_decks/SECOND_SLICE_HUMAN_ACCEPTED_REPAIR_ARTIFACT_SPEC.md` M41-02 second-slice human-accepted repair artifact spec
+- `history/M41_02_SECOND_SLICE_HUMAN_ACCEPTED_REPAIR_ARTIFACT_CLOSEOUT.md` M41-02 second-slice human-accepted repair artifact closeout
+- `../outputs/target_slice/m41_02_second_slice_human_accepted_repair_artifact.json` M41-02 second-slice human-accepted repair artifact
+- `../outputs/target_slice/m41_02_second_slice_human_accepted_repair_artifact.md` M41-02 human-readable second-slice human-accepted repair artifact
+- `specs/cards_and_decks/SECOND_SLICE_REPAIRED_RECIPE_VALIDATION_RERUN_SPEC.md` M41-03 second-slice repaired recipe validation rerun spec
+- `history/M41_03_SECOND_SLICE_REPAIRED_RECIPE_VALIDATION_RERUN_CLOSEOUT.md` M41-03 second-slice repaired recipe validation rerun closeout
+- `../outputs/target_slice/m41_03_second_slice_repaired_recipe_validation_rerun.json` M41-03 second-slice repaired recipe validation report
+- `../outputs/target_slice/m41_03_second_slice_repaired_recipe_validation_rerun.md` M41-03 human-readable second-slice repaired recipe validation report
+- `specs/cards_and_decks/SECOND_SLICE_TRIGGER_PROFILE_REPAIR_CANDIDATES_SPEC.md` M41-repair second-slice trigger/profile repair candidates spec
+- `history/M41_REPAIR_SECOND_SLICE_TRIGGER_PROFILE_CANDIDATES_CLOSEOUT.md` M41-repair second-slice trigger/profile repair candidates closeout
+- `../outputs/target_slice/m41_repair_second_slice_trigger_profile_candidates.json` M41-repair second-slice trigger/profile repair candidates
+- `../outputs/target_slice/m41_repair_second_slice_trigger_profile_candidates.md` M41-repair human-readable second-slice trigger/profile repair candidates
+- `specs/cards_and_decks/SECOND_SLICE_TRIGGER_REPAIR_ACCEPTANCE_ARTIFACT_SPEC.md` M41-repair-accept second-slice trigger repair acceptance artifact spec
+- `history/M41_REPAIR_ACCEPT_SECOND_SLICE_TRIGGER_REPAIR_ARTIFACT_CLOSEOUT.md` M41-repair-accept second-slice trigger repair acceptance artifact closeout
+- `../outputs/target_slice/m41_repair_accept_second_slice_trigger_repair_artifact.json` M41-repair-accept second-slice trigger repair acceptance artifact
+- `../outputs/target_slice/m41_repair_accept_second_slice_trigger_repair_artifact.md` M41-repair-accept human-readable second-slice trigger repair acceptance artifact
+- `specs/cards_and_decks/SECOND_SLICE_TRIGGER_REPAIRED_RECIPE_VALIDATION_SPEC.md` M41-repair-validate second-slice trigger-repaired recipe validation spec
+- `history/M41_REPAIR_VALIDATE_SECOND_SLICE_REPAIRED_RECIPE_CLOSEOUT.md` M41-repair-validate second-slice repaired recipe validation closeout
+- `../outputs/target_slice/m41_repair_validate_second_slice_repaired_recipe.json` M41-repair-validate second-slice repaired recipe validation report
+- `../outputs/target_slice/m41_repair_validate_second_slice_repaired_recipe.md` M41-repair-validate human-readable second-slice repaired recipe validation report
+- `specs/cards_and_decks/SECOND_SLICE_RUNTIME_FIXTURE_PROMOTION_GATE_SPEC.md` M41-04 second-slice runtime fixture promotion gate spec
+- `history/M41_04_SECOND_SLICE_RUNTIME_FIXTURE_PROMOTION_GATE_CLOSEOUT.md` M41-04 second-slice runtime fixture promotion gate closeout
+- `../outputs/target_slice/m41_04_second_slice_runtime_fixture_promotion_gate.json` M41-04 second-slice runtime fixture promotion gate report
+- `../outputs/target_slice/m41_04_second_slice_runtime_fixture_promotion_gate.md` M41-04 human-readable second-slice runtime fixture promotion gate report
+- `../outputs/target_slice/runtime_fixtures/m40_recipe_001_classic_core_oracle_think_tank_m41_04.json` M41-04 offline runtime/test fixture artifact
+- `specs/cards_and_decks/SECOND_SLICE_FIXTURE_CLOSEOUT_SPEC.md` M41-closeout second-slice fixture closeout spec
+- `history/M41_SECOND_SLICE_FIXTURE_CLOSEOUT.md` M41-closeout second-slice fixture closeout
+- `../outputs/target_slice/m41_closeout_second_slice_fixture.json` M41-closeout second-slice fixture closeout report
+- `../outputs/target_slice/m41_closeout_second_slice_fixture.md` M41-closeout human-readable second-slice fixture closeout
+- `specs/cards_and_decks/SECOND_FIXTURE_SCHEMA_VALIDATOR_SPEC.md` M42-01 second fixture schema validator spec
+- `history/M42_01_SECOND_FIXTURE_SCHEMA_VALIDATOR_CLOSEOUT.md` M42-01 second fixture schema validator closeout
+- `../outputs/target_slice/m42_01_second_fixture_schema_validation.json` M42-01 second fixture schema validation report
+- `../outputs/target_slice/m42_01_second_fixture_schema_validation.md` M42-01 human-readable second fixture schema validation
+- `specs/cards_and_decks/SECOND_FIXTURE_DECK_TEXT_EXPORT_SPEC.md` M42-02 second fixture deck text export spec
+- `history/M42_02_SECOND_FIXTURE_DECK_TEXT_EXPORT_CLOSEOUT.md` M42-02 second fixture deck text export closeout
+- `../outputs/target_slice/m42_02_second_fixture_deck_text_export.txt` M42-02 second fixture deck text export
+- `../outputs/target_slice/m42_02_second_fixture_deck_text_export.json` M42-02 second fixture deck text export report
+- `../outputs/target_slice/m42_02_second_fixture_deck_text_export.md` M42-02 human-readable second fixture deck text export
+- `specs/cards_and_decks/SECOND_HEADLESS_FIXTURE_LOAD_SMOKE_SPEC.md` M42-03 second headless fixture load smoke spec
+- `history/M42_03_SECOND_HEADLESS_FIXTURE_LOAD_SMOKE_CLOSEOUT.md` M42-03 second headless fixture load smoke closeout
+- `../outputs/target_slice/m42_03_second_fixture_deck_code.txt` M42-03 second fixture generated deck code
+- `../outputs/target_slice/m42_03_second_fixture_load_smoke.json` M42-03 second fixture headless load smoke report
+- `../outputs/target_slice/m42_03_second_fixture_load_smoke.md` M42-03 human-readable second fixture headless load smoke
+- `../outputs/target_slice/m42_03_second_fixture_unity_result.json` M42-03 Unity headless result
+- `../outputs/target_slice/m42_03_second_fixture_unity_replay.json` M42-03 Unity headless replay
+- `specs/cards_and_decks/MULTI_FIXTURE_SCALE_DECISION_SPEC.md` M42-04 multi-fixture scale decision spec
+- `history/M42_04_MULTI_FIXTURE_SCALE_DECISION_CLOSEOUT.md` M42-04 multi-fixture scale decision closeout
+- `../outputs/target_slice/m42_04_multi_fixture_scale_decision.json` M42-04 multi-fixture scale decision report
+- `../outputs/target_slice/m42_04_multi_fixture_scale_decision.md` M42-04 human-readable multi-fixture scale decision
+- `specs/cards_and_decks/THIRD_TARGET_SLICE_SELECTION_SPEC.md` M43-01 third target slice selection spec
+- `history/M43_01_THIRD_TARGET_SLICE_SELECTION_CLOSEOUT.md` M43-01 third target slice selection closeout
+- `../outputs/target_slice/m43_01_third_target_slice_selection.json` M43-01 third target slice selection report
+- `../outputs/target_slice/m43_01_third_target_slice_selection.md` M43-01 human-readable third target slice selection
+- `specs/cards_and_decks/THIRD_SLICE_FIXTURE_READINESS_SPEC.md` M43-02 third-slice fixture/format readiness spec
+- `history/M43_02_THIRD_SLICE_FIXTURE_READINESS_CLOSEOUT.md` M43-02 third-slice fixture/format readiness closeout
+- `../outputs/target_slice/m43_02_third_slice_fixture_readiness.json` M43-02 third-slice fixture/format readiness report
+- `../outputs/target_slice/m43_02_third_slice_fixture_readiness.md` M43-02 human-readable third-slice fixture/format readiness
+- `specs/cards_and_decks/THIRD_SLICE_SEMANTIC_COMPATIBILITY_PROBE_SPEC.md` M43-03 third-slice semantic/compatibility probe spec
+- `history/M43_03_THIRD_SLICE_SEMANTIC_COMPATIBILITY_PROBE_CLOSEOUT.md` M43-03 third-slice semantic/compatibility probe closeout
+- `../outputs/target_slice/m43_03_third_slice_semantic_compatibility_probe.json` M43-03 third-slice semantic/compatibility probe report
+- `../outputs/target_slice/m43_03_third_slice_semantic_compatibility_probe.md` M43-03 human-readable third-slice semantic/compatibility probe
+- `specs/cards_and_decks/THIRD_SLICE_RECIPE_PIPELINE_ENTRY_GATE_SPEC.md` M43-04 third-slice recipe pipeline entry gate spec
+- `history/M43_04_THIRD_SLICE_RECIPE_PIPELINE_ENTRY_GATE_CLOSEOUT.md` M43-04 third-slice recipe pipeline entry gate closeout
+- `../outputs/target_slice/m43_04_third_slice_recipe_pipeline_entry_gate.json` M43-04 third-slice recipe pipeline entry gate report
+- `../outputs/target_slice/m43_04_third_slice_recipe_pipeline_entry_gate.md` M43-04 human-readable third-slice recipe pipeline entry gate
+- `specs/cards_and_decks/THIRD_SLICE_FIXTURE_SCAFFOLD_SPEC.md` M44-01 third-slice fixture scaffold spec
+- `history/M44_01_THIRD_SLICE_FIXTURE_SCAFFOLD_CLOSEOUT.md` M44-01 third-slice fixture scaffold closeout
+- `../outputs/target_slice/m44_01_third_slice_fixture_scaffold.json` M44-01 third-slice fixture scaffold report
+- `../outputs/target_slice/m44_01_third_slice_fixture_scaffold.md` M44-01 human-readable third-slice fixture scaffold
+- `specs/cards_and_decks/THIRD_SLICE_REVIEW_PACKET_SPEC.md` M44-02 third-slice review packet spec
+- `history/M44_02_THIRD_SLICE_REVIEW_PACKET_CLOSEOUT.md` M44-02 third-slice review packet closeout
+- `../outputs/target_slice/m44_02_third_slice_review_packet.json` M44-02 third-slice review packet report
+- `../outputs/target_slice/m44_02_third_slice_review_packet.md` M44-02 human-readable third-slice review packet
+- `../outputs/target_slice/m44_02_third_slice_review_packet.csv` M44-02 third-slice review packet CSV
+- `specs/cards_and_decks/THIRD_SLICE_RECIPE_DRAFT_MODEL_SPEC.md` M44-03 third-slice recipe draft model spec
+- `history/M44_03_THIRD_SLICE_RECIPE_DRAFT_MODEL_CLOSEOUT.md` M44-03 third-slice recipe draft model closeout
+- `../outputs/target_slice/m44_03_third_slice_recipe_draft_model.json` M44-03 third-slice recipe draft model report
+- `../outputs/target_slice/m44_03_third_slice_recipe_draft_model.md` M44-03 human-readable third-slice recipe draft model
+- `specs/cards_and_decks/THIRD_SLICE_RECIPE_VALIDATOR_SPEC.md` M44-04 third-slice recipe validator spec
+- `history/M44_04_THIRD_SLICE_RECIPE_VALIDATOR_CLOSEOUT.md` M44-04 third-slice recipe validator closeout
+- `../outputs/target_slice/m44_04_third_slice_recipe_validation_report.json` M44-04 third-slice recipe validation report
+- `../outputs/target_slice/m44_04_third_slice_recipe_validation_report.md` M44-04 human-readable third-slice recipe validation report
+- `specs/cards_and_decks/THIRD_SLICE_COMBO_RECIPE_CONSISTENCY_SPEC.md` M44-05 third-slice combo-to-recipe consistency spec
+- `history/M44_05_THIRD_SLICE_COMBO_RECIPE_CONSISTENCY_CLOSEOUT.md` M44-05 third-slice combo-to-recipe consistency closeout
+- `../outputs/target_slice/m44_05_third_slice_combo_recipe_consistency_report.json` M44-05 third-slice combo-to-recipe consistency report
+- `../outputs/target_slice/m44_05_third_slice_combo_recipe_consistency_report.md` M44-05 human-readable third-slice combo-to-recipe consistency report
+- `specs/cards_and_decks/THIRD_SLICE_BLOCKER_REPAIR_CANDIDATES_SPEC.md` M44-06 third-slice blocker repair candidates spec
+- `history/M44_06_THIRD_SLICE_BLOCKER_REPAIR_CANDIDATES_CLOSEOUT.md` M44-06 third-slice blocker repair candidates closeout
+- `../outputs/target_slice/m44_06_third_slice_blocker_repair_candidates.json` M44-06 third-slice blocker repair candidates report
+- `../outputs/target_slice/m44_06_third_slice_blocker_repair_candidates.md` M44-06 human-readable third-slice blocker repair candidates
+- `specs/cards_and_decks/THIRD_SLICE_RUNTIME_READINESS_CLOSEOUT_SPEC.md` M44-closeout third-slice runtime readiness closeout spec
+- `history/M44_THIRD_SLICE_RUNTIME_READINESS_CLOSEOUT.md` M44 third-slice runtime readiness closeout
+- `../outputs/target_slice/m44_closeout_third_slice_runtime_readiness.json` M44-closeout third-slice runtime readiness report
+- `../outputs/target_slice/m44_closeout_third_slice_runtime_readiness.md` M44-closeout human-readable third-slice runtime readiness
+- `specs/cards_and_decks/THIRD_SLICE_HUMAN_REPAIR_REVIEW_PACKET_SPEC.md` M45-01 third-slice human repair review packet spec
+- `history/M45_01_THIRD_SLICE_HUMAN_REPAIR_REVIEW_PACKET_CLOSEOUT.md` M45-01 third-slice human repair review packet closeout
+- `../outputs/target_slice/m45_01_third_slice_human_repair_review_packet.json` M45-01 third-slice human repair review packet
+- `../outputs/target_slice/m45_01_third_slice_human_repair_review_packet.md` M45-01 human-readable third-slice human repair review packet
+- `../outputs/target_slice/m45_01_third_slice_human_repair_review_packet.csv` M45-01 CSV third-slice human repair review packet
+- `specs/cards_and_decks/THIRD_SLICE_HUMAN_ACCEPTED_REPAIR_ARTIFACT_SPEC.md` M45-02 third-slice human-accepted repair artifact spec
+- `history/M45_02_THIRD_SLICE_HUMAN_ACCEPTED_REPAIR_ARTIFACT_CLOSEOUT.md` M45-02 third-slice human-accepted repair artifact closeout
+- `../outputs/target_slice/m45_02_third_slice_human_accepted_repair_artifact.json` M45-02 third-slice human-accepted repair artifact
+- `../outputs/target_slice/m45_02_third_slice_human_accepted_repair_artifact.md` M45-02 human-readable third-slice human-accepted repair artifact
+- `specs/cards_and_decks/THIRD_SLICE_REPAIRED_RECIPE_VALIDATION_RERUN_SPEC.md` M45-03 third-slice repaired recipe validation rerun spec
+- `history/M45_03_THIRD_SLICE_REPAIRED_RECIPE_VALIDATION_RERUN_CLOSEOUT.md` M45-03 third-slice repaired recipe validation rerun closeout
+- `../outputs/target_slice/m45_03_third_slice_repaired_recipe_validation_report.json` M45-03 third-slice repaired recipe validation report
+- `../outputs/target_slice/m45_03_third_slice_repaired_recipe_validation_report.md` M45-03 human-readable third-slice repaired recipe validation report
+- `specs/cards_and_decks/THIRD_SLICE_RUNTIME_FIXTURE_PROMOTION_GATE_SPEC.md` M45-04 third-slice runtime fixture promotion gate spec
+- `history/M45_04_THIRD_SLICE_RUNTIME_FIXTURE_PROMOTION_GATE_CLOSEOUT.md` M45-04 third-slice runtime fixture promotion gate closeout
+- `../outputs/target_slice/m45_04_third_slice_runtime_fixture_promotion_gate.json` M45-04 third-slice runtime fixture promotion gate
+- `../outputs/target_slice/m45_04_third_slice_runtime_fixture_promotion_gate.md` M45-04 human-readable third-slice runtime fixture promotion gate
+- `../outputs/target_slice/runtime_fixtures/m44_recipe_001_link_joker_legion_bermuda_triangle_m45_04.json` M45-04 third-slice offline runtime/test fixture
+- `specs/cards_and_decks/THIRD_SLICE_FIXTURE_CLOSEOUT_SPEC.md` M45-closeout third-slice fixture closeout spec
+- `history/M45_THIRD_SLICE_FIXTURE_CLOSEOUT.md` M45 third-slice fixture closeout
+- `../outputs/target_slice/m45_closeout_third_slice_fixture.json` M45-closeout third-slice fixture closeout report
+- `../outputs/target_slice/m45_closeout_third_slice_fixture.md` M45-closeout human-readable third-slice fixture closeout
+- `specs/cards_and_decks/THIRD_FIXTURE_SCHEMA_VALIDATOR_SPEC.md` M46-01 third fixture schema validator spec
+- `history/M46_01_THIRD_FIXTURE_SCHEMA_VALIDATOR_CLOSEOUT.md` M46-01 third fixture schema validator closeout
+- `../outputs/target_slice/m46_01_third_fixture_schema_validation.json` M46-01 third fixture schema validation report
+- `../outputs/target_slice/m46_01_third_fixture_schema_validation.md` M46-01 human-readable third fixture schema validation report
+- `specs/cards_and_decks/THIRD_FIXTURE_DECK_TEXT_EXPORT_SPEC.md` M46-02 third fixture deck text export spec
+- `history/M46_02_THIRD_FIXTURE_DECK_TEXT_EXPORT_CLOSEOUT.md` M46-02 third fixture deck text export closeout
+- `../outputs/target_slice/m46_02_third_fixture_deck_text_export.txt` M46-02 third fixture review-only deck text
+- `../outputs/target_slice/m46_02_third_fixture_deck_text_export.json` M46-02 third fixture deck text export report
+- `../outputs/target_slice/m46_02_third_fixture_deck_text_export.md` M46-02 human-readable third fixture deck text export report
+- `specs/cards_and_decks/THIRD_HEADLESS_FIXTURE_LOAD_SMOKE_SPEC.md` M46-03 third fixture headless load smoke spec
+- `history/M46_03_THIRD_HEADLESS_FIXTURE_LOAD_SMOKE_CLOSEOUT.md` M46-03 third fixture headless load smoke closeout
+- `../outputs/target_slice/m46_03_third_fixture_deck_code.txt` M46-03 third fixture generated deck code
+- `../outputs/target_slice/m46_03_third_fixture_load_smoke.json` M46-03 third fixture headless load smoke report
+- `../outputs/target_slice/m46_03_third_fixture_load_smoke.md` M46-03 human-readable third fixture headless load smoke
+- `../outputs/target_slice/m46_03_third_fixture_unity_result.json` M46-03 third fixture Unity headless result
+- `../outputs/target_slice/m46_03_third_fixture_unity_replay.json` M46-03 third fixture Unity headless replay
+- `specs/cards_and_decks/THREE_FIXTURE_SCALE_DECISION_SPEC.md` M46-04 three-fixture scale decision spec
+- `history/M46_04_THREE_FIXTURE_SCALE_DECISION_CLOSEOUT.md` M46-04 three-fixture scale decision closeout
+- `../outputs/target_slice/m46_04_three_fixture_scale_decision.json` M46-04 three-fixture scale decision report
+- `../outputs/target_slice/m46_04_three_fixture_scale_decision.md` M46-04 human-readable three-fixture scale decision report
+- `specs/cards_and_decks/FOURTH_TARGET_SLICE_SELECTION_SPEC.md` M47-01 fourth target slice selection spec
+- `history/M47_01_FOURTH_TARGET_SLICE_SELECTION_CLOSEOUT.md` M47-01 fourth target slice selection closeout
+- `../outputs/target_slice/m47_01_fourth_target_slice_selection.json` M47-01 fourth target slice selection report
+- `../outputs/target_slice/m47_01_fourth_target_slice_selection.md` M47-01 human-readable fourth target slice selection
+- `specs/cards_and_decks/FOURTH_SLICE_FIXTURE_READINESS_SPEC.md` M47-02 fourth-slice fixture/format readiness spec
+- `history/M47_02_FOURTH_SLICE_FIXTURE_READINESS_CLOSEOUT.md` M47-02 fourth-slice fixture/format readiness closeout
+- `../outputs/target_slice/m47_02_fourth_slice_fixture_readiness.json` M47-02 fourth-slice fixture/format readiness report
+- `../outputs/target_slice/m47_02_fourth_slice_fixture_readiness.md` M47-02 human-readable fourth-slice fixture/format readiness report
+- `specs/cards_and_decks/FOURTH_SLICE_READINESS_REPAIR_SPEC.md` M47-repair fourth-slice readiness repair spec
+- `history/M47_REPAIR_FOURTH_SLICE_READINESS_BLOCKERS_CLOSEOUT.md` M47-repair fourth-slice readiness blocker closeout
+- `../outputs/target_slice/m47_repair_fourth_slice_readiness_blockers.json` M47-repair fourth-slice readiness blocker report
+- `../outputs/target_slice/m47_repair_fourth_slice_readiness_blockers.md` M47-repair human-readable fourth-slice readiness blocker report
+- `specs/cards_and_decks/FOURTH_SLICE_SCOPE_EXPANSION_REVIEW_SPEC.md` M47-repair-expand-scope source expansion review spec
+- `history/M47_REPAIR_EXPAND_SCOPE_REVIEW_CLOSEOUT.md` M47-repair-expand-scope source expansion review closeout
+- `../outputs/target_slice/m47_repair_expand_scope_review.json` M47-repair-expand-scope source expansion review report
+- `../outputs/target_slice/m47_repair_expand_scope_review.md` M47-repair-expand-scope human-readable source expansion review
+- `specs/cards_and_decks/FOURTH_SLICE_BLOCKER_REPAIR_CANDIDATES_SPEC.md` M48-06 fourth-slice blocker repair candidates spec
+- `history/M48_06_FOURTH_SLICE_BLOCKER_REPAIR_CANDIDATES_CLOSEOUT.md` M48-06 fourth-slice blocker repair candidates closeout
+- `../outputs/target_slice/m48_06_fourth_slice_blocker_repair_candidates.json` M48-06 fourth-slice blocker repair candidates report
+- `../outputs/target_slice/m48_06_fourth_slice_blocker_repair_candidates.md` M48-06 human-readable fourth-slice blocker repair candidates
+- `specs/cards_and_decks/FOURTH_SLICE_RUNTIME_READINESS_CLOSEOUT_SPEC.md` M48-closeout fourth-slice runtime readiness closeout spec
+- `history/M48_CLOSEOUT_FOURTH_SLICE_RUNTIME_READINESS_CLOSEOUT.md` M48-closeout fourth-slice runtime readiness closeout
+- `../outputs/target_slice/m48_closeout_fourth_slice_runtime_readiness.json` M48-closeout fourth-slice runtime readiness report
+- `../outputs/target_slice/m48_closeout_fourth_slice_runtime_readiness.md` M48-closeout human-readable fourth-slice runtime readiness
+- `specs/cards_and_decks/FOURTH_SLICE_HUMAN_REPAIR_REVIEW_PACKET_SPEC.md` M49-01 fourth-slice human repair review packet spec
+- `history/M49_01_FOURTH_SLICE_HUMAN_REPAIR_REVIEW_PACKET_CLOSEOUT.md` M49-01 fourth-slice human repair review packet closeout
+- `../outputs/target_slice/m49_01_fourth_slice_human_repair_review_packet.json` M49-01 fourth-slice human repair review packet
+- `../outputs/target_slice/m49_01_fourth_slice_human_repair_review_packet.md` M49-01 human-readable fourth-slice human repair review packet
+- `../outputs/target_slice/m49_01_fourth_slice_human_repair_review_packet.csv` M49-01 fourth-slice human repair review packet CSV
+- `specs/cards_and_decks/FOURTH_SLICE_G_ZONE_SUPPORT_DECISION_SPEC.md` M49-02 fourth-slice G Zone support decision spec
+- `history/M49_02_FOURTH_SLICE_G_ZONE_SUPPORT_DECISION_CLOSEOUT.md` M49-02 fourth-slice G Zone support decision closeout
+- `../outputs/target_slice/m49_02_fourth_slice_g_zone_support_decision.json` M49-02 fourth-slice G Zone support decision
+- `../outputs/target_slice/m49_02_fourth_slice_g_zone_support_decision.md` M49-02 human-readable fourth-slice G Zone support decision
+- `specs/cards_and_decks/FOURTH_SLICE_HUMAN_ACCEPTED_REPAIR_ARTIFACT_SPEC.md` M49-03 fourth-slice human-accepted repair artifact spec
+- `history/M49_03_FOURTH_SLICE_HUMAN_ACCEPTED_REPAIR_ARTIFACT_CLOSEOUT.md` M49-03 fourth-slice human-accepted repair artifact closeout
+- `../outputs/target_slice/m49_03_fourth_slice_human_accepted_repair_artifact.json` M49-03 fourth-slice human-accepted repair artifact
+- `../outputs/target_slice/m49_03_fourth_slice_human_accepted_repair_artifact.md` M49-03 human-readable fourth-slice human-accepted repair artifact
+- `specs/cards_and_decks/FOURTH_SLICE_REPAIRED_RECIPE_VALIDATION_RERUN_SPEC.md` M49-04 fourth-slice repaired recipe validation rerun spec
+- `history/M49_04_FOURTH_SLICE_REPAIRED_RECIPE_VALIDATION_RERUN_CLOSEOUT.md` M49-04 fourth-slice repaired recipe validation rerun closeout
+- `../outputs/target_slice/m49_04_fourth_slice_repaired_recipe_validation_report.json` M49-04 fourth-slice repaired recipe validation report
+- `../outputs/target_slice/m49_04_fourth_slice_repaired_recipe_validation_report.md` M49-04 human-readable fourth-slice repaired recipe validation report
+- `specs/cards_and_decks/FOURTH_SLICE_RUNTIME_FIXTURE_GATE_SPEC.md` M49-05 fourth-slice runtime fixture gate spec
+- `history/M49_05_FOURTH_SLICE_RUNTIME_FIXTURE_GATE_CLOSEOUT.md` M49-05 fourth-slice runtime fixture gate closeout
+- `../outputs/target_slice/m49_05_fourth_slice_runtime_fixture_gate.json` M49-05 fourth-slice runtime fixture gate
+- `../outputs/target_slice/m49_05_fourth_slice_runtime_fixture_gate.md` M49-05 human-readable fourth-slice runtime fixture gate
+- `../outputs/target_slice/runtime_fixtures/m48_recipe_001_g_series_first_royal_paladin_m49_05.json` M49-05 fourth-slice offline runtime/test fixture
+- `specs/cards_and_decks/FOURTH_SLICE_FIXTURE_CLOSEOUT_SPEC.md` M49-closeout fourth-slice fixture closeout spec
+- `history/M49_FOURTH_SLICE_FIXTURE_CLOSEOUT.md` M49 fourth-slice fixture closeout
+- `../outputs/target_slice/m49_closeout_fourth_slice_fixture.json` M49-closeout fourth-slice fixture closeout
+- `../outputs/target_slice/m49_closeout_fourth_slice_fixture.md` M49-closeout human-readable fourth-slice fixture closeout
+- `specs/cards_and_decks/FOURTH_FIXTURE_SCHEMA_VALIDATOR_SPEC.md` M50-01 fourth fixture schema validator spec
+- `history/M50_01_FOURTH_FIXTURE_SCHEMA_VALIDATOR_CLOSEOUT.md` M50-01 fourth fixture schema validator closeout
+- `../outputs/target_slice/m50_01_fourth_fixture_schema_validation.json` M50-01 fourth fixture schema validation report
+- `../outputs/target_slice/m50_01_fourth_fixture_schema_validation.md` M50-01 human-readable fourth fixture schema validation report
+- `specs/cards_and_decks/FOURTH_FIXTURE_DECK_TEXT_EXPORT_SPEC.md` M50-02 fourth fixture deck text export spec
+- `history/M50_02_FOURTH_FIXTURE_DECK_TEXT_EXPORT_CLOSEOUT.md` M50-02 fourth fixture deck text export closeout
+- `../outputs/target_slice/m50_02_fourth_fixture_deck_text_export.txt` M50-02 fourth fixture count-line deck text
+- `../outputs/target_slice/m50_02_fourth_fixture_deck_text_export.json` M50-02 fourth fixture deck text export report
+- `../outputs/target_slice/m50_02_fourth_fixture_deck_text_export.md` M50-02 human-readable fourth fixture deck text export report
+- `specs/cards_and_decks/FOURTH_HEADLESS_FIXTURE_LOAD_SMOKE_SPEC.md` M50-03 fourth fixture headless load smoke spec
+- `history/M50_03_FOURTH_HEADLESS_FIXTURE_LOAD_SMOKE_CLOSEOUT.md` M50-03 fourth fixture headless load smoke closeout
+- `../outputs/target_slice/m50_03_fourth_fixture_deck_code.txt` M50-03 fourth fixture deck code
+- `../outputs/target_slice/m50_03_fourth_fixture_load_smoke.json` M50-03 fourth fixture headless load smoke report
+- `../outputs/target_slice/m50_03_fourth_fixture_load_smoke.md` M50-03 human-readable fourth fixture headless load smoke report
+- `../outputs/target_slice/m50_03_fourth_fixture_unity_result.json` M50-03 fourth fixture Unity headless result
+- `../outputs/target_slice/m50_03_fourth_fixture_unity_replay.json` M50-03 fourth fixture Unity headless replay
+- `specs/cards_and_decks/FOUR_FIXTURE_SCALE_DECISION_SPEC.md` M50-04 four-fixture scale decision spec
+- `history/M50_04_FOUR_FIXTURE_SCALE_DECISION_CLOSEOUT.md` M50-04 four-fixture scale decision closeout
+- `../outputs/target_slice/m50_04_four_fixture_scale_decision.json` M50-04 four-fixture scale decision report
+- `../outputs/target_slice/m50_04_four_fixture_scale_decision.md` M50-04 human-readable four-fixture scale decision report
+- `specs/cards_and_decks/FIFTH_TARGET_SLICE_SELECTION_SPEC.md` M51-01 fifth target slice selection spec
+- `history/M51_01_FIFTH_TARGET_SLICE_SELECTION_CLOSEOUT.md` M51-01 fifth target slice selection closeout
+- `../outputs/target_slice/m51_01_fifth_target_slice_selection.json` M51-01 fifth target slice selection report
+- `../outputs/target_slice/m51_01_fifth_target_slice_selection.md` M51-01 human-readable fifth target slice selection
+- `specs/cards_and_decks/FIFTH_SLICE_FIXTURE_READINESS_SPEC.md` M51-02 fifth-slice fixture/format readiness spec
+- `history/M51_02_FIFTH_SLICE_FIXTURE_READINESS_CLOSEOUT.md` M51-02 fifth-slice fixture/format readiness closeout
+- `../outputs/target_slice/m51_02_fifth_slice_fixture_readiness.json` M51-02 fifth-slice fixture/format readiness report
+- `../outputs/target_slice/m51_02_fifth_slice_fixture_readiness.md` M51-02 human-readable fifth-slice fixture/format readiness
+- `specs/cards_and_decks/FIFTH_SLICE_SEMANTIC_COMPATIBILITY_PROBE_SPEC.md` M51-03 fifth-slice semantic/compatibility probe spec
+- `history/M51_03_FIFTH_SLICE_SEMANTIC_COMPATIBILITY_PROBE_CLOSEOUT.md` M51-03 fifth-slice semantic/compatibility probe closeout
+- `../outputs/target_slice/m51_03_fifth_slice_semantic_compatibility_probe.json` M51-03 fifth-slice semantic/compatibility probe report
+- `../outputs/target_slice/m51_03_fifth_slice_semantic_compatibility_probe.md` M51-03 human-readable fifth-slice semantic/compatibility probe
+- `specs/cards_and_decks/FIFTH_SLICE_RECIPE_PIPELINE_ENTRY_GATE_SPEC.md` M51-04 fifth-slice recipe pipeline entry gate spec
+- `history/M51_04_FIFTH_SLICE_RECIPE_PIPELINE_ENTRY_GATE_CLOSEOUT.md` M51-04 fifth-slice recipe pipeline entry gate closeout
+- `../outputs/target_slice/m51_04_fifth_slice_recipe_pipeline_entry_gate.json` M51-04 fifth-slice recipe pipeline entry gate report
+- `../outputs/target_slice/m51_04_fifth_slice_recipe_pipeline_entry_gate.md` M51-04 human-readable fifth-slice recipe pipeline entry gate
+- `specs/cards_and_decks/FIFTH_SLICE_FIXTURE_SCAFFOLD_SPEC.md` M52-01 fifth-slice fixture scaffold spec
+- `history/M52_01_FIFTH_SLICE_FIXTURE_SCAFFOLD_CLOSEOUT.md` M52-01 fifth-slice fixture scaffold closeout
+- `../outputs/target_slice/m52_01_fifth_slice_fixture_scaffold.json` M52-01 fifth-slice fixture scaffold report
+- `../outputs/target_slice/m52_01_fifth_slice_fixture_scaffold.md` M52-01 human-readable fifth-slice fixture scaffold
+- `specs/cards_and_decks/FIFTH_SLICE_REVIEW_PACKET_SPEC.md` M52-02 fifth-slice review packet spec
+- `history/M52_02_FIFTH_SLICE_REVIEW_PACKET_CLOSEOUT.md` M52-02 fifth-slice review packet closeout
+- `../outputs/target_slice/m52_02_fifth_slice_review_packet.json` M52-02 fifth-slice review packet report
+- `../outputs/target_slice/m52_02_fifth_slice_review_packet.md` M52-02 human-readable fifth-slice review packet
+- `../outputs/target_slice/m52_02_fifth_slice_review_packet.csv` M52-02 fifth-slice review packet CSV
+- `specs/cards_and_decks/FIFTH_SLICE_RECIPE_DRAFT_MODEL_SPEC.md` M52-03 fifth-slice recipe draft model spec
+- `history/M52_03_FIFTH_SLICE_RECIPE_DRAFT_MODEL_CLOSEOUT.md` M52-03 fifth-slice recipe draft model closeout
+- `../outputs/target_slice/m52_03_fifth_slice_recipe_draft_model.json` M52-03 fifth-slice recipe draft model report
+- `../outputs/target_slice/m52_03_fifth_slice_recipe_draft_model.md` M52-03 human-readable fifth-slice recipe draft model
+- `specs/cards_and_decks/FIFTH_SLICE_RECIPE_VALIDATOR_SPEC.md` M52-04 fifth-slice recipe validator spec
+- `history/M52_04_FIFTH_SLICE_RECIPE_VALIDATOR_CLOSEOUT.md` M52-04 fifth-slice recipe validator closeout
+- `../outputs/target_slice/m52_04_fifth_slice_recipe_validation_report.json` M52-04 fifth-slice recipe validation report
+- `../outputs/target_slice/m52_04_fifth_slice_recipe_validation_report.md` M52-04 human-readable fifth-slice recipe validation report
+- `specs/cards_and_decks/FIFTH_SLICE_COMBO_RECIPE_CONSISTENCY_SPEC.md` M52-05 fifth-slice combo-to-recipe consistency spec
+- `history/M52_05_FIFTH_SLICE_COMBO_RECIPE_CONSISTENCY_CLOSEOUT.md` M52-05 fifth-slice combo-to-recipe consistency closeout
+- `../outputs/target_slice/m52_05_fifth_slice_combo_recipe_consistency_report.json` M52-05 fifth-slice combo-to-recipe consistency report
+- `../outputs/target_slice/m52_05_fifth_slice_combo_recipe_consistency_report.md` M52-05 human-readable fifth-slice combo-to-recipe consistency report
+- `specs/cards_and_decks/FIFTH_SLICE_BLOCKER_REPAIR_CANDIDATES_SPEC.md` M52-06 fifth-slice blocker repair candidates spec
+- `history/M52_06_FIFTH_SLICE_BLOCKER_REPAIR_CANDIDATES_CLOSEOUT.md` M52-06 fifth-slice blocker repair candidates closeout
+- `../outputs/target_slice/m52_06_fifth_slice_blocker_repair_candidates.json` M52-06 fifth-slice blocker repair candidates report
+- `../outputs/target_slice/m52_06_fifth_slice_blocker_repair_candidates.md` M52-06 human-readable fifth-slice blocker repair candidates report
+- `specs/cards_and_decks/FIFTH_SLICE_RUNTIME_READINESS_CLOSEOUT_SPEC.md` M52-closeout fifth-slice runtime readiness closeout spec
+- `history/M52_CLOSEOUT_FIFTH_SLICE_RUNTIME_READINESS_CLOSEOUT.md` M52-closeout fifth-slice runtime readiness closeout
+- `../outputs/target_slice/m52_closeout_fifth_slice_runtime_readiness.json` M52-closeout fifth-slice runtime readiness report
+- `../outputs/target_slice/m52_closeout_fifth_slice_runtime_readiness.md` M52-closeout human-readable fifth-slice runtime readiness report
+- `specs/cards_and_decks/FIFTH_SLICE_HUMAN_REPAIR_REVIEW_PACKET_SPEC.md` M53-01 fifth-slice human repair review packet spec
+- `history/M53_01_FIFTH_SLICE_HUMAN_REPAIR_REVIEW_PACKET_CLOSEOUT.md` M53-01 fifth-slice human repair review packet closeout
+- `../outputs/target_slice/m53_01_fifth_slice_human_repair_review_packet.json` M53-01 fifth-slice human repair review packet report
+- `../outputs/target_slice/m53_01_fifth_slice_human_repair_review_packet.md` M53-01 human-readable fifth-slice human repair review packet
+- `../outputs/target_slice/m53_01_fifth_slice_human_repair_review_packet.csv` M53-01 fifth-slice human repair review packet CSV
+- `specs/cards_and_decks/FIFTH_SLICE_HUMAN_SELECTED_RECIPE_ARTIFACT_SPEC.md` M53-02 fifth-slice human-selected recipe artifact spec
+- `../outputs/target_slice/m53_02_fifth_slice_human_selected_recipe_artifact.json` M53-02 fifth-slice selected recipe artifact
+- `../outputs/target_slice/m53_02_fifth_slice_human_selected_recipe_artifact.md` M53-02 human-readable selected recipe artifact
+- `specs/cards_and_decks/FIFTH_SLICE_HUMAN_ACCEPTED_REPAIR_ARTIFACT_SPEC.md` M53-03 fifth-slice human-accepted repair artifact spec
+- `../outputs/target_slice/m53_03_fifth_slice_human_accepted_repair_artifact.json` M53-03 fifth-slice accepted repair artifact
+- `../outputs/target_slice/m53_03_fifth_slice_human_accepted_repair_artifact.md` M53-03 human-readable accepted repair artifact
+- `specs/cards_and_decks/FIFTH_SLICE_REPAIRED_RECIPE_VALIDATION_RERUN_SPEC.md` M53-04 fifth-slice repaired recipe validation rerun spec
+- `../outputs/target_slice/m53_04_fifth_slice_repaired_recipe_validation_rerun.json` M53-04 repaired recipe validation rerun report
+- `../outputs/target_slice/m53_04_fifth_slice_repaired_recipe_validation_rerun.md` M53-04 human-readable repaired recipe validation rerun
+- `specs/cards_and_decks/FIFTH_SLICE_RUNTIME_FIXTURE_PROMOTION_GATE_SPEC.md` M53-05 fifth-slice runtime fixture promotion gate spec
+- `../outputs/target_slice/m53_05_fifth_slice_runtime_fixture_promotion_gate.json` M53-05 runtime fixture promotion gate report
+- `../outputs/target_slice/m53_05_fifth_slice_runtime_fixture_promotion_gate.md` M53-05 human-readable runtime fixture promotion gate
+- `../outputs/target_slice/runtime_fixtures/m52_recipe_001_gold_paladin_m53_05.json` M53-05 Gold Paladin offline runtime/test fixture
+- `specs/cards_and_decks/FIFTH_SLICE_FIXTURE_CLOSEOUT_SPEC.md` M53-closeout fifth-slice fixture closeout spec
+- `../outputs/target_slice/m53_closeout_fifth_slice_fixture.json` M53-closeout fifth-slice fixture closeout report
+- `../outputs/target_slice/m53_closeout_fifth_slice_fixture.md` M53-closeout human-readable fifth-slice fixture closeout
+- `specs/cards_and_decks/FIFTH_FIXTURE_SCHEMA_VALIDATOR_SPEC.md` M54-01 fifth fixture schema validator spec
+- `history/M54_01_FIFTH_FIXTURE_SCHEMA_VALIDATOR_CLOSEOUT.md` M54-01 fifth fixture schema validator closeout
+- `../tools/deck/validate_fifth_runtime_fixture_schema.py` M54-01 fifth fixture schema validation tool
+- `../tests/test_fifth_runtime_fixture_schema_validator.py` M54-01 fifth fixture schema validation tests
+- `../outputs/target_slice/m54_01_fifth_fixture_schema_validation.json` M54-01 fifth fixture schema validation report
+- `../outputs/target_slice/m54_01_fifth_fixture_schema_validation.md` M54-01 human-readable fifth fixture schema validation
+- `specs/cards_and_decks/FIFTH_FIXTURE_DECK_TEXT_EXPORT_SPEC.md` M54-02 fifth fixture deck text export spec
+- `history/M54_02_FIFTH_FIXTURE_DECK_TEXT_EXPORT_CLOSEOUT.md` M54-02 fifth fixture deck text export closeout
+- `../tools/deck/export_fifth_fixture_deck_text.py` M54-02 fifth fixture deck text export tool
+- `../tests/test_fifth_fixture_deck_text_export.py` M54-02 fifth fixture deck text export tests
+- `../outputs/target_slice/m54_02_fifth_fixture_deck_text_export.txt` M54-02 fifth fixture count-line deck text
+- `../outputs/target_slice/m54_02_fifth_fixture_deck_text_export.json` M54-02 fifth fixture deck text export report
+- `../outputs/target_slice/m54_02_fifth_fixture_deck_text_export.md` M54-02 human-readable fifth fixture deck text export
+- `specs/cards_and_decks/FIFTH_HEADLESS_FIXTURE_LOAD_SMOKE_SPEC.md` M54-03 fifth fixture headless load smoke spec
+- `history/M54_03_FIFTH_HEADLESS_FIXTURE_LOAD_SMOKE_CLOSEOUT.md` M54-03 fifth fixture headless load smoke closeout
+- `../tools/deck/build_fifth_headless_fixture_load_smoke.py` M54-03 fifth fixture headless load smoke tool
+- `../tests/test_fifth_headless_fixture_load_smoke.py` M54-03 fifth fixture headless load smoke tests
+- `../outputs/target_slice/m54_03_fifth_fixture_deck_code.txt` M54-03 fifth fixture deck code
+- `../outputs/target_slice/m54_03_fifth_fixture_load_smoke.json` M54-03 fifth fixture load smoke report
+- `../outputs/target_slice/m54_03_fifth_fixture_load_smoke.md` M54-03 human-readable fifth fixture load smoke
+- `../outputs/target_slice/m54_03_fifth_fixture_unity_result.json` M54-03 Unity headless result
+- `../outputs/target_slice/m54_03_fifth_fixture_unity_replay.json` M54-03 Unity headless replay
+- `specs/cards_and_decks/FIVE_FIXTURE_SCALE_DECISION_SPEC.md` M54-04 five-fixture scale decision spec
+- `history/M54_04_FIVE_FIXTURE_SCALE_DECISION_CLOSEOUT.md` M54-04 five-fixture scale decision closeout
+- `../tools/deck/build_five_fixture_scale_decision.py` M54-04 five-fixture scale decision tool
+- `../tests/test_five_fixture_scale_decision.py` M54-04 five-fixture scale decision tests
+- `../outputs/target_slice/m54_04_five_fixture_scale_decision.json` M54-04 five-fixture scale decision report
+- `../outputs/target_slice/m54_04_five_fixture_scale_decision.md` M54-04 human-readable five-fixture scale decision
+- `specs/cards_and_decks/SIXTH_TARGET_SLICE_SELECTION_SPEC.md` M55-01 sixth target slice selection spec
+- `history/M55_01_SIXTH_TARGET_SLICE_SELECTION_CLOSEOUT.md` M55-01 sixth target slice selection closeout
+- `../tools/deck/build_sixth_target_slice_selection.py` M55-01 sixth target slice selection tool
+- `../tests/test_sixth_target_slice_selection.py` M55-01 sixth target slice selection tests
+- `../outputs/target_slice/m55_01_sixth_target_slice_selection.json` M55-01 sixth target slice selection report
+- `../outputs/target_slice/m55_01_sixth_target_slice_selection.md` M55-01 human-readable sixth target slice selection
+- `specs/cards_and_decks/SIXTH_SLICE_FIXTURE_READINESS_SPEC.md` M55-02 sixth-slice fixture/format readiness spec
+- `history/M55_02_SIXTH_SLICE_FIXTURE_READINESS_CLOSEOUT.md` M55-02 sixth-slice fixture/format readiness closeout
+- `../tools/deck/build_sixth_slice_fixture_readiness.py` M55-02 sixth-slice fixture/format readiness tool
+- `../tests/test_sixth_slice_fixture_readiness.py` M55-02 sixth-slice fixture/format readiness tests
+- `../outputs/target_slice/m55_02_sixth_slice_fixture_readiness.json` M55-02 sixth-slice fixture/format readiness report
+- `../outputs/target_slice/m55_02_sixth_slice_fixture_readiness.md` M55-02 human-readable sixth-slice fixture/format readiness
+- `specs/cards_and_decks/SIXTH_SLICE_SEMANTIC_COMPATIBILITY_PROBE_SPEC.md` M55-03 sixth-slice semantic/compatibility probe spec
+- `history/M55_03_SIXTH_SLICE_SEMANTIC_COMPATIBILITY_PROBE_CLOSEOUT.md` M55-03 sixth-slice semantic/compatibility probe closeout
+- `../tools/deck/build_sixth_slice_semantic_compatibility_probe.py` M55-03 sixth-slice semantic/compatibility probe tool
+- `../tests/test_sixth_slice_semantic_compatibility_probe.py` M55-03 sixth-slice semantic/compatibility probe tests
+- `../outputs/target_slice/m55_03_sixth_slice_semantic_compatibility_probe.json` M55-03 sixth-slice semantic/compatibility probe report
+- `../outputs/target_slice/m55_03_sixth_slice_semantic_compatibility_probe.md` M55-03 human-readable sixth-slice semantic/compatibility probe
+- `specs/cards_and_decks/SIXTH_SLICE_RECIPE_PIPELINE_ENTRY_GATE_SPEC.md` M55-04 sixth-slice recipe pipeline entry gate spec
+- `history/M55_04_SIXTH_SLICE_RECIPE_PIPELINE_ENTRY_GATE_CLOSEOUT.md` M55-04 sixth-slice recipe pipeline entry gate closeout
+- `../tools/deck/build_sixth_slice_recipe_pipeline_entry_gate.py` M55-04 sixth-slice recipe pipeline entry gate tool
+- `../tests/test_sixth_slice_recipe_pipeline_entry_gate.py` M55-04 sixth-slice recipe pipeline entry gate tests
+- `../outputs/target_slice/m55_04_sixth_slice_recipe_pipeline_entry_gate.json` M55-04 sixth-slice recipe pipeline entry gate report
+- `../outputs/target_slice/m55_04_sixth_slice_recipe_pipeline_entry_gate.md` M55-04 human-readable sixth-slice recipe pipeline entry gate
+- `specs/cards_and_decks/SIXTH_SLICE_FIXTURE_SCAFFOLD_SPEC.md` M56-01 sixth-slice fixture scaffold spec
+- `history/M56_01_SIXTH_SLICE_FIXTURE_SCAFFOLD_CLOSEOUT.md` M56-01 sixth-slice fixture scaffold closeout
+- `../tools/deck/build_sixth_slice_fixture_scaffold.py` M56-01 sixth-slice fixture scaffold tool
+- `../tests/test_sixth_slice_fixture_scaffold.py` M56-01 sixth-slice fixture scaffold tests
+- `../outputs/target_slice/m56_01_sixth_slice_fixture_scaffold.json` M56-01 sixth-slice fixture scaffold report
+- `../outputs/target_slice/m56_01_sixth_slice_fixture_scaffold.md` M56-01 human-readable sixth-slice fixture scaffold
+- `specs/cards_and_decks/SIXTH_SLICE_REVIEW_PACKET_SPEC.md` M56-02 sixth-slice review packet spec
+- `history/M56_02_SIXTH_SLICE_REVIEW_PACKET_CLOSEOUT.md` M56-02 sixth-slice review packet closeout
+- `../tools/deck/build_sixth_slice_review_packet.py` M56-02 sixth-slice review packet tool
+- `../tests/test_sixth_slice_review_packet.py` M56-02 sixth-slice review packet tests
+- `../outputs/target_slice/m56_02_sixth_slice_review_packet.json` M56-02 sixth-slice review packet report
+- `../outputs/target_slice/m56_02_sixth_slice_review_packet.md` M56-02 human-readable sixth-slice review packet
+- `../outputs/target_slice/m56_02_sixth_slice_review_packet.csv` M56-02 sixth-slice review packet CSV
+- `specs/cards_and_decks/SIXTH_SLICE_RECIPE_DRAFT_MODEL_SPEC.md` M56-03 sixth-slice recipe draft model spec
+- `history/M56_03_SIXTH_SLICE_RECIPE_DRAFT_MODEL_CLOSEOUT.md` M56-03 sixth-slice recipe draft model closeout
+- `../tools/deck/build_sixth_slice_recipe_draft_model.py` M56-03 sixth-slice recipe draft model tool
+- `../tests/test_sixth_slice_recipe_draft_model.py` M56-03 sixth-slice recipe draft model tests
+- `../outputs/target_slice/m56_03_sixth_slice_recipe_draft_model.json` M56-03 sixth-slice recipe draft model report
+- `../outputs/target_slice/m56_03_sixth_slice_recipe_draft_model.md` M56-03 human-readable sixth-slice recipe draft model
+- `specs/cards_and_decks/SIXTH_SLICE_RECIPE_VALIDATOR_SPEC.md` M56-04 sixth-slice recipe validator spec
+- `history/M56_04_SIXTH_SLICE_RECIPE_VALIDATOR_CLOSEOUT.md` M56-04 sixth-slice recipe validator closeout
+- `../tools/deck/validate_sixth_slice_recipe_drafts.py` M56-04 sixth-slice recipe validator tool
+- `../tests/test_sixth_slice_recipe_validator.py` M56-04 sixth-slice recipe validator tests
+- `../outputs/target_slice/m56_04_sixth_slice_recipe_validation_report.json` M56-04 sixth-slice recipe validation report
+- `../outputs/target_slice/m56_04_sixth_slice_recipe_validation_report.md` M56-04 human-readable sixth-slice recipe validation report
+- `specs/cards_and_decks/SIXTH_SLICE_COMBO_RECIPE_CONSISTENCY_SPEC.md` M56-05 sixth-slice combo-to-recipe consistency spec
+- `history/M56_05_SIXTH_SLICE_COMBO_RECIPE_CONSISTENCY_CLOSEOUT.md` M56-05 sixth-slice combo-to-recipe consistency closeout
+- `../tools/deck/check_sixth_slice_combo_recipe_consistency.py` M56-05 sixth-slice combo-to-recipe consistency tool
+- `../tests/test_sixth_slice_combo_recipe_consistency.py` M56-05 sixth-slice combo-to-recipe consistency tests
+- `../outputs/target_slice/m56_05_sixth_slice_combo_recipe_consistency_report.json` M56-05 sixth-slice combo-to-recipe consistency report
+- `../outputs/target_slice/m56_05_sixth_slice_combo_recipe_consistency_report.md` M56-05 human-readable sixth-slice combo-to-recipe consistency report
+- `specs/cards_and_decks/SIXTH_SLICE_BLOCKER_REPAIR_CANDIDATES_SPEC.md` M56-06 sixth-slice blocker repair candidates spec
+- `history/M56_06_SIXTH_SLICE_BLOCKER_REPAIR_CANDIDATES_CLOSEOUT.md` M56-06 sixth-slice blocker repair candidates closeout
+- `../tools/deck/build_sixth_slice_blocker_repair_candidates.py` M56-06 sixth-slice blocker repair candidates tool
+- `../tests/test_sixth_slice_blocker_repair_candidates.py` M56-06 sixth-slice blocker repair candidates tests
+- `../outputs/target_slice/m56_06_sixth_slice_blocker_repair_candidates.json` M56-06 sixth-slice blocker repair candidates report
+- `../outputs/target_slice/m56_06_sixth_slice_blocker_repair_candidates.md` M56-06 human-readable sixth-slice blocker repair candidates
+- `specs/cards_and_decks/SIXTH_SLICE_RUNTIME_READINESS_CLOSEOUT_SPEC.md` M56-closeout sixth-slice runtime readiness closeout spec
+- `history/M56_CLOSEOUT_SIXTH_SLICE_RUNTIME_READINESS_CLOSEOUT.md` M56-closeout sixth-slice runtime readiness closeout
+- `../tools/deck/build_sixth_slice_runtime_readiness_closeout.py` M56-closeout sixth-slice runtime readiness tool
+- `../tests/test_sixth_slice_runtime_readiness_closeout.py` M56-closeout sixth-slice runtime readiness tests
+- `../outputs/target_slice/m56_closeout_sixth_slice_runtime_readiness.json` M56-closeout sixth-slice runtime readiness report
+- `../outputs/target_slice/m56_closeout_sixth_slice_runtime_readiness.md` M56-closeout human-readable sixth-slice runtime readiness report
+- `specs/cards_and_decks/SIXTH_SLICE_HUMAN_REPAIR_REVIEW_PACKET_SPEC.md` M57-01 sixth-slice human repair review packet spec
+- `history/M57_01_SIXTH_SLICE_HUMAN_REPAIR_REVIEW_PACKET_CLOSEOUT.md` M57-01 sixth-slice human repair review packet closeout
+- `../tools/deck/build_sixth_slice_human_repair_review_packet.py` M57-01 sixth-slice human repair review packet tool
+- `../tests/test_sixth_slice_human_repair_review_packet.py` M57-01 sixth-slice human repair review packet tests
+- `../outputs/target_slice/m57_01_sixth_slice_human_repair_review_packet.json` M57-01 sixth-slice human repair review packet report
+- `../outputs/target_slice/m57_01_sixth_slice_human_repair_review_packet.md` M57-01 human-readable sixth-slice human repair review packet
+- `../outputs/target_slice/m57_01_sixth_slice_human_repair_review_packet.csv` M57-01 sixth-slice human repair review packet CSV
+- `specs/cards_and_decks/SIXTH_SLICE_HUMAN_SELECTED_RECIPE_ARTIFACT_SPEC.md` M57-02 sixth-slice human-selected recipe artifact spec
+- `../tools/deck/build_sixth_slice_human_selected_recipe_artifact.py` M57-02 sixth-slice human-selected recipe artifact tool
+- `../tests/test_sixth_slice_human_selected_recipe_artifact.py` M57-02 sixth-slice human-selected recipe artifact tests
+- `specs/cards_and_decks/SIXTH_SLICE_HUMAN_ACCEPTED_REPAIR_ARTIFACT_SPEC.md` M57-03 sixth-slice human-accepted repair artifact spec
+- `../tools/deck/build_sixth_slice_human_accepted_repair_artifact.py` M57-03 sixth-slice human-accepted repair artifact tool
+- `../tests/test_sixth_slice_human_accepted_repair_artifact.py` M57-03 sixth-slice human-accepted repair artifact tests
+- `specs/cards_and_decks/SIXTH_SLICE_G_ZONE_STRIDE_DECISION_ARTIFACT_SPEC.md` M57-04 sixth-slice G Zone / Stride decision artifact spec
+- `../tools/deck/build_sixth_slice_g_zone_stride_decision_artifact.py` M57-04 sixth-slice G Zone / Stride decision artifact tool
+- `../tests/test_sixth_slice_g_zone_stride_decision_artifact.py` M57-04 sixth-slice G Zone / Stride decision artifact tests
+- `specs/cards_and_decks/SIXTH_SLICE_REPAIRED_RECIPE_VALIDATION_RERUN_SPEC.md` M57-05 sixth-slice repaired recipe validation rerun spec
+- `../tools/deck/validate_sixth_slice_repaired_recipe.py` M57-05 sixth-slice repaired recipe validation rerun tool
+- `../tests/test_sixth_slice_repaired_recipe_validation.py` M57-05 sixth-slice repaired recipe validation rerun tests
+- `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
+- `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
+- `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope
+- `specs/ci_and_qa/CI_UNITY_COMPILE_SPEC.md` GitHub Actions Unity compile workflow scope
+- `specs/ci_and_qa/CI_UNITY_EDITMODE_SPEC.md` GitHub Actions Unity EditMode workflow scope
+- `specs/ci_and_qa/CORE_REGRESSION_SUITE_SPEC.md` M18-05 core regression suite inventory
+- `specs/ci_and_qa/ABILITY_REGRESSION_SUITE_SPEC.md` M18-06 ability regression suite inventory
+- `specs/multiplayer/MULTIPLAYER_PAYLOAD_NO_LEAK_SUITE_SPEC.md` M18-07 multiplayer payload/no-leak suite inventory
+- `specs/ci_and_qa/WINDOWS_BUILD_ARTIFACT_SPEC.md` M18-08 Windows build artifact runner and path
+- `specs/ci_and_qa/ANDROID_BUILD_ARTIFACT_SPEC.md` M18-09 Android APK build artifact runner and path
+- `specs/ci_and_qa/RELEASE_CANDIDATE_CHECKLIST.md` M18-10 local release candidate evidence and constraints
+- `history/M10_ABILITY_TRIGGER_AUTOMATION_CLOSEOUT.md` M10 closeout status and verification
+- `history/M11_RULES_CORE_COMPLETION_CLOSEOUT.md` M11 closeout status and verification
+- `history/M12_STRUCTURED_CARD_ABILITY_DATA_CLOSEOUT.md` M12 closeout status and verification
+- `history/M15_CUSTOM_PACKS_FORMATS_CLOSEOUT.md` M15 custom pack/format closeout status and verification
+
+## Product And Architecture
+
+- `PRODUCT_SPEC.md`
+- `ROADMAP.md`
+- `TECH_STACK.md`
+- `ARCHITECTURE.md`
+- `specs/cards_and_decks/UNITY_SETUP.md`
+- `specs/cards_and_decks/THIRD_PARTY.md`
+- `specs/ci_and_qa/RELEASE_CANDIDATE_CHECKLIST.md`
+
+## System Specs
+
+- `specs/cards_and_decks/CARD_DATABASE_SPEC.md`
+- `specs/cards_and_decks/DECK_POSSIBILITY_ANALYSIS_SPEC.md`
+- `specs/cards_and_decks/CARD_BROWSER_THAI_SEARCH_POLISH_SPEC.md`
+- `specs/cards_and_decks/BROKEN_IMAGE_FALLBACK_SPEC.md`
+- `specs/ci_and_qa/ANDROID_TOUCH_LAYOUT_QA_SPEC.md`
+- `specs/ci_and_qa/WINDOWS_ANDROID_SMOKE_FLOW_SPEC.md`
+- `WINDOWS_FIRST_PROGRAM_COMPLETION_SPEC.md`
+- `WINDOWS_PLAYABLE_LOOP_CHECKLIST.md`
+- `WINDOWS_ONLY_VERIFICATION_PROFILE.md`
+- `specs/ci_and_qa/WINDOWS_BUILD_ARTIFACT_SPEC.md`
+- `specs/ci_and_qa/ANDROID_BUILD_ARTIFACT_SPEC.md`
+- `specs/cards_and_decks/UNITY_DATA_ACCESS_CONTRACT.md`
+- `specs/bot_and_headless/HEADLESS_CLI_RUNNER_SPEC.md`
+- `specs/bot_and_headless/HEADLESS_CLI_INPUT_SPEC.md`
+- `specs/bot_and_headless/HEADLESS_CLI_REPLAY_OUTPUT_SPEC.md`
+- `specs/bot_and_headless/HEADLESS_BATCH_SELF_PLAY_RUNNER_SPEC.md`
+- `specs/bot_and_headless/HEADLESS_DATASET_EXPORT_SCHEMA_SPEC.md`
+- `specs/bot_and_headless/HEADLESS_OBSERVATION_ACTION_REWARD_API_SPEC.md`
+- `specs/bot_and_headless/HEADLESS_PERFORMANCE_PROFILING_HARNESS_SPEC.md`
+- `specs/bot_and_headless/PACKED_STATE_DECISION_GATE_SPEC.md`
+- `specs/bot_and_headless/DISTRIBUTED_WORKER_PROTOTYPE_SPEC.md`
+- `specs/bot_and_headless/DISTRIBUTED_WORKER_LOCAL_PROTOTYPE_SPEC.md`
+- `specs/cards_and_decks/DECK_SYSTEM_SPEC.md`
+- `specs/cards_and_decks/GAME_ENGINE_SPEC.md`
+- `specs/cards_and_decks/TIMING_WINDOW_AUDIT_SPEC.md`
+- `specs/cards_and_decks/PHASE_TIMING_MATRIX_SPEC.md`
+- `specs/cards_and_decks/RULES_CORE_COMMAND_FACADE_COVERAGE_SPEC.md`
+- `specs/cards_and_decks/LEGAL_ACTION_MASK_USAGE_SPEC.md`
+- `specs/cards_and_decks/REJECT_NO_MUTATION_GUARANTEE_SPEC.md`
+- `specs/cards_and_decks/EVENT_SOURCING_COVERAGE_SPEC.md`
+- `specs/ci_and_qa/REPLAY_DETERMINISM_VERIFIER_SPEC.md`
+- `specs/ci_and_qa/SNAPSHOT_ROLLBACK_VERIFIER_SPEC.md`
+- `specs/cards_and_decks/HIDDEN_STATE_VIEW_HARDENING_SPEC.md`
+- `specs/cards_and_decks/RESOURCE_LEDGER_SPEC.md`
+- `specs/cards_and_decks/RIDE_SOUL_RESOURCE_EVENT_COMMAND_SPEC.md`
+- `specs/cards_and_decks/RULE_SET_PROFILE_SPEC.md`
+- `specs/ci_and_qa/CORE_REGRESSION_SUITE_SPEC.md`
+- `specs/ci_and_qa/ABILITY_REGRESSION_SUITE_SPEC.md`
+- `specs/cards_and_decks/ABILITY_SCHEMA_V1_SPEC.md`
+- `specs/cards_and_decks/ABILITY_SCHEMA_VALIDATOR_SPEC.md`
+- `specs/cards_and_decks/RUNTIME_ABILITY_REGISTRY_SPEC.md`
+- `specs/cards_and_decks/STRUCTURED_COST_TEMPLATE_SPEC.md`
+- `specs/cards_and_decks/STRUCTURED_TARGET_TEMPLATE_SPEC.md`
+- `specs/cards_and_decks/STRUCTURED_EFFECT_DRAW_MOVE_TEMPLATE_SPEC.md`
+- `specs/cards_and_decks/STRUCTURED_EFFECT_RESOURCE_OPS_TEMPLATE_SPEC.md`
+- `specs/cards_and_decks/STRUCTURED_MODIFIER_EFFECT_TEMPLATE_SPEC.md`
+- `specs/cards_and_decks/STRUCTURED_ABILITY_FIXTURE_DSL_SPEC.md`
+- `specs/formats_and_custom/FIRST_STRUCTURED_CARD_PACK_SPEC.md`
+- `specs/cards_and_decks/STRUCTURED_ABILITY_MANUAL_FALLBACK_BRIDGE_SPEC.md`
+- `specs/bot_and_headless/BOT_ENGINE_SPEC.md`
+- `UI_UX_SPEC.md`
+- `PLAYTABLE_WINDOWS_UX_V2_SPEC.md`
+- `specs/cards_and_decks/DECK_BUILDER_FILTER_POLISH_SPEC.md`
+- `specs/formats_and_custom/CUSTOM_CARD_PACK_SPEC.md`
+- `specs/formats_and_custom/CUSTOM_PACK_V2_SCHEMA_SPEC.md`
+- `specs/formats_and_custom/CUSTOM_PACK_ABILITY_DATA_SPEC.md`
+- `specs/formats_and_custom/PACK_VALIDATION_STATUS_SPEC.md`
+- `specs/formats_and_custom/PACK_MANAGER_ENABLE_DISABLE_SPEC.md`
+- `specs/formats_and_custom/CUSTOM_FORMAT_PROFILE_MODEL_SPEC.md`
+- `specs/cards_and_decks/STANDARD_FORMAT_FLAGS_SPEC.md`
+- `specs/cards_and_decks/V_PREMIUM_FORMAT_FLAGS_SPEC.md`
+- `specs/cards_and_decks/PREMIUM_FORMAT_FLAGS_SPEC.md`
+- `specs/formats_and_custom/CUSTOM_FORMAT_SANDBOX_SPEC.md`
+- `specs/multiplayer/MULTIPLAYER_ROOM_SPEC.md`
+- `specs/multiplayer/PHOTON_REALTIME_TRANSPORT_SPEC.md`
+- `specs/cards_and_decks/DECK_PRIVACY_COMMITMENT_SPEC.md`
+- `specs/multiplayer/PRIVATE_EVENT_PAYLOAD_SPEC.md`
+- `specs/multiplayer/OWNER_PRIVATE_ROOM_INITIALIZATION_SPEC.md`
+- `specs/cards_and_decks/CLIENT_TRUST_UX_SPEC.md`
+- `specs/multiplayer/ONLINE_COMMAND_ENVELOPE_SPEC.md`
+- `specs/multiplayer/PUBLIC_EVENT_MASKING_DELIVERY_SPEC.md`
+- `specs/multiplayer/PUBLIC_RECONNECT_RECOVERY_SPEC.md`
+- `specs/cards_and_decks/START_GUARD_SPEC.md`
+- `specs/multiplayer/ROOM_LIFECYCLE_SPEC.md`
+- `specs/multiplayer/PUBLIC_SPECTATOR_REPLAY_SYNC_SPEC.md`
+- `specs/cards_and_decks/TOURNAMENT_AUDIT_LOG_SPEC.md`
+- `specs/multiplayer/MULTIPLAYER_PAYLOAD_NO_LEAK_SUITE_SPEC.md`
+- `specs/bot_and_headless/TRIGGER_PROBABILITY_ENGINE_SPEC.md`
+- `specs/bot_and_headless/BOARD_RESOURCE_EVALUATOR_SPEC.md`
+- `specs/bot_and_headless/BATTLE_SEQUENCE_SEARCH_SPEC.md`
+- `specs/bot_and_headless/BATTLE_SEQUENCE_SEARCH_V2_SPEC.md`
+- `specs/bot_and_headless/OPPONENT_GUARD_ESTIMATOR_SPEC.md`
+- `specs/bot_and_headless/BOT_PLAYBOOK_SPEC.md`
+- `specs/bot_and_headless/COMBO_DISCOVERY_SCAFFOLD_SPEC.md`
+- `specs/bot_and_headless/HEURISTIC_BOT_V2_SPEC.md`
+- `specs/bot_and_headless/GUARD_DECISION_BOT_SPEC.md`
+- `specs/bot_and_headless/TRIGGER_RISK_ATTACK_CHOICE_SPEC.md`
+- `specs/ci_and_qa/SNAPSHOT_SIMULATION_PATH_SPEC.md`
+- `specs/bot_and_headless/PLAYBOOK_INTEGRATION_SPEC.md`
+- `specs/bot_and_headless/OFFLINE_COMBO_DISCOVERY_OUTPUT_SPEC.md`
+- `specs/bot_and_headless/CLAN_COMBO_PAIRING_OFFLINE_SPEC.md`
+- `specs/bot_and_headless/BOT_DEBUG_TRACE_SPEC.md`
+- `specs/bot_and_headless/ISMCTS_READINESS_GATE_SPEC.md`
+- `specs/cards_and_decks/ADVANCED_SEARCH_PROTOTYPE_SPEC.md`
+- `specs/cards_and_decks/TRIGGER_RESOLVER_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_QUEUE_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_GAME_STATE_INTEGRATION_SPEC.md`
+- `specs/cards_and_decks/ABILITY_TRIGGER_EVENT_COLLECTOR_SPEC.md`
+- `specs/cards_and_decks/ABILITY_TRIGGER_GAME_STATE_ADAPTER_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_REAL_TIMING_EVENT_INTEGRATION_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_QUEUE_MASKING_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_QUEUE_PAYLOAD_CODEC_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_QUEUE_PHOTON_PAYLOAD_WRAPPER_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_QUEUE_TRANSPORT_HOOK_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_QUEUE_SESSION_STORAGE_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_QUEUE_SESSION_PUBLISH_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_PLAYTABLE_SUMMARY_SPEC.md`
+- `specs/cards_and_decks/PLAYTABLE_PENDING_AUTO_PANEL_POLISH_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_PLAYTABLE_PUBLISH_CONTROL_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_ITEM_LIST_FORMATTER_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_PLAYTABLE_ITEM_LIST_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_SELECTION_STATE_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_SELECTION_STATUS_FORMATTER_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_PLAYTABLE_SELECTION_STATUS_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_PLAYTABLE_SELECTION_CYCLE_CONTROL_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_PLAYTABLE_CLEAR_SELECTION_CONTROL_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_RESOLUTION_REQUEST_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_RESOLUTION_REQUEST_FORMATTER_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_PLAYTABLE_RESOLUTION_REQUEST_PREVIEW_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_RESOLUTION_REQUEST_PAYLOAD_CODEC_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_RESOLUTION_REQUEST_PHOTON_PAYLOAD_WRAPPER_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_RESOLUTION_REQUEST_TRANSPORT_HOOK_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_RESOLUTION_REQUEST_SESSION_STORAGE_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_RESOLUTION_REQUEST_SESSION_PUBLISH_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_PLAYTABLE_RESOLUTION_REQUEST_PUBLISH_CONTROL_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_RESOLUTION_REQUEST_SUMMARY_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_RESOLUTION_REQUEST_LIST_FORMATTER_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_RESOLUTION_REQUEST_LIST_PLAYTABLE_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_PAYLOAD_CODEC_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_PHOTON_PAYLOAD_WRAPPER_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_TRANSPORT_HOOK_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_SESSION_STORAGE_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_SESSION_PUBLISH_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_PLAYTABLE_PUBLISH_CONTROL_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_SUMMARY_FORMATTER_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_PLAYTABLE_SUMMARY_SPEC.md`
+- `specs/cards_and_decks/PLAYTABLE_MANUAL_RESOLUTION_PANEL_POLISH_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_LIST_FORMATTER_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_PLAYTABLE_LIST_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_PUBLISH_RESULT_FORMATTER_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_DRAFT_FACTORY_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_PLAYTABLE_DRAFT_CONTROL_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_TYPE_SELECTOR_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_DRAFT_RESULT_FORMATTER_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_VALIDATION_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_VALIDATION_RESULT_FORMATTER_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_DECISION_PLAYTABLE_VALIDATION_PREVIEW_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_APPLY_COMMAND_CONTRACT_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_APPLY_COMMAND_VALIDATOR_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_APPLY_RESULT_FORMATTER_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_APPLY_EXECUTOR_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_SESSION_APPLY_PREVIEW_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_PLAYTABLE_APPLY_PREVIEW_CONTROL_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_APPLY_PREVIEW_LOG_ENTRY_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_APPLY_PREVIEW_LOG_FORMATTER_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_APPLY_PREVIEW_SESSION_LOG_STORAGE_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_APPLY_PREVIEW_PLAYTABLE_SURFACE_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLUTION_APPLY_PREVIEW_FLOW_VERIFICATION_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_QUEUE_COMMIT_POLICY_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_QUEUE_COMMIT_HELPER_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_QUEUE_COMMIT_EVENT_SPEC.md`
+- `specs/abilities/PENDING_AUTO_ABILITY_MANUAL_RESOLVED_EVENT_SPEC.md`
+- `specs/cards_and_decks/TRIGGER_ALLOCATION_PLAN_SPEC.md`
+- `specs/cards_and_decks/COMBAT_MODIFIER_LEDGER_SPEC.md`
+- `specs/cards_and_decks/TRIGGER_ALLOCATION_MODIFIER_ADAPTER_SPEC.md`
+- `specs/cards_and_decks/TRIGGER_ALLOCATION_COMMIT_HELPER_SPEC.md`
+- `specs/cards_and_decks/COMBAT_STAT_PROJECTION_SPEC.md`
+- `specs/cards_and_decks/COMBAT_MODIFIER_CLEANUP_TIMING_SPEC.md`
+- `specs/cards_and_decks/TRIGGER_MODIFIER_CLEANUP_INTEGRATION_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_RESOLUTION_BUNDLE_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_LOG_ENTRY_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_REPLAY_LOG_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_REPLAY_LOG_MASKING_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_REPLAY_PAYLOAD_CODEC_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_PHOTON_PAYLOAD_WRAPPER_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_TRANSPORT_HOOK_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_SESSION_STORAGE_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_PLAYTABLE_UI_SURFACE_SPEC.md`
+- `specs/cards_and_decks/PLAYTABLE_TRIGGER_PANEL_POLISH_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_MANUAL_PUBLISH_CONTROL_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_MANUAL_DRAFT_PAYLOAD_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_DRAFT_SESSION_PUBLISH_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_DRAFT_PLAYTABLE_CONTROL_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_DRAFT_TYPE_SELECTOR_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_DRAFT_SOURCE_SELECTOR_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_DRAFT_INDEX_SELECTOR_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_DRAFT_SUMMARY_PANEL_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_DRAFT_SELECTED_CARD_SUMMARY_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_DRAFT_SELECTED_ZONE_SUMMARY_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_DRAFT_CLEAR_SELECTION_CONTROL_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_DRAFT_SELECTED_CARD_STATUS_HELPER_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_DRAFT_METADATA_FORMATTER_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_DRAFT_FULL_SUMMARY_FORMATTER_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_DRAFT_CONTROL_STATE_HELPER_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_DRAFT_SELECTION_VALIDATION_HELPER_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_DRAFT_PUBLISH_RESULT_MESSAGE_FORMATTER_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_DRAFT_SELECTOR_CYCLE_HELPER_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_DRAFT_STATUS_MESSAGE_FORMATTER_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_DRAFT_REQUEST_FACTORY_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_LOG_PUBLISH_RESULT_FORMATTER_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_LOG_SUMMARY_FORMATTER_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_LOG_PUBLISH_ONLINE_VALIDATION_HELPER_SPEC.md`
+- `specs/abilities/TRIGGER_CHECK_COMMIT_EVENT_SPEC.md`
+- `specs/cards_and_decks/PLAYTABLE_MODE_SUMMARY_FORMATTER_SPEC.md`
+- `specs/cards_and_decks/PLAYTABLE_ONLINE_STATUS_CURSOR_PANEL_POLISH_SPEC.md`
+- `specs/cards_and_decks/PLAYTABLE_CARD_SELECTION_STATUS_FORMATTER_SPEC.md`
+- `specs/cards_and_decks/PLAYTABLE_ACTION_STATUS_FORMATTER_SPEC.md`
+- `specs/cards_and_decks/PLAYTABLE_EVENT_LOG_FORMATTER_SPEC.md`
+- `specs/cards_and_decks/PLAYTABLE_EVENT_REPLAY_PANEL_POLISH_SPEC.md`
+
+## AI Control Docs
+
+- `AI_TASK_HANDOFF_TEMPLATE.md`
+- `AI_COMMUNICATION_TOKEN_POLICY.md`
+- `specs/cards_and_decks/AI_REVIEW_CHECKLIST.md`
+- `DEFINITION_OF_DONE.md`
+
+## Delivery
+
+- `specs/ci_and_qa/TESTING_STRATEGY.md`
+- `specs/ci_and_qa/RELEASE_PLAN.md`
+
+## Architecture Decision Records
+
+- `ADR/ADR-0001-use-unity.md`
+- `ADR/ADR-0002-use-sqlite.md`
+- `ADR/ADR-0003-manual-before-auto-effects.md`
+- `ADR/ADR-0004-deck-privacy-before-ranked.md`
+
+## Research Notes
+
+- `specs/cards_and_decks/VGDD_RESEARCH_NOTES.md` safe high-level notes from local Vanguard Dear Days inspection
+- `specs/cards_and_decks/VGDD2_ARCHIVE_NOTES.md` safe non-extracting inventory notes for local Dear Days 2 archives
+- `specs/cards_and_decks/VGDD2_STEAM_STATIC_NOTES.md` safe static notes from local Steam Dear Days 2 files
+- `specs/cards_and_decks/MASTER_DUEL_RESEARCH_NOTES.md` safe static notes from local Master Duel files

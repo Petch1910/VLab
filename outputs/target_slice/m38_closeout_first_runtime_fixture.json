@@ -1,0 +1,72 @@
+{
+  "version": "M38-closeout",
+  "description": "First runtime fixture closeout and next queue selection",
+  "source_inputs": {
+    "runtime_fixture_promotion_gate": "outputs\\target_slice\\m38_04_runtime_fixture_promotion_gate.json"
+  },
+  "scope": {
+    "closeout_report": true,
+    "changes_fixture_artifact": false,
+    "mutates_runtime_deck_library": false,
+    "bot_integration": false,
+    "automatic_playbook_promotion": false,
+    "GameState_mutation": false
+  },
+  "key_results": {
+    "recipe_id": "recipe_003",
+    "m38_complete": true,
+    "first_runtime_fixture_available": true,
+    "fixture_path": "outputs/target_slice/runtime_fixtures/recipe_003_classic_core_nova_grappler_m38_04.json",
+    "fixture_scope": "offline_runtime_test_fixture",
+    "promotion_allowed": true,
+    "gate_passed_check_count": 5,
+    "gate_failed_check_count": 0,
+    "runtime_deck_library_mutated": false,
+    "bot_playbook_enabled": false
+  },
+  "decision": {
+    "first_recipe_enters_fixture_scope": true,
+    "first_recipe_remains_advisory_only": false,
+    "live_runtime_deck_enabled": false,
+    "bot_playbook_enabled": false,
+    "needs_user_team_review_before_live_deck_ui": true,
+    "decision_notes": [
+      "The first recipe can be used as an offline runtime/test fixture.",
+      "The fixture is not a saved player deck and is not automatically visible in UI.",
+      "Bot/playbook runtime use still needs a separate gate."
+    ]
+  },
+  "next_queue": {
+    "id": "M39",
+    "title": "Fixture Consumption and Second-Slice Scale Gate",
+    "goal": "Validate how the first fixture can be consumed safely, then decide whether to scale recipe work to the second slice.",
+    "tasks": [
+      {
+        "id": "M39-01",
+        "title": "Offline fixture schema validator",
+        "goal": "Validate runtime fixture artifacts independently from the M38 generator."
+      },
+      {
+        "id": "M39-02",
+        "title": "Fixture-to-deck text exporter",
+        "goal": "Export the fixture as reviewable count-line deck text without adding it to saved decks."
+      },
+      {
+        "id": "M39-03",
+        "title": "Headless fixture load smoke",
+        "goal": "Load the fixture through offline tooling/headless paths without UI or bot mutation."
+      },
+      {
+        "id": "M39-04",
+        "title": "Second-slice recipe scale decision",
+        "goal": "Decide whether Oracle Think Tank moves into the same recipe repair pipeline."
+      }
+    ]
+  },
+  "summary": {
+    "m38_complete": true,
+    "first_runtime_fixture_available": true,
+    "next_queue_id": "M39",
+    "ready_for_next_queue": true
+  }
+}

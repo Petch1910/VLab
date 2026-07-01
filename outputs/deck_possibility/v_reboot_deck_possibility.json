@@ -1,0 +1,1977 @@
+{
+  "schema_version": 1,
+  "generator": "tools/deck/analyze_deck_possibilities.py",
+  "scope": {
+    "preset": "v_reboot",
+    "set_codes": [
+      "V-TD01",
+      "V-TD02",
+      "V-TD03",
+      "V-TD04",
+      "V-TD05",
+      "V-TD06",
+      "V-TD07",
+      "V-TD08",
+      "V-TD09",
+      "V-BT01",
+      "V-BT02",
+      "V-BT03",
+      "V-BT04",
+      "V-BT05",
+      "V-BT06",
+      "V-EB01",
+      "V-EB02",
+      "V-EB03",
+      "V-EB04",
+      "V-EB05",
+      "V-EB06",
+      "V-EB07",
+      "V-EB08",
+      "V-EB09"
+    ],
+    "available_set_codes": [
+      "V-BT01",
+      "V-BT02",
+      "V-BT03",
+      "V-BT04",
+      "V-BT05",
+      "V-BT06",
+      "V-EB01",
+      "V-EB02",
+      "V-EB03",
+      "V-EB04",
+      "V-EB05",
+      "V-EB06",
+      "V-EB07",
+      "V-EB08",
+      "V-EB09",
+      "V-TD01",
+      "V-TD02",
+      "V-TD03",
+      "V-TD04",
+      "V-TD05",
+      "V-TD06",
+      "V-TD07",
+      "V-TD08",
+      "V-TD09"
+    ],
+    "missing_set_codes": [],
+    "group_mode": "auto",
+    "main_deck_size": 50,
+    "trigger_target": 16,
+    "non_trigger_target": 34,
+    "note": "offline theoretical count-distribution analysis, not full official deck legality"
+  },
+  "card_count": 1183,
+  "group_count": 26,
+  "groups": [
+    {
+      "group": "Unknown",
+      "group_field": "unknown",
+      "card_count": 1,
+      "main_card_count": 1,
+      "trigger_card_count": 0,
+      "non_trigger_card_count": 1,
+      "g_zone_card_count": 0,
+      "main_capacity": 4,
+      "trigger_capacity": 0,
+      "non_trigger_capacity": 4,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "unknown": 4
+      },
+      "grade_unique_count": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "unknown": 1
+      },
+      "trigger_capacity_by_type": {},
+      "feasible": {
+        "basic_50_card_main": false,
+        "main_with_16_triggers_34_non_triggers": false,
+        "ride_deck_grade_0_1_2_3_choice": false,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        },
+        "trigger_16_component": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        },
+        "non_trigger_34_component": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": [
+        "main_capacity_below_50",
+        "trigger_capacity_below_16",
+        "non_trigger_capacity_below_34",
+        "missing_ride_grade_0_1_2_3"
+      ]
+    },
+    {
+      "group": "คาเงโร่",
+      "group_field": "clan",
+      "card_count": 63,
+      "main_card_count": 63,
+      "trigger_card_count": 9,
+      "non_trigger_card_count": 54,
+      "g_zone_card_count": 0,
+      "main_capacity": 252,
+      "trigger_capacity": 36,
+      "non_trigger_capacity": 216,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 48,
+        "1": 80,
+        "2": 72,
+        "3": 52,
+        "4": 0,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 12,
+        "1": 20,
+        "2": 18,
+        "3": 13,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 16,
+        "Draw": 12,
+        "Heal": 8
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "63272226744561883360047288445305",
+          "digits": 32,
+          "scientific": "6.327e+31"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "173374394754226169450902076100",
+          "digits": 30,
+          "scientific": "1.733e+29"
+        },
+        "trigger_16_component": {
+          "exact": "162585",
+          "digits": 6,
+          "scientific": "162585"
+        },
+        "non_trigger_34_component": {
+          "exact": "1066361563208328993762660",
+          "digits": 25,
+          "scientific": "1.066e+24"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "14040",
+          "digits": 5,
+          "scientific": "14040"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "ชาโดว์ พาลาดิน",
+      "group_field": "clan",
+      "card_count": 72,
+      "main_card_count": 72,
+      "trigger_card_count": 13,
+      "non_trigger_card_count": 59,
+      "g_zone_card_count": 0,
+      "main_capacity": 288,
+      "trigger_capacity": 52,
+      "non_trigger_capacity": 236,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 64,
+        "1": 92,
+        "2": 84,
+        "3": 48,
+        "4": 0,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 16,
+        "1": 23,
+        "2": 21,
+        "3": 12,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 24,
+        "Draw": 16,
+        "Heal": 12
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "13036815645635722310366390089364880",
+          "digits": 35,
+          "scientific": "1.303e+34"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "178348055180358656718580265559450",
+          "digits": 33,
+          "scientific": "1.783e+32"
+        },
+        "trigger_16_component": {
+          "exact": "14289015",
+          "digits": 8,
+          "scientific": "1.428e+7"
+        },
+        "non_trigger_34_component": {
+          "exact": "12481480016667255001032630",
+          "digits": 26,
+          "scientific": "1.248e+25"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "17388",
+          "digits": 5,
+          "scientific": "17388"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "ดาร์ค อิลเรกูลาร์ส",
+      "group_field": "clan",
+      "card_count": 59,
+      "main_card_count": 59,
+      "trigger_card_count": 9,
+      "non_trigger_card_count": 50,
+      "g_zone_card_count": 0,
+      "main_capacity": 236,
+      "trigger_capacity": 36,
+      "non_trigger_capacity": 200,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 44,
+        "1": 68,
+        "2": 72,
+        "3": 52,
+        "4": 0,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 11,
+        "1": 17,
+        "2": 18,
+        "3": 13,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 16,
+        "Draw": 12,
+        "Heal": 8
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "4741603971532246870485913175826",
+          "digits": 31,
+          "scientific": "4.741e+30"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "20857324433863832166459737250",
+          "digits": 29,
+          "scientific": "2.085e+28"
+        },
+        "trigger_16_component": {
+          "exact": "162585",
+          "digits": 6,
+          "scientific": "162585"
+        },
+        "non_trigger_34_component": {
+          "exact": "128285662477250866724850",
+          "digits": 24,
+          "scientific": "1.282e+23"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "7956",
+          "digits": 4,
+          "scientific": "7956"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "ทาจิคาเสะ",
+      "group_field": "clan",
+      "card_count": 44,
+      "main_card_count": 44,
+      "trigger_card_count": 11,
+      "non_trigger_card_count": 33,
+      "g_zone_card_count": 0,
+      "main_capacity": 176,
+      "trigger_capacity": 44,
+      "non_trigger_capacity": 132,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 52,
+        "1": 44,
+        "2": 40,
+        "3": 32,
+        "4": 0,
+        "unknown": 8
+      },
+      "grade_unique_count": {
+        "0": 13,
+        "1": 11,
+        "2": 10,
+        "3": 8,
+        "4": 0,
+        "unknown": 2
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 12,
+        "Draw": 12,
+        "Front": 12,
+        "Heal": 8
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "52307695688093824501704126",
+          "digits": 26,
+          "scientific": "5.230e+25"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "3464682601777649040858300",
+          "digits": 25,
+          "scientific": "3.464e+24"
+        },
+        "trigger_16_component": {
+          "exact": "1870484",
+          "digits": 7,
+          "scientific": "1.870e+6"
+        },
+        "non_trigger_34_component": {
+          "exact": "1852292028040683075",
+          "digits": 19,
+          "scientific": "1.852e+18"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "1760",
+          "digits": 4,
+          "scientific": "1760"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "นารุคามิ",
+      "group_field": "clan",
+      "card_count": 54,
+      "main_card_count": 54,
+      "trigger_card_count": 11,
+      "non_trigger_card_count": 43,
+      "g_zone_card_count": 0,
+      "main_capacity": 216,
+      "trigger_capacity": 44,
+      "non_trigger_capacity": 172,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 56,
+        "1": 64,
+        "2": 56,
+        "3": 40,
+        "4": 0,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 14,
+        "1": 16,
+        "2": 14,
+        "3": 10,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 12,
+        "Draw": 12,
+        "Front": 12,
+        "Heal": 8
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "147111025912183951627150518858",
+          "digits": 30,
+          "scientific": "1.471e+29"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "3983375586243589596969782720",
+          "digits": 28,
+          "scientific": "3.983e+27"
+        },
+        "trigger_16_component": {
+          "exact": "1870484",
+          "digits": 7,
+          "scientific": "1.870e+6"
+        },
+        "non_trigger_34_component": {
+          "exact": "2129596182722541116080",
+          "digits": 22,
+          "scientific": "2.129e+21"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "6720",
+          "digits": 4,
+          "scientific": "6720"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "นุบาทามะ",
+      "group_field": "clan",
+      "card_count": 34,
+      "main_card_count": 34,
+      "trigger_card_count": 5,
+      "non_trigger_card_count": 29,
+      "g_zone_card_count": 0,
+      "main_capacity": 136,
+      "trigger_capacity": 20,
+      "non_trigger_capacity": 116,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 28,
+        "1": 40,
+        "2": 40,
+        "3": 28,
+        "4": 0,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 7,
+        "1": 10,
+        "2": 10,
+        "3": 7,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 8,
+        "Draw": 8,
+        "Heal": 4
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "2612478772322806145660",
+          "digits": 22,
+          "scientific": "2.612e+21"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "4375931692146945350",
+          "digits": 19,
+          "scientific": "4.375e+18"
+        },
+        "trigger_16_component": {
+          "exact": "70",
+          "digits": 2,
+          "scientific": "70"
+        },
+        "non_trigger_34_component": {
+          "exact": "62513309887813505",
+          "digits": 17,
+          "scientific": "6.251e+16"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "1400",
+          "digits": 4,
+          "scientific": "1400"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "มุราคุโมะ",
+      "group_field": "clan",
+      "card_count": 59,
+      "main_card_count": 59,
+      "trigger_card_count": 11,
+      "non_trigger_card_count": 48,
+      "g_zone_card_count": 0,
+      "main_capacity": 236,
+      "trigger_capacity": 44,
+      "non_trigger_capacity": 192,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 52,
+        "1": 72,
+        "2": 64,
+        "3": 48,
+        "4": 0,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 13,
+        "1": 18,
+        "2": 16,
+        "3": 12,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 12,
+        "Draw": 12,
+        "Front": 12,
+        "Heal": 8
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "4741603971532246870485913175826",
+          "digits": 31,
+          "scientific": "4.741e+30"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "78615289869146660827771358400",
+          "digits": 29,
+          "scientific": "7.861e+28"
+        },
+        "trigger_16_component": {
+          "exact": "1870484",
+          "digits": 7,
+          "scientific": "1.870e+6"
+        },
+        "non_trigger_34_component": {
+          "exact": "42029383768664506527600",
+          "digits": 23,
+          "scientific": "4.202e+22"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "6912",
+          "digits": 4,
+          "scientific": "6912"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "รอยัล พาลาดิน",
+      "group_field": "clan",
+      "card_count": 75,
+      "main_card_count": 75,
+      "trigger_card_count": 9,
+      "non_trigger_card_count": 66,
+      "g_zone_card_count": 0,
+      "main_capacity": 300,
+      "trigger_capacity": 36,
+      "non_trigger_capacity": 264,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 48,
+        "1": 104,
+        "2": 88,
+        "3": 56,
+        "4": 4,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 12,
+        "1": 26,
+        "2": 22,
+        "3": 14,
+        "4": 1,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 16,
+        "Draw": 12,
+        "Heal": 8
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "67485673162654542824854627190433816",
+          "digits": 35,
+          "scientific": "6.748e+34"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "47414712690118768380052806517950",
+          "digits": 32,
+          "scientific": "4.741e+31"
+        },
+        "trigger_16_component": {
+          "exact": "162585",
+          "digits": 6,
+          "scientific": "162585"
+        },
+        "non_trigger_34_component": {
+          "exact": "291630302242634734938972270",
+          "digits": 27,
+          "scientific": "2.916e+26"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "24024",
+          "digits": 5,
+          "scientific": "24024"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "ลิงค์โจ๊กเกอร์",
+      "group_field": "clan",
+      "card_count": 70,
+      "main_card_count": 70,
+      "trigger_card_count": 13,
+      "non_trigger_card_count": 57,
+      "g_zone_card_count": 0,
+      "main_capacity": 280,
+      "trigger_capacity": 52,
+      "non_trigger_capacity": 228,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 68,
+        "1": 88,
+        "2": 72,
+        "3": 48,
+        "4": 4,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 17,
+        "1": 22,
+        "2": 18,
+        "3": 12,
+        "4": 1,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 24,
+        "Draw": 16,
+        "Heal": 12
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "4209924237705960312883847118151480",
+          "digits": 34,
+          "scientific": "4.209e+33"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "68218518927334597067604680554050",
+          "digits": 32,
+          "scientific": "6.821e+31"
+        },
+        "trigger_16_component": {
+          "exact": "14289015",
+          "digits": 8,
+          "scientific": "1.428e+7"
+        },
+        "non_trigger_34_component": {
+          "exact": "4774193247563572231368270",
+          "digits": 25,
+          "scientific": "4.774e+24"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "19008",
+          "digits": 5,
+          "scientific": "19008"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "สไปค์ บราเธอร์ส",
+      "group_field": "clan",
+      "card_count": 44,
+      "main_card_count": 44,
+      "trigger_card_count": 9,
+      "non_trigger_card_count": 35,
+      "g_zone_card_count": 0,
+      "main_capacity": 176,
+      "trigger_capacity": 36,
+      "non_trigger_capacity": 140,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 48,
+        "1": 52,
+        "2": 44,
+        "3": 32,
+        "4": 0,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 12,
+        "1": 13,
+        "2": 11,
+        "3": 8,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 16,
+        "Draw": 12,
+        "Heal": 8
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "52307695688093824501704126",
+          "digits": 26,
+          "scientific": "5.230e+25"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "1422839586010026388475250",
+          "digits": 25,
+          "scientific": "1.422e+24"
+        },
+        "trigger_16_component": {
+          "exact": "162585",
+          "digits": 6,
+          "scientific": "162585"
+        },
+        "non_trigger_34_component": {
+          "exact": "8751358280345827650",
+          "digits": 19,
+          "scientific": "8.751e+18"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "3432",
+          "digits": 4,
+          "scientific": "3432"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "อควอฟอร์ซ",
+      "group_field": "clan",
+      "card_count": 47,
+      "main_card_count": 47,
+      "trigger_card_count": 11,
+      "non_trigger_card_count": 36,
+      "g_zone_card_count": 0,
+      "main_capacity": 188,
+      "trigger_capacity": 44,
+      "non_trigger_capacity": 144,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 52,
+        "1": 60,
+        "2": 40,
+        "3": 36,
+        "4": 0,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 13,
+        "1": 15,
+        "2": 10,
+        "3": 9,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 12,
+        "Draw": 12,
+        "Front": 12,
+        "Heal": 8
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "667446546074678034625455511",
+          "digits": 27,
+          "scientific": "6.674e+26"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "34513667131187604873827160",
+          "digits": 26,
+          "scientific": "3.451e+25"
+        },
+        "trigger_16_component": {
+          "exact": "1870484",
+          "digits": 7,
+          "scientific": "1.870e+6"
+        },
+        "non_trigger_34_component": {
+          "exact": "18451730745190872990",
+          "digits": 20,
+          "scientific": "1.845e+19"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "2700",
+          "digits": 4,
+          "scientific": "2700"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "เกรท เนเจอร์",
+      "group_field": "clan",
+      "card_count": 24,
+      "main_card_count": 24,
+      "trigger_card_count": 7,
+      "non_trigger_card_count": 17,
+      "g_zone_card_count": 0,
+      "main_capacity": 96,
+      "trigger_capacity": 28,
+      "non_trigger_capacity": 68,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 32,
+        "1": 24,
+        "2": 24,
+        "3": 16,
+        "4": 0,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 8,
+        "1": 6,
+        "2": 6,
+        "3": 4,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 8,
+        "Draw": 8,
+        "Front": 8,
+        "Heal": 4
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "3273382451600628",
+          "digits": 16,
+          "scientific": "3.273e+15"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "369128306771700",
+          "digits": 15,
+          "scientific": "3.691e+14"
+        },
+        "trigger_16_component": {
+          "exact": "7140",
+          "digits": 4,
+          "scientific": "7140"
+        },
+        "non_trigger_34_component": {
+          "exact": "51698642405",
+          "digits": 11,
+          "scientific": "5.169e+10"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "144",
+          "digits": 3,
+          "scientific": "144"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "เกียร์โครนิเคิล",
+      "group_field": "clan",
+      "card_count": 22,
+      "main_card_count": 22,
+      "trigger_card_count": 5,
+      "non_trigger_card_count": 17,
+      "g_zone_card_count": 0,
+      "main_capacity": 88,
+      "trigger_capacity": 20,
+      "non_trigger_capacity": 68,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 24,
+        "1": 20,
+        "2": 24,
+        "3": 12,
+        "4": 8,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 6,
+        "1": 5,
+        "2": 6,
+        "3": 3,
+        "4": 2,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 8,
+        "Draw": 8,
+        "Heal": 4
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "95532301619073",
+          "digits": 14,
+          "scientific": "9.553e+13"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "3618904968350",
+          "digits": 13,
+          "scientific": "3.618e+12"
+        },
+        "trigger_16_component": {
+          "exact": "70",
+          "digits": 2,
+          "scientific": "70"
+        },
+        "non_trigger_34_component": {
+          "exact": "51698642405",
+          "digits": 11,
+          "scientific": "5.169e+10"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "90",
+          "digits": 2,
+          "scientific": "90"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "เครย์เอเลเมนทัล",
+      "group_field": "clan",
+      "card_count": 1,
+      "main_card_count": 1,
+      "trigger_card_count": 0,
+      "non_trigger_card_count": 1,
+      "g_zone_card_count": 0,
+      "main_capacity": 4,
+      "trigger_capacity": 0,
+      "non_trigger_capacity": 4,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "unknown": 4
+      },
+      "grade_unique_count": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "unknown": 1
+      },
+      "trigger_capacity_by_type": {},
+      "feasible": {
+        "basic_50_card_main": false,
+        "main_with_16_triggers_34_non_triggers": false,
+        "ride_deck_grade_0_1_2_3_choice": false,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        },
+        "trigger_16_component": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        },
+        "non_trigger_34_component": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": [
+        "main_capacity_below_50",
+        "trigger_capacity_below_16",
+        "non_trigger_capacity_below_34",
+        "missing_ride_grade_0_1_2_3"
+      ]
+    },
+    {
+      "group": "เจเนซิส",
+      "group_field": "clan",
+      "card_count": 37,
+      "main_card_count": 37,
+      "trigger_card_count": 10,
+      "non_trigger_card_count": 27,
+      "g_zone_card_count": 0,
+      "main_capacity": 148,
+      "trigger_capacity": 40,
+      "non_trigger_capacity": 108,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 48,
+        "1": 40,
+        "2": 36,
+        "3": 24,
+        "4": 0,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 12,
+        "1": 10,
+        "2": 9,
+        "3": 6,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 16,
+        "Draw": 16,
+        "Heal": 8
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "67101240831725812335885",
+          "digits": 23,
+          "scientific": "6.710e+22"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "5687793017243843220000",
+          "digits": 22,
+          "scientific": "5.687e+21"
+        },
+        "trigger_16_component": {
+          "exact": "587400",
+          "digits": 6,
+          "scientific": "587400"
+        },
+        "non_trigger_34_component": {
+          "exact": "9682997986455300",
+          "digits": 16,
+          "scientific": "9.682e+15"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "1080",
+          "digits": 4,
+          "scientific": "1080"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "เนโอ เนคต้า",
+      "group_field": "clan",
+      "card_count": 24,
+      "main_card_count": 24,
+      "trigger_card_count": 5,
+      "non_trigger_card_count": 19,
+      "g_zone_card_count": 0,
+      "main_capacity": 96,
+      "trigger_capacity": 20,
+      "non_trigger_capacity": 76,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 32,
+        "1": 24,
+        "2": 24,
+        "3": 16,
+        "4": 0,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 8,
+        "1": 6,
+        "2": 6,
+        "3": 4,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 8,
+        "Draw": 8,
+        "Heal": 4
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "3273382451600628",
+          "digits": 16,
+          "scientific": "3.273e+15"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "69865237194900",
+          "digits": 14,
+          "scientific": "6.986e+13"
+        },
+        "trigger_16_component": {
+          "exact": "70",
+          "digits": 2,
+          "scientific": "70"
+        },
+        "non_trigger_34_component": {
+          "exact": "998074817070",
+          "digits": 12,
+          "scientific": "9.980e+11"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "432",
+          "digits": 3,
+          "scientific": "432"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "เบอร์มิวด้า ไทรแองเกิล",
+      "group_field": "clan",
+      "card_count": 64,
+      "main_card_count": 64,
+      "trigger_card_count": 9,
+      "non_trigger_card_count": 55,
+      "g_zone_card_count": 0,
+      "main_capacity": 256,
+      "trigger_capacity": 36,
+      "non_trigger_capacity": 220,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 68,
+        "1": 72,
+        "2": 72,
+        "3": 32,
+        "4": 12,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 17,
+        "1": 18,
+        "2": 18,
+        "3": 8,
+        "4": 3,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 16,
+        "Draw": 12,
+        "Heal": 8
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "118154680841315071450142035369920",
+          "digits": 33,
+          "scientific": "1.181e+32"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "288046305894359759561145275175",
+          "digits": 30,
+          "scientific": "2.880e+29"
+        },
+        "trigger_16_component": {
+          "exact": "162585",
+          "digits": 6,
+          "scientific": "162585"
+        },
+        "non_trigger_34_component": {
+          "exact": "1771665934092073435809855",
+          "digits": 25,
+          "scientific": "1.771e+24"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "20736",
+          "digits": 5,
+          "scientific": "20736"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "เพลมูน",
+      "group_field": "clan",
+      "card_count": 59,
+      "main_card_count": 59,
+      "trigger_card_count": 11,
+      "non_trigger_card_count": 48,
+      "g_zone_card_count": 0,
+      "main_capacity": 236,
+      "trigger_capacity": 44,
+      "non_trigger_capacity": 192,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 52,
+        "1": 68,
+        "2": 68,
+        "3": 48,
+        "4": 0,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 13,
+        "1": 17,
+        "2": 17,
+        "3": 12,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 12,
+        "Draw": 12,
+        "Front": 12,
+        "Heal": 8
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "4741603971532246870485913175826",
+          "digits": 31,
+          "scientific": "4.741e+30"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "78615289869146660827771358400",
+          "digits": 29,
+          "scientific": "7.861e+28"
+        },
+        "trigger_16_component": {
+          "exact": "1870484",
+          "digits": 7,
+          "scientific": "1.870e+6"
+        },
+        "non_trigger_34_component": {
+          "exact": "42029383768664506527600",
+          "digits": 23,
+          "scientific": "4.202e+22"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "6936",
+          "digits": 4,
+          "scientific": "6936"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "เมก้าโคโลนี่",
+      "group_field": "clan",
+      "card_count": 44,
+      "main_card_count": 44,
+      "trigger_card_count": 9,
+      "non_trigger_card_count": 35,
+      "g_zone_card_count": 0,
+      "main_capacity": 176,
+      "trigger_capacity": 36,
+      "non_trigger_capacity": 140,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 48,
+        "1": 48,
+        "2": 40,
+        "3": 36,
+        "4": 0,
+        "unknown": 4
+      },
+      "grade_unique_count": {
+        "0": 12,
+        "1": 12,
+        "2": 10,
+        "3": 9,
+        "4": 0,
+        "unknown": 1
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 16,
+        "Draw": 12,
+        "Heal": 8
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "52307695688093824501704126",
+          "digits": 26,
+          "scientific": "5.230e+25"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "1422839586010026388475250",
+          "digits": 25,
+          "scientific": "1.422e+24"
+        },
+        "trigger_16_component": {
+          "exact": "162585",
+          "digits": 6,
+          "scientific": "162585"
+        },
+        "non_trigger_34_component": {
+          "exact": "8751358280345827650",
+          "digits": 19,
+          "scientific": "8.751e+18"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "3240",
+          "digits": 4,
+          "scientific": "3240"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "แกรนบลู",
+      "group_field": "clan",
+      "card_count": 44,
+      "main_card_count": 44,
+      "trigger_card_count": 9,
+      "non_trigger_card_count": 35,
+      "g_zone_card_count": 0,
+      "main_capacity": 176,
+      "trigger_capacity": 36,
+      "non_trigger_capacity": 140,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 48,
+        "1": 56,
+        "2": 40,
+        "3": 32,
+        "4": 0,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 12,
+        "1": 14,
+        "2": 10,
+        "3": 8,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 16,
+        "Draw": 12,
+        "Heal": 8
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "52307695688093824501704126",
+          "digits": 26,
+          "scientific": "5.230e+25"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "1422839586010026388475250",
+          "digits": 25,
+          "scientific": "1.422e+24"
+        },
+        "trigger_16_component": {
+          "exact": "162585",
+          "digits": 6,
+          "scientific": "162585"
+        },
+        "non_trigger_34_component": {
+          "exact": "8751358280345827650",
+          "digits": 19,
+          "scientific": "8.751e+18"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "3360",
+          "digits": 4,
+          "scientific": "3360"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "แองเจิล ฟิทเธอร์",
+      "group_field": "clan",
+      "card_count": 22,
+      "main_card_count": 22,
+      "trigger_card_count": 5,
+      "non_trigger_card_count": 17,
+      "g_zone_card_count": 0,
+      "main_capacity": 88,
+      "trigger_capacity": 20,
+      "non_trigger_capacity": 68,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 24,
+        "1": 24,
+        "2": 24,
+        "3": 16,
+        "4": 0,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 6,
+        "1": 6,
+        "2": 6,
+        "3": 4,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 8,
+        "Draw": 8,
+        "Heal": 4
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "95532301619073",
+          "digits": 14,
+          "scientific": "9.553e+13"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "3618904968350",
+          "digits": 13,
+          "scientific": "3.618e+12"
+        },
+        "trigger_16_component": {
+          "exact": "70",
+          "digits": 2,
+          "scientific": "70"
+        },
+        "non_trigger_34_component": {
+          "exact": "51698642405",
+          "digits": 11,
+          "scientific": "5.169e+10"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "144",
+          "digits": 3,
+          "scientific": "144"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "โกลด์ พาลาดิน",
+      "group_field": "clan",
+      "card_count": 40,
+      "main_card_count": 40,
+      "trigger_card_count": 9,
+      "non_trigger_card_count": 31,
+      "g_zone_card_count": 0,
+      "main_capacity": 160,
+      "trigger_capacity": 36,
+      "non_trigger_capacity": 124,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 40,
+        "1": 44,
+        "2": 44,
+        "3": 32,
+        "4": 0,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 10,
+        "1": 11,
+        "2": 11,
+        "3": 8,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 12,
+        "Draw": 8,
+        "Front": 12,
+        "Heal": 4
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "1337645336649608485362240",
+          "digits": 25,
+          "scientific": "1.337e+24"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "58248755771900152178160",
+          "digits": 23,
+          "scientific": "5.824e+22"
+        },
+        "trigger_16_component": {
+          "exact": "162585",
+          "digits": 6,
+          "scientific": "162585"
+        },
+        "non_trigger_34_component": {
+          "exact": "358266480744842096",
+          "digits": 18,
+          "scientific": "3.582e+17"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "968",
+          "digits": 3,
+          "scientific": "968"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "โนว่า เกรปเปอร์",
+      "group_field": "clan",
+      "card_count": 58,
+      "main_card_count": 58,
+      "trigger_card_count": 11,
+      "non_trigger_card_count": 47,
+      "g_zone_card_count": 0,
+      "main_capacity": 232,
+      "trigger_capacity": 44,
+      "non_trigger_capacity": 188,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 64,
+        "1": 60,
+        "2": 56,
+        "3": 52,
+        "4": 0,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 16,
+        "1": 15,
+        "2": 14,
+        "3": 13,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 12,
+        "Draw": 12,
+        "Front": 12,
+        "Heal": 8
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "2420092456211776298372220522171",
+          "digits": 31,
+          "scientific": "2.420e+30"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "44301600151348029655802113400",
+          "digits": 29,
+          "scientific": "4.430e+28"
+        },
+        "trigger_16_component": {
+          "exact": "1870484",
+          "digits": 7,
+          "scientific": "1.870e+6"
+        },
+        "non_trigger_34_component": {
+          "exact": "23684565145357046441350",
+          "digits": 23,
+          "scientific": "2.368e+22"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "13650",
+          "digits": 5,
+          "scientific": "13650"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "โอราเคิล ทิงค์ แทงค์",
+      "group_field": "clan",
+      "card_count": 78,
+      "main_card_count": 78,
+      "trigger_card_count": 13,
+      "non_trigger_card_count": 65,
+      "g_zone_card_count": 0,
+      "main_capacity": 312,
+      "trigger_capacity": 52,
+      "non_trigger_capacity": 260,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 72,
+        "1": 96,
+        "2": 84,
+        "3": 60,
+        "4": 0,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 18,
+        "1": 24,
+        "2": 21,
+        "3": 15,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 24,
+        "Draw": 16,
+        "Heal": 12
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "329836417159518775560686410299169506",
+          "digits": 36,
+          "scientific": "3.298e+35"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "2706534021351892740887366977407750",
+          "digits": 34,
+          "scientific": "2.706e+33"
+        },
+        "trigger_16_component": {
+          "exact": "14289015",
+          "digits": 8,
+          "scientific": "1.428e+7"
+        },
+        "non_trigger_34_component": {
+          "exact": "189413617478314127382983850",
+          "digits": 27,
+          "scientific": "1.894e+26"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "37800",
+          "digits": 5,
+          "scientific": "37800"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    },
+    {
+      "group": "ไดเมนชั่น โพลิส",
+      "group_field": "clan",
+      "card_count": 44,
+      "main_card_count": 44,
+      "trigger_card_count": 9,
+      "non_trigger_card_count": 35,
+      "g_zone_card_count": 0,
+      "main_capacity": 176,
+      "trigger_capacity": 36,
+      "non_trigger_capacity": 140,
+      "g_zone_capacity": 0,
+      "grade_capacity": {
+        "0": 44,
+        "1": 56,
+        "2": 44,
+        "3": 32,
+        "4": 0,
+        "unknown": 0
+      },
+      "grade_unique_count": {
+        "0": 11,
+        "1": 14,
+        "2": 11,
+        "3": 8,
+        "4": 0,
+        "unknown": 0
+      },
+      "trigger_capacity_by_type": {
+        "Critical": 16,
+        "Draw": 12,
+        "Heal": 8
+      },
+      "feasible": {
+        "basic_50_card_main": true,
+        "main_with_16_triggers_34_non_triggers": true,
+        "ride_deck_grade_0_1_2_3_choice": true,
+        "g_zone_16": false
+      },
+      "possibility_counts": {
+        "main_50_any_mix": {
+          "exact": "52307695688093824501704126",
+          "digits": 26,
+          "scientific": "5.230e+25"
+        },
+        "main_50_exact_16_triggers": {
+          "exact": "1422839586010026388475250",
+          "digits": 25,
+          "scientific": "1.422e+24"
+        },
+        "trigger_16_component": {
+          "exact": "162585",
+          "digits": 6,
+          "scientific": "162585"
+        },
+        "non_trigger_34_component": {
+          "exact": "8751358280345827650",
+          "digits": 19,
+          "scientific": "8.751e+18"
+        },
+        "ride_deck_grade_0_1_2_3_choices": {
+          "exact": "2464",
+          "digits": 4,
+          "scientific": "2464"
+        },
+        "g_zone_16": {
+          "exact": "0",
+          "digits": 1,
+          "scientific": "0"
+        }
+      },
+      "issues": []
+    }
+  ]
+}

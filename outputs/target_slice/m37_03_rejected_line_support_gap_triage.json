@@ -1,0 +1,1472 @@
+{
+  "version": "M37-03",
+  "description": "Rejected-line support-gap triage for first-slice combo lines",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "first_slice_review_packet": "outputs\\target_slice\\m36_01_first_slice_review_packet.json",
+    "combo_line_explainer": "outputs\\target_slice\\m35_d3_first_slice_combo_line_explainer.json",
+    "trigger_package_repair_proposal": "outputs\\target_slice\\m37_02_trigger_package_repair_proposal.json"
+  },
+  "scope": {
+    "offline_triage": true,
+    "changes_recipe_draft": false,
+    "creates_runtime_deck": false,
+    "bot_integration": false,
+    "automatic_playbook_promotion": false,
+    "live_card_text_parsing": false
+  },
+  "accepted_seed_repair_context": {
+    "recommended_package_id": "m37_01_pkg_001",
+    "recommended_profile_id": "balanced_classic",
+    "runtime_promotion_allowed": false
+  },
+  "triage_policy": {
+    "multi_label": true,
+    "human_review_required": true,
+    "runtime_promotion_allowed": false,
+    "unclassified_lines_blocked": true
+  },
+  "summary": {
+    "rejected_line_count": 24,
+    "triage_item_count": 24,
+    "gap_group_count": 5,
+    "multi_label_line_count": 19,
+    "gap_label_counts": {
+      "broad_timing_review": 10,
+      "detector_gap_not_found_manual_review": 10,
+      "no_resource_dependency_manual_review": 5,
+      "resource_pressure_gap": 9,
+      "zone_access_gap": 15
+    },
+    "triage_priority_counts": {
+      "P1_resource_and_zone_gap": 7,
+      "P2_single_structural_gap": 10,
+      "P3_manual_confirmation": 7
+    },
+    "manual_mapping_backlog_count": 5,
+    "runtime_promotion_allowed": false,
+    "ready_for_m37_04": true
+  },
+  "gap_groups": [
+    {
+      "gap_label": "broad_timing_review",
+      "line_count": 10,
+      "line_ids": [
+        "line_004",
+        "line_005",
+        "line_006",
+        "line_007",
+        "line_008",
+        "line_019",
+        "line_021",
+        "line_022",
+        "line_023",
+        "line_024"
+      ],
+      "recommended_m37_04_action": "Tighten timing-window mapping or keep manual review."
+    },
+    {
+      "gap_label": "detector_gap_not_found_manual_review",
+      "line_count": 10,
+      "line_ids": [
+        "line_004",
+        "line_005",
+        "line_006",
+        "line_007",
+        "line_008",
+        "line_014",
+        "line_015",
+        "line_016",
+        "line_018",
+        "line_019"
+      ],
+      "recommended_m37_04_action": "Confirm whether line can be accepted after human review."
+    },
+    {
+      "gap_label": "no_resource_dependency_manual_review",
+      "line_count": 5,
+      "line_ids": [
+        "line_013",
+        "line_014",
+        "line_015",
+        "line_020",
+        "line_025"
+      ],
+      "recommended_m37_04_action": "Confirm this is not a false dependency before accepting the line."
+    },
+    {
+      "gap_label": "resource_pressure_gap",
+      "line_count": 9,
+      "line_ids": [
+        "line_001",
+        "line_002",
+        "line_009",
+        "line_010",
+        "line_011",
+        "line_012",
+        "line_016",
+        "line_018",
+        "line_025"
+      ],
+      "recommended_m37_04_action": "Map resource requirements/providers or keep line rejected."
+    },
+    {
+      "gap_label": "zone_access_gap",
+      "line_count": 15,
+      "line_ids": [
+        "line_001",
+        "line_002",
+        "line_004",
+        "line_005",
+        "line_006",
+        "line_007",
+        "line_008",
+        "line_009",
+        "line_010",
+        "line_011",
+        "line_012",
+        "line_013",
+        "line_017",
+        "line_020",
+        "line_025"
+      ],
+      "recommended_m37_04_action": "Map zone/target requirements/providers or require normal setup note."
+    }
+  ],
+  "manual_mapping_backlog": [
+    {
+      "backlog_id": "m37_04_01_broad_timing_review",
+      "gap_label": "broad_timing_review",
+      "mapping_type": "timing_window_specificity_mapping",
+      "line_count": 10,
+      "source_line_ids": [
+        "line_004",
+        "line_005",
+        "line_006",
+        "line_007",
+        "line_008",
+        "line_019",
+        "line_021",
+        "line_022",
+        "line_023",
+        "line_024"
+      ],
+      "recommended_action": "Tighten timing-window mapping or keep manual review.",
+      "runtime_promotion_allowed": false
+    },
+    {
+      "backlog_id": "m37_04_02_detector_gap_not_found_manual_review",
+      "gap_label": "detector_gap_not_found_manual_review",
+      "mapping_type": "human_acceptance_without_new_mapping",
+      "line_count": 10,
+      "source_line_ids": [
+        "line_004",
+        "line_005",
+        "line_006",
+        "line_007",
+        "line_008",
+        "line_014",
+        "line_015",
+        "line_016",
+        "line_018",
+        "line_019"
+      ],
+      "recommended_action": "Confirm whether line can be accepted after human review.",
+      "runtime_promotion_allowed": false
+    },
+    {
+      "backlog_id": "m37_04_03_no_resource_dependency_manual_review",
+      "gap_label": "no_resource_dependency_manual_review",
+      "mapping_type": "false_dependency_or_acceptance_review",
+      "line_count": 5,
+      "source_line_ids": [
+        "line_013",
+        "line_014",
+        "line_015",
+        "line_020",
+        "line_025"
+      ],
+      "recommended_action": "Confirm this is not a false dependency before accepting the line.",
+      "runtime_promotion_allowed": false
+    },
+    {
+      "backlog_id": "m37_04_04_resource_pressure_gap",
+      "gap_label": "resource_pressure_gap",
+      "mapping_type": "resource_requirement_provider_mapping",
+      "line_count": 9,
+      "source_line_ids": [
+        "line_001",
+        "line_002",
+        "line_009",
+        "line_010",
+        "line_011",
+        "line_012",
+        "line_016",
+        "line_018",
+        "line_025"
+      ],
+      "recommended_action": "Map resource requirements/providers or keep line rejected.",
+      "runtime_promotion_allowed": false
+    },
+    {
+      "backlog_id": "m37_04_05_zone_access_gap",
+      "gap_label": "zone_access_gap",
+      "mapping_type": "zone_target_requirement_provider_mapping",
+      "line_count": 15,
+      "source_line_ids": [
+        "line_001",
+        "line_002",
+        "line_004",
+        "line_005",
+        "line_006",
+        "line_007",
+        "line_008",
+        "line_009",
+        "line_010",
+        "line_011",
+        "line_012",
+        "line_013",
+        "line_017",
+        "line_020",
+        "line_025"
+      ],
+      "recommended_action": "Map zone/target requirements/providers or require normal setup note.",
+      "runtime_promotion_allowed": false
+    }
+  ],
+  "triage_items": [
+    {
+      "line_id": "line_001",
+      "source_skeleton_id": "skel_001",
+      "source_package_id": "pkg_001",
+      "anchor_card_id": "BT04-038TH",
+      "anchor_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+      "line_title": "BT04-038TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P1_resource_and_zone_gap",
+      "gap_labels": [
+        "resource_pressure_gap",
+        "zone_access_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-032TH",
+        "BT04-038TH",
+        "BT06-042TH",
+        "BT09-075TH",
+        "EB04-027TH"
+      ],
+      "support_cards": [
+        "BT02-018TH",
+        "BT06-042TH",
+        "BT06-099TH",
+        "BT09-075TH",
+        "EB04-004TH",
+        "EB04-012TH",
+        "EB04-027TH",
+        "EB04-028TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_002",
+      "source_skeleton_id": "skel_002",
+      "source_package_id": "pkg_002",
+      "anchor_card_id": "EB04-017TH",
+      "anchor_name_th": "นางฟ้าหุ้มเกราะ,ชูบิเอล่า",
+      "line_title": "EB04-017TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P1_resource_and_zone_gap",
+      "gap_labels": [
+        "resource_pressure_gap",
+        "zone_access_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-032TH",
+        "BT06-042TH",
+        "BT09-075TH",
+        "EB04-017TH",
+        "EB04-027TH"
+      ],
+      "support_cards": [
+        "BT02-018TH",
+        "BT06-042TH",
+        "BT06-099TH",
+        "BT09-075TH",
+        "EB04-004TH",
+        "EB04-012TH",
+        "EB04-027TH",
+        "EB04-028TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_004",
+      "source_skeleton_id": "skel_004",
+      "source_package_id": "pkg_004",
+      "anchor_card_id": "BT01-028TH",
+      "anchor_name_th": "Mr. อินวิซิเบิ้ล",
+      "line_title": "BT01-028TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P2_single_structural_gap",
+      "gap_labels": [
+        "zone_access_gap",
+        "broad_timing_review",
+        "detector_gap_not_found_manual_review"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT04-078TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "BT09-075TH"
+      ],
+      "support_cards": [
+        "BT04-076TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "BT09-075TH",
+        "EB04-006TH",
+        "EB04-009TH",
+        "EB04-023TH",
+        "TD03-008TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "BT04-078TH",
+        "EB01-020TH",
+        "EB04-034TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_005",
+      "source_skeleton_id": "skel_005",
+      "source_package_id": "pkg_005",
+      "anchor_card_id": "EB04-016TH",
+      "anchor_name_th": "Mr.อินวิซิเบิ้ล",
+      "line_title": "EB04-016TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P2_single_structural_gap",
+      "gap_labels": [
+        "zone_access_gap",
+        "broad_timing_review",
+        "detector_gap_not_found_manual_review"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT04-078TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "BT09-075TH",
+        "EB04-016TH"
+      ],
+      "support_cards": [
+        "BT04-076TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "BT09-075TH",
+        "EB04-006TH",
+        "EB04-009TH",
+        "EB04-023TH",
+        "TD03-008TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "BT04-078TH",
+        "EB01-020TH",
+        "EB04-034TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_006",
+      "source_skeleton_id": "skel_006",
+      "source_package_id": "pkg_006",
+      "anchor_card_id": "TD03-003TH",
+      "anchor_name_th": "Mr. อินวิซิเบิ้ล",
+      "line_title": "TD03-003TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P2_single_structural_gap",
+      "gap_labels": [
+        "zone_access_gap",
+        "broad_timing_review",
+        "detector_gap_not_found_manual_review"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT04-078TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "BT09-075TH",
+        "TD03-003TH"
+      ],
+      "support_cards": [
+        "BT04-076TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "BT09-075TH",
+        "EB04-006TH",
+        "EB04-009TH",
+        "EB04-023TH",
+        "TD03-008TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "BT04-078TH",
+        "EB01-020TH",
+        "EB04-034TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_007",
+      "source_skeleton_id": "skel_007",
+      "source_package_id": "pkg_007",
+      "anchor_card_id": "EB04-008TH",
+      "anchor_name_th": "โกลด์ รูไทล์",
+      "line_title": "EB04-008TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P2_single_structural_gap",
+      "gap_labels": [
+        "zone_access_gap",
+        "broad_timing_review",
+        "detector_gap_not_found_manual_review"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT04-078TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "EB04-006TH",
+        "EB04-008TH"
+      ],
+      "support_cards": [
+        "BT04-076TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "EB04-006TH",
+        "EB04-009TH",
+        "EB04-023TH",
+        "TD03-008TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "BT04-078TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_008",
+      "source_skeleton_id": "skel_008",
+      "source_package_id": "pkg_008",
+      "anchor_card_id": "TD03-001TH",
+      "anchor_name_th": "โกลด์ รูไทล์",
+      "line_title": "TD03-001TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P2_single_structural_gap",
+      "gap_labels": [
+        "zone_access_gap",
+        "broad_timing_review",
+        "detector_gap_not_found_manual_review"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT04-078TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "EB04-006TH",
+        "TD03-001TH"
+      ],
+      "support_cards": [
+        "BT04-076TH",
+        "BT05-072TH",
+        "BT09-072TH",
+        "EB04-006TH",
+        "EB04-009TH",
+        "EB04-023TH",
+        "TD03-008TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "BT04-078TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_009",
+      "source_skeleton_id": "skel_009",
+      "source_package_id": "pkg_009",
+      "anchor_card_id": "BT01-032TH",
+      "anchor_name_th": "แบทเทิลไรเซอร์",
+      "line_title": "BT01-032TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P1_resource_and_zone_gap",
+      "gap_labels": [
+        "resource_pressure_gap",
+        "zone_access_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT01-032TH",
+        "BT02-018TH",
+        "BT04-038TH",
+        "EB04-017TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_010",
+      "source_skeleton_id": "skel_010",
+      "source_package_id": "pkg_010",
+      "anchor_card_id": "EB01-020TH",
+      "anchor_name_th": "แบทเทิล ไรเซอร์",
+      "line_title": "EB01-020TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P1_resource_and_zone_gap",
+      "gap_labels": [
+        "resource_pressure_gap",
+        "zone_access_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-038TH",
+        "EB01-020TH",
+        "EB04-017TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH"
+      ],
+      "trigger_cards": [
+        "EB01-020TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_011",
+      "source_skeleton_id": "skel_011",
+      "source_package_id": "pkg_011",
+      "anchor_card_id": "EB04-034TH",
+      "anchor_name_th": "เทอร์โบไรเซอร์",
+      "line_title": "EB04-034TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P1_resource_and_zone_gap",
+      "gap_labels": [
+        "resource_pressure_gap",
+        "zone_access_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-038TH",
+        "EB04-017TH",
+        "EB04-034TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH"
+      ],
+      "trigger_cards": [
+        "EB04-034TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_012",
+      "source_skeleton_id": "skel_012",
+      "source_package_id": "pkg_012",
+      "anchor_card_id": "EB04-035TH",
+      "anchor_name_th": "แบทเทิลไรเซอร์",
+      "line_title": "EB04-035TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P1_resource_and_zone_gap",
+      "gap_labels": [
+        "resource_pressure_gap",
+        "zone_access_gap"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-038TH",
+        "EB04-017TH",
+        "EB04-035TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH"
+      ],
+      "trigger_cards": [
+        "EB04-035TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_013",
+      "source_skeleton_id": "skel_013",
+      "source_package_id": "pkg_013",
+      "anchor_card_id": "TD03-005TH",
+      "anchor_name_th": "สุดยอดแม่เหล็กไฟฟ้ามีชีวิต สตอร์ม",
+      "line_title": "TD03-005TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P2_single_structural_gap",
+      "gap_labels": [
+        "zone_access_gap",
+        "no_resource_dependency_manual_review"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No resource dependency detected for this edge."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-032TH",
+        "EB01-001TH",
+        "EB01-020TH",
+        "EB04-001TH",
+        "TD03-005TH"
+      ],
+      "support_cards": [
+        "BT02-072TH",
+        "BT06-042TH",
+        "BT09-034TH",
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-002TH",
+        "EB04-012TH",
+        "EB04-027TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_014",
+      "source_skeleton_id": "skel_014",
+      "source_package_id": "pkg_014",
+      "anchor_card_id": "BT06-099TH",
+      "anchor_name_th": "ฮานิ ผู้ชั่วร้าย",
+      "line_title": "BT06-099TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P3_manual_confirmation",
+      "gap_labels": [
+        "detector_gap_not_found_manual_review",
+        "no_resource_dependency_manual_review"
+      ],
+      "needs_to_work": [
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "No resource dependency detected for this edge."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-032TH",
+        "BT06-099TH",
+        "EB01-001TH",
+        "EB01-020TH",
+        "EB04-001TH"
+      ],
+      "support_cards": [
+        "BT01-029TH",
+        "BT02-072TH",
+        "BT06-042TH",
+        "BT09-034TH",
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-012TH",
+        "EB04-027TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_015",
+      "source_skeleton_id": "skel_015",
+      "source_package_id": "pkg_015",
+      "anchor_card_id": "EB04-021TH",
+      "anchor_name_th": "มาเวลรัส ฮานิ",
+      "line_title": "EB04-021TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P3_manual_confirmation",
+      "gap_labels": [
+        "detector_gap_not_found_manual_review",
+        "no_resource_dependency_manual_review"
+      ],
+      "needs_to_work": [
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "No resource dependency detected for this edge."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-032TH",
+        "EB01-001TH",
+        "EB01-020TH",
+        "EB04-001TH",
+        "EB04-021TH"
+      ],
+      "support_cards": [
+        "BT01-029TH",
+        "BT02-072TH",
+        "BT06-042TH",
+        "BT09-034TH",
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-012TH",
+        "EB04-027TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_016",
+      "source_skeleton_id": "skel_016",
+      "source_package_id": "pkg_016",
+      "anchor_card_id": "BT02-018TH",
+      "anchor_name_th": "เมจิคเชี่ยน เกิร์ล, คิราร่า",
+      "line_title": "BT02-018TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P2_single_structural_gap",
+      "gap_labels": [
+        "resource_pressure_gap",
+        "detector_gap_not_found_manual_review"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "No additional support gap detected by C2-C4 advisory detectors."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-032TH",
+        "BT02-018TH",
+        "BT04-078TH",
+        "EB01-001TH",
+        "EB04-001TH"
+      ],
+      "support_cards": [
+        "BT01-031TH",
+        "BT02-072TH",
+        "BT04-038TH",
+        "BT04-076TH",
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-012TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "BT04-078TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_017",
+      "source_skeleton_id": "skel_017",
+      "source_package_id": "pkg_017",
+      "anchor_card_id": "BT09-075TH",
+      "anchor_name_th": "ไลโอเนท ฮีท",
+      "line_title": "BT09-075TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P2_single_structural_gap",
+      "gap_labels": [
+        "zone_access_gap"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT04-038TH",
+        "BT09-075TH",
+        "EB04-016TH",
+        "EB04-017TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT04-038TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-017TH"
+      ],
+      "trigger_cards": [],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_018",
+      "source_skeleton_id": "skel_018",
+      "source_package_id": "pkg_018",
+      "anchor_card_id": "EB04-004TH",
+      "anchor_name_th": "เมจิกเชี่ยลเกิร์ล,คิราร่า",
+      "line_title": "EB04-004TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P2_single_structural_gap",
+      "gap_labels": [
+        "resource_pressure_gap",
+        "detector_gap_not_found_manual_review"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "No additional support gap detected by C2-C4 advisory detectors."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-032TH",
+        "BT04-078TH",
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-004TH"
+      ],
+      "support_cards": [
+        "BT01-031TH",
+        "BT02-072TH",
+        "BT04-038TH",
+        "BT04-076TH",
+        "EB01-001TH",
+        "EB04-001TH",
+        "EB04-012TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "BT04-078TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_019",
+      "source_skeleton_id": "skel_019",
+      "source_package_id": "pkg_019",
+      "anchor_card_id": "BT04-076TH",
+      "anchor_name_th": "ทูลคิท บอย",
+      "line_title": "BT04-076TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P3_manual_confirmation",
+      "gap_labels": [
+        "broad_timing_review",
+        "detector_gap_not_found_manual_review"
+      ],
+      "needs_to_work": [
+        "No additional support gap detected by C2-C4 advisory detectors.",
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT04-076TH",
+        "BT09-004TH",
+        "EB04-002TH",
+        "EB04-008TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT09-004TH",
+        "BT09-072TH",
+        "EB04-002TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-009TH",
+        "EB04-016TH"
+      ],
+      "trigger_cards": [],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_020",
+      "source_skeleton_id": "skel_020",
+      "source_package_id": "pkg_020",
+      "anchor_card_id": "BT04-019TH",
+      "anchor_name_th": "เบลาคลูเกอร์",
+      "line_title": "BT04-019TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P2_single_structural_gap",
+      "gap_labels": [
+        "zone_access_gap",
+        "no_resource_dependency_manual_review"
+      ],
+      "needs_to_work": [
+        "Needs normal board setup or another package to cover target zone access.",
+        "No resource dependency detected for this edge."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-032TH",
+        "BT04-019TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "support_cards": [
+        "BT02-072TH",
+        "BT05-072TH",
+        "BT06-042TH",
+        "BT09-034TH",
+        "BT09-072TH",
+        "EB04-006TH",
+        "EB04-012TH",
+        "EB04-027TH"
+      ],
+      "trigger_cards": [
+        "BT01-032TH",
+        "EB01-020TH",
+        "EB04-034TH",
+        "EB04-035TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_021",
+      "source_skeleton_id": "skel_021",
+      "source_package_id": "pkg_021",
+      "anchor_card_id": "BT09-072TH",
+      "anchor_name_th": "เบิร์สไรเซอร์",
+      "line_title": "BT09-072TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P3_manual_confirmation",
+      "gap_labels": [
+        "broad_timing_review"
+      ],
+      "needs_to_work": [
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT09-072TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT01-059TH",
+        "BT04-019TH",
+        "BT04-076TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "trigger_cards": [
+        "BT02-074TH",
+        "BT04-078TH",
+        "EB04-033TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_022",
+      "source_skeleton_id": "skel_022",
+      "source_package_id": "pkg_022",
+      "anchor_card_id": "EB04-009TH",
+      "anchor_name_th": "เจโนไซด์ โจ๊กเกอร์",
+      "line_title": "EB04-009TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P3_manual_confirmation",
+      "gap_labels": [
+        "broad_timing_review"
+      ],
+      "needs_to_work": [
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-028TH",
+        "EB04-008TH",
+        "EB04-009TH",
+        "EB04-016TH",
+        "TD03-001TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT01-059TH",
+        "BT04-019TH",
+        "BT04-076TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "trigger_cards": [
+        "BT02-074TH",
+        "BT04-078TH",
+        "EB04-033TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_023",
+      "source_skeleton_id": "skel_023",
+      "source_package_id": "pkg_023",
+      "anchor_card_id": "EB04-023TH",
+      "anchor_name_th": "โอเอซิส เกิร์ล",
+      "line_title": "EB04-023TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P3_manual_confirmation",
+      "gap_labels": [
+        "broad_timing_review"
+      ],
+      "needs_to_work": [
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-028TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-023TH",
+        "TD03-001TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT01-059TH",
+        "BT04-019TH",
+        "BT04-076TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "trigger_cards": [
+        "BT02-074TH",
+        "BT04-078TH",
+        "EB04-033TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_024",
+      "source_skeleton_id": "skel_024",
+      "source_package_id": "pkg_024",
+      "anchor_card_id": "TD03-008TH",
+      "anchor_name_th": "โอเอซิส เกิร์ล",
+      "line_title": "TD03-008TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P3_manual_confirmation",
+      "gap_labels": [
+        "broad_timing_review"
+      ],
+      "needs_to_work": [
+        "Target timing is broad; confirm actual line during review."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-028TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH",
+        "TD03-008TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT01-059TH",
+        "BT04-019TH",
+        "BT04-076TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "TD03-001TH",
+        "TD03-003TH",
+        "TD03-005TH"
+      ],
+      "trigger_cards": [
+        "BT02-074TH",
+        "BT04-078TH",
+        "EB04-033TH"
+      ],
+      "advisory_only": true
+    },
+    {
+      "line_id": "line_025",
+      "source_skeleton_id": "skel_025",
+      "source_package_id": "pkg_025",
+      "anchor_card_id": "BT02-072TH",
+      "anchor_name_th": "เครย์ โซลเจอร์",
+      "line_title": "BT02-072TH support package line",
+      "review_priority": "P2_support_gap_review",
+      "triage_priority": "P1_resource_and_zone_gap",
+      "gap_labels": [
+        "resource_pressure_gap",
+        "zone_access_gap",
+        "no_resource_dependency_manual_review"
+      ],
+      "needs_to_work": [
+        "Needs another card/package to cover target resource pressure.",
+        "Needs normal board setup or another package to cover target zone access.",
+        "No resource dependency detected for this edge."
+      ],
+      "review_reasons": [
+        "unresolved_support_gap"
+      ],
+      "blocked_until": [
+        "support_gap_resolved",
+        "human_acceptance",
+        "deck_recipe_validator"
+      ],
+      "recommended_next_action": "resolve_support_gap_or_keep_rejected",
+      "cards_involved": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT02-072TH",
+        "BT04-008TH",
+        "BT04-019TH"
+      ],
+      "support_cards": [
+        "BT01-028TH",
+        "BT02-018TH",
+        "BT04-008TH",
+        "BT04-019TH",
+        "BT06-099TH",
+        "EB04-004TH",
+        "EB04-008TH",
+        "EB04-016TH",
+        "EB04-021TH",
+        "TD03-001TH"
+      ],
+      "trigger_cards": [],
+      "advisory_only": true
+    }
+  ],
+  "next_target": {
+    "milestone": "M37-04",
+    "task": "Manual semantic mapping candidates"
+  }
+}

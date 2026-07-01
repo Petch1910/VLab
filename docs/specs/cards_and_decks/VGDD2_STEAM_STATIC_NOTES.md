@@ -1,0 +1,256 @@
+# Vanguard Dear Days 2 Steam Static Notes
+
+Date: 2026-06-19
+
+Scope: static, non-executing inspection of the local folder:
+`C:\Users\Phet\Downloads\VGDD2`.
+
+This note records architecture-level findings only. Do not run `VGDD2.exe`,
+debug it, patch it, load game DLLs, extract proprietary assets, or copy game
+data into this project.
+
+## Safe Inspection Boundary
+
+Allowed:
+
+- folder inventory
+- hashes
+- PE header and import table parsing
+- readable strings from `VGDD2.exe`
+- header/index-level inspection of `app/data.lpkg`
+- emulator config reading for save/DLC/achievement shape
+
+Not allowed:
+
+- run, debug, attach, or double-click `VGDD2.exe`
+- patch binary files
+- load `steam_api64.dll` or other DLLs
+- unpack `app/data.lpkg.*` content packs
+- restore quarantined DLLs
+- extract or reuse proprietary assets, textures, audio, code, or card data
+
+## Observed Folder Shape
+
+Top-level:
+
+- `VGDD2.exe`
+- `steam_api64.dll`
+- `steam_api64.bak`
+- `steam_appid.txt`
+- `steam_settings/`
+- `app/`
+
+`steam_appid.txt` contains app id `2457540`.
+
+`app/` contains:
+
+- `data.lpkg` index/header file, 922,853 bytes
+- `data.lpkg.0` through `data.lpkg.52`
+- 54 `data.lpkg*` files total
+- total package size is about 33.0 GB
+- largest observed content packs:
+  - `data.lpkg.10` about 10.55 GB
+  - `data.lpkg.4` about 5.53 GB
+  - `data.lpkg.44` about 3.87 GB
+  - `data.lpkg.46` about 2.60 GB
+  - `data.lpkg.16` about 2.04 GB
+
+## Hashes
+
+- `VGDD2.exe`
+  - SHA256: `7F353944D906A64C3930EDD7824A372C42EF30359EDCF2AD1F609D261EBA56F0`
+- `app/data.lpkg`
+  - SHA256: `130BD808A7F0D00E1F84A7FBC83003212419137116AFE60F95BD4240D9DA1A24`
+- `steam_appid.txt`
+  - SHA256: `F43726E540FD7407A0D958E7E762E441C7654A6253AA790348AB3C5A2F052E59`
+
+`VGDD2.exe` is not Authenticode signed in this local copy.
+
+## PE Metadata
+
+Static PE parsing result for `VGDD2.exe`:
+
+- PE64: yes
+- machine: `0x8664` / x64
+- sections: 7
+- timestamp: 2026-04-07 08:27:55 UTC
+- optional header magic: `0x020B`
+- subsystem: Windows GUI
+- imported DLLs include:
+  - `KERNEL32.dll`
+  - `USER32.dll`
+  - `GDI32.dll`
+  - `SHELL32.dll`
+  - `MSVCP140.dll`
+  - `WINMM.dll`
+  - `d3d11.dll`
+  - `dxgi.dll`
+  - `D3DCOMPILER_47.dll`
+  - `DINPUT8.dll`
+  - `XINPUT9_1_0.dll`
+  - `steam_api64.dll`
+  - `VCRUNTIME140_1.dll`
+  - `VCRUNTIME140.dll`
+  - Universal CRT API sets
+  - `ole32.dll`
+  - `IMM32.dll`
+
+Inference: DD2 Steam is also a native Windows DirectX/D3D11 application using
+Steam integration and Visual C++ runtime, not a normal Unity project layout.
+
+## `data.lpkg` Header
+
+`app/data.lpkg` header starts with:
+
+- magic: `LCD1`
+- compressed index payload starts with zlib-like bytes `78 9C`
+- decompressed index length observed in memory: 1,613,392 bytes
+
+The decompressed index is not a plain text manifest. No further package parsing
+was attempted.
+
+## Readable System Vocabulary
+
+Readable strings from `VGDD2.exe` include the same broad architecture direction
+as Dear Days 1, plus newer mechanics.
+
+Ability and table indicators:
+
+- about 202 unique `Ability_*` string names were observed
+- about 84 unique `card_ability_*` table names were observed
+- table names include older, D-series, DZ-series, PR, TD, EB, LBT, SS, and DD2
+  specific groups
+- examples:
+  - `card_ability_d_bt01` through `card_ability_d_bt13`
+  - `card_ability_dz_bt01` through `card_ability_dz_bt08`
+  - `card_ability_dz_ss01`, `card_ability_dz_ss02`, `card_ability_dz_ss03`
+  - `card_ability_dz_ss07`, `card_ability_dz_ss08`, `card_ability_dz_ss09`
+  - `card_ability_dz_ss10`, `card_ability_dz_ss11`
+  - `card_ability_dz_dd2`
+
+Ability system indicators:
+
+- `AbilityMgr`
+- `AbilityKind_Auto`
+- `AbilityKind_Cont`
+- `AbilityKind_Startup`
+- `AbilityKind_Order`
+- `AbilityKind_Trigger`
+- `AbilityKind_PersonaRide`
+- `AbilityKind_Stride`
+- `AbilityCostPayment`
+- `AbilityExecuteCost`
+- `AbilityTarget`
+- `AbilityResolveAbility`
+- `AbilityUpdateContAbility`
+- `AbilityEnergyBlast`
+- `AbilitySelectUI`
+
+Phase/action vocabulary:
+
+- `Phase_Stand`
+- `Phase_Draw`
+- `Phase_Ride`
+- `Phase_Main`
+- `Phase_Battle`
+- `Phase_End`
+- `Phase_PlayOrder`
+- `Phase_OverDress`
+- `Phase_XOverDress`
+- `Phase_StartupAbility`
+- `PhaseStep_GAssist`
+- `PhaseStep_Stride`
+- `PhaseTriggerCheck`
+- `PhaseUseRideDeck`
+
+Mechanic vocabulary:
+
+- `Energy`
+- `EnergyCharge`
+- `EnergyBlast`
+- `EnergyBlastSameTime`
+- `EnergyMax`
+- `EnergyNum`
+- `Crest`
+- `CrestZone`
+- `PersonaRide`
+- `RideDeck`
+- `OrderZone`
+- `Marker`
+- `Gauge`
+- `Prison`
+- `Imprison`
+- `OverDress`
+- `XOverDress`
+- `Stride`
+- `Unstride`
+- `TriggerKind_Stand`
+
+Replay/CPU vocabulary:
+
+- `Replay`
+- `ReplayRoom`
+- `CpuFight`
+- `CpuLevel`
+- `CPU_FIGHT_BASE_TXT_NAME`
+- `CPU_FIGHT_F_TXT_BTN`
+
+Inference: DD2 strongly supports the design that the game has structured card
+ability tables and a central ability/action/phase engine. Runtime CPU should be
+downstream from legal actions generated by this engine, not raw card text.
+
+## Steam Settings Findings
+
+The local `steam_settings` folder appears to be Steam emulator configuration,
+not core game code.
+
+Useful architecture signals:
+
+- DLC unlock mapping includes card unlock packs, complete playset packs,
+  character sets, and sleeve sets.
+- achievements total observed: 42.
+- achievement categories include:
+  - first fight
+  - story scenario completion
+  - Vintage Fight scenario
+  - nation-based win counts
+  - World Fight participation
+
+Project implication: our own profile system should separate:
+
+- fight records
+- story/tutorial progress if added
+- nation/deck statistics
+- achievements
+- unlockable cosmetics
+- unlockable card packs
+- replay files
+
+## Implications For Our Project
+
+1. Ability Core must come before advanced CPU.
+2. Ability data should be set-pack scoped, not one giant unversioned table.
+3. The engine needs modern Standard mechanics:
+   - Energy
+   - Energy Blast
+   - Energy Charge
+   - Crest / Crest Zone
+   - Persona Ride
+   - Orders / Order Zone
+   - Ride Deck
+   - OverDress / X-overDress
+   - Stride / Unstride for supported formats
+4. Replay should be a first-class event-log file type, not only a debug tool.
+5. Save data and replay data should be stored separately.
+6. Content packs should support:
+   - card unlock pack
+   - complete playset pack
+   - cosmetic pack
+   - character/profile pack
+   - versioned update pack
+7. Achievements and stats should be fed by the same event log/reducer path.
+
+## Design Rule
+
+Use DD2 Steam static findings as architecture guidance only. The project must
+implement its own schemas, data pipeline, rules, UI, and bot logic.

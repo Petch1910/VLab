@@ -1,0 +1,106 @@
+{
+  "version": "M47-04",
+  "description": "Fourth-slice recipe pipeline entry gate",
+  "source_inputs": {
+    "fourth_slice_applied_scope": "outputs\\target_slice\\m47_repair_apply_scope.json",
+    "fourth_slice_semantic_compatibility_probe": "outputs\\target_slice\\m47_03_fourth_slice_semantic_compatibility_probe.json"
+  },
+  "selected_target": {
+    "slice": "Fourth Offline Slice",
+    "era_preset": "g_series_first",
+    "group": "รอยัล พาลาดิน",
+    "group_field": "clan",
+    "rank": 2,
+    "priority_score": 86.19,
+    "best_era_candidates": 1024,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "evidence_summary": {
+    "applied_scope_readiness_passed": true,
+    "semantic_probe_passed": true,
+    "applied_expansion_id": "g_era_heal_expansion",
+    "source_card_count": 190,
+    "effective_series_count": 32,
+    "semantic_card_count": 190,
+    "manual_review_card_count": 15,
+    "pair_graph_edge_count": 14150,
+    "candidate_edge_count": 785,
+    "policy_reuse_decision": "requires_fourth_slice_fixture_scaffold",
+    "new_format_or_mechanic_fixtures_required": true
+  },
+  "decision": {
+    "offline_recipe_pipeline_allowed": true,
+    "fixture_scaffold_required_before_recipe_validation": true,
+    "runtime_deck_promotion_allowed": false,
+    "saved_deck_or_ui_publication_allowed": false,
+    "bot_playbook_promotion_allowed": false,
+    "recommended_next_queue": "M48 Fourth-slice offline recipe pipeline",
+    "reason": "Fourth slice has an applied source scope plus a passed semantic/compatibility probe; offline recipe work may start with a new fixture scaffold."
+  },
+  "proposed_m48_queue": [
+    {
+      "milestone": "M48-01",
+      "task": "Fourth-slice fixture scaffold",
+      "scope": "Define source-backed fixture policy for the Royal Paladin G-era expanded slice before validator work."
+    },
+    {
+      "milestone": "M48-02",
+      "task": "Fourth-slice review packet",
+      "scope": "Export candidate edges, manual-review cards, applied scope notes, and format notes for human review."
+    },
+    {
+      "milestone": "M48-03",
+      "task": "Fourth-slice recipe draft model",
+      "scope": "Create advisory recipe drafts only; no saved deck or UI injection."
+    },
+    {
+      "milestone": "M48-04",
+      "task": "Fourth-slice recipe validator",
+      "scope": "Validate count, trigger, grade, identity, copy limits, missing cards, and fixture scaffold constraints."
+    },
+    {
+      "milestone": "M48-05",
+      "task": "Fourth-slice combo-to-recipe consistency",
+      "scope": "Check candidate combo cards are present and not blocked by manual-review dependency."
+    },
+    {
+      "milestone": "M48-06",
+      "task": "Fourth-slice blocker repair candidates",
+      "scope": "Generate source-backed repair candidates for blocked recipes."
+    },
+    {
+      "milestone": "M48-closeout",
+      "task": "Fourth-slice runtime readiness decision",
+      "scope": "Decide whether any recipe can later enter human acceptance and runtime fixture gates."
+    }
+  ],
+  "runtime_boundary": {
+    "decision_artifact_only": true,
+    "does_not_create_deck": true,
+    "does_not_create_recipe_draft": true,
+    "does_not_create_runtime_fixture": true,
+    "does_not_mutate_runtime_pack": true,
+    "does_not_publish_to_ui": true,
+    "does_not_publish_to_bot": true,
+    "GameState_mutation": false
+  },
+  "issues": [],
+  "summary": {
+    "decision_ready": true,
+    "blocking_issue_count": 0,
+    "issue_count": 0,
+    "offline_recipe_pipeline_allowed": true,
+    "ready_for_m48": true
+  },
+  "next_target": {
+    "milestone": "M48-01",
+    "task": "Fourth-slice fixture scaffold"
+  }
+}

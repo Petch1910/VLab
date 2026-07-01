@@ -1,0 +1,401 @@
+{
+  "version": "M49-03",
+  "description": "Fourth-slice human-accepted repair artifact",
+  "selected_target": {
+    "slice": "Fourth Offline Slice",
+    "era_preset": "g_series_first",
+    "group": "รอยัล พาลาดิน",
+    "group_field": "clan",
+    "rank": 2,
+    "priority_score": 86.19,
+    "best_era_candidates": 1024,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "human_repair_review_packet": "outputs\\target_slice\\m49_01_fourth_slice_human_repair_review_packet.json",
+    "g_zone_support_decision": "outputs\\target_slice\\m49_02_fourth_slice_g_zone_support_decision.json",
+    "m48_recipe_drafts": "outputs\\target_slice\\m48_03_fourth_slice_recipe_draft_model.json",
+    "fourth_slice_fixture_scaffold": "outputs\\target_slice\\m48_01_fourth_slice_fixture_scaffold.json"
+  },
+  "scope": {
+    "offline_human_accepted_artifact": true,
+    "records_human_acceptance": true,
+    "records_g_zone_decision": false,
+    "changes_review_packet_file": false,
+    "changes_g_zone_decision_file": false,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false,
+    "declares_recipe_valid": false,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false
+  },
+  "acceptance_record": {
+    "decision": "accepted",
+    "accepted_by": "user",
+    "accepted_at": "2026-06-30",
+    "acceptance_text": "งั้นจัดไป",
+    "interpreted_decision": "accept_first_ranked_main_deck_only_combined_manual_and_grade_repair_candidate",
+    "accepted_review_item_id": "m49_01_m48_recipe_001_repair_review",
+    "accepted_recipe_id": "m48_recipe_001",
+    "accepted_manual_repair_package_id": "m48_recipe_001_manual_overlap_pkg_001",
+    "accepted_source_grade_profile_package_id": "m48_recipe_001_grade_profile_pkg_001",
+    "accepted_combined_repair_package_id": "m48_recipe_001_combined_manual_grade_pkg_001",
+    "source_note": "Recorded from the user's go-ahead for continuing M49 after the M49-02 G Zone boundary decision."
+  },
+  "g_zone_boundary_record": {
+    "source_decision_item_id": "m49_02_m48_recipe_001_g_zone_boundary_decision",
+    "source_g_zone_package_id": "m48_recipe_001_g_zone_deferred_pkg_001",
+    "selected_option_id": "main_deck_only_for_current_windows_fixture",
+    "main_deck_only_validation_allowed": true,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "grade4_main_deck_allowed": false,
+    "g_units_allowed_in_main_deck": false,
+    "boundary_allows_m49_03_acceptance": true,
+    "g_zone_requires_future_system_work": [
+      "G Zone deck slot model",
+      "Stride deck-building validation",
+      "G unit visibility and public-event policy",
+      "Stride timing and Generation Break runtime support"
+    ]
+  },
+  "accepted_repair": {
+    "recipe_id": "m48_recipe_001",
+    "source_candidate_edge": "G-CMB01-003TH->G-TD02-004TH",
+    "pair": {
+      "source_card_id": "G-CMB01-003TH",
+      "source_name_th": "อัศวินมือขวาแห่งราชา, กัลฮาร์",
+      "target_card_id": "G-TD02-004TH",
+      "target_name_th": "นักปราชญ์ผู้ลึกซึ้ง,คุนรอน",
+      "net_score": 14,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "source_zone_profile_only"
+    },
+    "manual_review_card_ids": [
+      "G-BT01-024TH"
+    ],
+    "manual_repair_package_id": "m48_recipe_001_manual_overlap_pkg_001",
+    "manual_substitutions": [
+      {
+        "remove_card_id": "G-BT01-024TH",
+        "remove_quantity": 3,
+        "replacement_card_id": "G-BT01-047TH",
+        "replacement_quantity": 3,
+        "source": "data/packs/vanguard_th/cards.sqlite:cards",
+        "has_selected_replacement": true
+      }
+    ],
+    "manual_application_issues": [],
+    "source_grade_profile_package_id": "m48_recipe_001_grade_profile_pkg_001",
+    "source_grade_package_conflicts_after_manual": [],
+    "combined_grade_repair_package": {
+      "package_id": "m48_recipe_001_combined_manual_grade_pkg_001",
+      "repair_type": "manual_then_recomputed_grade_profile_substitution",
+      "advisory_only": true,
+      "source_manual_repair_package_id": "m48_recipe_001_manual_overlap_pkg_001",
+      "source_grade_profile_package_id": "m48_recipe_001_grade_profile_pkg_001",
+      "source_grade_package_directly_applied": false,
+      "source_grade_package_recomputed_after_manual_substitution": true,
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after_manual": {
+        "0": 16,
+        "1": 10,
+        "2": 8,
+        "3": 16
+      },
+      "deficits_after_manual": {
+        "0": 1,
+        "1": 4,
+        "2": 3
+      },
+      "surpluses_after_manual": {
+        "3": 8
+      },
+      "additions": [
+        {
+          "card_id": "G-BT01-049TH",
+          "name_th": "ไนท์・ออฟ・ดรอว์นซอร์ด",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "G-BT01",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 1,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-BT01-046TH",
+          "name_th": "กิกันเทค・ช็อต พัตเตอร์",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "G-BT01",
+          "current_quantity": 3,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-BT01-048TH",
+          "name_th": "บราโวกัล・ซีกเกอร์",
+          "quantity": 3,
+          "grade": "1",
+          "series_code": "G-BT01",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 3,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-BT01-010TH",
+          "name_th": "ไนท์・ออฟ・แฟรกเมนต์",
+          "quantity": 1,
+          "grade": "2",
+          "series_code": "G-BT01",
+          "current_quantity": 3,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-BT01-045TH",
+          "name_th": "ซีกเกอร์, พราวด์รอร์・ไลออน",
+          "quantity": 2,
+          "grade": "2",
+          "series_code": "G-BT01",
+          "current_quantity": 2,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "removals": [
+        {
+          "card_id": "G-BT01-022TH",
+          "name_th": "ไนท์・ออฟ・เกรทสเปียร์",
+          "quantity": 4,
+          "grade": "3",
+          "series_code": "G-BT01",
+          "source": "m48_03_fourth_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "G-BT01-044TH",
+          "name_th": "อัศวินแห่งยุทธศาสตร์, เมริอานุส",
+          "quantity": 4,
+          "grade": "3",
+          "series_code": "G-BT01",
+          "source": "m48_03_fourth_slice_recipe_draft_model"
+        }
+      ],
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "added_card_count": 8,
+      "removed_card_count": 8,
+      "complete_candidate": true,
+      "runtime_promotion_allowed": false
+    },
+    "repaired_quantities": [
+      {
+        "card_id": "G-BT01-010TH",
+        "name_th": "ไนท์・ออฟ・แฟรกเมนต์",
+        "quantity": 4,
+        "grade": "2",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-BT01",
+        "source": "m49_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-BT01-011TH",
+        "name_th": "โฮลี่ไนท์・การ์เดี้ยน",
+        "quantity": 3,
+        "grade": "1",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-BT01",
+        "source": "m49_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-BT01-023TH",
+        "name_th": "สตาร์ไลท์・ไวโอลินนิสต์",
+        "quantity": 3,
+        "grade": "2",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-BT01",
+        "source": "m49_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-BT01-045TH",
+        "name_th": "ซีกเกอร์, พราวด์รอร์・ไลออน",
+        "quantity": 4,
+        "grade": "2",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-BT01",
+        "source": "m49_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-BT01-046TH",
+        "name_th": "กิกันเทค・ช็อต พัตเตอร์",
+        "quantity": 4,
+        "grade": "1",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-BT01",
+        "source": "m49_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-BT01-047TH",
+        "name_th": "ไนท์・ออฟ・ชีลด์ แบช",
+        "quantity": 4,
+        "grade": "1",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-BT01",
+        "source": "m49_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-BT01-048TH",
+        "name_th": "บราโวกัล・ซีกเกอร์",
+        "quantity": 3,
+        "grade": "1",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-BT01",
+        "source": "m49_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-BT01-049TH",
+        "name_th": "ไนท์・ออฟ・ดรอว์นซอร์ด",
+        "quantity": 1,
+        "grade": "0",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-BT01",
+        "source": "m49_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-BT01-050TH",
+        "name_th": "ไนท์・ออฟ・แฟลช",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Critical",
+        "type_1": "Trigger Unit",
+        "series_code": "G-BT01",
+        "source": "m49_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-BT01-051TH",
+        "name_th": "เอนเคอเรจ・แองเจิล",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Stand",
+        "type_1": "Trigger Unit",
+        "series_code": "G-BT01",
+        "source": "m49_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-BT14-016TH",
+        "name_th": "เรเมดี้・แองเจิล",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Heal",
+        "type_1": "Trigger Unit",
+        "series_code": "G-BT14",
+        "source": "m49_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-CHB01-050TH",
+        "name_th": "พ่อค้าอาวุธ, บรูทู",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Draw",
+        "type_1": "Trigger Unit",
+        "series_code": "G-CHB01",
+        "source": "m49_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-CMB01-003TH",
+        "name_th": "อัศวินมือขวาแห่งราชา, กัลฮาร์",
+        "quantity": 4,
+        "grade": "3",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-CMB01",
+        "source": "m49_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-TD02-004TH",
+        "name_th": "นักปราชญ์ผู้ลึกซึ้ง,คุนรอน",
+        "quantity": 4,
+        "grade": "3",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-TD02",
+        "source": "m49_03_combined_repair_preview"
+      }
+    ],
+    "repair_application_issues": [],
+    "main_deck_count_after_repair": 50,
+    "grade_counts_after_repair": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "runtime_promotion_allowed": false,
+    "declares_recipe_valid": false,
+    "requires_m49_04_validation": true,
+    "ready_for_m49_04_validation_rerun": true
+  },
+  "summary": {
+    "accepted_review_item_id": "m49_01_m48_recipe_001_repair_review",
+    "accepted_recipe_id": "m48_recipe_001",
+    "accepted_manual_repair_package_id": "m48_recipe_001_manual_overlap_pkg_001",
+    "accepted_source_grade_profile_package_id": "m48_recipe_001_grade_profile_pkg_001",
+    "accepted_combined_repair_package_id": "m48_recipe_001_combined_manual_grade_pkg_001",
+    "human_acceptance_recorded": true,
+    "selected_g_zone_option_id": "main_deck_only_for_current_windows_fixture",
+    "main_deck_only_boundary_applied": true,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "source_grade_package_conflict_count": 0,
+    "combined_grade_repair_recomputed": true,
+    "main_deck_count_after_repair": 50,
+    "grade_counts_after_repair": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "repair_application_issue_count": 0,
+    "runtime_promotion_allowed": false,
+    "declares_recipe_valid": false,
+    "ready_for_m49_04": true
+  },
+  "next_target": {
+    "milestone": "M49-04",
+    "task": "Fourth-slice repaired recipe validation rerun"
+  }
+}

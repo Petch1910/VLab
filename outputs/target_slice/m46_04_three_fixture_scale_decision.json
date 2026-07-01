@@ -1,0 +1,178 @@
+{
+  "version": "M46-04",
+  "description": "Three-fixture scale decision",
+  "source_inputs": {
+    "first_fixture_headless_smoke": "outputs\\target_slice\\m39_03_headless_fixture_load_smoke.json",
+    "second_fixture_headless_smoke": "outputs\\target_slice\\m42_03_second_fixture_load_smoke.json",
+    "third_fixture_headless_smoke": "outputs\\target_slice\\m46_03_third_fixture_load_smoke.json",
+    "archetype_priority_ranking": "outputs\\archetype_priority\\archetype_priority_ranking.json"
+  },
+  "scope": {
+    "offline_scale_decision": true,
+    "selects_runtime_deck": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "GameState_mutation": false
+  },
+  "fixture_evidence": [
+    {
+      "label": "first_fixture_nova_grappler",
+      "fixture_id": "runtime_fixture_recipe_003_classic_core_nova_grappler_m38_04",
+      "recipe_id": "recipe_003",
+      "main_deck_count": 50,
+      "unique_card_count": 17,
+      "offline_load_ready": true,
+      "deck_code_created": true,
+      "unity_headless_smoke_passed": true,
+      "blocking_issue_count": 0,
+      "deck_source": "deck_code",
+      "actions_executed": 4,
+      "event_count": 4,
+      "deck_code_sha256": "e2d80c22605edbcb596acdf77fff0fea396647ad7c2a46a9c52bd8a4250b53b4"
+    },
+    {
+      "label": "second_fixture_oracle_think_tank",
+      "fixture_id": "runtime_fixture_m40_recipe_001_classic_core_oracle_think_tank_m41_04",
+      "recipe_id": "m40_recipe_001",
+      "main_deck_count": 50,
+      "unique_card_count": 15,
+      "offline_load_ready": true,
+      "deck_code_created": true,
+      "unity_headless_smoke_passed": true,
+      "blocking_issue_count": 0,
+      "deck_source": "deck_code",
+      "actions_executed": 4,
+      "event_count": 4,
+      "deck_code_sha256": "5333e4e1583953972d77f7f81e6858c3a5307254a419ed576dc443609aa0d89a"
+    },
+    {
+      "label": "third_fixture_bermuda_triangle",
+      "fixture_id": "runtime_fixture_m44_recipe_001_link_joker_legion_bermuda_triangle_m45_04",
+      "recipe_id": "m44_recipe_001",
+      "main_deck_count": 50,
+      "unique_card_count": 15,
+      "offline_load_ready": true,
+      "deck_code_created": true,
+      "unity_headless_smoke_passed": true,
+      "blocking_issue_count": 0,
+      "deck_source": "deck_code",
+      "actions_executed": 4,
+      "event_count": 4,
+      "deck_code_sha256": "a62e7d364ba5f1c5e319d8dc2326102275ea07ee44152c056c9663343fe7edf5"
+    }
+  ],
+  "completed_groups": [
+    "เบอร์มิวด้า ไทรแองเกิล",
+    "โนว่า เกรปเปอร์",
+    "โอราเคิล ทิงค์ แทงค์"
+  ],
+  "candidate_queue": [
+    {
+      "rank": 2,
+      "group": "รอยัล พาลาดิน",
+      "group_field": "clan",
+      "best_era": "g_series_first",
+      "best_era_candidates": 1024,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 86.19,
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "rich_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    {
+      "rank": 3,
+      "group": "โกลด์ พาลาดิน",
+      "group_field": "clan",
+      "best_era": "link_joker_legion_mate",
+      "best_era_candidates": 2006,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 77.85,
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "rich_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    {
+      "rank": 4,
+      "group": "ชาโดว์ พาลาดิน",
+      "group_field": "clan",
+      "best_era": "g_next_z",
+      "best_era_candidates": 864,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 73.61,
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    {
+      "rank": 6,
+      "group": "เนโอ เนคต้า",
+      "group_field": "clan",
+      "best_era": "g_series_first",
+      "best_era_candidates": 1208,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 69.26,
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool"
+      ]
+    },
+    {
+      "rank": 7,
+      "group": "คาเงโร่",
+      "group_field": "clan",
+      "best_era": "link_joker_legion_mate",
+      "best_era_candidates": 1283,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_score": 68.56,
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool",
+        "large_card_pool"
+      ]
+    }
+  ],
+  "decision": {
+    "fourth_slice_offline_pipeline_allowed": true,
+    "fourth_slice_selected_now": false,
+    "recommended_next_action": "M47-01 fourth target slice selection",
+    "live_runtime_deck_enabled": false,
+    "saved_deck_enabled": false,
+    "ui_deck_list_enabled": false,
+    "bot_playbook_enabled": false,
+    "decision_notes": [
+      "Three independent fixtures now pass offline and Unity headless load smoke.",
+      "The next step may select a fourth slice for offline analysis only.",
+      "Do not publish fixture decks to UI or bot runtime without a later explicit gate."
+    ]
+  },
+  "summary": {
+    "fixture_evidence_count": 3,
+    "passed_fixture_count": 3,
+    "failed_fixture_count": 0,
+    "candidate_count": 5,
+    "fourth_slice_offline_pipeline_allowed": true,
+    "ready_for_m47": true
+  },
+  "next_target": {
+    "milestone": "M47-01",
+    "task": "Fourth target slice selection"
+  }
+}

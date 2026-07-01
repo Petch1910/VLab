@@ -1,0 +1,165 @@
+{
+  "version": "M55-03",
+  "description": "Sixth-slice semantic/compatibility probe",
+  "selected_target": {
+    "slice": "Sixth Offline Slice",
+    "era_preset": "g_next_z",
+    "group": "ชาโดว์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 4,
+    "priority_score": 73.61,
+    "best_era_candidates": 864,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "sixth_target_slice_selection": "outputs\\target_slice\\m55_01_sixth_target_slice_selection.json",
+    "sixth_slice_fixture_readiness": "outputs\\target_slice\\m55_02_sixth_slice_fixture_readiness.json"
+  },
+  "normalization": {
+    "uses_m35_b_c_probe_in_memory": true,
+    "adds_format_policy_for_contract": true,
+    "adds_fixture_policy_for_contract": true,
+    "maps_m55_readiness_to_semantic_scaleout_ready": true,
+    "does_not_write_intermediate_m35_outputs": true
+  },
+  "pipeline_contract": {
+    "selected_report_required_keys": [
+      "selected_target",
+      "format_policy"
+    ],
+    "readiness_report_required_keys": [
+      "selected_target",
+      "fixture_policy",
+      "readiness"
+    ],
+    "stage_order": [
+      "B1 semantic vocabulary",
+      "B2 semantic tags",
+      "B3 requirement/provider model",
+      "B4 manual review queue",
+      "C1 pair compatibility graph",
+      "C2 resource detector",
+      "C3 timing detector",
+      "C4 zone/target detector",
+      "C5 selected compatibility output"
+    ],
+    "uses_injected_reports_in_memory": true,
+    "does_not_require_first_slice_file_paths_for_execution": true
+  },
+  "stage_readiness": {
+    "b1_vocabulary_ready": true,
+    "b2_semantics_ready": true,
+    "b3_provider_ready": true,
+    "b4_phase_c_ready": true,
+    "c1_resource_ready": true,
+    "c2_timing_ready": true,
+    "c3_zone_ready": true,
+    "c4_output_ready": true,
+    "c5_package_selection_ready": true
+  },
+  "stage_summaries": {
+    "b1_vocabulary": {
+      "ability_types": 3,
+      "effects": 13,
+      "missing_source_terms": 0
+    },
+    "b2_semantic_tags": {
+      "card_count": 77,
+      "cards_with_any_semantic_tag": 77,
+      "manual_review_count": 11
+    },
+    "b3_requirement_provider": {
+      "card_count": 77,
+      "cards_with_requirements": 76,
+      "cards_with_providers": 73,
+      "manual_review_count": 11,
+      "provider_type_count": 17,
+      "requirement_type_count": 12
+    },
+    "b4_manual_review_queue": {
+      "card_count": 77,
+      "manual_review_count": 11,
+      "ready_for_phase_c": true
+    },
+    "c1_pair_graph": {
+      "node_count": 77,
+      "edge_count": 2069,
+      "manual_review_card_count": 11,
+      "manual_review_edge_count": 502,
+      "advisory_edge_count": 1567,
+      "ready_for_m35_c2": true
+    },
+    "c2_resource": {
+      "node_count": 77,
+      "source_edge_count": 2069,
+      "resource_relevant_edge_count": 1838,
+      "manual_review_resource_edge_count": 449,
+      "missing_recovery_resource_count": 0,
+      "ready_for_m35_c3": true
+    },
+    "c3_timing": {
+      "node_count": 77,
+      "source_edge_count": 2069,
+      "timing_relevant_edge_count": 1888,
+      "manual_review_timing_edge_count": 466,
+      "ready_for_m35_c4": true
+    },
+    "c4_zone": {
+      "node_count": 77,
+      "source_edge_count": 2069,
+      "zone_relevant_edge_count": 2037,
+      "manual_review_zone_edge_count": 502,
+      "unsupported_required_zone_count": 1,
+      "ready_for_m35_c5": true
+    },
+    "c5_compatibility": {
+      "edge_count": 2069,
+      "status_counts": {
+        "manual_review_required": 502,
+        "missing_data": 1044,
+        "mixed": 453,
+        "synergy": 70
+      },
+      "m35_d1_candidate_edge_count": 70,
+      "ready_for_m35_d1": true
+    }
+  },
+  "runtime_boundary": {
+    "advisory_probe_only": true,
+    "does_not_create_deck": true,
+    "does_not_create_runtime_fixture": true,
+    "does_not_mutate_runtime_pack": true,
+    "does_not_publish_to_ui": true,
+    "does_not_publish_to_bot": true,
+    "does_not_publish_playbook_seed": true,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "GameState_mutation": false
+  },
+  "readiness": {
+    "sixth_slice_semantic_compatibility_probe_passed": true,
+    "ready_for_m55_04": true,
+    "runtime_or_bot_promotion_allowed": false
+  },
+  "summary": {
+    "selected_group": "ชาโดว์ พาลาดิน",
+    "era_preset": "g_next_z",
+    "source_card_count": 77,
+    "semantic_card_count": 77,
+    "manual_review_card_count": 11,
+    "pair_graph_edge_count": 2069,
+    "candidate_edge_count": 70,
+    "all_stage_readiness_passed": true
+  },
+  "next_target": {
+    "milestone": "M55-04",
+    "task": "Sixth-slice recipe pipeline entry gate"
+  }
+}

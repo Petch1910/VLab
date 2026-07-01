@@ -1,0 +1,184 @@
+{
+  "version": "M37-05",
+  "description": "In-memory revised recipe validation rerun for accepted seed trigger repair",
+  "selected_target": {
+    "slice": "Classic Core",
+    "era_preset": "classic_part1",
+    "group": "โนว่า เกรปเปอร์",
+    "group_field": "clan",
+    "rank": 5,
+    "priority_score": 73.34,
+    "best_era_candidates": 1326,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "deck_recipe_draft_model": "outputs\\target_slice\\m36_02_deck_recipe_draft_model.json",
+    "original_deck_recipe_validation_report": "outputs\\target_slice\\m36_03_deck_recipe_validation_report.json",
+    "combo_line_explainer": "outputs\\target_slice\\m35_d3_first_slice_combo_line_explainer.json",
+    "first_slice_review_packet": "outputs\\target_slice\\m36_01_first_slice_review_packet.json",
+    "trigger_package_repair_proposal": "outputs\\target_slice\\m37_02_trigger_package_repair_proposal.json",
+    "manual_semantic_mapping_candidates": "outputs\\target_slice\\m37_04_manual_semantic_mapping_candidates.json"
+  },
+  "scope": {
+    "offline_in_memory_rerun": true,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_deck": false,
+    "bot_integration": false,
+    "automatic_playbook_promotion": false,
+    "live_card_text_parsing": false
+  },
+  "repair_applied_in_memory": {
+    "recipe_id": "recipe_003",
+    "package_id": "m37_01_pkg_001",
+    "profile_id": "balanced_classic",
+    "quantity_delta": [
+      {
+        "card_id": "BT04-077TH",
+        "name_th": "เรือรบประจัญบาน,โพรมีเทอุส",
+        "quantity": 4,
+        "trigger": "Critical",
+        "series_code": "BT04",
+        "source": "data/packs/vanguard_th/cards.sqlite:cards"
+      },
+      {
+        "card_id": "BT02-073TH",
+        "name_th": "ทรี มินิทส์",
+        "quantity": 4,
+        "trigger": "Draw",
+        "series_code": "BT02",
+        "source": "data/packs/vanguard_th/cards.sqlite:cards"
+      },
+      {
+        "card_id": "BT01-065TH",
+        "name_th": "ริงเกิร์ล, คลาล่า",
+        "quantity": 4,
+        "trigger": "Heal",
+        "series_code": "BT01",
+        "source": "data/packs/vanguard_th/cards.sqlite:cards"
+      }
+    ],
+    "mapping_candidate_count": 5,
+    "human_acceptance_present": false
+  },
+  "accepted_seed_before": {
+    "validation_status": "invalid_draft",
+    "blocking_issue_count": 3,
+    "blocker_codes": [
+      "main_deck_size_mismatch",
+      "trigger_count_mismatch",
+      "unfilled_slots"
+    ],
+    "review_codes": [
+      "grade_profile_review",
+      "human_acceptance_pending"
+    ],
+    "count_summary": {
+      "main_deck_target": 50,
+      "explicit_card_count": 38,
+      "trigger_count": 4,
+      "trigger_counts": {
+        "Stand": 4
+      },
+      "grade_counts": {
+        "0": 4,
+        "2": 6,
+        "3": 28
+      },
+      "clan_counts": {
+        "โนว่า เกรปเปอร์": 38
+      }
+    }
+  },
+  "accepted_seed_after": {
+    "validation_status": "validator_passed_pending_human_acceptance",
+    "blocking_issue_count": 0,
+    "blocker_codes": [],
+    "review_codes": [
+      "grade_profile_review",
+      "human_acceptance_pending"
+    ],
+    "count_summary": {
+      "main_deck_target": 50,
+      "explicit_card_count": 50,
+      "trigger_count": 16,
+      "trigger_counts": {
+        "Critical": 4,
+        "Draw": 4,
+        "Heal": 4,
+        "Stand": 4
+      },
+      "grade_counts": {
+        "0": 16,
+        "2": 6,
+        "3": 28
+      },
+      "clan_counts": {
+        "โนว่า เกรปเปอร์": 50
+      }
+    },
+    "runtime_ready": false,
+    "consistency_status": "consistent_pending_human_acceptance",
+    "promotion_allowed": false
+  },
+  "validation_summary_after": {
+    "recipe_count": 25,
+    "runtime_ready_recipe_count": 0,
+    "validator_passed_count": 0,
+    "validator_passed_pending_human_acceptance_count": 1,
+    "invalid_draft_count": 0,
+    "blocked_by_review_count": 24,
+    "missing_card_recipe_count": 0,
+    "copy_limit_violation_recipe_count": 0,
+    "slot_gap_recipe_count": 15,
+    "trigger_count_mismatch_recipe_count": 11,
+    "issue_counts": {
+      "grade_profile_review": 25,
+      "human_acceptance_pending": 1,
+      "main_deck_size_mismatch": 15,
+      "review_status_blocked": 24,
+      "trigger_count_mismatch": 11,
+      "unfilled_slots": 15
+    },
+    "ready_for_m37_05_consistency_check": true
+  },
+  "consistency_summary_after": {
+    "combo_line_count": 25,
+    "consistency_check_count": 25,
+    "combo_cards_present_count": 25,
+    "missing_combo_card_check_count": 0,
+    "manual_review_dependency_check_count": 0,
+    "promotion_allowed_count": 0,
+    "runtime_ready_consistent_count": 0,
+    "status_counts": {
+      "blocked_by_review": 24,
+      "consistent_pending_human_acceptance": 1
+    },
+    "ready_for_m36_05": true
+  },
+  "summary": {
+    "recipe_id": "recipe_003",
+    "resolved_blocker_count": 3,
+    "resolved_blockers": [
+      "main_deck_size_mismatch",
+      "trigger_count_mismatch",
+      "unfilled_slots"
+    ],
+    "remaining_blocker_count": 0,
+    "remaining_review_issue_count": 2,
+    "accepted_seed_validation_status_after": "validator_passed_pending_human_acceptance",
+    "accepted_seed_consistency_status_after": "consistent_pending_human_acceptance",
+    "runtime_promotion_allowed": false,
+    "ready_for_m37_closeout": true
+  },
+  "next_target": {
+    "milestone": "M37-closeout",
+    "task": "First runtime-ready recipe decision"
+  }
+}

@@ -1,0 +1,447 @@
+{
+  "version": "M45-02",
+  "description": "Third-slice human-accepted repair artifact",
+  "selected_target": {
+    "slice": "Third Offline Slice",
+    "era_preset": "link_joker_legion_mate",
+    "group": "เบอร์มิวด้า ไทรแองเกิล",
+    "group_field": "clan",
+    "rank": 1,
+    "priority_score": 95.0,
+    "best_era_candidates": 2179,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "human_repair_review_packet": "outputs\\target_slice\\m45_01_third_slice_human_repair_review_packet.json",
+    "m44_recipe_drafts": "outputs\\target_slice\\m44_03_third_slice_recipe_draft_model.json",
+    "third_slice_fixture_scaffold": "outputs\\target_slice\\m44_01_third_slice_fixture_scaffold.json"
+  },
+  "scope": {
+    "offline_human_accepted_artifact": true,
+    "records_human_acceptance": true,
+    "changes_review_packet_file": false,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false,
+    "declares_recipe_valid": false
+  },
+  "acceptance_record": {
+    "decision": "accepted",
+    "accepted_by": "user",
+    "accepted_at": "2026-06-30",
+    "acceptance_text": "งั้นจัดไป",
+    "interpreted_decision": "accept_first_ranked_combined_manual_and_grade_repair_candidate",
+    "accepted_review_item_id": "m45_01_m44_recipe_001_repair_review",
+    "accepted_recipe_id": "m44_recipe_001",
+    "accepted_manual_repair_package_id": "m44_recipe_001_manual_overlap_pkg_001",
+    "accepted_source_grade_profile_package_id": "m44_recipe_001_grade_profile_pkg_001",
+    "accepted_combined_repair_package_id": "m44_recipe_001_combined_manual_grade_pkg_001",
+    "source_note": "Recorded from the user's go-ahead for continuing M45 after the M45-01 review packet."
+  },
+  "accepted_repair": {
+    "recipe_id": "m44_recipe_001",
+    "source_candidate_edge": "EB10-007TH-B->EB06-023TH",
+    "pair": {
+      "source_card_id": "EB10-007TH-B",
+      "source_name_th": "Duo วันแห่งคำสัญญา,โคลิม่า",
+      "target_card_id": "EB06-023TH",
+      "target_name_th": "PR♥ISM-Promise,เลเต้",
+      "net_score": 10,
+      "resource_verdict": "target_resource_need_not_supported_by_source",
+      "timing_verdict": "timing_can_precede",
+      "zone_verdict": "zone_support"
+    },
+    "manual_review_card_ids": [
+      "EB06-001TH",
+      "EB06-002TH",
+      "EB06-005TH",
+      "EB06-006TH",
+      "EB06-010TH",
+      "EB06-012TH"
+    ],
+    "manual_repair_package_id": "m44_recipe_001_manual_overlap_pkg_001",
+    "manual_substitutions": [
+      {
+        "remove_card_id": "EB06-001TH",
+        "remove_quantity": 3,
+        "replacement_card_id": "EB06-003TH",
+        "replacement_quantity": 3,
+        "source": "data/packs/vanguard_th/cards.sqlite:cards",
+        "has_selected_replacement": true
+      },
+      {
+        "remove_card_id": "EB06-002TH",
+        "remove_quantity": 3,
+        "replacement_card_id": "EB06-S01TH",
+        "replacement_quantity": 3,
+        "source": "data/packs/vanguard_th/cards.sqlite:cards",
+        "has_selected_replacement": true
+      },
+      {
+        "remove_card_id": "EB06-005TH",
+        "remove_quantity": 3,
+        "replacement_card_id": "EB06-011TH",
+        "replacement_quantity": 3,
+        "source": "data/packs/vanguard_th/cards.sqlite:cards",
+        "has_selected_replacement": true
+      },
+      {
+        "remove_card_id": "EB06-006TH",
+        "remove_quantity": 3,
+        "replacement_card_id": "EB06-021TH",
+        "replacement_quantity": 3,
+        "source": "data/packs/vanguard_th/cards.sqlite:cards",
+        "has_selected_replacement": true
+      },
+      {
+        "remove_card_id": "EB06-010TH",
+        "remove_quantity": 2,
+        "replacement_card_id": "EB06-S05TH",
+        "replacement_quantity": 2,
+        "source": "data/packs/vanguard_th/cards.sqlite:cards",
+        "has_selected_replacement": true
+      },
+      {
+        "remove_card_id": "EB06-012TH",
+        "remove_quantity": 3,
+        "replacement_card_id": "EB06-022TH",
+        "replacement_quantity": 3,
+        "source": "data/packs/vanguard_th/cards.sqlite:cards",
+        "has_selected_replacement": true
+      }
+    ],
+    "manual_application_issues": [],
+    "source_grade_profile_package_id": "m44_recipe_001_grade_profile_pkg_001",
+    "source_grade_package_conflicts_after_manual": [
+      {
+        "code": "source_grade_package_remove_conflicts_after_manual_substitution",
+        "severity": "review",
+        "card_id": "EB06-006TH",
+        "available_after_manual": 0,
+        "source_grade_remove_quantity": 3,
+        "source_grade_package_id": "m44_recipe_001_grade_profile_pkg_001"
+      },
+      {
+        "code": "source_grade_package_remove_conflicts_after_manual_substitution",
+        "severity": "review",
+        "card_id": "EB06-012TH",
+        "available_after_manual": 0,
+        "source_grade_remove_quantity": 2,
+        "source_grade_package_id": "m44_recipe_001_grade_profile_pkg_001"
+      }
+    ],
+    "combined_grade_repair_package": {
+      "package_id": "m44_recipe_001_combined_manual_grade_pkg_001",
+      "repair_type": "manual_then_recomputed_grade_profile_substitution",
+      "advisory_only": true,
+      "source_manual_repair_package_id": "m44_recipe_001_manual_overlap_pkg_001",
+      "source_grade_profile_package_id": "m44_recipe_001_grade_profile_pkg_001",
+      "source_grade_package_directly_applied": false,
+      "source_grade_package_recomputed_after_manual_substitution": true,
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after_manual": {
+        "0": 16,
+        "1": 19,
+        "2": 9,
+        "3": 6
+      },
+      "deficits_after_manual": {
+        "0": 1,
+        "2": 2,
+        "3": 2
+      },
+      "surpluses_after_manual": {
+        "1": 5
+      },
+      "additions": [
+        {
+          "card_id": "EB06-026TH",
+          "name_th": "ดอลฟินเฟรนด์,พราจ",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "EB06",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 1,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-011TH",
+          "name_th": "PR♥ISM-Romance,ลูมิเอล",
+          "quantity": 1,
+          "grade": "2",
+          "series_code": "EB06",
+          "current_quantity": 3,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-S05TH",
+          "name_th": "PR♥ISM-Promise,เคลท์",
+          "quantity": 1,
+          "grade": "2",
+          "series_code": "EB06",
+          "current_quantity": 2,
+          "final_quantity_if_chosen": 3,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-003TH",
+          "name_th": "PR♥ISM-Image,เวล",
+          "quantity": 1,
+          "grade": "3",
+          "series_code": "EB06",
+          "current_quantity": 3,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "EB06-S01TH",
+          "name_th": "อีเทอนอลไอดอล,พาซิฟิก้า",
+          "quantity": 1,
+          "grade": "3",
+          "series_code": "EB06",
+          "current_quantity": 3,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "removals": [
+        {
+          "card_id": "EB06-007TH",
+          "name_th": "เมอร์เมดไอดอล,เอลลี",
+          "quantity": 3,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m44_03_third_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "EB06-021TH",
+          "name_th": "เมอร์เมดไอดอล,เซดน่า",
+          "quantity": 2,
+          "grade": "1",
+          "series_code": "EB06",
+          "source": "m45_02_manual_substitution_preview"
+        }
+      ],
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "added_card_count": 5,
+      "removed_card_count": 5,
+      "complete_candidate": true,
+      "runtime_promotion_allowed": false
+    },
+    "repaired_quantities": [
+      {
+        "card_id": "EB06-003TH",
+        "name_th": "PR♥ISM-Image,เวล",
+        "quantity": 4,
+        "grade": "3",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "EB06",
+        "source": "m45_02_combined_repair_preview"
+      },
+      {
+        "card_id": "EB06-009TH",
+        "name_th": "PR♥ISM-Smile,ริคเรียร์",
+        "quantity": 4,
+        "grade": "2",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "EB06",
+        "source": "m45_02_combined_repair_preview"
+      },
+      {
+        "card_id": "EB06-011TH",
+        "name_th": "PR♥ISM-Romance,ลูมิเอล",
+        "quantity": 4,
+        "grade": "2",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "EB06",
+        "source": "m45_02_combined_repair_preview"
+      },
+      {
+        "card_id": "EB06-013TH",
+        "name_th": "PR♥ISM-Romance,เมอร์เคียว",
+        "quantity": 2,
+        "grade": "1",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "EB06",
+        "source": "m45_02_combined_repair_preview"
+      },
+      {
+        "card_id": "EB06-021TH",
+        "name_th": "เมอร์เมดไอดอล,เซดน่า",
+        "quantity": 1,
+        "grade": "1",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "EB06",
+        "source": "m45_02_combined_repair_preview"
+      },
+      {
+        "card_id": "EB06-022TH",
+        "name_th": "เฟรชสตาร์,คอรัล",
+        "quantity": 3,
+        "grade": "1",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "EB06",
+        "source": "m45_02_combined_repair_preview"
+      },
+      {
+        "card_id": "EB06-023TH",
+        "name_th": "PR♥ISM-Promise,เลเต้",
+        "quantity": 4,
+        "grade": "1",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "EB06",
+        "source": "m45_02_combined_repair_preview"
+      },
+      {
+        "card_id": "EB06-026TH",
+        "name_th": "ดอลฟินเฟรนด์,พราจ",
+        "quantity": 1,
+        "grade": "0",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "EB06",
+        "source": "m45_02_combined_repair_preview"
+      },
+      {
+        "card_id": "EB06-029TH",
+        "name_th": "กันสลิงเกอร์สตาร์,ฟลอริด้า",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Critical",
+        "type_1": "Trigger Unit",
+        "series_code": "EB06",
+        "source": "m45_02_combined_repair_preview"
+      },
+      {
+        "card_id": "EB06-031TH",
+        "name_th": "PR♥ISM-Miracle,อาเดรีย",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Draw",
+        "type_1": "Trigger Unit",
+        "series_code": "EB06",
+        "source": "m45_02_combined_repair_preview"
+      },
+      {
+        "card_id": "EB06-032TH",
+        "name_th": "มิสเทรี่สไมล์,อารัล",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Stand",
+        "type_1": "Trigger Unit",
+        "series_code": "EB06",
+        "source": "m45_02_combined_repair_preview"
+      },
+      {
+        "card_id": "EB06-033TH",
+        "name_th": "PR♥ISM-Miracle,ทีโมล",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Heal",
+        "type_1": "Trigger Unit",
+        "series_code": "EB06",
+        "source": "m45_02_combined_repair_preview"
+      },
+      {
+        "card_id": "EB06-S01TH",
+        "name_th": "อีเทอนอลไอดอล,พาซิฟิก้า",
+        "quantity": 4,
+        "grade": "3",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "EB06",
+        "source": "m45_02_combined_repair_preview"
+      },
+      {
+        "card_id": "EB06-S05TH",
+        "name_th": "PR♥ISM-Promise,เคลท์",
+        "quantity": 3,
+        "grade": "2",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "EB06",
+        "source": "m45_02_combined_repair_preview"
+      },
+      {
+        "card_id": "EB10-007TH-B",
+        "name_th": "Duo วันแห่งคำสัญญา,โคลิม่า",
+        "quantity": 4,
+        "grade": "1",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "EB10",
+        "source": "m45_02_combined_repair_preview"
+      }
+    ],
+    "repair_application_issues": [],
+    "main_deck_count_after_repair": 50,
+    "grade_counts_after_repair": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "runtime_promotion_allowed": false,
+    "declares_recipe_valid": false,
+    "requires_m45_03_validation": true,
+    "ready_for_m45_03_validation_rerun": true
+  },
+  "summary": {
+    "accepted_review_item_id": "m45_01_m44_recipe_001_repair_review",
+    "accepted_recipe_id": "m44_recipe_001",
+    "accepted_manual_repair_package_id": "m44_recipe_001_manual_overlap_pkg_001",
+    "accepted_source_grade_profile_package_id": "m44_recipe_001_grade_profile_pkg_001",
+    "accepted_combined_repair_package_id": "m44_recipe_001_combined_manual_grade_pkg_001",
+    "human_acceptance_recorded": true,
+    "source_grade_package_conflict_count": 2,
+    "combined_grade_repair_recomputed": true,
+    "main_deck_count_after_repair": 50,
+    "grade_counts_after_repair": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "repair_application_issue_count": 0,
+    "runtime_promotion_allowed": false,
+    "declares_recipe_valid": false,
+    "ready_for_m45_03": true
+  },
+  "next_target": {
+    "milestone": "M45-03",
+    "task": "Third-slice repaired recipe validation rerun"
+  }
+}

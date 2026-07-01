@@ -1,0 +1,57 @@
+{
+  "version": "M42-02",
+  "description": "Second fixture deck text exporter",
+  "source_inputs": {
+    "runtime_fixture": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\runtime_fixtures\\m40_recipe_001_classic_core_oracle_think_tank_m41_04.json",
+    "m42_01_validation_report": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m42_01_second_fixture_schema_validation.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite",
+    "pack_manifest": "data\\packs\\vanguard_th\\manifest.json"
+  },
+  "scope": {
+    "offline_fixture_deck_text_export": true,
+    "review_text_only": true,
+    "mutates_fixture_artifact": false,
+    "mutates_runtime_deck_library": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_integration": false,
+    "GameState_mutation": false
+  },
+  "deck_text_policy": {
+    "format": "count_line_deck_text",
+    "compatible_with_count_line_deck_codec": true,
+    "comment_lines_are_review_only": true,
+    "card_lines_shape": "<quantity> <card_id>",
+    "empty_ride_and_g_sections_preserved": true
+  },
+  "fixture_summary": {
+    "fixture_id": "runtime_fixture_m40_recipe_001_classic_core_oracle_think_tank_m41_04",
+    "recipe_id": "m40_recipe_001",
+    "main_deck_count": 50,
+    "unique_card_count": 15
+  },
+  "pack_metadata": {
+    "pack_id": "vanguard_th",
+    "pack_version": "251",
+    "definition_hash": "e1d568ec103786c3a9a782e6a011e6307f612be28ba6e6b677c281f367cdd7c4"
+  },
+  "outputs": {
+    "deck_text": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m42_02_second_fixture_deck_text_export.txt",
+    "json_report": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m42_02_second_fixture_deck_text_export.json",
+    "markdown_report": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m42_02_second_fixture_deck_text_export.md",
+    "deck_text_sha256": "fe75df76308a608245a379b54ff00ea372fe9922dd8e2247642e8234ca21b54c"
+  },
+  "issues": [],
+  "summary": {
+    "export_ready": true,
+    "blocking_issue_count": 0,
+    "issue_count": 0,
+    "main_deck_count": 50,
+    "exported_card_line_count": 15,
+    "ready_for_m42_03": true
+  },
+  "next_target": {
+    "milestone": "M42-03",
+    "task": "Second fixture headless load smoke"
+  }
+}

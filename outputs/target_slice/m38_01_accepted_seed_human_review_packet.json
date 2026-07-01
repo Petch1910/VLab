@@ -1,0 +1,138 @@
+{
+  "version": "M38-01",
+  "description": "Accepted seed human review packet for recipe_003",
+  "selected_target": {
+    "recipe_id": "recipe_003",
+    "validation_status_after": "validator_passed_pending_human_acceptance",
+    "consistency_status_after": "consistent_pending_human_acceptance",
+    "remaining_blocker_count": 0,
+    "remaining_review_issue_count": 2,
+    "runtime_ready": false,
+    "promotion_allowed": false,
+    "trigger_counts": {
+      "Critical": 4,
+      "Draw": 4,
+      "Heal": 4,
+      "Stand": 4
+    },
+    "grade_counts": {
+      "0": 16,
+      "2": 6,
+      "3": 28
+    },
+    "review_codes": [
+      "grade_profile_review",
+      "human_acceptance_pending"
+    ]
+  },
+  "source_inputs": {
+    "m37_closeout": "outputs\\target_slice\\m37_closeout_first_runtime_ready_recipe_decision.json",
+    "revised_recipe_validation_rerun": "outputs\\target_slice\\m37_05_revised_recipe_validation_rerun.json",
+    "trigger_package_repair_proposal": "outputs\\target_slice\\m37_02_trigger_package_repair_proposal.json"
+  },
+  "scope": {
+    "offline_human_review_packet": true,
+    "records_human_acceptance": false,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_deck": false,
+    "bot_integration": false,
+    "automatic_playbook_promotion": false
+  },
+  "review_policy": {
+    "human_decision_required": true,
+    "runtime_promotion_allowed": false,
+    "grade_profile_review_must_clear": true,
+    "packet_is_not_acceptance": true
+  },
+  "summary": {
+    "review_item_count": 1,
+    "recipe_id": "recipe_003",
+    "quantity_delta_card_count": 3,
+    "unresolved_review_code_count": 2,
+    "decision_option_count": 3,
+    "runtime_promotion_allowed": false,
+    "ready_for_m38_02": true
+  },
+  "review_items": [
+    {
+      "review_item_id": "m38_01_recipe_003_human_acceptance",
+      "item_type": "accepted_seed_recipe_review",
+      "recipe_id": "recipe_003",
+      "source_line_id": "line_003",
+      "recommended_package_id": "m37_01_pkg_001",
+      "recommended_profile_id": "balanced_classic",
+      "quantity_delta": [
+        {
+          "card_id": "BT04-077TH",
+          "name_th": "เรือรบประจัญบาน,โพรมีเทอุส",
+          "quantity": 4,
+          "trigger": "Critical",
+          "series_code": "BT04",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT02-073TH",
+          "name_th": "ทรี มินิทส์",
+          "quantity": 4,
+          "trigger": "Draw",
+          "series_code": "BT02",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "BT01-065TH",
+          "name_th": "ริงเกิร์ล, คลาล่า",
+          "quantity": 4,
+          "trigger": "Heal",
+          "series_code": "BT01",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "validation_status_after": "validator_passed_pending_human_acceptance",
+      "consistency_status_after": "consistent_pending_human_acceptance",
+      "trigger_counts_after": {
+        "Critical": 4,
+        "Draw": 4,
+        "Heal": 4,
+        "Stand": 4
+      },
+      "grade_counts_after": {
+        "0": 16,
+        "2": 6,
+        "3": 28
+      },
+      "review_codes": [
+        "grade_profile_review",
+        "human_acceptance_pending"
+      ],
+      "decision_blockers": [
+        "human_acceptance_pending",
+        "grade_profile_review",
+        "promotion_not_allowed"
+      ],
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_advisory_trigger_repair_only",
+          "label": "Accept trigger repair as advisory only",
+          "effect": "Allows later grade-profile repair work, not runtime promotion."
+        },
+        {
+          "option_id": "request_grade_profile_repair",
+          "label": "Request grade profile repair before acceptance",
+          "effect": "Keeps recipe advisory and moves to M38-02 grade repair."
+        },
+        {
+          "option_id": "reject_runtime_promotion",
+          "label": "Reject runtime promotion",
+          "effect": "Keeps recipe out of runtime/test fixtures."
+        }
+      ],
+      "recommended_reviewer_action": "request_grade_profile_repair_before_runtime_acceptance"
+    }
+  ],
+  "next_target": {
+    "milestone": "M38-02",
+    "task": "Grade profile repair candidates"
+  }
+}

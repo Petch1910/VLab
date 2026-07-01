@@ -1,0 +1,2313 @@
+{
+  "version": "M57-01",
+  "description": "Sixth-slice human repair review packet",
+  "selected_target": {
+    "slice": "Sixth Offline Slice",
+    "era_preset": "g_next_z",
+    "group": "ชาโดว์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 4,
+    "priority_score": 73.61,
+    "best_era_candidates": 864,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "m56_closeout": "outputs\\target_slice\\m56_closeout_sixth_slice_runtime_readiness.json",
+    "m56_repair_candidates": "outputs\\target_slice\\m56_06_sixth_slice_blocker_repair_candidates.json",
+    "m56_recipe_drafts": "outputs\\target_slice\\m56_03_sixth_slice_recipe_draft_model.json"
+  },
+  "scope": {
+    "offline_human_review_packet": true,
+    "records_human_acceptance": false,
+    "records_human_selection": false,
+    "records_g_zone_decision": false,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false
+  },
+  "review_policy": {
+    "human_decision_required": true,
+    "exactly_one_recipe_should_be_selected_later": true,
+    "packet_is_not_acceptance": true,
+    "packet_is_not_selection": true,
+    "packet_is_not_g_zone_decision": true,
+    "runtime_promotion_allowed": false,
+    "m57_02_must_record_explicit_selection": true,
+    "m57_03_must_record_explicit_acceptance": true,
+    "m57_04_must_record_g_zone_decision": true,
+    "m57_05_must_rerun_validation": true
+  },
+  "summary": {
+    "review_item_count": 12,
+    "ready_for_human_repair_review_count": 12,
+    "complete_manual_repair_candidate_count": 12,
+    "complete_grade_profile_candidate_count": 12,
+    "g_zone_deferred_item_count": 12,
+    "unexpected_structural_blocker_item_count": 0,
+    "runtime_promotion_allowed": false,
+    "human_selection_review_allowed": true,
+    "decision_option_count": 4,
+    "g_zone_decision_option_count": 2,
+    "ready_for_m57_02": true
+  },
+  "review_items": [
+    {
+      "review_item_id": "m57_01_m56_recipe_001_repair_review",
+      "item_type": "sixth_slice_human_repair_and_g_zone_review",
+      "recipe_id": "m56_recipe_001",
+      "source_candidate_edge": "G-BT12-062TH->G-BT12-066TH",
+      "source_edge_rank": 2,
+      "pair": {
+        "source_card_id": "G-BT12-062TH",
+        "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+        "target_card_id": "G-BT12-066TH",
+        "target_name_th": "บลูเอสปาด้า・ดราก้อน",
+        "net_score": 10,
+        "resource_verdict": "resource_support",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "target_zone_need_not_supported_by_source"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "structural_blockers": [],
+      "manual_review_card_ids": [
+        "G-BT09-014TH",
+        "G-BT09-026TH",
+        "G-BT09-027TH",
+        "G-BT09-028TH",
+        "G-BT09-029TH",
+        "G-BT09-059TH",
+        "G-BT09-064TH"
+      ],
+      "manual_overlap_package_id": "m56_recipe_001_manual_overlap_pkg_001",
+      "manual_repair_type": "manual_review_overlap_substitution_preview",
+      "manual_substitutions": [
+        {
+          "remove_card_id": "G-BT09-014TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-026TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-002TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-027TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-003TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-028TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-005TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-029TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-010TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-059TH",
+          "remove_quantity": 1,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 1,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-064TH",
+          "remove_quantity": 4,
+          "selected_replacement_card_id": "G-TD10-016TH",
+          "selected_replacement_quantity": 4,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 1
+        }
+      ],
+      "manual_repair_complete": true,
+      "manual_review_may_accept_original_card": true,
+      "grade_profile_package_id": "m56_recipe_001_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution_preview",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "G-TD10-013TH",
+          "name_th": "แดรกพรินซ์, รูต",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-TD10-005TH",
+          "name_th": "ปราสาทโลกมาร, ไอน์แก๊งก์",
+          "quantity": 1,
+          "grade": "2",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "G-BT09-026TH",
+          "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "G-BT09",
+          "source": "m56_03_sixth_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 2,
+      "grade_removed_card_count": 2,
+      "grade_repair_complete": true,
+      "g_zone_package_id": "m56_recipe_001_g_zone_deferred_pkg_001",
+      "g_zone_deferred": true,
+      "g_zone_can_be_repaired_in_m57_01": false,
+      "g_zone_future_system_work": [
+        "G Zone deck slot model",
+        "Stride deck-building validation",
+        "G unit visibility and public-event policy",
+        "Stride timing and Generation Break runtime support"
+      ],
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_recipe_repairs_and_keep_g_zone_deferred_for_validation_rerun",
+          "label": "Accept recipe repairs and keep G Zone deferred for validation rerun",
+          "effect": "Allows M57-02/M57-03 to record explicit recipe/repair choice, but runtime promotion remains blocked by G Zone decision."
+        },
+        {
+          "option_id": "accept_original_manual_cards_and_keep_advisory",
+          "label": "Accept original manual-review cards and keep advisory",
+          "effect": "Records that the team accepts manual cards for later review, but does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair_or_g_zone_scope",
+          "label": "Request different repair or G Zone scope",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate or explicit G Zone scope decision."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "g_zone_decision_options": [
+        {
+          "option_id": "defer_until_g_zone_runtime_exists",
+          "label": "Defer until G Zone runtime exists",
+          "effect": "Keeps the recipe advisory until G Zone deck slots, Stride validation, and Generation Break support exist."
+        },
+        {
+          "option_id": "main_deck_only_review_no_runtime_promotion",
+          "label": "Main-deck-only review, no runtime promotion",
+          "effect": "Allows review of the 50-card main deck but blocks fixture/runtime promotion."
+        }
+      ],
+      "recommended_reviewer_action": "select_one_recipe_review_manual_grade_repairs_and_record_g_zone_decision_before_m57_02"
+    },
+    {
+      "review_item_id": "m57_01_m56_recipe_002_repair_review",
+      "item_type": "sixth_slice_human_repair_and_g_zone_review",
+      "recipe_id": "m56_recipe_002",
+      "source_candidate_edge": "G-BT10-026TH->G-BT09-058TH",
+      "source_edge_rank": 4,
+      "pair": {
+        "source_card_id": "G-BT10-026TH",
+        "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+        "target_card_id": "G-BT09-058TH",
+        "target_name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+        "net_score": 8,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "zone_support"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "structural_blockers": [],
+      "manual_review_card_ids": [
+        "G-BT09-014TH",
+        "G-BT09-026TH",
+        "G-BT09-027TH",
+        "G-BT09-028TH",
+        "G-BT09-029TH",
+        "G-BT09-059TH",
+        "G-BT09-064TH"
+      ],
+      "manual_overlap_package_id": "m56_recipe_002_manual_overlap_pkg_001",
+      "manual_repair_type": "manual_review_overlap_substitution_preview",
+      "manual_substitutions": [
+        {
+          "remove_card_id": "G-BT09-014TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-026TH",
+          "remove_quantity": 4,
+          "selected_replacement_card_id": "G-TD10-002TH",
+          "selected_replacement_quantity": 4,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-027TH",
+          "remove_quantity": 4,
+          "selected_replacement_card_id": "G-TD10-003TH",
+          "selected_replacement_quantity": 4,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-028TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-005TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-029TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-010TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-059TH",
+          "remove_quantity": 1,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 1,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-064TH",
+          "remove_quantity": 4,
+          "selected_replacement_card_id": "G-TD10-016TH",
+          "selected_replacement_quantity": 4,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 1
+        }
+      ],
+      "manual_repair_complete": true,
+      "manual_review_may_accept_original_card": true,
+      "grade_profile_package_id": "m56_recipe_002_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution_preview",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "G-TD10-005TH",
+          "name_th": "ปราสาทโลกมาร, ไอน์แก๊งก์",
+          "quantity": 1,
+          "grade": "2",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "G-BT09-014TH",
+          "name_th": "แดรกเซฟเวอร์, เอสราส",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "G-BT09",
+          "source": "m56_03_sixth_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 1,
+      "grade_removed_card_count": 1,
+      "grade_repair_complete": true,
+      "g_zone_package_id": "m56_recipe_002_g_zone_deferred_pkg_001",
+      "g_zone_deferred": true,
+      "g_zone_can_be_repaired_in_m57_01": false,
+      "g_zone_future_system_work": [
+        "G Zone deck slot model",
+        "Stride deck-building validation",
+        "G unit visibility and public-event policy",
+        "Stride timing and Generation Break runtime support"
+      ],
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_recipe_repairs_and_keep_g_zone_deferred_for_validation_rerun",
+          "label": "Accept recipe repairs and keep G Zone deferred for validation rerun",
+          "effect": "Allows M57-02/M57-03 to record explicit recipe/repair choice, but runtime promotion remains blocked by G Zone decision."
+        },
+        {
+          "option_id": "accept_original_manual_cards_and_keep_advisory",
+          "label": "Accept original manual-review cards and keep advisory",
+          "effect": "Records that the team accepts manual cards for later review, but does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair_or_g_zone_scope",
+          "label": "Request different repair or G Zone scope",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate or explicit G Zone scope decision."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "g_zone_decision_options": [
+        {
+          "option_id": "defer_until_g_zone_runtime_exists",
+          "label": "Defer until G Zone runtime exists",
+          "effect": "Keeps the recipe advisory until G Zone deck slots, Stride validation, and Generation Break support exist."
+        },
+        {
+          "option_id": "main_deck_only_review_no_runtime_promotion",
+          "label": "Main-deck-only review, no runtime promotion",
+          "effect": "Allows review of the 50-card main deck but blocks fixture/runtime promotion."
+        }
+      ],
+      "recommended_reviewer_action": "select_one_recipe_review_manual_grade_repairs_and_record_g_zone_decision_before_m57_02"
+    },
+    {
+      "review_item_id": "m57_01_m56_recipe_003_repair_review",
+      "item_type": "sixth_slice_human_repair_and_g_zone_review",
+      "recipe_id": "m56_recipe_003",
+      "source_candidate_edge": "G-BT10-026TH->G-BT09-060TH",
+      "source_edge_rank": 5,
+      "pair": {
+        "source_card_id": "G-BT10-026TH",
+        "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+        "target_card_id": "G-BT09-060TH",
+        "target_name_th": "ลีดบาว",
+        "net_score": 8,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "zone_support"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "structural_blockers": [],
+      "manual_review_card_ids": [
+        "G-BT09-014TH",
+        "G-BT09-026TH",
+        "G-BT09-027TH",
+        "G-BT09-028TH",
+        "G-BT09-029TH",
+        "G-BT09-059TH",
+        "G-BT09-064TH"
+      ],
+      "manual_overlap_package_id": "m56_recipe_003_manual_overlap_pkg_001",
+      "manual_repair_type": "manual_review_overlap_substitution_preview",
+      "manual_substitutions": [
+        {
+          "remove_card_id": "G-BT09-014TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-026TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-002TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-027TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-003TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-028TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-005TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-029TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-010TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-059TH",
+          "remove_quantity": 1,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 1,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-064TH",
+          "remove_quantity": 4,
+          "selected_replacement_card_id": "G-TD10-016TH",
+          "selected_replacement_quantity": 4,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 1
+        }
+      ],
+      "manual_repair_complete": true,
+      "manual_review_may_accept_original_card": true,
+      "grade_profile_package_id": "m56_recipe_003_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution_preview",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "G-TD10-013TH",
+          "name_th": "แดรกพรินซ์, รูต",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-TD10-005TH",
+          "name_th": "ปราสาทโลกมาร, ไอน์แก๊งก์",
+          "quantity": 1,
+          "grade": "2",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-TD10-002TH",
+          "name_th": "เครสต์วิเชียส・ดราก้อน",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "G-BT09-014TH",
+          "name_th": "แดรกเซฟเวอร์, เอสราส",
+          "quantity": 3,
+          "grade": "1",
+          "series_code": "G-BT09",
+          "source": "m56_03_sixth_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "name_th": "อบิซัล・อาว",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "G-BT09",
+          "source": "m56_03_sixth_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 4,
+      "grade_removed_card_count": 4,
+      "grade_repair_complete": true,
+      "g_zone_package_id": "m56_recipe_003_g_zone_deferred_pkg_001",
+      "g_zone_deferred": true,
+      "g_zone_can_be_repaired_in_m57_01": false,
+      "g_zone_future_system_work": [
+        "G Zone deck slot model",
+        "Stride deck-building validation",
+        "G unit visibility and public-event policy",
+        "Stride timing and Generation Break runtime support"
+      ],
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_recipe_repairs_and_keep_g_zone_deferred_for_validation_rerun",
+          "label": "Accept recipe repairs and keep G Zone deferred for validation rerun",
+          "effect": "Allows M57-02/M57-03 to record explicit recipe/repair choice, but runtime promotion remains blocked by G Zone decision."
+        },
+        {
+          "option_id": "accept_original_manual_cards_and_keep_advisory",
+          "label": "Accept original manual-review cards and keep advisory",
+          "effect": "Records that the team accepts manual cards for later review, but does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair_or_g_zone_scope",
+          "label": "Request different repair or G Zone scope",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate or explicit G Zone scope decision."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "g_zone_decision_options": [
+        {
+          "option_id": "defer_until_g_zone_runtime_exists",
+          "label": "Defer until G Zone runtime exists",
+          "effect": "Keeps the recipe advisory until G Zone deck slots, Stride validation, and Generation Break support exist."
+        },
+        {
+          "option_id": "main_deck_only_review_no_runtime_promotion",
+          "label": "Main-deck-only review, no runtime promotion",
+          "effect": "Allows review of the 50-card main deck but blocks fixture/runtime promotion."
+        }
+      ],
+      "recommended_reviewer_action": "select_one_recipe_review_manual_grade_repairs_and_record_g_zone_decision_before_m57_02"
+    },
+    {
+      "review_item_id": "m57_01_m56_recipe_004_repair_review",
+      "item_type": "sixth_slice_human_repair_and_g_zone_review",
+      "recipe_id": "m56_recipe_004",
+      "source_candidate_edge": "G-BT10-026TH->G-BT09-062TH",
+      "source_edge_rank": 6,
+      "pair": {
+        "source_card_id": "G-BT10-026TH",
+        "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+        "target_card_id": "G-BT09-062TH",
+        "target_name_th": "รีเวนเจอร์แห่งค่ำคืนที่หลงเหลือ, คอนร่า",
+        "net_score": 8,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "zone_support"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "structural_blockers": [],
+      "manual_review_card_ids": [
+        "G-BT09-014TH",
+        "G-BT09-026TH",
+        "G-BT09-027TH",
+        "G-BT09-028TH",
+        "G-BT09-029TH",
+        "G-BT09-059TH",
+        "G-BT09-064TH"
+      ],
+      "manual_overlap_package_id": "m56_recipe_004_manual_overlap_pkg_001",
+      "manual_repair_type": "manual_review_overlap_substitution_preview",
+      "manual_substitutions": [
+        {
+          "remove_card_id": "G-BT09-014TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-026TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-002TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-027TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-003TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-028TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-005TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-029TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-010TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-059TH",
+          "remove_quantity": 1,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 1,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-064TH",
+          "remove_quantity": 4,
+          "selected_replacement_card_id": "G-TD10-016TH",
+          "selected_replacement_quantity": 4,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 1
+        }
+      ],
+      "manual_repair_complete": true,
+      "manual_review_may_accept_original_card": true,
+      "grade_profile_package_id": "m56_recipe_004_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution_preview",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "G-TD10-005TH",
+          "name_th": "ปราสาทโลกมาร, ไอน์แก๊งก์",
+          "quantity": 1,
+          "grade": "2",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-TD10-002TH",
+          "name_th": "เครสต์วิเชียส・ดราก้อน",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "G-BT09-064TH",
+          "name_th": "อัศวินแห่งตุ้มเหล็ก, คราฟทิเน่",
+          "quantity": 3,
+          "grade": "0",
+          "series_code": "G-BT09",
+          "source": "m56_03_sixth_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 3,
+      "grade_removed_card_count": 3,
+      "grade_repair_complete": true,
+      "g_zone_package_id": "m56_recipe_004_g_zone_deferred_pkg_001",
+      "g_zone_deferred": true,
+      "g_zone_can_be_repaired_in_m57_01": false,
+      "g_zone_future_system_work": [
+        "G Zone deck slot model",
+        "Stride deck-building validation",
+        "G unit visibility and public-event policy",
+        "Stride timing and Generation Break runtime support"
+      ],
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_recipe_repairs_and_keep_g_zone_deferred_for_validation_rerun",
+          "label": "Accept recipe repairs and keep G Zone deferred for validation rerun",
+          "effect": "Allows M57-02/M57-03 to record explicit recipe/repair choice, but runtime promotion remains blocked by G Zone decision."
+        },
+        {
+          "option_id": "accept_original_manual_cards_and_keep_advisory",
+          "label": "Accept original manual-review cards and keep advisory",
+          "effect": "Records that the team accepts manual cards for later review, but does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair_or_g_zone_scope",
+          "label": "Request different repair or G Zone scope",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate or explicit G Zone scope decision."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "g_zone_decision_options": [
+        {
+          "option_id": "defer_until_g_zone_runtime_exists",
+          "label": "Defer until G Zone runtime exists",
+          "effect": "Keeps the recipe advisory until G Zone deck slots, Stride validation, and Generation Break support exist."
+        },
+        {
+          "option_id": "main_deck_only_review_no_runtime_promotion",
+          "label": "Main-deck-only review, no runtime promotion",
+          "effect": "Allows review of the 50-card main deck but blocks fixture/runtime promotion."
+        }
+      ],
+      "recommended_reviewer_action": "select_one_recipe_review_manual_grade_repairs_and_record_g_zone_decision_before_m57_02"
+    },
+    {
+      "review_item_id": "m57_01_m56_recipe_005_repair_review",
+      "item_type": "sixth_slice_human_repair_and_g_zone_review",
+      "recipe_id": "m56_recipe_005",
+      "source_candidate_edge": "G-BT10-026TH->G-BT12-031TH",
+      "source_edge_rank": 8,
+      "pair": {
+        "source_card_id": "G-BT10-026TH",
+        "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+        "target_card_id": "G-BT12-031TH",
+        "target_name_th": "โมริออนสเปียร์・ดราก้อน",
+        "net_score": 8,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "timing_can_precede",
+        "zone_verdict": "zone_support"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "structural_blockers": [],
+      "manual_review_card_ids": [
+        "G-BT09-014TH",
+        "G-BT09-026TH",
+        "G-BT09-027TH",
+        "G-BT09-028TH",
+        "G-BT09-029TH",
+        "G-BT09-059TH",
+        "G-BT09-064TH"
+      ],
+      "manual_overlap_package_id": "m56_recipe_005_manual_overlap_pkg_001",
+      "manual_repair_type": "manual_review_overlap_substitution_preview",
+      "manual_substitutions": [
+        {
+          "remove_card_id": "G-BT09-014TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-026TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-002TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-027TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-003TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-028TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-005TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-029TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-010TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-059TH",
+          "remove_quantity": 1,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 1,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-064TH",
+          "remove_quantity": 4,
+          "selected_replacement_card_id": "G-TD10-016TH",
+          "selected_replacement_quantity": 4,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 1
+        }
+      ],
+      "manual_repair_complete": true,
+      "manual_review_may_accept_original_card": true,
+      "grade_profile_package_id": "m56_recipe_005_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution_preview",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "G-TD10-013TH",
+          "name_th": "แดรกพรินซ์, รูต",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-TD10-002TH",
+          "name_th": "เครสต์วิเชียส・ดราก้อน",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "G-BT09-028TH",
+          "name_th": "รีเวนเจอร์, ดีโทเนต・ดราก้อน",
+          "quantity": 3,
+          "grade": "2",
+          "series_code": "G-BT09",
+          "source": "m56_03_sixth_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 3,
+      "grade_removed_card_count": 3,
+      "grade_repair_complete": true,
+      "g_zone_package_id": "m56_recipe_005_g_zone_deferred_pkg_001",
+      "g_zone_deferred": true,
+      "g_zone_can_be_repaired_in_m57_01": false,
+      "g_zone_future_system_work": [
+        "G Zone deck slot model",
+        "Stride deck-building validation",
+        "G unit visibility and public-event policy",
+        "Stride timing and Generation Break runtime support"
+      ],
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_recipe_repairs_and_keep_g_zone_deferred_for_validation_rerun",
+          "label": "Accept recipe repairs and keep G Zone deferred for validation rerun",
+          "effect": "Allows M57-02/M57-03 to record explicit recipe/repair choice, but runtime promotion remains blocked by G Zone decision."
+        },
+        {
+          "option_id": "accept_original_manual_cards_and_keep_advisory",
+          "label": "Accept original manual-review cards and keep advisory",
+          "effect": "Records that the team accepts manual cards for later review, but does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair_or_g_zone_scope",
+          "label": "Request different repair or G Zone scope",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate or explicit G Zone scope decision."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "g_zone_decision_options": [
+        {
+          "option_id": "defer_until_g_zone_runtime_exists",
+          "label": "Defer until G Zone runtime exists",
+          "effect": "Keeps the recipe advisory until G Zone deck slots, Stride validation, and Generation Break support exist."
+        },
+        {
+          "option_id": "main_deck_only_review_no_runtime_promotion",
+          "label": "Main-deck-only review, no runtime promotion",
+          "effect": "Allows review of the 50-card main deck but blocks fixture/runtime promotion."
+        }
+      ],
+      "recommended_reviewer_action": "select_one_recipe_review_manual_grade_repairs_and_record_g_zone_decision_before_m57_02"
+    },
+    {
+      "review_item_id": "m57_01_m56_recipe_006_repair_review",
+      "item_type": "sixth_slice_human_repair_and_g_zone_review",
+      "recipe_id": "m56_recipe_006",
+      "source_candidate_edge": "G-BT10-026TH->G-BT12-065TH",
+      "source_edge_rank": 9,
+      "pair": {
+        "source_card_id": "G-BT10-026TH",
+        "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+        "target_card_id": "G-BT12-065TH",
+        "target_name_th": "แดรกวิซาร์ด, อีนิด",
+        "net_score": 8,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "zone_support"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "structural_blockers": [],
+      "manual_review_card_ids": [
+        "G-BT09-014TH",
+        "G-BT09-026TH",
+        "G-BT09-027TH",
+        "G-BT09-028TH",
+        "G-BT09-029TH",
+        "G-BT09-059TH",
+        "G-BT09-064TH"
+      ],
+      "manual_overlap_package_id": "m56_recipe_006_manual_overlap_pkg_001",
+      "manual_repair_type": "manual_review_overlap_substitution_preview",
+      "manual_substitutions": [
+        {
+          "remove_card_id": "G-BT09-014TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-026TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-002TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-027TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-003TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-028TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-005TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-029TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-010TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-059TH",
+          "remove_quantity": 1,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 1,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-064TH",
+          "remove_quantity": 4,
+          "selected_replacement_card_id": "G-TD10-016TH",
+          "selected_replacement_quantity": 4,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 1
+        }
+      ],
+      "manual_repair_complete": true,
+      "manual_review_may_accept_original_card": true,
+      "grade_profile_package_id": "m56_recipe_006_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution_preview",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "G-TD10-013TH",
+          "name_th": "แดรกพรินซ์, รูต",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-TD10-005TH",
+          "name_th": "ปราสาทโลกมาร, ไอน์แก๊งก์",
+          "quantity": 1,
+          "grade": "2",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-TD10-002TH",
+          "name_th": "เครสต์วิเชียส・ดราก้อน",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "G-BT09-014TH",
+          "name_th": "แดรกเซฟเวอร์, เอสราส",
+          "quantity": 3,
+          "grade": "1",
+          "series_code": "G-BT09",
+          "source": "m56_03_sixth_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "name_th": "อบิซัล・อาว",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "G-BT09",
+          "source": "m56_03_sixth_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 4,
+      "grade_removed_card_count": 4,
+      "grade_repair_complete": true,
+      "g_zone_package_id": "m56_recipe_006_g_zone_deferred_pkg_001",
+      "g_zone_deferred": true,
+      "g_zone_can_be_repaired_in_m57_01": false,
+      "g_zone_future_system_work": [
+        "G Zone deck slot model",
+        "Stride deck-building validation",
+        "G unit visibility and public-event policy",
+        "Stride timing and Generation Break runtime support"
+      ],
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_recipe_repairs_and_keep_g_zone_deferred_for_validation_rerun",
+          "label": "Accept recipe repairs and keep G Zone deferred for validation rerun",
+          "effect": "Allows M57-02/M57-03 to record explicit recipe/repair choice, but runtime promotion remains blocked by G Zone decision."
+        },
+        {
+          "option_id": "accept_original_manual_cards_and_keep_advisory",
+          "label": "Accept original manual-review cards and keep advisory",
+          "effect": "Records that the team accepts manual cards for later review, but does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair_or_g_zone_scope",
+          "label": "Request different repair or G Zone scope",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate or explicit G Zone scope decision."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "g_zone_decision_options": [
+        {
+          "option_id": "defer_until_g_zone_runtime_exists",
+          "label": "Defer until G Zone runtime exists",
+          "effect": "Keeps the recipe advisory until G Zone deck slots, Stride validation, and Generation Break support exist."
+        },
+        {
+          "option_id": "main_deck_only_review_no_runtime_promotion",
+          "label": "Main-deck-only review, no runtime promotion",
+          "effect": "Allows review of the 50-card main deck but blocks fixture/runtime promotion."
+        }
+      ],
+      "recommended_reviewer_action": "select_one_recipe_review_manual_grade_repairs_and_record_g_zone_decision_before_m57_02"
+    },
+    {
+      "review_item_id": "m57_01_m56_recipe_007_repair_review",
+      "item_type": "sixth_slice_human_repair_and_g_zone_review",
+      "recipe_id": "m56_recipe_007",
+      "source_candidate_edge": "G-BT10-026TH->G-TD10-010TH",
+      "source_edge_rank": 11,
+      "pair": {
+        "source_card_id": "G-BT10-026TH",
+        "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+        "target_card_id": "G-TD10-010TH",
+        "target_name_th": "คิลเลอร์มิว",
+        "net_score": 8,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "zone_support"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "structural_blockers": [],
+      "manual_review_card_ids": [
+        "G-BT09-014TH",
+        "G-BT09-026TH",
+        "G-BT09-027TH",
+        "G-BT09-028TH",
+        "G-BT09-029TH",
+        "G-BT09-059TH",
+        "G-BT09-064TH"
+      ],
+      "manual_overlap_package_id": "m56_recipe_007_manual_overlap_pkg_001",
+      "manual_repair_type": "manual_review_overlap_substitution_preview",
+      "manual_substitutions": [
+        {
+          "remove_card_id": "G-BT09-014TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-026TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-002TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-027TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-003TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-028TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-005TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-029TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-011TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-059TH",
+          "remove_quantity": 1,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 1,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-064TH",
+          "remove_quantity": 4,
+          "selected_replacement_card_id": "G-TD10-016TH",
+          "selected_replacement_quantity": 4,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 1
+        }
+      ],
+      "manual_repair_complete": true,
+      "manual_review_may_accept_original_card": true,
+      "grade_profile_package_id": "m56_recipe_007_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution_preview",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "G-TD10-013TH",
+          "name_th": "แดรกพรินซ์, รูต",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-TD10-005TH",
+          "name_th": "ปราสาทโลกมาร, ไอน์แก๊งก์",
+          "quantity": 1,
+          "grade": "2",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-TD10-002TH",
+          "name_th": "เครสต์วิเชียส・ดราก้อน",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "G-BT09-014TH",
+          "name_th": "แดรกเซฟเวอร์, เอสราส",
+          "quantity": 3,
+          "grade": "1",
+          "series_code": "G-BT09",
+          "source": "m56_03_sixth_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "G-BT09-029TH",
+          "name_th": "อบิซัล・อาว",
+          "quantity": 1,
+          "grade": "1",
+          "series_code": "G-BT09",
+          "source": "m56_03_sixth_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 4,
+      "grade_removed_card_count": 4,
+      "grade_repair_complete": true,
+      "g_zone_package_id": "m56_recipe_007_g_zone_deferred_pkg_001",
+      "g_zone_deferred": true,
+      "g_zone_can_be_repaired_in_m57_01": false,
+      "g_zone_future_system_work": [
+        "G Zone deck slot model",
+        "Stride deck-building validation",
+        "G unit visibility and public-event policy",
+        "Stride timing and Generation Break runtime support"
+      ],
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_recipe_repairs_and_keep_g_zone_deferred_for_validation_rerun",
+          "label": "Accept recipe repairs and keep G Zone deferred for validation rerun",
+          "effect": "Allows M57-02/M57-03 to record explicit recipe/repair choice, but runtime promotion remains blocked by G Zone decision."
+        },
+        {
+          "option_id": "accept_original_manual_cards_and_keep_advisory",
+          "label": "Accept original manual-review cards and keep advisory",
+          "effect": "Records that the team accepts manual cards for later review, but does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair_or_g_zone_scope",
+          "label": "Request different repair or G Zone scope",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate or explicit G Zone scope decision."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "g_zone_decision_options": [
+        {
+          "option_id": "defer_until_g_zone_runtime_exists",
+          "label": "Defer until G Zone runtime exists",
+          "effect": "Keeps the recipe advisory until G Zone deck slots, Stride validation, and Generation Break support exist."
+        },
+        {
+          "option_id": "main_deck_only_review_no_runtime_promotion",
+          "label": "Main-deck-only review, no runtime promotion",
+          "effect": "Allows review of the 50-card main deck but blocks fixture/runtime promotion."
+        }
+      ],
+      "recommended_reviewer_action": "select_one_recipe_review_manual_grade_repairs_and_record_g_zone_decision_before_m57_02"
+    },
+    {
+      "review_item_id": "m57_01_m56_recipe_008_repair_review",
+      "item_type": "sixth_slice_human_repair_and_g_zone_review",
+      "recipe_id": "m56_recipe_008",
+      "source_candidate_edge": "G-BT12-062TH->G-BT09-058TH",
+      "source_edge_rank": 54,
+      "pair": {
+        "source_card_id": "G-BT12-062TH",
+        "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+        "target_card_id": "G-BT09-058TH",
+        "target_name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+        "net_score": 5,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "target_zone_need_not_supported_by_source"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "structural_blockers": [],
+      "manual_review_card_ids": [
+        "G-BT09-014TH",
+        "G-BT09-026TH",
+        "G-BT09-027TH",
+        "G-BT09-028TH",
+        "G-BT09-029TH",
+        "G-BT09-059TH",
+        "G-BT09-064TH"
+      ],
+      "manual_overlap_package_id": "m56_recipe_008_manual_overlap_pkg_001",
+      "manual_repair_type": "manual_review_overlap_substitution_preview",
+      "manual_substitutions": [
+        {
+          "remove_card_id": "G-BT09-014TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-026TH",
+          "remove_quantity": 4,
+          "selected_replacement_card_id": "G-TD10-002TH",
+          "selected_replacement_quantity": 4,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-027TH",
+          "remove_quantity": 4,
+          "selected_replacement_card_id": "G-TD10-003TH",
+          "selected_replacement_quantity": 4,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-028TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-005TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-029TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-010TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-059TH",
+          "remove_quantity": 1,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 1,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-064TH",
+          "remove_quantity": 4,
+          "selected_replacement_card_id": "G-TD10-016TH",
+          "selected_replacement_quantity": 4,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 1
+        }
+      ],
+      "manual_repair_complete": true,
+      "manual_review_may_accept_original_card": true,
+      "grade_profile_package_id": "m56_recipe_008_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution_preview",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "G-TD10-009TH",
+          "name_th": "แดรกวิซาร์ด, นีซ์",
+          "quantity": 3,
+          "grade": "1",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-TD10-005TH",
+          "name_th": "ปราสาทโลกมาร, ไอน์แก๊งก์",
+          "quantity": 1,
+          "grade": "2",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "G-BT09-026TH",
+          "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+          "quantity": 4,
+          "grade": "3",
+          "series_code": "G-BT09",
+          "source": "m56_03_sixth_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 4,
+      "grade_removed_card_count": 4,
+      "grade_repair_complete": true,
+      "g_zone_package_id": "m56_recipe_008_g_zone_deferred_pkg_001",
+      "g_zone_deferred": true,
+      "g_zone_can_be_repaired_in_m57_01": false,
+      "g_zone_future_system_work": [
+        "G Zone deck slot model",
+        "Stride deck-building validation",
+        "G unit visibility and public-event policy",
+        "Stride timing and Generation Break runtime support"
+      ],
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_recipe_repairs_and_keep_g_zone_deferred_for_validation_rerun",
+          "label": "Accept recipe repairs and keep G Zone deferred for validation rerun",
+          "effect": "Allows M57-02/M57-03 to record explicit recipe/repair choice, but runtime promotion remains blocked by G Zone decision."
+        },
+        {
+          "option_id": "accept_original_manual_cards_and_keep_advisory",
+          "label": "Accept original manual-review cards and keep advisory",
+          "effect": "Records that the team accepts manual cards for later review, but does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair_or_g_zone_scope",
+          "label": "Request different repair or G Zone scope",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate or explicit G Zone scope decision."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "g_zone_decision_options": [
+        {
+          "option_id": "defer_until_g_zone_runtime_exists",
+          "label": "Defer until G Zone runtime exists",
+          "effect": "Keeps the recipe advisory until G Zone deck slots, Stride validation, and Generation Break support exist."
+        },
+        {
+          "option_id": "main_deck_only_review_no_runtime_promotion",
+          "label": "Main-deck-only review, no runtime promotion",
+          "effect": "Allows review of the 50-card main deck but blocks fixture/runtime promotion."
+        }
+      ],
+      "recommended_reviewer_action": "select_one_recipe_review_manual_grade_repairs_and_record_g_zone_decision_before_m57_02"
+    },
+    {
+      "review_item_id": "m57_01_m56_recipe_009_repair_review",
+      "item_type": "sixth_slice_human_repair_and_g_zone_review",
+      "recipe_id": "m56_recipe_009",
+      "source_candidate_edge": "G-BT12-062TH->G-BT09-060TH",
+      "source_edge_rank": 55,
+      "pair": {
+        "source_card_id": "G-BT12-062TH",
+        "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+        "target_card_id": "G-BT09-060TH",
+        "target_name_th": "ลีดบาว",
+        "net_score": 5,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "target_zone_need_not_supported_by_source"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "structural_blockers": [],
+      "manual_review_card_ids": [
+        "G-BT09-014TH",
+        "G-BT09-026TH",
+        "G-BT09-027TH",
+        "G-BT09-028TH",
+        "G-BT09-029TH",
+        "G-BT09-059TH",
+        "G-BT09-064TH"
+      ],
+      "manual_overlap_package_id": "m56_recipe_009_manual_overlap_pkg_001",
+      "manual_repair_type": "manual_review_overlap_substitution_preview",
+      "manual_substitutions": [
+        {
+          "remove_card_id": "G-BT09-014TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-026TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-002TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-027TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-003TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-028TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-005TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-029TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-010TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-059TH",
+          "remove_quantity": 1,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 1,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-064TH",
+          "remove_quantity": 4,
+          "selected_replacement_card_id": "G-TD10-016TH",
+          "selected_replacement_quantity": 4,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 1
+        }
+      ],
+      "manual_repair_complete": true,
+      "manual_review_may_accept_original_card": true,
+      "grade_profile_package_id": "m56_recipe_009_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution_preview",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "G-TD10-013TH",
+          "name_th": "แดรกพรินซ์, รูต",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-TD10-005TH",
+          "name_th": "ปราสาทโลกมาร, ไอน์แก๊งก์",
+          "quantity": 1,
+          "grade": "2",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "G-BT09-026TH",
+          "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "G-BT09",
+          "source": "m56_03_sixth_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 2,
+      "grade_removed_card_count": 2,
+      "grade_repair_complete": true,
+      "g_zone_package_id": "m56_recipe_009_g_zone_deferred_pkg_001",
+      "g_zone_deferred": true,
+      "g_zone_can_be_repaired_in_m57_01": false,
+      "g_zone_future_system_work": [
+        "G Zone deck slot model",
+        "Stride deck-building validation",
+        "G unit visibility and public-event policy",
+        "Stride timing and Generation Break runtime support"
+      ],
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_recipe_repairs_and_keep_g_zone_deferred_for_validation_rerun",
+          "label": "Accept recipe repairs and keep G Zone deferred for validation rerun",
+          "effect": "Allows M57-02/M57-03 to record explicit recipe/repair choice, but runtime promotion remains blocked by G Zone decision."
+        },
+        {
+          "option_id": "accept_original_manual_cards_and_keep_advisory",
+          "label": "Accept original manual-review cards and keep advisory",
+          "effect": "Records that the team accepts manual cards for later review, but does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair_or_g_zone_scope",
+          "label": "Request different repair or G Zone scope",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate or explicit G Zone scope decision."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "g_zone_decision_options": [
+        {
+          "option_id": "defer_until_g_zone_runtime_exists",
+          "label": "Defer until G Zone runtime exists",
+          "effect": "Keeps the recipe advisory until G Zone deck slots, Stride validation, and Generation Break support exist."
+        },
+        {
+          "option_id": "main_deck_only_review_no_runtime_promotion",
+          "label": "Main-deck-only review, no runtime promotion",
+          "effect": "Allows review of the 50-card main deck but blocks fixture/runtime promotion."
+        }
+      ],
+      "recommended_reviewer_action": "select_one_recipe_review_manual_grade_repairs_and_record_g_zone_decision_before_m57_02"
+    },
+    {
+      "review_item_id": "m57_01_m56_recipe_010_repair_review",
+      "item_type": "sixth_slice_human_repair_and_g_zone_review",
+      "recipe_id": "m56_recipe_010",
+      "source_candidate_edge": "G-BT12-062TH->G-BT09-062TH",
+      "source_edge_rank": 56,
+      "pair": {
+        "source_card_id": "G-BT12-062TH",
+        "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+        "target_card_id": "G-BT09-062TH",
+        "target_name_th": "รีเวนเจอร์แห่งค่ำคืนที่หลงเหลือ, คอนร่า",
+        "net_score": 5,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "target_zone_need_not_supported_by_source"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "structural_blockers": [],
+      "manual_review_card_ids": [
+        "G-BT09-014TH",
+        "G-BT09-026TH",
+        "G-BT09-027TH",
+        "G-BT09-028TH",
+        "G-BT09-029TH",
+        "G-BT09-059TH",
+        "G-BT09-064TH"
+      ],
+      "manual_overlap_package_id": "m56_recipe_010_manual_overlap_pkg_001",
+      "manual_repair_type": "manual_review_overlap_substitution_preview",
+      "manual_substitutions": [
+        {
+          "remove_card_id": "G-BT09-014TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-026TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-002TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-027TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-003TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-028TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-005TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-029TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-010TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-059TH",
+          "remove_quantity": 1,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 1,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-064TH",
+          "remove_quantity": 4,
+          "selected_replacement_card_id": "G-TD10-016TH",
+          "selected_replacement_quantity": 4,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 1
+        }
+      ],
+      "manual_repair_complete": true,
+      "manual_review_may_accept_original_card": true,
+      "grade_profile_package_id": "m56_recipe_010_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution_preview",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "G-TD10-009TH",
+          "name_th": "แดรกวิซาร์ด, นีซ์",
+          "quantity": 4,
+          "grade": "1",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-TD10-005TH",
+          "name_th": "ปราสาทโลกมาร, ไอน์แก๊งก์",
+          "quantity": 1,
+          "grade": "2",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "G-BT09-064TH",
+          "name_th": "อัศวินแห่งตุ้มเหล็ก, คราฟทิเน่",
+          "quantity": 3,
+          "grade": "0",
+          "series_code": "G-BT09",
+          "source": "m56_03_sixth_slice_recipe_draft_model"
+        },
+        {
+          "card_id": "G-BT09-026TH",
+          "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "G-BT09",
+          "source": "m56_03_sixth_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 5,
+      "grade_removed_card_count": 5,
+      "grade_repair_complete": true,
+      "g_zone_package_id": "m56_recipe_010_g_zone_deferred_pkg_001",
+      "g_zone_deferred": true,
+      "g_zone_can_be_repaired_in_m57_01": false,
+      "g_zone_future_system_work": [
+        "G Zone deck slot model",
+        "Stride deck-building validation",
+        "G unit visibility and public-event policy",
+        "Stride timing and Generation Break runtime support"
+      ],
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_recipe_repairs_and_keep_g_zone_deferred_for_validation_rerun",
+          "label": "Accept recipe repairs and keep G Zone deferred for validation rerun",
+          "effect": "Allows M57-02/M57-03 to record explicit recipe/repair choice, but runtime promotion remains blocked by G Zone decision."
+        },
+        {
+          "option_id": "accept_original_manual_cards_and_keep_advisory",
+          "label": "Accept original manual-review cards and keep advisory",
+          "effect": "Records that the team accepts manual cards for later review, but does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair_or_g_zone_scope",
+          "label": "Request different repair or G Zone scope",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate or explicit G Zone scope decision."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "g_zone_decision_options": [
+        {
+          "option_id": "defer_until_g_zone_runtime_exists",
+          "label": "Defer until G Zone runtime exists",
+          "effect": "Keeps the recipe advisory until G Zone deck slots, Stride validation, and Generation Break support exist."
+        },
+        {
+          "option_id": "main_deck_only_review_no_runtime_promotion",
+          "label": "Main-deck-only review, no runtime promotion",
+          "effect": "Allows review of the 50-card main deck but blocks fixture/runtime promotion."
+        }
+      ],
+      "recommended_reviewer_action": "select_one_recipe_review_manual_grade_repairs_and_record_g_zone_decision_before_m57_02"
+    },
+    {
+      "review_item_id": "m57_01_m56_recipe_011_repair_review",
+      "item_type": "sixth_slice_human_repair_and_g_zone_review",
+      "recipe_id": "m56_recipe_011",
+      "source_candidate_edge": "G-BT12-062TH->G-BT12-065TH",
+      "source_edge_rank": 57,
+      "pair": {
+        "source_card_id": "G-BT12-062TH",
+        "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+        "target_card_id": "G-BT12-065TH",
+        "target_name_th": "แดรกวิซาร์ด, อีนิด",
+        "net_score": 5,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "target_zone_need_not_supported_by_source"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "structural_blockers": [],
+      "manual_review_card_ids": [
+        "G-BT09-014TH",
+        "G-BT09-026TH",
+        "G-BT09-027TH",
+        "G-BT09-028TH",
+        "G-BT09-029TH",
+        "G-BT09-059TH",
+        "G-BT09-064TH"
+      ],
+      "manual_overlap_package_id": "m56_recipe_011_manual_overlap_pkg_001",
+      "manual_repair_type": "manual_review_overlap_substitution_preview",
+      "manual_substitutions": [
+        {
+          "remove_card_id": "G-BT09-014TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-026TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-002TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-027TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-003TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-028TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-005TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-029TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-010TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-059TH",
+          "remove_quantity": 1,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 1,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-064TH",
+          "remove_quantity": 4,
+          "selected_replacement_card_id": "G-TD10-016TH",
+          "selected_replacement_quantity": 4,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 1
+        }
+      ],
+      "manual_repair_complete": true,
+      "manual_review_may_accept_original_card": true,
+      "grade_profile_package_id": "m56_recipe_011_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution_preview",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "G-TD10-013TH",
+          "name_th": "แดรกพรินซ์, รูต",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-TD10-005TH",
+          "name_th": "ปราสาทโลกมาร, ไอน์แก๊งก์",
+          "quantity": 1,
+          "grade": "2",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "G-BT09-026TH",
+          "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "G-BT09",
+          "source": "m56_03_sixth_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 2,
+      "grade_removed_card_count": 2,
+      "grade_repair_complete": true,
+      "g_zone_package_id": "m56_recipe_011_g_zone_deferred_pkg_001",
+      "g_zone_deferred": true,
+      "g_zone_can_be_repaired_in_m57_01": false,
+      "g_zone_future_system_work": [
+        "G Zone deck slot model",
+        "Stride deck-building validation",
+        "G unit visibility and public-event policy",
+        "Stride timing and Generation Break runtime support"
+      ],
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_recipe_repairs_and_keep_g_zone_deferred_for_validation_rerun",
+          "label": "Accept recipe repairs and keep G Zone deferred for validation rerun",
+          "effect": "Allows M57-02/M57-03 to record explicit recipe/repair choice, but runtime promotion remains blocked by G Zone decision."
+        },
+        {
+          "option_id": "accept_original_manual_cards_and_keep_advisory",
+          "label": "Accept original manual-review cards and keep advisory",
+          "effect": "Records that the team accepts manual cards for later review, but does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair_or_g_zone_scope",
+          "label": "Request different repair or G Zone scope",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate or explicit G Zone scope decision."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "g_zone_decision_options": [
+        {
+          "option_id": "defer_until_g_zone_runtime_exists",
+          "label": "Defer until G Zone runtime exists",
+          "effect": "Keeps the recipe advisory until G Zone deck slots, Stride validation, and Generation Break support exist."
+        },
+        {
+          "option_id": "main_deck_only_review_no_runtime_promotion",
+          "label": "Main-deck-only review, no runtime promotion",
+          "effect": "Allows review of the 50-card main deck but blocks fixture/runtime promotion."
+        }
+      ],
+      "recommended_reviewer_action": "select_one_recipe_review_manual_grade_repairs_and_record_g_zone_decision_before_m57_02"
+    },
+    {
+      "review_item_id": "m57_01_m56_recipe_012_repair_review",
+      "item_type": "sixth_slice_human_repair_and_g_zone_review",
+      "recipe_id": "m56_recipe_012",
+      "source_candidate_edge": "G-BT12-062TH->G-TD10-010TH",
+      "source_edge_rank": 59,
+      "pair": {
+        "source_card_id": "G-BT12-062TH",
+        "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+        "target_card_id": "G-TD10-010TH",
+        "target_name_th": "คิลเลอร์มิว",
+        "net_score": 5,
+        "resource_verdict": "source_resource_profile_only",
+        "timing_verdict": "target_timing_not_constrained",
+        "zone_verdict": "target_zone_need_not_supported_by_source"
+      },
+      "validation_status": "blocked_by_manual_review",
+      "consistency_status": "blocked_by_manual_review",
+      "structural_blockers": [],
+      "manual_review_card_ids": [
+        "G-BT09-014TH",
+        "G-BT09-026TH",
+        "G-BT09-027TH",
+        "G-BT09-028TH",
+        "G-BT09-029TH",
+        "G-BT09-059TH",
+        "G-BT09-064TH"
+      ],
+      "manual_overlap_package_id": "m56_recipe_012_manual_overlap_pkg_001",
+      "manual_repair_type": "manual_review_overlap_substitution_preview",
+      "manual_substitutions": [
+        {
+          "remove_card_id": "G-BT09-014TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-026TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-002TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-027TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-003TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-028TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-005TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-029TH",
+          "remove_quantity": 3,
+          "selected_replacement_card_id": "G-TD10-011TH",
+          "selected_replacement_quantity": 3,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-059TH",
+          "remove_quantity": 1,
+          "selected_replacement_card_id": "G-TD10-009TH",
+          "selected_replacement_quantity": 1,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 5
+        },
+        {
+          "remove_card_id": "G-BT09-064TH",
+          "remove_quantity": 4,
+          "selected_replacement_card_id": "G-TD10-016TH",
+          "selected_replacement_quantity": 4,
+          "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+          "replacement_option_count": 1
+        }
+      ],
+      "manual_repair_complete": true,
+      "manual_review_may_accept_original_card": true,
+      "grade_profile_package_id": "m56_recipe_012_grade_profile_pkg_001",
+      "grade_repair_type": "grade_profile_substitution_preview",
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_additions": [
+        {
+          "card_id": "G-TD10-013TH",
+          "name_th": "แดรกพรินซ์, รูต",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-TD10-005TH",
+          "name_th": "ปราสาทโลกมาร, ไอน์แก๊งก์",
+          "quantity": 1,
+          "grade": "2",
+          "series_code": "G-TD10",
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "grade_removals": [
+        {
+          "card_id": "G-BT09-026TH",
+          "name_th": "จอมเวทแห่งการล่อลวง, อิลโดน่า",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "G-BT09",
+          "source": "m56_03_sixth_slice_recipe_draft_model"
+        }
+      ],
+      "grade_added_card_count": 2,
+      "grade_removed_card_count": 2,
+      "grade_repair_complete": true,
+      "g_zone_package_id": "m56_recipe_012_g_zone_deferred_pkg_001",
+      "g_zone_deferred": true,
+      "g_zone_can_be_repaired_in_m57_01": false,
+      "g_zone_future_system_work": [
+        "G Zone deck slot model",
+        "Stride deck-building validation",
+        "G unit visibility and public-event policy",
+        "Stride timing and Generation Break runtime support"
+      ],
+      "ready_for_human_repair_review": true,
+      "human_decision_required": true,
+      "runtime_promotion_allowed": false,
+      "decision_options": [
+        {
+          "option_id": "accept_recipe_repairs_and_keep_g_zone_deferred_for_validation_rerun",
+          "label": "Accept recipe repairs and keep G Zone deferred for validation rerun",
+          "effect": "Allows M57-02/M57-03 to record explicit recipe/repair choice, but runtime promotion remains blocked by G Zone decision."
+        },
+        {
+          "option_id": "accept_original_manual_cards_and_keep_advisory",
+          "label": "Accept original manual-review cards and keep advisory",
+          "effect": "Records that the team accepts manual cards for later review, but does not promote runtime."
+        },
+        {
+          "option_id": "request_different_repair_or_g_zone_scope",
+          "label": "Request different repair or G Zone scope",
+          "effect": "Keeps the recipe advisory and asks for another repair candidate or explicit G Zone scope decision."
+        },
+        {
+          "option_id": "reject_recipe_runtime_candidate",
+          "label": "Reject recipe runtime candidate",
+          "effect": "Keeps this recipe out of future fixture promotion gates."
+        }
+      ],
+      "g_zone_decision_options": [
+        {
+          "option_id": "defer_until_g_zone_runtime_exists",
+          "label": "Defer until G Zone runtime exists",
+          "effect": "Keeps the recipe advisory until G Zone deck slots, Stride validation, and Generation Break support exist."
+        },
+        {
+          "option_id": "main_deck_only_review_no_runtime_promotion",
+          "label": "Main-deck-only review, no runtime promotion",
+          "effect": "Allows review of the 50-card main deck but blocks fixture/runtime promotion."
+        }
+      ],
+      "recommended_reviewer_action": "select_one_recipe_review_manual_grade_repairs_and_record_g_zone_decision_before_m57_02"
+    }
+  ],
+  "next_target": {
+    "milestone": "M57-02",
+    "task": "Sixth-slice human-selected recipe artifact"
+  }
+}

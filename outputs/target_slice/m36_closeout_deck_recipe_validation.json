@@ -1,0 +1,300 @@
+{
+  "version": "M36-closeout",
+  "description": "Deck recipe validation closeout and blocker-focused next queue selection",
+  "scope": {
+    "offline_coordination_artifact": true,
+    "changes_runtime_gameplay": false,
+    "changes_unity_ui": false,
+    "creates_runtime_deck": false,
+    "enables_bot_runtime": false
+  },
+  "source_inputs": {
+    "M36-01": "outputs\\target_slice\\m36_01_first_slice_review_packet.json",
+    "M36-02": "outputs\\target_slice\\m36_02_deck_recipe_draft_model.json",
+    "M36-03": "outputs\\target_slice\\m36_03_deck_recipe_validation_report.json",
+    "M36-04": "outputs\\target_slice\\m36_04_combo_recipe_consistency_report.json",
+    "M36-05": "outputs\\target_slice\\m36_05_second_slice_readiness_comparison.json"
+  },
+  "input_checks": [
+    {
+      "milestone": "M36-01",
+      "title": "First-slice review packet",
+      "path": "outputs\\target_slice\\m36_01_first_slice_review_packet.json",
+      "exists": true
+    },
+    {
+      "milestone": "M36-02",
+      "title": "Deck recipe draft model",
+      "path": "outputs\\target_slice\\m36_02_deck_recipe_draft_model.json",
+      "exists": true
+    },
+    {
+      "milestone": "M36-03",
+      "title": "Deck recipe validator",
+      "path": "outputs\\target_slice\\m36_03_deck_recipe_validation_report.json",
+      "exists": true
+    },
+    {
+      "milestone": "M36-04",
+      "title": "Combo-line to recipe consistency check",
+      "path": "outputs\\target_slice\\m36_04_combo_recipe_consistency_report.json",
+      "exists": true
+    },
+    {
+      "milestone": "M36-05",
+      "title": "Second-slice readiness comparison",
+      "path": "outputs\\target_slice\\m36_05_second_slice_readiness_comparison.json",
+      "exists": true
+    }
+  ],
+  "task_summaries": [
+    {
+      "milestone": "M36-01",
+      "title": "First-slice review packet",
+      "version": "M36-01",
+      "summary": {
+        "accepted_seed_item_count": 1,
+        "rejected_line_item_count": 24,
+        "manual_card_item_count": 6,
+        "total_review_item_count": 31,
+        "ready_for_m36_02": true
+      },
+      "readiness": {},
+      "next_target": {
+        "milestone": "M36-02",
+        "task": "Deck recipe draft model",
+        "blocked_until": [
+          "M36-01 review packet is available",
+          "human/team can inspect accepted seed, rejected lines, and manual-review cards"
+        ]
+      }
+    },
+    {
+      "milestone": "M36-02",
+      "title": "Deck recipe draft model",
+      "version": "M36-02",
+      "summary": {
+        "source_skeleton_count": 25,
+        "recipe_draft_count": 25,
+        "accepted_seed_recipe_count": 1,
+        "rejected_line_recipe_count": 24,
+        "manual_overlap_recipe_count": 0,
+        "recipes_with_slot_gaps": 16,
+        "ready_for_m36_03": true
+      },
+      "readiness": {},
+      "next_target": {
+        "milestone": "M36-03",
+        "task": "Deck recipe validator"
+      }
+    },
+    {
+      "milestone": "M36-03",
+      "title": "Deck recipe validator",
+      "version": "M36-03",
+      "summary": {
+        "recipe_count": 25,
+        "runtime_ready_recipe_count": 0,
+        "validator_passed_count": 0,
+        "validator_passed_pending_human_acceptance_count": 0,
+        "invalid_draft_count": 1,
+        "blocked_by_review_count": 24,
+        "missing_card_recipe_count": 0,
+        "copy_limit_violation_recipe_count": 0,
+        "slot_gap_recipe_count": 16,
+        "trigger_count_mismatch_recipe_count": 12,
+        "issue_counts": {
+          "grade_profile_review": 25,
+          "human_acceptance_pending": 1,
+          "main_deck_size_mismatch": 16,
+          "review_status_blocked": 24,
+          "trigger_count_mismatch": 12,
+          "unfilled_slots": 16
+        },
+        "ready_for_m36_04": true
+      },
+      "readiness": {},
+      "next_target": {
+        "milestone": "M36-04",
+        "task": "Combo-line to recipe consistency check"
+      }
+    },
+    {
+      "milestone": "M36-04",
+      "title": "Combo-line to recipe consistency check",
+      "version": "M36-04",
+      "summary": {
+        "combo_line_count": 25,
+        "consistency_check_count": 25,
+        "combo_cards_present_count": 25,
+        "missing_combo_card_check_count": 0,
+        "manual_review_dependency_check_count": 0,
+        "promotion_allowed_count": 0,
+        "runtime_ready_consistent_count": 0,
+        "status_counts": {
+          "blocked_by_review": 24,
+          "invalid_recipe": 1
+        },
+        "ready_for_m36_05": true
+      },
+      "readiness": {},
+      "next_target": {
+        "milestone": "M36-05",
+        "task": "Second-slice readiness comparison"
+      }
+    },
+    {
+      "milestone": "M36-05",
+      "title": "Second-slice readiness comparison",
+      "version": "M36-05",
+      "summary": {},
+      "readiness": {
+        "second_slice_ready_for_future_recipe_pipeline": true,
+        "broader_scaleout_runtime_allowed": false,
+        "ready_for_m36_closeout": true
+      },
+      "next_target": {
+        "milestone": "M36-closeout",
+        "task": "Deck recipe validation closeout"
+      }
+    }
+  ],
+  "key_results": {
+    "review_packet": {
+      "accepted_seed_item_count": 1,
+      "rejected_line_item_count": 24,
+      "manual_card_item_count": 6,
+      "total_review_item_count": 31
+    },
+    "recipe_drafts": {
+      "recipe_draft_count": 25,
+      "accepted_seed_recipe_count": 1,
+      "rejected_line_recipe_count": 24,
+      "manual_overlap_recipe_count": 0,
+      "recipes_with_slot_gaps": 16
+    },
+    "validation": {
+      "recipe_count": 25,
+      "runtime_ready_recipe_count": 0,
+      "validator_passed_count": 0,
+      "invalid_draft_count": 1,
+      "blocked_by_review_count": 24,
+      "missing_card_recipe_count": 0,
+      "copy_limit_violation_recipe_count": 0,
+      "slot_gap_recipe_count": 16,
+      "trigger_count_mismatch_recipe_count": 12,
+      "issue_counts": {
+        "grade_profile_review": 25,
+        "human_acceptance_pending": 1,
+        "main_deck_size_mismatch": 16,
+        "review_status_blocked": 24,
+        "trigger_count_mismatch": 12,
+        "unfilled_slots": 16
+      }
+    },
+    "consistency": {
+      "combo_line_count": 25,
+      "combo_cards_present_count": 25,
+      "missing_combo_card_check_count": 0,
+      "manual_review_dependency_check_count": 0,
+      "promotion_allowed_count": 0,
+      "runtime_ready_consistent_count": 0,
+      "status_counts": {
+        "blocked_by_review": 24,
+        "invalid_recipe": 1
+      }
+    },
+    "second_slice": {
+      "future_recipe_pipeline_ready": true,
+      "broader_scaleout_runtime_allowed": false,
+      "recommendation": "second_slice_semantic_ready_but_hold_recipe_drafting_until_first_slice_review_blockers_clear",
+      "probe_candidate_edges": 259
+    }
+  },
+  "blocker_summary": {
+    "blocker_count": 5,
+    "blockers": [
+      {
+        "id": "human_review_blocked_lines",
+        "count": 24,
+        "next_action": "Triage rejected combo lines by unsupported semantic gap before re-drafting."
+      },
+      {
+        "id": "unfilled_recipe_slots",
+        "count": 16,
+        "next_action": "Generate source-backed slot-fill candidates, starting with the accepted seed recipe."
+      },
+      {
+        "id": "trigger_count_mismatch",
+        "count": 12,
+        "next_action": "Repair trigger package candidates before any recipe can be runtime-ready."
+      },
+      {
+        "id": "invalid_draft",
+        "count": 1,
+        "next_action": "Keep invalid drafts advisory until validator pass and human acceptance are both present."
+      },
+      {
+        "id": "no_promotable_combo_line",
+        "count": 1,
+        "next_action": "Do not export runtime playbooks until a validated recipe contains a promotable line."
+      }
+    ],
+    "runtime_promotion_blocked": true
+  },
+  "decision": {
+    "m36_deck_recipe_validation_closed": true,
+    "runtime_recipe_promotion_allowed": false,
+    "broader_slice_scaleout_allowed": false,
+    "recommended_next_milestone": "M37",
+    "recommendation": "repair_first_slice_recipe_blockers_before_runtime_or_broader_scaleout"
+  },
+  "next_queue_selection": {
+    "milestone": "M37",
+    "name": "First-slice blocker resolution and recipe repair",
+    "why_this_next": [
+      "M36 found zero runtime-ready recipes and zero promotable combo lines.",
+      "The accepted seed is the safest repair target because it has static review acceptance but still has slot and trigger blockers.",
+      "Rejected lines need support-gap triage before broader slice expansion or bot/runtime use."
+    ],
+    "first_tasks": [
+      {
+        "id": "M37-01",
+        "title": "Accepted seed slot-gap completion candidates",
+        "goal": "Suggest source-backed candidates for missing recipe slots without auto-promoting them."
+      },
+      {
+        "id": "M37-02",
+        "title": "Trigger package repair proposal",
+        "goal": "Repair trigger-count mismatch candidates for the accepted seed recipe."
+      },
+      {
+        "id": "M37-03",
+        "title": "Rejected-line support-gap triage",
+        "goal": "Group blocked combo lines by unsupported semantic or review reason."
+      },
+      {
+        "id": "M37-04",
+        "title": "Manual semantic mapping candidates",
+        "goal": "Create reviewable mappings for unsupported effects such as bounce-to-hand style interactions."
+      },
+      {
+        "id": "M37-05",
+        "title": "Revised recipe validation rerun",
+        "goal": "Re-run recipe validator and consistency checks after accepted repairs are documented."
+      },
+      {
+        "id": "M37-closeout",
+        "title": "First runtime-ready recipe decision",
+        "goal": "Decide whether a recipe can become a runtime/test fixture or remains advisory only."
+      }
+    ],
+    "hard_gates": [
+      "no runtime deck promotion until validator_passed and human_acceptance are both true",
+      "no bot/playbook promotion until combo consistency promotion_allowed is true",
+      "no automatic fill from raw card text without reviewable source evidence",
+      "no direct GameState mutation",
+      "no hidden-state or private deck leakage"
+    ]
+  }
+}

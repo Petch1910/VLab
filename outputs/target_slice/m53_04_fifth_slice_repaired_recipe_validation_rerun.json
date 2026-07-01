@@ -1,0 +1,326 @@
+{
+  "version": "M53-04",
+  "description": "Fifth-slice repaired recipe validation rerun",
+  "selected_target": {
+    "slice": "Fifth Offline Slice",
+    "era_preset": "link_joker_legion_mate",
+    "group": "โกลด์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 3,
+    "priority_score": 77.85,
+    "best_era_candidates": 2006,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "rich_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "m53_03_human_accepted_repair_artifact": "outputs\\target_slice\\m53_03_fifth_slice_human_accepted_repair_artifact.json"
+  },
+  "scope": {
+    "offline_in_memory_validation_rerun": true,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false,
+    "declares_runtime_fixture_ready": false
+  },
+  "accepted_context": {
+    "accepted_review_item_id": "m53_01_m52_recipe_001_repair_review",
+    "accepted_recipe_id": "m52_recipe_001",
+    "accepted_grade_profile_package_id": "m52_recipe_001_grade_profile_pkg_001",
+    "human_selection_recorded": true,
+    "human_acceptance_recorded": true,
+    "accepted_artifact_ready_for_validation": true
+  },
+  "repaired_recipe_rows": [
+    {
+      "card_id": "BT10-011TH",
+      "quantity": 3
+    },
+    {
+      "card_id": "BT10-012TH",
+      "quantity": 2
+    },
+    {
+      "card_id": "BT10-025TH",
+      "quantity": 3
+    },
+    {
+      "card_id": "BT10-053TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT10-054TH",
+      "quantity": 3
+    },
+    {
+      "card_id": "BT10-055TH",
+      "quantity": 2
+    },
+    {
+      "card_id": "BT10-056TH",
+      "quantity": 3
+    },
+    {
+      "card_id": "BT10-057TH",
+      "quantity": 1
+    },
+    {
+      "card_id": "BT10-059TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT10-060TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT12-053TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "BT14-003TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "TD08-009TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "TD16-013TH",
+      "quantity": 1
+    },
+    {
+      "card_id": "TD16-015TH",
+      "quantity": 4
+    },
+    {
+      "card_id": "TD16-017TH",
+      "quantity": 4
+    }
+  ],
+  "repaired_recipe_validation": {
+    "recipe_id": "m52_recipe_001",
+    "validation_status": "validator_passed",
+    "runtime_ready": true,
+    "blocking_issue_count": 0,
+    "blocker_codes": [],
+    "review_codes": [],
+    "count_summary": {
+      "main_deck_target": 50,
+      "explicit_card_count": 50,
+      "trigger_count": 16,
+      "trigger_counts": {
+        "Critical": 4,
+        "Draw": 4,
+        "Heal": 4,
+        "Stand": 4
+      },
+      "grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "clan_counts": {
+        "โกลด์ พาลาดิน": 50
+      }
+    }
+  },
+  "repaired_recipe_consistency": {
+    "recipe_id": "m52_recipe_001",
+    "consistency_status": "consistent_validator_passed",
+    "pair_cards_present": true,
+    "promotion_allowed_by_validation_and_consistency": true,
+    "source_card_id": "BT14-003TH",
+    "target_card_id": "BT12-053TH"
+  },
+  "validation_report_preview": {
+    "version": "M52-04",
+    "description": "Fifth-slice recipe validator for M52-03 advisory drafts",
+    "selected_target": {
+      "slice": "Fifth Offline Slice",
+      "era_preset": "link_joker_legion_mate",
+      "group": "โกลด์ พาลาดิน",
+      "group_field": "clan",
+      "rank": 3,
+      "priority_score": 77.85,
+      "best_era_candidates": 2006,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "rich_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    "source_inputs": {
+      "fifth_slice_recipe_draft_model": "outputs\\target_slice\\m52_03_fifth_slice_recipe_draft_model.json",
+      "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+    },
+    "scope": {
+      "offline_validator": true,
+      "saved_deck_injection": false,
+      "ui_deck_list_publication": false,
+      "runtime_deck": false,
+      "bot_playbook": false,
+      "automatic_deck_injection": false,
+      "direct_GameState_mutation": false
+    },
+    "validation_policy": {
+      "classic_main_deck_size": 50,
+      "classic_trigger_count": 16,
+      "heal_trigger_max": 4,
+      "copy_limit_from_sqlite_deck_limit": true,
+      "grade_profile_mismatch_is_review_not_blocker": true,
+      "manual_review_card_overlap_is_blocking": true,
+      "human_selection_pending_is_review_not_blocker": true
+    },
+    "summary": {
+      "recipe_count": 1,
+      "runtime_ready_recipe_count": 1,
+      "validator_passed_count": 1,
+      "validator_passed_pending_human_selection_count": 0,
+      "invalid_draft_count": 0,
+      "blocked_by_manual_review_count": 0,
+      "missing_card_recipe_count": 0,
+      "copy_limit_violation_recipe_count": 0,
+      "slot_gap_recipe_count": 0,
+      "trigger_count_mismatch_recipe_count": 0,
+      "manual_review_overlap_recipe_count": 0,
+      "grade_profile_review_recipe_count": 0,
+      "issue_counts": {},
+      "ready_for_m52_05": true
+    },
+    "recipe_validations": [
+      {
+        "recipe_id": "m52_recipe_001",
+        "source_candidate_edge": "BT14-003TH->BT12-053TH",
+        "source_edge_rank": null,
+        "anchor_card_id": "BT14-003TH",
+        "review_status": "human_accepted_repair_pending_validation",
+        "validation_status": "validator_passed",
+        "blocking_issue_count": 0,
+        "issues": [],
+        "count_summary": {
+          "main_deck_target": 50,
+          "explicit_card_count": 50,
+          "trigger_count": 16,
+          "trigger_counts": {
+            "Critical": 4,
+            "Draw": 4,
+            "Heal": 4,
+            "Stand": 4
+          },
+          "grade_counts": {
+            "0": 17,
+            "1": 14,
+            "2": 11,
+            "3": 8
+          },
+          "clan_counts": {
+            "โกลด์ พาลาดิน": 50
+          }
+        },
+        "runtime_ready": true
+      }
+    ],
+    "next_target": {
+      "milestone": "M52-05",
+      "task": "Fifth-slice combo-to-recipe consistency"
+    }
+  },
+  "consistency_report_preview": {
+    "version": "M52-05",
+    "description": "Fifth-slice candidate edge to recipe consistency check",
+    "selected_target": {
+      "slice": "Fifth Offline Slice",
+      "era_preset": "link_joker_legion_mate",
+      "group": "โกลด์ พาลาดิน",
+      "group_field": "clan",
+      "rank": 3,
+      "priority_score": 77.85,
+      "best_era_candidates": 2006,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "rich_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    "source_inputs": {
+      "fifth_slice_recipe_draft_model": "outputs\\target_slice\\m52_03_fifth_slice_recipe_draft_model.json",
+      "fifth_slice_recipe_validation_report": "outputs\\target_slice\\m52_04_fifth_slice_recipe_validation_report.json"
+    },
+    "scope": {
+      "offline_consistency_check": true,
+      "saved_deck_injection": false,
+      "ui_deck_list_publication": false,
+      "runtime_deck": false,
+      "bot_playbook": false,
+      "automatic_deck_injection": false,
+      "direct_GameState_mutation": false
+    },
+    "summary": {
+      "recipe_count": 1,
+      "consistency_check_count": 1,
+      "pair_cards_present_count": 1,
+      "missing_pair_card_check_count": 0,
+      "pair_manual_dependency_check_count": 0,
+      "recipe_manual_dependency_check_count": 0,
+      "promotion_allowed_count": 1,
+      "runtime_ready_consistent_count": 1,
+      "status_counts": {
+        "consistent_validator_passed": 1
+      },
+      "ready_for_m52_06": true
+    },
+    "consistency_checks": [
+      {
+        "recipe_id": "m52_recipe_001",
+        "source_candidate_edge": "BT14-003TH->BT12-053TH",
+        "source_edge_rank": null,
+        "source_card_id": "BT14-003TH",
+        "target_card_id": "BT12-053TH",
+        "pair_card_count": 2,
+        "recipe_card_id_count": 16,
+        "pair_cards_present": true,
+        "missing_pair_card_ids": [],
+        "pair_manual_review_dependencies": [],
+        "recipe_manual_review_dependencies": [],
+        "recipe_validation_status": "validator_passed",
+        "recipe_runtime_ready": true,
+        "consistency_status": "consistent_validator_passed",
+        "promotion_allowed": true
+      }
+    ],
+    "next_target": {
+      "milestone": "M52-06",
+      "task": "Fifth-slice blocker repair candidates"
+    }
+  },
+  "summary": {
+    "accepted_recipe_id": "m52_recipe_001",
+    "validation_status": "validator_passed",
+    "consistency_status": "consistent_validator_passed",
+    "runtime_ready_recipe_count": 1,
+    "promotion_allowed_count": 1,
+    "blocking_issue_count": 0,
+    "review_issue_count": 0,
+    "runtime_fixture_promotion_allowed": false,
+    "ready_for_m53_05": true
+  },
+  "next_target": {
+    "milestone": "M53-05",
+    "task": "Fifth-slice runtime fixture promotion gate"
+  }
+}

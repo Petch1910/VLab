@@ -1,0 +1,239 @@
+{
+  "version": "M41-04",
+  "description": "Second-slice runtime fixture promotion gate",
+  "source_inputs": {
+    "trigger_repair_acceptance_artifact": "outputs\\target_slice\\m41_repair_accept_second_slice_trigger_repair_artifact.json",
+    "trigger_repaired_recipe_validation": "outputs\\target_slice\\m41_repair_validate_second_slice_repaired_recipe.json",
+    "second_slice_combo_recipe_consistency": "outputs\\target_slice\\m40_04_second_slice_combo_recipe_consistency_report.json"
+  },
+  "scope": {
+    "offline_promotion_gate": true,
+    "creates_runtime_test_fixture_artifact": true,
+    "mutates_runtime_deck_library": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_integration": false,
+    "automatic_playbook_promotion": false,
+    "live_card_text_parsing": false,
+    "GameState_mutation": false
+  },
+  "gate_policy": {
+    "requires_human_acceptance": true,
+    "requires_validation_pass": true,
+    "requires_grade_profile_clear": true,
+    "requires_combo_pair_consistency": true,
+    "requires_manual_review_cleared_after_repair": true,
+    "fixture_only_not_live_deck": true
+  },
+  "gate_checks": [
+    {
+      "check_id": "human_acceptance",
+      "passed": true,
+      "evidence": {
+        "decision": "accepted",
+        "accepted_package_id": "m41_repair_pkg_001"
+      }
+    },
+    {
+      "check_id": "validation",
+      "passed": true,
+      "evidence": {
+        "validation_status": "validator_passed",
+        "runtime_ready": true,
+        "blocking_issue_count": 0,
+        "main_deck_count": 50,
+        "trigger_count": 16
+      }
+    },
+    {
+      "check_id": "grade_profile_review",
+      "passed": true,
+      "evidence": {
+        "grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        }
+      }
+    },
+    {
+      "check_id": "combo_pair_consistency",
+      "passed": true,
+      "evidence": {
+        "source_candidate_edge": "BT01-006TH->BT02-033TH",
+        "expected_edge": "BT01-006TH->BT02-033TH",
+        "pair_cards_present": true,
+        "missing_pair_card_ids": [],
+        "pair_manual_review_dependencies": [],
+        "previous_recipe_manual_dependencies": [
+          "BT07-096TH",
+          "BT09-068TH"
+        ]
+      }
+    },
+    {
+      "check_id": "manual_review_cleared_after_repair",
+      "passed": true,
+      "evidence": {
+        "manual_review_card_overlap_cleared": true,
+        "manual_review_card_ids_present": []
+      }
+    },
+    {
+      "check_id": "runtime_boundary",
+      "passed": true,
+      "evidence": {
+        "validation_promotion_allowed": false,
+        "accept_creates_runtime_fixture": false,
+        "accept_saved_deck_injection": false,
+        "accept_ui_deck_list_publication": false,
+        "accept_bot_playbook": false,
+        "accept_direct_GameState_mutation": false
+      }
+    }
+  ],
+  "promotion_decision": {
+    "promotion_allowed": true,
+    "fixture_created": true,
+    "fixture_path": "outputs/target_slice/runtime_fixtures/m40_recipe_001_classic_core_oracle_think_tank_m41_04.json",
+    "runtime_deck_library_mutated": false,
+    "saved_deck_injected": false,
+    "ui_deck_list_published": false,
+    "bot_playbook_enabled": false,
+    "next_action": "M41-closeout"
+  },
+  "runtime_fixture": {
+    "schema_version": "deck_recipe_runtime_fixture_v1",
+    "fixture_id": "runtime_fixture_m40_recipe_001_classic_core_oracle_think_tank_m41_04",
+    "fixture_scope": "offline_runtime_test_fixture",
+    "recipe_id": "m40_recipe_001",
+    "source_artifact": "outputs/target_slice/m41_repair_accept_second_slice_trigger_repair_artifact.json",
+    "selected_target": {
+      "slice": "Classic Core",
+      "era_preset": "classic_part1",
+      "group": "โอราเคิล ทิงค์ แทงค์",
+      "group_field": "clan",
+      "rank": 10,
+      "priority_score": 63.74,
+      "best_era_candidates": 875,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "MEDIUM_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool"
+      ]
+    },
+    "format_policy": {
+      "slice": "Classic Core",
+      "era_preset": "classic_part1",
+      "group": "โอราเคิล ทิงค์ แทงค์",
+      "group_field": "clan"
+    },
+    "main_deck": [
+      {
+        "card_id": "BT01-006TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "BT01-007TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "BT01-017TH",
+        "quantity": 1
+      },
+      {
+        "card_id": "BT01-027TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "BT01-056TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "BT01-058TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "BT02-033TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "BT02-067TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "EB05-028TH",
+        "quantity": 1
+      },
+      {
+        "card_id": "TD04-001TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "TD04-004TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "TD04-005TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "TD04-006TH",
+        "quantity": 2
+      },
+      {
+        "card_id": "TD04-007TH",
+        "quantity": 4
+      },
+      {
+        "card_id": "TD04-008TH",
+        "quantity": 2
+      }
+    ],
+    "count_summary": {
+      "main_deck_count": 50,
+      "trigger_count": 16,
+      "trigger_counts": {
+        "Critical": 4,
+        "Draw": 4,
+        "Heal": 4,
+        "Stand": 4
+      },
+      "grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "clan_counts": {
+        "โอราเคิล ทิงค์ แทงค์": 50
+      }
+    },
+    "source_packages": {
+      "base_grade_package_id": "m40_recipe_001_grade_profile_pkg_001",
+      "trigger_repair_package_id": "m41_repair_pkg_001"
+    },
+    "runtime_boundaries": {
+      "test_fixture_only": true,
+      "auto_injected_into_player_decks": false,
+      "bot_playbook_enabled": false,
+      "ui_deck_library_mutated": false,
+      "game_state_mutated": false
+    }
+  },
+  "summary": {
+    "recipe_id": "m40_recipe_001",
+    "promotion_allowed": true,
+    "passed_check_count": 6,
+    "failed_check_count": 0,
+    "fixture_created": true,
+    "ready_for_m41_closeout": true
+  },
+  "next_target": {
+    "milestone": "M41-closeout",
+    "task": "Second-slice fixture closeout"
+  }
+}

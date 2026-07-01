@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "pack_id": "custom_starter_pack",
+  "display_name": "Custom Starter Pack",
+  "source_version": "1.0.0",
+  "format": "custom",
+  "language": "th",
+  "cards_file": "cards.csv",
+  "image_root": "images",
+  "author": "Creator name",
+  "description": "Minimal template for a custom card pack.",
+  "license": "personal-use"
+}

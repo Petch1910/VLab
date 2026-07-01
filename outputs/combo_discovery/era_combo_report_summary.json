@@ -1,0 +1,466 @@
+{
+  "schema_version": 1,
+  "generator": "tools/combo/discover_clan_combos.py presets",
+  "note": "offline advisory only; generated from runtime SQLite card pack",
+  "reports": [
+    {
+      "preset": "classic_part1",
+      "path": "outputs/combo_discovery/classic_part1_clan_combos.json",
+      "card_count": 1052,
+      "group_count": 21,
+      "nonempty_group_count": 20,
+      "candidate_pair_count": 6846,
+      "missing_set_codes": [],
+      "top_groups": [
+        {
+          "group": "โนว่า เกรปเปอร์",
+          "group_field": "clan",
+          "card_count": 112,
+          "combo_pair_count": 1326,
+          "top_pair_id": "BT04-039TH+BT04-075TH",
+          "top_pair_score": 268
+        },
+        {
+          "group": "โอราเคิล ทิงค์ แทงค์",
+          "group_field": "clan",
+          "card_count": 103,
+          "combo_pair_count": 875,
+          "top_pair_id": "BT09-003TH+EB05-001TH",
+          "top_pair_score": 242
+        },
+        {
+          "group": "โกลด์ พาลาดิน",
+          "group_field": "clan",
+          "card_count": 60,
+          "combo_pair_count": 847,
+          "top_pair_id": "EB03-014TH+EB03-029TH",
+          "top_pair_score": 326
+        },
+        {
+          "group": "เกรท เนเจอร์",
+          "group_field": "clan",
+          "card_count": 56,
+          "combo_pair_count": 568,
+          "top_pair_id": "BT07-053TH+BT07-059TH",
+          "top_pair_score": 271
+        },
+        {
+          "group": "รอยัล พาลาดิน",
+          "group_field": "clan",
+          "card_count": 62,
+          "combo_pair_count": 441,
+          "top_pair_id": "BT03-018TH+BT03-062TH",
+          "top_pair_score": 207
+        }
+      ]
+    },
+    {
+      "preset": "link_joker_legion_mate",
+      "path": "outputs/combo_discovery/link_joker_legion_mate_clan_combos.json",
+      "card_count": 1329,
+      "group_count": 23,
+      "nonempty_group_count": 23,
+      "candidate_pair_count": 12645,
+      "missing_set_codes": [],
+      "top_groups": [
+        {
+          "group": "เบอร์มิวด้า ไทรแองเกิล",
+          "group_field": "clan",
+          "card_count": 127,
+          "combo_pair_count": 2179,
+          "top_pair_id": "EB10-001TH-B+EB10-001TH-W",
+          "top_pair_score": 274
+        },
+        {
+          "group": "โกลด์ พาลาดิน",
+          "group_field": "clan",
+          "card_count": 106,
+          "combo_pair_count": 2006,
+          "top_pair_id": "BT10-003TH+BT10-057TH",
+          "top_pair_score": 199
+        },
+        {
+          "group": "คาเงโร่",
+          "group_field": "clan",
+          "card_count": 121,
+          "combo_pair_count": 1283,
+          "top_pair_id": "BT15-005TH+EB09-004TH",
+          "top_pair_score": 237
+        },
+        {
+          "group": "เจเนซิส",
+          "group_field": "clan",
+          "card_count": 104,
+          "combo_pair_count": 1052,
+          "top_pair_id": "BT10-030TH+BT10-067TH",
+          "top_pair_score": 280
+        },
+        {
+          "group": "รอยัล พาลาดิน",
+          "group_field": "clan",
+          "card_count": 79,
+          "combo_pair_count": 999,
+          "top_pair_id": "BT14-021TH+BT14-046TH",
+          "top_pair_score": 306
+        }
+      ]
+    },
+    {
+      "preset": "g_series_first",
+      "path": "outputs/combo_discovery/g_series_first_clan_combos.json",
+      "card_count": 1328,
+      "group_count": 25,
+      "nonempty_group_count": 25,
+      "candidate_pair_count": 13010,
+      "missing_set_codes": [
+        "G-SD01",
+        "G-SD02"
+      ],
+      "top_groups": [
+        {
+          "group": "เกียร์โครนิเคิล",
+          "group_field": "clan",
+          "card_count": 174,
+          "combo_pair_count": 3155,
+          "top_pair_id": "G-BT04-002TH+G-TD01-002TH",
+          "top_pair_score": 177
+        },
+        {
+          "group": "เบอร์มิวด้า ไทรแองเกิล",
+          "group_field": "clan",
+          "card_count": 95,
+          "combo_pair_count": 1531,
+          "top_pair_id": "G-CB01-003TH-B+G-CB01-003TH-W",
+          "top_pair_score": 328
+        },
+        {
+          "group": "เนโอ เนคต้า",
+          "group_field": "clan",
+          "card_count": 78,
+          "combo_pair_count": 1208,
+          "top_pair_id": "G-BT08-041TH+G-BT08-043TH",
+          "top_pair_score": 230
+        },
+        {
+          "group": "รอยัล พาลาดิน",
+          "group_field": "clan",
+          "card_count": 71,
+          "combo_pair_count": 1024,
+          "top_pair_id": "G-BT02-010TH+G-BT06-024TH",
+          "top_pair_score": 207
+        },
+        {
+          "group": "อควอฟอร์ซ",
+          "group_field": "clan",
+          "card_count": 77,
+          "combo_pair_count": 999,
+          "top_pair_id": "G-CB02-002TH+G-CB02-003TH",
+          "top_pair_score": 180
+        }
+      ]
+    },
+    {
+      "preset": "g_next_z",
+      "path": "outputs/combo_discovery/g_next_z_clan_combos.json",
+      "card_count": 1109,
+      "group_count": 28,
+      "nonempty_group_count": 24,
+      "candidate_pair_count": 8181,
+      "missing_set_codes": [],
+      "top_groups": [
+        {
+          "group": "เบอร์มิวด้า ไทรแองเกิล",
+          "group_field": "clan",
+          "card_count": 136,
+          "combo_pair_count": 2133,
+          "top_pair_id": "G-CB05-013 BTH+G-CB05-013 WTH",
+          "top_pair_score": 288
+        },
+        {
+          "group": "ชาโดว์ พาลาดิน",
+          "group_field": "clan",
+          "card_count": 77,
+          "combo_pair_count": 864,
+          "top_pair_id": "G-BT09-026TH+G-TD10-009TH",
+          "top_pair_score": 167
+        },
+        {
+          "group": "รอยัล พาลาดิน",
+          "group_field": "clan",
+          "card_count": 71,
+          "combo_pair_count": 845,
+          "top_pair_id": "G-CHB01-025TH+G-CHB01-027TH",
+          "top_pair_score": 242
+        },
+        {
+          "group": "เนโอ เนคต้า",
+          "group_field": "clan",
+          "card_count": 70,
+          "combo_pair_count": 743,
+          "top_pair_id": "G-BT10-102TH+G-CHB01-071TH",
+          "top_pair_score": 173
+        },
+        {
+          "group": "เกียร์โครนิเคิล",
+          "group_field": "clan",
+          "card_count": 77,
+          "combo_pair_count": 576,
+          "top_pair_id": "G-BT12-088TH+G-BT12-092TH",
+          "top_pair_score": 255
+        }
+      ]
+    },
+    {
+      "preset": "v_reboot",
+      "path": "outputs/combo_discovery/v_reboot_clan_combos.json",
+      "card_count": 1183,
+      "group_count": 26,
+      "nonempty_group_count": 24,
+      "candidate_pair_count": 4266,
+      "missing_set_codes": [],
+      "top_groups": [
+        {
+          "group": "รอยัล พาลาดิน",
+          "group_field": "clan",
+          "card_count": 75,
+          "combo_pair_count": 551,
+          "top_pair_id": "V-BT03-006TH+V-BT03-007TH",
+          "top_pair_score": 276
+        },
+        {
+          "group": "โอราเคิล ทิงค์ แทงค์",
+          "group_field": "clan",
+          "card_count": 78,
+          "combo_pair_count": 490,
+          "top_pair_id": "V-BT05/008TH+V-BT05/009TH",
+          "top_pair_score": 223
+        },
+        {
+          "group": "ชาโดว์ พาลาดิน",
+          "group_field": "clan",
+          "card_count": 72,
+          "combo_pair_count": 488,
+          "top_pair_id": "V-BT04-044TH+V-BT04-047TH",
+          "top_pair_score": 280
+        },
+        {
+          "group": "เพลมูน",
+          "group_field": "clan",
+          "card_count": 59,
+          "combo_pair_count": 344,
+          "top_pair_id": "V-BT04-079TH+V-BT04-084TH",
+          "top_pair_score": 266
+        },
+        {
+          "group": "มุราคุโมะ",
+          "group_field": "clan",
+          "card_count": 59,
+          "combo_pair_count": 339,
+          "top_pair_id": "V-BT02-016TH+V-BT02-052TH",
+          "top_pair_score": 200
+        }
+      ]
+    },
+    {
+      "preset": "v_shinemon_if",
+      "path": "outputs/combo_discovery/v_shinemon_if_clan_combos.json",
+      "card_count": 1055,
+      "group_count": 32,
+      "nonempty_group_count": 26,
+      "candidate_pair_count": 3320,
+      "missing_set_codes": [
+        "V-BT13",
+        "V-BT14",
+        "V-SS02",
+        "V-SS03",
+        "V-SS04",
+        "V-SS05",
+        "V-SS06",
+        "V-SS08",
+        "V-SS09",
+        "V-SS10"
+      ],
+      "top_groups": [
+        {
+          "group": "เบอร์มิวด้า ไทรแองเกิล",
+          "group_field": "clan",
+          "card_count": 101,
+          "combo_pair_count": 688,
+          "top_pair_id": "V-EB15-008TH+V-EB15-025TH",
+          "top_pair_score": 159
+        },
+        {
+          "group": "ชาโดว์ พาลาดิน",
+          "group_field": "clan",
+          "card_count": 50,
+          "combo_pair_count": 262,
+          "top_pair_id": "V-BT10-001TH+V-BT10-006TH",
+          "top_pair_score": 183
+        },
+        {
+          "group": "เกียร์โครนิเคิล",
+          "group_field": "clan",
+          "card_count": 65,
+          "combo_pair_count": 241,
+          "top_pair_id": "V-EB14-002TH+V-TD10-002TH",
+          "top_pair_score": 245
+        },
+        {
+          "group": "แองเจิล ฟิทเธอร์",
+          "group_field": "clan",
+          "card_count": 65,
+          "combo_pair_count": 241,
+          "top_pair_id": "V-EB13-001TH+V-EB13-023TH",
+          "top_pair_score": 133
+        },
+        {
+          "group": "นุบาทามะ",
+          "group_field": "clan",
+          "card_count": 49,
+          "combo_pair_count": 195,
+          "top_pair_id": "V-BT11-002TH+V-BT11-006TH",
+          "top_pair_score": 188
+        }
+      ]
+    },
+    {
+      "preset": "d_overdress",
+      "path": "outputs/combo_discovery/d_overdress_clan_combos.json",
+      "card_count": 848,
+      "group_count": 10,
+      "nonempty_group_count": 9,
+      "candidate_pair_count": 4958,
+      "missing_set_codes": [],
+      "top_groups": [
+        {
+          "group": "ลิริคัลโมนาสเทริโอ้",
+          "group_field": "nation",
+          "card_count": 200,
+          "combo_pair_count": 1288,
+          "top_pair_id": "D-LBT01-001TH+D-LBT01-021TH",
+          "top_pair_score": 280
+        },
+        {
+          "group": "ดราก้อนเอมไพร์",
+          "group_field": "nation",
+          "card_count": 123,
+          "combo_pair_count": 966,
+          "top_pair_id": "D-SD01-002TH+D-SD01-003TH",
+          "top_pair_score": 200
+        },
+        {
+          "group": "ดาร์คสเตทส์",
+          "group_field": "nation",
+          "card_count": 124,
+          "combo_pair_count": 826,
+          "top_pair_id": "D-BT01-003TH+D-BT02-034TH",
+          "top_pair_score": 174
+        },
+        {
+          "group": "สโตยเคีย",
+          "group_field": "nation",
+          "card_count": 124,
+          "combo_pair_count": 719,
+          "top_pair_id": "D-BT03-050TH+D-BT03-113TH",
+          "top_pair_score": 242
+        },
+        {
+          "group": "เคเทอร์แซงค์ทัวรี",
+          "group_field": "nation",
+          "card_count": 127,
+          "combo_pair_count": 670,
+          "top_pair_id": "D-BT05-010TH+D-BT05-011TH",
+          "top_pair_score": 228
+        }
+      ]
+    },
+    {
+      "preset": "d_willdress",
+      "path": "outputs/combo_discovery/d_willdress_clan_combos.json",
+      "card_count": 808,
+      "group_count": 10,
+      "nonempty_group_count": 9,
+      "candidate_pair_count": 6457,
+      "missing_set_codes": [
+        "D-BT11",
+        "D-BT12",
+        "D-BT13",
+        "D-LBT04",
+        "D-SS02",
+        "D-SS06",
+        "D-SS07",
+        "D-SS08",
+        "D-SS09",
+        "D-SS10",
+        "D-SS11"
+      ],
+      "top_groups": [
+        {
+          "group": "ลิริคัลโมนาสเทริโอ้",
+          "group_field": "nation",
+          "card_count": 142,
+          "combo_pair_count": 1636,
+          "top_pair_id": "D-SS05-011TH+D-SS05-032TH",
+          "top_pair_score": 145
+        },
+        {
+          "group": "สโตยเคีย",
+          "group_field": "nation",
+          "card_count": 126,
+          "combo_pair_count": 1380,
+          "top_pair_id": "D-BT09-090TH+D-BT09-091TH",
+          "top_pair_score": 228
+        },
+        {
+          "group": "ดาร์คสเตทส์",
+          "group_field": "nation",
+          "card_count": 127,
+          "combo_pair_count": 1028,
+          "top_pair_id": "D-BT09-067TH+D-BT09-070TH",
+          "top_pair_score": 257
+        },
+        {
+          "group": "เคเทอร์แซงค์ทัวรี",
+          "group_field": "nation",
+          "card_count": 126,
+          "combo_pair_count": 838,
+          "top_pair_id": "D-BT09-084TH+D-BT09-088TH",
+          "top_pair_score": 244
+        },
+        {
+          "group": "ดราก้อนเอมไพร์",
+          "group_field": "nation",
+          "card_count": 124,
+          "combo_pair_count": 805,
+          "top_pair_id": "D-BT06-059TH+D-BT06-062TH",
+          "top_pair_score": 180
+        }
+      ]
+    },
+    {
+      "preset": "dz_divinez",
+      "path": "outputs/combo_discovery/dz_divinez_clan_combos.json",
+      "card_count": 0,
+      "group_count": 0,
+      "nonempty_group_count": 0,
+      "candidate_pair_count": 0,
+      "missing_set_codes": [
+        "DZ-SD01",
+        "DZ-SD02",
+        "DZ-SD03",
+        "DZ-SD04",
+        "DZ-SD05",
+        "DZ-SD06",
+        "DZ-BT01",
+        "DZ-BT02",
+        "DZ-BT03",
+        "DZ-BT04",
+        "DZ-BT05",
+        "DZ-SS01",
+        "DZ-SS02",
+        "DZ-SS03"
+      ],
+      "top_groups": []
+    }
+  ]
+}

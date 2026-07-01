@@ -1,0 +1,16 @@
+{
+  "exported_at": "2026-06-19T00:14:16.199366+00:00",
+  "source_pointer_url": "https://user-api.kkcardfight.com/api/player/card/list?gameId=62a192ac1991c4ed95b6a12e",
+  "source_card_file_url": "https://files.kkcardfight.com/games/data/vgth/card-detail-251.json",
+  "game_detail": {
+    "id": "62a192ac1991c4ed95b6a12e",
+    "name": "Vanguard TH",
+    "gameId": "97",
+    "cardVersionNo": 251,
+    "cardDeletedVersionNo": 31
+  },
+  "total_from_source": 10836,
+  "total_exported": 10836,
+  "series_count": 206,
+  "clan_count": 33
+}

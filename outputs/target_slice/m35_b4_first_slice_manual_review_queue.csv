@@ -1,0 +1,7 @@
+﻿card_id,name_th,series_code,grade,trigger,type_1,manual_review_reasons,unmapped_feature_tags,requirements,providers
+BT04-039TH,เบลาจังเกอร์,BT04,0,,Normal Unit,unmapped_feature_tags,bounce_to_hand,requires_on_ride_timing,provides_deck_recycle;provides_search
+BT04-075TH,เบลาแพนเซอร์,BT04,1,,Normal Unit,unmapped_feature_tags,bounce_to_hand,requires_on_call_timing;requires_rear_guard_circle;requires_vanguard_circle,provides_deck_recycle;provides_power_pressure;provides_search;provides_soul_resource
+BT06-098TH,"สัตว์เทวะ,แบล็ค โททัส",BT06,2,,Normal Unit,unmapped_feature_tags,bounce_to_hand,requires_attack_hit;requires_hit_timing;requires_on_attack_timing,provides_search
+BT06-100TH,ออลไมท์ตี้ รีพอตเตอร์,BT06,1,,Normal Unit,unmapped_feature_tags,bounce_to_hand,requires_attack_hit;requires_boost_timing;requires_boosted;requires_hit_timing;requires_on_attack_timing;requires_rear_guard_circle,
+BT06-101TH,"สัตว์เทวะ,สกาเล็ท เบิร์ด",BT06,1,,Normal Unit,unmapped_feature_tags,bounce_to_hand,requires_attack_hit;requires_hit_timing;requires_on_attack_timing,provides_search
+BT09-074TH,"วิวัฒนาการแห่งการเคลื่อนย้าย,มิไรโอ",BT09,0,,Normal Unit,unmapped_feature_tags,bounce_to_hand,requires_counter_blast;requires_on_ride_timing;requires_rear_guard_circle,provides_deck_recycle;provides_search;provides_soul_resource
