@@ -382,7 +382,12 @@ Active order:
   M57-03 output and explicit option selection. M57-05 spec/tool/tests are
   scaffolded and verified (`18/18` targeted across M57-04/M57-05, `1164/1164`
   full Python), but its real repaired validation report remains gated on M57-03
-  and M57-04 outputs.
+  and M57-04 outputs. M57-06 spec/tool/tests are scaffolded and verified
+  (`9/9` targeted, `1173/1173` full Python); it can create only an offline
+  runtime/test fixture after M57-03 accepted rows and M57-05 validation exist,
+  while saved deck/UI, bot/playbook, G Zone/Stride runtime, and `GameState`
+  mutation remain disabled. Current next target is `M57-closeout` sixth-slice
+  fixture closeout.
 
 Deferred until explicit user instruction:
 

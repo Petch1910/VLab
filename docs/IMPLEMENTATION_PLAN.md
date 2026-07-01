@@ -80,7 +80,7 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M57-02 sixth-slice human-selected recipe artifact
+-> current next target: M57-closeout sixth-slice fixture closeout
 ```
 
 ## Completed Phases (M0-M19)
@@ -2315,6 +2315,18 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     pass `18/18`; full Python unittest discovery passes `1164/1164`. The real
     `outputs/target_slice/m57_05_*` report is not generated until M57-03 and
     M57-04 outputs exist.
+- `M57-06`: Sixth-slice runtime fixture promotion gate. **Blocked by M57-05 output; scaffold ready.**
+  - Promote only an offline runtime/test fixture after M57-03 accepted rows and
+    M57-05 validation/consistency both pass.
+  - Require the `main_deck_only_review_no_runtime_promotion` G Zone / Stride
+    boundary, 50 cards, 16 triggers, grade profile `17/14/11/8`, Grade 4 main
+    deck count `0`, pair-card consistency, and source-row integrity.
+  - Keep saved deck injection, UI publication, bot/playbook integration,
+    G Zone runtime, Stride runtime, and `GameState` mutation disabled.
+  - Scaffold status: spec/tool/tests are present. Targeted M57-06 tests pass
+    `9/9`; full Python unittest discovery passes `1173/1173`. The real
+    `outputs/target_slice/m57_06_*` gate report and fixture are not generated
+    until M57-03 and M57-05 outputs exist.
 
 ## Post-M28 Backlog (not in active queue)
 

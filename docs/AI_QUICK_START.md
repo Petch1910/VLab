@@ -37,7 +37,7 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M57-02 sixth-slice human-selected recipe artifact
+-> current target: M57-closeout sixth-slice fixture closeout
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -495,6 +495,11 @@ Windows-first program completion
    18/18 and full Python tests 1164/1164 pass. It validates the repaired
    main-deck preview after the M57-04 boundary and checks combo consistency,
    while keeping runtime fixture promotion deferred to M57-06
+-> M57-06 tooling/spec/tests are scaffolded; targeted M57-06 tests 9/9 and
+   full Python tests 1173/1173 pass. It can create only an offline runtime/test
+   fixture after M57-03 accepted rows and M57-05 validation exist; saved deck,
+   UI publication, bot/playbook, G Zone/Stride runtime, and GameState mutation
+   remain disabled
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
