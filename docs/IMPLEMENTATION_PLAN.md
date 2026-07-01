@@ -80,7 +80,7 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M57-closeout sixth-slice fixture closeout
+-> current next target: M58-01 sixth fixture schema validator
 ```
 
 ## Completed Phases (M0-M19)
@@ -2327,6 +2327,31 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     `9/9`; full Python unittest discovery passes `1173/1173`. The real
     `outputs/target_slice/m57_06_*` gate report and fixture are not generated
     until M57-03 and M57-05 outputs exist.
+- `M57-closeout`: Sixth-slice fixture closeout. **Blocked by M57-06 output; scaffold ready.**
+  - Close the sixth-slice fixture gate and select the next queue without
+    mutating fixture artifacts, runtime deck libraries, saved decks, UI deck
+    lists, bot/playbooks, G Zone/Stride runtime, or `GameState`.
+  - If M57-06 passes, route to `M58` for sixth fixture schema validation, deck
+    text export, headless load smoke, and six-fixture scale decision.
+  - If M57-06 fails, route to `M57-repair`.
+  - Scaffold status: spec/tool/tests are present. Targeted M57-closeout tests
+    pass `6/6`; full Python unittest discovery passes `1179/1179`. The real
+    `outputs/target_slice/m57_closeout_*` report is not generated until M57-06
+    output exists.
+
+### M58: Sixth Fixture Consumption and Six-Fixture Scale Gate
+
+- `M58-01`: Sixth fixture schema validator. **Pending.**
+  - Validate the Shadow Paladin runtime fixture independently from the M57
+    generator before any deck text, headless smoke, UI, or bot consumption.
+- `M58-02`: Sixth fixture deck text exporter. **Pending.**
+  - Export the Shadow Paladin fixture as reviewable count-line deck text
+    without adding it to saved decks.
+- `M58-03`: Sixth fixture headless load smoke. **Pending.**
+  - Load the Shadow Paladin fixture through offline/headless paths without UI,
+    bot, G Zone, or Stride mutation.
+- `M58-04`: Six-fixture scale decision. **Pending.**
+  - Review all six fixture evidence before selecting any further slice.
 
 ## Post-M28 Backlog (not in active queue)
 

@@ -37,7 +37,7 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M57-closeout sixth-slice fixture closeout
+-> current target: M58-01 sixth fixture schema validator
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -500,6 +500,10 @@ Windows-first program completion
    fixture after M57-03 accepted rows and M57-05 validation exist; saved deck,
    UI publication, bot/playbook, G Zone/Stride runtime, and GameState mutation
    remain disabled
+-> M57-closeout tooling/spec/tests are scaffolded; targeted M57-closeout tests
+   6/6 and full Python tests 1179/1179 pass. It routes a completed sixth
+   fixture to M58 consumption/scale work, but the real closeout output remains
+   gated on M57-06 output
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

@@ -386,8 +386,11 @@ Active order:
   (`9/9` targeted, `1173/1173` full Python); it can create only an offline
   runtime/test fixture after M57-03 accepted rows and M57-05 validation exist,
   while saved deck/UI, bot/playbook, G Zone/Stride runtime, and `GameState`
-  mutation remain disabled. Current next target is `M57-closeout` sixth-slice
-  fixture closeout.
+  mutation remain disabled. M57-closeout spec/tool/tests are scaffolded and
+  verified (`6/6` targeted, `1179/1179` full Python); it routes a completed
+  sixth fixture to M58 consumption/scale work, but the real closeout output
+  remains gated on M57-06 output. Current next target is `M58-01` sixth fixture
+  schema validator.
 
 Deferred until explicit user instruction:
 

@@ -493,7 +493,10 @@
   `1173/1173` full Python); it can create only an offline runtime/test fixture
   after M57-03 accepted rows and M57-05 validation exist, while saved deck/UI,
   bot/playbook, G Zone/Stride runtime, and `GameState` mutation remain
-  disabled. Current next target is `M57-closeout` sixth-slice fixture closeout.
+  disabled. M57-closeout spec/tool/tests are scaffolded and verified (`6/6`
+  targeted, `1179/1179` full Python); it routes a completed sixth fixture to
+  M58 consumption/scale work, but the real closeout output remains gated on
+  M57-06 output. Current next target is `M58-01` sixth fixture schema validator.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.
