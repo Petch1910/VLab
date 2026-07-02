@@ -521,7 +521,12 @@
   in-memory M59-01/M59-02 reports; the semantic probe reports semantic cards
   `78`, manual-review cards `10`, pair graph edges `2885`, candidate edges
   `107`, and readiness for M59-04. The real probe report remains gated on real
-  M59-01 and M59-02 outputs.
+  M59-01 and M59-02 outputs. M59-04 spec/tool/tests are scaffolded and verified
+  (`9/9` targeted, `1247/1247` full Python) using in-memory M59-02/M59-03
+  reports; the gate allows M60 offline recipe pipeline only with source cards
+  `78`, semantic cards `78`, manual-review cards `10`, pair graph edges
+  `2885`, candidate edges `107`, blocking issues `0`, and readiness for M60.
+  The real gate report remains gated on real M59-02 and M59-03 outputs.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

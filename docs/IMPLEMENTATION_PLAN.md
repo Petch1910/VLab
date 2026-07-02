@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M59-03 seventh-slice semantic/compatibility probe real
-   artifact after M59-01/M59-02 real outputs; M58-01 through M59-03 scaffolds are ready
+-> current next target: M59-04 seventh-slice recipe pipeline entry gate real
+   artifact after M59-02/M59-03 real outputs; M58-01 through M59-04 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2406,11 +2406,25 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     graph edges `2885`, candidate edges `107`, and ready_for_m59_04 `true`.
     The real `outputs/target_slice/m59_03_*` probe artifacts are not generated
     until the real M59-01 and M59-02 outputs exist.
-- `M59-04`: Seventh-slice recipe pipeline entry gate. **Pending.**
-  - Start after M59-03 probe evidence. Keep recipe creation, runtime fixtures,
-    saved deck injection, UI publication, bot/playbook promotion, G Zone
-    runtime, Stride runtime, and `GameState` mutation gated until their later
-    milestones.
+- `M59-04`: Seventh-slice recipe pipeline entry gate. **Blocked by M59-02/M59-03 real outputs; scaffold ready.**
+  - Start after M59-03 probe evidence.
+  - Scaffold status: spec/tool/tests are present. Targeted M59-04 tests pass
+    `9/9`; full Python unittest discovery passes `1247/1247`. Tests use
+    in-memory M59-02/M59-03 reports and verify the gate allows the M60 offline
+    recipe pipeline only: source cards `78`, semantic cards `78`,
+    manual-review cards `10`, pair graph edges `2885`, candidate edges `107`,
+    blocking issues `0`, and ready_for_m60 `true`. The real
+    `outputs/target_slice/m59_04_*` gate artifacts are not generated until the
+    real M59-02 and M59-03 outputs exist.
+
+### M60: Seventh Offline Recipe Pipeline
+
+- `M60-01`: Seventh-slice fixture scaffold. **Pending.**
+  - Start after M59-04 gate evidence. Define source-backed fixture policy for
+    the Neo Nectar G-series slice before validator work. Keep recipe drafts,
+    runtime fixtures, saved deck injection, UI publication, bot/playbook
+    promotion, G Zone runtime, Stride runtime, and `GameState` mutation gated
+    until their later milestones.
 
 ## Post-M28 Backlog (not in active queue)
 
