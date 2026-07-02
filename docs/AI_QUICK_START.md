@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M68-03 ninth-slice recipe draft model
-   after M68-02 ninth-slice review packet; M58-01
-   through M68-02 spec/tool/tests scaffolds are ready
+-> current target: M68-04 ninth-slice recipe validator
+   after M68-03 ninth-slice recipe draft model; M58-01
+   through M68-03 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -927,6 +927,16 @@ Windows-first program completion
    mutation disabled. Real M68-02 artifacts remain gated on real
    M67-01/M67-02/M67-03/M67-04/M68-01 outputs. Current next target: M68-03
    ninth-slice recipe draft model
+-> M68-03 tooling/spec/tests are scaffolded; targeted M68-03 tests 9/9 and
+   full Python tests 1664/1664 pass.
+   The draft model consumes 95 candidate edge inputs, skips 1
+   trigger/Grade 4/missing-from-main-deck-pool edge before reaching the draft
+   limit, exports 25 advisory recipe drafts, keeps all 25 quantity-complete,
+   and marks all 25 with manual-review overlap blockers. It keeps Grade 4
+   cards out of main-deck drafts and keeps saved decks, UI publication,
+   runtime deck fixtures, bot/playbook, automatic injection, G Zone/Stride
+   runtime, Aqua Force battle-order runtime, and GameState mutation disabled.
+   Current next target: M68-04 ninth-slice recipe validator
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3326,12 +3336,12 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M68`.
-2. Read `docs/specs/cards_and_decks/NINTH_SLICE_REVIEW_PACKET_SPEC.md`,
-   `tools/deck/build_ninth_slice_review_packet.py`,
-   and `tests/test_ninth_slice_review_packet.py`.
-3. Implement `M68-03` as the ninth-slice recipe draft model.
-4. Convert review-packet candidate edges into advisory recipe drafts only;
-   do not create saved decks, UI deck entries, runtime fixtures, bot playbooks,
-   runtime systems, or mutate `GameState`.
+2. Read `docs/specs/cards_and_decks/NINTH_SLICE_RECIPE_DRAFT_MODEL_SPEC.md`,
+   `tools/deck/build_ninth_slice_recipe_draft_model.py`,
+   and `tests/test_ninth_slice_recipe_draft_model.py`.
+3. Implement `M68-04` as the ninth-slice recipe validator.
+4. Validate advisory drafts for count, trigger profile, grade profile, copy
+   limits, selected identity, missing cards, G Zone boundary, and manual-review
+   blockers without promoting runtime/saved/UI/bot outputs.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.

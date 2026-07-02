@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M68-03 ninth-slice recipe draft model
-   after M68-02 ninth-slice review packet; M58-01
-   through M68-02 scaffolds are ready
+-> current next target: M68-04 ninth-slice recipe validator
+   after M68-03 ninth-slice recipe draft model; M58-01
+   through M68-03 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -3056,9 +3056,26 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     Legion/Mate runtime, and direct `GameState` mutation disabled. Real
     `outputs/target_slice/m68_02_*` artifacts are not generated until the real
     M67-01, M67-02, M67-03, M67-04, and M68-01 files exist.
-- `M68-03`: Ninth-slice recipe draft model. **Blocked by M68-02 real output; planned.**
+- `M68-03`: Ninth-slice recipe draft model. **Blocked by M68-02 real output; scaffold ready.**
   - Convert M68-02 review packet candidate edges into advisory recipe drafts
     only, without saved deck/UI/bot/runtime promotion.
+  - Scaffold status: spec/tool/tests are present. Targeted M68-03 tests pass
+    (`9/9`) and full Python tests pass (`1664/1664`) using in-memory M68-02
+    review packet evidence, M68-01 fixture scaffold evidence, and runtime
+    SQLite card data.
+  - Evidence: the draft model consumes 95 candidate edge inputs, skips 1
+    trigger/Grade 4/missing-from-main-deck-pool edge before reaching the draft
+    limit, exports 25 advisory recipe drafts, keeps all 25 quantity-complete,
+    and marks all 25 with manual-review overlap blockers. It keeps Grade 4
+    cards out of main-deck drafts and keeps saved decks, UI publication,
+    runtime deck fixtures, bot/playbook, automatic injection, G Zone/Stride
+    runtime, Aqua Force battle-order runtime, and direct `GameState` mutation
+    disabled. Real `outputs/target_slice/m68_03_*` artifacts are not generated
+    until the real M68-02 and M68-01 files exist.
+- `M68-04`: Ninth-slice recipe validator. **Blocked by M68-03 real output; planned.**
+  - Validate M68-03 advisory drafts for count, trigger profile, grade profile,
+    copy limits, selected identity, missing cards, G Zone boundary, and
+    manual-review blockers without promoting runtime/saved/UI/bot outputs.
 
 ## Post-M28 Backlog (not in active queue)
 
