@@ -837,7 +837,14 @@ Active order:
   decisions, applies accepted manual repairs in memory only, recomputes grade
   repair after manual substitutions, keeps G Zone, Stride, and Aqua Force
   decisions deferred, preserves runtime fixture/saved deck/UI/bot/GameState
-  boundaries, and selects M69-04. The current next target is M69-04.
+  boundaries, and selects M69-04.
+  M69-04 spec/tool/tests are scaffolded and verified (`11/11` targeted,
+  `1738/1738` full Python) using in-memory M69-03 evidence; it validates
+  selected G Zone, Stride, and Aqua Force option ids, records all three
+  system-boundary decisions, allows only main-deck validation rerun for
+  main-deck/manual-semantic choices, keeps defer choices advisory, preserves
+  runtime fixture/saved deck/UI/bot/G Zone/Stride/Aqua Force runtime/GameState
+  boundaries, and selects M69-05. The current next target is M69-05.
 
 Deferred until explicit user instruction:
 

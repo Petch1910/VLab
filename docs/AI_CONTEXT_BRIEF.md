@@ -943,7 +943,14 @@
   decisions, applies accepted manual repairs in memory only, recomputes grade
   repair after manual substitutions, keeps G Zone, Stride, and Aqua Force
   decisions deferred, preserves runtime fixture/saved deck/UI/bot/GameState
-  boundaries, and selects M69-04. The current next target is M69-04.
+  boundaries, and selects M69-04.
+  M69-04 spec/tool/tests are scaffolded and verified (`11/11` targeted,
+  `1738/1738` full Python) using in-memory M69-03 evidence; it validates
+  selected G Zone, Stride, and Aqua Force option ids, records all three
+  system-boundary decisions, allows only main-deck validation rerun for
+  main-deck/manual-semantic choices, keeps defer choices advisory, preserves
+  runtime fixture/saved deck/UI/bot/G Zone/Stride/Aqua Force runtime/GameState
+  boundaries, and selects M69-05. The current next target is M69-05.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M69-04 ninth-slice G Zone, Stride, and Aqua Force decision artifact
-   after M69-03 ninth-slice human-accepted repair artifact; M58-01
-   through M69-03 scaffolds are ready
+-> current next target: M69-05 ninth-slice repaired recipe validation rerun
+   after M69-04 ninth-slice G Zone, Stride, and Aqua Force decision artifact;
+   M58-01 through M69-04 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -3182,9 +3182,21 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     disabled. Real `outputs/target_slice/m69_03_*` artifacts are not generated
     until the real M69-02 file exists and a user supplies explicit repair
     decision input.
-- `M69-04`: Ninth-slice G Zone, Stride, and Aqua Force decision artifact. **Planned.**
+- `M69-04`: Ninth-slice G Zone, Stride, and Aqua Force decision artifact. **Blocked by M69-03 real output and explicit system decision input; scaffold ready.**
   - Record whether runtime promotion waits for G Zone/Stride rules and Aqua
     Force battle-order support.
+  - Scaffold status: spec/tool/tests are present. Targeted M69-04 tests pass
+    (`11/11`) using in-memory M69-03 evidence; full Python tests pass
+    (`1738/1738`).
+  - Evidence: the system-decision artifact validates selected G Zone, Stride,
+    and Aqua Force option ids against accepted M69-03 evidence, records all
+    three boundary decisions, opens only main-deck validation rerun for
+    main-deck/manual-semantic choices, keeps defer choices advisory, and keeps
+    runtime fixtures, saved decks, UI publication, bot/playbook, automatic
+    injection, G Zone runtime, Stride runtime, Aqua Force battle-order runtime,
+    and direct `GameState` mutation disabled. Real `outputs/target_slice/m69_04_*`
+    artifacts are not generated until the real M69-03 file exists and a user
+    supplies explicit system decision options.
 - `M69-05`: Ninth-slice repaired recipe validation rerun. **Planned.**
   - Apply accepted repair in memory and rerun count, trigger, grade,
     copy-limit, clan, manual-overlap, G Zone, Stride, and Aqua Force
