@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M62-04 seven-fixture scale decision
-   after M62-03 headless load smoke; M58-01 through M62-03
+-> current next target: M63-01 eighth target slice selection
+   after M62-04 seven-fixture scale decision; M58-01 through M62-04
    scaffolds are ready
 ```
 
@@ -2642,8 +2642,26 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     saved deck/UI/bot/G Zone/Stride/Bloom-token/GameState mutation. Real
     `outputs/target_slice/m62_03_*` artifacts are not generated until the real
     M61-06 fixture, M62-01 validation, and M62-02 deck text files exist.
-- `M62-04`: Seven-fixture scale decision. **Pending.**
+- `M62-04`: Seven-fixture scale decision. **Blocked by M58-03/M62-03 real evidence; scaffold ready.**
   - Review all seven fixture evidence before selecting any further slice.
+  - Scaffold status: spec/tool/tests are present. Targeted M62-04 tests pass
+    `8/8`; full Python unittest discovery passes `1406/1406`. Tests use the
+    first five real smoke reports plus in-memory sixth and seventh fixture
+    smokes with Unity deck-code evidence. The decision verifies seven passing
+    fixture evidence records, excludes completed groups from the candidate
+    queue, allows only the next offline pipeline, selects no runtime deck,
+    creates no fixture, publishes no UI deck, enables no bot/playbook, keeps G
+    Zone/Stride/Bloom-token runtime disabled, and does not mutate GameState.
+    Real `outputs/target_slice/m62_04_*` artifacts are not generated until the
+    real M58-03 and M62-03 evidence files exist.
+
+### M63: Eighth Offline Slice Selection
+
+- `M63-01`: Eighth target slice selection. **Pending.**
+  - Consume the M62-04 scale decision and select the next offline-only target
+    from the candidate queue without creating runtime fixtures, saved decks,
+    UI deck entries, bot playbooks, G Zone runtime, Stride runtime,
+    Bloom/token runtime, or `GameState` mutation.
 
 ## Post-M28 Backlog (not in active queue)
 

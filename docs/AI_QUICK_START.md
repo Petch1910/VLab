@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M62-04 seven-fixture scale decision
-   after M62-03 headless load smoke; M58-01 through M62-03
+-> current target: M63-01 eighth target slice selection
+   after M62-04 seven-fixture scale decision; M58-01 through M62-04
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -669,6 +669,15 @@ Windows-first program completion
    runtime disabled, accepts optional Unity headless evidence only when
    `deck_source=deck_code`, and does not mutate saved deck/UI/bot/GameState.
    Real M62-03 artifacts remain gated on the real M61-06, M62-01, and M62-02
+   files
+-> M62-04 tooling/spec/tests are scaffolded; targeted M62-04 tests 8/8 and
+   full Python tests 1406/1406 pass. The scale decision reviews seven fixture
+   smoke records using real first-five evidence plus in-memory sixth/seventh
+   evidence with Unity deck-code acceptance, excludes completed groups from
+   the candidate queue, allows only an eighth offline pipeline, and does not
+   select runtime decks, create fixtures, publish UI decks, enable bot
+   playbooks, enable G Zone/Stride/Bloom-token runtime, or mutate GameState.
+   Real M62-04 artifacts remain gated on the real M58-03 and M62-03 evidence
    files
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it

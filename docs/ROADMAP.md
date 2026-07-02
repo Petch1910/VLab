@@ -551,6 +551,15 @@ Active order:
   optional Unity headless evidence only when `deck_source=deck_code`, and
   avoids saved deck/UI/bot/GameState mutation. Real M62-03 artifacts remain
   gated on the real M61-06, M62-01, and M62-02 files.
+  M62-04 spec/tool/tests are scaffolded and verified (`8/8` targeted,
+  `1406/1406` full Python) using first-five real smoke reports plus in-memory
+  sixth and seventh smoke reports with Unity deck-code evidence; it reviews
+  seven fixture evidence records, excludes completed groups from the candidate
+  queue, allows only the next offline pipeline, selects no runtime deck,
+  creates no fixture, publishes no UI deck, enables no bot/playbook, keeps G
+  Zone/Stride/Bloom-token runtime disabled, and avoids GameState mutation.
+  Real M62-04 artifacts remain gated on the real M58-03 and M62-03 evidence
+  files.
 
 Deferred until explicit user instruction:
 
