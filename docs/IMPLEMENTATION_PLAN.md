@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M67-03 ninth-slice semantic/compatibility probe
-   after M67-02 ninth-slice fixture/format readiness; M58-01
-   through M67-02 scaffolds are ready
+-> current next target: M67-04 ninth-slice recipe pipeline entry gate
+   after M67-03 ninth-slice semantic/compatibility probe; M58-01
+   through M67-03 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2988,11 +2988,26 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     Legion/Mate runtime, and direct `GameState` mutation disabled. Real
     `outputs/target_slice/m67_02_*` artifacts are not generated until the real
     M67-01 selection file exists.
-- `M67-03`: Ninth-slice semantic/compatibility probe. **Blocked by M67-02 real output; planned.**
+- `M67-03`: Ninth-slice semantic/compatibility probe. **Blocked by M67-01/M67-02 real outputs; scaffold ready.**
   - Run the offline semantic/compatibility probe for `อควอฟอร์ซ` /
     `g_series_first` using source-backed cards only, without creating recipe
     drafts, runtime fixtures, saved decks, UI entries, bot playbooks, runtime
     systems, or `GameState` mutation.
+  - Scaffold status: spec/tool/tests are present. Targeted M67-03 tests pass
+    (`8/8`) and full Python tests pass (`1627/1627`) using in-memory M67-01
+    selection evidence and M67-02 readiness evidence.
+  - Evidence: the probe reuses the generalized M35 B/C pipeline in memory,
+    produces 77 semantic cards, 10 manual-review cards, 2708 pair graph edges,
+    and 95 candidate synergy edges, opens `M67-04`, and keeps recipe drafts,
+    runtime fixtures, saved decks, UI publication, bot/playbook, G Zone,
+    Stride, Bloom-token, Lock/Unlock, Legion/Mate runtime, and direct
+    `GameState` mutation disabled. Real `outputs/target_slice/m67_03_*`
+    artifacts are not generated until the real M67-01 and M67-02 files exist.
+- `M67-04`: Ninth-slice recipe pipeline entry gate. **Blocked by M67-02/M67-03 real outputs; planned.**
+  - Gate offline recipe work for `อควอฟอร์ซ` / `g_series_first` using the
+    source-backed readiness and passed semantic/compatibility probe, without
+    creating recipe drafts, runtime fixtures, saved decks, UI entries, bot
+    playbooks, runtime systems, or `GameState` mutation.
 
 ## Post-M28 Backlog (not in active queue)
 

@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M67-03 ninth-slice semantic/compatibility probe
-   after M67-02 ninth-slice fixture/format readiness; M58-01
-   through M67-02 spec/tool/tests scaffolds are ready
+-> current target: M67-04 ninth-slice recipe pipeline entry gate
+   after M67-03 ninth-slice semantic/compatibility probe; M58-01
+   through M67-03 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -888,6 +888,16 @@ Windows-first program completion
    and GameState mutation disabled. Real M67-02 artifacts remain gated on real
    M67-01 output. Current next target: M67-03 ninth-slice semantic/compatibility
    probe
+-> M67-03 tooling/spec/tests are scaffolded; targeted M67-03 tests 8/8 and
+   full Python tests 1627/1627 pass.
+   The semantic/compatibility probe reuses the generalized M35 B/C probe in
+   memory for `อควอฟอร์ซ` / `g_series_first`, with 77 semantic cards, 10
+   manual-review cards, 2708 pair graph edges, and 95 candidate synergy edges.
+   It keeps recipe drafts, runtime fixtures, saved decks, UI publication,
+   bot/playbook, G Zone, Stride, Bloom/token, Lock/Unlock, Legion/Mate runtime,
+   and GameState mutation disabled. Real M67-03 artifacts remain gated on real
+   M67-01/M67-02 outputs. Current next target: M67-04 ninth-slice recipe
+   pipeline entry gate
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3287,12 +3297,12 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M67`.
-2. Read `docs/specs/cards_and_decks/NINTH_SLICE_FIXTURE_READINESS_SPEC.md`,
-   `tools/deck/build_ninth_slice_fixture_readiness.py`,
-   and `tests/test_ninth_slice_fixture_readiness.py`.
-3. Implement `M67-03` as the ninth-slice semantic/compatibility probe.
-4. Build an offline semantic/compatibility probe for `อควอฟอร์ซ` /
-   `g_series_first` without creating recipe drafts, runtime fixtures, saved
+2. Read `docs/specs/cards_and_decks/NINTH_SLICE_SEMANTIC_COMPATIBILITY_PROBE_SPEC.md`,
+   `tools/deck/build_ninth_slice_semantic_compatibility_probe.py`,
+   and `tests/test_ninth_slice_semantic_compatibility_probe.py`.
+3. Implement `M67-04` as the ninth-slice recipe pipeline entry gate.
+4. Gate offline recipe work for `อควอฟอร์ซ` / `g_series_first` on M67-02 and
+   M67-03 readiness without creating recipe drafts, runtime fixtures, saved
    decks, UI deck entries, bot/playbooks, runtime systems, or `GameState`
    mutation.
 5. Verify with targeted Python tests and full `python -m unittest discover -s

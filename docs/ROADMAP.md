@@ -738,7 +738,15 @@ Active order:
   drafts, runtime fixtures, saved decks, UI publication, bot/playbook,
   G Zone, Stride, Bloom/token, Lock/Unlock, Legion/Mate runtime, and GameState
   mutation disabled. Real M67-02 artifacts remain gated on real M67-01 output.
-  The current next target is M67-03.
+  M67-03 spec/tool/tests are scaffolded and verified (`8/8` targeted,
+  `1627/1627` full Python) using in-memory M67-01/M67-02 evidence; it reuses
+  the generalized M35 B/C probe in memory for `อควอฟอร์ซ` / `g_series_first`
+  and reports 77 semantic cards, 10 manual-review cards, 2708 pair graph
+  edges, and 95 candidate synergy edges. It opens M67-04 and keeps recipe
+  drafts, runtime fixtures, saved decks, UI publication, bot/playbook,
+  G Zone, Stride, Bloom/token, Lock/Unlock, Legion/Mate runtime, and GameState
+  mutation disabled. Real M67-03 artifacts remain gated on real M67-01/M67-02
+  outputs. The current next target is M67-04.
 
 Deferred until explicit user instruction:
 
