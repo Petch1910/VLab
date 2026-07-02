@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M67-02 ninth-slice fixture/format readiness
-   after M67-01 ninth target slice selection; M58-01
-   through M67-01 spec/tool/tests scaffolds are ready
+-> current target: M67-03 ninth-slice semantic/compatibility probe
+   after M67-02 ninth-slice fixture/format readiness; M58-01
+   through M67-02 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -877,7 +877,17 @@ Windows-first program completion
    recipe drafts, runtime fixtures, saved decks, UI publication, bot/playbook,
    G Zone, Stride, Bloom/token, Lock/Unlock, Legion/Mate runtime, and GameState
    mutation disabled. Real M67-01 artifacts remain gated on real M66-04 output.
-   Current next target: M67-02 ninth-slice fixture/format readiness
+-> M67-02 tooling/spec/tests are scaffolded; targeted M67-02 tests 9/9 and
+   full Python tests 1619/1619 pass.
+   The readiness check validates `อควอฟอร์ซ` / `g_series_first` against the
+   runtime SQLite pack with 77 source-backed cards, grade 0-4 coverage, trigger
+   capacity 56, non-trigger capacity 252, no trigger-family gaps, and G Zone
+   fixture boundary required while G Zone/Stride runtime remains disabled. It
+   keeps recipe drafts, runtime fixtures, saved decks, UI publication,
+   bot/playbook, G Zone, Stride, Bloom/token, Lock/Unlock, Legion/Mate runtime,
+   and GameState mutation disabled. Real M67-02 artifacts remain gated on real
+   M67-01 output. Current next target: M67-03 ninth-slice semantic/compatibility
+   probe
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3277,12 +3287,13 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M67`.
-2. Read `docs/specs/cards_and_decks/NINTH_TARGET_SLICE_SELECTION_SPEC.md`,
-   `tools/deck/build_ninth_target_slice_selection.py`,
-   and `tests/test_ninth_target_slice_selection.py`.
-3. Implement `M67-02` as ninth-slice fixture/format readiness.
-4. Validate the selected `อควอฟอร์ซ` / `g_series_first` target for fixture
-   readiness without creating recipe drafts, runtime fixtures, saved decks, UI
-   deck entries, bot/playbooks, runtime systems, or `GameState` mutation.
+2. Read `docs/specs/cards_and_decks/NINTH_SLICE_FIXTURE_READINESS_SPEC.md`,
+   `tools/deck/build_ninth_slice_fixture_readiness.py`,
+   and `tests/test_ninth_slice_fixture_readiness.py`.
+3. Implement `M67-03` as the ninth-slice semantic/compatibility probe.
+4. Build an offline semantic/compatibility probe for `อควอฟอร์ซ` /
+   `g_series_first` without creating recipe drafts, runtime fixtures, saved
+   decks, UI deck entries, bot/playbooks, runtime systems, or `GameState`
+   mutation.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.

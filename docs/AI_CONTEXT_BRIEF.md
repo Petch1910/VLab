@@ -835,7 +835,16 @@
   fixtures, saved decks, UI publication, bot/playbook, G Zone, Stride,
   Bloom/token, Lock/Unlock, Legion/Mate runtime, and GameState mutation
   disabled. Real M67-01 artifacts remain gated on real M66-04 output. The
-  current next target is M67-02.
+  M67-02 spec/tool/tests are scaffolded and verified (`9/9` targeted,
+  `1619/1619` full Python) using in-memory M67-01 selection evidence and
+  runtime SQLite card data; it confirms `อควอฟอร์ซ` / `g_series_first` has 77
+  source-backed cards, grade 0-4 coverage, trigger capacity 56, non-trigger
+  capacity 252, no trigger-family gaps, and a G Zone fixture boundary while
+  G Zone/Stride runtime remains disabled. It opens M67-03 and keeps recipe
+  drafts, runtime fixtures, saved decks, UI publication, bot/playbook,
+  G Zone, Stride, Bloom/token, Lock/Unlock, Legion/Mate runtime, and GameState
+  mutation disabled. Real M67-02 artifacts remain gated on real M67-01 output.
+  The current next target is M67-03.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

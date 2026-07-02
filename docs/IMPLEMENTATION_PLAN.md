@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M67-02 ninth-slice fixture/format readiness
-   after M67-01 ninth target slice selection; M58-01
-   through M67-01 scaffolds are ready
+-> current next target: M67-03 ninth-slice semantic/compatibility probe
+   after M67-02 ninth-slice fixture/format readiness; M58-01
+   through M67-02 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2971,11 +2971,28 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     Lock/Unlock, Legion/Mate runtime, and direct `GameState` mutation disabled.
     Real `outputs/target_slice/m67_01_*` artifacts are not generated until the
     real M66-04 decision file exists.
-- `M67-02`: Ninth-slice fixture/format readiness. **Blocked by M67-01 real output; planned.**
+- `M67-02`: Ninth-slice fixture/format readiness. **Blocked by M67-01 real output; scaffold ready.**
   - Validate fixture/format readiness for the selected `อควอฟอร์ซ` /
     `g_series_first` target without creating recipe drafts, runtime fixtures,
     saved decks, UI entries, bot playbooks, runtime systems, or `GameState`
     mutation.
+  - Scaffold status: spec/tool/tests are present. Targeted M67-02 tests pass
+    (`9/9`) and full Python tests pass (`1619/1619`) using an in-memory M67-01
+    selection report and runtime SQLite card data.
+  - Evidence: the readiness check confirms 77 source-backed cards across
+    `G-TD04`, `G-BT02`, and `G-CB02`, grade 0-4 coverage, trigger capacity
+    `56`, non-trigger capacity `252`, no trigger-family gaps, and G Zone
+    fixture boundary required while G Zone/Stride runtime remains disabled. It
+    opens `M67-03` and keeps recipe drafts, runtime fixtures, saved decks, UI
+    publication, bot/playbook, G Zone, Stride, Bloom-token, Lock/Unlock,
+    Legion/Mate runtime, and direct `GameState` mutation disabled. Real
+    `outputs/target_slice/m67_02_*` artifacts are not generated until the real
+    M67-01 selection file exists.
+- `M67-03`: Ninth-slice semantic/compatibility probe. **Blocked by M67-02 real output; planned.**
+  - Run the offline semantic/compatibility probe for `อควอฟอร์ซ` /
+    `g_series_first` using source-backed cards only, without creating recipe
+    drafts, runtime fixtures, saved decks, UI entries, bot playbooks, runtime
+    systems, or `GameState` mutation.
 
 ## Post-M28 Backlog (not in active queue)
 
