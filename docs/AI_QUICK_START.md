@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M69-02 ninth-slice human-selected recipe artifact
-   after M69-01 ninth-slice human repair review packet; M58-01
-   through M69-01 spec/tool/tests scaffolds are ready
+-> current target: M69-03 ninth-slice human-accepted repair artifact
+   after M69-02 ninth-slice human-selected recipe artifact; M58-01
+   through M69-02 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -990,8 +990,17 @@ Windows-first program completion
    system decisions, runtime fixture, saved deck, UI, bot/playbook, automatic
    injection, and GameState mutation disabled, and routes the next target to
    M69-02. Real M69-01 artifacts remain gated on real M68-closeout, M68-06,
-   and M68-03 output files. Current next target: M69-02 ninth-slice
-   human-selected recipe artifact
+   and M68-03 output files.
+-> M69-02 tooling/spec/tests are scaffolded; targeted M69-02 tests 11/11 and
+   full Python tests 1716/1716 pass.
+   The selected-recipe artifact requires explicit review item id plus non-empty
+   selection text, records exactly one selected recipe, carries pair/manual/
+   grade/G Zone/Stride/Aqua Force context forward, keeps human acceptance,
+   system decisions, runtime fixture, saved deck, UI, bot/playbook, automatic
+   injection, and GameState mutation disabled, and routes the next target to
+   M69-03. Real M69-02 artifacts remain gated on a real M69-01 output file and
+   explicit selection input. Current next target: M69-03 ninth-slice
+   human-accepted repair artifact
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3391,12 +3400,12 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M69`.
-2. Read `docs/specs/cards_and_decks/NINTH_SLICE_HUMAN_REPAIR_REVIEW_PACKET_SPEC.md`,
-   `tools/deck/build_ninth_slice_human_repair_review_packet.py`,
-   and `tests/test_ninth_slice_human_repair_review_packet.py`.
-3. Implement `M69-02` as the ninth-slice human-selected recipe artifact.
-4. Consume M69-01 review packet evidence, record exactly one selected recipe id
-   for the next acceptance step, and keep recipe mutation, runtime fixture
+2. Read `docs/specs/cards_and_decks/NINTH_SLICE_HUMAN_SELECTED_RECIPE_ARTIFACT_SPEC.md`,
+   `tools/deck/build_ninth_slice_human_selected_recipe_artifact.py`,
+   and `tests/test_ninth_slice_human_selected_recipe_artifact.py`.
+3. Implement `M69-03` as the ninth-slice human-accepted repair artifact.
+4. Consume M69-02 selected recipe evidence, record explicit acceptance or
+   rejection of selected manual/grade repair packages, and keep runtime fixture
    creation, saved-deck/UI publication, bot/playbook promotion, and GameState
    mutation disabled.
 5. Verify with targeted Python tests and full `python -m unittest discover -s

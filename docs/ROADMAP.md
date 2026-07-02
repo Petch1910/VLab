@@ -823,7 +823,14 @@ Active order:
   contexts, 25 Stride deferred contexts, 25 Aqua Force battle-order contexts,
   keeps human selection/acceptance, system decisions, runtime fixture, saved
   deck, UI publication, bot/playbook, automatic injection, and GameState
-  mutation disabled, and selects M69-02. The current next target is M69-02.
+  mutation disabled, and selects M69-02.
+  M69-02 spec/tool/tests are scaffolded and verified (`11/11` targeted,
+  `1716/1716` full Python) using in-memory M69-01 evidence; it requires
+  explicit review item id and non-empty selection text, records exactly one
+  selected recipe, carries pair/manual/grade/G Zone/Stride/Aqua Force context
+  forward, keeps acceptance, system decisions, runtime fixture, saved deck, UI
+  publication, bot/playbook, automatic injection, and GameState mutation
+  disabled, and selects M69-03. The current next target is M69-03.
 
 Deferred until explicit user instruction:
 
