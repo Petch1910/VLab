@@ -455,6 +455,14 @@ Active order:
   recipe manual dependencies `23`, G Zone deferred checks `23`, Bloom/token
   deferred checks `23`, promotion_allowed `0`, and runtime/UI/bot/GameState
   mutation disabled. The real consistency artifacts remain gated on real
+  upstream outputs. M60-06 spec/tool/tests are scaffolded and verified (`8/8`
+  targeted, `1295/1295` full Python) using in-memory M59-01/M59-02/M59-03/
+  M59-04/M60-01/M60-02/M60-03/M60-04/M60-05 reports; the repair candidate
+  report is ready for M60-closeout with repair items `23`, complete manual
+  repair previews `23`, complete grade-profile repair candidates `21`, G Zone
+  deferred packages `23`, Bloom/token deferred packages `23`, unexpected
+  structural blockers `0`, human repair review ready `23`, and runtime/UI/bot/
+  GameState mutation disabled. The real repair artifacts remain gated on real
   upstream outputs.
 
 Deferred until explicit user instruction:

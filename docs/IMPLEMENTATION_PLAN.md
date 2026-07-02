@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M60-05 seventh-slice combo-to-recipe consistency real
-   artifact after M60-03/M60-04 real outputs; M58-01 through M60-05 scaffolds are ready
+-> current next target: M60-closeout seventh-slice runtime readiness decision
+   real artifact after M60-01 through M60-06 real outputs; M58-01 through M60-06 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2485,10 +2485,25 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     `true`, and runtime/UI/bot/GameState mutation disabled. The real
     `outputs/target_slice/m60_05_*` consistency artifacts are not generated
     until the real M60-03 and M60-04 outputs exist.
-- `M60-06`: Seventh-slice blocker repair candidates. **Pending.**
+- `M60-06`: Seventh-slice blocker repair candidates. **Blocked by M60-03/M60-04/M60-05 real outputs; scaffold ready.**
   - Start after M60-05 consistency evidence. Convert validator/consistency
     blockers into source-backed repair options without accepting repairs,
     mutating drafts, or promoting runtime.
+  - Scaffold status: spec/tool/tests are present. Targeted M60-06 tests pass
+    `8/8`; full Python unittest discovery passes `1295/1295`. Tests use
+    in-memory M59-01/M59-02/M59-03/M59-04/M60-01/M60-02/M60-03/M60-04/M60-05
+    reports and verify repair items `23`, complete manual repair candidates
+    `23`, grade-profile repair candidates `21`, complete grade-profile
+    candidates `21`, G Zone deferred packages `23`, Bloom/token deferred
+    packages `23`, unexpected structural blockers `0`, human repair review
+    ready `23`, ready_for_m60_closeout `true`, and runtime/UI/bot/GameState
+    mutation disabled. The real `outputs/target_slice/m60_06_*` repair
+    artifacts are not generated until the real upstream outputs exist.
+- `M60-closeout`: Seventh-slice runtime readiness decision. **Pending.**
+  - Start after M60-06 repair evidence. Decide whether the seventh slice
+    remains advisory or may enter a bounded human acceptance/runtime fixture
+    gate. Do not record human acceptance, mutate drafts, create saved decks,
+    publish UI deck lists, enable G Zone/Stride runtime, or promote bot use.
 
 ## Post-M28 Backlog (not in active queue)
 

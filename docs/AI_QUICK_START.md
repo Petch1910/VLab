@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M60-05 seventh-slice combo-to-recipe consistency real
-   artifact, gated on M60-03/M60-04 real outputs; M58-01 through M60-05
+-> current target: M60-closeout seventh-slice runtime readiness decision real
+   artifact, gated on M60-01 through M60-06 real outputs; M58-01 through M60-06
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -575,6 +575,14 @@ Windows-first program completion
    checks, 23 recipe-level manual-review dependencies, 23 G Zone deferred
    checks, 23 Bloom/token deferred checks, and promotion_allowed 0. Real
    consistency artifacts remain gated on real upstream outputs
+-> M60-06 tooling/spec/tests are scaffolded; targeted M60-06 tests 8/8 and full
+   Python tests 1295/1295 pass using in-memory M59-01/M59-02/M59-03/M59-04/
+   M60-01/M60-02/M60-03/M60-04/M60-05 reports. The repair candidate report
+   covers 23 recipes, has 23 complete manual repair previews, 21 complete
+   grade-profile repair candidates, 23 G Zone deferred packages, 23 Bloom/token
+   deferred packages, 0 structural blockers, ready_for_human_repair_review 23,
+   ready_for_m60_closeout true, and no runtime/UI/bot/GameState mutation. Real
+   repair artifacts remain gated on real upstream outputs
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
