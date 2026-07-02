@@ -819,7 +819,16 @@
   accepts optional Unity evidence only with `deck_source=deck_code`, and keeps
   saved decks, UI library, bot/playbook, runtime systems, and GameState
   mutation disabled. Real M66-03 artifacts remain gated on real
-  M65-06/M66-01/M66-02 outputs. The current next target is M66-04.
+  M65-06/M66-01/M66-02 outputs.
+  M66-04 spec/tool/tests are scaffolded and verified (`8/8` targeted,
+  `1602/1602` full Python) using in-memory first through eighth fixture smoke
+  evidence; it requires each Unity headless smoke to use
+  `deck_source=deck_code`, excludes completed groups from the next candidate
+  queue, opens M67-01 for offline-only ninth target selection, and keeps saved
+  deck injection, UI publication, bot/playbook, G Zone, Stride, Bloom/token,
+  Lock/Unlock, Legion/Mate runtime, and GameState mutation disabled. Real
+  M66-04 artifacts remain gated on real M58-03/M62-03/M66-03 evidence. The
+  current next target is M67-01.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

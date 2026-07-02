@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M66-04 eight-fixture scale decision
-   after M66-03 eighth fixture headless load smoke; M58-01
-   through M66-03 scaffolds are ready
+-> current next target: M67-01 ninth target slice selection
+   after M66-04 eight-fixture scale decision; M58-01
+   through M66-04 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2940,9 +2940,27 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     Python-side `GameState` mutation disabled. Real
     `outputs/target_slice/m66_03_*` artifacts are not generated until the real
     M65-06 fixture, M66-01 validation, and M66-02 deck text files exist.
-- `M66-04`: Eight-fixture scale decision. **Blocked by M62-04/M66-03 real evidence; planned.**
+- `M66-04`: Eight-fixture scale decision. **Blocked by M58-03/M62-03/M66-03 real evidence; scaffold ready.**
   - Review all eight fixture evidence records before selecting any further
     slice.
+  - Scaffold status: spec/tool/tests are present. Targeted M66-04 tests pass
+    (`8/8`) and full Python tests pass (`1602/1602`) using in-memory first
+    through eighth fixture smoke evidence.
+  - Evidence: the decision verifies eight passing fixture evidence records,
+    requires Unity headless smoke evidence to use `deck_source=deck_code`,
+    excludes completed groups, opens `M67-01`, selects no runtime deck, creates
+    no fixture, publishes no UI deck, enables no bot/playbook, keeps
+    G Zone/Stride/Bloom-token/Lock/Unlock/Legion/Mate runtime disabled, and
+    does not mutate `GameState`. Real `outputs/target_slice/m66_04_*`
+    artifacts are not generated until real M58-03, M62-03, and M66-03 evidence
+    files exist.
+
+### M67: Ninth Offline Slice Selection
+
+- `M67-01`: Ninth target slice selection. **Blocked by M66-04 real output; planned.**
+  - Consume the M66-04 scale decision and select the next offline-only target
+    from the candidate queue without creating runtime fixtures, saved decks, UI
+    entries, bot playbooks, runtime systems, or `GameState` mutation.
 
 ## Post-M28 Backlog (not in active queue)
 

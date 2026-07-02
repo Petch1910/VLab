@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M66-04 eight-fixture scale decision
-   after M66-03 eighth fixture headless load smoke; M58-01
-   through M66-03 spec/tool/tests scaffolds are ready
+-> current target: M67-01 ninth target slice selection
+   after M66-04 eight-fixture scale decision; M58-01
+   through M66-04 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -860,7 +860,16 @@ Windows-first program completion
    decks, UI deck library, bot/playbook, Lock runtime, Unlock runtime, Legion
    runtime, Mate identity checks, and Python-side GameState mutation disabled.
    Real M66-03 artifacts remain gated on real M65-06/M66-01/M66-02 outputs.
-   Current next target: M66-04 eight-fixture scale decision
+-> M66-04 tooling/spec/tests are scaffolded; targeted M66-04 tests 8/8 and
+   full Python tests 1602/1602 pass.
+   The scale decision consumes in-memory first through eighth fixture smoke
+   evidence, requires all eight Unity headless smokes to use
+   `deck_source=deck_code`, excludes completed groups from the candidate queue,
+   opens M67-01 for offline-only ninth target selection, and keeps saved deck
+   injection, UI publication, bot/playbook, G Zone, Stride, Bloom/token,
+   Lock/Unlock, Legion/Mate runtime, and GameState mutation disabled. Real
+   M66-04 artifacts remain gated on real M58-03/M62-03/M66-03 evidence.
+   Current next target: M67-01 ninth target slice selection
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3259,13 +3268,13 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 
 If continuing from here, do this next:
 
-1. Open `docs/IMPLEMENTATION_PLAN.md` section `M66`.
-2. Read `docs/specs/cards_and_decks/EIGHTH_HEADLESS_FIXTURE_LOAD_SMOKE_SPEC.md`,
-   `tools/deck/build_eighth_headless_fixture_load_smoke.py`,
-   and `tests/test_eighth_headless_fixture_load_smoke.py`.
-3. Implement `M66-04` as the eight-fixture scale decision.
-4. Review all eight fixture evidence records before selecting any further
-   slice, while keeping saved decks, UI publication, bot/playbook, runtime
-   systems, and `GameState` mutation disabled.
+1. Open `docs/IMPLEMENTATION_PLAN.md` section `M67`.
+2. Read `docs/specs/cards_and_decks/EIGHT_FIXTURE_SCALE_DECISION_SPEC.md`,
+   `tools/deck/build_eight_fixture_scale_decision.py`,
+   and `tests/test_eight_fixture_scale_decision.py`.
+3. Implement `M67-01` as the ninth target slice selection.
+4. Select the next offline-only target from the candidate queue without
+   creating runtime fixtures, saved decks, UI deck entries, bot/playbooks,
+   runtime systems, or `GameState` mutation.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.
