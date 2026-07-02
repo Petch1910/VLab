@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M61-02 seventh-slice human-selected recipe artifact
-   scaffold, gated on M61-01 real output; M58-01 through M61-01
+-> current target: M61-03 seventh-slice human-accepted repair artifact
+   scaffold, gated on M61-02 real explicit selection output; M58-01 through M61-02
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -599,6 +599,14 @@ Windows-first program completion
    23 G Zone deferred items, 23 Bloom/token deferred items, ready_for_m61_02
    true, and no selection/acceptance/system decision/runtime/UI/bot/GameState
    mutation. Real M61-01 artifacts remain gated on real upstream outputs
+-> M61-02 tooling/spec/tests are scaffolded; targeted M61-02 tests 10/10 and
+   full Python tests 1324/1324 pass using an explicit in-memory M61-01
+   review-item selection. The artifact
+   records exactly one selected review item, preserves pair/manual/grade/G Zone/
+   Bloom context, records no acceptance or system decision, keeps runtime/UI/
+   bot/GameState mutation disabled, and reports ready_for_m61_03 true for valid
+   selected items. Real M61-02 artifacts remain gated on the real M61-01 packet
+   plus explicit human `review_item_id` and `selection_text`
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

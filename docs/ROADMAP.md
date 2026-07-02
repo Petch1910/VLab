@@ -479,6 +479,14 @@ Active order:
   deferred items `23`, Bloom/token deferred items `23`, ready_for_m61_02
   `true`, and runtime/UI/bot/GameState mutation disabled. The real M61-01
   artifacts remain gated on real upstream outputs.
+  M61-02 spec/tool/tests are scaffolded and verified (`10/10` targeted,
+  `1324/1324` full Python) using an explicit in-memory M61-01 review-item
+  selection; it records exactly one selected recipe, preserves selected
+  pair/manual/grade/G Zone/Bloom context,
+  records no acceptance or G Zone/Bloom decision, keeps runtime/UI/bot/GameState
+  mutation disabled, and reports ready_for_m61_03 `true` for valid selected
+  items. Real M61-02 artifacts remain gated on the real M61-01 packet plus
+  explicit human `review_item_id` and `selection_text`.
 
 Deferred until explicit user instruction:
 

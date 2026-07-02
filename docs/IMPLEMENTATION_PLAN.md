@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M61-02 seventh-slice human-selected recipe artifact
-   scaffold after M61-01 evidence; M58-01 through M61-01 scaffolds are ready
+-> current next target: M61-03 seventh-slice human-accepted repair artifact
+   scaffold after M61-02 evidence; M58-01 through M61-02 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2530,8 +2530,18 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     selection, acceptance, G Zone/Bloom decision, runtime/UI/bot/GameState
     mutation. The real `outputs/target_slice/m61_01_*` artifacts are not
     generated until the real upstream outputs exist.
-- `M61-02`: Seventh-slice human-selected recipe artifact. **Pending.**
+- `M61-02`: Seventh-slice human-selected recipe artifact. **Blocked by real M61-01 output and explicit human selection; scaffold ready.**
   - Record exactly one selected seventh-slice recipe id after review.
+  - Scaffold status: spec/tool/tests are present. Targeted M61-02 tests pass
+    `10/10`; full Python unittest discovery passes `1324/1324`. Tests use an
+    in-memory M61-01 review packet and explicit selected `review_item_id` /
+    `selection_text`. The artifact records exactly one selected recipe,
+    preserves selected pair/manual/grade/G Zone/Bloom context,
+    keeps acceptance and G Zone/Bloom decisions unrecorded, disables runtime/UI/
+    bot/GameState mutation, and reports `ready_for_m61_03=true` for valid
+    selected items. Real `outputs/target_slice/m61_02_*` artifacts are not
+    generated until the real M61-01 packet exists and a human/team selection is
+    provided explicitly.
 - `M61-03`: Seventh-slice human-accepted repair artifact. **Pending.**
   - Record explicit acceptance or rejection of selected manual/grade repair
     packages without mutating original drafts.
