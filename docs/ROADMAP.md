@@ -646,7 +646,15 @@ Active order:
   avoids human selection, grade acceptance, Lock/Legion decision, runtime
   fixture, saved deck/UI, bot/playbook, and GameState mutation. Real M65-01
   artifacts remain gated on the real M64-closeout, M64-06, and M64-03 output
-  files. The current next target is M65-02.
+  files.
+  M65-02 spec/tool/tests are scaffolded and verified (`10/10` targeted,
+  `1515/1515` full Python) using an in-memory M65-01 review packet plus
+  explicit selection input; it records exactly one selected review item,
+  carries pair, human-selection, grade-profile, Lock-deferred, and
+  Legion-deferred context, and avoids grade acceptance, Lock/Legion decision,
+  runtime fixture, saved deck/UI, bot/playbook, and GameState mutation. Real
+  M65-02 artifacts remain gated on the real M65-01 output plus explicit
+  `review_item_id` and `selection_text`. The current next target is M65-03.
 
 Deferred until explicit user instruction:
 

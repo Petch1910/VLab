@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M65-02 eighth-slice human-selected recipe artifact
-   after M65-01 eighth-slice human repair review packet; M58-01 through
-   M65-01 scaffolds are ready
+-> current next target: M65-03 eighth-slice human-accepted grade repair artifact
+   after M65-02 eighth-slice human-selected recipe artifact; M58-01 through
+   M65-02 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2823,9 +2823,17 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     manual-overlap items. It records no human selection, grade acceptance,
     Lock/Legion decision, runtime fixture, saved deck/UI, bot/playbook, or
     direct `GameState` mutation.
-- `M65-02`: Eighth-slice human-selected recipe artifact. **Pending.**
+- `M65-02`: Eighth-slice human-selected recipe artifact. **Blocked by real M65-01 output and explicit human selection; scaffold ready.**
   - Record exactly one selected eighth-slice recipe id without mutating M64
     drafts.
+  - Scaffold status: spec/tool/tests are present. Targeted M65-02 tests
+    pass (`10/10`) and full Python tests pass (`1515/1515`) using an in-memory
+    M65-01 review packet and explicit selection input.
+  - Evidence: the artifact records exactly one selected review item
+    (`m65_01_m64_recipe_001_repair_review` in tests), carries pair,
+    human-selection, grade-profile, Lock-deferred, and Legion-deferred context,
+    and records no grade acceptance, Lock/Legion decision, runtime fixture,
+    saved deck/UI, bot/playbook, or direct `GameState` mutation.
 - `M65-03`: Eighth-slice human-accepted grade repair artifact. **Pending.**
   - Record explicit acceptance or rejection of the selected grade-profile
     repair package.

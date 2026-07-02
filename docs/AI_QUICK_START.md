@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M65-02 eighth-slice human-selected recipe artifact
-   after M65-01 eighth-slice human repair review packet; M58-01 through
-   M65-01 spec/tool/tests scaffolds are ready
+-> current target: M65-03 eighth-slice human-accepted grade repair artifact
+   after M65-02 eighth-slice human-selected recipe artifact; M58-01 through
+   M65-02 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -779,8 +779,17 @@ Windows-first program completion
    selection, grade acceptance, Lock/Legion decision, runtime fixture, saved
    deck, UI, bot/playbook, and GameState mutation disabled. Real M65-01
    artifacts remain gated on the real M64-closeout, M64-06, and M64-03 output
-   files. Current next target: M65-02 eighth-slice human-selected recipe
-   artifact
+   files
+-> M65-02 tooling/spec/tests are scaffolded; targeted M65-02 tests 10/10 and
+   full Python tests 1515/1515 pass.
+   The selected-recipe artifact consumes an in-memory M65-01 review packet,
+   records exactly one explicit selected review item, carries pair,
+   human-selection, grade repair, Lock-deferred, and Legion-deferred context,
+   and keeps grade acceptance, Lock/Legion decision, runtime fixture, saved
+   deck, UI, bot/playbook, and GameState mutation disabled. Real M65-02
+   artifacts remain gated on the real M65-01 output plus explicit
+   `review_item_id` and `selection_text`. Current next target: M65-03
+   eighth-slice human-accepted grade repair artifact
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3180,12 +3189,12 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M65`.
-2. Read `docs/specs/cards_and_decks/EIGHTH_SLICE_HUMAN_REPAIR_REVIEW_PACKET_SPEC.md`,
-   `tools/deck/build_eighth_slice_human_repair_review_packet.py`, and
-   `tests/test_eighth_slice_human_repair_review_packet.py`.
-3. Implement `M65-02` as an explicit human-selected recipe artifact that
-   records exactly one selected `M64` recipe id.
-4. Do not mutate M64 drafts, do not record grade acceptance, and do not promote
-   runtime/saved deck/UI/bot/GameState state.
+2. Read `docs/specs/cards_and_decks/EIGHTH_SLICE_HUMAN_SELECTED_RECIPE_ARTIFACT_SPEC.md`,
+   `tools/deck/build_eighth_slice_human_selected_recipe_artifact.py`, and
+   `tests/test_eighth_slice_human_selected_recipe_artifact.py`.
+3. Implement `M65-03` as an explicit human-accepted grade repair artifact for
+   the selected `M64` recipe.
+4. Do not mutate M64 drafts, do not record Lock/Legion decision, and do not
+   promote runtime/saved deck/UI/bot/GameState state.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.
