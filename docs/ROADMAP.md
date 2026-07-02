@@ -581,6 +581,13 @@ Active order:
   edges, and avoids runtime pack/deck/UI/bot/G Zone/Stride/Bloom-token/
   GameState mutation. Real M63-03 artifacts remain gated on the real M63-01
   and M63-02 output files.
+  M63-04 spec/tool/tests are scaffolded and verified (`9/9` targeted,
+  `1439/1439` full Python) using in-memory M63-02/M63-03 reports; it verifies
+  the M63 readiness/probe
+  evidence, opens only the offline M64 recipe pipeline, and avoids runtime
+  pack/recipe draft/deck/UI/bot/G Zone/Stride/Bloom-token/GameState mutation.
+  Real M63-04 artifacts remain gated on the real M63-02 and M63-03 output
+  files.
 
 Deferred until explicit user instruction:
 

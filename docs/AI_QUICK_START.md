@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M63-04 eighth-slice recipe pipeline entry gate
-   after M63-03 eighth-slice semantic/compatibility probe; M58-01 through M63-03
+-> current target: M64-01 eighth-slice fixture scaffold
+   after M63-04 eighth-slice recipe pipeline entry gate; M58-01 through M63-04
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -702,6 +702,14 @@ Windows-first program completion
    355 candidate edges, and keeps runtime pack, deck, UI, bot/playbook, G Zone,
    Stride, Bloom/token, and GameState mutation disabled. Real M63-03 artifacts
    remain gated on the real M63-01 and M63-02 output files
+-> M63-04 tooling/spec/tests are scaffolded; targeted M63-04 tests 9/9 and
+   full Python tests 1439/1439 pass.
+   The gate consumes in-memory M63-02/M63-03 reports, verifies readiness plus
+   semantic candidate evidence for `คาเงโร่ / link_joker_legion_mate`, opens
+   only the offline M64 recipe pipeline, and keeps runtime pack, recipe draft,
+   saved deck, UI, bot/playbook, G Zone, Stride, Bloom/token, and GameState
+   mutation disabled. Real M63-04 artifacts remain gated on the real M63-02
+   and M63-03 output files
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
