@@ -887,7 +887,16 @@
   blockers. It keeps Grade 4 cards out of main-deck drafts and keeps saved
   decks, UI publication, runtime fixtures, bot/playbook, automatic injection,
   G Zone/Stride runtime, Aqua Force battle-order runtime, and GameState
-  mutation disabled. The current next target is M68-04.
+  mutation disabled.
+  M68-04 spec/tool/tests are scaffolded and verified (`7/7` targeted,
+  `1671/1671` full Python) using in-memory M68-03 evidence
+  plus runtime SQLite; it validates 25 advisory recipes with 0 missing/copy/
+  slot/trigger/trigger-profile/required-grade/set-scope/Grade4/clan blockers,
+  blocks all 25 by manual-review overlap, records 23 grade-profile review
+  items plus 25 G Zone, Stride, Aqua Force battle-order, and human-selection
+  review items, and keeps saved deck, UI publication, runtime deck,
+  bot/playbook, automatic injection, and GameState mutation disabled. The
+  current next target is M68-05.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

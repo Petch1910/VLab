@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M68-04 ninth-slice recipe validator
-   after M68-03 ninth-slice recipe draft model; M58-01
-   through M68-03 scaffolds are ready
+-> current next target: M68-05 ninth-slice combo-to-recipe consistency
+   after M68-04 ninth-slice recipe validator; M58-01
+   through M68-04 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -3072,10 +3072,25 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     runtime, Aqua Force battle-order runtime, and direct `GameState` mutation
     disabled. Real `outputs/target_slice/m68_03_*` artifacts are not generated
     until the real M68-02 and M68-01 files exist.
-- `M68-04`: Ninth-slice recipe validator. **Blocked by M68-03 real output; planned.**
+- `M68-04`: Ninth-slice recipe validator. **Blocked by M68-03 real output; scaffold ready.**
   - Validate M68-03 advisory drafts for count, trigger profile, grade profile,
     copy limits, selected identity, missing cards, G Zone boundary, and
     manual-review blockers without promoting runtime/saved/UI/bot outputs.
+  - Scaffold status: spec/tool/tests are present. Targeted M68-04 tests pass
+    (`7/7`) using in-memory M68-03 recipe draft evidence plus runtime SQLite.
+  - Evidence: the validator checks 25 advisory drafts and reports 0 missing,
+    copy-limit, slot-gap, trigger-count, trigger-profile, required-grade,
+    set-scope, Grade 4 main-deck, and clan blockers. All 25 remain blocked by
+    manual-review overlap, with 23 grade-profile review items and 25 G Zone,
+    Stride, Aqua Force battle-order, and human-selection review items. Saved
+    decks, UI publication, runtime decks, bot/playbook, automatic injection,
+    and direct `GameState` mutation remain disabled. Real
+    `outputs/target_slice/m68_04_*` artifacts are not generated until the real
+    M68-03 output file exists.
+- `M68-05`: Ninth-slice combo-to-recipe consistency. **Blocked by M68-03/M68-04 real outputs; planned.**
+  - Verify that M68-04 validated recipes still contain their source candidate
+    pair cards and carry the expected manual-review/G Zone/Stride/Aqua Force
+    boundaries before repair-candidate work.
 
 ## Post-M28 Backlog (not in active queue)
 

@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M68-04 ninth-slice recipe validator
-   after M68-03 ninth-slice recipe draft model; M58-01
-   through M68-03 spec/tool/tests scaffolds are ready
+-> current target: M68-05 ninth-slice combo-to-recipe consistency
+   after M68-04 ninth-slice recipe validator; M58-01
+   through M68-04 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -936,7 +936,19 @@ Windows-first program completion
    cards out of main-deck drafts and keeps saved decks, UI publication,
    runtime deck fixtures, bot/playbook, automatic injection, G Zone/Stride
    runtime, Aqua Force battle-order runtime, and GameState mutation disabled.
-   Current next target: M68-04 ninth-slice recipe validator
+   Real M68-03 artifacts remain gated on the real M68-02 and M68-01 output
+   files
+-> M68-04 tooling/spec/tests are scaffolded; targeted M68-04 tests 7/7 and
+   full Python tests 1671/1671 pass.
+   The validator consumes in-memory M68-03 recipe drafts plus runtime SQLite,
+   validates 25 drafts with 0 missing/copy/slot/trigger/trigger-profile/
+   required-grade/set-scope/Grade4/clan blockers, blocks all 25 by manual
+   review overlap, records 23 grade-profile review items plus 25 G Zone,
+   Stride, Aqua Force battle-order, and human-selection review items, and keeps
+   saved deck, UI, runtime deck, bot/playbook, automatic injection, and
+   GameState mutation disabled. Real M68-04 artifacts remain gated on the real
+   M68-03 output file. Current next target: M68-05 ninth-slice combo-to-recipe
+   consistency
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3336,12 +3348,12 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M68`.
-2. Read `docs/specs/cards_and_decks/NINTH_SLICE_RECIPE_DRAFT_MODEL_SPEC.md`,
-   `tools/deck/build_ninth_slice_recipe_draft_model.py`,
-   and `tests/test_ninth_slice_recipe_draft_model.py`.
-3. Implement `M68-04` as the ninth-slice recipe validator.
-4. Validate advisory drafts for count, trigger profile, grade profile, copy
-   limits, selected identity, missing cards, G Zone boundary, and manual-review
-   blockers without promoting runtime/saved/UI/bot outputs.
+2. Read `docs/specs/cards_and_decks/NINTH_SLICE_RECIPE_VALIDATOR_SPEC.md`,
+   `tools/deck/validate_ninth_slice_recipe_drafts.py`,
+   and `tests/test_ninth_slice_recipe_validator.py`.
+3. Implement `M68-05` as the ninth-slice combo-to-recipe consistency check.
+4. Consume in-memory M68-03/M68-04 reports, verify every recipe still contains
+   its source pair cards, preserve manual-review/G Zone/Stride/Aqua Force
+   blockers, and keep runtime/saved/UI/bot/GameState mutation disabled.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.
