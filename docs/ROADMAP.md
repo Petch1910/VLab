@@ -616,6 +616,12 @@ Active order:
   plus Lock/Legion deferred review evidence, and avoids saved deck/UI/runtime
   deck/bot/GameState mutation. Real M64-04 artifacts remain gated on the real
   M64-03 output file.
+  M64-05 spec/tool/tests are scaffolded and verified (`6/6` targeted,
+  `1479/1479` full Python) using in-memory M64-03/M64-04 reports; it checks
+  all 25 recipe drafts, confirms every candidate pair is present, records no
+  manual dependency overlap, carries Lock/Legion deferred review evidence, and
+  avoids saved deck/UI/runtime deck/bot/GameState mutation. Real M64-05
+  artifacts remain gated on the real M64-03 and M64-04 output files.
 
 Deferred until explicit user instruction:
 

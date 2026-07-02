@@ -722,6 +722,12 @@
   plus Lock/Legion deferred review evidence, and avoids saved deck/UI/runtime
   deck/bot/GameState mutation. Real M64-04 artifacts remain gated on the real
   M64-03 output file.
+  M64-05 spec/tool/tests are scaffolded and verified (`6/6` targeted,
+  `1479/1479` full Python) using in-memory M64-03/M64-04 reports; it checks
+  all 25 recipe drafts, confirms every candidate pair is present, records no
+  manual dependency overlap, carries Lock/Legion deferred review evidence, and
+  avoids saved deck/UI/runtime deck/bot/GameState mutation. Real M64-05
+  artifacts remain gated on the real M64-03 and M64-04 output files.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

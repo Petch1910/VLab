@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M64-05 eighth-slice combo-to-recipe consistency
-   after M64-04 eighth-slice recipe validator; M58-01 through M64-04
+-> current target: M64-06 eighth-slice blocker repair candidates
+   after M64-05 eighth-slice combo-to-recipe consistency; M58-01 through M64-05
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -742,6 +742,15 @@ Windows-first program completion
    Legion deferred review evidence, and keeps saved deck, UI, runtime deck,
    bot/playbook, automatic injection, and GameState mutation disabled. Real
    M64-04 artifacts remain gated on the real M64-03 output file
+-> M64-05 tooling/spec/tests are scaffolded; targeted M64-05 tests 6/6 and
+   full Python tests 1479/1479 pass.
+   The consistency check consumes in-memory M64-03/M64-04 reports, checks all
+   25 recipe drafts, confirms every candidate pair is present, records 0
+   missing pair-card checks, 0 manual dependency checks, 25 Lock-deferred
+   checks, 25 Legion-deferred checks, 0 promotion-allowed checks, and keeps
+   saved deck, UI, runtime deck, bot/playbook, automatic injection, and
+   GameState mutation disabled. Real M64-05 artifacts remain gated on the real
+   M64-03 and M64-04 output files
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

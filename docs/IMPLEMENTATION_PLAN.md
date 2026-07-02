@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M64-05 eighth-slice combo-to-recipe consistency
-   after M64-04 eighth-slice recipe validator; M58-01 through M64-04
+-> current next target: M64-06 eighth-slice blocker repair candidates
+   after M64-05 eighth-slice combo-to-recipe consistency; M58-01 through M64-05
    scaffolds are ready
 ```
 
@@ -2769,9 +2769,19 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     injection, or `GameState` mutation. Real
     `outputs/target_slice/m64_04_*` artifacts are not generated until the real
     M64-03 output file exists.
-- `M64-05`: Eighth-slice combo-to-recipe consistency. **Pending.**
+- `M64-05`: Eighth-slice combo-to-recipe consistency. **Blocked by M64-03/M64-04 real outputs; scaffold ready.**
   - Check candidate combo cards are present and not blocked by manual-review
     dependency.
+  - Scaffold status: spec/tool/tests are present. Targeted M64-05 tests pass
+    `6/6`; full Python unittest discovery passes `1479/1479`. Tests use
+    in-memory M64-03 and M64-04 reports and verify `25` consistency checks,
+    `25` pair-present checks, `0` missing pair-card checks, `0` pair-level
+    manual dependency checks, `0` recipe-level manual dependency checks, `25`
+    Lock-deferred checks, `25` Legion-deferred checks, `0` promotion-allowed
+    checks, JSON/Markdown round-trip, and no saved deck, UI publication,
+    runtime deck, bot/playbook, automatic injection, or `GameState` mutation.
+    Real `outputs/target_slice/m64_05_*` artifacts are not generated until the
+    real M64-03 and M64-04 output files exist.
 - `M64-06`: Eighth-slice blocker repair candidates. **Pending.**
   - Generate source-backed repair candidates for blocked recipes.
 - `M64-closeout`: Eighth-slice runtime readiness decision. **Pending.**
