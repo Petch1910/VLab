@@ -798,7 +798,17 @@ Active order:
   deferred checks, 25 Aqua Force battle-order deferred checks, 23 grade-profile
   review checks, 0 promotion-allowed checks, and keeps saved deck, UI
   publication, runtime deck, bot/playbook, automatic injection, and GameState
-  mutation disabled. The current next target is M68-06.
+  mutation disabled.
+  M68-06 spec/tool/tests are scaffolded and verified (`8/8` targeted,
+  `1685/1685` full Python) using in-memory M68-03/M68-04/
+  M68-05 evidence plus M68-01 fixture scaffold evidence; it creates 25 repair
+  items, records 25 manual-overlap recipes with complete source-backed
+  substitution previews, 23 complete grade-profile repair candidates, 1 grade
+  package that clears manual overlap, 25 G Zone deferred packages, 25 Stride
+  deferred packages, 25 Aqua Force battle-order deferred packages, 0 unexpected
+  structural blockers, 25 human-review-ready items, and keeps saved deck, UI
+  publication, runtime deck, bot/playbook, automatic injection, and GameState
+  mutation disabled. The current next target is M68-closeout.
 
 Deferred until explicit user instruction:
 

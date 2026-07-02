@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M68-06 ninth-slice blocker repair candidates
-   after M68-05 ninth-slice combo-to-recipe consistency; M58-01
-   through M68-05 spec/tool/tests scaffolds are ready
+-> current target: M68-closeout ninth-slice runtime readiness decision
+   after M68-06 ninth-slice blocker repair candidates; M58-01
+   through M68-06 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -958,7 +958,19 @@ Windows-first program completion
    0 promotion-allowed checks, and keeps saved deck, UI, runtime deck,
    bot/playbook, automatic injection, and GameState mutation disabled. Real
    M68-05 artifacts remain gated on the real M68-03 and M68-04 output files.
-   Current next target: M68-06 ninth-slice blocker repair candidates
+-> M68-06 tooling/spec/tests are scaffolded; targeted M68-06 tests 8/8 and
+   full Python tests 1685/1685 pass.
+   The repair-candidate report consumes in-memory M68-03/M68-04/M68-05 reports
+   plus M68-01 fixture scaffold evidence, creates 25 repair items, records 25
+   manual-overlap recipes with complete source-backed substitution previews,
+   23 complete grade-profile repair candidates, 1 grade package that clears
+   manual overlap, 25 G Zone deferred packages, 25 Stride deferred packages,
+   25 Aqua Force battle-order deferred packages, 0 unexpected structural
+   blockers, 25 human-review-ready items, and keeps saved deck, UI, runtime
+   deck, bot/playbook, automatic injection, and GameState mutation disabled.
+   Real M68-06 artifacts remain gated on the real M68-03, M68-04, and M68-05
+   output files. Current next target: M68-closeout ninth-slice runtime
+   readiness decision
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3358,12 +3370,13 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M68`.
-2. Read `docs/specs/cards_and_decks/NINTH_SLICE_COMBO_RECIPE_CONSISTENCY_SPEC.md`,
-   `tools/deck/check_ninth_slice_combo_recipe_consistency.py`,
-   and `tests/test_ninth_slice_combo_recipe_consistency.py`.
-3. Implement `M68-06` as ninth-slice blocker repair candidates.
-4. Consume in-memory M68-03/M68-04/M68-05 reports, identify repair candidates
-   for manual-review, grade-profile, G Zone/Stride, and Aqua Force battle-order
-   blockers, and keep runtime/saved/UI/bot/GameState mutation disabled.
+2. Read `docs/specs/cards_and_decks/NINTH_SLICE_BLOCKER_REPAIR_CANDIDATES_SPEC.md`,
+   `tools/deck/build_ninth_slice_blocker_repair_candidates.py`,
+   and `tests/test_ninth_slice_blocker_repair_candidates.py`.
+3. Implement `M68-closeout` as the ninth-slice runtime readiness decision.
+4. Consume in-memory M68-03/M68-04/M68-05/M68-06 reports, decide whether the
+   ninth slice can promote a runtime fixture, preserve G Zone/Stride/Aqua
+   Force battle-order blockers, and keep runtime/saved/UI/bot/GameState
+   mutation disabled unless an explicit later milestone changes that boundary.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.
