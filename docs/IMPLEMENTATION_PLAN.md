@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M62-01 seventh fixture schema validator
-   after M61-closeout; M58-01 through M61-closeout
+-> current next target: M62-02 seventh fixture deck text exporter
+   after M62-01 schema validation; M58-01 through M62-01
    scaffolds are ready
 ```
 
@@ -2608,9 +2608,16 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
 
 ### M62: Seventh Fixture Consumption and Seven-Fixture Scale Gate
 
-- `M62-01`: Seventh fixture schema validator. **Pending.**
+- `M62-01`: Seventh fixture schema validator. **Blocked by M61-06 real fixture file; scaffold ready.**
   - Validate the Neo Nectar runtime fixture independently from the M61
     generator without enabling saved deck/UI/bot/runtime use.
+  - Scaffold status: spec/tool/tests are present. Targeted M62-01 tests pass
+    `13/13`; full Python unittest discovery passes `1381/1381`. Tests use an
+    in-memory M61-06 fixture and verify SQLite count recomputation,
+    source_artifacts compatibility, selected Neo Nectar group, and rejection of
+    unsafe G Zone/Stride/Bloom/token/token-main-deck boundaries. Real
+    `outputs/target_slice/m62_01_*` artifacts are not generated until the real
+    M61-06 fixture file exists.
 - `M62-02`: Seventh fixture deck text exporter. **Pending.**
   - Export the Neo Nectar fixture as reviewable count-line deck text without
     adding it to saved decks.

@@ -857,6 +857,9 @@
 - `specs/cards_and_decks/SEVENTH_SLICE_FIXTURE_CLOSEOUT_SPEC.md` M61-closeout seventh-slice fixture closeout spec
 - `../tools/deck/build_seventh_slice_fixture_closeout.py` M61-closeout seventh-slice fixture closeout tool
 - `../tests/test_seventh_slice_fixture_closeout.py` M61-closeout seventh-slice fixture closeout tests
+- `specs/cards_and_decks/SEVENTH_FIXTURE_SCHEMA_VALIDATOR_SPEC.md` M62-01 seventh fixture schema validator spec
+- `../tools/deck/validate_seventh_runtime_fixture_schema.py` M62-01 seventh fixture schema validator tool
+- `../tests/test_seventh_runtime_fixture_schema_validator.py` M62-01 seventh fixture schema validator tests
 - `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
 - `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
 - `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope
