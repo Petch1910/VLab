@@ -427,6 +427,12 @@ Active order:
   `17/23/18/12/8`, trigger profile `Critical=5`, `Draw=2`, `Heal=2`,
   `Stand=3`, candidate edges `107`, and manual-review cards `10`. The real
   scaffold report remains gated on real M59-02, M59-03, and M59-04 outputs.
+  M60-02 spec/tool/tests are scaffolded and verified (`9/9` targeted,
+  `1265/1265` full Python) using in-memory M59-01/M59-02/M59-03/M59-04/M60-01
+  reports; the review packet is ready for M60-03 with fixture scaffold items
+  `1`, manual-review cards `10`, candidate edges `107`, total review items
+  `118`, and runtime/UI/bot/G Zone/Stride/GameState mutation disabled. The real
+  review packet remains gated on real upstream outputs.
 
 Deferred until explicit user instruction:
 

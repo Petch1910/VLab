@@ -818,6 +818,9 @@
 - `specs/cards_and_decks/SEVENTH_SLICE_FIXTURE_SCAFFOLD_SPEC.md` M60-01 seventh-slice fixture scaffold spec
 - `../tools/deck/build_seventh_slice_fixture_scaffold.py` M60-01 seventh-slice fixture scaffold tool
 - `../tests/test_seventh_slice_fixture_scaffold.py` M60-01 seventh-slice fixture scaffold tests
+- `specs/cards_and_decks/SEVENTH_SLICE_REVIEW_PACKET_SPEC.md` M60-02 seventh-slice review packet spec
+- `../tools/deck/build_seventh_slice_review_packet.py` M60-02 seventh-slice review packet tool
+- `../tests/test_seventh_slice_review_packet.py` M60-02 seventh-slice review packet tests
 - `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
 - `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
 - `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope

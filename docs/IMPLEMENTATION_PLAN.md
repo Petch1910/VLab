@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M60-01 seventh-slice fixture scaffold real artifact
-   after M59-02/M59-03/M59-04 real outputs; M58-01 through M60-01 scaffolds are ready
+-> current next target: M60-02 seventh-slice review packet real artifact
+   after M59-01/M59-02/M59-03/M59-04/M60-01 real outputs; M58-01 through M60-02 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2430,11 +2430,23 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     blocking issues `0`, and ready_for_m60_02 `true`. The real
     `outputs/target_slice/m60_01_*` scaffold artifacts are not generated until
     the real M59-02, M59-03, and M59-04 outputs exist.
-- `M60-02`: Seventh-slice review packet. **Pending.**
+- `M60-02`: Seventh-slice review packet. **Blocked by M59-01/M59-02/M59-03/M59-04/M60-01 real outputs; scaffold ready.**
   - Start after M60-01 scaffold evidence. Export candidate edges,
     manual-review cards, and format notes for human review without recipe
     drafts, runtime fixtures, saved deck injection, UI publication, bot/playbook
     promotion, G Zone runtime, Stride runtime, or `GameState` mutation.
+  - Scaffold status: spec/tool/tests are present. Targeted M60-02 tests pass
+    `9/9`; full Python unittest discovery passes `1265/1265`. Tests use
+    in-memory M59-01/M59-02/M59-03/M59-04/M60-01 reports and verify fixture
+    scaffold items `1`, manual-review cards `10`, candidate edges `107`, total
+    review items `118`, ready_for_m60_03 `true`, and runtime/UI/bot/G Zone/
+    Stride/GameState mutation disabled. The real
+    `outputs/target_slice/m60_02_*` review packet artifacts are not generated
+    until the real upstream outputs exist.
+- `M60-03`: Seventh-slice recipe draft model. **Pending.**
+  - Start after M60-02 review packet evidence. Create advisory recipe drafts
+    only; do not create saved decks, UI deck entries, runtime fixtures, bot
+    playbooks, G Zone runtime, Stride runtime, or `GameState` mutation.
 
 ## Post-M28 Backlog (not in active queue)
 
