@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M69-03 ninth-slice human-accepted repair artifact
-   after M69-02 ninth-slice human-selected recipe artifact; M58-01
-   through M69-02 scaffolds are ready
+-> current next target: M69-04 ninth-slice G Zone, Stride, and Aqua Force decision artifact
+   after M69-03 ninth-slice human-accepted repair artifact; M58-01
+   through M69-03 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -3166,9 +3166,22 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     mutation disabled. Real `outputs/target_slice/m69_02_*` artifacts are not
     generated until the real M69-01 file exists and a user supplies explicit
     selection input.
-- `M69-03`: Ninth-slice human-accepted repair artifact. **Planned.**
+- `M69-03`: Ninth-slice human-accepted repair artifact. **Blocked by M69-02 real output and explicit repair decision input; scaffold ready.**
   - Record explicit acceptance or rejection of selected manual/grade repair
     packages.
+  - Scaffold status: spec/tool/tests are present. Targeted M69-03 tests pass
+    (`11/11`) using in-memory M69-02, M68-03, and M68-01 evidence; full Python
+    tests pass (`1727/1727`).
+  - Evidence: the repair-decision artifact requires explicit non-empty
+    decision text, supports accepted/rejected decisions, applies accepted manual
+    substitutions in memory only, recomputes the grade repair package after
+    manual substitution, produces a 50-card and `17/14/11/8` grade-profile
+    preview for valid accepted items, and keeps G Zone, Stride, and Aqua Force
+    battle-order decisions, runtime fixtures, saved decks, UI publication,
+    bot/playbook, automatic injection, and direct `GameState` mutation
+    disabled. Real `outputs/target_slice/m69_03_*` artifacts are not generated
+    until the real M69-02 file exists and a user supplies explicit repair
+    decision input.
 - `M69-04`: Ninth-slice G Zone, Stride, and Aqua Force decision artifact. **Planned.**
   - Record whether runtime promotion waits for G Zone/Stride rules and Aqua
     Force battle-order support.

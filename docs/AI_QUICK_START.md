@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M69-03 ninth-slice human-accepted repair artifact
-   after M69-02 ninth-slice human-selected recipe artifact; M58-01
-   through M69-02 spec/tool/tests scaffolds are ready
+-> current target: M69-04 ninth-slice G Zone, Stride, and Aqua Force decision artifact
+   after M69-03 ninth-slice human-accepted repair artifact; M58-01
+   through M69-03 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -999,8 +999,18 @@ Windows-first program completion
    system decisions, runtime fixture, saved deck, UI, bot/playbook, automatic
    injection, and GameState mutation disabled, and routes the next target to
    M69-03. Real M69-02 artifacts remain gated on a real M69-01 output file and
-   explicit selection input. Current next target: M69-03 ninth-slice
-   human-accepted repair artifact
+   explicit selection input.
+-> M69-03 tooling/spec/tests are scaffolded; targeted M69-03 tests 11/11 and
+   full Python tests 1727/1727 pass.
+   The repair-decision artifact requires explicit decision text, supports
+   accepted/rejected decisions, applies accepted manual repairs only in memory,
+   recomputes grade repair after manual substitutions, keeps 50-card and
+   17/14/11/8 grade-preview evidence for accepted items, keeps G Zone, Stride,
+   and Aqua Force battle-order decisions deferred, keeps runtime fixture, saved
+   deck, UI, bot/playbook, automatic injection, and GameState mutation disabled,
+   and routes the next target to M69-04. Real M69-03 artifacts remain gated on
+   a real M69-02 output file and explicit repair decision input. Current next
+   target: M69-04 ninth-slice G Zone, Stride, and Aqua Force decision artifact
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3400,13 +3410,14 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M69`.
-2. Read `docs/specs/cards_and_decks/NINTH_SLICE_HUMAN_SELECTED_RECIPE_ARTIFACT_SPEC.md`,
-   `tools/deck/build_ninth_slice_human_selected_recipe_artifact.py`,
-   and `tests/test_ninth_slice_human_selected_recipe_artifact.py`.
-3. Implement `M69-03` as the ninth-slice human-accepted repair artifact.
-4. Consume M69-02 selected recipe evidence, record explicit acceptance or
-   rejection of selected manual/grade repair packages, and keep runtime fixture
-   creation, saved-deck/UI publication, bot/playbook promotion, and GameState
-   mutation disabled.
+2. Read `docs/specs/cards_and_decks/NINTH_SLICE_HUMAN_ACCEPTED_REPAIR_ARTIFACT_SPEC.md`,
+   `tools/deck/build_ninth_slice_human_accepted_repair_artifact.py`,
+   and `tests/test_ninth_slice_human_accepted_repair_artifact.py`.
+3. Implement `M69-04` as the ninth-slice G Zone, Stride, and Aqua Force
+   decision artifact.
+4. Consume M69-03 accepted repair evidence, record explicit deferred/main-deck
+   only decisions for G Zone, Stride, and Aqua Force battle-order support, and
+   keep runtime fixture creation, saved-deck/UI publication, bot/playbook
+   promotion, and GameState mutation disabled.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.

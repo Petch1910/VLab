@@ -936,7 +936,14 @@
   selected recipe, carries pair/manual/grade/G Zone/Stride/Aqua Force context
   forward, keeps acceptance, system decisions, runtime fixture, saved deck, UI
   publication, bot/playbook, automatic injection, and GameState mutation
-  disabled, and selects M69-03. The current next target is M69-03.
+  disabled, and selects M69-03.
+  M69-03 spec/tool/tests are scaffolded and verified (`11/11` targeted,
+  `1727/1727` full Python) using in-memory M69-02, M68-03, and M68-01 evidence;
+  it requires explicit decision text, supports accepted/rejected repair
+  decisions, applies accepted manual repairs in memory only, recomputes grade
+  repair after manual substitutions, keeps G Zone, Stride, and Aqua Force
+  decisions deferred, preserves runtime fixture/saved deck/UI/bot/GameState
+  boundaries, and selects M69-04. The current next target is M69-04.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.
