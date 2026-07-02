@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M60-02 seventh-slice review packet real artifact
-   after M59-01/M59-02/M59-03/M59-04/M60-01 real outputs; M58-01 through M60-02 scaffolds are ready
+-> current next target: M60-03 seventh-slice recipe draft model real artifact
+   after M60-02/M60-01 real outputs; M58-01 through M60-03 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2443,10 +2443,25 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     Stride/GameState mutation disabled. The real
     `outputs/target_slice/m60_02_*` review packet artifacts are not generated
     until the real upstream outputs exist.
-- `M60-03`: Seventh-slice recipe draft model. **Pending.**
+- `M60-03`: Seventh-slice recipe draft model. **Blocked by M60-02/M60-01 real outputs; scaffold ready.**
   - Start after M60-02 review packet evidence. Create advisory recipe drafts
     only; do not create saved decks, UI deck entries, runtime fixtures, bot
     playbooks, G Zone runtime, Stride runtime, or `GameState` mutation.
+  - Scaffold status: spec/tool/tests are present. Targeted M60-03 tests pass
+    `9/9`; full Python unittest discovery passes `1274/1274`. Tests use
+    in-memory M59-01/M59-02/M59-03/M59-04/M60-01/M60-02 reports and verify
+    candidate edge inputs `107`, skipped trigger/Grade 4/missing edges `84`,
+    advisory recipe drafts `23`, quantity-complete recipes `23`, manual-overlap
+    recipes `23`, fixture scaffold card count `14`, fixture scaffold total
+    cards `50`, ready_for_m60_04 `true`, and runtime/UI/bot/G Zone/Stride/
+    GameState mutation disabled. The real
+    `outputs/target_slice/m60_03_*` draft artifacts are not generated until the
+    real upstream outputs exist.
+- `M60-04`: Seventh-slice recipe validator. **Pending.**
+  - Start after M60-03 draft evidence. Validate advisory drafts for count,
+    trigger profile, grade profile, identity, set scope, copy limits, missing
+    cards, Grade 4 exclusion, manual-review dependencies, and fixture scaffold
+    constraints.
 
 ## Post-M28 Backlog (not in active queue)
 

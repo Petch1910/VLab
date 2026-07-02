@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M60-02 seventh-slice review packet real artifact, gated on
-   M59-01/M59-02/M59-03/M59-04/M60-01 real outputs; M58-01 through M60-02
+-> current target: M60-03 seventh-slice recipe draft model real artifact, gated
+   on M60-02/M60-01 real outputs; M58-01 through M60-03
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -554,6 +554,13 @@ Windows-first program completion
    items 1, manual-review cards 10, candidate edges 107, total review items
    118, and runtime/UI/bot/G Zone/Stride/GameState still disabled. Real packet
    remains gated on real upstream outputs
+-> M60-03 tooling/spec/tests are scaffolded; targeted M60-03 tests 9/9 and full
+   Python tests 1274/1274 pass using in-memory M59-01/M59-02/M59-03/M59-04/
+   M60-01/M60-02 reports. The draft model creates 23 advisory quantity-complete
+   recipe drafts, skips 84 trigger/Grade 4/missing candidate edges, carries 23
+   manual-overlap recipe blockers, and keeps runtime/UI/bot/G Zone/Stride/
+   GameState disabled. Real draft artifacts remain gated on real upstream
+   outputs
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

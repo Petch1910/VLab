@@ -432,7 +432,15 @@ Active order:
   reports; the review packet is ready for M60-03 with fixture scaffold items
   `1`, manual-review cards `10`, candidate edges `107`, total review items
   `118`, and runtime/UI/bot/G Zone/Stride/GameState mutation disabled. The real
-  review packet remains gated on real upstream outputs.
+  review packet remains gated on real upstream outputs. M60-03 spec/tool/tests
+  are scaffolded and verified (`9/9` targeted, `1274/1274` full Python) using
+  in-memory M59-01/M59-02/M59-03/M59-04/M60-01/M60-02 reports; the draft model
+  is ready for M60-04 with candidate edge inputs `107`, skipped trigger/Grade
+  4/missing edges `84`, advisory recipe drafts `23`, quantity-complete recipes
+  `23`, manual-overlap recipes `23`, fixture scaffold cards `14`, fixture
+  scaffold total cards `50`, and runtime/UI/bot/G Zone/Stride/GameState
+  mutation disabled. The real draft artifacts remain gated on real upstream
+  outputs.
 
 Deferred until explicit user instruction:
 

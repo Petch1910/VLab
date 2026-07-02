@@ -538,7 +538,15 @@
   reports; the review packet is ready for M60-03 with fixture scaffold items
   `1`, manual-review cards `10`, candidate edges `107`, total review items
   `118`, and runtime/UI/bot/G Zone/Stride/GameState mutation disabled. The real
-  review packet remains gated on real upstream outputs.
+  review packet remains gated on real upstream outputs. M60-03 spec/tool/tests
+  are scaffolded and verified (`9/9` targeted, `1274/1274` full Python) using
+  in-memory M59-01/M59-02/M59-03/M59-04/M60-01/M60-02 reports; the draft model
+  is ready for M60-04 with candidate edge inputs `107`, skipped trigger/Grade
+  4/missing edges `84`, advisory recipe drafts `23`, quantity-complete recipes
+  `23`, manual-overlap recipes `23`, fixture scaffold cards `14`, fixture
+  scaffold total cards `50`, and runtime/UI/bot/G Zone/Stride/GameState
+  mutation disabled. The real draft artifacts remain gated on real upstream
+  outputs.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.
