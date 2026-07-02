@@ -463,7 +463,14 @@ Active order:
   deferred packages `23`, Bloom/token deferred packages `23`, unexpected
   structural blockers `0`, human repair review ready `23`, and runtime/UI/bot/
   GameState mutation disabled. The real repair artifacts remain gated on real
-  upstream outputs.
+  upstream outputs. M60-closeout spec/tool/tests are scaffolded and verified
+  (`9/9` targeted, `1304/1304` full Python) using in-memory M59-01/M59-02/
+  M59-03/M59-04/M60-01/M60-02/M60-03/M60-04/M60-05/M60-06 reports; it selects
+  next queue `M61`, reports m60_scaffold_complete `true`,
+  real_artifacts_available `false`, runtime_ready_recipe_available `false`,
+  human_selection_review_allowed `true`, G Zone deferred recipes `23`,
+  Bloom/token deferred recipes `23`, and runtime/UI/bot/GameState mutation
+  disabled. The real closeout artifacts remain gated on real upstream outputs.
 
 Deferred until explicit user instruction:
 

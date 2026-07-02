@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M60-closeout seventh-slice runtime readiness decision real
-   artifact, gated on M60-01 through M60-06 real outputs; M58-01 through M60-06
+-> current target: M61-01 seventh-slice human repair review packet scaffold,
+   gated on M60-closeout real output; M58-01 through M60-closeout
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -583,6 +583,14 @@ Windows-first program completion
    deferred packages, 0 structural blockers, ready_for_human_repair_review 23,
    ready_for_m60_closeout true, and no runtime/UI/bot/GameState mutation. Real
    repair artifacts remain gated on real upstream outputs
+-> M60-closeout tooling/spec/tests are scaffolded; targeted M60-closeout tests
+   9/9 and full Python tests 1304/1304 pass using in-memory M59-01/M59-02/
+   M59-03/M59-04/M60-01/M60-02/M60-03/M60-04/M60-05/M60-06 reports. The
+   closeout reports m60_scaffold_complete true, real_artifacts_available false,
+   runtime_ready_recipe_available false, human_selection_review_allowed true,
+   next_queue M61, 23 manual-review overlap recipes, 23 G Zone deferred
+   recipes, 23 Bloom/token deferred recipes, and no runtime/UI/bot/GameState
+   mutation. Real closeout artifacts remain gated on real upstream outputs
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

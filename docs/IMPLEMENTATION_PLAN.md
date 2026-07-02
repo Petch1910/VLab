@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M60-closeout seventh-slice runtime readiness decision
-   real artifact after M60-01 through M60-06 real outputs; M58-01 through M60-06 scaffolds are ready
+-> current next target: M61-01 seventh-slice human repair review packet
+   scaffold after M60-closeout evidence; M58-01 through M60-closeout scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2499,11 +2499,44 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     ready `23`, ready_for_m60_closeout `true`, and runtime/UI/bot/GameState
     mutation disabled. The real `outputs/target_slice/m60_06_*` repair
     artifacts are not generated until the real upstream outputs exist.
-- `M60-closeout`: Seventh-slice runtime readiness decision. **Pending.**
+- `M60-closeout`: Seventh-slice runtime readiness decision. **Blocked by M60-01..M60-06 real outputs; scaffold ready.**
   - Start after M60-06 repair evidence. Decide whether the seventh slice
     remains advisory or may enter a bounded human acceptance/runtime fixture
     gate. Do not record human acceptance, mutate drafts, create saved decks,
     publish UI deck lists, enable G Zone/Stride runtime, or promote bot use.
+  - Scaffold status: spec/tool/tests are present. Targeted M60-closeout tests
+    pass `9/9`; full Python unittest discovery passes `1304/1304`. Tests use
+    in-memory M59-01/M59-02/M59-03/M59-04/M60-01/M60-02/M60-03/M60-04/M60-05/
+    M60-06 reports and verify m60_scaffold_complete `true`,
+    real_artifacts_available `false`, runtime_ready_recipe_available `false`,
+    human_selection_review_allowed `true`, next queue `M61`, repair candidates
+    ready for human review `23`, G Zone deferred recipes `23`, Bloom/token
+    deferred recipes `23`, and runtime/UI/bot/GameState mutation disabled. The
+    real `outputs/target_slice/m60_closeout_*` artifacts are not generated until
+    the real upstream outputs exist.
+
+### M61: Seventh-slice Human Selection, Repair, and G Zone/Bloom Decision Gate
+
+- `M61-01`: Seventh-slice human repair review packet. **Pending.**
+  - Export a concise review packet from M60-06 repair packages and M60-closeout
+    decision blockers. Do not record human selection or mutate M60 drafts.
+- `M61-02`: Seventh-slice human-selected recipe artifact. **Pending.**
+  - Record exactly one selected seventh-slice recipe id after review.
+- `M61-03`: Seventh-slice human-accepted repair artifact. **Pending.**
+  - Record explicit acceptance or rejection of selected manual/grade repair
+    packages without mutating original drafts.
+- `M61-04`: Seventh-slice G Zone, Stride, and Bloom/token decision artifact. **Pending.**
+  - Decide whether runtime promotion waits for G Zone/Stride and Bloom/token
+    rules support or remains advisory.
+- `M61-05`: Seventh-slice repaired recipe validation rerun. **Pending.**
+  - Apply accepted repair in memory and rerun count, trigger, grade, copy-limit,
+    clan, manual-overlap, G Zone, and Bloom/token validation.
+- `M61-06`: Seventh-slice runtime fixture promotion gate. **Pending.**
+  - Promote only if repaired validation, consistency, human acceptance, and
+    system decisions all pass.
+- `M61-closeout`: Seventh-slice fixture closeout. **Pending.**
+  - Decide whether the seventh slice enters offline fixture scope or remains
+    advisory.
 
 ## Post-M28 Backlog (not in active queue)
 
