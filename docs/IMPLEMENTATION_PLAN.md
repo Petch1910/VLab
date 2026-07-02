@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M65-06 eighth-slice runtime fixture promotion gate
-   after M65-05 eighth-slice repaired recipe validation rerun; M58-01
-   through M65-05 scaffolds are ready
+-> current next target: M65-closeout eighth-slice fixture closeout
+   after M65-06 eighth-slice runtime fixture promotion gate; M58-01
+   through M65-06 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2869,9 +2869,19 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     runtime fixture, saved deck/UI, bot/playbook, or direct `GameState`
     mutation and keeps Lock runtime, Unlock runtime, Legion runtime, and Mate
     identity checks disabled.
-- `M65-06`: Eighth-slice runtime fixture promotion gate. **Pending.**
+- `M65-06`: Eighth-slice runtime fixture promotion gate. **Blocked by real M65-03/M65-05 outputs; scaffold ready.**
   - Promote only if repaired validation, consistency, human selection, and
     system decisions all pass.
+  - Scaffold status: spec/tool/tests are present. Targeted M65-06 tests
+    pass (`10/10`) and full Python tests pass (`1555/1555`) using in-memory
+    M65-03 and M65-05 artifacts.
+  - Evidence: the gate allows an offline runtime/test fixture for
+    `m64_recipe_001` / Kagero only when human selection, human acceptance,
+    grade repair, validation, consistency, Lock boundary, Legion boundary, and
+    runtime-boundary checks all pass. It creates no saved deck, UI deck list,
+    bot/playbook, live text parser, or direct `GameState` mutation and keeps
+    Lock runtime, Unlock runtime, Legion runtime, and Mate identity checks
+    disabled.
 - `M65-closeout`: Eighth-slice fixture closeout. **Pending.**
   - Decide whether the eighth slice enters offline fixture scope or remains
     advisory.

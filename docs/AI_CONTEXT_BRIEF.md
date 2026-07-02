@@ -784,8 +784,16 @@
   the selected non-runtime boundary options, and keeps runtime fixture, saved
   deck/UI, bot/playbook, Lock runtime, Unlock runtime, Legion runtime, Mate
   identity checks, and GameState mutation disabled. Real M65-05 artifacts
-  remain gated on the real M65-03/M65-04 outputs. The current next target is
-  M65-06.
+  remain gated on the real M65-03/M65-04 outputs.
+  M65-06 spec/tool/tests are scaffolded and verified (`10/10` targeted,
+  `1555/1555` full Python) using in-memory M65-03 and M65-05 artifacts; it
+  gates an offline runtime/test fixture for `m64_recipe_001` / Kagero on human
+  selection, human acceptance, grade repair, validation, consistency,
+  Lock/Legion boundary, and runtime-boundary checks, while keeping saved deck,
+  UI publication, bot/playbook, live text parsing, Lock runtime, Unlock
+  runtime, Legion runtime, Mate identity checks, and GameState mutation
+  disabled. Real M65-06 artifacts remain gated on real M65-03/M65-05 outputs.
+  The current next target is M65-closeout.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.
