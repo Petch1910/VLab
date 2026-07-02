@@ -405,7 +405,12 @@ Active order:
   real scale decision remains gated on real M58-03 Unity evidence. M59-01
   spec/tool/tests are scaffolded and verified (`7/7` targeted, `1221/1221`
   full Python) using an in-memory M58-04 scale decision; the real seventh
-  target selection remains gated on real M58-04 output.
+  target selection remains gated on real M58-04 output. M59-02 spec/tool/tests
+  are scaffolded and verified (`9/9` targeted, `1230/1230` full Python) using
+  an in-memory M59-01 selection; selected scaffold target `เนโอ เนคต้า` /
+  `g_series_first` has source cards `78`, grade profile `17/23/18/12/8`,
+  trigger capacity `48`, no trigger gaps, and readiness for M59-03. The real
+  readiness report remains gated on real M59-01 output.
 
 Deferred until explicit user instruction:
 

@@ -511,7 +511,12 @@
   real scale decision remains gated on real M58-03 Unity evidence. M59-01
   spec/tool/tests are scaffolded and verified (`7/7` targeted, `1221/1221`
   full Python) using an in-memory M58-04 scale decision; the real seventh
-  target selection remains gated on real M58-04 output.
+  target selection remains gated on real M58-04 output. M59-02 spec/tool/tests
+  are scaffolded and verified (`9/9` targeted, `1230/1230` full Python) using
+  an in-memory M59-01 selection; selected scaffold target `เนโอ เนคต้า` /
+  `g_series_first` has source cards `78`, grade profile `17/23/18/12/8`,
+  trigger capacity `48`, no trigger gaps, and readiness for M59-03. The real
+  readiness report remains gated on real M59-01 output.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

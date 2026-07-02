@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M59-01 seventh target slice selection real artifact
-   after M58-04 real scale decision; M58-01 through M59-01 scaffolds are ready
+-> current next target: M59-02 seventh-slice fixture/format readiness real
+   artifact after M59-01 real selection; M58-01 through M59-02 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2387,11 +2387,21 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     plus in-memory sixth fixture smoke. The real
     `outputs/target_slice/m59_01_*` selection artifacts are not generated until
     the real M58-04 scale decision output exists.
-- `M59-02`: Seventh-slice fixture/format readiness. **Pending.**
+- `M59-02`: Seventh-slice fixture/format readiness. **Blocked by M59-01 real output; scaffold ready.**
   - Start only after real or scaffold M59-01 selection evidence exists for the
-    next offline target. Keep recipe creation, runtime fixtures, saved deck
-    injection, UI publication, bot/playbook promotion, G Zone runtime, Stride
-    runtime, and `GameState` mutation gated until their later milestones.
+    next offline target.
+  - Scaffold status: spec/tool/tests are present. Targeted M59-02 tests pass
+    `9/9`; full Python unittest discovery passes `1230/1230`. Tests use an
+    in-memory M59-01 selection and verify `เนโอ เนคต้า` / `g_series_first`:
+    source cards `78`, grade profile `17/23/18/12/8`, trigger capacity `48`,
+    non-trigger capacity `264`, trigger gaps `[]`, and ready_for_m59_03 `true`.
+    The real `outputs/target_slice/m59_02_*` readiness artifacts are not
+    generated until the real M59-01 selection output exists.
+- `M59-03`: Seventh-slice semantic/compatibility probe. **Pending.**
+  - Start after M59-02 readiness evidence. Keep recipe creation, runtime
+    fixtures, saved deck injection, UI publication, bot/playbook promotion,
+    G Zone runtime, Stride runtime, and `GameState` mutation gated until their
+    later milestones.
 
 ## Post-M28 Backlog (not in active queue)
 

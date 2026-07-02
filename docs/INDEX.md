@@ -806,6 +806,9 @@
 - `specs/cards_and_decks/SEVENTH_TARGET_SLICE_SELECTION_SPEC.md` M59-01 seventh target slice selection spec
 - `../tools/deck/build_seventh_target_slice_selection.py` M59-01 seventh target slice selection tool
 - `../tests/test_seventh_target_slice_selection.py` M59-01 seventh target slice selection tests
+- `specs/cards_and_decks/SEVENTH_SLICE_FIXTURE_READINESS_SPEC.md` M59-02 seventh-slice fixture/format readiness spec
+- `../tools/deck/build_seventh_slice_fixture_readiness.py` M59-02 seventh-slice fixture/format readiness tool
+- `../tests/test_seventh_slice_fixture_readiness.py` M59-02 seventh-slice fixture/format readiness tests
 - `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
 - `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
 - `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope
