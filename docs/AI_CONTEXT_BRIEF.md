@@ -577,6 +577,14 @@
   human_selection_review_allowed `true`, G Zone deferred recipes `23`,
   Bloom/token deferred recipes `23`, and runtime/UI/bot/GameState mutation
   disabled. The real closeout artifacts remain gated on real upstream outputs.
+  M61-01 spec/tool/tests are scaffolded and verified (`10/10` targeted,
+  `1314/1314` full Python) using in-memory M59-01/M59-02/M59-03/M59-04/
+  M60-01/M60-02/M60-03/M60-04/M60-05/M60-06/M60-closeout reports; it exports
+  review items `23`, complete manual repair candidates `23`, complete
+  grade-profile candidates `21`, grade-profile-not-needed items `2`, G Zone
+  deferred items `23`, Bloom/token deferred items `23`, ready_for_m61_02
+  `true`, and runtime/UI/bot/GameState mutation disabled. The real M61-01
+  artifacts remain gated on real upstream outputs.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

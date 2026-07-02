@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M61-01 seventh-slice human repair review packet scaffold,
-   gated on M60-closeout real output; M58-01 through M60-closeout
+-> current target: M61-02 seventh-slice human-selected recipe artifact
+   scaffold, gated on M61-01 real output; M58-01 through M61-01
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -591,6 +591,14 @@ Windows-first program completion
    next_queue M61, 23 manual-review overlap recipes, 23 G Zone deferred
    recipes, 23 Bloom/token deferred recipes, and no runtime/UI/bot/GameState
    mutation. Real closeout artifacts remain gated on real upstream outputs
+-> M61-01 tooling/spec/tests are scaffolded; targeted M61-01 tests 10/10 and
+   full Python tests 1314/1314 pass using in-memory M59-01/M59-02/M59-03/
+   M59-04/M60-01/M60-02/M60-03/M60-04/M60-05/M60-06/M60-closeout reports.
+   The packet exports 23 review items, 23 complete manual repair candidates,
+   21 complete grade-profile candidates, 2 grade-profile-not-needed items,
+   23 G Zone deferred items, 23 Bloom/token deferred items, ready_for_m61_02
+   true, and no selection/acceptance/system decision/runtime/UI/bot/GameState
+   mutation. Real M61-01 artifacts remain gated on real upstream outputs
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

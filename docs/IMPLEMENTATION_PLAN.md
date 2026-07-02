@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M61-01 seventh-slice human repair review packet
-   scaffold after M60-closeout evidence; M58-01 through M60-closeout scaffolds are ready
+-> current next target: M61-02 seventh-slice human-selected recipe artifact
+   scaffold after M61-01 evidence; M58-01 through M61-01 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2517,9 +2517,19 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
 
 ### M61: Seventh-slice Human Selection, Repair, and G Zone/Bloom Decision Gate
 
-- `M61-01`: Seventh-slice human repair review packet. **Pending.**
+- `M61-01`: Seventh-slice human repair review packet. **Blocked by M60-closeout/M60-06/M60-03 real outputs; scaffold ready.**
   - Export a concise review packet from M60-06 repair packages and M60-closeout
     decision blockers. Do not record human selection or mutate M60 drafts.
+  - Scaffold status: spec/tool/tests are present. Targeted M61-01 tests pass
+    `10/10`; full Python unittest discovery passes `1314/1314`. Tests use
+    in-memory M59-01/M59-02/M59-03/M59-04/M60-01/M60-02/M60-03/M60-04/M60-05/
+    M60-06/M60-closeout reports and verify review items `23`, complete manual
+    repair candidates `23`, complete grade-profile candidates `21`,
+    grade-profile-not-needed items `2`, G Zone deferred items `23`,
+    Bloom/token deferred items `23`, ready_for_m61_02 `true`, and no human
+    selection, acceptance, G Zone/Bloom decision, runtime/UI/bot/GameState
+    mutation. The real `outputs/target_slice/m61_01_*` artifacts are not
+    generated until the real upstream outputs exist.
 - `M61-02`: Seventh-slice human-selected recipe artifact. **Pending.**
   - Record exactly one selected seventh-slice recipe id after review.
 - `M61-03`: Seventh-slice human-accepted repair artifact. **Pending.**
