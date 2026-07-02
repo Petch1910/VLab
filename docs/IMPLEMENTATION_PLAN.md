@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M64-02 eighth-slice review packet
-   after M64-01 eighth-slice fixture scaffold; M58-01 through M64-01
+-> current next target: M64-03 eighth-slice recipe draft model
+   after M64-02 eighth-slice review packet; M58-01 through M64-02
    scaffolds are ready
 ```
 
@@ -2729,9 +2729,19 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     Lock, Legion, Bloom/token, or `GameState` mutation. Real
     `outputs/target_slice/m64_01_*` artifacts are not generated until the real
     M63-02, M63-03, and M63-04 outputs exist.
-- `M64-02`: Eighth-slice review packet. **Pending.**
+- `M64-02`: Eighth-slice review packet. **Blocked by M63-01/M63-02/M63-03/M63-04/M64-01 real outputs; scaffold ready.**
   - Export candidate edges, manual-review cards, and format notes for human
     review.
+  - Scaffold status: spec/tool/tests are present. Targeted M64-02 tests pass
+    `9/9`; full Python unittest discovery passes `1457/1457`. Tests use
+    in-memory M63-01/M63-02/M63-03/M63-04/M64-01 reports and verify `1`
+    fixture scaffold item, `6` manual-review card items, `355` candidate edge
+    items, `362` total review items, source-backed evidence counts, review-only
+    policy, Lock/Legion runtime deferral, repair blocking when promotion or
+    scaffold readiness flags are invalid, CSV/JSON/Markdown round-trip, and no
+    runtime pack, recipe draft, saved deck, UI, bot/playbook, or `GameState`
+    mutation. Real `outputs/target_slice/m64_02_*` artifacts are not generated
+    until the real upstream output files exist.
 - `M64-03`: Eighth-slice recipe draft model. **Pending.**
   - Create advisory recipe drafts only; no saved deck or UI injection.
 - `M64-04`: Eighth-slice recipe validator. **Pending.**

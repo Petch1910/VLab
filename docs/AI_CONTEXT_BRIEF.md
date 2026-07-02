@@ -702,6 +702,12 @@
   runtime pack/recipe draft/deck/UI/bot/G Zone/Stride/Lock/Legion/Bloom-token/
   GameState mutation. Real M64-01 artifacts remain gated on the real M63-02,
   M63-03, and M63-04 output files.
+  M64-02 spec/tool/tests are scaffolded and verified (`9/9` targeted,
+  `1457/1457` full Python) using in-memory M63-01/M63-02/M63-03/M63-04/M64-01
+  reports; it exports the review-only packet shape with 1 fixture scaffold
+  item, 6 manual-review card items, 355 candidate edge items, and avoids
+  recipe draft/runtime pack/deck/UI/bot/Lock/Legion/GameState mutation. Real
+  M64-02 artifacts remain gated on the real upstream output files.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.
