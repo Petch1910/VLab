@@ -392,7 +392,11 @@ Active order:
   remains gated on M57-06 output. Current next target is `M58-01` sixth fixture
   schema validator. M58-01 spec/tool/tests are scaffolded and verified (`11/11`
   targeted, `1190/1190` full Python) against an in-memory M57-06 fixture; the
-  real report remains gated on the real M57-06 fixture file.
+  real report remains gated on the real M57-06 fixture file. M58-02
+  spec/tool/tests are scaffolded and verified (`7/7` targeted, `1197/1197`
+  full Python) against an in-memory fixture plus M58-01 validation report; the
+  real deck text/report artifacts remain gated on real M57-06 and M58-01
+  files.
 
 Deferred until explicit user instruction:
 

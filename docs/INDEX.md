@@ -794,6 +794,9 @@
 - `specs/cards_and_decks/SIXTH_FIXTURE_SCHEMA_VALIDATOR_SPEC.md` M58-01 sixth fixture schema validator spec
 - `../tools/deck/validate_sixth_runtime_fixture_schema.py` M58-01 sixth fixture schema validation tool
 - `../tests/test_sixth_runtime_fixture_schema_validator.py` M58-01 sixth fixture schema validation tests
+- `specs/cards_and_decks/SIXTH_FIXTURE_DECK_TEXT_EXPORT_SPEC.md` M58-02 sixth fixture deck text export spec
+- `../tools/deck/export_sixth_fixture_deck_text.py` M58-02 sixth fixture deck text export tool
+- `../tests/test_sixth_fixture_deck_text_export.py` M58-02 sixth fixture deck text export tests
 - `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
 - `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
 - `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope

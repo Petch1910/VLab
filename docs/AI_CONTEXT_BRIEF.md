@@ -498,7 +498,10 @@
   M58 consumption/scale work, but the real closeout output remains gated on
   M57-06 output. M58-01 spec/tool/tests are scaffolded and verified (`11/11`
   targeted, `1190/1190` full Python) against an in-memory M57-06 fixture; the
-  real M58-01 report remains gated on the real M57-06 fixture file.
+  real M58-01 report remains gated on the real M57-06 fixture file. M58-02
+  spec/tool/tests are scaffolded and verified (`7/7` targeted, `1197/1197`
+  full Python) against an in-memory fixture plus M58-01 validation report; the
+  real M58-02 artifacts remain gated on real M57-06 and M58-01 files.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

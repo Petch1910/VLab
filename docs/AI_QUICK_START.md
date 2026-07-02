@@ -37,8 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M58-01 sixth fixture schema validator real artifact, gated
-   on M57-06 fixture output; M58-01 spec/tool/tests scaffold are ready
+-> current target: M58-02 sixth fixture deck text export real artifact, gated
+   on M57-06 fixture output and M58-01 validation output; M58-01 and M58-02
+   spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -508,6 +509,10 @@ Windows-first program completion
 -> M58-01 tooling/spec/tests are scaffolded; targeted M58-01 tests 11/11 and
    full Python tests 1190/1190 pass using an in-memory M57-06 fixture. The real
    M58-01 report remains gated on the real M57-06 runtime fixture file
+-> M58-02 tooling/spec/tests are scaffolded; targeted M58-02 tests 7/7 and full
+   Python tests 1197/1197 pass using an in-memory M57-06 fixture plus M58-01
+   validation report. The real M58-02 deck text/report artifacts remain gated
+   on real M57-06 and M58-01 files
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
