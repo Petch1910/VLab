@@ -950,7 +950,15 @@
   system-boundary decisions, allows only main-deck validation rerun for
   main-deck/manual-semantic choices, keeps defer choices advisory, preserves
   runtime fixture/saved deck/UI/bot/G Zone/Stride/Aqua Force runtime/GameState
-  boundaries, and selects M69-05. The current next target is M69-05.
+  boundaries, and selects M69-05.
+  M69-05 spec/tool/tests are scaffolded and verified (`11/11` targeted,
+  `1749/1749` full Python) using in-memory M69-03 and M69-04 evidence; it
+  validates the repaired 50-card main deck, trigger profile, grade profile,
+  copy limits, SQLite card existence, clan/source-series scope, and combo-pair
+  presence, suppresses only resolved G Zone/Stride/Aqua deferred review codes,
+  keeps defer choices advisory, preserves runtime fixture/saved deck/UI/bot/G
+  Zone/Stride/Aqua runtime/GameState boundaries, and selects M69-06. The
+  current next target is M69-06.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M69-05 ninth-slice repaired recipe validation rerun
-   after M69-04 ninth-slice G Zone, Stride, and Aqua Force decision artifact;
-   M58-01 through M69-04 spec/tool/tests scaffolds are ready
+-> current target: M69-06 ninth-slice runtime fixture promotion gate
+   after M69-05 ninth-slice repaired recipe validation rerun; M58-01 through
+   M69-05 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -1021,6 +1021,18 @@ Windows-first program completion
    the next target to M69-05. Real M69-04 artifacts remain gated on a real
    M69-03 output file and explicit system decision options. Current next
    target: M69-05 ninth-slice repaired recipe validation rerun
+-> M69-05 tooling/spec/tests are scaffolded; targeted M69-05 tests 11/11 and
+   full Python tests 1749/1749 pass.
+   The repaired validation rerun builds a one-recipe in-memory report from
+   M69-03 repaired quantities, requires M69-04 boundary evidence, validates the
+   50-card main deck, trigger profile, grade profile, copy limits, SQLite card
+   existence, clan/source-series scope, and combo-pair presence, suppresses
+   only resolved G Zone/Stride/Aqua deferred review codes, keeps defer choices
+   advisory, keeps runtime fixture, saved deck, UI, bot/playbook, automatic
+   injection, G Zone runtime, Stride runtime, Aqua Force battle-order runtime,
+   and GameState mutation disabled, and routes the next target to M69-06. Real
+   M69-05 artifacts remain gated on real M69-03/M69-04 output files. Current
+   next target: M69-06 ninth-slice runtime fixture promotion gate
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3420,13 +3432,13 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M69`.
-2. Read `docs/specs/cards_and_decks/NINTH_SLICE_SYSTEM_DECISION_ARTIFACT_SPEC.md`,
-   `tools/deck/build_ninth_slice_system_decision_artifact.py`,
-   and `tests/test_ninth_slice_system_decision_artifact.py`.
-3. Implement `M69-05` as the ninth-slice repaired recipe validation rerun.
-4. Consume M69-04 system-boundary evidence, rerun repaired main-deck validation
-   with only G Zone/Stride/Aqua deferred issue codes suppressed when the
-   boundary allows it, and keep runtime fixture creation, saved-deck/UI
-   publication, bot/playbook promotion, and GameState mutation disabled.
+2. Read `docs/specs/cards_and_decks/NINTH_SLICE_REPAIRED_RECIPE_VALIDATION_RERUN_SPEC.md`,
+   `tools/deck/validate_ninth_slice_repaired_recipe.py`,
+   and `tests/test_ninth_slice_repaired_recipe_validation.py`.
+3. Implement `M69-06` as the ninth-slice runtime fixture promotion gate.
+4. Consume M69-05 validation evidence, allow offline fixture creation only if
+   validation, consistency, and all boundary gates pass, and keep saved-deck/UI
+   publication, bot/playbook promotion, G Zone/Stride/Aqua runtime, and
+   GameState mutation disabled.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.

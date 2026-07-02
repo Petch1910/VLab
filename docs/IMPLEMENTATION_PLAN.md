@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M69-05 ninth-slice repaired recipe validation rerun
-   after M69-04 ninth-slice G Zone, Stride, and Aqua Force decision artifact;
-   M58-01 through M69-04 scaffolds are ready
+-> current next target: M69-06 ninth-slice runtime fixture promotion gate
+   after M69-05 ninth-slice repaired recipe validation rerun; M58-01 through
+   M69-05 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -3197,10 +3197,22 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     and direct `GameState` mutation disabled. Real `outputs/target_slice/m69_04_*`
     artifacts are not generated until the real M69-03 file exists and a user
     supplies explicit system decision options.
-- `M69-05`: Ninth-slice repaired recipe validation rerun. **Planned.**
+- `M69-05`: Ninth-slice repaired recipe validation rerun. **Blocked by M69-03/M69-04 real outputs; scaffold ready.**
   - Apply accepted repair in memory and rerun count, trigger, grade,
     copy-limit, clan, manual-overlap, G Zone, Stride, and Aqua Force
     battle-order validation.
+  - Scaffold status: spec/tool/tests are present. Targeted M69-05 tests pass
+    (`11/11`) using in-memory M69-03 and M69-04 evidence; full Python tests
+    pass (`1749/1749`).
+  - Evidence: the validation rerun builds a one-recipe in-memory report from
+    M69-03 repaired quantities, requires M69-04 boundary evidence, validates
+    the 50-card main deck, trigger profile, grade profile, copy limits,
+    SQLite card existence, clan/source-series scope, and combo-pair presence,
+    suppresses only resolved G Zone/Stride/Aqua deferred review codes, keeps
+    defer choices advisory with `ready_for_m69_06=false`, and keeps runtime
+    fixture creation, saved decks, UI publication, bot/playbook, automatic
+    injection, G Zone runtime, Stride runtime, Aqua Force battle-order runtime,
+    and direct `GameState` mutation disabled.
 - `M69-06`: Ninth-slice runtime fixture promotion gate. **Planned.**
   - Allow offline fixture creation only if M69 validation clears every blocker.
 - `M69-closeout`: Ninth-slice fixture closeout. **Planned.**
