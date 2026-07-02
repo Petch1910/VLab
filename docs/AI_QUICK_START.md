@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M66-03 eighth fixture headless load smoke
-   after M66-02 eighth fixture deck text exporter; M58-01
-   through M66-02 spec/tool/tests scaffolds are ready
+-> current target: M66-04 eight-fixture scale decision
+   after M66-03 eighth fixture headless load smoke; M58-01
+   through M66-03 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -850,8 +850,17 @@ Windows-first program completion
    malformed fixture rows, and keeps saved deck injection, UI publication,
    bot/playbook, Lock runtime, Unlock runtime, Legion runtime, Mate identity
    checks, and GameState mutation disabled. Real M66-02 artifacts remain gated
-   on real M65-06/M66-01 outputs. Current next target: M66-03 eighth fixture
-   headless load smoke
+   on real M65-06/M66-01 outputs.
+-> M66-03 tooling/spec/tests are scaffolded; targeted M66-03 tests 9/9 and
+   full Python tests 1594/1594 pass.
+   The headless load smoke consumes in-memory M65-06 fixture evidence and
+   M66-02 deck text, parses count-line sections, verifies deck text exactly
+   matches the fixture, creates a `VGTH1.` deck code, accepts optional Unity
+   headless evidence only when it uses `deck_source=deck_code`, and keeps saved
+   decks, UI deck library, bot/playbook, Lock runtime, Unlock runtime, Legion
+   runtime, Mate identity checks, and Python-side GameState mutation disabled.
+   Real M66-03 artifacts remain gated on real M65-06/M66-01/M66-02 outputs.
+   Current next target: M66-04 eight-fixture scale decision
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3251,11 +3260,12 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M66`.
-2. Read `docs/specs/cards_and_decks/EIGHTH_FIXTURE_DECK_TEXT_EXPORT_SPEC.md`,
-   `tools/deck/export_eighth_fixture_deck_text.py`,
-   and `tests/test_eighth_fixture_deck_text_export.py`.
-3. Implement `M66-03` as the eighth fixture headless load smoke.
-4. Load the Kagero fixture through offline/headless paths without UI, bot,
-   Lock/Unlock, Legion/Mate runtime, or `GameState` mutation.
+2. Read `docs/specs/cards_and_decks/EIGHTH_HEADLESS_FIXTURE_LOAD_SMOKE_SPEC.md`,
+   `tools/deck/build_eighth_headless_fixture_load_smoke.py`,
+   and `tests/test_eighth_headless_fixture_load_smoke.py`.
+3. Implement `M66-04` as the eight-fixture scale decision.
+4. Review all eight fixture evidence records before selecting any further
+   slice, while keeping saved decks, UI publication, bot/playbook, runtime
+   systems, and `GameState` mutation disabled.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.

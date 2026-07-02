@@ -812,7 +812,14 @@
   Lock/Legion notes as comments only, rejects invalid validation or malformed
   fixture rows, and keeps saved deck, UI publication, bot/playbook, runtime
   systems, and GameState mutation disabled. Real M66-02 artifacts remain gated
-  on real M65-06/M66-01 outputs. The current next target is M66-03.
+  on real M65-06/M66-01 outputs.
+  M66-03 spec/tool/tests are scaffolded and verified (`9/9` targeted,
+  `1594/1594` full Python) using in-memory M65-06/M66-02 evidence; it parses
+  count-line text, verifies fixture equality, creates a `VGTH1.` deck code,
+  accepts optional Unity evidence only with `deck_source=deck_code`, and keeps
+  saved decks, UI library, bot/playbook, runtime systems, and GameState
+  mutation disabled. Real M66-03 artifacts remain gated on real
+  M65-06/M66-01/M66-02 outputs. The current next target is M66-04.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M66-03 eighth fixture headless load smoke
-   after M66-02 eighth fixture deck text exporter; M58-01
-   through M66-02 scaffolds are ready
+-> current next target: M66-04 eight-fixture scale decision
+   after M66-03 eighth fixture headless load smoke; M58-01
+   through M66-03 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2926,9 +2926,20 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     direct `GameState` mutation disabled. Real
     `outputs/target_slice/m66_02_*` artifacts are not generated until the real
     M65-06 fixture and M66-01 validation files exist.
-- `M66-03`: Eighth fixture headless load smoke. **Blocked by M65-06/M66-01/M66-02 real files; planned.**
+- `M66-03`: Eighth fixture headless load smoke. **Blocked by M65-06/M66-01/M66-02 real files; scaffold ready.**
   - Load the Kagero fixture through offline/headless paths without UI, bot,
     Lock, Unlock, Legion, Mate, or `GameState` mutation.
+  - Scaffold status: spec/tool/tests are present. Targeted M66-03 tests pass
+    (`9/9`) and full Python tests pass (`1594/1594`) using an in-memory
+    M65-06 fixture plus M66-02 deck text.
+  - Evidence: the smoke parses count-line deck text, verifies main deck entries
+    match the fixture, preserves empty Ride/G sections, creates a `VGTH1.`
+    deck code, accepts optional Unity evidence only when `deck_source=deck_code`,
+    and keeps saved deck mutation, UI deck library mutation, bot/playbook,
+    Lock runtime, Unlock runtime, Legion runtime, Mate identity checks, and
+    Python-side `GameState` mutation disabled. Real
+    `outputs/target_slice/m66_03_*` artifacts are not generated until the real
+    M65-06 fixture, M66-01 validation, and M66-02 deck text files exist.
 - `M66-04`: Eight-fixture scale decision. **Blocked by M62-04/M66-03 real evidence; planned.**
   - Review all eight fixture evidence records before selecting any further
     slice.

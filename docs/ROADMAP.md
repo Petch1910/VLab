@@ -706,7 +706,14 @@ Active order:
   Lock/Legion notes as comments only, rejects invalid validation or malformed
   fixture rows, and keeps saved deck, UI publication, bot/playbook, runtime
   systems, and GameState mutation disabled. Real M66-02 artifacts remain gated
-  on real M65-06/M66-01 outputs. The current next target is M66-03.
+  on real M65-06/M66-01 outputs.
+  M66-03 spec/tool/tests are scaffolded and verified (`9/9` targeted,
+  `1594/1594` full Python) using in-memory M65-06/M66-02 evidence; it parses
+  count-line text, verifies fixture equality, creates a `VGTH1.` deck code,
+  accepts optional Unity evidence only with `deck_source=deck_code`, and keeps
+  saved decks, UI library, bot/playbook, runtime systems, and GameState
+  mutation disabled. Real M66-03 artifacts remain gated on real
+  M65-06/M66-01/M66-02 outputs. The current next target is M66-04.
 
 Deferred until explicit user instruction:
 
