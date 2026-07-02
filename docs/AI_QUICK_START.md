@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M65-01 eighth-slice human repair review packet
-   after M64-closeout eighth-slice runtime readiness decision; M58-01 through
-   M64-closeout spec/tool/tests scaffolds are ready
+-> current target: M65-02 eighth-slice human-selected recipe artifact
+   after M65-01 eighth-slice human repair review packet; M58-01 through
+   M65-01 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -770,6 +770,17 @@ Windows-first program completion
    next queue, and keeps saved deck, UI, runtime fixture, Lock/Legion runtime,
    bot/playbook, and GameState mutation disabled. Real M64-closeout artifacts
    remain gated on the real M64-01..M64-06 output files
+-> M65-01 tooling/spec/tests are scaffolded; targeted M65-01 tests 10/10 and
+   full Python tests 1505/1505 pass.
+   The review packet consumes in-memory M64-closeout/M64-06/M64-03 reports,
+   exports 25 review items, carries 25 human-selection candidates, 25 complete
+   grade-profile repair previews, 25 Lock-deferred packages, 25
+   Legion-deferred packages, records 0 manual-overlap items, and keeps human
+   selection, grade acceptance, Lock/Legion decision, runtime fixture, saved
+   deck, UI, bot/playbook, and GameState mutation disabled. Real M65-01
+   artifacts remain gated on the real M64-closeout, M64-06, and M64-03 output
+   files. Current next target: M65-02 eighth-slice human-selected recipe
+   artifact
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3168,10 +3179,13 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 
 If continuing from here, do this next:
 
-1. Open `docs/IMPLEMENTATION_PLAN.md` section `M11-09`.
-2. Read `GameStateViewFactory.cs`, `GameStateViewTests.cs`,
-   `SNAPSHOT_ROLLBACK_VERIFIER_SPEC.md`, and hidden-state specs.
-3. Add hidden-state hardening coverage for player, spectator, and bot-safe
-   views.
-4. Verify hidden card ids/source metadata do not leak.
-5. Set next target to `M11-10`.
+1. Open `docs/IMPLEMENTATION_PLAN.md` section `M65`.
+2. Read `docs/specs/cards_and_decks/EIGHTH_SLICE_HUMAN_REPAIR_REVIEW_PACKET_SPEC.md`,
+   `tools/deck/build_eighth_slice_human_repair_review_packet.py`, and
+   `tests/test_eighth_slice_human_repair_review_packet.py`.
+3. Implement `M65-02` as an explicit human-selected recipe artifact that
+   records exactly one selected `M64` recipe id.
+4. Do not mutate M64 drafts, do not record grade acceptance, and do not promote
+   runtime/saved deck/UI/bot/GameState state.
+5. Verify with targeted Python tests and full `python -m unittest discover -s
+   tests -p "test_*.py"`.

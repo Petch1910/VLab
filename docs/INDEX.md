@@ -902,6 +902,9 @@
 - `specs/cards_and_decks/EIGHTH_SLICE_RUNTIME_READINESS_CLOSEOUT_SPEC.md` M64-closeout eighth-slice runtime readiness decision spec
 - `../tools/deck/build_eighth_slice_runtime_readiness_closeout.py` M64-closeout eighth-slice runtime readiness decision tool
 - `../tests/test_eighth_slice_runtime_readiness_closeout.py` M64-closeout eighth-slice runtime readiness decision tests
+- `specs/cards_and_decks/EIGHTH_SLICE_HUMAN_REPAIR_REVIEW_PACKET_SPEC.md` M65-01 eighth-slice human repair review packet spec
+- `../tools/deck/build_eighth_slice_human_repair_review_packet.py` M65-01 eighth-slice human repair review packet tool
+- `../tests/test_eighth_slice_human_repair_review_packet.py` M65-01 eighth-slice human repair review packet tests
 - `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
 - `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
 - `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope
