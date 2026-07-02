@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M58-04 six-fixture scale decision real artifact, gated on
-   M58-03 real Unity evidence; M58-01 through M58-04 spec/tool/tests scaffolds
-   are ready
+-> current target: M59-01 seventh target slice selection real artifact, gated
+   on M58-04 real scale decision; M58-01 through M59-01 spec/tool/tests
+   scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -521,6 +521,10 @@ Windows-first program completion
    Python tests 1214/1214 pass using the first five real smoke reports plus
    in-memory sixth fixture smoke. Six-fixture scale decision is ready in
    scaffold, while real report remains gated on real M58-03 Unity evidence
+-> M59-01 tooling/spec/tests are scaffolded; targeted M59-01 tests 7/7 and full
+   Python tests 1221/1221 pass using an in-memory M58-04 scale decision.
+   Seventh target selection is ready in scaffold, while real report remains
+   gated on real M58-04 output
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

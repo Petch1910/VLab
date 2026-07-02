@@ -402,7 +402,10 @@ Active order:
   headless evidence remain gated on real upstream files. M58-04 spec/tool/tests
   are scaffolded and verified (`8/8` targeted, `1214/1214` full Python) using
   the first five real smoke reports plus in-memory sixth fixture smoke; the
-  real scale decision remains gated on real M58-03 Unity evidence.
+  real scale decision remains gated on real M58-03 Unity evidence. M59-01
+  spec/tool/tests are scaffolded and verified (`7/7` targeted, `1221/1221`
+  full Python) using an in-memory M58-04 scale decision; the real seventh
+  target selection remains gated on real M58-04 output.
 
 Deferred until explicit user instruction:
 
