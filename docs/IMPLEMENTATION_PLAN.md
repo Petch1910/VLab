@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M61-closeout seventh-slice fixture closeout
-   scaffold after M61-06 evidence; M58-01 through M61-06
+-> current next target: M62-01 seventh fixture schema validator
+   after M61-closeout; M58-01 through M61-closeout
    scaffolds are ready
 ```
 
@@ -2595,9 +2595,30 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     bot/playbook, and does not mutate runtime/UI/bot/GameState. Real
     `outputs/target_slice/m61_06_*` artifacts are not generated until the real
     M61-03 and M61-05 artifacts exist.
-- `M61-closeout`: Seventh-slice fixture closeout. **Pending.**
+- `M61-closeout`: Seventh-slice fixture closeout. **Blocked by real M61-06 output; scaffold ready.**
   - Decide whether the seventh slice enters offline fixture scope or remains
     advisory.
+  - Scaffold status: spec/tool/tests are present. Targeted M61-closeout tests
+    pass `6/6`; full Python unittest discovery passes `1368/1368`. Tests use
+    in-memory M61-06 evidence and verify passing gates route to `M62`, failed
+    gates route to `M61-repair`, saved deck/UI/bot/GameState mutation remains
+    disabled, and G Zone/Stride/Bloom/token runtime remains disabled. Real
+    `outputs/target_slice/m61_closeout_*` artifacts are not generated until
+    the real M61-06 output exists.
+
+### M62: Seventh Fixture Consumption and Seven-Fixture Scale Gate
+
+- `M62-01`: Seventh fixture schema validator. **Pending.**
+  - Validate the Neo Nectar runtime fixture independently from the M61
+    generator without enabling saved deck/UI/bot/runtime use.
+- `M62-02`: Seventh fixture deck text exporter. **Pending.**
+  - Export the Neo Nectar fixture as reviewable count-line deck text without
+    adding it to saved decks.
+- `M62-03`: Seventh fixture headless load smoke. **Pending.**
+  - Load the Neo Nectar fixture through offline/headless paths without UI, bot,
+    G Zone, Stride, Bloom/token, or GameState mutation.
+- `M62-04`: Seven-fixture scale decision. **Pending.**
+  - Review all seven fixture evidence before selecting any further slice.
 
 ## Post-M28 Backlog (not in active queue)
 

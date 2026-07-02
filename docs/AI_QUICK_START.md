@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M61-closeout seventh-slice fixture closeout
-   scaffold after M61-06 gate evidence; M58-01 through M61-06
+-> current target: M62-01 seventh fixture schema validator
+   after M61-closeout; M58-01 through M61-closeout
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -643,6 +643,11 @@ Windows-first program completion
    deck, publishes no UI deck, enables no bot/playbook, and does not mutate
    GameState. Real M61-06 artifacts remain gated on real M61-03 and M61-05
    outputs
+-> M61-closeout tooling/spec/tests are scaffolded; targeted M61-closeout tests
+   6/6 and full Python tests 1368/1368 pass. The closeout routes passing
+   M61-06 evidence to M62 seventh fixture consumption only, routes failed gate
+   evidence to M61-repair, keeps saved deck/UI/bot/GameState mutation disabled,
+   and keeps G Zone/Stride/Bloom/token runtime disabled
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

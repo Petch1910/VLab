@@ -628,6 +628,12 @@
   runtime disabled, creates no saved deck, publishes no UI deck, enables no
   bot/playbook, and does not mutate runtime/UI/bot/GameState. Real M61-06
   artifacts remain gated on real M61-03 and M61-05 outputs.
+  M61-closeout spec/tool/tests are scaffolded and verified (`6/6` targeted,
+  `1368/1368` full Python) using in-memory M61-06 evidence; it routes passing
+  evidence to M62 seventh fixture consumption only, routes failed evidence to
+  M61-repair, keeps saved deck/UI/bot/GameState mutation disabled, and keeps G
+  Zone/Stride/Bloom/token runtime disabled. Real M61-closeout artifacts remain
+  gated on real M61-06 output.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

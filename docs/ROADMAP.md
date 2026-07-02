@@ -522,6 +522,12 @@ Active order:
   runtime disabled, creates no saved deck, publishes no UI deck, enables no
   bot/playbook, and does not mutate runtime/UI/bot/GameState. Real M61-06
   artifacts remain gated on real M61-03 and M61-05 outputs.
+  M61-closeout spec/tool/tests are scaffolded and verified (`6/6` targeted,
+  `1368/1368` full Python) using in-memory M61-06 evidence; it routes passing
+  evidence to M62 seventh fixture consumption only, routes failed evidence to
+  M61-repair, keeps saved deck/UI/bot/GameState mutation disabled, and keeps G
+  Zone/Stride/Bloom/token runtime disabled. Real M61-closeout artifacts remain
+  gated on real M61-06 output.
 
 Deferred until explicit user instruction:
 
