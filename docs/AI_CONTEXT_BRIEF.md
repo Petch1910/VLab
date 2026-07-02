@@ -921,7 +921,15 @@
   manual-overlap blockers, 23 grade-profile blockers, 25 G Zone blockers, 25
   Stride blockers, 25 Aqua Force battle-order blockers, keeps runtime fixture,
   saved deck, UI publication, bot/playbook, automatic injection, and GameState
-  mutation disabled, and selects M69. The current next target is M69-01.
+  mutation disabled, and selects M69.
+  M69-01 spec/tool/tests are scaffolded and verified (`11/11` targeted,
+  `1705/1705` full Python) using in-memory M68-closeout/M68-06/M68-03 evidence;
+  it exports 25 review items, 25 complete manual repair previews, 23 complete
+  grade-profile repair previews, 2 grade-not-needed items, 25 G Zone deferred
+  contexts, 25 Stride deferred contexts, 25 Aqua Force battle-order contexts,
+  keeps human selection/acceptance, system decisions, runtime fixture, saved
+  deck, UI publication, bot/playbook, automatic injection, and GameState
+  mutation disabled, and selects M69-02. The current next target is M69-02.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

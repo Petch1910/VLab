@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M69-01 ninth-slice human repair review packet
-   after M68-closeout ninth-slice runtime readiness decision; M58-01
-   through M68-closeout scaffolds are ready
+-> current next target: M69-02 ninth-slice human-selected recipe artifact
+   after M69-01 ninth-slice human repair review packet; M58-01
+   through M69-01 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -3135,11 +3135,23 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
 
 ## M69: Ninth-Slice Human Selection, Repair, and G Zone/Stride/Aqua Force Decision Gate
 
-- `M69-01`: Ninth-slice human repair review packet. **Planned.**
+- `M69-01`: Ninth-slice human repair review packet. **Blocked by M68-closeout/M68-06/M68-03 real outputs; scaffold ready.**
   - Export a concise review packet for M68-06 repair packages and candidate
     recipes.
   - Must not mutate M68 drafts, record acceptance, create runtime fixtures,
     publish saved/UI decks, enable bot/playbook output, or mutate `GameState`.
+  - Scaffold status: spec/tool/tests are present. Targeted M69-01 tests pass
+    (`11/11`) using in-memory M68-closeout, M68-06, and M68-03 evidence; full
+    Python tests pass (`1705/1705`).
+  - Evidence: the review packet exports 25 review items, all ready for human
+    repair review, with 25 complete manual repair previews, 23 complete
+    grade-profile repair previews, 2 grade-not-needed items, 25 G Zone deferred
+    contexts, 25 Stride deferred contexts, and 25 Aqua Force battle-order
+    contexts. Human selection, human acceptance, system decisions, runtime
+    fixtures, saved decks, UI publication, bot/playbook, automatic injection,
+    and direct `GameState` mutation remain disabled. Real
+    `outputs/target_slice/m69_01_*` artifacts are not generated until the real
+    M68-closeout, M68-06, and M68-03 files exist.
 - `M69-02`: Ninth-slice human-selected recipe artifact. **Planned.**
   - Record exactly one selected ninth-slice recipe id without mutating M68
     drafts.

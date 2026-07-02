@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M69-01 ninth-slice human repair review packet
-   after M68-closeout ninth-slice runtime readiness decision; M58-01
-   through M68-closeout spec/tool/tests scaffolds are ready
+-> current target: M69-02 ninth-slice human-selected recipe artifact
+   after M69-01 ninth-slice human repair review packet; M58-01
+   through M69-01 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -979,8 +979,19 @@ Windows-first program completion
    Force battle-order blockers, keeps saved deck, UI, runtime fixture,
    bot/playbook, automatic injection, and GameState mutation disabled, and
    routes the next queue to M69. Real M68-closeout artifacts remain gated on
-   real M68-01 through M68-06 output files. Current next target: M69-01
-   ninth-slice human repair review packet
+   real M68-01 through M68-06 output files.
+-> M69-01 tooling/spec/tests are scaffolded; targeted M69-01 tests 11/11 and
+   full Python tests 1705/1705 pass.
+   The human repair review packet consumes in-memory M68-closeout/M68-06/M68-03
+   evidence, exports 25 review items, preserves 25 complete manual repair
+   previews, 23 complete grade-profile repair previews, 2 grade-not-needed
+   items, 25 G Zone deferred contexts, 25 Stride deferred contexts, and 25
+   Aqua Force battle-order contexts, keeps human selection, human acceptance,
+   system decisions, runtime fixture, saved deck, UI, bot/playbook, automatic
+   injection, and GameState mutation disabled, and routes the next target to
+   M69-02. Real M69-01 artifacts remain gated on real M68-closeout, M68-06,
+   and M68-03 output files. Current next target: M69-02 ninth-slice
+   human-selected recipe artifact
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3380,13 +3391,13 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M69`.
-2. Read `docs/specs/cards_and_decks/NINTH_SLICE_RUNTIME_READINESS_CLOSEOUT_SPEC.md`,
-   `tools/deck/build_ninth_slice_runtime_readiness_closeout.py`,
-   and `tests/test_ninth_slice_runtime_readiness_closeout.py`.
-3. Implement `M69-01` as the ninth-slice human repair review packet.
-4. Consume M68-closeout/M68-06 evidence, export a concise review packet for
-   human selection, and keep recipe mutation, runtime fixture creation,
-   saved-deck/UI publication, bot/playbook promotion, and GameState mutation
-   disabled.
+2. Read `docs/specs/cards_and_decks/NINTH_SLICE_HUMAN_REPAIR_REVIEW_PACKET_SPEC.md`,
+   `tools/deck/build_ninth_slice_human_repair_review_packet.py`,
+   and `tests/test_ninth_slice_human_repair_review_packet.py`.
+3. Implement `M69-02` as the ninth-slice human-selected recipe artifact.
+4. Consume M69-01 review packet evidence, record exactly one selected recipe id
+   for the next acceptance step, and keep recipe mutation, runtime fixture
+   creation, saved-deck/UI publication, bot/playbook promotion, and GameState
+   mutation disabled.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.
