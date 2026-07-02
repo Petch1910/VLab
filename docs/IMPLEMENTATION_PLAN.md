@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M66-01 eighth fixture schema validator
-   after M65-closeout eighth-slice fixture closeout; M58-01
-   through M65-closeout scaffolds are ready
+-> current next target: M66-02 eighth fixture deck text exporter
+   after M66-01 eighth fixture schema validator; M58-01
+   through M66-01 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2898,9 +2898,20 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
 
 ### M66: Eighth Fixture Consumption and Eight-Fixture Scale Gate
 
-- `M66-01`: Eighth fixture schema validator. **Blocked by M65-06 real fixture file; planned.**
+- `M66-01`: Eighth fixture schema validator. **Blocked by M65-06 real fixture file; scaffold ready.**
   - Validate the Kagero runtime fixture independently from the M65 generator
     without enabling saved deck/UI/bot/runtime use.
+  - Scaffold status: spec/tool/tests are present. Targeted M66-01 tests pass
+    (`15/15`) and full Python tests pass (`1577/1577`) using an in-memory
+    M65-06 Kagero runtime fixture.
+  - Evidence: the validator recomputes count, trigger, grade, group, and
+    copy-limit evidence from SQLite, accepts M65-06 `source_artifacts` plural
+    metadata, rejects unsafe Lock/Unlock/Legion/Mate policy or runtime
+    boundaries, and keeps saved deck injection, UI publication, bot/playbook,
+    Lock runtime, Unlock runtime, Legion runtime, Mate identity checks, and
+    direct `GameState` mutation disabled. Real
+    `outputs/target_slice/m66_01_*` artifacts are not generated until the real
+    M65-06 fixture file exists.
 - `M66-02`: Eighth fixture deck text exporter. **Blocked by M65-06/M66-01 real files; planned.**
   - Export the Kagero fixture as reviewable count-line deck text without adding
     it to saved decks.
