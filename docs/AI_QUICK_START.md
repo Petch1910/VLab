@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M59-04 seventh-slice recipe pipeline entry gate real
-   artifact, gated on M59-02/M59-03 real outputs; M58-01 through M59-04 spec/tool/tests
+-> current target: M60-01 seventh-slice fixture scaffold real artifact, gated
+   on M59-02/M59-03/M59-04 real outputs; M58-01 through M60-01 spec/tool/tests
    scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -541,6 +541,13 @@ Windows-first program completion
    cards 78, manual-review cards 10, pair graph edges 2885, candidate edges
    107, blocking issues 0, and ready_for_m60 true. Real report remains gated
    on real M59-02 and M59-03 outputs
+-> M60-01 tooling/spec/tests are scaffolded; targeted M60-01 tests 9/9 and full
+   Python tests 1256/1256 pass using in-memory M59-02/M59-03/M59-04 reports.
+   The fixture scaffold is ready for M60-02 with source cards 78, grade profile
+   17/23/18/12/8, trigger profile Critical 5 / Draw 2 / Heal 2 / Stand 3,
+   candidate edges 107, manual-review cards 10, and runtime/UI/bot/G Zone/
+   Stride/GameState still disabled. Real report remains gated on real upstream
+   outputs
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

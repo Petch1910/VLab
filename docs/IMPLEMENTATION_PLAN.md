@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M59-04 seventh-slice recipe pipeline entry gate real
-   artifact after M59-02/M59-03 real outputs; M58-01 through M59-04 scaffolds are ready
+-> current next target: M60-01 seventh-slice fixture scaffold real artifact
+   after M59-02/M59-03/M59-04 real outputs; M58-01 through M60-01 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2419,12 +2419,22 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
 
 ### M60: Seventh Offline Recipe Pipeline
 
-- `M60-01`: Seventh-slice fixture scaffold. **Pending.**
+- `M60-01`: Seventh-slice fixture scaffold. **Blocked by M59-02/M59-03/M59-04 real outputs; scaffold ready.**
   - Start after M59-04 gate evidence. Define source-backed fixture policy for
-    the Neo Nectar G-series slice before validator work. Keep recipe drafts,
-    runtime fixtures, saved deck injection, UI publication, bot/playbook
-    promotion, G Zone runtime, Stride runtime, and `GameState` mutation gated
-    until their later milestones.
+    the Neo Nectar G-series slice before validator work.
+  - Scaffold status: spec/tool/tests are present. Targeted M60-01 tests pass
+    `9/9`; full Python unittest discovery passes `1256/1256`. Tests use
+    in-memory M59-02/M59-03/M59-04 reports and verify source cards `78`,
+    grade profile `17/23/18/12/8`, trigger profile `Critical=5`, `Draw=2`,
+    `Heal=2`, `Stand=3`, candidate edges `107`, manual-review cards `10`,
+    blocking issues `0`, and ready_for_m60_02 `true`. The real
+    `outputs/target_slice/m60_01_*` scaffold artifacts are not generated until
+    the real M59-02, M59-03, and M59-04 outputs exist.
+- `M60-02`: Seventh-slice review packet. **Pending.**
+  - Start after M60-01 scaffold evidence. Export candidate edges,
+    manual-review cards, and format notes for human review without recipe
+    drafts, runtime fixtures, saved deck injection, UI publication, bot/playbook
+    promotion, G Zone runtime, Stride runtime, or `GameState` mutation.
 
 ## Post-M28 Backlog (not in active queue)
 

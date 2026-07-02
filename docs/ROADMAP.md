@@ -420,7 +420,13 @@ Active order:
   reports; the gate allows M60 offline recipe pipeline only with source cards
   `78`, semantic cards `78`, manual-review cards `10`, pair graph edges
   `2885`, candidate edges `107`, blocking issues `0`, and readiness for M60.
-  The real gate report remains gated on real M59-02 and M59-03 outputs.
+  The real gate report remains gated on real M59-02 and M59-03 outputs. M60-01
+  spec/tool/tests are scaffolded and verified (`9/9` targeted, `1256/1256`
+  full Python) using in-memory M59-02/M59-03/M59-04 reports; the fixture
+  scaffold is ready for M60-02 with source cards `78`, grade profile
+  `17/23/18/12/8`, trigger profile `Critical=5`, `Draw=2`, `Heal=2`,
+  `Stand=3`, candidate edges `107`, and manual-review cards `10`. The real
+  scaffold report remains gated on real M59-02, M59-03, and M59-04 outputs.
 
 Deferred until explicit user instruction:
 
