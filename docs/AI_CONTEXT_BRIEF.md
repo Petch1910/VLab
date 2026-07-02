@@ -760,7 +760,16 @@
   Legion-deferred context, and avoids grade acceptance, Lock/Legion decision,
   runtime fixture, saved deck/UI, bot/playbook, and GameState mutation. Real
   M65-02 artifacts remain gated on the real M65-01 output plus explicit
-  `review_item_id` and `selection_text`. The current next target is M65-03.
+  `review_item_id` and `selection_text`.
+  M65-03 spec/tool/tests are scaffolded and verified (`10/10` targeted,
+  `1525/1525` full Python) using an in-memory M65-02 selected artifact plus
+  explicit grade decision input; it records accepted/rejected grade repair
+  decisions, applies accepted grade repair only in memory, reaches 50 cards
+  and target grade profile for the accepted test recipe, and avoids
+  Lock/Legion decision, runtime fixture, saved deck/UI, bot/playbook, and
+  GameState mutation. Real M65-03 artifacts remain gated on the real M65-02
+  output plus explicit `grade_decision` and `decision_text`. The current next
+  target is M65-04.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

@@ -654,7 +654,16 @@ Active order:
   Legion-deferred context, and avoids grade acceptance, Lock/Legion decision,
   runtime fixture, saved deck/UI, bot/playbook, and GameState mutation. Real
   M65-02 artifacts remain gated on the real M65-01 output plus explicit
-  `review_item_id` and `selection_text`. The current next target is M65-03.
+  `review_item_id` and `selection_text`.
+  M65-03 spec/tool/tests are scaffolded and verified (`10/10` targeted,
+  `1525/1525` full Python) using an in-memory M65-02 selected artifact plus
+  explicit grade decision input; it records accepted/rejected grade repair
+  decisions, applies accepted grade repair only in memory, reaches 50 cards
+  and target grade profile for the accepted test recipe, and avoids
+  Lock/Legion decision, runtime fixture, saved deck/UI, bot/playbook, and
+  GameState mutation. Real M65-03 artifacts remain gated on the real M65-02
+  output plus explicit `grade_decision` and `decision_text`. The current next
+  target is M65-04.
 
 Deferred until explicit user instruction:
 

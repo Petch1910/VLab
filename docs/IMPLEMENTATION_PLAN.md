@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M65-03 eighth-slice human-accepted grade repair artifact
-   after M65-02 eighth-slice human-selected recipe artifact; M58-01 through
-   M65-02 scaffolds are ready
+-> current next target: M65-04 eighth-slice Lock and Legion decision artifact
+   after M65-03 eighth-slice human-accepted grade repair artifact; M58-01
+   through M65-03 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2834,9 +2834,17 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     human-selection, grade-profile, Lock-deferred, and Legion-deferred context,
     and records no grade acceptance, Lock/Legion decision, runtime fixture,
     saved deck/UI, bot/playbook, or direct `GameState` mutation.
-- `M65-03`: Eighth-slice human-accepted grade repair artifact. **Pending.**
+- `M65-03`: Eighth-slice human-accepted grade repair artifact. **Blocked by real M65-02 output and explicit grade decision; scaffold ready.**
   - Record explicit acceptance or rejection of the selected grade-profile
     repair package.
+  - Scaffold status: spec/tool/tests are present. Targeted M65-03 tests
+    pass (`10/10`) and full Python tests pass (`1525/1525`) using an in-memory
+    M65-02 selected artifact and explicit grade decision input.
+  - Evidence: the artifact records accepted and rejected grade repair
+    decisions, applies accepted grade repair in memory only, reaches `50`
+    cards and target grade counts `17/14/11/8` for the accepted test recipe,
+    and records no Lock/Legion decision, runtime fixture, saved deck/UI,
+    bot/playbook, or direct `GameState` mutation.
 - `M65-04`: Eighth-slice Lock and Legion decision artifact. **Pending.**
   - Record whether runtime promotion waits for Lock/Unlock and Legion/Mate
     rules support.
