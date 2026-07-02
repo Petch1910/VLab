@@ -687,7 +687,13 @@ Active order:
   UI publication, bot/playbook, live text parsing, Lock runtime, Unlock
   runtime, Legion runtime, Mate identity checks, and GameState mutation
   disabled. Real M65-06 artifacts remain gated on real M65-03/M65-05 outputs.
-  The current next target is M65-closeout.
+  M65-closeout spec/tool/tests are scaffolded and verified (`7/7` targeted,
+  `1562/1562` full Python) using in-memory M65-06 gate evidence; it routes
+  complete Kagero fixture evidence to `M66`, failed or payload-missing evidence
+  to `M65-repair`, while keeping saved deck, UI publication, bot/playbook,
+  Lock runtime, Unlock runtime, Legion runtime, Mate identity checks, and
+  GameState mutation disabled. Real M65-closeout artifacts remain gated on real
+  M65-06 output. The current next target is M66-01.
 
 Deferred until explicit user instruction:
 

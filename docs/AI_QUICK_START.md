@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M65-closeout eighth-slice fixture closeout
-   after M65-06 eighth-slice runtime fixture promotion gate; M58-01
-   through M65-06 spec/tool/tests scaffolds are ready
+-> current target: M66-01 eighth fixture schema validator
+   after M65-closeout eighth-slice fixture closeout; M58-01
+   through M65-closeout spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -824,8 +824,16 @@ Windows-first program completion
    boundaries pass, and keeps saved deck injection, UI publication,
    bot/playbook, live text parsing, Lock runtime, Unlock runtime, Legion
    runtime, Mate identity checks, and GameState mutation disabled. Real M65-06
-   artifacts remain gated on real M65-03/M65-05 outputs. Current next target:
-   M65-closeout eighth-slice fixture closeout
+   artifacts remain gated on real M65-03/M65-05 outputs.
+-> M65-closeout tooling/spec/tests are scaffolded; targeted M65-closeout tests
+   7/7 and full Python tests 1562/1562 pass.
+   The closeout consumes in-memory M65-06 gate evidence, routes complete
+   Kagero fixture evidence to M66, routes failed or payload-missing evidence
+   to M65-repair, and keeps saved deck injection, UI publication, bot/playbook,
+   Lock runtime, Unlock runtime, Legion runtime, Mate identity checks, and
+   GameState mutation disabled. Real M65-closeout artifacts remain gated on
+   real M65-06 output. Current next target: M66-01 eighth fixture schema
+   validator
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3224,12 +3232,13 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 
 If continuing from here, do this next:
 
-1. Open `docs/IMPLEMENTATION_PLAN.md` section `M65`.
-2. Read `docs/specs/cards_and_decks/EIGHTH_SLICE_RUNTIME_FIXTURE_PROMOTION_GATE_SPEC.md`,
-   `tools/deck/build_eighth_slice_runtime_fixture_promotion_gate.py`,
-   and `tests/test_eighth_slice_runtime_fixture_promotion_gate.py`.
-3. Implement `M65-closeout` as the eighth-slice fixture closeout.
-4. Decide whether the eighth slice enters offline fixture scope or remains
-   advisory based on M65-06 gate evidence.
+1. Open `docs/IMPLEMENTATION_PLAN.md` section `M66`.
+2. Read `docs/specs/cards_and_decks/EIGHTH_SLICE_FIXTURE_CLOSEOUT_SPEC.md`,
+   `tools/deck/build_eighth_slice_fixture_closeout.py`,
+   and `tests/test_eighth_slice_fixture_closeout.py`.
+3. Implement `M66-01` as the eighth fixture schema validator.
+4. Validate the Kagero runtime fixture independently from the M65 generator
+   without enabling saved decks, UI publication, bot/playbook, Lock/Unlock,
+   Legion/Mate runtime, or `GameState` mutation.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.

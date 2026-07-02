@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M65-closeout eighth-slice fixture closeout
-   after M65-06 eighth-slice runtime fixture promotion gate; M58-01
-   through M65-06 scaffolds are ready
+-> current next target: M66-01 eighth fixture schema validator
+   after M65-closeout eighth-slice fixture closeout; M58-01
+   through M65-closeout scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2882,9 +2882,34 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     bot/playbook, live text parser, or direct `GameState` mutation and keeps
     Lock runtime, Unlock runtime, Legion runtime, and Mate identity checks
     disabled.
-- `M65-closeout`: Eighth-slice fixture closeout. **Pending.**
+- `M65-closeout`: Eighth-slice fixture closeout. **Blocked by real M65-06 output; scaffold ready.**
   - Decide whether the eighth slice enters offline fixture scope or remains
     advisory.
+  - Scaffold status: spec/tool/tests are present. Targeted M65-closeout tests
+    pass (`7/7`) and full Python tests pass (`1562/1562`) using in-memory
+    M65-06 gate evidence.
+  - Evidence: the closeout routes complete Kagero fixture evidence to `M66`,
+    failed or payload-missing evidence to `M65-repair`, records fixture-only
+    scope, and keeps saved deck injection, UI publication, bot/playbook,
+    Lock runtime, Unlock runtime, Legion runtime, Mate identity checks, and
+    direct `GameState` mutation disabled. Real
+    `outputs/target_slice/m65_closeout_*` artifacts are not generated until the
+    real M65-06 output exists.
+
+### M66: Eighth Fixture Consumption and Eight-Fixture Scale Gate
+
+- `M66-01`: Eighth fixture schema validator. **Blocked by M65-06 real fixture file; planned.**
+  - Validate the Kagero runtime fixture independently from the M65 generator
+    without enabling saved deck/UI/bot/runtime use.
+- `M66-02`: Eighth fixture deck text exporter. **Blocked by M65-06/M66-01 real files; planned.**
+  - Export the Kagero fixture as reviewable count-line deck text without adding
+    it to saved decks.
+- `M66-03`: Eighth fixture headless load smoke. **Blocked by M65-06/M66-01/M66-02 real files; planned.**
+  - Load the Kagero fixture through offline/headless paths without UI, bot,
+    Lock, Unlock, Legion, Mate, or `GameState` mutation.
+- `M66-04`: Eight-fixture scale decision. **Blocked by M62-04/M66-03 real evidence; planned.**
+  - Review all eight fixture evidence records before selecting any further
+    slice.
 
 ## Post-M28 Backlog (not in active queue)
 
