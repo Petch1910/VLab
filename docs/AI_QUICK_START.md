@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M62-03 seventh fixture headless load smoke
-   after M62-02 deck text export; M58-01 through M62-02
+-> current target: M62-04 seven-fixture scale decision
+   after M62-03 headless load smoke; M58-01 through M62-03
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -662,6 +662,14 @@ Windows-first program completion
    Bloom/token runtime disabled, and does not mutate fixture/runtime/saved
    deck/UI/bot/GameState. Real M62-02 artifacts remain gated on the real
    M61-06 fixture and M62-01 validation files
+-> M62-03 tooling/spec/tests are scaffolded; targeted M62-03 tests 9/9 and
+   full Python tests 1398/1398 pass. The smoke converts the in-memory M62-02
+   deck text into a `VGTH1.` deck code, verifies deck text matches the Neo
+   Nectar fixture, keeps Ride/G sections empty, keeps G Zone/Stride/Bloom/token
+   runtime disabled, accepts optional Unity headless evidence only when
+   `deck_source=deck_code`, and does not mutate saved deck/UI/bot/GameState.
+   Real M62-03 artifacts remain gated on the real M61-06, M62-01, and M62-02
+   files
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

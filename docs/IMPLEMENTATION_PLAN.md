@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M62-03 seventh fixture headless load smoke
-   after M62-02 deck text export; M58-01 through M62-02
+-> current next target: M62-04 seven-fixture scale decision
+   after M62-03 headless load smoke; M58-01 through M62-03
    scaffolds are ready
 ```
 
@@ -2630,9 +2630,18 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     report round-trip without leaking the internal `_deck_text` field. Real
     `outputs/target_slice/m62_02_*` artifacts are not generated until the real
     M61-06 fixture and M62-01 validation files exist.
-- `M62-03`: Seventh fixture headless load smoke. **Pending.**
+- `M62-03`: Seventh fixture headless load smoke. **Blocked by M61-06/M62-01/M62-02 real files; scaffold ready.**
   - Load the Neo Nectar fixture through offline/headless paths without UI, bot,
     G Zone, Stride, Bloom/token, or GameState mutation.
+  - Scaffold status: spec/tool/tests are present. Targeted M62-03 tests pass
+    `9/9`; full Python unittest discovery passes `1398/1398`. Tests use an
+    in-memory M61-06 fixture plus M62-02 deck text, verify count-line parser
+    shape, fixture/deck text equality, empty Ride/G sections, `VGTH1.` deck
+    code round-trip, optional Unity headless evidence acceptance only with
+    `deck_source=deck_code`, rejected Unity evidence blocking M62-04, and no
+    saved deck/UI/bot/G Zone/Stride/Bloom-token/GameState mutation. Real
+    `outputs/target_slice/m62_03_*` artifacts are not generated until the real
+    M61-06 fixture, M62-01 validation, and M62-02 deck text files exist.
 - `M62-04`: Seven-fixture scale decision. **Pending.**
   - Review all seven fixture evidence before selecting any further slice.
 

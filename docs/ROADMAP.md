@@ -543,6 +543,14 @@ Active order:
   malformed main-deck rows, and avoids saved deck/UI/bot/GameState mutation.
   Real M62-02 artifacts remain gated on the real M61-06 fixture and M62-01
   validation files.
+  M62-03 spec/tool/tests are scaffolded and verified (`9/9` targeted,
+  `1398/1398` full Python) using an in-memory M61-06 fixture and M62-02 deck
+  text; it parses the count-line deck text, verifies fixture/deck text
+  equality, creates a `VGTH1.` deck code, verifies deck-code round-trip, keeps
+  Ride/G empty, keeps G Zone/Stride/Bloom/token runtime disabled, accepts
+  optional Unity headless evidence only when `deck_source=deck_code`, and
+  avoids saved deck/UI/bot/GameState mutation. Real M62-03 artifacts remain
+  gated on the real M61-06, M62-01, and M62-02 files.
 
 Deferred until explicit user instruction:
 

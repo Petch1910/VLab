@@ -863,6 +863,9 @@
 - `specs/cards_and_decks/SEVENTH_FIXTURE_DECK_TEXT_EXPORT_SPEC.md` M62-02 seventh fixture deck text exporter spec
 - `../tools/deck/export_seventh_fixture_deck_text.py` M62-02 seventh fixture deck text exporter tool
 - `../tests/test_seventh_fixture_deck_text_export.py` M62-02 seventh fixture deck text exporter tests
+- `specs/cards_and_decks/SEVENTH_HEADLESS_FIXTURE_LOAD_SMOKE_SPEC.md` M62-03 seventh fixture headless load smoke spec
+- `../tools/deck/build_seventh_headless_fixture_load_smoke.py` M62-03 seventh fixture headless load smoke tool
+- `../tests/test_seventh_headless_fixture_load_smoke.py` M62-03 seventh fixture headless load smoke tests
 - `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
 - `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
 - `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope
