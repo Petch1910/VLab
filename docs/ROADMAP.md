@@ -447,7 +447,15 @@ Active order:
   `23`, missing/copy/slot/trigger/Grade 4 main-deck blockers `0`,
   grade-profile review recipes `21`, G Zone deferred recipes `23`, Bloom/token
   deferred recipes `23`, and runtime/UI/bot/GameState mutation disabled. The
-  real validation artifacts remain gated on real upstream outputs.
+  real validation artifacts remain gated on real upstream outputs. M60-05
+  spec/tool/tests are scaffolded and verified (`6/6` targeted, `1287/1287`
+  full Python) using in-memory M59-01/M59-02/M59-03/M59-04/M60-01/M60-02/
+  M60-03/M60-04 reports; the consistency check is ready for M60-06 with
+  consistency checks `23`, pair cards present `23`, missing pair checks `0`,
+  recipe manual dependencies `23`, G Zone deferred checks `23`, Bloom/token
+  deferred checks `23`, promotion_allowed `0`, and runtime/UI/bot/GameState
+  mutation disabled. The real consistency artifacts remain gated on real
+  upstream outputs.
 
 Deferred until explicit user instruction:
 

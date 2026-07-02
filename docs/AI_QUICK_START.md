@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M60-04 seventh-slice recipe validator real artifact, gated
-   on M60-03 real output; M58-01 through M60-04
+-> current target: M60-05 seventh-slice combo-to-recipe consistency real
+   artifact, gated on M60-03/M60-04 real outputs; M58-01 through M60-05
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -568,6 +568,13 @@ Windows-first program completion
    trigger/Grade 4 main-deck blockers, 21 grade-profile review items, and 23
    G Zone plus Bloom/token deferred review items. Real validation artifacts
    remain gated on real upstream outputs
+-> M60-05 tooling/spec/tests are scaffolded; targeted M60-05 tests 6/6 and full
+   Python tests 1287/1287 pass using in-memory M59-01/M59-02/M59-03/M59-04/
+   M60-01/M60-02/M60-03/M60-04 reports. The consistency check covers 23
+   recipes, confirms pair cards present for all 23, reports 0 missing pair-card
+   checks, 23 recipe-level manual-review dependencies, 23 G Zone deferred
+   checks, 23 Bloom/token deferred checks, and promotion_allowed 0. Real
+   consistency artifacts remain gated on real upstream outputs
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

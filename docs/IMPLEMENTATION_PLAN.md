@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M60-04 seventh-slice recipe validator real artifact
-   after M60-03 real output; M58-01 through M60-04 scaffolds are ready
+-> current next target: M60-05 seventh-slice combo-to-recipe consistency real
+   artifact after M60-03/M60-04 real outputs; M58-01 through M60-05 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2472,10 +2472,23 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     bot/GameState mutation disabled. The real
     `outputs/target_slice/m60_04_*` validation artifacts are not generated
     until the real M60-03 output exists.
-- `M60-05`: Seventh-slice combo-to-recipe consistency. **Pending.**
+- `M60-05`: Seventh-slice combo-to-recipe consistency. **Blocked by M60-03/M60-04 real outputs; scaffold ready.**
   - Start after M60-04 validator evidence. Confirm each recipe still contains
     its candidate edge pair cards and carry validator blockers forward without
     mutating drafts or promoting runtime.
+  - Scaffold status: spec/tool/tests are present. Targeted M60-05 tests pass
+    `6/6`; full Python unittest discovery passes `1287/1287`. Tests use
+    in-memory M59-01/M59-02/M59-03/M59-04/M60-01/M60-02/M60-03/M60-04 reports
+    and verify consistency checks `23`, pair cards present `23`, missing pair
+    checks `0`, recipe manual dependencies `23`, G Zone deferred checks `23`,
+    Bloom/token deferred checks `23`, promotion_allowed `0`, ready_for_m60_06
+    `true`, and runtime/UI/bot/GameState mutation disabled. The real
+    `outputs/target_slice/m60_05_*` consistency artifacts are not generated
+    until the real M60-03 and M60-04 outputs exist.
+- `M60-06`: Seventh-slice blocker repair candidates. **Pending.**
+  - Start after M60-05 consistency evidence. Convert validator/consistency
+    blockers into source-backed repair options without accepting repairs,
+    mutating drafts, or promoting runtime.
 
 ## Post-M28 Backlog (not in active queue)
 
