@@ -560,6 +560,12 @@ Active order:
   Zone/Stride/Bloom-token runtime disabled, and avoids GameState mutation.
   Real M62-04 artifacts remain gated on the real M58-03 and M62-03 evidence
   files.
+  M63-01 spec/tool/tests are scaffolded and verified (`7/7` targeted,
+  `1413/1413` full Python) using an in-memory M62-04 scale decision; it selects
+  the first remaining candidate as the eighth offline target, snapshots the
+  candidate queue, covers blocked and empty-queue paths, and avoids recipe
+  draft/runtime fixture/saved deck/UI/bot/G Zone/Stride/Bloom-token/GameState
+  mutation. Real M63-01 artifacts remain gated on the real M62-04 output file.
 
 Deferred until explicit user instruction:
 

@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M63-01 eighth target slice selection
-   after M62-04 seven-fixture scale decision; M58-01 through M62-04
+-> current next target: M63-02 eighth-slice fixture/format readiness
+   after M63-01 eighth target slice selection; M58-01 through M63-01
    scaffolds are ready
 ```
 
@@ -2657,11 +2657,24 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
 
 ### M63: Eighth Offline Slice Selection
 
-- `M63-01`: Eighth target slice selection. **Pending.**
+- `M63-01`: Eighth target slice selection. **Blocked by M62-04 real output; scaffold ready.**
   - Consume the M62-04 scale decision and select the next offline-only target
     from the candidate queue without creating runtime fixtures, saved decks,
     UI deck entries, bot playbooks, G Zone runtime, Stride runtime,
     Bloom/token runtime, or `GameState` mutation.
+  - Scaffold status: spec/tool/tests are present. Targeted M63-01 tests pass
+    `7/7`; full Python unittest discovery passes `1413/1413`. Tests use an
+    in-memory M62-04 scale decision, select the first remaining candidate as
+    the eighth offline target, snapshot the candidate queue, cover blocked
+    scale-decision and empty-queue paths, and verify no recipe draft, runtime
+    fixture, saved deck, UI deck, bot/playbook, G Zone, Stride, Bloom/token,
+    or `GameState` mutation. Real `outputs/target_slice/m63_01_*` artifacts
+    are not generated until the real M62-04 output exists.
+- `M63-02`: Eighth-slice fixture/format readiness. **Pending.**
+  - Check source-card availability, trigger/non-trigger capacity, format policy,
+    and fixture scaffold expectations for the selected eighth offline target
+    without creating recipe drafts, runtime fixtures, saved decks, UI entries,
+    bot playbooks, or runtime state mutation.
 
 ## Post-M28 Backlog (not in active queue)
 

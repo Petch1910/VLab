@@ -869,6 +869,9 @@
 - `specs/cards_and_decks/SEVEN_FIXTURE_SCALE_DECISION_SPEC.md` M62-04 seven-fixture scale decision spec
 - `../tools/deck/build_seven_fixture_scale_decision.py` M62-04 seven-fixture scale decision tool
 - `../tests/test_seven_fixture_scale_decision.py` M62-04 seven-fixture scale decision tests
+- `specs/cards_and_decks/EIGHTH_TARGET_SLICE_SELECTION_SPEC.md` M63-01 eighth target slice selection spec
+- `../tools/deck/build_eighth_target_slice_selection.py` M63-01 eighth target slice selection tool
+- `../tests/test_eighth_target_slice_selection.py` M63-01 eighth target slice selection tests
 - `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
 - `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
 - `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope

@@ -666,6 +666,12 @@
   Zone/Stride/Bloom-token runtime disabled, and avoids GameState mutation.
   Real M62-04 artifacts remain gated on the real M58-03 and M62-03 evidence
   files.
+  M63-01 spec/tool/tests are scaffolded and verified (`7/7` targeted,
+  `1413/1413` full Python) using an in-memory M62-04 scale decision; it selects
+  the first remaining candidate as the eighth offline target, snapshots the
+  candidate queue, covers blocked and empty-queue paths, and avoids recipe
+  draft/runtime fixture/saved deck/UI/bot/G Zone/Stride/Bloom-token/GameState
+  mutation. Real M63-01 artifacts remain gated on the real M62-04 output file.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

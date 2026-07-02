@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M63-01 eighth target slice selection
-   after M62-04 seven-fixture scale decision; M58-01 through M62-04
+-> current target: M63-02 eighth-slice fixture/format readiness
+   after M63-01 eighth target slice selection; M58-01 through M63-01
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -679,6 +679,13 @@ Windows-first program completion
    playbooks, enable G Zone/Stride/Bloom-token runtime, or mutate GameState.
    Real M62-04 artifacts remain gated on the real M58-03 and M62-03 evidence
    files
+-> M63-01 tooling/spec/tests are scaffolded; targeted M63-01 tests 7/7 and
+   full Python tests 1413/1413 pass. The selector consumes in-memory M62-04
+   scale evidence, selects the first remaining candidate as the eighth offline
+   target, snapshots the candidate queue, and does not create recipe drafts,
+   runtime fixtures, saved decks, UI entries, bot playbooks, G
+   Zone/Stride/Bloom-token runtime, or GameState mutations. Real M63-01
+   artifacts remain gated on the real M62-04 output file
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
