@@ -496,6 +496,15 @@ Active order:
   decisions deferred to M61-04, declares no validation/runtime promotion, and
   does not mutate runtime/UI/bot/GameState. Real M61-03 artifacts remain gated
   on real M61-02 output plus explicit `acceptance_text`.
+  M61-04 spec/tool/tests are scaffolded and verified (`10/10` targeted,
+  `1342/1342` full Python) using an explicit in-memory M61-03 accepted artifact
+  and explicit G Zone / Bloom-token options; it records both boundary decisions,
+  opens M61-05 only
+  when both selected options allow main-deck/manual-semantic validation, keeps
+  G Zone/Stride/Bloom-token runtime disabled, declares no validation/runtime
+  promotion, and does not mutate runtime/UI/bot/GameState. Real M61-04
+  artifacts remain gated on real M61-03 output plus explicit `g_zone_option`
+  and `bloom_token_option`.
 
 Deferred until explicit user instruction:
 

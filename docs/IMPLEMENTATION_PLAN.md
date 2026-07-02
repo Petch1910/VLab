@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M61-04 seventh-slice G Zone, Stride, and Bloom/token
-   decision artifact scaffold after M61-03 evidence; M58-01 through M61-03
+-> current next target: M61-05 seventh-slice repaired recipe validation rerun
+   scaffold after M61-04 evidence; M58-01 through M61-04
    scaffolds are ready
 ```
 
@@ -2557,9 +2557,19 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     bot/GameState. Real `outputs/target_slice/m61_03_*` artifacts are not
     generated until the real M61-02 artifact exists and human/team acceptance is
     provided explicitly.
-- `M61-04`: Seventh-slice G Zone, Stride, and Bloom/token decision artifact. **Pending.**
+- `M61-04`: Seventh-slice G Zone, Stride, and Bloom/token decision artifact. **Blocked by real M61-03 output and explicit boundary option choices; scaffold ready.**
   - Decide whether runtime promotion waits for G Zone/Stride and Bloom/token
     rules support or remains advisory.
+  - Scaffold status: spec/tool/tests are present. Targeted M61-04 tests pass
+    `10/10`; full Python unittest discovery passes `1342/1342`. Tests use an
+    in-memory M61-03 accepted artifact and explicit G Zone / Bloom-token option
+    choices. The artifact records both boundary decisions,
+    opens M61-05 only when both selected options allow main-deck/manual-semantic
+    validation, keeps G Zone/Stride/Bloom-token runtime disabled, declares no
+    validation or runtime promotion, and does not mutate runtime/UI/bot/
+    GameState. Real `outputs/target_slice/m61_04_*` artifacts are not generated
+    until the real M61-03 artifact exists and human/team system boundary
+    decisions are provided explicitly.
 - `M61-05`: Seventh-slice repaired recipe validation rerun. **Pending.**
   - Apply accepted repair in memory and rerun count, trigger, grade, copy-limit,
     clan, manual-overlap, G Zone, and Bloom/token validation.

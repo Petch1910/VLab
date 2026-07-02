@@ -37,9 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M61-04 seventh-slice G Zone / Stride / Bloom-token
-   decision artifact scaffold, gated on M61-03 real explicit acceptance
-   output; M58-01 through M61-03
+-> current target: M61-05 seventh-slice repaired recipe validation rerun
+   scaffold, gated on M61-04 real system decision output; M58-01 through M61-04
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -617,6 +616,15 @@ Windows-first program completion
    Bloom/token decisions deferred to M61-04, records no validation/runtime
    promotion, and does not mutate runtime/UI/bot/GameState. Real M61-03
    artifacts remain gated on real M61-02 output plus explicit `acceptance_text`
+-> M61-04 tooling/spec/tests are scaffolded; targeted M61-04 tests 10/10 and
+   full Python tests 1342/1342 pass using an explicit in-memory M61-03 accepted
+   artifact and explicit G Zone / Bloom-token options. The artifact records
+   both boundary decisions, opens M61-05 only when both selected options allow
+   main-deck/manual-semantic
+   validation, keeps G Zone/Stride/Bloom-token runtime disabled, records no
+   validation/runtime promotion, and does not mutate runtime/UI/bot/GameState.
+   Real M61-04 artifacts remain gated on real M61-03 output plus explicit
+   `g_zone_option` and `bloom_token_option`
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
