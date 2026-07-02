@@ -824,6 +824,9 @@
 - `specs/cards_and_decks/SEVENTH_SLICE_RECIPE_DRAFT_MODEL_SPEC.md` M60-03 seventh-slice recipe draft model spec
 - `../tools/deck/build_seventh_slice_recipe_draft_model.py` M60-03 seventh-slice recipe draft model tool
 - `../tests/test_seventh_slice_recipe_draft_model.py` M60-03 seventh-slice recipe draft model tests
+- `specs/cards_and_decks/SEVENTH_SLICE_RECIPE_VALIDATOR_SPEC.md` M60-04 seventh-slice recipe validator spec
+- `../tools/deck/validate_seventh_slice_recipe_drafts.py` M60-04 seventh-slice recipe validator tool
+- `../tests/test_seventh_slice_recipe_validator.py` M60-04 seventh-slice recipe validator tests
 - `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
 - `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
 - `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope

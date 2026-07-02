@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M60-03 seventh-slice recipe draft model real artifact
-   after M60-02/M60-01 real outputs; M58-01 through M60-03 scaffolds are ready
+-> current next target: M60-04 seventh-slice recipe validator real artifact
+   after M60-03 real output; M58-01 through M60-04 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2457,11 +2457,25 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     GameState mutation disabled. The real
     `outputs/target_slice/m60_03_*` draft artifacts are not generated until the
     real upstream outputs exist.
-- `M60-04`: Seventh-slice recipe validator. **Pending.**
+- `M60-04`: Seventh-slice recipe validator. **Blocked by M60-03 real output; scaffold ready.**
   - Start after M60-03 draft evidence. Validate advisory drafts for count,
     trigger profile, grade profile, identity, set scope, copy limits, missing
     cards, Grade 4 exclusion, manual-review dependencies, and fixture scaffold
     constraints.
+  - Scaffold status: spec/tool/tests are present. Targeted M60-04 tests pass
+    `7/7`; full Python unittest discovery passes `1281/1281`. Tests use
+    in-memory M59-01/M59-02/M59-03/M59-04/M60-01/M60-02/M60-03 reports and
+    verify validated drafts `23`, runtime-ready recipes `0`, blocked-by-manual
+    review `23`, missing/copy/slot/trigger/Grade 4 main-deck blockers `0`,
+    grade-profile review recipes `21`, G Zone deferred recipes `23`,
+    Bloom/token deferred recipes `23`, ready_for_m60_05 `true`, and runtime/UI/
+    bot/GameState mutation disabled. The real
+    `outputs/target_slice/m60_04_*` validation artifacts are not generated
+    until the real M60-03 output exists.
+- `M60-05`: Seventh-slice combo-to-recipe consistency. **Pending.**
+  - Start after M60-04 validator evidence. Confirm each recipe still contains
+    its candidate edge pair cards and carry validator blockers forward without
+    mutating drafts or promoting runtime.
 
 ## Post-M28 Backlog (not in active queue)
 

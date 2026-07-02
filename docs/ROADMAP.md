@@ -440,7 +440,14 @@ Active order:
   `23`, manual-overlap recipes `23`, fixture scaffold cards `14`, fixture
   scaffold total cards `50`, and runtime/UI/bot/G Zone/Stride/GameState
   mutation disabled. The real draft artifacts remain gated on real upstream
-  outputs.
+  outputs. M60-04 spec/tool/tests are scaffolded and verified (`7/7` targeted,
+  `1281/1281` full Python) using in-memory M59-01/M59-02/M59-03/M59-04/
+  M60-01/M60-02/M60-03 reports; the validator is ready for M60-05 with
+  validated drafts `23`, runtime-ready recipes `0`, manual-review blockers
+  `23`, missing/copy/slot/trigger/Grade 4 main-deck blockers `0`,
+  grade-profile review recipes `21`, G Zone deferred recipes `23`, Bloom/token
+  deferred recipes `23`, and runtime/UI/bot/GameState mutation disabled. The
+  real validation artifacts remain gated on real upstream outputs.
 
 Deferred until explicit user instruction:
 
