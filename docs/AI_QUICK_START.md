@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M63-03 eighth-slice semantic/compatibility probe
-   after M63-02 eighth-slice fixture/format readiness; M58-01 through M63-02
+-> current target: M63-04 eighth-slice recipe pipeline entry gate
+   after M63-03 eighth-slice semantic/compatibility probe; M58-01 through M63-03
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -694,6 +694,14 @@ Windows-first program completion
    JSON/Markdown round-trip, and keeps runtime pack, deck, UI, bot/playbook, G
    Zone, Stride, Bloom/token, and GameState mutation disabled. Real M63-02
    artifacts remain gated on the real M63-01 output file
+-> M63-03 tooling/spec/tests are scaffolded; targeted M63-03 tests 8/8 and
+   full Python tests 1430/1430 pass.
+   The probe consumes in-memory M63-01/M63-02 reports, reuses the M35 B/C
+   semantic pipeline in memory for `คาเงโร่ / link_joker_legion_mate`, reports
+   121 source/semantic cards, 6 manual-review cards, 3398 pair graph edges, and
+   355 candidate edges, and keeps runtime pack, deck, UI, bot/playbook, G Zone,
+   Stride, Bloom/token, and GameState mutation disabled. Real M63-03 artifacts
+   remain gated on the real M63-01 and M63-02 output files
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

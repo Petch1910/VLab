@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M63-03 eighth-slice semantic/compatibility probe
-   after M63-02 eighth-slice fixture/format readiness; M58-01 through M63-02
+-> current next target: M63-04 eighth-slice recipe pipeline entry gate
+   after M63-03 eighth-slice semantic/compatibility probe; M58-01 through M63-03
    scaffolds are ready
 ```
 
@@ -2684,11 +2684,25 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     Stride, Bloom/token, or `GameState` mutation. Real
     `outputs/target_slice/m63_02_*` artifacts are not generated until the real
     M63-01 output exists.
-- `M63-03`: Eighth-slice semantic/compatibility probe. **Pending.**
+- `M63-03`: Eighth-slice semantic/compatibility probe. **Blocked by M63-01/M63-02 real outputs; scaffold ready.**
   - Run the offline semantic/provider/requirement compatibility probe for the
     selected eighth target after M63-02 readiness, without promoting runtime
     fixtures, saved decks, UI entries, bot playbooks, G Zone runtime, Stride
     runtime, Bloom/token runtime, or `GameState` mutation.
+  - Scaffold status: spec/tool/tests are present. Targeted M63-03 tests pass
+    `8/8`; full Python unittest discovery passes `1430/1430`. Tests use
+    in-memory M63-01/M63-02 reports and verify `คาเงโร่ /
+    link_joker_legion_mate` with source/semantic cards `121`, manual-review
+    cards `6`, pair graph edges `3398`, candidate edges `355`, all stage
+    readiness flags, semantic repair routing, JSON/Markdown round-trip, and no
+    runtime pack, saved deck, UI, bot/playbook, G Zone, Stride, Bloom/token, or
+    `GameState` mutation. Real `outputs/target_slice/m63_03_*` artifacts are
+    not generated until the real M63-01 and M63-02 outputs exist.
+- `M63-04`: Eighth-slice recipe pipeline entry gate. **Pending.**
+  - Gate recipe/fixture work on M63-02 readiness plus M63-03 semantic probe
+    evidence, without creating runtime fixtures, saved decks, UI entries,
+    bot playbooks, G Zone runtime, Stride runtime, Bloom/token runtime, or
+    `GameState` mutation.
 
 ## Post-M28 Backlog (not in active queue)
 

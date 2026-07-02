@@ -573,6 +573,14 @@ Active order:
   capacity, main-deck capacity, repair routing, JSON/Markdown round-trip, and
   avoids runtime pack/deck/UI/bot/G Zone/Stride/Bloom-token/GameState mutation.
   Real M63-02 artifacts remain gated on the real M63-01 output file.
+  M63-03 spec/tool/tests are scaffolded and verified (`8/8` targeted,
+  `1430/1430` full Python) using in-memory M63-01/M63-02 reports; it reuses
+  the M35 B/C semantic pipeline in
+  memory for `คาเงโร่ / link_joker_legion_mate`, reports 121 source/semantic
+  cards, 6 manual-review cards, 3398 pair graph edges, and 355 candidate
+  edges, and avoids runtime pack/deck/UI/bot/G Zone/Stride/Bloom-token/
+  GameState mutation. Real M63-03 artifacts remain gated on the real M63-01
+  and M63-02 output files.
 
 Deferred until explicit user instruction:
 
