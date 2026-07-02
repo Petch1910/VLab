@@ -852,7 +852,16 @@
   drafts, runtime fixtures, saved decks, UI publication, bot/playbook,
   G Zone, Stride, Bloom/token, Lock/Unlock, Legion/Mate runtime, and GameState
   mutation disabled. Real M67-03 artifacts remain gated on real M67-01/M67-02
-  outputs. The current next target is M67-04.
+  outputs.
+  M67-04 spec/tool/tests are scaffolded and verified (`9/9` targeted,
+  `1636/1636` full Python) using in-memory M67-02/M67-03 evidence; it confirms
+  blocker count 0, candidate edge count 95, G Zone fixture boundary required,
+  and offline recipe pipeline allowed for `อควอฟอร์ซ` / `g_series_first`. It
+  opens M68-01 and keeps recipe drafts, runtime fixtures, saved decks, UI
+  publication, bot/playbook, G Zone, Stride, Bloom/token, Lock/Unlock,
+  Legion/Mate runtime, and GameState mutation disabled. Real M67-04 artifacts
+  remain gated on real M67-02/M67-03 outputs. The current next target is
+  M68-01.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

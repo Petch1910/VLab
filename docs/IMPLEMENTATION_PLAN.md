@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M67-04 ninth-slice recipe pipeline entry gate
-   after M67-03 ninth-slice semantic/compatibility probe; M58-01
-   through M67-03 scaffolds are ready
+-> current next target: M68-01 ninth-slice fixture scaffold
+   after M67-04 ninth-slice recipe pipeline entry gate; M58-01
+   through M67-04 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -3003,11 +3003,30 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     Stride, Bloom-token, Lock/Unlock, Legion/Mate runtime, and direct
     `GameState` mutation disabled. Real `outputs/target_slice/m67_03_*`
     artifacts are not generated until the real M67-01 and M67-02 files exist.
-- `M67-04`: Ninth-slice recipe pipeline entry gate. **Blocked by M67-02/M67-03 real outputs; planned.**
+- `M67-04`: Ninth-slice recipe pipeline entry gate. **Blocked by M67-02/M67-03 real outputs; scaffold ready.**
   - Gate offline recipe work for `อควอฟอร์ซ` / `g_series_first` using the
     source-backed readiness and passed semantic/compatibility probe, without
     creating recipe drafts, runtime fixtures, saved decks, UI entries, bot
     playbooks, runtime systems, or `GameState` mutation.
+  - Scaffold status: spec/tool/tests are present. Targeted M67-04 tests pass
+    (`9/9`) and full Python tests pass (`1636/1636`) using in-memory M67-02
+    readiness evidence and M67-03 semantic/compatibility evidence.
+  - Evidence: the gate confirms M67-02 and M67-03 passed, blocker count `0`,
+    candidate edge count `95`, policy `requires_ninth_slice_fixture_scaffold`,
+    G Zone fixture boundary required, and offline recipe pipeline allowed. It
+    opens `M68-01` and keeps recipe drafts, runtime fixtures, saved decks, UI
+    publication, bot/playbook, G Zone, Stride, Bloom-token, Lock/Unlock,
+    Legion/Mate runtime, and direct `GameState` mutation disabled. Real
+    `outputs/target_slice/m67_04_*` artifacts are not generated until the real
+    M67-02 and M67-03 files exist.
+
+### M68: Ninth Offline Recipe Pipeline
+
+- `M68-01`: Ninth-slice fixture scaffold. **Blocked by M67-04 real output; planned.**
+  - Define source-backed fixture policy for `อควอฟอร์ซ` / `g_series_first`
+    before recipe validator work, without creating recipe drafts, runtime
+    fixtures, saved decks, UI entries, bot playbooks, runtime systems, or
+    `GameState` mutation.
 
 ## Post-M28 Backlog (not in active queue)
 

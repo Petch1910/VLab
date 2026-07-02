@@ -746,7 +746,16 @@ Active order:
   drafts, runtime fixtures, saved decks, UI publication, bot/playbook,
   G Zone, Stride, Bloom/token, Lock/Unlock, Legion/Mate runtime, and GameState
   mutation disabled. Real M67-03 artifacts remain gated on real M67-01/M67-02
-  outputs. The current next target is M67-04.
+  outputs.
+  M67-04 spec/tool/tests are scaffolded and verified (`9/9` targeted,
+  `1636/1636` full Python) using in-memory M67-02/M67-03 evidence; it confirms
+  blocker count 0, candidate edge count 95, G Zone fixture boundary required,
+  and offline recipe pipeline allowed for `อควอฟอร์ซ` / `g_series_first`. It
+  opens M68-01 and keeps recipe drafts, runtime fixtures, saved decks, UI
+  publication, bot/playbook, G Zone, Stride, Bloom/token, Lock/Unlock,
+  Legion/Mate runtime, and GameState mutation disabled. Real M67-04 artifacts
+  remain gated on real M67-02/M67-03 outputs. The current next target is
+  M68-01.
 
 Deferred until explicit user instruction:
 
