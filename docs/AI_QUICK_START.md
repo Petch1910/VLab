@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M59-02 seventh-slice fixture/format readiness real artifact,
-   gated on M59-01 real selection; M58-01 through M59-02 spec/tool/tests
+-> current target: M59-03 seventh-slice semantic/compatibility probe real
+   artifact, gated on M59-01/M59-02 real outputs; M58-01 through M59-03 spec/tool/tests
    scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -530,6 +530,11 @@ Windows-first program completion
    selected scaffold target is `เนโอ เนคต้า` / `g_series_first`: source cards
    78, grade profile 17/23/18/12/8, trigger capacity 48, no trigger gaps,
    ready_for_m59_03 true. Real report remains gated on real M59-01 output
+-> M59-03 tooling/spec/tests are scaffolded; targeted M59-03 tests 8/8 and full
+   Python tests 1238/1238 pass using in-memory M59-01/M59-02 reports. The
+   seventh-slice semantic probe reports semantic cards 78, manual-review cards
+   10, pair graph edges 2885, candidate edges 107, and ready_for_m59_04 true.
+   Real report remains gated on real M59-01 and M59-02 outputs
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

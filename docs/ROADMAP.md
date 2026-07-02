@@ -410,7 +410,12 @@ Active order:
   an in-memory M59-01 selection; selected scaffold target `เนโอ เนคต้า` /
   `g_series_first` has source cards `78`, grade profile `17/23/18/12/8`,
   trigger capacity `48`, no trigger gaps, and readiness for M59-03. The real
-  readiness report remains gated on real M59-01 output.
+  readiness report remains gated on real M59-01 output. M59-03 spec/tool/tests
+  are scaffolded and verified (`8/8` targeted, `1238/1238` full Python) using
+  in-memory M59-01/M59-02 reports; the semantic probe reports semantic cards
+  `78`, manual-review cards `10`, pair graph edges `2885`, candidate edges
+  `107`, and readiness for M59-04. The real probe report remains gated on real
+  M59-01 and M59-02 outputs.
 
 Deferred until explicit user instruction:
 
