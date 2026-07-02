@@ -763,8 +763,17 @@ Active order:
   G-series pool. It keeps recipe drafts, runtime fixtures, saved decks, UI
   publication, bot/playbook, G Zone, Stride, Bloom/token, Lock/Unlock,
   Legion/Mate runtime, and GameState mutation disabled. Real M68-01 artifacts
-  remain gated on real M67-02/M67-03/M67-04 outputs. The current next target is
-  M68-02.
+  remain gated on real M67-02/M67-03/M67-04 outputs.
+  M68-02 spec/tool/tests are scaffolded and verified (`9/9` targeted,
+  `1655/1655` full Python) using in-memory M67-01/M67-02/M67-03/M67-04/M68-01
+  evidence; it exports 1 fixture scaffold item, 10 manual-review card items,
+  95 candidate edge items, and 106 total review items. It preserves the
+  G Zone/Stride/Aqua Force battle-order review boundary and keeps recipe
+  drafts, runtime fixtures, saved decks, UI publication, bot/playbook, G Zone,
+  Stride, Bloom/token, Lock/Unlock, Legion/Mate runtime, and GameState
+  mutation disabled. Real M68-02 artifacts remain gated on real
+  M67-01/M67-02/M67-03/M67-04/M68-01 outputs. The current next target is
+  M68-03.
 
 Deferred until explicit user instruction:
 

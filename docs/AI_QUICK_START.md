@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M68-02 ninth-slice review packet
-   after M68-01 ninth-slice fixture scaffold; M58-01
-   through M68-01 spec/tool/tests scaffolds are ready
+-> current target: M68-03 ninth-slice recipe draft model
+   after M68-02 ninth-slice review packet; M58-01
+   through M68-02 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -917,6 +917,16 @@ Windows-first program completion
    Lock/Unlock, Legion/Mate runtime, and GameState mutation disabled. Real
    M68-01 artifacts remain gated on real M67-02/M67-03/M67-04 outputs.
    Current next target: M68-02 ninth-slice review packet
+-> M68-02 tooling/spec/tests are scaffolded; targeted M68-02 tests 9/9 and
+   full Python tests 1655/1655 pass.
+   The review packet exports 1 fixture scaffold item, 10 manual-review card
+   items, 95 candidate edge items, and 106 total review items. It preserves the
+   G Zone/Stride/Aqua Force battle-order review boundary and keeps recipe
+   drafts, runtime fixtures, saved decks, UI publication, bot/playbook, G Zone,
+   Stride, Bloom/token, Lock/Unlock, Legion/Mate runtime, and GameState
+   mutation disabled. Real M68-02 artifacts remain gated on real
+   M67-01/M67-02/M67-03/M67-04/M68-01 outputs. Current next target: M68-03
+   ninth-slice recipe draft model
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3316,13 +3326,12 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M68`.
-2. Read `docs/specs/cards_and_decks/NINTH_SLICE_FIXTURE_SCAFFOLD_SPEC.md`,
-   `tools/deck/build_ninth_slice_fixture_scaffold.py`,
-   and `tests/test_ninth_slice_fixture_scaffold.py`.
-3. Implement `M68-02` as the ninth-slice review packet.
-4. Export review-only fixture scaffold notes, candidate edges, manual-review
-   cards, G Zone boundary notes, and format notes without creating recipe
-   drafts, runtime fixtures, saved decks, UI deck entries, bot/playbooks,
-   runtime systems, or `GameState` mutation.
+2. Read `docs/specs/cards_and_decks/NINTH_SLICE_REVIEW_PACKET_SPEC.md`,
+   `tools/deck/build_ninth_slice_review_packet.py`,
+   and `tests/test_ninth_slice_review_packet.py`.
+3. Implement `M68-03` as the ninth-slice recipe draft model.
+4. Convert review-packet candidate edges into advisory recipe drafts only;
+   do not create saved decks, UI deck entries, runtime fixtures, bot playbooks,
+   runtime systems, or mutate `GameState`.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.
