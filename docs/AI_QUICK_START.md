@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M64-closeout eighth-slice runtime readiness decision
-   after M64-06 eighth-slice blocker repair candidates; M58-01 through M64-06
-   spec/tool/tests scaffolds are ready
+-> current target: M65-01 eighth-slice human repair review packet
+   after M64-closeout eighth-slice runtime readiness decision; M58-01 through
+   M64-closeout spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -761,6 +761,15 @@ Windows-first program completion
    runtime, bot/playbook, automatic injection, and GameState mutation disabled.
    Real M64-06 artifacts remain gated on the real M64-03, M64-04, and M64-05
    output files
+-> M64-closeout tooling/spec/tests are scaffolded; targeted M64-closeout tests
+   9/9 and full Python tests 1495/1495 pass.
+   The decision report consumes in-memory M64-01..M64-06 reports, confirms M64
+   scaffold evidence is complete, keeps runtime promotion disabled, carries
+   forward 25 human-selection candidates plus 25 complete grade-profile repair
+   candidates, preserves Lock/Legion deferred system work, selects M65 as the
+   next queue, and keeps saved deck, UI, runtime fixture, Lock/Legion runtime,
+   bot/playbook, and GameState mutation disabled. Real M64-closeout artifacts
+   remain gated on the real M64-01..M64-06 output files
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

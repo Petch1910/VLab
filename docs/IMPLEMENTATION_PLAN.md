@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M64-closeout eighth-slice runtime readiness decision
-   after M64-06 eighth-slice blocker repair candidates; M58-01 through M64-06
-   scaffolds are ready
+-> current next target: M65-01 eighth-slice human repair review packet
+   after M64-closeout eighth-slice runtime readiness decision; M58-01 through
+   M64-closeout scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2794,9 +2794,44 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     Lock/Legion runtime, bot/playbook, automatic injection, or `GameState`
     mutation. Real `outputs/target_slice/m64_06_*` artifacts are not generated
     until the real M64-03, M64-04, and M64-05 output files exist.
-- `M64-closeout`: Eighth-slice runtime readiness decision. **Pending.**
+- `M64-closeout`: Eighth-slice runtime readiness decision. **Blocked by M64-01..M64-06 real outputs; scaffold ready.**
   - Decide whether any recipe can later enter human acceptance and runtime
     fixture gates.
+  - Scaffold status: spec/tool/tests are present. Targeted M64-closeout tests
+    pass `9/9`; full Python unittest discovery passes `1495/1495`. Tests use
+    in-memory M64-01 through M64-06 reports and verify M64 scaffold evidence is
+    complete, real artifacts remain unavailable, runtime promotion stays
+    disabled, `25` human-selection candidates and `25` complete grade-profile
+    repair candidates are carried forward, Lock/Legion deferred system work is
+    preserved, the closeout selects `M65`, JSON/Markdown round-trip works, and
+    no saved deck, UI publication, runtime fixture, Lock/Legion runtime,
+    bot/playbook, or `GameState` mutation is allowed. Real
+    `outputs/target_slice/m64_closeout_*` artifacts are not generated until
+    the real M64-01 through M64-06 output files exist.
+
+## M65: Eighth-Slice Human Selection / Grade Repair / Lock-Legion Decision Gate
+
+- `M65-01`: Eighth-slice human repair review packet. **Pending.**
+  - Export a concise review packet for M64-06 repair packages and candidate
+    recipes.
+- `M65-02`: Eighth-slice human-selected recipe artifact. **Pending.**
+  - Record exactly one selected eighth-slice recipe id without mutating M64
+    drafts.
+- `M65-03`: Eighth-slice human-accepted grade repair artifact. **Pending.**
+  - Record explicit acceptance or rejection of the selected grade-profile
+    repair package.
+- `M65-04`: Eighth-slice Lock and Legion decision artifact. **Pending.**
+  - Record whether runtime promotion waits for Lock/Unlock and Legion/Mate
+    rules support.
+- `M65-05`: Eighth-slice repaired recipe validation rerun. **Pending.**
+  - Apply accepted repair in memory and rerun count, trigger, grade,
+    copy-limit, clan, human-selection, Lock, and Legion validation.
+- `M65-06`: Eighth-slice runtime fixture promotion gate. **Pending.**
+  - Promote only if repaired validation, consistency, human selection, and
+    system decisions all pass.
+- `M65-closeout`: Eighth-slice fixture closeout. **Pending.**
+  - Decide whether the eighth slice enters offline fixture scope or remains
+    advisory.
 
 ## Post-M28 Backlog (not in active queue)
 

@@ -629,7 +629,15 @@ Active order:
   packages, 25 Legion-deferred packages, and avoids saved
   deck/UI/runtime deck/Lock runtime/Legion runtime/bot/GameState mutation.
   Real M64-06 artifacts remain gated on the real M64-03, M64-04, and M64-05
-  output files. The current next target is M64-closeout.
+  output files and fed M64-closeout.
+  M64-closeout spec/tool/tests are scaffolded and verified (`9/9` targeted,
+  `1495/1495` full Python) using in-memory M64-01..M64-06 reports; it confirms
+  M64 scaffold evidence is complete, keeps runtime promotion disabled, carries
+  forward 25 human-selection candidates and 25 complete grade-profile repair
+  candidates, preserves Lock/Legion deferred system work, selects M65 as the
+  next queue, and avoids saved deck/UI/runtime fixture/Lock runtime/Legion
+  runtime/bot/GameState mutation. Real M64-closeout artifacts remain gated on
+  the real M64-01..M64-06 output files. The current next target is M65-01.
 
 Deferred until explicit user instruction:
 
