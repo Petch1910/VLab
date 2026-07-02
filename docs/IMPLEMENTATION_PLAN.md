@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M65-04 eighth-slice Lock and Legion decision artifact
-   after M65-03 eighth-slice human-accepted grade repair artifact; M58-01
-   through M65-03 scaffolds are ready
+-> current next target: M65-05 eighth-slice repaired recipe validation rerun
+   after M65-04 eighth-slice Lock and Legion decision artifact; M58-01
+   through M65-04 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2845,9 +2845,17 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     cards and target grade counts `17/14/11/8` for the accepted test recipe,
     and records no Lock/Legion decision, runtime fixture, saved deck/UI,
     bot/playbook, or direct `GameState` mutation.
-- `M65-04`: Eighth-slice Lock and Legion decision artifact. **Pending.**
+- `M65-04`: Eighth-slice Lock and Legion decision artifact. **Blocked by real M65-03 output and explicit Lock/Legion options; scaffold ready.**
   - Record whether runtime promotion waits for Lock/Unlock and Legion/Mate
     rules support.
+  - Scaffold status: spec/tool/tests are present. Targeted M65-04 tests
+    pass (`10/10`) and full Python tests pass (`1535/1535`) using an in-memory
+    M65-03 accepted artifact and explicit Lock/Legion option input.
+  - Evidence: the artifact records Lock/Unlock and Legion/Mate boundary
+    decisions, opens only a main-deck validation path for the non-runtime test
+    options, and records no runtime fixture, saved deck/UI, bot/playbook, or
+    direct `GameState` mutation. Lock runtime, Unlock runtime, Legion runtime,
+    and Mate identity checks remain disabled.
 - `M65-05`: Eighth-slice repaired recipe validation rerun. **Pending.**
   - Apply accepted repair in memory and rerun count, trigger, grade,
     copy-limit, clan, human-selection, Lock, and Legion validation.

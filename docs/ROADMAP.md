@@ -662,8 +662,16 @@ Active order:
   and target grade profile for the accepted test recipe, and avoids
   Lock/Legion decision, runtime fixture, saved deck/UI, bot/playbook, and
   GameState mutation. Real M65-03 artifacts remain gated on the real M65-02
-  output plus explicit `grade_decision` and `decision_text`. The current next
-  target is M65-04.
+  output plus explicit `grade_decision` and `decision_text`.
+  M65-04 spec/tool/tests are scaffolded and verified (`10/10` targeted,
+  `1535/1535` full Python) using an in-memory M65-03 accepted artifact plus
+  explicit Lock/Legion options; it records Lock/Unlock and Legion/Mate
+  boundary decisions, opens only a main-deck validation path for non-runtime
+  options, and keeps Lock runtime, Unlock runtime, Legion runtime, Mate
+  identity checks, runtime fixture, saved deck/UI, bot/playbook, and GameState
+  mutation disabled. Real M65-04 artifacts remain gated on the real M65-03
+  output plus explicit `lock_option` and `legion_option`. The current next
+  target is M65-05.
 
 Deferred until explicit user instruction:
 
