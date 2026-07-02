@@ -593,6 +593,15 @@
   mutation disabled, and reports ready_for_m61_03 `true` for valid selected
   items. Real M61-02 artifacts remain gated on the real M61-01 packet plus
   explicit human `review_item_id` and `selection_text`.
+  M61-03 spec/tool/tests are scaffolded and verified (`8/8` targeted,
+  `1332/1332` full Python) using an explicit in-memory M61-02 selection and
+  acceptance text; it records human
+  acceptance, applies selected manual repair in memory, recomputes grade repair
+  after manual substitution, produces a 50-card repaired preview with target
+  grade profile for valid selected items, leaves G Zone/Stride and Bloom/token
+  decisions deferred to M61-04, declares no validation/runtime promotion, and
+  does not mutate runtime/UI/bot/GameState. Real M61-03 artifacts remain gated
+  on real M61-02 output plus explicit `acceptance_text`.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

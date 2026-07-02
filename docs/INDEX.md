@@ -842,6 +842,9 @@
 - `specs/cards_and_decks/SEVENTH_SLICE_HUMAN_SELECTED_RECIPE_ARTIFACT_SPEC.md` M61-02 seventh-slice human-selected recipe artifact spec
 - `../tools/deck/build_seventh_slice_human_selected_recipe_artifact.py` M61-02 seventh-slice human-selected recipe artifact tool
 - `../tests/test_seventh_slice_human_selected_recipe_artifact.py` M61-02 seventh-slice human-selected recipe artifact tests
+- `specs/cards_and_decks/SEVENTH_SLICE_HUMAN_ACCEPTED_REPAIR_ARTIFACT_SPEC.md` M61-03 seventh-slice human-accepted repair artifact spec
+- `../tools/deck/build_seventh_slice_human_accepted_repair_artifact.py` M61-03 seventh-slice human-accepted repair artifact tool
+- `../tests/test_seventh_slice_human_accepted_repair_artifact.py` M61-03 seventh-slice human-accepted repair artifact tests
 - `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
 - `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
 - `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope

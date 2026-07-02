@@ -80,8 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M61-03 seventh-slice human-accepted repair artifact
-   scaffold after M61-02 evidence; M58-01 through M61-02 scaffolds are ready
+-> current next target: M61-04 seventh-slice G Zone, Stride, and Bloom/token
+   decision artifact scaffold after M61-03 evidence; M58-01 through M61-03
+   scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2542,9 +2543,20 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     selected items. Real `outputs/target_slice/m61_02_*` artifacts are not
     generated until the real M61-01 packet exists and a human/team selection is
     provided explicitly.
-- `M61-03`: Seventh-slice human-accepted repair artifact. **Pending.**
+- `M61-03`: Seventh-slice human-accepted repair artifact. **Blocked by real M61-02 output and explicit human acceptance; scaffold ready.**
   - Record explicit acceptance or rejection of selected manual/grade repair
     packages without mutating original drafts.
+  - Scaffold status: spec/tool/tests are present. Targeted M61-03 tests pass
+    `8/8`; full Python unittest discovery passes `1332/1332`. Tests use an
+    in-memory M61-02 selected artifact and explicit `acceptance_text`. The
+    artifact records human acceptance, applies selected
+    manual repair in memory, recomputes grade repair after manual substitution,
+    produces a 50-card repaired preview with target grade profile for valid
+    selected items, leaves G Zone/Stride and Bloom/token decisions for M61-04,
+    declares no validation or runtime promotion, and does not mutate runtime/UI/
+    bot/GameState. Real `outputs/target_slice/m61_03_*` artifacts are not
+    generated until the real M61-02 artifact exists and human/team acceptance is
+    provided explicitly.
 - `M61-04`: Seventh-slice G Zone, Stride, and Bloom/token decision artifact. **Pending.**
   - Decide whether runtime promotion waits for G Zone/Stride and Bloom/token
     rules support or remains advisory.

@@ -37,8 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M61-03 seventh-slice human-accepted repair artifact
-   scaffold, gated on M61-02 real explicit selection output; M58-01 through M61-02
+-> current target: M61-04 seventh-slice G Zone / Stride / Bloom-token
+   decision artifact scaffold, gated on M61-03 real explicit acceptance
+   output; M58-01 through M61-03
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -607,6 +608,15 @@ Windows-first program completion
    bot/GameState mutation disabled, and reports ready_for_m61_03 true for valid
    selected items. Real M61-02 artifacts remain gated on the real M61-01 packet
    plus explicit human `review_item_id` and `selection_text`
+-> M61-03 tooling/spec/tests are scaffolded; targeted M61-03 tests 8/8 and
+   full Python tests 1332/1332 pass using an explicit in-memory M61-02
+   selection and acceptance text. The artifact
+   records human acceptance, applies selected manual repair in memory, recomputes
+   grade repair after manual substitution, produces a 50-card repaired preview
+   with target grade profile for valid selected items, keeps G Zone/Stride and
+   Bloom/token decisions deferred to M61-04, records no validation/runtime
+   promotion, and does not mutate runtime/UI/bot/GameState. Real M61-03
+   artifacts remain gated on real M61-02 output plus explicit `acceptance_text`
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
