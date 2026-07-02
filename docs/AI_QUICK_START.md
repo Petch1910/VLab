@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M62-02 seventh fixture deck text exporter
-   after M62-01 schema validation; M58-01 through M62-01
+-> current target: M62-03 seventh fixture headless load smoke
+   after M62-02 deck text export; M58-01 through M62-02
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -655,6 +655,13 @@ Windows-first program completion
    Bloom/token/token-main-deck boundaries without mutating fixture/runtime/UI/
    bot/GameState. Real M62-01 artifacts remain gated on the real M61-06
    fixture file
+-> M62-02 tooling/spec/tests are scaffolded; targeted M62-02 tests 8/8 and
+   full Python tests 1389/1389 pass. The exporter converts the in-memory
+   M61-06 Neo Nectar fixture plus M62-01 validation evidence into review-only
+   count-line deck text, preserves empty Ride/G sections, keeps G Zone/Stride/
+   Bloom/token runtime disabled, and does not mutate fixture/runtime/saved
+   deck/UI/bot/GameState. Real M62-02 artifacts remain gated on the real
+   M61-06 fixture and M62-01 validation files
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

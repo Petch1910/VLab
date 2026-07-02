@@ -641,6 +641,14 @@
   unsafe G Zone/Stride/Bloom/token boundaries without enabling saved
   deck/UI/bot/GameState mutation. Real M62-01 artifacts remain gated on the
   real M61-06 fixture file.
+  M62-02 spec/tool/tests are scaffolded and verified (`8/8` targeted,
+  `1389/1389` full Python) using an in-memory M61-06 fixture plus M62-01
+  validation evidence; it exports review-only count-line deck text for the Neo
+  Nectar fixture, preserves empty Ride/G sections, records G Zone/Stride/
+  Bloom/token runtime as disabled, rejects invalid validation gates and
+  malformed main-deck rows, and avoids saved deck/UI/bot/GameState mutation.
+  Real M62-02 artifacts remain gated on the real M61-06 fixture and M62-01
+  validation files.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

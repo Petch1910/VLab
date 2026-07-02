@@ -535,6 +535,14 @@ Active order:
   unsafe G Zone/Stride/Bloom/token boundaries without enabling saved
   deck/UI/bot/GameState mutation. Real M62-01 artifacts remain gated on the
   real M61-06 fixture file.
+  M62-02 spec/tool/tests are scaffolded and verified (`8/8` targeted,
+  `1389/1389` full Python) using an in-memory M61-06 fixture plus M62-01
+  validation evidence; it exports review-only count-line deck text for the Neo
+  Nectar fixture, preserves empty Ride/G sections, records G Zone/Stride/
+  Bloom/token runtime as disabled, rejects invalid validation gates and
+  malformed main-deck rows, and avoids saved deck/UI/bot/GameState mutation.
+  Real M62-02 artifacts remain gated on the real M61-06 fixture and M62-01
+  validation files.
 
 Deferred until explicit user instruction:
 
