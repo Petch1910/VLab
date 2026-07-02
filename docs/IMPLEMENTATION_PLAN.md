@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M68-closeout ninth-slice runtime readiness decision
-   after M68-06 ninth-slice blocker repair candidates; M58-01
-   through M68-06 scaffolds are ready
+-> current next target: M69-01 ninth-slice human repair review packet
+   after M68-closeout ninth-slice runtime readiness decision; M58-01
+   through M68-closeout scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -3117,10 +3117,46 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     runtime decks, bot/playbook, automatic injection, and direct `GameState`
     mutation remain disabled. Real `outputs/target_slice/m68_06_*` artifacts
     are not generated until the real M68-03, M68-04, and M68-05 files exist.
-- `M68-closeout`: Ninth-slice runtime readiness decision. **Blocked by M68-03/M68-04/M68-05/M68-06 real outputs; planned.**
+- `M68-closeout`: Ninth-slice runtime readiness decision. **Blocked by M68-01/M68-02/M68-03/M68-04/M68-05/M68-06 real outputs; scaffold ready.**
   - Decide whether the ninth slice can promote toward runtime fixture work or
     must stay blocked by manual-review/G Zone/Stride/Aqua Force battle-order
     gates.
+  - Scaffold status: spec/tool/tests are present. Targeted M68-closeout tests
+    pass (`9/9`) using in-memory M68-01 through M68-06 evidence; full Python
+    tests pass (`1694/1694`).
+  - Evidence: the closeout confirms M68 scaffold completion, 0 runtime-ready
+    recipes, 0 promotion-allowed consistency checks, 25 manual-overlap
+    blockers, 23 grade-profile blockers, 25 G Zone deferred blockers, 25
+    Stride deferred blockers, and 25 Aqua Force battle-order deferred blockers.
+    Runtime fixture creation, saved decks, UI publication, bot/playbook,
+    automatic injection, and direct `GameState` mutation remain disabled. Real
+    `outputs/target_slice/m68_closeout_*` artifacts are not generated until the
+    real M68-01 through M68-06 files exist.
+
+## M69: Ninth-Slice Human Selection, Repair, and G Zone/Stride/Aqua Force Decision Gate
+
+- `M69-01`: Ninth-slice human repair review packet. **Planned.**
+  - Export a concise review packet for M68-06 repair packages and candidate
+    recipes.
+  - Must not mutate M68 drafts, record acceptance, create runtime fixtures,
+    publish saved/UI decks, enable bot/playbook output, or mutate `GameState`.
+- `M69-02`: Ninth-slice human-selected recipe artifact. **Planned.**
+  - Record exactly one selected ninth-slice recipe id without mutating M68
+    drafts.
+- `M69-03`: Ninth-slice human-accepted repair artifact. **Planned.**
+  - Record explicit acceptance or rejection of selected manual/grade repair
+    packages.
+- `M69-04`: Ninth-slice G Zone, Stride, and Aqua Force decision artifact. **Planned.**
+  - Record whether runtime promotion waits for G Zone/Stride rules and Aqua
+    Force battle-order support.
+- `M69-05`: Ninth-slice repaired recipe validation rerun. **Planned.**
+  - Apply accepted repair in memory and rerun count, trigger, grade,
+    copy-limit, clan, manual-overlap, G Zone, Stride, and Aqua Force
+    battle-order validation.
+- `M69-06`: Ninth-slice runtime fixture promotion gate. **Planned.**
+  - Allow offline fixture creation only if M69 validation clears every blocker.
+- `M69-closeout`: Ninth-slice fixture closeout. **Planned.**
+  - Close the ninth-slice fixture decision and select the next bounded queue.
 
 ## Post-M28 Backlog (not in active queue)
 

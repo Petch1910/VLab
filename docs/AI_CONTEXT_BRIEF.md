@@ -914,7 +914,14 @@
   deferred packages, 25 Aqua Force battle-order deferred packages, 0 unexpected
   structural blockers, 25 human-review-ready items, and keeps saved deck, UI
   publication, runtime deck, bot/playbook, automatic injection, and GameState
-  mutation disabled. The current next target is M68-closeout.
+  mutation disabled.
+  M68-closeout spec/tool/tests are scaffolded and verified (`9/9` targeted,
+  `1694/1694` full Python) using in-memory M68-01 through M68-06 evidence; it
+  confirms 0 runtime-ready recipes, 0 promotion-allowed checks, 25
+  manual-overlap blockers, 23 grade-profile blockers, 25 G Zone blockers, 25
+  Stride blockers, 25 Aqua Force battle-order blockers, keeps runtime fixture,
+  saved deck, UI publication, bot/playbook, automatic injection, and GameState
+  mutation disabled, and selects M69. The current next target is M69-01.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

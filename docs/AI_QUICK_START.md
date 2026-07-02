@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M68-closeout ninth-slice runtime readiness decision
-   after M68-06 ninth-slice blocker repair candidates; M58-01
-   through M68-06 spec/tool/tests scaffolds are ready
+-> current target: M69-01 ninth-slice human repair review packet
+   after M68-closeout ninth-slice runtime readiness decision; M58-01
+   through M68-closeout spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -969,8 +969,18 @@ Windows-first program completion
    blockers, 25 human-review-ready items, and keeps saved deck, UI, runtime
    deck, bot/playbook, automatic injection, and GameState mutation disabled.
    Real M68-06 artifacts remain gated on the real M68-03, M68-04, and M68-05
-   output files. Current next target: M68-closeout ninth-slice runtime
-   readiness decision
+   output files.
+-> M68-closeout tooling/spec/tests are scaffolded; targeted M68-closeout tests
+   9/9 and full Python tests 1694/1694 pass.
+   The closeout consumes in-memory M68-01/M68-02/M68-03/M68-04/M68-05/M68-06
+   evidence, confirms M68 scaffold completion, keeps 0 runtime-ready recipes
+   and 0 promotion-allowed checks, preserves 25 manual-overlap blockers, 23
+   grade-profile blockers, 25 G Zone blockers, 25 Stride blockers, and 25 Aqua
+   Force battle-order blockers, keeps saved deck, UI, runtime fixture,
+   bot/playbook, automatic injection, and GameState mutation disabled, and
+   routes the next queue to M69. Real M68-closeout artifacts remain gated on
+   real M68-01 through M68-06 output files. Current next target: M69-01
+   ninth-slice human repair review packet
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3369,14 +3379,14 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 
 If continuing from here, do this next:
 
-1. Open `docs/IMPLEMENTATION_PLAN.md` section `M68`.
-2. Read `docs/specs/cards_and_decks/NINTH_SLICE_BLOCKER_REPAIR_CANDIDATES_SPEC.md`,
-   `tools/deck/build_ninth_slice_blocker_repair_candidates.py`,
-   and `tests/test_ninth_slice_blocker_repair_candidates.py`.
-3. Implement `M68-closeout` as the ninth-slice runtime readiness decision.
-4. Consume in-memory M68-03/M68-04/M68-05/M68-06 reports, decide whether the
-   ninth slice can promote a runtime fixture, preserve G Zone/Stride/Aqua
-   Force battle-order blockers, and keep runtime/saved/UI/bot/GameState
-   mutation disabled unless an explicit later milestone changes that boundary.
+1. Open `docs/IMPLEMENTATION_PLAN.md` section `M69`.
+2. Read `docs/specs/cards_and_decks/NINTH_SLICE_RUNTIME_READINESS_CLOSEOUT_SPEC.md`,
+   `tools/deck/build_ninth_slice_runtime_readiness_closeout.py`,
+   and `tests/test_ninth_slice_runtime_readiness_closeout.py`.
+3. Implement `M69-01` as the ninth-slice human repair review packet.
+4. Consume M68-closeout/M68-06 evidence, export a concise review packet for
+   human selection, and keep recipe mutation, runtime fixture creation,
+   saved-deck/UI publication, bot/playbook promotion, and GameState mutation
+   disabled.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.
