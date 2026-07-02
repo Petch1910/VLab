@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M63-02 eighth-slice fixture/format readiness
-   after M63-01 eighth target slice selection; M58-01 through M63-01
+-> current target: M63-03 eighth-slice semantic/compatibility probe
+   after M63-02 eighth-slice fixture/format readiness; M58-01 through M63-02
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -686,6 +686,14 @@ Windows-first program completion
    runtime fixtures, saved decks, UI entries, bot playbooks, G
    Zone/Stride/Bloom-token runtime, or GameState mutations. Real M63-01
    artifacts remain gated on the real M62-04 output file
+-> M63-02 tooling/spec/tests are scaffolded; targeted M63-02 tests 9/9 and
+   full Python tests 1422/1422 pass.
+   The readiness tool consumes an in-memory M63-01 selection, checks SQLite
+   source cards, grade 0-3 setup, G-series Grade 4 readiness where required,
+   trigger families, trigger capacity, main-deck capacity, repair routing,
+   JSON/Markdown round-trip, and keeps runtime pack, deck, UI, bot/playbook, G
+   Zone, Stride, Bloom/token, and GameState mutation disabled. Real M63-02
+   artifacts remain gated on the real M63-01 output file
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

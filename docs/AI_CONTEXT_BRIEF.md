@@ -672,6 +672,13 @@
   candidate queue, covers blocked and empty-queue paths, and avoids recipe
   draft/runtime fixture/saved deck/UI/bot/G Zone/Stride/Bloom-token/GameState
   mutation. Real M63-01 artifacts remain gated on the real M62-04 output file.
+  M63-02 spec/tool/tests are scaffolded and verified (`9/9` targeted,
+  `1422/1422` full Python) using an
+  in-memory M63-01 selection; it checks SQLite source cards, grade 0-3 setup,
+  G-series Grade 4 readiness where required, trigger families, trigger
+  capacity, main-deck capacity, repair routing, JSON/Markdown round-trip, and
+  avoids runtime pack/deck/UI/bot/G Zone/Stride/Bloom-token/GameState mutation.
+  Real M63-02 artifacts remain gated on the real M63-01 output file.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

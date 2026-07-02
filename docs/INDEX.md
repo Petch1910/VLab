@@ -872,6 +872,9 @@
 - `specs/cards_and_decks/EIGHTH_TARGET_SLICE_SELECTION_SPEC.md` M63-01 eighth target slice selection spec
 - `../tools/deck/build_eighth_target_slice_selection.py` M63-01 eighth target slice selection tool
 - `../tests/test_eighth_target_slice_selection.py` M63-01 eighth target slice selection tests
+- `specs/cards_and_decks/EIGHTH_SLICE_FIXTURE_READINESS_SPEC.md` M63-02 eighth-slice fixture readiness spec
+- `../tools/deck/build_eighth_slice_fixture_readiness.py` M63-02 eighth-slice fixture readiness tool
+- `../tests/test_eighth_slice_fixture_readiness.py` M63-02 eighth-slice fixture readiness tests
 - `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
 - `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
 - `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope

@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M63-02 eighth-slice fixture/format readiness
-   after M63-01 eighth target slice selection; M58-01 through M63-01
+-> current next target: M63-03 eighth-slice semantic/compatibility probe
+   after M63-02 eighth-slice fixture/format readiness; M58-01 through M63-02
    scaffolds are ready
 ```
 
@@ -2670,11 +2670,25 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     fixture, saved deck, UI deck, bot/playbook, G Zone, Stride, Bloom/token,
     or `GameState` mutation. Real `outputs/target_slice/m63_01_*` artifacts
     are not generated until the real M62-04 output exists.
-- `M63-02`: Eighth-slice fixture/format readiness. **Pending.**
+- `M63-02`: Eighth-slice fixture/format readiness. **Blocked by M63-01 real output; scaffold ready.**
   - Check source-card availability, trigger/non-trigger capacity, format policy,
     and fixture scaffold expectations for the selected eighth offline target
     without creating recipe drafts, runtime fixtures, saved decks, UI entries,
     bot playbooks, or runtime state mutation.
+  - Scaffold status: spec/tool/tests are present. Targeted M63-02 tests pass
+    `9/9`; full Python unittest discovery passes `1422/1422`. Tests use
+    an in-memory M63-01 selection, verify source-backed cards, grade 0-3
+    availability, G-series Grade 4 readiness where required, trigger family
+    and main-deck capacity, broken selection repair routing, JSON/Markdown
+    round-trip, and no runtime pack, saved deck, UI, bot/playbook, G Zone,
+    Stride, Bloom/token, or `GameState` mutation. Real
+    `outputs/target_slice/m63_02_*` artifacts are not generated until the real
+    M63-01 output exists.
+- `M63-03`: Eighth-slice semantic/compatibility probe. **Pending.**
+  - Run the offline semantic/provider/requirement compatibility probe for the
+    selected eighth target after M63-02 readiness, without promoting runtime
+    fixtures, saved decks, UI entries, bot playbooks, G Zone runtime, Stride
+    runtime, Bloom/token runtime, or `GameState` mutation.
 
 ## Post-M28 Backlog (not in active queue)
 
