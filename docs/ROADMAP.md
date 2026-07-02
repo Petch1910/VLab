@@ -396,7 +396,10 @@ Active order:
   spec/tool/tests are scaffolded and verified (`7/7` targeted, `1197/1197`
   full Python) against an in-memory fixture plus M58-01 validation report; the
   real deck text/report artifacts remain gated on real M57-06 and M58-01
-  files.
+  files. M58-03 spec/tool/tests are scaffolded and verified (`9/9` targeted,
+  `1206/1206` full Python) against in-memory M57-06/M58-01/M58-02 artifacts;
+  offline deck-code smoke is ready in scaffold, while real outputs and Unity
+  headless evidence remain gated on real upstream files.
 
 Deferred until explicit user instruction:
 

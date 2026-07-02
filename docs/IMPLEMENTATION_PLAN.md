@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M58-02 sixth fixture deck text export real artifact
-   after M57-06 fixture output and M58-01 validation output; M58-01/M58-02
-   scaffolds are ready
+-> current next target: M58-03 sixth fixture headless load smoke real artifact
+   after M57-06/M58-01/M58-02 real outputs; M58-01 through M58-03 scaffolds
+   are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2360,9 +2360,14 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     `outputs/target_slice/m58_02_*` deck text/report artifacts are not
     generated until the M57-06 runtime fixture file and M58-01 validation
     report file exist.
-- `M58-03`: Sixth fixture headless load smoke. **Pending.**
+- `M58-03`: Sixth fixture headless load smoke. **Blocked by M58-02 real output; scaffold ready.**
   - Load the Shadow Paladin fixture through offline/headless paths without UI,
     bot, G Zone, or Stride mutation.
+  - Scaffold status: spec/tool/tests are present. Targeted M58-03 tests pass
+    `9/9`; full Python unittest discovery passes `1206/1206`. Tests use
+    in-memory M57-06/M58-01/M58-02 artifacts. Offline deck-code smoke is ready
+    in scaffold, but real `outputs/target_slice/m58_03_*` artifacts and Unity
+    headless evidence are not generated until upstream real files exist.
 - `M58-04`: Six-fixture scale decision. **Pending.**
   - Review all six fixture evidence before selecting any further slice.
 
