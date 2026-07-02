@@ -505,7 +505,10 @@
   M58-03 spec/tool/tests are scaffolded and verified (`9/9` targeted,
   `1206/1206` full Python) against in-memory M57-06/M58-01/M58-02 artifacts;
   offline deck-code smoke is ready in scaffold, while real outputs and Unity
-  headless evidence remain gated on real upstream files.
+  headless evidence remain gated on real upstream files. M58-04 spec/tool/tests
+  are scaffolded and verified (`8/8` targeted, `1214/1214` full Python) using
+  the first five real smoke reports plus in-memory sixth fixture smoke; the
+  real scale decision remains gated on real M58-03 Unity evidence.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

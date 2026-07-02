@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M58-03 sixth fixture headless load smoke real artifact,
-   gated on M57-06/M58-01/M58-02 real outputs; M58-01 through M58-03
-   spec/tool/tests scaffolds are ready
+-> current target: M58-04 six-fixture scale decision real artifact, gated on
+   M58-03 real Unity evidence; M58-01 through M58-04 spec/tool/tests scaffolds
+   are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -517,6 +517,10 @@ Windows-first program completion
    Python tests 1206/1206 pass using in-memory M57-06/M58-01/M58-02 artifacts.
    Offline deck-code smoke is ready in scaffold, while real outputs and Unity
    headless evidence remain gated on real upstream files
+-> M58-04 tooling/spec/tests are scaffolded; targeted M58-04 tests 8/8 and full
+   Python tests 1214/1214 pass using the first five real smoke reports plus
+   in-memory sixth fixture smoke. Six-fixture scale decision is ready in
+   scaffold, while real report remains gated on real M58-03 Unity evidence
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

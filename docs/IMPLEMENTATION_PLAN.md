@@ -80,9 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M58-03 sixth fixture headless load smoke real artifact
-   after M57-06/M58-01/M58-02 real outputs; M58-01 through M58-03 scaffolds
-   are ready
+-> current next target: M58-04 six-fixture scale decision real artifact after
+   M58-03 real Unity evidence; M58-01 through M58-04 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2368,8 +2367,14 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     in-memory M57-06/M58-01/M58-02 artifacts. Offline deck-code smoke is ready
     in scaffold, but real `outputs/target_slice/m58_03_*` artifacts and Unity
     headless evidence are not generated until upstream real files exist.
-- `M58-04`: Six-fixture scale decision. **Pending.**
+- `M58-04`: Six-fixture scale decision. **Blocked by M58-03 real Unity evidence; scaffold ready.**
   - Review all six fixture evidence before selecting any further slice.
+  - Scaffold status: spec/tool/tests are present. Targeted M58-04 tests pass
+    `8/8`; full Python unittest discovery passes `1214/1214`. Tests use the
+    first five real smoke reports plus in-memory sixth fixture smoke with
+    accepted Unity evidence. The real `outputs/target_slice/m58_04_*` scale
+    decision artifacts are not generated until real M58-03 smoke and Unity
+    evidence files exist.
 
 ## Post-M28 Backlog (not in active queue)
 

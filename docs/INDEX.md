@@ -800,6 +800,9 @@
 - `specs/cards_and_decks/SIXTH_HEADLESS_FIXTURE_LOAD_SMOKE_SPEC.md` M58-03 sixth fixture headless load smoke spec
 - `../tools/deck/build_sixth_headless_fixture_load_smoke.py` M58-03 sixth fixture headless load smoke tool
 - `../tests/test_sixth_headless_fixture_load_smoke.py` M58-03 sixth fixture headless load smoke tests
+- `specs/cards_and_decks/SIX_FIXTURE_SCALE_DECISION_SPEC.md` M58-04 six-fixture scale decision spec
+- `../tools/deck/build_six_fixture_scale_decision.py` M58-04 six-fixture scale decision tool
+- `../tests/test_six_fixture_scale_decision.py` M58-04 six-fixture scale decision tests
 - `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
 - `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
 - `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope

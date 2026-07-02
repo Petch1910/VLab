@@ -399,7 +399,10 @@ Active order:
   files. M58-03 spec/tool/tests are scaffolded and verified (`9/9` targeted,
   `1206/1206` full Python) against in-memory M57-06/M58-01/M58-02 artifacts;
   offline deck-code smoke is ready in scaffold, while real outputs and Unity
-  headless evidence remain gated on real upstream files.
+  headless evidence remain gated on real upstream files. M58-04 spec/tool/tests
+  are scaffolded and verified (`8/8` targeted, `1214/1214` full Python) using
+  the first five real smoke reports plus in-memory sixth fixture smoke; the
+  real scale decision remains gated on real M58-03 Unity evidence.
 
 Deferred until explicit user instruction:
 
