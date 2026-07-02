@@ -514,6 +514,14 @@ Active order:
   `true`, creates no runtime fixture, declares no runtime promotion, and does
   not mutate runtime/UI/bot/GameState. Real M61-05 artifacts remain gated on
   real M61-03 and M61-04 outputs.
+  M61-06 spec/tool/tests are scaffolded and verified (`10/10` targeted,
+  `1362/1362` full Python) using in-memory M61-03/M61-05 artifacts; it
+  creates an offline runtime/test fixture artifact only when human acceptance,
+  validation, consistency, G Zone boundary, and Bloom/token boundary all pass,
+  blocks deferred G Zone or Bloom/token choices, keeps G Zone/Stride/Bloom/token
+  runtime disabled, creates no saved deck, publishes no UI deck, enables no
+  bot/playbook, and does not mutate runtime/UI/bot/GameState. Real M61-06
+  artifacts remain gated on real M61-03 and M61-05 outputs.
 
 Deferred until explicit user instruction:
 

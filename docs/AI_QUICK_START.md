@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M61-06 seventh-slice runtime fixture promotion gate
-   scaffold, gated on M61-05 real validation output; M58-01 through M61-05
+-> current target: M61-closeout seventh-slice fixture closeout
+   scaffold after M61-06 gate evidence; M58-01 through M61-06
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -634,6 +634,15 @@ Windows-first program completion
    ready_for_m61_06 true, creates no runtime fixture, and does not mutate
    runtime/UI/bot/GameState. Real M61-05 artifacts remain gated on real M61-03
    and M61-04 outputs
+-> M61-06 tooling/spec/tests are scaffolded; targeted M61-06 tests 10/10 and
+   full Python tests 1362/1362 pass using in-memory M61-03/M61-05 artifacts.
+   The promotion gate creates an offline runtime/test fixture artifact only
+   when human acceptance, validation, consistency, G Zone boundary, and
+   Bloom/token boundary all pass. It blocks deferred G Zone or Bloom/token
+   choices, keeps G Zone/Stride/Bloom/token runtime disabled, creates no saved
+   deck, publishes no UI deck, enables no bot/playbook, and does not mutate
+   GameState. Real M61-06 artifacts remain gated on real M61-03 and M61-05
+   outputs
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

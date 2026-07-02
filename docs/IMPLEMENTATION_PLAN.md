@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M61-06 seventh-slice runtime fixture promotion gate
-   scaffold after M61-05 evidence; M58-01 through M61-05
+-> current next target: M61-closeout seventh-slice fixture closeout
+   scaffold after M61-06 evidence; M58-01 through M61-06
    scaffolds are ready
 ```
 
@@ -2583,9 +2583,18 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     promotion, and does not mutate runtime/UI/bot/GameState. Real
     `outputs/target_slice/m61_05_*` artifacts are not generated until the real
     M61-03 and M61-04 artifacts exist.
-- `M61-06`: Seventh-slice runtime fixture promotion gate. **Pending.**
+- `M61-06`: Seventh-slice runtime fixture promotion gate. **Blocked by real M61-03/M61-05 outputs; scaffold ready.**
   - Promote only if repaired validation, consistency, human acceptance, and
     system decisions all pass.
+  - Scaffold status: spec/tool/tests are present. Targeted M61-06 tests pass
+    `10/10`; full Python unittest discovery passes `1362/1362`. Tests use
+    in-memory M61-03/M61-05 artifacts. The gate creates only an offline
+    runtime/test fixture artifact when all checks pass, blocks deferred G Zone
+    or Bloom/token boundary choices, keeps G Zone/Stride/Bloom/token runtime
+    disabled, creates no saved deck, publishes no UI deck, enables no
+    bot/playbook, and does not mutate runtime/UI/bot/GameState. Real
+    `outputs/target_slice/m61_06_*` artifacts are not generated until the real
+    M61-03 and M61-05 artifacts exist.
 - `M61-closeout`: Seventh-slice fixture closeout. **Pending.**
   - Decide whether the seventh slice enters offline fixture scope or remains
     advisory.
