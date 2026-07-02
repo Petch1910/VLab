@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M67-01 ninth target slice selection
-   after M66-04 eight-fixture scale decision; M58-01
-   through M66-04 spec/tool/tests scaffolds are ready
+-> current target: M67-02 ninth-slice fixture/format readiness
+   after M67-01 ninth target slice selection; M58-01
+   through M67-01 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -869,7 +869,15 @@ Windows-first program completion
    injection, UI publication, bot/playbook, G Zone, Stride, Bloom/token,
    Lock/Unlock, Legion/Mate runtime, and GameState mutation disabled. Real
    M66-04 artifacts remain gated on real M58-03/M62-03/M66-03 evidence.
-   Current next target: M67-01 ninth target slice selection
+-> M67-01 tooling/spec/tests are scaffolded; targeted M67-01 tests 8/8 and
+   full Python tests 1610/1610 pass.
+   The selector consumes in-memory M66-04 scale evidence, selects the first
+   remaining candidate as the ninth offline analysis slice, and picks
+   `อควอฟอร์ซ` / `g_series_first` with 5 candidates in the queue. It keeps
+   recipe drafts, runtime fixtures, saved decks, UI publication, bot/playbook,
+   G Zone, Stride, Bloom/token, Lock/Unlock, Legion/Mate runtime, and GameState
+   mutation disabled. Real M67-01 artifacts remain gated on real M66-04 output.
+   Current next target: M67-02 ninth-slice fixture/format readiness
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3269,12 +3277,12 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M67`.
-2. Read `docs/specs/cards_and_decks/EIGHT_FIXTURE_SCALE_DECISION_SPEC.md`,
-   `tools/deck/build_eight_fixture_scale_decision.py`,
-   and `tests/test_eight_fixture_scale_decision.py`.
-3. Implement `M67-01` as the ninth target slice selection.
-4. Select the next offline-only target from the candidate queue without
-   creating runtime fixtures, saved decks, UI deck entries, bot/playbooks,
-   runtime systems, or `GameState` mutation.
+2. Read `docs/specs/cards_and_decks/NINTH_TARGET_SLICE_SELECTION_SPEC.md`,
+   `tools/deck/build_ninth_target_slice_selection.py`,
+   and `tests/test_ninth_target_slice_selection.py`.
+3. Implement `M67-02` as ninth-slice fixture/format readiness.
+4. Validate the selected `อควอฟอร์ซ` / `g_series_first` target for fixture
+   readiness without creating recipe drafts, runtime fixtures, saved decks, UI
+   deck entries, bot/playbooks, runtime systems, or `GameState` mutation.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.

@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M67-01 ninth target slice selection
-   after M66-04 eight-fixture scale decision; M58-01
-   through M66-04 scaffolds are ready
+-> current next target: M67-02 ninth-slice fixture/format readiness
+   after M67-01 ninth target slice selection; M58-01
+   through M67-01 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2957,10 +2957,25 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
 
 ### M67: Ninth Offline Slice Selection
 
-- `M67-01`: Ninth target slice selection. **Blocked by M66-04 real output; planned.**
+- `M67-01`: Ninth target slice selection. **Blocked by M66-04 real output; scaffold ready.**
   - Consume the M66-04 scale decision and select the next offline-only target
     from the candidate queue without creating runtime fixtures, saved decks, UI
     entries, bot playbooks, runtime systems, or `GameState` mutation.
+  - Scaffold status: spec/tool/tests are present. Targeted M67-01 tests pass
+    (`8/8`) and full Python tests pass (`1610/1610`) using in-memory M66-04
+    scale evidence.
+  - Evidence: the selector picks the first remaining candidate,
+    `อควอฟอร์ซ` / `g_series_first`, records a candidate queue snapshot with 5
+    candidates, opens `M67-02`, and keeps recipe drafts, runtime fixtures,
+    saved decks, UI publication, bot/playbook, G Zone, Stride, Bloom-token,
+    Lock/Unlock, Legion/Mate runtime, and direct `GameState` mutation disabled.
+    Real `outputs/target_slice/m67_01_*` artifacts are not generated until the
+    real M66-04 decision file exists.
+- `M67-02`: Ninth-slice fixture/format readiness. **Blocked by M67-01 real output; planned.**
+  - Validate fixture/format readiness for the selected `อควอฟอร์ซ` /
+    `g_series_first` target without creating recipe drafts, runtime fixtures,
+    saved decks, UI entries, bot playbooks, runtime systems, or `GameState`
+    mutation.
 
 ## Post-M28 Backlog (not in active queue)
 

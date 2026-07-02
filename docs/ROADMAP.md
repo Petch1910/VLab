@@ -722,7 +722,14 @@ Active order:
   deck injection, UI publication, bot/playbook, G Zone, Stride, Bloom/token,
   Lock/Unlock, Legion/Mate runtime, and GameState mutation disabled. Real
   M66-04 artifacts remain gated on real M58-03/M62-03/M66-03 evidence. The
-  current next target is M67-01.
+  M67-01 spec/tool/tests are scaffolded and verified (`8/8` targeted,
+  `1610/1610` full Python) using in-memory M66-04 scale evidence; it selects
+  `อควอฟอร์ซ` / `g_series_first` as the ninth offline analysis slice from a
+  five-item candidate queue, opens M67-02, and keeps recipe drafts, runtime
+  fixtures, saved decks, UI publication, bot/playbook, G Zone, Stride,
+  Bloom/token, Lock/Unlock, Legion/Mate runtime, and GameState mutation
+  disabled. Real M67-01 artifacts remain gated on real M66-04 output. The
+  current next target is M67-02.
 
 Deferred until explicit user instruction:
 
