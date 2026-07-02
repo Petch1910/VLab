@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M68-01 ninth-slice fixture scaffold
-   after M67-04 ninth-slice recipe pipeline entry gate; M58-01
-   through M67-04 scaffolds are ready
+-> current next target: M68-02 ninth-slice review packet
+   after M68-01 ninth-slice fixture scaffold; M58-01
+   through M68-01 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -3022,11 +3022,28 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
 
 ### M68: Ninth Offline Recipe Pipeline
 
-- `M68-01`: Ninth-slice fixture scaffold. **Blocked by M67-04 real output; planned.**
-  - Define source-backed fixture policy for `อควอฟอร์ซ` / `g_series_first`
-    before recipe validator work, without creating recipe drafts, runtime
+- `M68-01`: Ninth-slice fixture scaffold. **Blocked by M67-04 real output; scaffold ready.**
+  - Define source-backed fixture policy for the selected Aqua Force / `g_series_first`
+    slice before recipe validator work, without creating recipe drafts, runtime
     fixtures, saved decks, UI entries, bot playbooks, runtime systems, or
     `GameState` mutation.
+  - Scaffold status: spec/tool/tests are present. Targeted M68-01 tests pass
+    (`10/10`) and full Python tests pass (`1646/1646`) using in-memory M67-02
+    readiness, M67-03 semantic/compatibility evidence, and M67-04 entry-gate
+    evidence.
+  - Evidence: the scaffold defines 50-card main-deck policy, 16-trigger
+    target, Critical/Draw/Heal/Stand trigger families, grade 0-3 main-deck
+    setup, and a review-only G Zone boundary for the 77-card source-backed
+    Aqua Force G-series pool. It keeps recipe drafts, runtime fixtures, saved
+    decks, UI publication, bot/playbook, G Zone, Stride, Bloom-token,
+    Lock/Unlock, Legion/Mate runtime, and direct `GameState` mutation disabled.
+    Real `outputs/target_slice/m68_01_*` artifacts are not generated until the
+    real M67-02, M67-03, and M67-04 files exist.
+- `M68-02`: Ninth-slice review packet. **Blocked by M68-01 real output; planned.**
+  - Export candidate edges, manual-review cards, fixture scaffold notes,
+    G Zone boundary notes, and format notes for human review, without creating
+    recipe drafts, runtime fixtures, saved decks, UI entries, bot playbooks,
+    runtime systems, or `GameState` mutation.
 
 ## Post-M28 Backlog (not in active queue)
 

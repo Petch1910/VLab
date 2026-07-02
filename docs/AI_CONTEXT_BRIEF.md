@@ -860,8 +860,17 @@
   opens M68-01 and keeps recipe drafts, runtime fixtures, saved decks, UI
   publication, bot/playbook, G Zone, Stride, Bloom/token, Lock/Unlock,
   Legion/Mate runtime, and GameState mutation disabled. Real M67-04 artifacts
-  remain gated on real M67-02/M67-03 outputs. The current next target is
-  M68-01.
+  remain gated on real M67-02/M67-03 outputs.
+  M68-01 spec/tool/tests are scaffolded and verified (`10/10` targeted,
+  `1646/1646` full Python) using in-memory M67-02/M67-03/M67-04 evidence; it
+  defines 50-card main-deck policy, 16-trigger target,
+  Critical/Draw/Heal/Stand trigger families, grade 0-3 setup, and a
+  review-only G Zone boundary for the 77-card source-backed Aqua Force
+  G-series pool. It keeps recipe drafts, runtime fixtures, saved decks, UI
+  publication, bot/playbook, G Zone, Stride, Bloom/token, Lock/Unlock,
+  Legion/Mate runtime, and GameState mutation disabled. Real M68-01 artifacts
+  remain gated on real M67-02/M67-03/M67-04 outputs. The current next target is
+  M68-02.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

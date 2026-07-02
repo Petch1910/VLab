@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M68-01 ninth-slice fixture scaffold
-   after M67-04 ninth-slice recipe pipeline entry gate; M58-01
-   through M67-04 spec/tool/tests scaffolds are ready
+-> current target: M68-02 ninth-slice review packet
+   after M68-01 ninth-slice fixture scaffold; M58-01
+   through M68-01 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -907,6 +907,16 @@ Windows-first program completion
    Bloom/token, Lock/Unlock, Legion/Mate runtime, and GameState mutation
    disabled. Real M67-04 artifacts remain gated on real M67-02/M67-03 outputs.
    Current next target: M68-01 ninth-slice fixture scaffold
+-> M68-01 tooling/spec/tests are scaffolded; targeted M68-01 tests 10/10 and
+   full Python tests 1646/1646 pass.
+   The fixture scaffold defines the source-backed validator policy for
+   `เธญเธเธงเธญเธเธญเธฃเนเธ` / `g_series_first`: 50-card main deck, 16 triggers,
+   Critical/Draw/Heal/Stand trigger families, grade 0-3 main-deck setup, and
+   a review-only G Zone boundary. It keeps recipe drafts, runtime fixtures,
+   saved decks, UI publication, bot/playbook, G Zone, Stride, Bloom/token,
+   Lock/Unlock, Legion/Mate runtime, and GameState mutation disabled. Real
+   M68-01 artifacts remain gated on real M67-02/M67-03/M67-04 outputs.
+   Current next target: M68-02 ninth-slice review packet
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3306,13 +3316,13 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M68`.
-2. Read `docs/specs/cards_and_decks/NINTH_SLICE_RECIPE_PIPELINE_ENTRY_GATE_SPEC.md`,
-   `tools/deck/build_ninth_slice_recipe_pipeline_entry_gate.py`,
-   and `tests/test_ninth_slice_recipe_pipeline_entry_gate.py`.
-3. Implement `M68-01` as the ninth-slice fixture scaffold.
-4. Define source-backed fixture policy for `อควอฟอร์ซ` / `g_series_first`
-   before recipe validator work without creating recipe drafts, runtime
-   fixtures, saved decks, UI deck entries, bot/playbooks, runtime systems, or
-   `GameState` mutation.
+2. Read `docs/specs/cards_and_decks/NINTH_SLICE_FIXTURE_SCAFFOLD_SPEC.md`,
+   `tools/deck/build_ninth_slice_fixture_scaffold.py`,
+   and `tests/test_ninth_slice_fixture_scaffold.py`.
+3. Implement `M68-02` as the ninth-slice review packet.
+4. Export review-only fixture scaffold notes, candidate edges, manual-review
+   cards, G Zone boundary notes, and format notes without creating recipe
+   drafts, runtime fixtures, saved decks, UI deck entries, bot/playbooks,
+   runtime systems, or `GameState` mutation.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.
