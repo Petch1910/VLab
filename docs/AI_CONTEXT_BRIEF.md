@@ -806,7 +806,13 @@
   Lock/Unlock/Legion/Mate policy and runtime boundaries, and keeps saved deck,
   UI publication, bot/playbook, runtime systems, and GameState mutation
   disabled. Real M66-01 artifacts remain gated on the real M65-06 fixture file.
-  The current next target is M66-02.
+  M66-02 spec/tool/tests are scaffolded and verified (`8/8` targeted,
+  `1585/1585` full Python) using an in-memory M65-06 Kagero fixture and
+  M66-01 validation report; it exports review-only count-line deck text, keeps
+  Lock/Legion notes as comments only, rejects invalid validation or malformed
+  fixture rows, and keeps saved deck, UI publication, bot/playbook, runtime
+  systems, and GameState mutation disabled. Real M66-02 artifacts remain gated
+  on real M65-06/M66-01 outputs. The current next target is M66-03.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

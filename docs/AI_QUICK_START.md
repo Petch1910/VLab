@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M66-02 eighth fixture deck text exporter
-   after M66-01 eighth fixture schema validator; M58-01
-   through M66-01 spec/tool/tests scaffolds are ready
+-> current target: M66-03 eighth fixture headless load smoke
+   after M66-02 eighth fixture deck text exporter; M58-01
+   through M66-02 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -840,8 +840,18 @@ Windows-first program completion
    accepts M65-06 plural `source_artifacts`, rejects unsafe Lock/Unlock/
    Legion/Mate boundaries, and keeps saved deck injection, UI publication,
    bot/playbook, runtime systems, and GameState mutation disabled. Real M66-01
-   artifacts remain gated on the real M65-06 fixture file. Current next target:
-   M66-02 eighth fixture deck text exporter
+   artifacts remain gated on the real M65-06 fixture file.
+-> M66-02 tooling/spec/tests are scaffolded; targeted M66-02 tests 8/8 and
+   full Python tests 1585/1585 pass.
+   The deck text exporter consumes the in-memory M65-06 Kagero fixture and
+   M66-01 validation report, emits review-only count-line deck text with
+   `[Main]`, `[Ride]`, and `[G]` sections, records Lock/Legion boundary
+   comments without enabling those systems, rejects invalid validation gates or
+   malformed fixture rows, and keeps saved deck injection, UI publication,
+   bot/playbook, Lock runtime, Unlock runtime, Legion runtime, Mate identity
+   checks, and GameState mutation disabled. Real M66-02 artifacts remain gated
+   on real M65-06/M66-01 outputs. Current next target: M66-03 eighth fixture
+   headless load smoke
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3241,12 +3251,11 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M66`.
-2. Read `docs/specs/cards_and_decks/EIGHTH_RUNTIME_FIXTURE_SCHEMA_VALIDATOR_SPEC.md`,
-   `tools/deck/validate_eighth_runtime_fixture_schema.py`,
-   and `tests/test_eighth_runtime_fixture_schema_validator.py`.
-3. Implement `M66-02` as the eighth fixture deck text exporter.
-4. Export the Kagero fixture as reviewable count-line deck text without adding
-   it to saved decks, UI publication, bot/playbook, Lock/Unlock, Legion/Mate
-   runtime, or `GameState` mutation.
+2. Read `docs/specs/cards_and_decks/EIGHTH_FIXTURE_DECK_TEXT_EXPORT_SPEC.md`,
+   `tools/deck/export_eighth_fixture_deck_text.py`,
+   and `tests/test_eighth_fixture_deck_text_export.py`.
+3. Implement `M66-03` as the eighth fixture headless load smoke.
+4. Load the Kagero fixture through offline/headless paths without UI, bot,
+   Lock/Unlock, Legion/Mate runtime, or `GameState` mutation.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.

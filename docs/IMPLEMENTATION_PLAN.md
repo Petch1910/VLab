@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M66-02 eighth fixture deck text exporter
-   after M66-01 eighth fixture schema validator; M58-01
-   through M66-01 scaffolds are ready
+-> current next target: M66-03 eighth fixture headless load smoke
+   after M66-02 eighth fixture deck text exporter; M58-01
+   through M66-02 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2912,9 +2912,20 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     direct `GameState` mutation disabled. Real
     `outputs/target_slice/m66_01_*` artifacts are not generated until the real
     M65-06 fixture file exists.
-- `M66-02`: Eighth fixture deck text exporter. **Blocked by M65-06/M66-01 real files; planned.**
+- `M66-02`: Eighth fixture deck text exporter. **Blocked by M65-06/M66-01 real files; scaffold ready.**
   - Export the Kagero fixture as reviewable count-line deck text without adding
     it to saved decks.
+  - Scaffold status: spec/tool/tests are present. Targeted M66-02 tests pass
+    (`8/8`) and full Python tests pass (`1585/1585`) using an in-memory
+    M65-06 Kagero runtime fixture and M66-01 validation report.
+  - Evidence: the exporter emits review-only count-line deck text with
+    `[Main]`, `[Ride]`, and `[G]` sections, includes Lock/Legion boundary
+    comments only, blocks invalid M66-01 validation or malformed fixture rows,
+    and keeps saved deck injection, UI publication, bot/playbook,
+    Lock runtime, Unlock runtime, Legion runtime, Mate identity checks, and
+    direct `GameState` mutation disabled. Real
+    `outputs/target_slice/m66_02_*` artifacts are not generated until the real
+    M65-06 fixture and M66-01 validation files exist.
 - `M66-03`: Eighth fixture headless load smoke. **Blocked by M65-06/M66-01/M66-02 real files; planned.**
   - Load the Kagero fixture through offline/headless paths without UI, bot,
     Lock, Unlock, Legion, Mate, or `GameState` mutation.
