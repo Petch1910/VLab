@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M64-03 eighth-slice recipe draft model
-   after M64-02 eighth-slice review packet; M58-01 through M64-02
+-> current target: M64-04 eighth-slice recipe validator
+   after M64-03 eighth-slice recipe draft model; M58-01 through M64-03
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -726,6 +726,14 @@ Windows-first program completion
    candidate edge items, and keeps recipe draft, runtime pack, saved deck, UI,
    bot/playbook, Lock, Legion, and GameState mutation disabled. Real M64-02
    artifacts remain gated on the real upstream output files
+-> M64-03 tooling/spec/tests are scaffolded; targeted M64-03 tests 9/9 and
+   full Python tests 1466/1466 pass.
+   The draft model consumes in-memory M64-02/M64-01 reports plus runtime
+   SQLite, creates 25 advisory quantity-complete recipe drafts from 355
+   candidate edges, skips 5 trigger/Grade4/missing edges, keeps 50-card /
+   16-trigger structure, and keeps saved deck, UI, runtime fixture, bot/
+   playbook, Lock, Legion, and GameState mutation disabled. Real M64-03
+   artifacts remain gated on the real M64-02 and M64-01 output files
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

@@ -887,6 +887,9 @@
 - `specs/cards_and_decks/EIGHTH_SLICE_REVIEW_PACKET_SPEC.md` M64-02 eighth-slice review packet spec
 - `../tools/deck/build_eighth_slice_review_packet.py` M64-02 eighth-slice review packet tool
 - `../tests/test_eighth_slice_review_packet.py` M64-02 eighth-slice review packet tests
+- `specs/cards_and_decks/EIGHTH_SLICE_RECIPE_DRAFT_MODEL_SPEC.md` M64-03 eighth-slice recipe draft model spec
+- `../tools/deck/build_eighth_slice_recipe_draft_model.py` M64-03 eighth-slice recipe draft model tool
+- `../tests/test_eighth_slice_recipe_draft_model.py` M64-03 eighth-slice recipe draft model tests
 - `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
 - `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
 - `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope

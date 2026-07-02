@@ -708,6 +708,13 @@
   item, 6 manual-review card items, 355 candidate edge items, and avoids
   recipe draft/runtime pack/deck/UI/bot/Lock/Legion/GameState mutation. Real
   M64-02 artifacts remain gated on the real upstream output files.
+  M64-03 spec/tool/tests are scaffolded and verified (`9/9` targeted,
+  `1466/1466` full Python) using in-memory M64-02/M64-01 reports plus runtime
+  SQLite; it creates 25 advisory quantity-complete recipe drafts, skips 5
+  trigger/Grade4/missing candidate edges, preserves a 50-card / 16-trigger
+  structure, and avoids saved deck/UI/runtime deck/bot/Lock/Legion/GameState
+  mutation. Real M64-03 artifacts remain gated on the real M64-02 and M64-01
+  output files.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

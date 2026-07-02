@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M64-03 eighth-slice recipe draft model
-   after M64-02 eighth-slice review packet; M58-01 through M64-02
+-> current next target: M64-04 eighth-slice recipe validator
+   after M64-03 eighth-slice recipe draft model; M58-01 through M64-03
    scaffolds are ready
 ```
 
@@ -2742,8 +2742,19 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     runtime pack, recipe draft, saved deck, UI, bot/playbook, or `GameState`
     mutation. Real `outputs/target_slice/m64_02_*` artifacts are not generated
     until the real upstream output files exist.
-- `M64-03`: Eighth-slice recipe draft model. **Pending.**
+- `M64-03`: Eighth-slice recipe draft model. **Blocked by M64-02/M64-01 real outputs; scaffold ready.**
   - Create advisory recipe drafts only; no saved deck or UI injection.
+  - Scaffold status: spec/tool/tests are present. Targeted M64-03 tests pass
+    `9/9`; full Python unittest discovery passes `1466/1466`. Tests use
+    in-memory M64-02/M64-01 reports plus runtime SQLite and verify `25`
+    advisory recipe drafts, `25` quantity-complete drafts, `5` skipped
+    trigger/Grade4/missing candidate edges, `0` manual-overlap drafts, 50-card
+    main deck, 16-trigger structure, pair cards forced to quantity `4`, no
+    Grade 4 in main deck, Lock/Legion runtime deferral, JSON/Markdown
+    round-trip, and no saved deck, UI publication, runtime deck, bot/playbook,
+    automatic injection, live card text parsing, or `GameState` mutation. Real
+    `outputs/target_slice/m64_03_*` artifacts are not generated until the real
+    M64-02 and M64-01 output files exist.
 - `M64-04`: Eighth-slice recipe validator. **Pending.**
   - Validate count, trigger, grade, identity, copy limits, missing cards, and
     fixture scaffold constraints.
