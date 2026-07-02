@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M65-05 eighth-slice repaired recipe validation rerun
-   after M65-04 eighth-slice Lock and Legion decision artifact; M58-01
-   through M65-04 scaffolds are ready
+-> current next target: M65-06 eighth-slice runtime fixture promotion gate
+   after M65-05 eighth-slice repaired recipe validation rerun; M58-01
+   through M65-05 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2856,9 +2856,19 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     options, and records no runtime fixture, saved deck/UI, bot/playbook, or
     direct `GameState` mutation. Lock runtime, Unlock runtime, Legion runtime,
     and Mate identity checks remain disabled.
-- `M65-05`: Eighth-slice repaired recipe validation rerun. **Pending.**
+- `M65-05`: Eighth-slice repaired recipe validation rerun. **Blocked by real M65-03/M65-04 outputs; scaffold ready.**
   - Apply accepted repair in memory and rerun count, trigger, grade,
     copy-limit, clan, human-selection, Lock, and Legion validation.
+  - Scaffold status: spec/tool/tests are present. Targeted M65-05 tests
+    pass (`10/10`) and full Python tests pass (`1545/1545`) using in-memory
+    M65-03 and M65-04 artifacts.
+  - Evidence: the repaired recipe validates as a `50` card main deck with
+    classic trigger count, target grade profile, pair consistency, and
+    `ready_for_m65_06=true` only when human selection, grade repair, and both
+    Lock/Legion main-deck-only boundary decisions all pass. It creates no
+    runtime fixture, saved deck/UI, bot/playbook, or direct `GameState`
+    mutation and keeps Lock runtime, Unlock runtime, Legion runtime, and Mate
+    identity checks disabled.
 - `M65-06`: Eighth-slice runtime fixture promotion gate. **Pending.**
   - Promote only if repaired validation, consistency, human selection, and
     system decisions all pass.

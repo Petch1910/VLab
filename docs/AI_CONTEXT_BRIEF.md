@@ -776,8 +776,16 @@
   options, and keeps Lock runtime, Unlock runtime, Legion runtime, Mate
   identity checks, runtime fixture, saved deck/UI, bot/playbook, and GameState
   mutation disabled. Real M65-04 artifacts remain gated on the real M65-03
-  output plus explicit `lock_option` and `legion_option`. The current next
-  target is M65-05.
+  output plus explicit `lock_option` and `legion_option`.
+  M65-05 spec/tool/tests are scaffolded and verified (`10/10` targeted,
+  `1545/1545` full Python) using in-memory M65-03 and M65-04 artifacts; it
+  validates the repaired main deck through the M64 eighth-slice validator and
+  consistency checker, suppresses Lock/Legion deferred review codes only for
+  the selected non-runtime boundary options, and keeps runtime fixture, saved
+  deck/UI, bot/playbook, Lock runtime, Unlock runtime, Legion runtime, Mate
+  identity checks, and GameState mutation disabled. Real M65-05 artifacts
+  remain gated on the real M65-03/M65-04 outputs. The current next target is
+  M65-06.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

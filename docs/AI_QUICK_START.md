@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M65-05 eighth-slice repaired recipe validation rerun
-   after M65-04 eighth-slice Lock and Legion decision artifact; M58-01
-   through M65-04 spec/tool/tests scaffolds are ready
+-> current target: M65-06 eighth-slice runtime fixture promotion gate
+   after M65-05 eighth-slice repaired recipe validation rerun; M58-01
+   through M65-05 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -806,8 +806,17 @@ Windows-first program completion
    and keeps Lock runtime, Unlock runtime, Legion runtime, Mate identity checks,
    runtime fixture, saved deck, UI, bot/playbook, and GameState mutation
    disabled. Real M65-04 artifacts remain gated on the real M65-03 output plus
-   explicit `lock_option` and `legion_option`. Current next target: M65-05
-   eighth-slice repaired recipe validation rerun
+   explicit `lock_option` and `legion_option`.
+-> M65-05 tooling/spec/tests are scaffolded; targeted M65-05 tests 10/10 and
+   full Python tests 1545/1545 pass.
+   The repaired validation rerun consumes in-memory M65-03 and M65-04
+   artifacts, validates the repaired 50-card main deck through the M64 eighth
+   slice validator and consistency checker, suppresses Lock/Legion deferred
+   review codes only for the selected non-runtime boundary options, and keeps
+   runtime fixture, saved deck, UI, bot/playbook, Lock runtime, Unlock runtime,
+   Legion runtime, Mate identity checks, and GameState mutation disabled. Real
+   M65-05 artifacts remain gated on the real M65-03/M65-04 outputs. Current
+   next target: M65-06 eighth-slice runtime fixture promotion gate
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3207,12 +3216,12 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M65`.
-2. Read `docs/specs/cards_and_decks/EIGHTH_SLICE_LOCK_LEGION_DECISION_ARTIFACT_SPEC.md`,
-   `tools/deck/build_eighth_slice_lock_legion_decision_artifact.py`,
-   and `tests/test_eighth_slice_lock_legion_decision_artifact.py`.
-3. Implement `M65-05` as the eighth-slice repaired recipe validation rerun that
-   consumes the M65-04 boundary decision artifact.
-4. Apply accepted repair in memory only, rerun validation, and do not promote
-   runtime/saved deck/UI/bot/GameState state.
+2. Read `docs/specs/cards_and_decks/EIGHTH_SLICE_REPAIRED_RECIPE_VALIDATION_RERUN_SPEC.md`,
+   `tools/deck/validate_eighth_slice_repaired_recipe.py`,
+   and `tests/test_eighth_slice_repaired_recipe_validation.py`.
+3. Implement `M65-06` as the eighth-slice runtime fixture promotion gate that
+   consumes the M65-05 validation rerun.
+4. Promote only if validation, consistency, human selection, grade repair, and
+   Lock/Legion system decisions all pass; otherwise keep advisory/no runtime.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.
