@@ -496,7 +496,9 @@
   disabled. M57-closeout spec/tool/tests are scaffolded and verified (`6/6`
   targeted, `1179/1179` full Python); it routes a completed sixth fixture to
   M58 consumption/scale work, but the real closeout output remains gated on
-  M57-06 output. Current next target is `M58-01` sixth fixture schema validator.
+  M57-06 output. M58-01 spec/tool/tests are scaffolded and verified (`11/11`
+  targeted, `1190/1190` full Python) against an in-memory M57-06 fixture; the
+  real M58-01 report remains gated on the real M57-06 fixture file.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

@@ -80,7 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M58-01 sixth fixture schema validator
+-> current next target: M58-01 sixth fixture schema validator real artifact
+   after M57-06 fixture output; M58-01 scaffold is ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -2341,9 +2342,14 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
 
 ### M58: Sixth Fixture Consumption and Six-Fixture Scale Gate
 
-- `M58-01`: Sixth fixture schema validator. **Pending.**
+- `M58-01`: Sixth fixture schema validator. **Blocked by M57-06 output; scaffold ready.**
   - Validate the Shadow Paladin runtime fixture independently from the M57
     generator before any deck text, headless smoke, UI, or bot consumption.
+  - Scaffold status: spec/tool/tests are present. Targeted M58-01 tests pass
+    `11/11`; full Python unittest discovery passes `1190/1190`. Tests use an
+    in-memory fixture built from the M57-02 through M57-06 chain. The real
+    `outputs/target_slice/m58_01_*` validation report is not generated until
+    the M57-06 runtime fixture file exists.
 - `M58-02`: Sixth fixture deck text exporter. **Pending.**
   - Export the Shadow Paladin fixture as reviewable count-line deck text
     without adding it to saved decks.

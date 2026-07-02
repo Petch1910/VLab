@@ -390,7 +390,9 @@ Active order:
   verified (`6/6` targeted, `1179/1179` full Python); it routes a completed
   sixth fixture to M58 consumption/scale work, but the real closeout output
   remains gated on M57-06 output. Current next target is `M58-01` sixth fixture
-  schema validator.
+  schema validator. M58-01 spec/tool/tests are scaffolded and verified (`11/11`
+  targeted, `1190/1190` full Python) against an in-memory M57-06 fixture; the
+  real report remains gated on the real M57-06 fixture file.
 
 Deferred until explicit user instruction:
 
