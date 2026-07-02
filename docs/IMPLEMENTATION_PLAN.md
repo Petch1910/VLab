@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M68-05 ninth-slice combo-to-recipe consistency
-   after M68-04 ninth-slice recipe validator; M58-01
-   through M68-04 scaffolds are ready
+-> current next target: M68-06 ninth-slice blocker repair candidates
+   after M68-05 ninth-slice combo-to-recipe consistency; M58-01
+   through M68-05 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -3087,10 +3087,25 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     and direct `GameState` mutation remain disabled. Real
     `outputs/target_slice/m68_04_*` artifacts are not generated until the real
     M68-03 output file exists.
-- `M68-05`: Ninth-slice combo-to-recipe consistency. **Blocked by M68-03/M68-04 real outputs; planned.**
+- `M68-05`: Ninth-slice combo-to-recipe consistency. **Blocked by M68-03/M68-04 real outputs; scaffold ready.**
   - Verify that M68-04 validated recipes still contain their source candidate
     pair cards and carry the expected manual-review/G Zone/Stride/Aqua Force
     boundaries before repair-candidate work.
+  - Scaffold status: spec/tool/tests are present. Targeted M68-05 tests pass
+    (`6/6`) using in-memory M68-03 recipe draft evidence and M68-04 validation
+    evidence.
+  - Evidence: the consistency check evaluates 25 recipes, confirms all 25
+    source/target pair cards are present, reports 0 missing pair-card checks,
+    0 pair-level manual-review dependencies, 25 recipe-level manual-review
+    dependencies, 25 G Zone deferred checks, 25 Stride deferred checks, 25
+    Aqua Force battle-order deferred checks, 23 grade-profile review checks,
+    and 0 promotion-allowed checks. Saved decks, UI publication, runtime decks,
+    bot/playbook, automatic injection, and direct `GameState` mutation remain
+    disabled. Real `outputs/target_slice/m68_05_*` artifacts are not generated
+    until the real M68-03 and M68-04 files exist.
+- `M68-06`: Ninth-slice blocker repair candidates. **Blocked by M68-03/M68-04/M68-05 real outputs; planned.**
+  - Create review-only repair candidates for manual-review, grade-profile,
+    G Zone/Stride, and Aqua Force battle-order blockers before closeout.
 
 ## Post-M28 Backlog (not in active queue)
 

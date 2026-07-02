@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M68-05 ninth-slice combo-to-recipe consistency
-   after M68-04 ninth-slice recipe validator; M58-01
-   through M68-04 spec/tool/tests scaffolds are ready
+-> current target: M68-06 ninth-slice blocker repair candidates
+   after M68-05 ninth-slice combo-to-recipe consistency; M58-01
+   through M68-05 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -947,8 +947,18 @@ Windows-first program completion
    Stride, Aqua Force battle-order, and human-selection review items, and keeps
    saved deck, UI, runtime deck, bot/playbook, automatic injection, and
    GameState mutation disabled. Real M68-04 artifacts remain gated on the real
-   M68-03 output file. Current next target: M68-05 ninth-slice combo-to-recipe
-   consistency
+   M68-03 output file
+-> M68-05 tooling/spec/tests are scaffolded; targeted M68-05 tests 6/6 and
+   full Python tests 1677/1677 pass.
+   The consistency check consumes in-memory M68-03/M68-04 reports, checks all
+   25 recipes, confirms every source/target pair card is present, records 0
+   missing pair-card checks, 0 pair-level manual dependencies, 25 recipe-level
+   manual dependencies, 25 G Zone deferred checks, 25 Stride deferred checks,
+   25 Aqua Force battle-order deferred checks, 23 grade-profile review checks,
+   0 promotion-allowed checks, and keeps saved deck, UI, runtime deck,
+   bot/playbook, automatic injection, and GameState mutation disabled. Real
+   M68-05 artifacts remain gated on the real M68-03 and M68-04 output files.
+   Current next target: M68-06 ninth-slice blocker repair candidates
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3348,12 +3358,12 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M68`.
-2. Read `docs/specs/cards_and_decks/NINTH_SLICE_RECIPE_VALIDATOR_SPEC.md`,
-   `tools/deck/validate_ninth_slice_recipe_drafts.py`,
-   and `tests/test_ninth_slice_recipe_validator.py`.
-3. Implement `M68-05` as the ninth-slice combo-to-recipe consistency check.
-4. Consume in-memory M68-03/M68-04 reports, verify every recipe still contains
-   its source pair cards, preserve manual-review/G Zone/Stride/Aqua Force
+2. Read `docs/specs/cards_and_decks/NINTH_SLICE_COMBO_RECIPE_CONSISTENCY_SPEC.md`,
+   `tools/deck/check_ninth_slice_combo_recipe_consistency.py`,
+   and `tests/test_ninth_slice_combo_recipe_consistency.py`.
+3. Implement `M68-06` as ninth-slice blocker repair candidates.
+4. Consume in-memory M68-03/M68-04/M68-05 reports, identify repair candidates
+   for manual-review, grade-profile, G Zone/Stride, and Aqua Force battle-order
    blockers, and keep runtime/saved/UI/bot/GameState mutation disabled.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.

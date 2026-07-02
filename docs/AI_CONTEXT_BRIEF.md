@@ -895,8 +895,16 @@
   blocks all 25 by manual-review overlap, records 23 grade-profile review
   items plus 25 G Zone, Stride, Aqua Force battle-order, and human-selection
   review items, and keeps saved deck, UI publication, runtime deck,
-  bot/playbook, automatic injection, and GameState mutation disabled. The
-  current next target is M68-05.
+  bot/playbook, automatic injection, and GameState mutation disabled.
+  M68-05 spec/tool/tests are scaffolded and verified (`6/6` targeted,
+  `1677/1677` full Python) using in-memory M68-03/M68-04
+  evidence; it checks 25 recipes, confirms all 25 source/target pair cards are
+  present, records 0 missing pair-card checks, 0 pair-level manual dependencies,
+  25 recipe-level manual dependencies, 25 G Zone deferred checks, 25 Stride
+  deferred checks, 25 Aqua Force battle-order deferred checks, 23 grade-profile
+  review checks, 0 promotion-allowed checks, and keeps saved deck, UI
+  publication, runtime deck, bot/playbook, automatic injection, and GameState
+  mutation disabled. The current next target is M68-06.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.
