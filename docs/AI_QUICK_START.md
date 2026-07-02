@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M61-05 seventh-slice repaired recipe validation rerun
-   scaffold, gated on M61-04 real system decision output; M58-01 through M61-04
+-> current target: M61-06 seventh-slice runtime fixture promotion gate
+   scaffold, gated on M61-05 real validation output; M58-01 through M61-05
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -625,6 +625,15 @@ Windows-first program completion
    validation/runtime promotion, and does not mutate runtime/UI/bot/GameState.
    Real M61-04 artifacts remain gated on real M61-03 output plus explicit
    `g_zone_option` and `bloom_token_option`
+-> M61-05 tooling/spec/tests are scaffolded; targeted M61-05 tests 10/10 and
+   full Python tests 1352/1352 pass using in-memory M61-03/M61-04 artifacts.
+   The rerun validates the repaired main-deck preview, suppresses G Zone and
+   Bloom/token deferred review codes only for boundary decisions that
+   explicitly allow main-deck validation,
+   passes validation/consistency for valid accepted items, reports
+   ready_for_m61_06 true, creates no runtime fixture, and does not mutate
+   runtime/UI/bot/GameState. Real M61-05 artifacts remain gated on real M61-03
+   and M61-04 outputs
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

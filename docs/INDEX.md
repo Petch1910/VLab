@@ -848,6 +848,9 @@
 - `specs/cards_and_decks/SEVENTH_SLICE_SYSTEM_DECISION_ARTIFACT_SPEC.md` M61-04 seventh-slice G Zone / Stride / Bloom-token decision artifact spec
 - `../tools/deck/build_seventh_slice_system_decision_artifact.py` M61-04 seventh-slice G Zone / Stride / Bloom-token decision artifact tool
 - `../tests/test_seventh_slice_system_decision_artifact.py` M61-04 seventh-slice G Zone / Stride / Bloom-token decision artifact tests
+- `specs/cards_and_decks/SEVENTH_SLICE_REPAIRED_RECIPE_VALIDATION_RERUN_SPEC.md` M61-05 seventh-slice repaired recipe validation rerun spec
+- `../tools/deck/validate_seventh_slice_repaired_recipe.py` M61-05 seventh-slice repaired recipe validation rerun tool
+- `../tests/test_seventh_slice_repaired_recipe_validation.py` M61-05 seventh-slice repaired recipe validation rerun tests
 - `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
 - `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
 - `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope

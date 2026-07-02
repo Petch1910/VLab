@@ -611,6 +611,15 @@
   promotion, and does not mutate runtime/UI/bot/GameState. Real M61-04
   artifacts remain gated on real M61-03 output plus explicit `g_zone_option`
   and `bloom_token_option`.
+  M61-05 spec/tool/tests are scaffolded and verified (`10/10` targeted,
+  `1352/1352` full Python) using in-memory M61-03/M61-04 artifacts; it
+  validates the repaired main-deck preview, suppresses G Zone and Bloom/token
+  deferred review codes only for boundary decisions that explicitly allow
+  main-deck validation, passes
+  validation/consistency for valid accepted items, reports ready_for_m61_06
+  `true`, creates no runtime fixture, declares no runtime promotion, and does
+  not mutate runtime/UI/bot/GameState. Real M61-05 artifacts remain gated on
+  real M61-03 and M61-04 outputs.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

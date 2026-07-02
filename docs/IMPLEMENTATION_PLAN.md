@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M61-05 seventh-slice repaired recipe validation rerun
-   scaffold after M61-04 evidence; M58-01 through M61-04
+-> current next target: M61-06 seventh-slice runtime fixture promotion gate
+   scaffold after M61-05 evidence; M58-01 through M61-05
    scaffolds are ready
 ```
 
@@ -2570,9 +2570,19 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     GameState. Real `outputs/target_slice/m61_04_*` artifacts are not generated
     until the real M61-03 artifact exists and human/team system boundary
     decisions are provided explicitly.
-- `M61-05`: Seventh-slice repaired recipe validation rerun. **Pending.**
+- `M61-05`: Seventh-slice repaired recipe validation rerun. **Blocked by real M61-03/M61-04 outputs; scaffold ready.**
   - Apply accepted repair in memory and rerun count, trigger, grade, copy-limit,
     clan, manual-overlap, G Zone, and Bloom/token validation.
+  - Scaffold status: spec/tool/tests are present. Targeted M61-05 tests pass
+    `10/10`; full Python unittest discovery passes `1352/1352`. Tests use
+    in-memory M61-03/M61-04 artifacts. The rerun validates the repaired
+    main-deck preview, suppresses G Zone and Bloom/token deferred review codes
+    only for boundary decisions that explicitly allow main-deck
+    validation, passes validation/consistency for valid accepted items, reports
+    `ready_for_m61_06=true`, creates no runtime fixture, declares no runtime
+    promotion, and does not mutate runtime/UI/bot/GameState. Real
+    `outputs/target_slice/m61_05_*` artifacts are not generated until the real
+    M61-03 and M61-04 artifacts exist.
 - `M61-06`: Seventh-slice runtime fixture promotion gate. **Pending.**
   - Promote only if repaired validation, consistency, human acceptance, and
     system decisions all pass.
