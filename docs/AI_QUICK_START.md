@@ -37,8 +37,8 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M64-06 eighth-slice blocker repair candidates
-   after M64-05 eighth-slice combo-to-recipe consistency; M58-01 through M64-05
+-> current target: M64-closeout eighth-slice runtime readiness decision
+   after M64-06 eighth-slice blocker repair candidates; M58-01 through M64-06
    spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
@@ -751,6 +751,16 @@ Windows-first program completion
    saved deck, UI, runtime deck, bot/playbook, automatic injection, and
    GameState mutation disabled. Real M64-05 artifacts remain gated on the real
    M64-03 and M64-04 output files
+-> M64-06 tooling/spec/tests are scaffolded; targeted M64-06 tests 7/7 and
+   full Python tests 1486/1486 pass.
+   The repair-candidate report consumes in-memory M64-03/M64-04/M64-05
+   reports, creates 25 repair items, records 0 manual-overlap recipes, 25
+   human-selection candidates, 25 complete grade-profile repair candidates,
+   25 Lock-deferred packages, 25 Legion-deferred packages, 0 unexpected
+   structural blockers, and keeps saved deck, UI, runtime deck, Lock/Legion
+   runtime, bot/playbook, automatic injection, and GameState mutation disabled.
+   Real M64-06 artifacts remain gated on the real M64-03, M64-04, and M64-05
+   output files
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

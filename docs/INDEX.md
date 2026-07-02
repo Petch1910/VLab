@@ -896,6 +896,9 @@
 - `specs/cards_and_decks/EIGHTH_SLICE_COMBO_RECIPE_CONSISTENCY_SPEC.md` M64-05 eighth-slice combo-to-recipe consistency spec
 - `../tools/deck/check_eighth_slice_combo_recipe_consistency.py` M64-05 eighth-slice combo-to-recipe consistency tool
 - `../tests/test_eighth_slice_combo_recipe_consistency.py` M64-05 eighth-slice combo-to-recipe consistency tests
+- `specs/cards_and_decks/EIGHTH_SLICE_BLOCKER_REPAIR_CANDIDATES_SPEC.md` M64-06 eighth-slice blocker repair candidates spec
+- `../tools/deck/build_eighth_slice_blocker_repair_candidates.py` M64-06 eighth-slice blocker repair candidates tool
+- `../tests/test_eighth_slice_blocker_repair_candidates.py` M64-06 eighth-slice blocker repair candidates tests
 - `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
 - `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
 - `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope

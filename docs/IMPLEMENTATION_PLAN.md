@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M64-06 eighth-slice blocker repair candidates
-   after M64-05 eighth-slice combo-to-recipe consistency; M58-01 through M64-05
+-> current next target: M64-closeout eighth-slice runtime readiness decision
+   after M64-06 eighth-slice blocker repair candidates; M58-01 through M64-06
    scaffolds are ready
 ```
 
@@ -2782,8 +2782,18 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     runtime deck, bot/playbook, automatic injection, or `GameState` mutation.
     Real `outputs/target_slice/m64_05_*` artifacts are not generated until the
     real M64-03 and M64-04 output files exist.
-- `M64-06`: Eighth-slice blocker repair candidates. **Pending.**
+- `M64-06`: Eighth-slice blocker repair candidates. **Blocked by M64-03/M64-04/M64-05 real outputs; scaffold ready.**
   - Generate source-backed repair candidates for blocked recipes.
+  - Scaffold status: spec/tool/tests are present. Targeted M64-06 tests pass
+    `7/7`; full Python unittest discovery passes `1486/1486`. Tests use
+    in-memory M64-03, M64-04, and M64-05 reports and verify `25` repair
+    items, `0` manual-overlap recipes, `25` human-selection candidates, `25`
+    complete grade-profile repair candidates, `25` Lock-deferred packages,
+    `25` Legion-deferred packages, `0` unexpected structural blockers,
+    JSON/Markdown round-trip, and no saved deck, UI publication, runtime deck,
+    Lock/Legion runtime, bot/playbook, automatic injection, or `GameState`
+    mutation. Real `outputs/target_slice/m64_06_*` artifacts are not generated
+    until the real M64-03, M64-04, and M64-05 output files exist.
 - `M64-closeout`: Eighth-slice runtime readiness decision. **Pending.**
   - Decide whether any recipe can later enter human acceptance and runtime
     fixture gates.

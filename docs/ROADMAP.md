@@ -622,6 +622,14 @@ Active order:
   manual dependency overlap, carries Lock/Legion deferred review evidence, and
   avoids saved deck/UI/runtime deck/bot/GameState mutation. Real M64-05
   artifacts remain gated on the real M64-03 and M64-04 output files.
+  M64-06 spec/tool/tests are scaffolded and verified (`7/7` targeted,
+  `1486/1486` full Python) using in-memory M64-03/M64-04/M64-05 reports; it
+  creates 25 repair items, records 0 manual-overlap recipes, 25 human-selection
+  candidates, 25 complete grade-profile repair candidates, 25 Lock-deferred
+  packages, 25 Legion-deferred packages, and avoids saved
+  deck/UI/runtime deck/Lock runtime/Legion runtime/bot/GameState mutation.
+  Real M64-06 artifacts remain gated on the real M64-03, M64-04, and M64-05
+  output files. The current next target is M64-closeout.
 
 Deferred until explicit user instruction:
 
