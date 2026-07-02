@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M64-01 eighth-slice fixture scaffold
-   after M63-04 eighth-slice recipe pipeline entry gate; M58-01 through M63-04
+-> current next target: M64-02 eighth-slice review packet
+   after M64-01 eighth-slice fixture scaffold; M58-01 through M64-01
    scaffolds are ready
 ```
 
@@ -2715,9 +2715,20 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
 
 ### M64: Eighth Offline Recipe Pipeline
 
-- `M64-01`: Eighth-slice fixture scaffold. **Pending.**
+- `M64-01`: Eighth-slice fixture scaffold. **Blocked by M63-02/M63-03/M63-04 real outputs; scaffold ready.**
   - Start after M63-04 gate evidence. Define source-backed fixture policy for
     the Kagero Link Joker/Legion Mate slice before validator work.
+  - Scaffold status: spec/tool/tests are present. Targeted M64-01 tests pass
+    `9/9`; full Python unittest discovery passes `1448/1448`. Tests use
+    in-memory M63-02/M63-03/M63-04 reports and verify source cards `121`,
+    series count `5`, grade profile `G0=33/G1=31/G2=27/G3=29/G4=1`,
+    trigger capacity `76`, non-trigger capacity `408`, candidate edges `355`,
+    manual-review cards `6`, Link Joker/Legion mechanics deferred, validator
+    contract for M64-04, repair routing, JSON/Markdown round-trip, and no
+    runtime pack, recipe draft, saved deck, UI, bot/playbook, G Zone, Stride,
+    Lock, Legion, Bloom/token, or `GameState` mutation. Real
+    `outputs/target_slice/m64_01_*` artifacts are not generated until the real
+    M63-02, M63-03, and M63-04 outputs exist.
 - `M64-02`: Eighth-slice review packet. **Pending.**
   - Export candidate edges, manual-review cards, and format notes for human
     review.

@@ -881,6 +881,9 @@
 - `specs/cards_and_decks/EIGHTH_SLICE_RECIPE_PIPELINE_ENTRY_GATE_SPEC.md` M63-04 eighth-slice recipe pipeline entry gate spec
 - `../tools/deck/build_eighth_slice_recipe_pipeline_entry_gate.py` M63-04 eighth-slice recipe pipeline entry gate tool
 - `../tests/test_eighth_slice_recipe_pipeline_entry_gate.py` M63-04 eighth-slice recipe pipeline entry gate tests
+- `specs/cards_and_decks/EIGHTH_SLICE_FIXTURE_SCAFFOLD_SPEC.md` M64-01 eighth-slice fixture scaffold spec
+- `../tools/deck/build_eighth_slice_fixture_scaffold.py` M64-01 eighth-slice fixture scaffold tool
+- `../tests/test_eighth_slice_fixture_scaffold.py` M64-01 eighth-slice fixture scaffold tests
 - `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
 - `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
 - `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope
