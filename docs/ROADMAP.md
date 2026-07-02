@@ -609,6 +609,13 @@ Active order:
   structure, and avoids saved deck/UI/runtime deck/bot/Lock/Legion/GameState
   mutation. Real M64-03 artifacts remain gated on the real M64-02 and M64-01
   output files.
+  M64-04 spec/tool/tests are scaffolded and verified (`7/7` targeted,
+  `1473/1473` full Python) using in-memory M64-03 drafts plus runtime SQLite;
+  it validates 25 drafts with no missing/copy/slot/trigger/Grade4/clan
+  blockers, keeps all drafts pending human selection, records grade-profile
+  plus Lock/Legion deferred review evidence, and avoids saved deck/UI/runtime
+  deck/bot/GameState mutation. Real M64-04 artifacts remain gated on the real
+  M64-03 output file.
 
 Deferred until explicit user instruction:
 

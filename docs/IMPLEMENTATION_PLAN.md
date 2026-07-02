@@ -80,8 +80,8 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M64-04 eighth-slice recipe validator
-   after M64-03 eighth-slice recipe draft model; M58-01 through M64-03
+-> current next target: M64-05 eighth-slice combo-to-recipe consistency
+   after M64-04 eighth-slice recipe validator; M58-01 through M64-04
    scaffolds are ready
 ```
 
@@ -2755,9 +2755,20 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     automatic injection, live card text parsing, or `GameState` mutation. Real
     `outputs/target_slice/m64_03_*` artifacts are not generated until the real
     M64-02 and M64-01 output files exist.
-- `M64-04`: Eighth-slice recipe validator. **Pending.**
+- `M64-04`: Eighth-slice recipe validator. **Blocked by M64-03 real output; scaffold ready.**
   - Validate count, trigger, grade, identity, copy limits, missing cards, and
     fixture scaffold constraints.
+  - Scaffold status: spec/tool/tests are present. Targeted M64-04 tests pass
+    `7/7`; full Python unittest discovery passes `1473/1473`. Tests use
+    in-memory M64-03 recipe drafts plus runtime SQLite and verify `25`
+    validated drafts, `0` missing-card, copy-limit, slot-gap, trigger-count,
+    Grade 4 main-deck, manual-overlap, and clan blockers, `25` human-selection
+    pending drafts, `25` grade-profile review items, `25` Lock-deferred review
+    items, `25` Legion-deferred review items, JSON/Markdown round-trip, and no
+    saved deck, UI publication, runtime deck, bot/playbook, automatic
+    injection, or `GameState` mutation. Real
+    `outputs/target_slice/m64_04_*` artifacts are not generated until the real
+    M64-03 output file exists.
 - `M64-05`: Eighth-slice combo-to-recipe consistency. **Pending.**
   - Check candidate combo cards are present and not blocked by manual-review
     dependency.
