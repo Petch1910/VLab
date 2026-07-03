@@ -85,6 +85,7 @@ Windows-first program completion
 -> latest target closed: M72-02 missing fixture artifact materialization plan
 -> latest target closed: M72-03 sixth fixture primary artifact materialization gate
 -> latest target closed: M57-02-prerequisite sixth-slice human selection request packet
+-> latest target closed: M57-02-preflight sixth-slice human selection preflight
 -> current next target: M57-02 explicit sixth-slice human selection prerequisite
    using one ready review_item_id and non-empty selection text before M57-06
    runtime fixture and M58 artifact materialization
@@ -2290,11 +2291,20 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     exports JSON/MD/CSV at `outputs/target_slice/m57_02_sixth_slice_human_selection_request_packet.*`,
     lists `12/12` ready review items, records no selection, and provides command
     templates for the real M57-02 selected artifact.
+  - `M57-02-preflight`: Human selection preflight is complete. It exports
+    JSON/MD at `outputs/target_slice/m57_02_sixth_slice_human_selection_preflight.*`,
+    confirms the request packet is ready with `12` ready candidates, records no
+    selection, reports missing input when no `review_item_id`/`selection_text`
+    is supplied, and dry-runs valid proposed inputs through the real M57-02
+    generator contract without writing the selected artifact.
   - Scaffold status: spec/tool/tests are present and reject non-M57 review ids.
-    Targeted tests pass `9/9`; full Python unittest discovery passes
-    `1139/1139`. The real `outputs/target_slice/m57_02_*` artifact is not
-    generated until the user selects a valid `m57_01_m56_recipe_*_repair_review`
-    item.
+    Selected-artifact targeted tests pass `9/9`; preflight targeted tests pass
+    `7/7`; combined M57-02 request/selected/preflight targeted tests pass
+    `22/22`; full Python unittest discovery passes `1853/1853`. The real
+    `outputs/target_slice/m57_02_*selected_recipe_artifact*` artifact is not
+    generated until the user selects a valid
+    `m57_01_m56_recipe_*_repair_review` item and provides non-empty
+    `selection_text`.
 - `M57-03`: Sixth-slice human-accepted repair artifact. **Blocked by M57-02 output; scaffold ready.**
   - Record explicit acceptance after M57-02 exists, then build an in-memory
     repaired preview.

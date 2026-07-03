@@ -1,0 +1,78 @@
+{
+  "version": "M57-02-preflight",
+  "description": "Sixth-slice human selection preflight report",
+  "source_inputs": {
+    "m57_02_selection_request_packet": "outputs\\target_slice\\m57_02_sixth_slice_human_selection_request_packet.json",
+    "m57_01_human_repair_review_packet": "outputs\\target_slice\\m57_01_sixth_slice_human_repair_review_packet.json"
+  },
+  "scope": {
+    "read_only_preflight": true,
+    "records_human_selection": false,
+    "records_human_acceptance": false,
+    "records_g_zone_decision": false,
+    "creates_m57_02_artifact": false,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false
+  },
+  "input": {
+    "review_item_id": "",
+    "selection_text_provided": false,
+    "selection_text_preview": ""
+  },
+  "candidate": {},
+  "dry_run": {
+    "executed": false,
+    "would_create_m57_02_artifact": false,
+    "would_record_human_selection": false,
+    "would_record_human_acceptance": false,
+    "would_record_g_zone_decision": false,
+    "would_allow_runtime_promotion": false,
+    "would_be_ready_for_m57_03": false,
+    "selected_recipe_id": "",
+    "source_candidate_edge": "",
+    "real_command": ""
+  },
+  "issues": [
+    {
+      "code": "missing_review_item_id",
+      "severity": "requires_input",
+      "message": "Preflight needs an explicit M57-01 review_item_id to dry-run the real M57-02 command.",
+      "details": {}
+    },
+    {
+      "code": "missing_selection_text",
+      "severity": "requires_input",
+      "message": "Preflight needs non-empty selection_text to dry-run the real M57-02 command.",
+      "details": {}
+    }
+  ],
+  "decision": {
+    "preflight_report_ready": true,
+    "preflight_passed": false,
+    "ready_for_real_m57_02_command": false,
+    "human_selection_recorded": false,
+    "runtime_promotion_allowed": false,
+    "recommended_milestone": "M57-02-user-selection",
+    "recommended_task": "Provide one ready review_item_id and non-empty selection_text, then rerun preflight"
+  },
+  "summary": {
+    "request_ready": true,
+    "ready_candidate_count": 12,
+    "issue_count": 2,
+    "blocking_issue_count": 0,
+    "input_issue_count": 2,
+    "preflight_passed": false,
+    "ready_for_real_m57_02_command": false,
+    "selected_review_item_id": "",
+    "selected_recipe_id": "",
+    "human_selection_recorded": false
+  },
+  "next_target": {
+    "milestone": "M57-02-user-selection",
+    "task": "Choose one ready sixth-slice review item and provide selection text"
+  }
+}

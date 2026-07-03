@@ -376,7 +376,12 @@ Active order:
   artifact still requires an explicit valid M57 review item id. The
   `M57-02-prerequisite` human selection request packet is complete and exports
   JSON/MD/CSV with `12/12` ready review items, no recorded selection, and
-  command templates for the real selected artifact. M57-03
+  command templates for the real selected artifact. `M57-02-preflight` is
+  complete and exports JSON/MD with request_ready `true`, ready candidates `12`,
+  input issues `2` in the default no-selection report, no recorded selection,
+  and a dry-run path for proposed review_item_id/selection_text inputs without
+  writing the real selected artifact; targeted M57-02 guard tests pass `22/22`
+  and full Python discovery passes `1853/1853`. M57-03
   spec/tool/tests are also scaffolded and verified (`7/7` targeted,
   `1146/1146` full Python), but its real accepted artifact remains gated on
   M57-02 output and explicit acceptance text. M57-04 spec/tool/tests are
@@ -917,7 +922,9 @@ Active order:
   confirms the sixth M58 chain is blocked by the missing real M57-06 runtime
   fixture, writes no M58 artifacts, keeps ready steps at `0/4`, preserves all
   runtime/UI/bot/G Zone/Stride/tenth-slice/GameState boundaries, and routes
-  back to the explicit `M57-02` human selection prerequisite.
+  back to the explicit `M57-02` human selection prerequisite. `M57-02-preflight`
+  is available as the read-only guard before running the real selected artifact
+  command.
 
 Deferred until explicit user instruction:
 

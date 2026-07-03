@@ -40,6 +40,9 @@ Windows-first program completion
 -> current target: M57-02 explicit sixth-slice human selection prerequisite
    after M72-03 proved M58 materialization is blocked by the missing real
    M57-06 runtime fixture
+-> latest safety gate closed: M57-02-preflight writes a no-selection report
+   and can dry-run a proposed review_item_id/selection_text without creating
+   the real selected artifact
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -486,6 +489,13 @@ Windows-first program completion
    outputs/target_slice/m57_02_sixth_slice_human_selection_request_packet.json/md/csv,
    lists 12/12 ready review items, records no selection, and provides command
    templates for the real M57-02 artifact
+-> M57-02-preflight selection guard is complete; it exports
+   outputs/target_slice/m57_02_sixth_slice_human_selection_preflight.json/md,
+   reports missing input when no review_item_id/selection_text is supplied,
+   and can dry-run a proposed selection through the real M57-02 generator
+   without writing the selected artifact. Preflight targeted tests pass 7/7,
+   combined M57-02 request/selected/preflight targeted tests pass 22/22, and
+   full Python tests pass 1853/1853
 -> M57-02 tooling/spec/tests are scaffolded; targeted tests 9/9 and full
    Python tests 1139/1139 pass, but the real output artifact is still pending
    an explicit M57-01 review item id such as m57_01_m56_recipe_001_repair_review
@@ -1121,6 +1131,12 @@ Windows-first program completion
    ready candidates and keeps human_selection_recorded=false. The real M57-02
    selected artifact still requires an explicit review_item_id plus non-empty
    selection_text.
+-> M57-02-preflight selection guard is complete; the default report records
+   request_ready=true, ready_candidate_count=12, input_issue_count=2, and
+   human_selection_recorded=false. It is safe to rerun with a proposed
+   review_item_id/selection_text before the real M57-02 artifact command.
+   Verification passed: targeted M57-02 guard tests 22/22 and full Python
+   tests 1853/1853.
    Current next target: M57-02 explicit sixth-slice human selection
    prerequisite before M57-06/M58 materialization
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
@@ -3523,11 +3539,15 @@ If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M72`.
 2. Read `docs/specs/cards_and_decks/SIXTH_SLICE_HUMAN_SELECTION_REQUEST_PACKET_SPEC.md`,
+   `docs/specs/cards_and_decks/SIXTH_SLICE_HUMAN_SELECTION_PREFLIGHT_SPEC.md`,
    `outputs/target_slice/m57_02_sixth_slice_human_selection_request_packet.md`,
-   and `outputs/target_slice/m57_02_sixth_slice_human_selection_request_packet.csv`.
+   `outputs/target_slice/m57_02_sixth_slice_human_selection_request_packet.csv`,
+   and `outputs/target_slice/m57_02_sixth_slice_human_selection_preflight.md`.
 3. Ask the user/team to choose exactly one ready `review_item_id` and provide
-   non-empty `selection_text`, then run the real `M57-02` selected artifact
-   command from the packet.
+   non-empty `selection_text`; optionally run
+   `tools\deck\build_sixth_slice_human_selection_preflight.py` with those
+   inputs first, then run the real `M57-02` selected artifact command from the
+   packet only after the preflight passes.
 4. Do not fabricate M57 human selection/acceptance. Keep saved-deck/UI
    publication, bot/playbook, G Zone/Stride/Aqua runtime, live text parsing,
    tenth-slice selection, and GameState mutation gates closed.
