@@ -57,6 +57,9 @@ Windows-first program completion
    read-only acceptance request packet for the selected M57-02 recipe and keeps
    acceptance, G Zone decision, validation, runtime, UI, bot, and GameState
    mutation disabled
+-> latest acceptance-preflight gate closed: M57-03-preflight writes a
+   no-acceptance report, can dry-run proposed acceptance_text through the real
+   M57-03 generator in memory, and currently routes to M57-03-user-acceptance
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -546,6 +549,12 @@ Windows-first program completion
    accept_recipe_repairs_and_keep_g_zone_deferred_for_validation_rerun as the
    option that runs M57-03, records no acceptance, and keeps runtime promotion
    false. Targeted acceptance-request tests pass 6/6
+-> M57-03-preflight acceptance guard is complete; it exports
+   outputs/target_slice/m57_03_sixth_slice_human_acceptance_preflight.json/md,
+   reports missing acceptance_text in default mode with 0 blockers, and can
+   dry-run proposed acceptance_text through the real M57-03 generator without
+   writing the accepted artifact. Combined M57-03 preflight/request/accepted
+   targeted tests pass 19/19
 -> M57-04 tooling/spec/tests are scaffolded; targeted M57-03/M57-04 tests
    16/16 and full Python tests 1155/1155 pass. It records an explicit G Zone /
    Stride boundary decision and keeps G Zone, Stride, runtime fixture, saved
@@ -1199,6 +1208,10 @@ Windows-first program completion
    acceptance, lists the accepted-repair command template, and confirms the
    next real artifact still requires explicit non-empty acceptance_text.
    Verification passed: targeted acceptance-request tests 6/6.
+-> M57-03-preflight acceptance guard is complete; default output has
+   preflight_passed=false, blocking_issue_count=0, input_issue_count=1
+   missing_acceptance_text, and no accepted artifact is written.
+   Verification passed: combined M57-03 preflight/request/accepted tests 19/19.
    Current next target: M57-03 explicit human acceptance text before M57-04,
    M57-06, or M58 materialization
 -> do not promote playbook hints into runtime/bot until a later bot/playbook

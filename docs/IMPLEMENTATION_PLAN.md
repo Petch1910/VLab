@@ -91,6 +91,7 @@ Windows-first program completion
 -> latest target closed: M57-02-selection-support-closeout sixth-slice human selection support handoff
 -> latest target closed: M57-02 sixth-slice human-selected recipe artifact
 -> latest target closed: M57-03-prerequisite sixth-slice human acceptance request packet
+-> latest target closed: M57-03-preflight sixth-slice human acceptance preflight
 -> current next target: M57-03 explicit sixth-slice human repair acceptance
    using non-empty acceptance_text before M57-04, M57-06 runtime fixture, and
    M58 artifact materialization
@@ -2349,11 +2350,20 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     the option that runs M57-03, records no acceptance, and keeps validation,
     runtime fixture, saved deck/UI, bot/playbook, and `GameState` mutation
     disabled.
+  - `M57-03-preflight`: Human acceptance preflight is complete. It exports
+    JSON/MD at
+    `outputs/target_slice/m57_03_sixth_slice_human_acceptance_preflight.*`,
+    reports missing `acceptance_text` in default mode with `0` blockers, can
+    dry-run proposed acceptance text through the real M57-03 generator in
+    memory, writes no accepted artifact, and keeps acceptance, G Zone,
+    validation, runtime fixture, saved deck/UI, bot/playbook, and `GameState`
+    mutation disabled.
   - Scaffold status: spec/tool/tests are present. Targeted tests pass `7/7`;
     full Python unittest discovery passes `1146/1146`. The real
     `outputs/target_slice/m57_03_*` artifact is not generated until explicit
     acceptance text is provided for the M57-02 selected recipe. Acceptance
-    request targeted tests pass `6/6`.
+    request targeted tests pass `6/6`; combined M57-03 preflight/request/accepted
+    targeted tests pass `19/19`.
 - `M57-04`: Sixth-slice G Zone / Stride decision artifact. **Blocked by M57-03 output; scaffold ready.**
   - Record an explicit G Zone / Stride boundary decision after M57-03 exists.
   - Support `main_deck_only_review_no_runtime_promotion` and

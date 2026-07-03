@@ -1,0 +1,96 @@
+{
+  "version": "M57-03-preflight",
+  "description": "Sixth-slice human acceptance preflight report",
+  "source_inputs": {
+    "m57_03_acceptance_request_packet": "outputs\\target_slice\\m57_03_sixth_slice_human_acceptance_request_packet.json",
+    "m57_02_human_selected_recipe_artifact": "outputs\\target_slice\\m57_02_sixth_slice_human_selected_recipe_artifact.json"
+  },
+  "scope": {
+    "read_only_preflight": true,
+    "records_human_selection": false,
+    "records_human_acceptance": false,
+    "records_g_zone_decision": false,
+    "creates_m57_03_artifact": false,
+    "declares_recipe_valid": false,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false
+  },
+  "input": {
+    "acceptance_text_provided": false,
+    "acceptance_text_preview": ""
+  },
+  "selected_recipe": {
+    "selected_review_item_id": "m57_01_m56_recipe_001_repair_review",
+    "recipe_id": "m56_recipe_001",
+    "source_candidate_edge": "G-BT12-062TH->G-BT12-066TH",
+    "source_card_id": "G-BT12-062TH",
+    "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+    "target_card_id": "G-BT12-066TH",
+    "target_name_th": "บลูเอสปาด้า・ดราก้อน",
+    "selection_text": "ทีมเลือก recipe_001 เพราะต้องการ pair G-BT12-062TH -> G-BT12-066TH",
+    "manual_overlap_package_id": "m56_recipe_001_manual_overlap_pkg_001",
+    "manual_substitution_count": 7,
+    "grade_profile_package_id": "m56_recipe_001_grade_profile_pkg_001",
+    "grade_counts_after": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "g_zone_package_id": "m56_recipe_001_g_zone_deferred_pkg_001",
+    "g_zone_deferred": true,
+    "ready_for_human_repair_review": true
+  },
+  "dry_run": {
+    "executed": false,
+    "would_create_m57_03_artifact": false,
+    "would_record_human_selection": false,
+    "would_record_human_acceptance": false,
+    "would_record_g_zone_decision": false,
+    "would_declare_recipe_valid": false,
+    "would_allow_runtime_promotion": false,
+    "would_be_ready_for_m57_04": false,
+    "accepted_recipe_id": "",
+    "accepted_review_item_id": "",
+    "accepted_combined_repair_package_id": "",
+    "acceptance_decision": "",
+    "real_command": ""
+  },
+  "issues": [
+    {
+      "code": "missing_acceptance_text",
+      "severity": "requires_input",
+      "message": "Preflight needs non-empty acceptance_text to dry-run the real M57-03 command.",
+      "details": {}
+    }
+  ],
+  "decision": {
+    "preflight_report_ready": true,
+    "preflight_passed": false,
+    "ready_for_real_m57_03_command": false,
+    "human_acceptance_recorded": false,
+    "runtime_promotion_allowed": false,
+    "recommended_milestone": "M57-03-user-acceptance",
+    "recommended_task": "Provide non-empty acceptance_text, then rerun preflight"
+  },
+  "summary": {
+    "request_ready": true,
+    "selected_review_item_id": "m57_01_m56_recipe_001_repair_review",
+    "selected_recipe_id": "m56_recipe_001",
+    "issue_count": 1,
+    "blocking_issue_count": 0,
+    "input_issue_count": 1,
+    "preflight_passed": false,
+    "ready_for_real_m57_03_command": false,
+    "accepted_recipe_id": "",
+    "human_acceptance_recorded": false
+  },
+  "next_target": {
+    "milestone": "M57-03-user-acceptance",
+    "task": "Provide explicit acceptance text for the selected sixth-slice repair"
+  }
+}

@@ -508,6 +508,11 @@
   it preserves selected recipe `m56_recipe_001`, pair
   `G-BT12-062TH -> G-BT12-066TH`, lists `4` decision options, records no
   acceptance, and targeted acceptance-request tests pass `6/6`.
+  `M57-03-preflight` is complete and exports JSON/MD at
+  `outputs/target_slice/m57_03_sixth_slice_human_acceptance_preflight.*`; the
+  default report has `0` blockers, `1` input issue for missing
+  `acceptance_text`, writes no accepted artifact, and combined M57-03
+  preflight/request/accepted tests pass `19/19`.
   M57-03 spec/tool/tests are scaffolded and verified
   (`7/7` targeted, `1146/1146` full Python); it applies manual substitutions
   before recomputing grade repair, but its real output remains gated on
@@ -1059,7 +1064,9 @@
   evidence, and the real M57-02 selected artifact is available for the next
   `M57-03` explicit acceptance command. `M57-03-prerequisite` now provides the
   read-only acceptance request packet and command template, but the real M57-03
-  artifact still requires explicit non-empty acceptance text.
+  artifact still requires explicit non-empty acceptance text. `M57-03-preflight`
+  now provides a read-only guard to dry-run proposed acceptance text before the
+  real accepted artifact command.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.
