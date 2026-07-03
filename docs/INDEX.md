@@ -799,6 +799,11 @@
 - `../outputs/target_slice/m57_02_sixth_slice_human_selection_batch_preflight_matrix.json` M57-02 batch preflight matrix JSON
 - `../outputs/target_slice/m57_02_sixth_slice_human_selection_batch_preflight_matrix.md` M57-02 batch preflight matrix summary
 - `../outputs/target_slice/m57_02_sixth_slice_human_selection_batch_preflight_matrix.csv` M57-02 batch preflight matrix CSV
+- `specs/cards_and_decks/SIXTH_SLICE_HUMAN_SELECTION_SUPPORT_CLOSEOUT_SPEC.md` M57-02 selection support closeout spec
+- `../tools/deck/build_sixth_slice_human_selection_support_closeout.py` M57-02 selection support closeout tool
+- `../tests/test_sixth_slice_human_selection_support_closeout.py` M57-02 selection support closeout tests
+- `../outputs/target_slice/m57_02_sixth_slice_human_selection_support_closeout.json` M57-02 selection support closeout JSON
+- `../outputs/target_slice/m57_02_sixth_slice_human_selection_support_closeout.md` M57-02 selection support closeout summary
 - `specs/cards_and_decks/SIXTH_SLICE_HUMAN_ACCEPTED_REPAIR_ARTIFACT_SPEC.md` M57-03 sixth-slice human-accepted repair artifact spec
 - `../tools/deck/build_sixth_slice_human_accepted_repair_artifact.py` M57-03 sixth-slice human-accepted repair artifact tool
 - `../tests/test_sixth_slice_human_accepted_repair_artifact.py` M57-03 sixth-slice human-accepted repair artifact tests

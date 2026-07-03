@@ -494,7 +494,11 @@
   exports JSON/MD/CSV proving all `12/12` ready candidates pass the real M57-02
   generator contract in memory with `0` failures, no selected artifact written,
   targeted M57-02 guard/digest/batch tests `36/36`, and full Python discovery
-  `1867/1867`.
+  `1867/1867`. `M57-02-selection-support-closeout` is complete and exports
+  JSON/MD summarizing all M57-02 support evidence with support closeout complete
+  `true`, ready candidates `12`, batch preflight passed `12`, human selection
+  recorded `false`, real M57-02 artifact created `false`, and targeted M57-02
+  support tests `42/42`, with full Python discovery `1873/1873`.
   M57-03 spec/tool/tests are scaffolded and verified
   (`7/7` targeted, `1146/1146` full Python); it applies manual substitutions
   before recomputing grade repair, but its real output remains gated on M57-02
@@ -1041,6 +1045,8 @@
   command, and `M57-02-candidate-digest` is available as the read-only
   comparison matrix for the 12 ready candidates. `M57-02-batch-preflight-matrix`
   is available as the read-only all-candidate generator-contract check.
+  `M57-02-selection-support-closeout` is available as the consolidated handoff
+  before the real user/team selection command.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

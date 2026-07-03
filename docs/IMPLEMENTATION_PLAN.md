@@ -88,6 +88,7 @@ Windows-first program completion
 -> latest target closed: M57-02-preflight sixth-slice human selection preflight
 -> latest target closed: M57-02-candidate-digest sixth-slice human selection candidate digest
 -> latest target closed: M57-02-batch-preflight-matrix sixth-slice all-candidate dry-run contract check
+-> latest target closed: M57-02-selection-support-closeout sixth-slice human selection support handoff
 -> current next target: M57-02 explicit sixth-slice human selection prerequisite
    using one ready review_item_id and non-empty selection text before M57-06
    runtime fixture and M58 artifact materialization
@@ -2312,12 +2313,19 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     dry-runs all `12` ready candidates through the real M57-02 generator
     contract in memory, reports `12/12` pass and `0` failures, records no human
     selection, and writes no selected artifact.
+  - `M57-02-selection-support-closeout`: Selection support closeout is complete.
+    It exports JSON/MD at
+    `outputs/target_slice/m57_02_sixth_slice_human_selection_support_closeout.*`,
+    summarizes request/preflight/digest/batch evidence, records support
+    closeout complete `true`, ready candidates `12`, batch preflight passed
+    `12`, human selection recorded `false`, real M57-02 artifact created
+    `false`, and routes to `M57-02-user-selection`.
   - Scaffold status: spec/tool/tests are present and reject non-M57 review ids.
     Selected-artifact targeted tests pass `9/9`; preflight targeted tests pass
     `7/7`; candidate-digest targeted tests pass `7/7`; batch-preflight targeted
-    tests pass `7/7`; combined M57-02 request/selected/preflight/digest/batch
-    targeted tests pass `36/36`; full Python unittest discovery passes
-    `1867/1867`. The real
+    tests pass `7/7`; support-closeout targeted tests pass `6/6`; combined
+    M57-02 request/selected/preflight/digest/batch/closeout targeted tests pass
+    `42/42`; full Python unittest discovery passes `1873/1873`. The real
     `outputs/target_slice/m57_02_*selected_recipe_artifact*` artifact is not
     generated until the user selects a valid
     `m57_01_m56_recipe_*_repair_review` item and provides non-empty

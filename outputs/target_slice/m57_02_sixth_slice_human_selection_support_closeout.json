@@ -1,0 +1,63 @@
+{
+  "version": "M57-02-selection-support-closeout",
+  "description": "Sixth-slice human selection support closeout",
+  "source_inputs": {
+    "m57_02_selection_request_packet": "outputs\\target_slice\\m57_02_sixth_slice_human_selection_request_packet.json",
+    "m57_02_selection_preflight": "outputs\\target_slice\\m57_02_sixth_slice_human_selection_preflight.json",
+    "m57_02_candidate_digest": "outputs\\target_slice\\m57_02_sixth_slice_human_selection_candidate_digest.json",
+    "m57_02_batch_preflight_matrix": "outputs\\target_slice\\m57_02_sixth_slice_human_selection_batch_preflight_matrix.json"
+  },
+  "scope": {
+    "read_only_support_closeout": true,
+    "records_human_selection": false,
+    "records_human_acceptance": false,
+    "records_g_zone_decision": false,
+    "creates_m57_02_artifact": false,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false
+  },
+  "evidence": {
+    "request_ready": true,
+    "ready_candidate_count": 12,
+    "preflight_report_ready": true,
+    "default_preflight_requires_input": true,
+    "digest_ready": true,
+    "digest_source_group_count": 2,
+    "digest_target_group_count": 7,
+    "batch_all_candidates_pass": true,
+    "batch_preflight_passed_count": 12,
+    "batch_preflight_failed_count": 0,
+    "human_selection_recorded_anywhere": false
+  },
+  "handoff": {
+    "requires_user_or_team_selection": true,
+    "requires_non_empty_selection_text": true,
+    "real_m57_02_artifact_blocked_until_selection": true,
+    "safe_next_milestone": "M57-02-user-selection",
+    "command_template": "python tools\\deck\\build_sixth_slice_human_selected_recipe_artifact.py --review-item-id <review_item_id> --selection-text \"<explicit user/team selection reason>\"",
+    "example_candidate_not_selected": {
+      "review_item_id": "m57_01_m56_recipe_001_repair_review",
+      "recipe_id": "m56_recipe_001",
+      "source_candidate_edge": "G-BT12-062TH->G-BT12-066TH"
+    }
+  },
+  "issues": [],
+  "summary": {
+    "support_closeout_complete": true,
+    "blocking_issue_count": 0,
+    "ready_candidate_count": 12,
+    "batch_preflight_passed_count": 12,
+    "batch_preflight_failed_count": 0,
+    "human_selection_recorded": false,
+    "real_m57_02_artifact_created": false,
+    "ready_for_user_selection": true
+  },
+  "next_target": {
+    "milestone": "M57-02-user-selection",
+    "task": "User/team chooses one review_item_id and provides non-empty selection_text"
+  }
+}
