@@ -43,6 +43,8 @@ Windows-first program completion
 -> latest safety gate closed: M57-02-preflight writes a no-selection report
    and can dry-run a proposed review_item_id/selection_text without creating
    the real selected artifact
+-> latest decision-support gate closed: M57-02-candidate-digest lists all 12
+   ready candidates, groups them by source/target card, and keeps auto-selection disabled
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -494,8 +496,14 @@ Windows-first program completion
    reports missing input when no review_item_id/selection_text is supplied,
    and can dry-run a proposed selection through the real M57-02 generator
    without writing the selected artifact. Preflight targeted tests pass 7/7,
-   combined M57-02 request/selected/preflight targeted tests pass 22/22, and
-   full Python tests pass 1853/1853
+   combined M57-02 request/selected/preflight targeted tests pass 22/22
+-> M57-02-candidate-digest is complete; it exports
+   outputs/target_slice/m57_02_sixth_slice_human_selection_candidate_digest.json/md/csv,
+   lists 12/12 ready candidates, source groups 2, target groups 7, one shared
+   structural readiness profile, records no selection, and keeps
+   auto-selection disabled. Candidate digest targeted tests pass 7/7;
+   combined M57-02 request/selected/preflight/digest targeted tests pass 29/29;
+   full Python tests pass 1860/1860
 -> M57-02 tooling/spec/tests are scaffolded; targeted tests 9/9 and full
    Python tests 1139/1139 pass, but the real output artifact is still pending
    an explicit M57-01 review item id such as m57_01_m56_recipe_001_repair_review
@@ -1135,8 +1143,12 @@ Windows-first program completion
    request_ready=true, ready_candidate_count=12, input_issue_count=2, and
    human_selection_recorded=false. It is safe to rerun with a proposed
    review_item_id/selection_text before the real M57-02 artifact command.
-   Verification passed: targeted M57-02 guard tests 22/22 and full Python
-   tests 1853/1853.
+-> M57-02-candidate-digest is complete; it records 12 ready candidates, 2
+   source groups, 7 target groups, one shared structural readiness profile, and
+   human_selection_recorded=false. It gives the team a comparison matrix but no
+   recommendation or auto-pick.
+   Verification passed: targeted M57-02 guard/digest tests 29/29 and full
+   Python tests 1860/1860.
    Current next target: M57-02 explicit sixth-slice human selection
    prerequisite before M57-06/M58 materialization
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
@@ -3542,7 +3554,8 @@ If continuing from here, do this next:
    `docs/specs/cards_and_decks/SIXTH_SLICE_HUMAN_SELECTION_PREFLIGHT_SPEC.md`,
    `outputs/target_slice/m57_02_sixth_slice_human_selection_request_packet.md`,
    `outputs/target_slice/m57_02_sixth_slice_human_selection_request_packet.csv`,
-   and `outputs/target_slice/m57_02_sixth_slice_human_selection_preflight.md`.
+   `outputs/target_slice/m57_02_sixth_slice_human_selection_preflight.md`,
+   and `outputs/target_slice/m57_02_sixth_slice_human_selection_candidate_digest.md`.
 3. Ask the user/team to choose exactly one ready `review_item_id` and provide
    non-empty `selection_text`; optionally run
    `tools\deck\build_sixth_slice_human_selection_preflight.py` with those

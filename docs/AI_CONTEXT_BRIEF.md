@@ -486,7 +486,11 @@
   no recorded selection, and a dry-run path for proposed
   review_item_id/selection_text inputs without writing the real selected
   artifact; targeted M57-02 guard tests pass `22/22` and full Python discovery
-  passes `1853/1853`.
+  passes `1853/1853`. `M57-02-candidate-digest` is complete and exports
+  JSON/MD/CSV with `12` ready candidates, `2` source-card groups, `7`
+  target-card groups, one shared structural readiness profile, no recorded
+  selection, no auto-pick, targeted M57-02 guard/digest tests `29/29`, and full
+  Python discovery `1860/1860`.
   M57-03 spec/tool/tests are scaffolded and verified
   (`7/7` targeted, `1146/1146` full Python); it applies manual substitutions
   before recomputing grade repair, but its real output remains gated on M57-02
@@ -1030,7 +1034,8 @@
   runtime/UI/bot/G Zone/Stride/tenth-slice/GameState boundaries, and routes
   back to the explicit `M57-02` human selection prerequisite. `M57-02-preflight`
   is available as the read-only guard before running the real selected artifact
-  command.
+  command, and `M57-02-candidate-digest` is available as the read-only
+  comparison matrix for the 12 ready candidates.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

@@ -1,0 +1,536 @@
+{
+  "version": "M57-02-candidate-digest",
+  "description": "Sixth-slice human selection candidate digest",
+  "source_inputs": {
+    "m57_02_selection_request_packet": "outputs\\target_slice\\m57_02_sixth_slice_human_selection_request_packet.json",
+    "m57_02_selection_preflight": "outputs\\target_slice\\m57_02_sixth_slice_human_selection_preflight.json"
+  },
+  "scope": {
+    "read_only_candidate_digest": true,
+    "records_human_selection": false,
+    "records_human_acceptance": false,
+    "records_g_zone_decision": false,
+    "creates_m57_02_artifact": false,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false
+  },
+  "selection_policy": {
+    "must_not_recommend_or_auto_select": true,
+    "requires_user_or_team_to_choose_one_review_item_id": true,
+    "requires_non_empty_selection_text": true,
+    "preflight_before_real_artifact_recommended": true
+  },
+  "comparison_rows": [
+    {
+      "order": 1,
+      "review_item_id": "m57_01_m56_recipe_001_repair_review",
+      "recipe_id": "m56_recipe_001",
+      "ready_for_user_selection": true,
+      "source_candidate_edge": "G-BT12-062TH->G-BT12-066TH",
+      "source_card_id": "G-BT12-062TH",
+      "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "target_card_id": "G-BT12-066TH",
+      "target_name_th": "บลูเอสปาด้า・ดราก้อน",
+      "manual_review_card_count": 7,
+      "manual_substitution_count": 7,
+      "manual_repair_complete": true,
+      "grade_repair_complete": true,
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_match_target": true,
+      "g_zone_deferred": true,
+      "g_zone_decision_option_count": 2,
+      "decision_option_count": 4,
+      "structural_blocker_count": 0,
+      "selection_command_template": "python tools\\deck\\build_sixth_slice_human_selected_recipe_artifact.py --review-item-id m57_01_m56_recipe_001_repair_review --selection-text \"<explicit user/team selection reason>\""
+    },
+    {
+      "order": 2,
+      "review_item_id": "m57_01_m56_recipe_002_repair_review",
+      "recipe_id": "m56_recipe_002",
+      "ready_for_user_selection": true,
+      "source_candidate_edge": "G-BT10-026TH->G-BT09-058TH",
+      "source_card_id": "G-BT10-026TH",
+      "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "target_card_id": "G-BT09-058TH",
+      "target_name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+      "manual_review_card_count": 7,
+      "manual_substitution_count": 7,
+      "manual_repair_complete": true,
+      "grade_repair_complete": true,
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_match_target": true,
+      "g_zone_deferred": true,
+      "g_zone_decision_option_count": 2,
+      "decision_option_count": 4,
+      "structural_blocker_count": 0,
+      "selection_command_template": "python tools\\deck\\build_sixth_slice_human_selected_recipe_artifact.py --review-item-id m57_01_m56_recipe_002_repair_review --selection-text \"<explicit user/team selection reason>\""
+    },
+    {
+      "order": 3,
+      "review_item_id": "m57_01_m56_recipe_003_repair_review",
+      "recipe_id": "m56_recipe_003",
+      "ready_for_user_selection": true,
+      "source_candidate_edge": "G-BT10-026TH->G-BT09-060TH",
+      "source_card_id": "G-BT10-026TH",
+      "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "target_card_id": "G-BT09-060TH",
+      "target_name_th": "ลีดบาว",
+      "manual_review_card_count": 7,
+      "manual_substitution_count": 7,
+      "manual_repair_complete": true,
+      "grade_repair_complete": true,
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_match_target": true,
+      "g_zone_deferred": true,
+      "g_zone_decision_option_count": 2,
+      "decision_option_count": 4,
+      "structural_blocker_count": 0,
+      "selection_command_template": "python tools\\deck\\build_sixth_slice_human_selected_recipe_artifact.py --review-item-id m57_01_m56_recipe_003_repair_review --selection-text \"<explicit user/team selection reason>\""
+    },
+    {
+      "order": 4,
+      "review_item_id": "m57_01_m56_recipe_004_repair_review",
+      "recipe_id": "m56_recipe_004",
+      "ready_for_user_selection": true,
+      "source_candidate_edge": "G-BT10-026TH->G-BT09-062TH",
+      "source_card_id": "G-BT10-026TH",
+      "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "target_card_id": "G-BT09-062TH",
+      "target_name_th": "รีเวนเจอร์แห่งค่ำคืนที่หลงเหลือ, คอนร่า",
+      "manual_review_card_count": 7,
+      "manual_substitution_count": 7,
+      "manual_repair_complete": true,
+      "grade_repair_complete": true,
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_match_target": true,
+      "g_zone_deferred": true,
+      "g_zone_decision_option_count": 2,
+      "decision_option_count": 4,
+      "structural_blocker_count": 0,
+      "selection_command_template": "python tools\\deck\\build_sixth_slice_human_selected_recipe_artifact.py --review-item-id m57_01_m56_recipe_004_repair_review --selection-text \"<explicit user/team selection reason>\""
+    },
+    {
+      "order": 5,
+      "review_item_id": "m57_01_m56_recipe_005_repair_review",
+      "recipe_id": "m56_recipe_005",
+      "ready_for_user_selection": true,
+      "source_candidate_edge": "G-BT10-026TH->G-BT12-031TH",
+      "source_card_id": "G-BT10-026TH",
+      "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "target_card_id": "G-BT12-031TH",
+      "target_name_th": "โมริออนสเปียร์・ดราก้อน",
+      "manual_review_card_count": 7,
+      "manual_substitution_count": 7,
+      "manual_repair_complete": true,
+      "grade_repair_complete": true,
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_match_target": true,
+      "g_zone_deferred": true,
+      "g_zone_decision_option_count": 2,
+      "decision_option_count": 4,
+      "structural_blocker_count": 0,
+      "selection_command_template": "python tools\\deck\\build_sixth_slice_human_selected_recipe_artifact.py --review-item-id m57_01_m56_recipe_005_repair_review --selection-text \"<explicit user/team selection reason>\""
+    },
+    {
+      "order": 6,
+      "review_item_id": "m57_01_m56_recipe_006_repair_review",
+      "recipe_id": "m56_recipe_006",
+      "ready_for_user_selection": true,
+      "source_candidate_edge": "G-BT10-026TH->G-BT12-065TH",
+      "source_card_id": "G-BT10-026TH",
+      "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "target_card_id": "G-BT12-065TH",
+      "target_name_th": "แดรกวิซาร์ด, อีนิด",
+      "manual_review_card_count": 7,
+      "manual_substitution_count": 7,
+      "manual_repair_complete": true,
+      "grade_repair_complete": true,
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_match_target": true,
+      "g_zone_deferred": true,
+      "g_zone_decision_option_count": 2,
+      "decision_option_count": 4,
+      "structural_blocker_count": 0,
+      "selection_command_template": "python tools\\deck\\build_sixth_slice_human_selected_recipe_artifact.py --review-item-id m57_01_m56_recipe_006_repair_review --selection-text \"<explicit user/team selection reason>\""
+    },
+    {
+      "order": 7,
+      "review_item_id": "m57_01_m56_recipe_007_repair_review",
+      "recipe_id": "m56_recipe_007",
+      "ready_for_user_selection": true,
+      "source_candidate_edge": "G-BT10-026TH->G-TD10-010TH",
+      "source_card_id": "G-BT10-026TH",
+      "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+      "target_card_id": "G-TD10-010TH",
+      "target_name_th": "คิลเลอร์มิว",
+      "manual_review_card_count": 7,
+      "manual_substitution_count": 7,
+      "manual_repair_complete": true,
+      "grade_repair_complete": true,
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_match_target": true,
+      "g_zone_deferred": true,
+      "g_zone_decision_option_count": 2,
+      "decision_option_count": 4,
+      "structural_blocker_count": 0,
+      "selection_command_template": "python tools\\deck\\build_sixth_slice_human_selected_recipe_artifact.py --review-item-id m57_01_m56_recipe_007_repair_review --selection-text \"<explicit user/team selection reason>\""
+    },
+    {
+      "order": 8,
+      "review_item_id": "m57_01_m56_recipe_008_repair_review",
+      "recipe_id": "m56_recipe_008",
+      "ready_for_user_selection": true,
+      "source_candidate_edge": "G-BT12-062TH->G-BT09-058TH",
+      "source_card_id": "G-BT12-062TH",
+      "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "target_card_id": "G-BT09-058TH",
+      "target_name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+      "manual_review_card_count": 7,
+      "manual_substitution_count": 7,
+      "manual_repair_complete": true,
+      "grade_repair_complete": true,
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_match_target": true,
+      "g_zone_deferred": true,
+      "g_zone_decision_option_count": 2,
+      "decision_option_count": 4,
+      "structural_blocker_count": 0,
+      "selection_command_template": "python tools\\deck\\build_sixth_slice_human_selected_recipe_artifact.py --review-item-id m57_01_m56_recipe_008_repair_review --selection-text \"<explicit user/team selection reason>\""
+    },
+    {
+      "order": 9,
+      "review_item_id": "m57_01_m56_recipe_009_repair_review",
+      "recipe_id": "m56_recipe_009",
+      "ready_for_user_selection": true,
+      "source_candidate_edge": "G-BT12-062TH->G-BT09-060TH",
+      "source_card_id": "G-BT12-062TH",
+      "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "target_card_id": "G-BT09-060TH",
+      "target_name_th": "ลีดบาว",
+      "manual_review_card_count": 7,
+      "manual_substitution_count": 7,
+      "manual_repair_complete": true,
+      "grade_repair_complete": true,
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_match_target": true,
+      "g_zone_deferred": true,
+      "g_zone_decision_option_count": 2,
+      "decision_option_count": 4,
+      "structural_blocker_count": 0,
+      "selection_command_template": "python tools\\deck\\build_sixth_slice_human_selected_recipe_artifact.py --review-item-id m57_01_m56_recipe_009_repair_review --selection-text \"<explicit user/team selection reason>\""
+    },
+    {
+      "order": 10,
+      "review_item_id": "m57_01_m56_recipe_010_repair_review",
+      "recipe_id": "m56_recipe_010",
+      "ready_for_user_selection": true,
+      "source_candidate_edge": "G-BT12-062TH->G-BT09-062TH",
+      "source_card_id": "G-BT12-062TH",
+      "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "target_card_id": "G-BT09-062TH",
+      "target_name_th": "รีเวนเจอร์แห่งค่ำคืนที่หลงเหลือ, คอนร่า",
+      "manual_review_card_count": 7,
+      "manual_substitution_count": 7,
+      "manual_repair_complete": true,
+      "grade_repair_complete": true,
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_match_target": true,
+      "g_zone_deferred": true,
+      "g_zone_decision_option_count": 2,
+      "decision_option_count": 4,
+      "structural_blocker_count": 0,
+      "selection_command_template": "python tools\\deck\\build_sixth_slice_human_selected_recipe_artifact.py --review-item-id m57_01_m56_recipe_010_repair_review --selection-text \"<explicit user/team selection reason>\""
+    },
+    {
+      "order": 11,
+      "review_item_id": "m57_01_m56_recipe_011_repair_review",
+      "recipe_id": "m56_recipe_011",
+      "ready_for_user_selection": true,
+      "source_candidate_edge": "G-BT12-062TH->G-BT12-065TH",
+      "source_card_id": "G-BT12-062TH",
+      "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "target_card_id": "G-BT12-065TH",
+      "target_name_th": "แดรกวิซาร์ด, อีนิด",
+      "manual_review_card_count": 7,
+      "manual_substitution_count": 7,
+      "manual_repair_complete": true,
+      "grade_repair_complete": true,
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_match_target": true,
+      "g_zone_deferred": true,
+      "g_zone_decision_option_count": 2,
+      "decision_option_count": 4,
+      "structural_blocker_count": 0,
+      "selection_command_template": "python tools\\deck\\build_sixth_slice_human_selected_recipe_artifact.py --review-item-id m57_01_m56_recipe_011_repair_review --selection-text \"<explicit user/team selection reason>\""
+    },
+    {
+      "order": 12,
+      "review_item_id": "m57_01_m56_recipe_012_repair_review",
+      "recipe_id": "m56_recipe_012",
+      "ready_for_user_selection": true,
+      "source_candidate_edge": "G-BT12-062TH->G-TD10-010TH",
+      "source_card_id": "G-BT12-062TH",
+      "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "target_card_id": "G-TD10-010TH",
+      "target_name_th": "คิลเลอร์มิว",
+      "manual_review_card_count": 7,
+      "manual_substitution_count": 7,
+      "manual_repair_complete": true,
+      "grade_repair_complete": true,
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_match_target": true,
+      "g_zone_deferred": true,
+      "g_zone_decision_option_count": 2,
+      "decision_option_count": 4,
+      "structural_blocker_count": 0,
+      "selection_command_template": "python tools\\deck\\build_sixth_slice_human_selected_recipe_artifact.py --review-item-id m57_01_m56_recipe_012_repair_review --selection-text \"<explicit user/team selection reason>\""
+    }
+  ],
+  "groups": {
+    "by_source_card": [
+      {
+        "source_card_id": "G-BT10-026TH",
+        "source_name_th": "อีวิลรีฟิวเซอร์・ดราก้อน",
+        "candidate_count": 6,
+        "review_item_ids": [
+          "m57_01_m56_recipe_002_repair_review",
+          "m57_01_m56_recipe_003_repair_review",
+          "m57_01_m56_recipe_004_repair_review",
+          "m57_01_m56_recipe_005_repair_review",
+          "m57_01_m56_recipe_006_repair_review",
+          "m57_01_m56_recipe_007_repair_review"
+        ],
+        "recipe_ids": [
+          "m56_recipe_002",
+          "m56_recipe_003",
+          "m56_recipe_004",
+          "m56_recipe_005",
+          "m56_recipe_006",
+          "m56_recipe_007"
+        ]
+      },
+      {
+        "source_card_id": "G-BT12-062TH",
+        "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+        "candidate_count": 6,
+        "review_item_ids": [
+          "m57_01_m56_recipe_001_repair_review",
+          "m57_01_m56_recipe_008_repair_review",
+          "m57_01_m56_recipe_009_repair_review",
+          "m57_01_m56_recipe_010_repair_review",
+          "m57_01_m56_recipe_011_repair_review",
+          "m57_01_m56_recipe_012_repair_review"
+        ],
+        "recipe_ids": [
+          "m56_recipe_001",
+          "m56_recipe_008",
+          "m56_recipe_009",
+          "m56_recipe_010",
+          "m56_recipe_011",
+          "m56_recipe_012"
+        ]
+      }
+    ],
+    "by_target_card": [
+      {
+        "target_card_id": "G-BT09-058TH",
+        "target_name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+        "candidate_count": 2,
+        "review_item_ids": [
+          "m57_01_m56_recipe_002_repair_review",
+          "m57_01_m56_recipe_008_repair_review"
+        ],
+        "recipe_ids": [
+          "m56_recipe_002",
+          "m56_recipe_008"
+        ]
+      },
+      {
+        "target_card_id": "G-BT09-060TH",
+        "target_name_th": "ลีดบาว",
+        "candidate_count": 2,
+        "review_item_ids": [
+          "m57_01_m56_recipe_003_repair_review",
+          "m57_01_m56_recipe_009_repair_review"
+        ],
+        "recipe_ids": [
+          "m56_recipe_003",
+          "m56_recipe_009"
+        ]
+      },
+      {
+        "target_card_id": "G-BT09-062TH",
+        "target_name_th": "รีเวนเจอร์แห่งค่ำคืนที่หลงเหลือ, คอนร่า",
+        "candidate_count": 2,
+        "review_item_ids": [
+          "m57_01_m56_recipe_004_repair_review",
+          "m57_01_m56_recipe_010_repair_review"
+        ],
+        "recipe_ids": [
+          "m56_recipe_004",
+          "m56_recipe_010"
+        ]
+      },
+      {
+        "target_card_id": "G-BT12-065TH",
+        "target_name_th": "แดรกวิซาร์ด, อีนิด",
+        "candidate_count": 2,
+        "review_item_ids": [
+          "m57_01_m56_recipe_006_repair_review",
+          "m57_01_m56_recipe_011_repair_review"
+        ],
+        "recipe_ids": [
+          "m56_recipe_006",
+          "m56_recipe_011"
+        ]
+      },
+      {
+        "target_card_id": "G-TD10-010TH",
+        "target_name_th": "คิลเลอร์มิว",
+        "candidate_count": 2,
+        "review_item_ids": [
+          "m57_01_m56_recipe_007_repair_review",
+          "m57_01_m56_recipe_012_repair_review"
+        ],
+        "recipe_ids": [
+          "m56_recipe_007",
+          "m56_recipe_012"
+        ]
+      },
+      {
+        "target_card_id": "G-BT12-031TH",
+        "target_name_th": "โมริออนสเปียร์・ดราก้อน",
+        "candidate_count": 1,
+        "review_item_ids": [
+          "m57_01_m56_recipe_005_repair_review"
+        ],
+        "recipe_ids": [
+          "m56_recipe_005"
+        ]
+      },
+      {
+        "target_card_id": "G-BT12-066TH",
+        "target_name_th": "บลูเอสปาด้า・ดราก้อน",
+        "candidate_count": 1,
+        "review_item_ids": [
+          "m57_01_m56_recipe_001_repair_review"
+        ],
+        "recipe_ids": [
+          "m56_recipe_001"
+        ]
+      }
+    ]
+  },
+  "structural_profiles": {
+    "unique_profile_count": 1,
+    "all_ready_candidates_share_same_profile": true,
+    "profile_counts": [
+      {
+        "profile": {
+          "decision_option_count": 4,
+          "g_zone_decision_option_count": 2,
+          "g_zone_deferred": true,
+          "grade_counts_after": {
+            "0": 17,
+            "1": 14,
+            "2": 11,
+            "3": 8
+          },
+          "grade_repair_complete": true,
+          "manual_repair_complete": true,
+          "manual_review_card_count": 7,
+          "manual_substitution_count": 7,
+          "structural_blocker_count": 0
+        },
+        "candidate_count": 12
+      }
+    ]
+  },
+  "guidance": {
+    "auto_selection": "disabled",
+    "tie_breaker": "All ready candidates have the same structural readiness profile; choose by desired source/target combo preference.",
+    "next_safe_command": "python tools\\deck\\build_sixth_slice_human_selection_preflight.py --review-item-id <review_item_id> --selection-text \"<explicit user/team selection reason>\""
+  },
+  "issues": [],
+  "summary": {
+    "candidate_count": 12,
+    "ready_candidate_count": 12,
+    "source_group_count": 2,
+    "target_group_count": 7,
+    "unique_structural_profile_count": 1,
+    "all_ready_candidates_share_same_profile": true,
+    "request_ready": true,
+    "preflight_report_ready": true,
+    "human_selection_recorded": false,
+    "blocking_issue_count": 0,
+    "ready_for_user_selection_decision": true
+  },
+  "next_target": {
+    "milestone": "M57-02-user-selection",
+    "task": "Choose one ready review_item_id, provide selection_text, then run preflight"
+  }
+}

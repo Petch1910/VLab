@@ -787,6 +787,12 @@
 - `../tests/test_sixth_slice_human_selection_preflight.py` M57-02 preflight human selection guard tests
 - `../outputs/target_slice/m57_02_sixth_slice_human_selection_preflight.json` M57-02 preflight human selection guard JSON
 - `../outputs/target_slice/m57_02_sixth_slice_human_selection_preflight.md` M57-02 preflight human selection guard summary
+- `specs/cards_and_decks/SIXTH_SLICE_HUMAN_SELECTION_CANDIDATE_DIGEST_SPEC.md` M57-02 human selection candidate digest spec
+- `../tools/deck/build_sixth_slice_human_selection_candidate_digest.py` M57-02 human selection candidate digest tool
+- `../tests/test_sixth_slice_human_selection_candidate_digest.py` M57-02 human selection candidate digest tests
+- `../outputs/target_slice/m57_02_sixth_slice_human_selection_candidate_digest.json` M57-02 human selection candidate digest JSON
+- `../outputs/target_slice/m57_02_sixth_slice_human_selection_candidate_digest.md` M57-02 human selection candidate digest summary
+- `../outputs/target_slice/m57_02_sixth_slice_human_selection_candidate_digest.csv` M57-02 human selection candidate digest CSV
 - `specs/cards_and_decks/SIXTH_SLICE_HUMAN_ACCEPTED_REPAIR_ARTIFACT_SPEC.md` M57-03 sixth-slice human-accepted repair artifact spec
 - `../tools/deck/build_sixth_slice_human_accepted_repair_artifact.py` M57-03 sixth-slice human-accepted repair artifact tool
 - `../tests/test_sixth_slice_human_accepted_repair_artifact.py` M57-03 sixth-slice human-accepted repair artifact tests
