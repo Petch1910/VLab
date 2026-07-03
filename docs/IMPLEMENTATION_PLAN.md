@@ -84,8 +84,10 @@ Windows-first program completion
 -> latest target closed: M72-01 gated fixture artifact materialization audit
 -> latest target closed: M72-02 missing fixture artifact materialization plan
 -> latest target closed: M72-03 sixth fixture primary artifact materialization gate
+-> latest target closed: M57-02-prerequisite sixth-slice human selection request packet
 -> current next target: M57-02 explicit sixth-slice human selection prerequisite
-   before M57-06 runtime fixture and M58 artifact materialization
+   using one ready review_item_id and non-empty selection text before M57-06
+   runtime fixture and M58 artifact materialization
 ```
 
 ## Completed Phases (M0-M19)
@@ -2284,6 +2286,10 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
 - `M57-02`: Sixth-slice human-selected recipe artifact. **Pending.**
   - Record exactly one selected sixth-slice recipe id from the M57-01 review
     packet without mutating M56 drafts.
+  - `M57-02-prerequisite`: Human selection request packet is complete. It
+    exports JSON/MD/CSV at `outputs/target_slice/m57_02_sixth_slice_human_selection_request_packet.*`,
+    lists `12/12` ready review items, records no selection, and provides command
+    templates for the real M57-02 selected artifact.
   - Scaffold status: spec/tool/tests are present and reject non-M57 review ids.
     Targeted tests pass `9/9`; full Python unittest discovery passes
     `1139/1139`. The real `outputs/target_slice/m57_02_*` artifact is not

@@ -373,7 +373,10 @@ Active order:
   tests `1130/1130`. Current next target is `M57-02` sixth-slice
   human-selected recipe artifact. M57-02 spec/tool/tests are scaffolded and
   verified (`9/9` targeted, `1139/1139` full Python), but the real selected
-  artifact still requires an explicit valid M57 review item id. M57-03
+  artifact still requires an explicit valid M57 review item id. The
+  `M57-02-prerequisite` human selection request packet is complete and exports
+  JSON/MD/CSV with `12/12` ready review items, no recorded selection, and
+  command templates for the real selected artifact. M57-03
   spec/tool/tests are also scaffolded and verified (`7/7` targeted,
   `1146/1146` full Python), but its real accepted artifact remains gated on
   M57-02 output and explicit acceptance text. M57-04 spec/tool/tests are
@@ -389,8 +392,9 @@ Active order:
   mutation remain disabled. M57-closeout spec/tool/tests are scaffolded and
   verified (`6/6` targeted, `1179/1179` full Python); it routes a completed
   sixth fixture to M58 consumption/scale work, but the real closeout output
-  remains gated on M57-06 output. Current next target is `M58-01` sixth fixture
-  schema validator. M58-01 spec/tool/tests are scaffolded and verified (`11/11`
+  remains gated on M57-06 output. Current next target remains `M57-02`
+  explicit human selection before M57-06/M58 real materialization. M58-01
+  spec/tool/tests are scaffolded and verified (`11/11`
   targeted, `1190/1190` full Python) against an in-memory M57-06 fixture; the
   real report remains gated on the real M57-06 fixture file. M58-02
   spec/tool/tests are scaffolded and verified (`7/7` targeted, `1197/1197`

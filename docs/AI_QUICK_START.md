@@ -482,6 +482,10 @@ Windows-first program completion
    review items 12, complete manual repairs 12, complete grade repairs 12,
    G Zone deferred items 12, targeted tests 10/10, full Python tests 1130/1130
 -> active target: M57-02 sixth-slice human-selected recipe artifact
+-> M57-02-prerequisite selection request packet is complete; it exports
+   outputs/target_slice/m57_02_sixth_slice_human_selection_request_packet.json/md/csv,
+   lists 12/12 ready review items, records no selection, and provides command
+   templates for the real M57-02 artifact
 -> M57-02 tooling/spec/tests are scaffolded; targeted tests 9/9 and full
    Python tests 1139/1139 pass, but the real output artifact is still pending
    an explicit M57-01 review item id such as m57_01_m56_recipe_001_repair_review
@@ -1113,6 +1117,10 @@ Windows-first program completion
    fixture. It records m57_06_runtime_fixture_missing, keeps M58 ready steps
    at 0/4, writes no M58 artifacts, does not fake M57 human selection or
    acceptance, and routes back to M57-02.
+-> M57-02-prerequisite selection request packet is complete; it lists 12/12
+   ready candidates and keeps human_selection_recorded=false. The real M57-02
+   selected artifact still requires an explicit review_item_id plus non-empty
+   selection_text.
    Current next target: M57-02 explicit sixth-slice human selection
    prerequisite before M57-06/M58 materialization
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
@@ -3514,12 +3522,12 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M72`.
-2. Read `docs/specs/cards_and_decks/SIXTH_FIXTURE_PRIMARY_ARTIFACT_MATERIALIZATION_GATE_SPEC.md`,
-   `tools/deck/build_sixth_fixture_primary_artifact_materialization_gate.py`,
-   and `tests/test_sixth_fixture_primary_artifact_materialization_gate.py`.
-3. Resolve the prerequisite now surfaced by M72-03: `M57-02` needs an explicit
-   sixth-slice human-selected review item before `M57-03`, `M57-04`, `M57-05`,
-   `M57-06`, and real M58 materialization can proceed.
+2. Read `docs/specs/cards_and_decks/SIXTH_SLICE_HUMAN_SELECTION_REQUEST_PACKET_SPEC.md`,
+   `outputs/target_slice/m57_02_sixth_slice_human_selection_request_packet.md`,
+   and `outputs/target_slice/m57_02_sixth_slice_human_selection_request_packet.csv`.
+3. Ask the user/team to choose exactly one ready `review_item_id` and provide
+   non-empty `selection_text`, then run the real `M57-02` selected artifact
+   command from the packet.
 4. Do not fabricate M57 human selection/acceptance. Keep saved-deck/UI
    publication, bot/playbook, G Zone/Stride/Aqua runtime, live text parsing,
    tenth-slice selection, and GameState mutation gates closed.

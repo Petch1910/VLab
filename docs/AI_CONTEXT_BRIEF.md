@@ -478,7 +478,10 @@
   target is `M57-02` sixth-slice human-selected recipe artifact. M57-02
   spec/tool/tests are scaffolded and verified (`9/9` targeted, `1139/1139`
   full Python), but the real selected artifact still requires an explicit
-  valid M57 review item id. M57-03 spec/tool/tests are scaffolded and verified
+  valid M57 review item id. The `M57-02-prerequisite` human selection request
+  packet is complete and exports JSON/MD/CSV with `12/12` ready review items,
+  no recorded selection, and command templates for the real selected artifact.
+  M57-03 spec/tool/tests are scaffolded and verified
   (`7/7` targeted, `1146/1146` full Python); it applies manual substitutions
   before recomputing grade repair, but its real output remains gated on M57-02
   and explicit acceptance text. M57-04 spec/tool/tests are scaffolded and

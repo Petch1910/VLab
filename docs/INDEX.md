@@ -776,6 +776,12 @@
 - `specs/cards_and_decks/SIXTH_SLICE_HUMAN_SELECTED_RECIPE_ARTIFACT_SPEC.md` M57-02 sixth-slice human-selected recipe artifact spec
 - `../tools/deck/build_sixth_slice_human_selected_recipe_artifact.py` M57-02 sixth-slice human-selected recipe artifact tool
 - `../tests/test_sixth_slice_human_selected_recipe_artifact.py` M57-02 sixth-slice human-selected recipe artifact tests
+- `specs/cards_and_decks/SIXTH_SLICE_HUMAN_SELECTION_REQUEST_PACKET_SPEC.md` M57-02 prerequisite human selection request packet spec
+- `../tools/deck/build_sixth_slice_human_selection_request_packet.py` M57-02 prerequisite human selection request packet tool
+- `../tests/test_sixth_slice_human_selection_request_packet.py` M57-02 prerequisite human selection request packet tests
+- `../outputs/target_slice/m57_02_sixth_slice_human_selection_request_packet.json` M57-02 prerequisite human selection request packet JSON
+- `../outputs/target_slice/m57_02_sixth_slice_human_selection_request_packet.md` M57-02 prerequisite human selection request packet summary
+- `../outputs/target_slice/m57_02_sixth_slice_human_selection_request_packet.csv` M57-02 prerequisite human selection request packet CSV
 - `specs/cards_and_decks/SIXTH_SLICE_HUMAN_ACCEPTED_REPAIR_ARTIFACT_SPEC.md` M57-03 sixth-slice human-accepted repair artifact spec
 - `../tools/deck/build_sixth_slice_human_accepted_repair_artifact.py` M57-03 sixth-slice human-accepted repair artifact tool
 - `../tests/test_sixth_slice_human_accepted_repair_artifact.py` M57-03 sixth-slice human-accepted repair artifact tests
