@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M70-01 ninth fixture schema validator
-   after M69-closeout ninth-slice fixture closeout scaffold; M58-01 through
-   M69-closeout scaffolds are ready
+-> current next target: M70-02 ninth fixture deck text exporter
+   after M70-01 ninth fixture schema validator scaffold; M58-01 through
+   M70-01 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -3239,9 +3239,19 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
 
 ### M70: Ninth Fixture Consumption and Nine-Fixture Scale Gate
 
-- `M70-01`: Ninth fixture schema validator. **Planned.**
+- `M70-01`: Ninth fixture schema validator. **Blocked by M69-06 real fixture file; scaffold ready.**
   - Validate the Aqua Force runtime fixture independently from the M69
     generator.
+  - Scaffold status: spec/tool/tests are present. Targeted M70-01 tests pass
+    (`17/17`) and full Python discovery passes (`1784/1784`) using an
+    in-memory M69-06 Aqua Force fixture.
+  - Evidence: the validator recomputes deck counts from SQLite, accepts
+    M69-06 `source_artifacts` plural metadata, rejects unsafe saved deck,
+    G Zone, Stride, and Aqua Force battle-order boundaries, keeps the real CLI
+    artifact gated on a real M69-06 fixture file, and preserves saved deck
+    injection, UI deck publication, bot/playbook integration, live card text
+    parsing, G Zone runtime, Stride runtime, Aqua Force battle-order runtime,
+    and direct `GameState` mutation boundaries.
 - `M70-02`: Ninth fixture deck text exporter. **Planned.**
   - Export the Aqua Force fixture as reviewable count-line deck text without
     adding it to saved decks.

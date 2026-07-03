@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M70-01 ninth fixture schema validator
-   after M69-closeout ninth-slice fixture closeout scaffold; M58-01 through
-   M69-closeout spec/tool/tests scaffolds are ready
+-> current target: M70-02 ninth fixture deck text exporter
+   after M70-01 ninth fixture schema validator scaffold; M58-01 through
+   M70-01 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -1049,7 +1049,16 @@ Windows-first program completion
    UI deck publication, bot/playbook, live card text parsing, G Zone runtime,
    Stride runtime, Aqua Force battle-order runtime, and GameState mutation
    disabled. Real M69-closeout artifacts remain gated on real M69-06 output.
-   Current next target: M70-01 ninth fixture schema validator
+-> M70-01 tooling/spec/tests are scaffolded; targeted M70-01 tests 17/17 and
+   full Python tests 1784/1784 pass.
+   The validator accepts the in-memory M69-06 Aqua Force fixture, recomputes
+   counts from SQLite, accepts M69-06 source_artifacts plural metadata, rejects
+   unsafe saved deck/G Zone/Stride/Aqua Force boundaries, keeps the real CLI
+   artifact gated on a real M69-06 fixture file, and keeps saved deck
+   injection, UI deck publication, bot/playbook, live card text parsing,
+   G Zone runtime, Stride runtime, Aqua Force battle-order runtime, and
+   GameState mutation disabled. Current next target: M70-02 ninth fixture deck
+   text exporter
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3448,14 +3457,14 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 
 If continuing from here, do this next:
 
-1. Open `docs/IMPLEMENTATION_PLAN.md` sections `M69` and `M70`.
-2. Read `docs/specs/cards_and_decks/NINTH_SLICE_FIXTURE_CLOSEOUT_SPEC.md`,
-   `tools/deck/build_ninth_slice_fixture_closeout.py`, and
-   `tests/test_ninth_slice_fixture_closeout.py`.
-3. Implement `M70-01` as the ninth fixture schema validator.
-4. Validate the Aqua Force fixture independently from the M69 generator, keep
-   real artifacts gated on real M69-06/M69-closeout outputs, and keep
-   saved-deck/UI publication, bot/playbook promotion, G Zone/Stride/Aqua
-   runtime, live text parsing, and GameState mutation disabled.
+1. Open `docs/IMPLEMENTATION_PLAN.md` section `M70`.
+2. Read `docs/specs/cards_and_decks/NINTH_RUNTIME_FIXTURE_SCHEMA_VALIDATOR_SPEC.md`,
+   `tools/deck/validate_ninth_runtime_fixture_schema.py`, and
+   `tests/test_ninth_runtime_fixture_schema_validator.py`.
+3. Implement `M70-02` as the ninth fixture deck text exporter.
+4. Export the Aqua Force fixture as reviewable count-line deck text only, keep
+   real artifacts gated on real M69-06/M70-01 outputs, and keep saved-deck/UI
+   publication, bot/playbook promotion, G Zone/Stride/Aqua runtime, live text
+   parsing, and GameState mutation disabled.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.

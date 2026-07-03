@@ -970,7 +970,14 @@
   it routes complete Aqua Force fixture evidence to M70, routes failed or
   payload-missing evidence to M69-repair, keeps the fixture offline-only, and
   keeps saved deck/UI/bot/live parsing/G Zone/Stride/Aqua runtime/GameState
-  mutation disabled. The current next target is M70-01.
+  mutation disabled. M70-01 spec/tool/tests are scaffolded, targeted tests
+  pass (`17/17`), and full Python discovery passes (`1784/1784`) using an
+  in-memory M69-06 Aqua Force fixture; it recomputes
+  counts from SQLite, accepts M69-06 `source_artifacts` plural metadata,
+  rejects unsafe saved deck/G Zone/Stride/Aqua Force boundaries, keeps the real
+  CLI artifact gated on a real M69-06 fixture file, and keeps saved
+  deck/UI/bot/live parsing/G Zone/Stride/Aqua runtime/GameState mutation
+  disabled. The current next target is M70-02.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.
