@@ -80,9 +80,10 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M71-01 post-nine fixture queue planning
-   after M70-04 nine-fixture scale decision scaffold; M58-01 through
-   M70-04 scaffolds are ready
+-> latest target closed: M71-01 post-nine fixture queue planning
+-> current next target: M72-01 gated fixture artifact materialization audit
+   after M71-01 recommends auditing real artifact materialization before any
+   tenth-slice selection or runtime/UI/bot promotion
 ```
 
 ## Completed Phases (M0-M19)
@@ -3300,12 +3301,30 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
 
 ### M71: Post-Nine Fixture Queue Planning
 
-- `M71-01`: Post-nine fixture queue planning. **Planned.**
+- `M71-01`: Post-nine fixture queue planning. **Done.**
   - Decide the next bounded queue after nine fixture scaffolds.
   - Must not create runtime fixtures, saved decks, UI deck entries, bot
     playbooks, G Zone runtime, Stride runtime, Aqua Force battle-order runtime,
     live card text parsing, or direct `GameState` mutation without a new
     explicit gate.
+  - Scaffold status: spec/tool/tests are present. Targeted M71-01 tests pass
+    (`7/7`) and full Python discovery passes (`1819/1819`) using in-memory
+    M70-04 nine-fixture scale decision evidence.
+  - Evidence: the queue plan requires M70-04 version/evidence readiness,
+    recommends `M72-01` gated fixture artifact materialization audit, defers
+    tenth-slice selection, blocks runtime/UI/bot promotion behind later gates,
+    and preserves saved deck, UI deck list, bot/playbook, G Zone, Stride,
+    Aqua Force battle-order, live card text parsing, real artifact
+    materialization, and direct `GameState` mutation boundaries.
+
+### M72: Gated Fixture Artifact Materialization Audit
+
+- `M72-01`: Gated fixture artifact materialization audit. **Planned.**
+  - Audit which scaffold-safe fixture reports can become real CLI artifacts
+    before any tenth-slice selection.
+  - Must not create runtime fixtures, publish saved decks/UI decks, enable
+    bot/playbooks, enable G Zone/Stride/Aqua Force runtime, parse live card
+    text, or mutate `GameState` without a separate explicit promotion gate.
 
 ## Post-M28 Backlog (not in active queue)
 

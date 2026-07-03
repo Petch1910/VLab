@@ -890,7 +890,13 @@ Active order:
   deck-code acceptance for every fixture, excludes completed groups from the
   advisory candidate queue, routes failed evidence to M70-repair, opens only
   M71 planning on pass, and keeps saved deck/UI/bot/live parsing/G Zone/Stride/
-  Aqua runtime/GameState mutation disabled. The current next target is M71-01.
+  Aqua runtime/GameState mutation disabled. M71-01 spec/tool/tests are
+  scaffolded, targeted tests pass (`7/7`), and full Python discovery passes
+  (`1819/1819`). It requires M70-04 readiness, recommends M72-01 gated fixture
+  artifact materialization audit, defers tenth-slice selection, blocks
+  runtime/UI/bot promotion behind later gates, and keeps saved deck/UI/bot/live
+  parsing/G Zone/Stride/Aqua runtime/real artifact materialization/GameState
+  mutation disabled. The current next target is M72-01.
 
 Deferred until explicit user instruction:
 

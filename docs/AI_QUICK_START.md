@@ -37,9 +37,10 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M71-01 post-nine fixture queue planning
-   after M70-04 nine-fixture scale decision scaffold; M58-01 through
-   M70-04 spec/tool/tests scaffolds are ready
+-> current target: M72-01 gated fixture artifact materialization audit
+   after M71-01 post-nine fixture queue planning; M71-01 recommends auditing
+   real artifact materialization before any tenth-slice selection or
+   runtime/UI/bot promotion
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -1083,8 +1084,15 @@ Windows-first program completion
    evidence to M70-repair, opens only M71 planning on pass, and keeps saved
    deck injection, UI deck publication, bot/playbook, live card text parsing,
    G Zone runtime, Stride runtime, Aqua Force battle-order runtime, and
-   GameState mutation disabled. Current next target: M71-01 post-nine fixture
-   queue planning
+   GameState mutation disabled.
+-> M71-01 tooling/spec/tests are scaffolded; targeted M71-01 tests 7/7 and
+   full Python tests 1819/1819 pass.
+   The queue plan requires M70-04 readiness, recommends M72-01 gated fixture
+   artifact materialization audit, defers tenth-slice selection, blocks
+   runtime/UI/bot promotion behind later gates, and keeps saved deck, UI deck
+   list, bot/playbook, G Zone, Stride, Aqua Force battle-order, live card text
+   parsing, real artifact materialization, and GameState mutation disabled.
+   Current next target: M72-01 gated fixture artifact materialization audit
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3483,13 +3491,14 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 
 If continuing from here, do this next:
 
-1. Open `docs/IMPLEMENTATION_PLAN.md` section `M70`.
-2. Read `docs/specs/cards_and_decks/NINE_FIXTURE_SCALE_DECISION_SPEC.md`,
-   `tools/deck/build_nine_fixture_scale_decision.py`, and
-   `tests/test_nine_fixture_scale_decision.py`.
-3. Implement `M71-01` as the post-nine fixture queue planning slice.
-4. Decide the next bounded queue after nine fixture scaffolds without creating
-   runtime fixtures, saved-deck/UI publication, bot/playbook promotion,
-   G Zone/Stride/Aqua runtime, live text parsing, or GameState mutation.
+1. Open `docs/IMPLEMENTATION_PLAN.md` section `M72`.
+2. Read `docs/specs/cards_and_decks/POST_NINE_FIXTURE_QUEUE_PLAN_SPEC.md`,
+   `tools/deck/build_post_nine_fixture_queue_plan.py`, and
+   `tests/test_post_nine_fixture_queue_plan.py`.
+3. Implement `M72-01` as a gated fixture artifact materialization audit.
+4. Decide which scaffold-safe fixture reports can become real CLI artifacts
+   before any tenth-slice selection, saved-deck/UI publication,
+   bot/playbook promotion, G Zone/Stride/Aqua runtime, live text parsing,
+   or GameState mutation.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.
