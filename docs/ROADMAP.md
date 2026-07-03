@@ -908,8 +908,12 @@ Active order:
   ordered review-only steps for M58, M62, M66, M70, and M71, recommends M72-03
   as the first follow-up gate, and keeps command execution, artifact
   materialization, tenth-slice selection, runtime/UI/bot/live parsing/G
-  Zone/Stride/Aqua runtime/GameState mutation disabled. The current next target
-  is M72-03.
+  Zone/Stride/Aqua runtime/GameState mutation disabled. M72-03 spec/tool/tests
+  are scaffolded and targeted tests pass (`6/6`). The real M72-03 gate report
+  confirms the sixth M58 chain is blocked by the missing real M57-06 runtime
+  fixture, writes no M58 artifacts, keeps ready steps at `0/4`, preserves all
+  runtime/UI/bot/G Zone/Stride/tenth-slice/GameState boundaries, and routes
+  back to the explicit `M57-02` human selection prerequisite.
 
 Deferred until explicit user instruction:
 

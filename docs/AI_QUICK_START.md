@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M72-03 materialize sixth fixture primary JSON artifacts
-   after M72-02 mapped the missing M58/M62/M66/M70/M71 primary artifact
-   chain into review-only ordered steps
+-> current target: M57-02 explicit sixth-slice human selection prerequisite
+   after M72-03 proved M58 materialization is blocked by the missing real
+   M57-06 runtime fixture
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -1105,7 +1105,16 @@ Windows-first program completion
    the first follow-up gate, does not execute or materialize artifacts, does
    not select a tenth slice, and keeps runtime/UI/bot/live parsing/G
    Zone/Stride/Aqua runtime/GameState mutation disabled.
-   Current next target: M72-03 materialize sixth fixture primary JSON artifacts
+-> M72-03 tooling/spec/tests are scaffolded; targeted M72-03 tests 6/6 pass.
+   The real gate report writes
+   outputs/target_slice/m72_03_sixth_fixture_primary_artifact_materialization_gate.json,
+   confirms M58-01 through M58-04 can build in memory when fixture and Unity
+   evidence are supplied, but current real worktree lacks the M57-06 runtime
+   fixture. It records m57_06_runtime_fixture_missing, keeps M58 ready steps
+   at 0/4, writes no M58 artifacts, does not fake M57 human selection or
+   acceptance, and routes back to M57-02.
+   Current next target: M57-02 explicit sixth-slice human selection
+   prerequisite before M57-06/M58 materialization
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3505,13 +3514,14 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M72`.
-2. Read `docs/specs/cards_and_decks/MISSING_FIXTURE_ARTIFACT_MATERIALIZATION_PLAN_SPEC.md`,
-   `tools/deck/build_missing_fixture_artifact_materialization_plan.py`, and
-   `tests/test_missing_fixture_artifact_materialization_plan.py`.
-3. Implement `M72-03` as the explicit gate for materializing sixth fixture
-   primary JSON artifacts (`M58-01` through `M58-04`).
-4. Keep materialization bounded to the sixth fixture chain and preserve all
-   saved-deck/UI publication, bot/playbook, G Zone/Stride/Aqua runtime,
-   live text parsing, tenth-slice selection, and GameState mutation gates.
+2. Read `docs/specs/cards_and_decks/SIXTH_FIXTURE_PRIMARY_ARTIFACT_MATERIALIZATION_GATE_SPEC.md`,
+   `tools/deck/build_sixth_fixture_primary_artifact_materialization_gate.py`,
+   and `tests/test_sixth_fixture_primary_artifact_materialization_gate.py`.
+3. Resolve the prerequisite now surfaced by M72-03: `M57-02` needs an explicit
+   sixth-slice human-selected review item before `M57-03`, `M57-04`, `M57-05`,
+   `M57-06`, and real M58 materialization can proceed.
+4. Do not fabricate M57 human selection/acceptance. Keep saved-deck/UI
+   publication, bot/playbook, G Zone/Stride/Aqua runtime, live text parsing,
+   tenth-slice selection, and GameState mutation gates closed.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.

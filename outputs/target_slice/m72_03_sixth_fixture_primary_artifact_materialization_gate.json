@@ -1,0 +1,158 @@
+{
+  "version": "M72-03",
+  "description": "Sixth fixture primary JSON artifact materialization gate",
+  "source_inputs": {
+    "m72_02_materialization_plan": "tools/deck/build_missing_fixture_artifact_materialization_plan.py",
+    "m57_06_runtime_fixture": "outputs\\target_slice\\runtime_fixtures\\m56_recipe_001_shadow_paladin_m57_06.json",
+    "unity_result_path": "",
+    "unity_replay_path": ""
+  },
+  "scope": {
+    "sixth_fixture_primary_artifact_gate": true,
+    "uses_m72_02_plan_table": true,
+    "writes_m58_artifacts": false,
+    "materializes_real_artifacts": false,
+    "selects_tenth_slice": false,
+    "creates_runtime_fixture": false,
+    "executes_materialization_commands": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "aqua_force_battle_order_runtime_enabled": false,
+    "bloom_token_runtime_enabled": false,
+    "lock_runtime_enabled": false,
+    "unlock_runtime_enabled": false,
+    "legion_runtime_enabled": false,
+    "mate_identity_check_enabled": false,
+    "live_card_text_parsing": false,
+    "GameState_mutation": false
+  },
+  "sixth_chain_plan": [
+    {
+      "artifact_id": "m58_01_sixth_schema",
+      "milestone": "M58-01",
+      "fixture_chain": "sixth_fixture_shadow_paladin",
+      "role": "schema_validation",
+      "command": "python tools\\deck\\validate_sixth_runtime_fixture_schema.py",
+      "expected_output": "outputs/target_slice/m58_01_sixth_fixture_schema_validation.json",
+      "requires": [
+        "real M57-06/M57-closeout fixture evidence"
+      ]
+    },
+    {
+      "artifact_id": "m58_02_sixth_deck_text",
+      "milestone": "M58-02",
+      "fixture_chain": "sixth_fixture_shadow_paladin",
+      "role": "deck_text_export",
+      "command": "python tools\\deck\\export_sixth_fixture_deck_text.py",
+      "expected_output": "outputs/target_slice/m58_02_sixth_fixture_deck_text_export.json",
+      "requires": [
+        "M58-01 schema validation JSON"
+      ]
+    },
+    {
+      "artifact_id": "m58_03_sixth_headless_smoke",
+      "milestone": "M58-03",
+      "fixture_chain": "sixth_fixture_shadow_paladin",
+      "role": "headless_load_smoke",
+      "command": "python tools\\deck\\build_sixth_headless_fixture_load_smoke.py",
+      "expected_output": "outputs/target_slice/m58_03_sixth_fixture_load_smoke.json",
+      "requires": [
+        "M58-02 deck text JSON",
+        "M58-02 count-line deck text",
+        "Unity headless acceptance evidence for scale gate"
+      ]
+    },
+    {
+      "artifact_id": "m58_04_sixth_scale_decision",
+      "milestone": "M58-04",
+      "fixture_chain": "sixth_fixture_shadow_paladin",
+      "role": "scale_decision",
+      "command": "python tools\\deck\\build_six_fixture_scale_decision.py",
+      "expected_output": "outputs/target_slice/m58_04_six_fixture_scale_decision.json",
+      "requires": [
+        "M58-03 headless smoke JSON with Unity deck-code acceptance"
+      ]
+    }
+  ],
+  "materialization": [
+    {
+      "milestone": "M58-01",
+      "artifact_id": "m58_01_sixth_schema",
+      "role": "schema_validation",
+      "expected_output": "outputs/target_slice/m58_01_sixth_fixture_schema_validation.json",
+      "status": "blocked_prerequisite_missing",
+      "ready": false,
+      "details": {}
+    },
+    {
+      "milestone": "M58-02",
+      "artifact_id": "m58_02_sixth_deck_text",
+      "role": "deck_text_export",
+      "expected_output": "outputs/target_slice/m58_02_sixth_fixture_deck_text_export.json",
+      "status": "blocked_prerequisite_missing",
+      "ready": false,
+      "details": {}
+    },
+    {
+      "milestone": "M58-03",
+      "artifact_id": "m58_03_sixth_headless_smoke",
+      "role": "headless_load_smoke",
+      "expected_output": "outputs/target_slice/m58_03_sixth_fixture_load_smoke.json",
+      "status": "blocked_prerequisite_missing",
+      "ready": false,
+      "details": {}
+    },
+    {
+      "milestone": "M58-04",
+      "artifact_id": "m58_04_sixth_scale_decision",
+      "role": "scale_decision",
+      "expected_output": "outputs/target_slice/m58_04_six_fixture_scale_decision.json",
+      "status": "blocked_prerequisite_missing",
+      "ready": false,
+      "details": {}
+    }
+  ],
+  "issues": [
+    {
+      "code": "m57_06_runtime_fixture_missing",
+      "severity": "blocker",
+      "message": "M72-03 cannot materialize M58 artifacts until the real M57-06 runtime fixture exists.",
+      "details": {
+        "required_fixture": "outputs\\target_slice\\runtime_fixtures\\m56_recipe_001_shadow_paladin_m57_06.json",
+        "required_previous_milestone": "M57-06",
+        "safe_next_milestone": "M57-02"
+      }
+    }
+  ],
+  "decision": {
+    "recommended_milestone": "M57-02",
+    "recommended_task": "Provide explicit sixth-slice human recipe selection before M57-06/M58 materialization",
+    "recommended_reason": "Real M57 human-gate artifacts and the M57-06 fixture are not materialized.",
+    "sixth_chain_ready": false,
+    "m58_primary_json_artifacts_ready": false,
+    "real_artifacts_written": false,
+    "saved_deck_enabled": false,
+    "ui_deck_list_enabled": false,
+    "bot_playbook_enabled": false,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "GameState_mutation": false
+  },
+  "summary": {
+    "m72_03_ready": true,
+    "sixth_chain_step_count": 4,
+    "ready_step_count": 0,
+    "blocking_issue_count": 1,
+    "issue_count": 1,
+    "sixth_chain_ready": false,
+    "ready_for_m72_04": false,
+    "ready_for_m57_02_prerequisite": true
+  },
+  "next_target": {
+    "milestone": "M57-02",
+    "task": "Provide explicit sixth-slice human recipe selection before M57-06/M58 materialization"
+  }
+}

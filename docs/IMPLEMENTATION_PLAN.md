@@ -83,9 +83,9 @@ Windows-first program completion
 -> latest target closed: M71-01 post-nine fixture queue planning
 -> latest target closed: M72-01 gated fixture artifact materialization audit
 -> latest target closed: M72-02 missing fixture artifact materialization plan
--> current next target: M72-03 materialize sixth fixture primary JSON artifacts
-   before broader artifact generation, tenth-slice selection, or runtime/UI/bot
-   promotion
+-> latest target closed: M72-03 sixth fixture primary artifact materialization gate
+-> current next target: M57-02 explicit sixth-slice human selection prerequisite
+   before M57-06 runtime fixture and M58 artifact materialization
 ```
 
 ## Completed Phases (M0-M19)
@@ -3357,12 +3357,21 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     live card text parsing, real artifact materialization, and direct
     `GameState` mutation boundaries.
 
-- `M72-03`: Materialize sixth fixture primary JSON artifacts. **Planned.**
+- `M72-03`: Materialize sixth fixture primary JSON artifacts. **Done as gate.**
   - Explicitly gate the real `M58-01` through `M58-04` primary JSON artifact
     generation path for the sixth fixture chain.
   - Must remain bounded to the sixth fixture chain and must not publish saved/UI
     decks, enable bot/playbooks, select a tenth slice, enable G Zone/Stride/
     Aqua Force runtime, parse live card text, or mutate `GameState`.
+  - Scaffold status: spec/tool/tests are present. Targeted M72-03 tests pass
+    (`6/6`). The real gate report was generated at
+    `outputs/target_slice/m72_03_sixth_fixture_primary_artifact_materialization_gate.json`.
+  - Evidence: the gate proves the M58 chain can build in memory when a fixture
+    and Unity headless evidence are supplied, but the current real worktree has
+    no `outputs/target_slice/runtime_fixtures/m56_recipe_001_shadow_paladin_m57_06.json`.
+    It therefore records `m57_06_runtime_fixture_missing`, keeps ready steps at
+    `0/4`, writes no M58 artifacts, and routes back to `M57-02` for explicit
+    sixth-slice human selection rather than faking the M57 human-gated chain.
 
 ## Post-M28 Backlog (not in active queue)
 

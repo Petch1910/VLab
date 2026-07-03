@@ -929,6 +929,11 @@
 - `specs/cards_and_decks/MISSING_FIXTURE_ARTIFACT_MATERIALIZATION_PLAN_SPEC.md` M72-02 missing fixture artifact materialization plan spec
 - `../tools/deck/build_missing_fixture_artifact_materialization_plan.py` M72-02 missing fixture artifact materialization plan tool
 - `../tests/test_missing_fixture_artifact_materialization_plan.py` M72-02 missing fixture artifact materialization plan tests
+- `specs/cards_and_decks/SIXTH_FIXTURE_PRIMARY_ARTIFACT_MATERIALIZATION_GATE_SPEC.md` M72-03 sixth fixture primary artifact materialization gate spec
+- `../tools/deck/build_sixth_fixture_primary_artifact_materialization_gate.py` M72-03 sixth fixture primary artifact materialization gate tool
+- `../tests/test_sixth_fixture_primary_artifact_materialization_gate.py` M72-03 sixth fixture primary artifact materialization gate tests
+- `../outputs/target_slice/m72_03_sixth_fixture_primary_artifact_materialization_gate.json` M72-03 real gate report
+- `../outputs/target_slice/m72_03_sixth_fixture_primary_artifact_materialization_gate.md` M72-03 real gate summary
 - `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
 - `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
 - `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope
