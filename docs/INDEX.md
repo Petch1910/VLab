@@ -808,6 +808,13 @@
 - `../outputs/target_slice/m57_02_sixth_slice_human_selection_support_closeout.json` M57-02 selection support closeout JSON
 - `../outputs/target_slice/m57_02_sixth_slice_human_selection_support_closeout.md` M57-02 selection support closeout summary
 - `specs/cards_and_decks/SIXTH_SLICE_HUMAN_ACCEPTED_REPAIR_ARTIFACT_SPEC.md` M57-03 sixth-slice human-accepted repair artifact spec
+- `specs/cards_and_decks/SIXTH_SLICE_HUMAN_ACCEPTANCE_REQUEST_PACKET_SPEC.md` M57-03 prerequisite human acceptance request packet spec
+- `history/M57_03_HUMAN_ACCEPTANCE_REQUEST_PACKET_CLOSEOUT.md` M57-03 prerequisite human acceptance request packet closeout
+- `../tools/deck/build_sixth_slice_human_acceptance_request_packet.py` M57-03 prerequisite human acceptance request packet tool
+- `../tests/test_sixth_slice_human_acceptance_request_packet.py` M57-03 prerequisite human acceptance request packet tests
+- `../outputs/target_slice/m57_03_sixth_slice_human_acceptance_request_packet.json` M57-03 prerequisite human acceptance request packet JSON
+- `../outputs/target_slice/m57_03_sixth_slice_human_acceptance_request_packet.md` M57-03 prerequisite human acceptance request packet summary
+- `../outputs/target_slice/m57_03_sixth_slice_human_acceptance_request_packet.csv` M57-03 prerequisite human acceptance request packet CSV
 - `../tools/deck/build_sixth_slice_human_accepted_repair_artifact.py` M57-03 sixth-slice human-accepted repair artifact tool
 - `../tests/test_sixth_slice_human_accepted_repair_artifact.py` M57-03 sixth-slice human-accepted repair artifact tests
 - `specs/cards_and_decks/SIXTH_SLICE_G_ZONE_STRIDE_DECISION_ARTIFACT_SPEC.md` M57-04 sixth-slice G Zone / Stride decision artifact spec

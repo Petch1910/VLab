@@ -1,0 +1,107 @@
+{
+  "version": "M57-03-prerequisite",
+  "description": "Sixth-slice human acceptance request packet",
+  "source_inputs": {
+    "m57_02_human_selected_recipe_artifact": "outputs\\target_slice\\m57_02_sixth_slice_human_selected_recipe_artifact.json"
+  },
+  "scope": {
+    "read_only_acceptance_request": true,
+    "records_human_selection": true,
+    "records_human_acceptance": false,
+    "records_g_zone_decision": false,
+    "creates_m57_03_artifact": false,
+    "declares_recipe_valid": false,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false
+  },
+  "selected_recipe": {
+    "selected_review_item_id": "m57_01_m56_recipe_001_repair_review",
+    "recipe_id": "m56_recipe_001",
+    "source_candidate_edge": "G-BT12-062TH->G-BT12-066TH",
+    "source_card_id": "G-BT12-062TH",
+    "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+    "target_card_id": "G-BT12-066TH",
+    "target_name_th": "บลูเอสปาด้า・ดราก้อน",
+    "selection_text": "ทีมเลือก recipe_001 เพราะต้องการ pair G-BT12-062TH -> G-BT12-066TH",
+    "manual_overlap_package_id": "m56_recipe_001_manual_overlap_pkg_001",
+    "manual_substitution_count": 7,
+    "grade_profile_package_id": "m56_recipe_001_grade_profile_pkg_001",
+    "grade_counts_after": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "g_zone_package_id": "m56_recipe_001_g_zone_deferred_pkg_001",
+    "g_zone_deferred": true,
+    "ready_for_human_repair_review": true
+  },
+  "acceptance_policy": {
+    "requires_explicit_acceptance_text": true,
+    "selection_text_is_not_acceptance_text": true,
+    "acceptance_records_repair_preview_only": true,
+    "acceptance_does_not_record_g_zone_decision": true,
+    "acceptance_does_not_declare_recipe_valid": true,
+    "runtime_promotion_allowed": false,
+    "m57_03_command_template": "python tools\\deck\\build_sixth_slice_human_accepted_repair_artifact.py --acceptance-text \"<explicit user/team acceptance text>\""
+  },
+  "decision_options": [
+    {
+      "option_id": "accept_recipe_repairs_and_keep_g_zone_deferred_for_validation_rerun",
+      "label": "Accept recipe repairs and keep G Zone deferred for validation rerun",
+      "effect": "Allows M57-02/M57-03 to record explicit recipe/repair choice, but runtime promotion remains blocked by G Zone decision.",
+      "m57_03_action": "run_acceptance_artifact",
+      "command_template": "python tools\\deck\\build_sixth_slice_human_accepted_repair_artifact.py --acceptance-text \"<explicit user/team acceptance text>\""
+    },
+    {
+      "option_id": "accept_original_manual_cards_and_keep_advisory",
+      "label": "Accept original manual-review cards and keep advisory",
+      "effect": "Records that the team accepts manual cards for later review, but does not promote runtime.",
+      "m57_03_action": "do_not_run_m57_03",
+      "command_template": ""
+    },
+    {
+      "option_id": "request_different_repair_or_g_zone_scope",
+      "label": "Request different repair or G Zone scope",
+      "effect": "Keeps the recipe advisory and asks for another repair candidate or explicit G Zone scope decision.",
+      "m57_03_action": "do_not_run_m57_03",
+      "command_template": ""
+    },
+    {
+      "option_id": "reject_recipe_runtime_candidate",
+      "label": "Reject recipe runtime candidate",
+      "effect": "Keeps this recipe out of future fixture promotion gates.",
+      "m57_03_action": "do_not_run_m57_03",
+      "command_template": ""
+    }
+  ],
+  "issues": [],
+  "decision": {
+    "acceptance_request_ready": true,
+    "human_acceptance_recorded": false,
+    "recommended_milestone": "M57-03",
+    "recommended_task": "User/team provides non-empty acceptance_text for the selected recipe repairs",
+    "runtime_promotion_allowed": false
+  },
+  "summary": {
+    "selected_review_item_id": "m57_01_m56_recipe_001_repair_review",
+    "selected_recipe_id": "m56_recipe_001",
+    "source_card_id": "G-BT12-062TH",
+    "target_card_id": "G-BT12-066TH",
+    "decision_option_count": 4,
+    "acceptance_option_count": 1,
+    "issue_count": 0,
+    "acceptance_request_ready": true,
+    "human_selection_recorded": true,
+    "human_acceptance_recorded": false,
+    "ready_for_m57_03": true
+  },
+  "next_target": {
+    "milestone": "M57-03",
+    "task": "Sixth-slice human-accepted repair artifact"
+  }
+}

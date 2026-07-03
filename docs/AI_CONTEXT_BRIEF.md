@@ -502,7 +502,12 @@
   support tests `42/42`, with full Python discovery `1873/1873`. The real
   M57-02 selected artifact exports JSON/MD at
   `outputs/target_slice/m57_02_sixth_slice_human_selected_recipe_artifact.*`,
-  and selected-artifact targeted tests pass `9/9`.
+  and selected-artifact targeted tests pass `9/9`. `M57-03-prerequisite` is
+  complete and exports JSON/MD/CSV at
+  `outputs/target_slice/m57_03_sixth_slice_human_acceptance_request_packet.*`;
+  it preserves selected recipe `m56_recipe_001`, pair
+  `G-BT12-062TH -> G-BT12-066TH`, lists `4` decision options, records no
+  acceptance, and targeted acceptance-request tests pass `6/6`.
   M57-03 spec/tool/tests are scaffolded and verified
   (`7/7` targeted, `1146/1146` full Python); it applies manual substitutions
   before recomputing grade repair, but its real output remains gated on
@@ -1052,7 +1057,9 @@
   is available as the read-only all-candidate generator-contract check.
   `M57-02-selection-support-closeout` remains as consolidated handoff
   evidence, and the real M57-02 selected artifact is available for the next
-  `M57-03` explicit acceptance command.
+  `M57-03` explicit acceptance command. `M57-03-prerequisite` now provides the
+  read-only acceptance request packet and command template, but the real M57-03
+  artifact still requires explicit non-empty acceptance text.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

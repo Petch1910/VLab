@@ -53,6 +53,10 @@ Windows-first program completion
 -> latest selected-artifact gate closed: M57-02 wrote the real selected recipe
    artifact for `m56_recipe_001`, pair `G-BT12-062TH -> G-BT12-066TH`,
    records human selection only, and is ready for M57-03
+-> latest acceptance-request gate closed: M57-03-prerequisite writes a
+   read-only acceptance request packet for the selected M57-02 recipe and keeps
+   acceptance, G Zone decision, validation, runtime, UI, bot, and GameState
+   mutation disabled
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -535,6 +539,13 @@ Windows-first program completion
    Python tests 1146/1146 pass. It applies manual substitutions first, then
    recomputes grade repair after manual conflict detection, but the real
    output artifact remains gated on explicit acceptance_text
+-> M57-03-prerequisite acceptance request packet is complete; it exports
+   outputs/target_slice/m57_03_sixth_slice_human_acceptance_request_packet.json/md/csv,
+   preserves selected recipe m56_recipe_001 and pair G-BT12-062TH ->
+   G-BT12-066TH, lists 4 decision options, marks only
+   accept_recipe_repairs_and_keep_g_zone_deferred_for_validation_rerun as the
+   option that runs M57-03, records no acceptance, and keeps runtime promotion
+   false. Targeted acceptance-request tests pass 6/6
 -> M57-04 tooling/spec/tests are scaffolded; targeted M57-03/M57-04 tests
    16/16 and full Python tests 1155/1155 pass. It records an explicit G Zone /
    Stride boundary decision and keeps G Zone, Stride, runtime fixture, saved
@@ -1184,6 +1195,10 @@ Windows-first program completion
    G-BT12-062TH -> G-BT12-066TH, selection only, no acceptance, no G Zone
    decision, no runtime promotion, and ready_for_m57_03=true.
    Verification passed: targeted selected-artifact tests 9/9.
+-> M57-03-prerequisite acceptance request packet is complete; it records no
+   acceptance, lists the accepted-repair command template, and confirms the
+   next real artifact still requires explicit non-empty acceptance_text.
+   Verification passed: targeted acceptance-request tests 6/6.
    Current next target: M57-03 explicit human acceptance text before M57-04,
    M57-06, or M58 materialization
 -> do not promote playbook hints into runtime/bot until a later bot/playbook

@@ -1,0 +1,5 @@
+option_id,label,m57_03_action,command_template
+accept_recipe_repairs_and_keep_g_zone_deferred_for_validation_rerun,Accept recipe repairs and keep G Zone deferred for validation rerun,run_acceptance_artifact,"python tools\deck\build_sixth_slice_human_accepted_repair_artifact.py --acceptance-text ""<explicit user/team acceptance text>"""
+accept_original_manual_cards_and_keep_advisory,Accept original manual-review cards and keep advisory,do_not_run_m57_03,
+request_different_repair_or_g_zone_scope,Request different repair or G Zone scope,do_not_run_m57_03,
+reject_recipe_runtime_candidate,Reject recipe runtime candidate,do_not_run_m57_03,
