@@ -1002,7 +1002,14 @@
   artifact materialization audit, defers tenth-slice selection, blocks
   runtime/UI/bot promotion behind later gates, and keeps saved deck/UI/bot/live
   parsing/G Zone/Stride/Aqua runtime/real artifact materialization/GameState
-  mutation disabled. The current next target is M72-01.
+  mutation disabled. M72-01 spec/tool/tests are scaffolded, targeted tests pass
+  (`7/7`), and full Python discovery passes (`1826/1826`). It audits 37
+  primary JSON artifacts, finds 20 materialized and 17 missing, confirms chains
+  1-5 are complete while sixth through ninth plus post-nine queue artifacts
+  remain incomplete, routes to M72-02, and keeps tenth-slice selection,
+  runtime/UI/bot/live parsing/G Zone/Stride/Aqua runtime/real artifact
+  materialization/GameState mutation disabled. The current next target is
+  M72-02.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

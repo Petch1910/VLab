@@ -81,9 +81,9 @@ Windows-first program completion
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
 -> latest target closed: M71-01 post-nine fixture queue planning
--> current next target: M72-01 gated fixture artifact materialization audit
-   after M71-01 recommends auditing real artifact materialization before any
-   tenth-slice selection or runtime/UI/bot promotion
+-> latest target closed: M72-01 gated fixture artifact materialization audit
+-> current next target: M72-02 materialize missing sixth-through-ninth fixture
+   artifact chain before any tenth-slice selection or runtime/UI/bot promotion
 ```
 
 ## Completed Phases (M0-M19)
@@ -3319,12 +3319,31 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
 
 ### M72: Gated Fixture Artifact Materialization Audit
 
-- `M72-01`: Gated fixture artifact materialization audit. **Planned.**
+- `M72-01`: Gated fixture artifact materialization audit. **Done.**
   - Audit which scaffold-safe fixture reports can become real CLI artifacts
     before any tenth-slice selection.
   - Must not create runtime fixtures, publish saved decks/UI decks, enable
     bot/playbooks, enable G Zone/Stride/Aqua Force runtime, parse live card
     text, or mutate `GameState` without a separate explicit promotion gate.
+  - Scaffold status: spec/tool/tests are present. Targeted M72-01 tests pass
+    (`7/7`) and full Python discovery passes (`1826/1826`) using in-memory
+    M71-01 queue plan evidence and explicit materialized primary artifact path
+    sets.
+  - Evidence: the audit checks 37 primary JSON artifacts, finds 20
+    materialized and 17 missing in the current real artifact state, confirms
+    fixture chains 1-5 are complete, keeps sixth through ninth fixture chains
+    plus post-nine queue incomplete, routes to `M72-02`, does not select a
+    tenth slice, and preserves saved deck, UI deck list, bot/playbook, G Zone,
+    Stride, Aqua Force battle-order, live card text parsing, real artifact
+    materialization, and direct `GameState` mutation boundaries.
+
+- `M72-02`: Materialize missing sixth-through-ninth fixture artifact chain. **Planned.**
+  - Build a safe ordered plan/checklist for the missing `M58`, `M62`, `M66`,
+    `M70`, and `M71` primary JSON artifact chain.
+  - Must not materialize artifacts, select a tenth slice, publish saved/UI
+    decks, enable bot/playbooks, enable G Zone/Stride/Aqua Force runtime,
+    parse live card text, or mutate `GameState` without explicit follow-up
+    gates.
 
 ## Post-M28 Backlog (not in active queue)
 

@@ -920,6 +920,12 @@
 - `specs/cards_and_decks/EIGHTH_SLICE_RUNTIME_FIXTURE_PROMOTION_GATE_SPEC.md` M65-06 eighth-slice runtime fixture promotion gate spec
 - `../tools/deck/build_eighth_slice_runtime_fixture_promotion_gate.py` M65-06 eighth-slice runtime fixture promotion gate tool
 - `../tests/test_eighth_slice_runtime_fixture_promotion_gate.py` M65-06 eighth-slice runtime fixture promotion gate tests
+- `specs/cards_and_decks/POST_NINE_FIXTURE_QUEUE_PLAN_SPEC.md` M71-01 post-nine fixture queue planning spec
+- `../tools/deck/build_post_nine_fixture_queue_plan.py` M71-01 post-nine fixture queue planning tool
+- `../tests/test_post_nine_fixture_queue_plan.py` M71-01 post-nine fixture queue planning tests
+- `specs/cards_and_decks/GATED_FIXTURE_ARTIFACT_MATERIALIZATION_AUDIT_SPEC.md` M72-01 gated fixture artifact materialization audit spec
+- `../tools/deck/build_gated_fixture_artifact_materialization_audit.py` M72-01 gated fixture artifact materialization audit tool
+- `../tests/test_gated_fixture_artifact_materialization_audit.py` M72-01 gated fixture artifact materialization audit tests
 - `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
 - `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
 - `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope

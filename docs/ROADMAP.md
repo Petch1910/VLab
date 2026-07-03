@@ -896,7 +896,14 @@ Active order:
   artifact materialization audit, defers tenth-slice selection, blocks
   runtime/UI/bot promotion behind later gates, and keeps saved deck/UI/bot/live
   parsing/G Zone/Stride/Aqua runtime/real artifact materialization/GameState
-  mutation disabled. The current next target is M72-01.
+  mutation disabled. M72-01 spec/tool/tests are scaffolded, targeted tests pass
+  (`7/7`), and full Python discovery passes (`1826/1826`). It audits 37
+  primary JSON artifacts, finds 20 materialized and 17 missing, confirms chains
+  1-5 are complete while sixth through ninth plus post-nine queue artifacts
+  remain incomplete, routes to M72-02, and keeps tenth-slice selection,
+  runtime/UI/bot/live parsing/G Zone/Stride/Aqua runtime/real artifact
+  materialization/GameState mutation disabled. The current next target is
+  M72-02.
 
 Deferred until explicit user instruction:
 
