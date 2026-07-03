@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M72-02 materialize missing sixth-through-ninth fixture
-   artifact chain after M72-01 audited primary JSON artifacts and found real
-   artifacts present only through fixture chain 5
+-> current target: M72-03 materialize sixth fixture primary JSON artifacts
+   after M72-02 mapped the missing M58/M62/M66/M70/M71 primary artifact
+   chain into review-only ordered steps
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -1098,8 +1098,14 @@ Windows-first program completion
    post-nine artifacts are incomplete, routes to M72-02, does not select a tenth slice,
    and keeps runtime/UI/bot/live parsing/G Zone/Stride/Aqua runtime/real
    artifact materialization/GameState mutation disabled.
-   Current next target: M72-02 materialize missing sixth-through-ninth fixture
-   artifact chain
+-> M72-02 tooling/spec/tests are scaffolded; targeted M72-02 tests 8/8 and
+   full Python tests 1834/1834 pass.
+   The plan maps all 17 known missing primary JSON artifacts into ordered
+   review-only steps for M58, M62, M66, M70, and M71, recommends M72-03 as
+   the first follow-up gate, does not execute or materialize artifacts, does
+   not select a tenth slice, and keeps runtime/UI/bot/live parsing/G
+   Zone/Stride/Aqua runtime/GameState mutation disabled.
+   Current next target: M72-03 materialize sixth fixture primary JSON artifacts
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3499,14 +3505,13 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M72`.
-2. Read `docs/specs/cards_and_decks/GATED_FIXTURE_ARTIFACT_MATERIALIZATION_AUDIT_SPEC.md`,
-   `tools/deck/build_gated_fixture_artifact_materialization_audit.py`, and
-   `tests/test_gated_fixture_artifact_materialization_audit.py`.
-3. Implement `M72-02` as the missing sixth-through-ninth fixture artifact
-   materialization plan/checklist.
-4. Decide the safe real-artifact generation order for `M58`, `M62`, `M66`,
-   `M70`, and `M71` primary JSON artifacts before any tenth-slice selection,
-   saved-deck/UI publication, bot/playbook promotion, G Zone/Stride/Aqua
-   runtime, live text parsing, or GameState mutation.
+2. Read `docs/specs/cards_and_decks/MISSING_FIXTURE_ARTIFACT_MATERIALIZATION_PLAN_SPEC.md`,
+   `tools/deck/build_missing_fixture_artifact_materialization_plan.py`, and
+   `tests/test_missing_fixture_artifact_materialization_plan.py`.
+3. Implement `M72-03` as the explicit gate for materializing sixth fixture
+   primary JSON artifacts (`M58-01` through `M58-04`).
+4. Keep materialization bounded to the sixth fixture chain and preserve all
+   saved-deck/UI publication, bot/playbook, G Zone/Stride/Aqua runtime,
+   live text parsing, tenth-slice selection, and GameState mutation gates.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.

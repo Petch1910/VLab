@@ -82,8 +82,10 @@ Windows-first program completion
 -> latest target closed: M57-01 sixth-slice human repair review packet
 -> latest target closed: M71-01 post-nine fixture queue planning
 -> latest target closed: M72-01 gated fixture artifact materialization audit
--> current next target: M72-02 materialize missing sixth-through-ninth fixture
-   artifact chain before any tenth-slice selection or runtime/UI/bot promotion
+-> latest target closed: M72-02 missing fixture artifact materialization plan
+-> current next target: M72-03 materialize sixth fixture primary JSON artifacts
+   before broader artifact generation, tenth-slice selection, or runtime/UI/bot
+   promotion
 ```
 
 ## Completed Phases (M0-M19)
@@ -3337,13 +3339,30 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     Stride, Aqua Force battle-order, live card text parsing, real artifact
     materialization, and direct `GameState` mutation boundaries.
 
-- `M72-02`: Materialize missing sixth-through-ninth fixture artifact chain. **Planned.**
+- `M72-02`: Materialize missing sixth-through-ninth fixture artifact chain. **Done.**
   - Build a safe ordered plan/checklist for the missing `M58`, `M62`, `M66`,
     `M70`, and `M71` primary JSON artifact chain.
   - Must not materialize artifacts, select a tenth slice, publish saved/UI
     decks, enable bot/playbooks, enable G Zone/Stride/Aqua Force runtime,
     parse live card text, or mutate `GameState` without explicit follow-up
     gates.
+  - Scaffold status: spec/tool/tests are present. Targeted M72-02 tests pass
+    (`8/8`) and full Python discovery passes (`1834/1834`) using in-memory
+    M72-01 audit evidence.
+  - Evidence: the plan maps all 17 known missing primary JSON artifacts into
+    ordered review-only steps across `M58`, `M62`, `M66`, `M70`, and `M71`,
+    recommends `M72-03` as the first follow-up gate, does not execute commands
+    or materialize artifacts, does not select a tenth slice, and preserves saved
+    deck, UI deck list, bot/playbook, G Zone, Stride, Aqua Force battle-order,
+    live card text parsing, real artifact materialization, and direct
+    `GameState` mutation boundaries.
+
+- `M72-03`: Materialize sixth fixture primary JSON artifacts. **Planned.**
+  - Explicitly gate the real `M58-01` through `M58-04` primary JSON artifact
+    generation path for the sixth fixture chain.
+  - Must remain bounded to the sixth fixture chain and must not publish saved/UI
+    decks, enable bot/playbooks, select a tenth slice, enable G Zone/Stride/
+    Aqua Force runtime, parse live card text, or mutate `GameState`.
 
 ## Post-M28 Backlog (not in active queue)
 

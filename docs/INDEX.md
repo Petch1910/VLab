@@ -926,6 +926,9 @@
 - `specs/cards_and_decks/GATED_FIXTURE_ARTIFACT_MATERIALIZATION_AUDIT_SPEC.md` M72-01 gated fixture artifact materialization audit spec
 - `../tools/deck/build_gated_fixture_artifact_materialization_audit.py` M72-01 gated fixture artifact materialization audit tool
 - `../tests/test_gated_fixture_artifact_materialization_audit.py` M72-01 gated fixture artifact materialization audit tests
+- `specs/cards_and_decks/MISSING_FIXTURE_ARTIFACT_MATERIALIZATION_PLAN_SPEC.md` M72-02 missing fixture artifact materialization plan spec
+- `../tools/deck/build_missing_fixture_artifact_materialization_plan.py` M72-02 missing fixture artifact materialization plan tool
+- `../tests/test_missing_fixture_artifact_materialization_plan.py` M72-02 missing fixture artifact materialization plan tests
 - `../outputs/vanguard_video_game_ux_research/letsplay_research_2026-06-28/LETSPLAY_LAYOUT_RESEARCH_SUMMARY.md` M32-02b public letsplay layout research summary for field/card/zone/action layout only
 - `specs/ci_and_qa/CI_PYTHON_TESTS_SPEC.md` GitHub Actions Python unit-test workflow scope
 - `specs/ci_and_qa/CI_DATA_VALIDATION_SPEC.md` GitHub Actions data-validation workflow scope

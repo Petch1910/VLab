@@ -1008,8 +1008,14 @@
   1-5 are complete while sixth through ninth plus post-nine queue artifacts
   remain incomplete, routes to M72-02, and keeps tenth-slice selection,
   runtime/UI/bot/live parsing/G Zone/Stride/Aqua runtime/real artifact
-  materialization/GameState mutation disabled. The current next target is
-  M72-02.
+  materialization/GameState mutation disabled. M72-02 spec/tool/tests are
+  scaffolded, targeted tests pass (`8/8`), and full Python discovery passes
+  (`1834/1834`). It maps all 17 known missing primary JSON artifacts into
+  ordered review-only steps for M58, M62, M66, M70, and M71, recommends M72-03
+  as the first follow-up gate, and keeps command execution, artifact
+  materialization, tenth-slice selection, runtime/UI/bot/live parsing/G
+  Zone/Stride/Aqua runtime/GameState mutation disabled. The current next target
+  is M72-03.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.
