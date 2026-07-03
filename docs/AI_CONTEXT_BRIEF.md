@@ -983,8 +983,14 @@
   review-only count-line deck text, preserves empty Ride/G sections, writes
   G Zone/Stride/Aqua Force runtime-disabled comments, keeps real CLI artifacts
   gated on real M69-06/M70-01 files, and keeps saved deck/UI/bot/live
-  parsing/G Zone/Stride/Aqua runtime/GameState mutation disabled. The current
-  next target is M70-03.
+  parsing/G Zone/Stride/Aqua runtime/GameState mutation disabled. M70-03
+  spec/tool/tests are scaffolded, targeted tests pass (`10/10`), and full
+  Python discovery passes (`1804/1804`). It builds deck-code-ready headless
+  input from M70-02 deck text, verifies count-line parse, fixture/deck-text
+  matching, empty Ride/G sections, deck-code round-trip, optional Unity result
+  gating, keeps real CLI artifacts gated on real M69-06/M70-01/M70-02 files,
+  and keeps saved deck/UI/bot/live parsing/G Zone/Stride/Aqua runtime/GameState
+  mutation disabled. The current next target is M70-04.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

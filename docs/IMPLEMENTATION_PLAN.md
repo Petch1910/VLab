@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M70-03 ninth fixture headless load smoke
-   after M70-02 ninth fixture deck text exporter scaffold; M58-01 through
-   M70-02 scaffolds are ready
+-> current next target: M70-04 nine-fixture scale decision
+   after M70-03 ninth fixture headless load smoke scaffold; M58-01 through
+   M70-03 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -3266,10 +3266,21 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     deck publication, bot/playbook integration, live card text parsing,
     G Zone runtime, Stride runtime, Aqua Force battle-order runtime, and direct
     `GameState` mutation boundaries.
-- `M70-03`: Ninth fixture headless load smoke. **Planned.**
+- `M70-03`: Ninth fixture headless load smoke. **Blocked by M69-06/M70-01/M70-02 real files; scaffold ready.**
   - Load the Aqua Force fixture through offline/headless paths without UI,
     bot, G Zone, Stride, Aqua Force battle-order runtime, or `GameState`
     mutation.
+  - Scaffold status: spec/tool/tests are present. Targeted M70-03 tests pass
+    (`10/10`) and full Python discovery passes (`1804/1804`) using in-memory
+    M70-02 deck text export evidence.
+  - Evidence: the smoke parses count-line deck text, checks exact
+    fixture/deck-text quantity match, requires empty Ride/G sections, creates a
+    deck-code artifact, verifies deck-code round-trip, gates M70-04 on optional
+    Unity result evidence, keeps real CLI artifacts gated on real
+    M69-06/M70-01/M70-02 files, and preserves saved deck injection, UI deck
+    publication, bot/playbook integration, live card text parsing, G Zone
+    runtime, Stride runtime, Aqua Force battle-order runtime, and direct
+    `GameState` mutation boundaries.
 - `M70-04`: Nine-fixture scale decision. **Planned.**
   - Review all nine fixture evidence records before selecting any further
     slice.

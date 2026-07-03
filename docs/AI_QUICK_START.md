@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M70-03 ninth fixture headless load smoke
-   after M70-02 ninth fixture deck text exporter scaffold; M58-01 through
-   M70-02 spec/tool/tests scaffolds are ready
+-> current target: M70-04 nine-fixture scale decision
+   after M70-03 ninth fixture headless load smoke scaffold; M58-01 through
+   M70-03 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -1066,8 +1066,16 @@ Windows-first program completion
    comments, keeps the real CLI artifacts gated on real M69-06/M70-01 files,
    and keeps saved deck injection, UI deck publication, bot/playbook, live card
    text parsing, G Zone runtime, Stride runtime, Aqua Force battle-order
-   runtime, and GameState mutation disabled. Current next target: M70-03 ninth
-   fixture headless load smoke
+   runtime, and GameState mutation disabled.
+-> M70-03 tooling/spec/tests are scaffolded; targeted M70-03 tests 10/10 and
+   full Python tests 1804/1804 pass.
+   The smoke builds deck-code-ready headless input from the in-memory M70-02
+   deck text export, verifies count-line parse, fixture/deck-text matching,
+   empty Ride/G sections, deck-code round-trip, optional Unity result gating,
+   and keeps saved deck injection, UI deck publication, bot/playbook, live card
+   text parsing, G Zone runtime, Stride runtime, Aqua Force battle-order
+   runtime, and GameState mutation disabled. Current next target: M70-04
+   nine-fixture scale decision
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3467,12 +3475,12 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M70`.
-2. Read `docs/specs/cards_and_decks/NINTH_FIXTURE_DECK_TEXT_EXPORT_SPEC.md`,
-   `tools/deck/export_ninth_fixture_deck_text.py`, and
-   `tests/test_ninth_fixture_deck_text_export.py`.
-3. Implement `M70-03` as the ninth fixture headless load smoke.
-4. Load the Aqua Force fixture through offline/headless paths only, keep real
-   artifacts gated on real M69-06/M70-01/M70-02 outputs, and keep saved-deck/UI
+2. Read `docs/specs/cards_and_decks/NINTH_HEADLESS_FIXTURE_LOAD_SMOKE_SPEC.md`,
+   `tools/deck/build_ninth_headless_fixture_load_smoke.py`, and
+   `tests/test_ninth_headless_fixture_load_smoke.py`.
+3. Implement `M70-04` as the nine-fixture scale decision.
+4. Review all fixture schema/deck-text/headless evidence records, keep real
+   artifacts gated on real fixture evidence where needed, and keep saved-deck/UI
    publication, bot/playbook promotion, G Zone/Stride/Aqua runtime, live text
    parsing, and GameState mutation disabled.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
