@@ -774,8 +774,11 @@
 - `../outputs/target_slice/m57_01_sixth_slice_human_repair_review_packet.md` M57-01 human-readable sixth-slice human repair review packet
 - `../outputs/target_slice/m57_01_sixth_slice_human_repair_review_packet.csv` M57-01 sixth-slice human repair review packet CSV
 - `specs/cards_and_decks/SIXTH_SLICE_HUMAN_SELECTED_RECIPE_ARTIFACT_SPEC.md` M57-02 sixth-slice human-selected recipe artifact spec
+- `history/M57_02_SIXTH_SLICE_HUMAN_SELECTED_RECIPE_ARTIFACT_CLOSEOUT.md` M57-02 sixth-slice human-selected recipe artifact closeout
 - `../tools/deck/build_sixth_slice_human_selected_recipe_artifact.py` M57-02 sixth-slice human-selected recipe artifact tool
 - `../tests/test_sixth_slice_human_selected_recipe_artifact.py` M57-02 sixth-slice human-selected recipe artifact tests
+- `../outputs/target_slice/m57_02_sixth_slice_human_selected_recipe_artifact.json` M57-02 sixth-slice human-selected recipe artifact JSON
+- `../outputs/target_slice/m57_02_sixth_slice_human_selected_recipe_artifact.md` M57-02 sixth-slice human-selected recipe artifact summary
 - `specs/cards_and_decks/SIXTH_SLICE_HUMAN_SELECTION_REQUEST_PACKET_SPEC.md` M57-02 prerequisite human selection request packet spec
 - `../tools/deck/build_sixth_slice_human_selection_request_packet.py` M57-02 prerequisite human selection request packet tool
 - `../tests/test_sixth_slice_human_selection_request_packet.py` M57-02 prerequisite human selection request packet tests

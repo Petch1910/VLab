@@ -89,9 +89,10 @@ Windows-first program completion
 -> latest target closed: M57-02-candidate-digest sixth-slice human selection candidate digest
 -> latest target closed: M57-02-batch-preflight-matrix sixth-slice all-candidate dry-run contract check
 -> latest target closed: M57-02-selection-support-closeout sixth-slice human selection support handoff
--> current next target: M57-02 explicit sixth-slice human selection prerequisite
-   using one ready review_item_id and non-empty selection text before M57-06
-   runtime fixture and M58 artifact materialization
+-> latest target closed: M57-02 sixth-slice human-selected recipe artifact
+-> current next target: M57-03 explicit sixth-slice human repair acceptance
+   using non-empty acceptance_text before M57-04, M57-06 runtime fixture, and
+   M58 artifact materialization
 ```
 
 ## Completed Phases (M0-M19)
@@ -2287,7 +2288,7 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     `1130/1130`.
   - Closeout:
     `docs/history/M57_01_SIXTH_SLICE_HUMAN_REPAIR_REVIEW_PACKET_CLOSEOUT.md`.
-- `M57-02`: Sixth-slice human-selected recipe artifact. **Pending.**
+- `M57-02`: Sixth-slice human-selected recipe artifact. **Done.**
   - Record exactly one selected sixth-slice recipe id from the M57-01 review
     packet without mutating M56 drafts.
   - `M57-02-prerequisite`: Human selection request packet is complete. It
@@ -2320,25 +2321,28 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     closeout complete `true`, ready candidates `12`, batch preflight passed
     `12`, human selection recorded `false`, real M57-02 artifact created
     `false`, and routes to `M57-02-user-selection`.
+  - Real selected artifact is complete. It exports JSON/MD at
+    `outputs/target_slice/m57_02_sixth_slice_human_selected_recipe_artifact.*`,
+    records selected review item `m57_01_m56_recipe_001_repair_review`,
+    selected recipe `m56_recipe_001`, pair `G-BT12-062TH -> G-BT12-066TH`,
+    human acceptance `false`, G Zone decision `false`, runtime promotion
+    `false`, and `ready_for_m57_03=true`.
   - Scaffold status: spec/tool/tests are present and reject non-M57 review ids.
     Selected-artifact targeted tests pass `9/9`; preflight targeted tests pass
     `7/7`; candidate-digest targeted tests pass `7/7`; batch-preflight targeted
     tests pass `7/7`; support-closeout targeted tests pass `6/6`; combined
     M57-02 request/selected/preflight/digest/batch/closeout targeted tests pass
-    `42/42`; full Python unittest discovery passes `1873/1873`. The real
-    `outputs/target_slice/m57_02_*selected_recipe_artifact*` artifact is not
-    generated until the user selects a valid
-    `m57_01_m56_recipe_*_repair_review` item and provides non-empty
-    `selection_text`.
-- `M57-03`: Sixth-slice human-accepted repair artifact. **Blocked by M57-02 output; scaffold ready.**
+    `42/42`; full Python unittest discovery passes `1873/1873`. Real M57-02
+    selected-artifact targeted tests pass `9/9`.
+- `M57-03`: Sixth-slice human-accepted repair artifact. **Blocked by explicit acceptance text; scaffold ready.**
   - Record explicit acceptance after M57-02 exists, then build an in-memory
     repaired preview.
   - Apply manual substitutions first, detect source grade-package conflicts,
     then recompute grade-profile repair from post-manual quantities.
   - Scaffold status: spec/tool/tests are present. Targeted tests pass `7/7`;
     full Python unittest discovery passes `1146/1146`. The real
-    `outputs/target_slice/m57_03_*` artifact is not generated until M57-02
-    exists and explicit acceptance text is provided.
+    `outputs/target_slice/m57_03_*` artifact is not generated until explicit
+    acceptance text is provided for the M57-02 selected recipe.
 - `M57-04`: Sixth-slice G Zone / Stride decision artifact. **Blocked by M57-03 output; scaffold ready.**
   - Record an explicit G Zone / Stride boundary decision after M57-03 exists.
   - Support `main_deck_only_review_no_runtime_promotion` and

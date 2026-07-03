@@ -474,11 +474,12 @@
   deferred `12`, targeted tests `9/9`, and full Python unittest discovery
   `1120/1120`. `M57-01` is done with review items `12`, complete manual repairs
   `12`, complete grade repairs `12`, G Zone deferred items `12`, targeted
-  tests `10/10`, and full Python unittest discovery `1130/1130`. Current
-  target is `M57-02` sixth-slice human-selected recipe artifact. M57-02
-  spec/tool/tests are scaffolded and verified (`9/9` targeted, `1139/1139`
-  full Python), but the real selected artifact still requires an explicit
-  valid M57 review item id. The `M57-02-prerequisite` human selection request
+  tests `10/10`, and full Python unittest discovery `1130/1130`. `M57-02`
+  sixth-slice human-selected recipe artifact is now complete for selected
+  review item `m57_01_m56_recipe_001_repair_review`, selected recipe
+  `m56_recipe_001`, and pair `G-BT12-062TH -> G-BT12-066TH`; it records
+  selection only, no acceptance, no G Zone decision, no runtime promotion, and
+  `ready_for_m57_03=true`. The `M57-02-prerequisite` human selection request
   packet is complete and exports JSON/MD/CSV with `12/12` ready review items,
   no recorded selection, and command templates for the real selected artifact.
   `M57-02-preflight` is complete and exports JSON/MD with request_ready `true`,
@@ -498,11 +499,14 @@
   JSON/MD summarizing all M57-02 support evidence with support closeout complete
   `true`, ready candidates `12`, batch preflight passed `12`, human selection
   recorded `false`, real M57-02 artifact created `false`, and targeted M57-02
-  support tests `42/42`, with full Python discovery `1873/1873`.
+  support tests `42/42`, with full Python discovery `1873/1873`. The real
+  M57-02 selected artifact exports JSON/MD at
+  `outputs/target_slice/m57_02_sixth_slice_human_selected_recipe_artifact.*`,
+  and selected-artifact targeted tests pass `9/9`.
   M57-03 spec/tool/tests are scaffolded and verified
   (`7/7` targeted, `1146/1146` full Python); it applies manual substitutions
-  before recomputing grade repair, but its real output remains gated on M57-02
-  and explicit acceptance text. M57-04 spec/tool/tests are scaffolded and
+  before recomputing grade repair, but its real output remains gated on
+  explicit acceptance text. M57-04 spec/tool/tests are scaffolded and
   verified (`16/16` targeted across M57-03/M57-04, `1155/1155` full Python);
   it records explicit G Zone / Stride boundary decisions while keeping G Zone,
   Stride, runtime fixture, saved deck/UI publication, bot/playbook, and
@@ -1040,13 +1044,15 @@
   confirms the sixth M58 chain is blocked by the missing real M57-06 runtime
   fixture, writes no M58 artifacts, keeps ready steps at `0/4`, preserves all
   runtime/UI/bot/G Zone/Stride/tenth-slice/GameState boundaries, and routes
-  back to the explicit `M57-02` human selection prerequisite. `M57-02-preflight`
+  back to the explicit `M57-02` human selection prerequisite, which has now
+  been satisfied by the real selected artifact. `M57-02-preflight`
   is available as the read-only guard before running the real selected artifact
   command, and `M57-02-candidate-digest` is available as the read-only
   comparison matrix for the 12 ready candidates. `M57-02-batch-preflight-matrix`
   is available as the read-only all-candidate generator-contract check.
-  `M57-02-selection-support-closeout` is available as the consolidated handoff
-  before the real user/team selection command.
+  `M57-02-selection-support-closeout` remains as consolidated handoff
+  evidence, and the real M57-02 selected artifact is available for the next
+  `M57-03` explicit acceptance command.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

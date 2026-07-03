@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M57-02 explicit sixth-slice human selection prerequisite
-   after M72-03 proved M58 materialization is blocked by the missing real
-   M57-06 runtime fixture
+-> current target: M57-03 explicit sixth-slice human repair acceptance
+   after M57-02 recorded the selected review item
+   `m57_01_m56_recipe_001_repair_review`
 -> latest safety gate closed: M57-02-preflight writes a no-selection report
    and can dry-run a proposed review_item_id/selection_text without creating
    the real selected artifact
@@ -50,6 +50,9 @@ Windows-first program completion
    human selection
 -> latest handoff gate closed: M57-02-selection-support-closeout summarizes all
    M57-02 support evidence and routes only to explicit user/team selection
+-> latest selected-artifact gate closed: M57-02 wrote the real selected recipe
+   artifact for `m56_recipe_001`, pair `G-BT12-062TH -> G-BT12-066TH`,
+   records human selection only, and is ready for M57-03
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -491,7 +494,7 @@ Windows-first program completion
 -> latest target closed: M57-01 sixth-slice human repair review packet;
    review items 12, complete manual repairs 12, complete grade repairs 12,
    G Zone deferred items 12, targeted tests 10/10, full Python tests 1130/1130
--> active target: M57-02 sixth-slice human-selected recipe artifact
+-> latest target closed: M57-02 sixth-slice human-selected recipe artifact
 -> M57-02-prerequisite selection request packet is complete; it exports
    outputs/target_slice/m57_02_sixth_slice_human_selection_request_packet.json/md/csv,
    lists 12/12 ready review items, records no selection, and provides command
@@ -521,13 +524,17 @@ Windows-first program completion
    real_m57_02_artifact_created=false, and routes to M57-02-user-selection.
    Support-closeout targeted tests pass 6/6; combined M57-02 support tests pass 42/42
    and full Python tests pass 1873/1873
--> M57-02 tooling/spec/tests are scaffolded; targeted tests 9/9 and full
-   Python tests 1139/1139 pass, but the real output artifact is still pending
-   an explicit M57-01 review item id such as m57_01_m56_recipe_001_repair_review
+-> M57-02 selected recipe artifact is complete; it exports
+   outputs/target_slice/m57_02_sixth_slice_human_selected_recipe_artifact.json/md,
+   records user/team selection for review item
+   m57_01_m56_recipe_001_repair_review, selected recipe m56_recipe_001, pair
+   G-BT12-062TH -> G-BT12-066TH, human acceptance false, G Zone decision false,
+   runtime promotion false, and ready_for_m57_03 true. Targeted selected-artifact
+   tests pass 9/9
 -> M57-03 tooling/spec/tests are scaffolded; targeted tests 7/7 and full
    Python tests 1146/1146 pass. It applies manual substitutions first, then
    recomputes grade repair after manual conflict detection, but the real
-   output artifact remains gated on M57-02
+   output artifact remains gated on explicit acceptance_text
 -> M57-04 tooling/spec/tests are scaffolded; targeted M57-03/M57-04 tests
    16/16 and full Python tests 1155/1155 pass. It records an explicit G Zone /
    Stride boundary decision and keeps G Zone, Stride, runtime fixture, saved
@@ -1154,8 +1161,7 @@ Windows-first program completion
    acceptance, and routes back to M57-02.
 -> M57-02-prerequisite selection request packet is complete; it lists 12/12
    ready candidates and keeps human_selection_recorded=false. The real M57-02
-   selected artifact still requires an explicit review_item_id plus non-empty
-   selection_text.
+   selected artifact has now been created from explicit user/team input.
 -> M57-02-preflight selection guard is complete; the default report records
    request_ready=true, ready_candidate_count=12, input_issue_count=2, and
    human_selection_recorded=false. It is safe to rerun with a proposed
@@ -1169,12 +1175,17 @@ Windows-first program completion
    human_selection_recorded=false.
 -> M57-02-selection-support-closeout is complete; it records
    support_closeout_complete=true, human_selection_recorded=false, and
-   real_m57_02_artifact_created=false, so the next action remains explicit
-   user/team selection.
+   real_m57_02_artifact_created=false for that support artifact only. It was
+   superseded by the real M57-02 selected artifact below.
    Verification passed: targeted M57-02 support tests 42/42 and full Python
    tests 1873/1873.
-   Current next target: M57-02 explicit sixth-slice human selection
-   prerequisite before M57-06/M58 materialization
+-> M57-02 selected recipe artifact is complete; it records
+   m57_01_m56_recipe_001_repair_review -> m56_recipe_001, pair
+   G-BT12-062TH -> G-BT12-066TH, selection only, no acceptance, no G Zone
+   decision, no runtime promotion, and ready_for_m57_03=true.
+   Verification passed: targeted selected-artifact tests 9/9.
+   Current next target: M57-03 explicit human acceptance text before M57-04,
+   M57-06, or M58 materialization
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
