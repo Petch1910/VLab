@@ -958,7 +958,13 @@
   presence, suppresses only resolved G Zone/Stride/Aqua deferred review codes,
   keeps defer choices advisory, preserves runtime fixture/saved deck/UI/bot/G
   Zone/Stride/Aqua runtime/GameState boundaries, and selects M69-06. The
-  current next target is M69-06.
+  M69-06 spec/tool/tests are scaffolded and targeted tests pass (`11/11`) with
+  full Python discovery passing (`1760/1760`) using in-memory M69-03 and M69-05
+  evidence; it requires human acceptance,
+  repaired validation, combo consistency, and explicit G Zone/Stride/Aqua
+  boundaries before creating an offline runtime/test fixture model, keeps saved
+  deck/UI/bot/live parsing/G Zone/Stride/Aqua runtime/GameState mutation
+  disabled, and selects M69-closeout. The current next target is M69-closeout.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

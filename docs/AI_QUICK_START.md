@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M69-06 ninth-slice runtime fixture promotion gate
-   after M69-05 ninth-slice repaired recipe validation rerun; M58-01 through
-   M69-05 spec/tool/tests scaffolds are ready
+-> current target: M69-closeout ninth-slice fixture closeout
+   after M69-06 ninth-slice runtime fixture promotion gate scaffold; M58-01
+   through M69-06 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -1031,8 +1031,17 @@ Windows-first program completion
    advisory, keeps runtime fixture, saved deck, UI, bot/playbook, automatic
    injection, G Zone runtime, Stride runtime, Aqua Force battle-order runtime,
    and GameState mutation disabled, and routes the next target to M69-06. Real
-   M69-05 artifacts remain gated on real M69-03/M69-04 output files. Current
-   next target: M69-06 ninth-slice runtime fixture promotion gate
+   M69-05 artifacts remain gated on real M69-03/M69-04 output files.
+-> M69-06 tooling/spec/tests are scaffolded; targeted M69-06 tests 11/11 and
+   full Python tests 1760/1760 pass.
+   The runtime fixture promotion gate requires M69-03 human acceptance and
+   M69-05 validation evidence, checks G Zone, Stride, and Aqua Force
+   main-deck/manual-semantic boundaries, creates only an offline runtime/test
+   fixture model when all checks pass, and keeps saved deck injection, UI deck
+   publication, bot/playbook, live card text parsing, G Zone runtime, Stride
+   runtime, Aqua Force battle-order runtime, and GameState mutation disabled.
+   Real M69-06 artifacts remain gated on real M69-03/M69-05 output files.
+   Current next target: M69-closeout ninth-slice fixture closeout
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3432,13 +3441,13 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M69`.
-2. Read `docs/specs/cards_and_decks/NINTH_SLICE_REPAIRED_RECIPE_VALIDATION_RERUN_SPEC.md`,
-   `tools/deck/validate_ninth_slice_repaired_recipe.py`,
-   and `tests/test_ninth_slice_repaired_recipe_validation.py`.
-3. Implement `M69-06` as the ninth-slice runtime fixture promotion gate.
-4. Consume M69-05 validation evidence, allow offline fixture creation only if
-   validation, consistency, and all boundary gates pass, and keep saved-deck/UI
-   publication, bot/playbook promotion, G Zone/Stride/Aqua runtime, and
-   GameState mutation disabled.
+2. Read `docs/specs/cards_and_decks/NINTH_SLICE_RUNTIME_FIXTURE_PROMOTION_GATE_SPEC.md`,
+   `tools/deck/build_ninth_slice_runtime_fixture_promotion_gate.py`,
+   and `tests/test_ninth_slice_runtime_fixture_promotion_gate.py`.
+3. Implement `M69-closeout` as the ninth-slice fixture closeout.
+4. Summarize M69-06 gate evidence, preserve scaffold-only status while real
+   M69-03/M69-05 artifacts are absent, select the next bounded queue, and keep
+   saved-deck/UI publication, bot/playbook promotion, G Zone/Stride/Aqua
+   runtime, and GameState mutation disabled.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.

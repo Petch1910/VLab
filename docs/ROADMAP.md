@@ -852,7 +852,13 @@ Active order:
   presence, suppresses only resolved G Zone/Stride/Aqua deferred review codes,
   keeps defer choices advisory, preserves runtime fixture/saved deck/UI/bot/G
   Zone/Stride/Aqua runtime/GameState boundaries, and selects M69-06. The
-  current next target is M69-06.
+  M69-06 spec/tool/tests are scaffolded and targeted tests pass (`11/11`) with
+  full Python discovery passing (`1760/1760`) using in-memory M69-03 and M69-05
+  evidence; it requires human acceptance,
+  repaired validation, combo consistency, and explicit G Zone/Stride/Aqua
+  boundaries before creating an offline runtime/test fixture model, keeps saved
+  deck/UI/bot/live parsing/G Zone/Stride/Aqua runtime/GameState mutation
+  disabled, and selects M69-closeout. The current next target is M69-closeout.
 
 Deferred until explicit user instruction:
 
