@@ -1,0 +1,430 @@
+{
+  "version": "M57-03",
+  "description": "Sixth-slice human-accepted repair artifact",
+  "selected_target": {
+    "slice": "Sixth Offline Slice",
+    "era_preset": "g_next_z",
+    "group": "ชาโดว์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 4,
+    "priority_score": 73.61,
+    "best_era_candidates": 864,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "m57_02_human_selected_recipe_artifact": "outputs\\target_slice\\m57_02_sixth_slice_human_selected_recipe_artifact.json",
+    "m56_recipe_drafts": "outputs\\target_slice\\m56_03_sixth_slice_recipe_draft_model.json",
+    "sixth_slice_fixture_scaffold": "outputs\\target_slice\\m56_01_sixth_slice_fixture_scaffold.json"
+  },
+  "scope": {
+    "offline_human_accepted_artifact": true,
+    "records_human_selection": true,
+    "records_human_acceptance": true,
+    "records_g_zone_decision": false,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false,
+    "declares_recipe_valid": false
+  },
+  "acceptance_policy": {
+    "requires_m57_02_selection": true,
+    "requires_non_empty_acceptance_text": true,
+    "acceptance_is_not_validation": true,
+    "acceptance_is_not_g_zone_decision": true,
+    "source_grade_package_recomputed_after_manual_substitution": true,
+    "runtime_promotion_allowed": false,
+    "m57_04_must_record_explicit_g_zone_decision": true,
+    "m57_05_must_rerun_validation": true
+  },
+  "acceptance_record": {
+    "decision": "accepted",
+    "accepted_by": "user",
+    "accepted_at": "2026-07-03",
+    "acceptance_text": "ทีมยืนยันรับ recipe_001 พร้อม repair package ที่เลือกไว้ และให้ keep G Zone deferred for validation rerun",
+    "accepted_review_item_id": "m57_01_m56_recipe_001_repair_review",
+    "accepted_recipe_id": "m56_recipe_001",
+    "accepted_manual_overlap_package_id": "m56_recipe_001_manual_overlap_pkg_001",
+    "accepted_source_grade_profile_package_id": "m56_recipe_001_grade_profile_pkg_001",
+    "accepted_g_zone_package_id": "m56_recipe_001_g_zone_deferred_pkg_001",
+    "source_note": "Recorded from explicit acceptance of the M57-02 selected sixth-slice recipe."
+  },
+  "accepted_repair": {
+    "recipe_id": "m56_recipe_001",
+    "source_candidate_edge": "G-BT12-062TH->G-BT12-066TH",
+    "pair": {
+      "source_card_id": "G-BT12-062TH",
+      "source_name_th": "กิกันต์เท็ค・ชัตเตอร์",
+      "target_card_id": "G-BT12-066TH",
+      "target_name_th": "บลูเอสปาด้า・ดราก้อน",
+      "net_score": 10,
+      "resource_verdict": "resource_support",
+      "timing_verdict": "target_timing_not_constrained",
+      "zone_verdict": "target_zone_need_not_supported_by_source"
+    },
+    "manual_overlap_package_id": "m56_recipe_001_manual_overlap_pkg_001",
+    "manual_substitutions": [
+      {
+        "remove_card_id": "G-BT09-014TH",
+        "remove_quantity": 3,
+        "selected_replacement_card_id": "G-TD10-009TH",
+        "selected_replacement_quantity": 3,
+        "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+        "replacement_option_count": 5
+      },
+      {
+        "remove_card_id": "G-BT09-026TH",
+        "remove_quantity": 3,
+        "selected_replacement_card_id": "G-TD10-002TH",
+        "selected_replacement_quantity": 3,
+        "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+        "replacement_option_count": 5
+      },
+      {
+        "remove_card_id": "G-BT09-027TH",
+        "remove_quantity": 3,
+        "selected_replacement_card_id": "G-TD10-003TH",
+        "selected_replacement_quantity": 3,
+        "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+        "replacement_option_count": 5
+      },
+      {
+        "remove_card_id": "G-BT09-028TH",
+        "remove_quantity": 3,
+        "selected_replacement_card_id": "G-TD10-005TH",
+        "selected_replacement_quantity": 3,
+        "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+        "replacement_option_count": 5
+      },
+      {
+        "remove_card_id": "G-BT09-029TH",
+        "remove_quantity": 3,
+        "selected_replacement_card_id": "G-TD10-010TH",
+        "selected_replacement_quantity": 3,
+        "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+        "replacement_option_count": 5
+      },
+      {
+        "remove_card_id": "G-BT09-059TH",
+        "remove_quantity": 1,
+        "selected_replacement_card_id": "G-TD10-009TH",
+        "selected_replacement_quantity": 1,
+        "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+        "replacement_option_count": 5
+      },
+      {
+        "remove_card_id": "G-BT09-064TH",
+        "remove_quantity": 4,
+        "selected_replacement_card_id": "G-TD10-016TH",
+        "selected_replacement_quantity": 4,
+        "selected_replacement_source": "data/packs/vanguard_th/cards.sqlite:cards",
+        "replacement_option_count": 1
+      }
+    ],
+    "source_grade_profile_package_id": "m56_recipe_001_grade_profile_pkg_001",
+    "source_grade_package_conflicts_after_manual": [
+      {
+        "code": "source_grade_package_remove_conflicts_after_manual_substitution",
+        "severity": "review",
+        "card_id": "G-BT09-026TH",
+        "available_after_manual": 0,
+        "source_grade_remove_quantity": 2,
+        "source_grade_package_id": "m56_recipe_001_grade_profile_pkg_001"
+      }
+    ],
+    "combined_grade_repair_package": {
+      "package_id": "m56_recipe_001_combined_manual_grade_pkg_001",
+      "repair_type": "manual_then_recomputed_grade_profile_substitution",
+      "advisory_only": true,
+      "source_manual_overlap_package_id": "m56_recipe_001_manual_overlap_pkg_001",
+      "source_grade_profile_package_id": "m56_recipe_001_grade_profile_pkg_001",
+      "source_grade_package_directly_applied": false,
+      "source_grade_package_recomputed_after_manual_substitution": true,
+      "target_grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade_counts_after_manual": {
+        "0": 16,
+        "1": 14,
+        "2": 10,
+        "3": 10
+      },
+      "deficits_after_manual": {
+        "0": 1,
+        "2": 1
+      },
+      "surpluses_after_manual": {
+        "3": 2
+      },
+      "additions": [
+        {
+          "card_id": "G-TD10-013TH",
+          "name_th": "แดรกพรินซ์, รูต",
+          "quantity": 1,
+          "grade": "0",
+          "series_code": "G-TD10",
+          "current_quantity": 0,
+          "final_quantity_if_chosen": 1,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        },
+        {
+          "card_id": "G-TD10-005TH",
+          "name_th": "ปราสาทโลกมาร, ไอน์แก๊งก์",
+          "quantity": 1,
+          "grade": "2",
+          "series_code": "G-TD10",
+          "current_quantity": 3,
+          "final_quantity_if_chosen": 4,
+          "deck_limit": 4,
+          "source": "data/packs/vanguard_th/cards.sqlite:cards"
+        }
+      ],
+      "removals": [
+        {
+          "card_id": "G-TD10-002TH",
+          "name_th": "เครสต์วิเชียส・ดราก้อน",
+          "quantity": 2,
+          "grade": "3",
+          "series_code": "G-TD10",
+          "source": "m57_03_manual_substitution_preview"
+        }
+      ],
+      "grade_counts_after": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "added_card_count": 2,
+      "removed_card_count": 2,
+      "complete_candidate": true,
+      "runtime_promotion_allowed": false
+    },
+    "repaired_quantities": [
+      {
+        "card_id": "G-BT09-006TH",
+        "name_th": "แดรกวิซาร์ด, โมลเฟสซ่า",
+        "quantity": 4,
+        "grade": "2",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-BT09",
+        "source": "m57_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-BT09-056TH",
+        "name_th": "รีเวนเจอร์แห่งการจู่โจมอันเกรี้ยวกราด, ดีแลน",
+        "quantity": 3,
+        "grade": "2",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-BT09",
+        "source": "m57_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-BT09-058TH",
+        "name_th": "รีเวนเจอร์, ไวต์กอร์・ดราก้อน",
+        "quantity": 3,
+        "grade": "1",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-BT09",
+        "source": "m57_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-BT09-063TH",
+        "name_th": "แรบิดมิว",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Critical",
+        "type_1": "Trigger Unit",
+        "series_code": "G-BT09",
+        "source": "m57_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-BT10-052TH",
+        "name_th": "แดรกวิซาร์ด, ซีรุ",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Draw",
+        "type_1": "Trigger Unit",
+        "series_code": "G-BT10",
+        "source": "m57_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-BT12-062TH",
+        "name_th": "กิกันต์เท็ค・ชัตเตอร์",
+        "quantity": 4,
+        "grade": "3",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-BT12",
+        "source": "m57_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-BT12-066TH",
+        "name_th": "บลูเอสปาด้า・ดราก้อน",
+        "quantity": 4,
+        "grade": "1",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-BT12",
+        "source": "m57_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-BT14-018TH",
+        "name_th": "รีเวนเจอร์แห่งความกรุณา, อาริล",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Heal",
+        "type_1": "Trigger Unit",
+        "series_code": "G-BT14",
+        "source": "m57_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-TD10-002TH",
+        "name_th": "เครสต์วิเชียส・ดราก้อน",
+        "quantity": 1,
+        "grade": "3",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-TD10",
+        "source": "m57_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-TD10-003TH",
+        "name_th": "แดรกฮาร์ต, ลูอาร์ด",
+        "quantity": 3,
+        "grade": "3",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-TD10",
+        "source": "m57_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-TD10-005TH",
+        "name_th": "ปราสาทโลกมาร, ไอน์แก๊งก์",
+        "quantity": 4,
+        "grade": "2",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-TD10",
+        "source": "m57_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-TD10-009TH",
+        "name_th": "แดรกวิซาร์ด, นีซ์",
+        "quantity": 4,
+        "grade": "1",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-TD10",
+        "source": "m57_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-TD10-010TH",
+        "name_th": "คิลเลอร์มิว",
+        "quantity": 3,
+        "grade": "1",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-TD10",
+        "source": "m57_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-TD10-013TH",
+        "name_th": "แดรกพรินซ์, รูต",
+        "quantity": 1,
+        "grade": "0",
+        "trigger": "",
+        "type_1": "Normal Unit",
+        "series_code": "G-TD10",
+        "source": "m57_03_combined_repair_preview"
+      },
+      {
+        "card_id": "G-TD10-016TH",
+        "name_th": "อัศวินผู้โหยหา, บริแอน",
+        "quantity": 4,
+        "grade": "0",
+        "trigger": "Stand",
+        "type_1": "Trigger Unit",
+        "series_code": "G-TD10",
+        "source": "m57_03_combined_repair_preview"
+      }
+    ],
+    "repair_application_issues": [],
+    "main_deck_count_after_repair": 50,
+    "grade_counts_after_repair": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "g_zone_package_id": "m56_recipe_001_g_zone_deferred_pkg_001",
+    "g_zone_deferred": true,
+    "g_zone_future_system_work": [
+      "G Zone deck slot model",
+      "Stride deck-building validation",
+      "G unit visibility and public-event policy",
+      "Stride timing and Generation Break runtime support"
+    ],
+    "g_zone_decision_options": [
+      {
+        "option_id": "defer_until_g_zone_runtime_exists",
+        "label": "Defer until G Zone runtime exists",
+        "effect": "Keeps the recipe advisory until G Zone deck slots, Stride validation, and Generation Break support exist."
+      },
+      {
+        "option_id": "main_deck_only_review_no_runtime_promotion",
+        "label": "Main-deck-only review, no runtime promotion",
+        "effect": "Allows review of the 50-card main deck but blocks fixture/runtime promotion."
+      }
+    ],
+    "runtime_promotion_allowed": false,
+    "requires_m57_04_g_zone_decision": true,
+    "requires_m57_05_validation": true,
+    "ready_for_m57_04_g_zone_decision": true
+  },
+  "summary": {
+    "accepted_review_item_id": "m57_01_m56_recipe_001_repair_review",
+    "accepted_recipe_id": "m56_recipe_001",
+    "accepted_manual_overlap_package_id": "m56_recipe_001_manual_overlap_pkg_001",
+    "accepted_source_grade_profile_package_id": "m56_recipe_001_grade_profile_pkg_001",
+    "accepted_combined_repair_package_id": "m56_recipe_001_combined_manual_grade_pkg_001",
+    "accepted_g_zone_package_id": "m56_recipe_001_g_zone_deferred_pkg_001",
+    "human_selection_recorded": true,
+    "human_acceptance_recorded": true,
+    "g_zone_decision_recorded": false,
+    "g_zone_deferred": true,
+    "source_grade_package_conflict_count": 1,
+    "combined_grade_repair_recomputed": true,
+    "main_deck_count_after_repair": 50,
+    "grade_counts_after_repair": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "repair_application_issue_count": 0,
+    "runtime_promotion_allowed": false,
+    "declares_recipe_valid": false,
+    "ready_for_m57_04": true
+  },
+  "next_target": {
+    "milestone": "M57-04",
+    "task": "Sixth-slice G Zone / Stride decision artifact"
+  }
+}

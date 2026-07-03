@@ -5,28 +5,34 @@
 - Request ready: `True`
 - Selected review item: `m57_01_m56_recipe_001_repair_review`
 - Selected recipe: `m56_recipe_001`
-- Issue count: `1`
+- Issue count: `0`
 - Blocking issues: `0`
-- Input issues: `1`
-- Preflight passed: `False`
-- Ready for real M57-03 command: `False`
+- Input issues: `0`
+- Preflight passed: `True`
+- Ready for real M57-03 command: `True`
 - Human acceptance recorded: `False`
 
 ## Dry Run
 
-- Executed: `False`
-- Would create M57-03 artifact: `False`
-- Would record human selection: `False`
-- Would record human acceptance: `False`
+- Executed: `True`
+- Would create M57-03 artifact: `True`
+- Would record human selection: `True`
+- Would record human acceptance: `True`
 - Would record G Zone decision: `False`
 - Would declare recipe valid: `False`
 - Would allow runtime promotion: `False`
-- Would be ready for M57-04: `False`
-- Accepted recipe: ``
+- Would be ready for M57-04: `True`
+- Accepted recipe: `m56_recipe_001`
+
+## Real Command
+
+```powershell
+python tools\deck\build_sixth_slice_human_accepted_repair_artifact.py --acceptance-text "ทีมยืนยันรับ recipe_001 พร้อม repair package ที่เลือกไว้ และให้ keep G Zone deferred for validation rerun"
+```
 
 ## Issues
 
-- `missing_acceptance_text` severity=`requires_input` details=`{}`
+- None
 
 ## Boundary
 
@@ -40,4 +46,4 @@
 
 ## Next
 
-`M57-03-user-acceptance`: Provide non-empty acceptance_text, then rerun preflight.
+`M57-03`: Run the real M57-03 accepted repair artifact command with the preflighted acceptance text.

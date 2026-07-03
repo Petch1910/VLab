@@ -1,0 +1,124 @@
+{
+  "version": "M57-04",
+  "description": "Sixth-slice G Zone / Stride decision artifact",
+  "selected_target": {
+    "slice": "Sixth Offline Slice",
+    "era_preset": "g_next_z",
+    "group": "ชาโดว์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 4,
+    "priority_score": 73.61,
+    "best_era_candidates": 864,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "m57_03_human_accepted_repair_artifact": "outputs\\target_slice\\m57_03_sixth_slice_human_accepted_repair_artifact.json"
+  },
+  "scope": {
+    "offline_boundary_decision": true,
+    "records_human_selection": false,
+    "records_human_acceptance": false,
+    "records_g_zone_decision": true,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false,
+    "declares_recipe_valid": false
+  },
+  "decision": {
+    "selected_option_id": "main_deck_only_review_no_runtime_promotion",
+    "label": "Main-deck-only review, no runtime promotion",
+    "decision_status": "selected_for_main_deck_only_validation",
+    "recommendation": "continue_to_m57_05_repaired_validation_rerun",
+    "rationale": [
+      "Current Windows fixture scope validates main-deck recipes only.",
+      "G Zone slots, Stride timing, G-unit visibility, and Generation Break runtime support are not implemented yet.",
+      "The accepted main deck can be revalidated without pretending that G Zone runtime exists."
+    ]
+  },
+  "boundary_policy": {
+    "main_deck_only_validation_allowed": true,
+    "boundary_resolves_g_zone_deferred_for_main_deck_validation": true,
+    "runtime_promotion_allowed": false,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "g_zone_slot_model_enabled": false,
+    "stride_deck_building_validation_enabled": false,
+    "generation_break_runtime_enabled": false,
+    "grade4_main_deck_allowed": false,
+    "g_units_allowed_in_main_deck": false,
+    "g_zone_cards_allowed_in_current_windows_fixture": false,
+    "m57_05_must_rerun_main_deck_validation": true,
+    "runtime_gate_must_remain_blocked_until_validation": true
+  },
+  "m57_05_validation_policy": {
+    "validation_scope": "main_deck_only",
+    "may_suppress_issue_codes_after_boundary_decision": [
+      "g_zone_support_deferred"
+    ],
+    "must_still_enforce_issue_codes": [
+      "main_deck_count",
+      "missing_card",
+      "copy_limit",
+      "trigger_count",
+      "grade_profile_outside_target",
+      "manual_review_overlap",
+      "clan_or_format_mismatch"
+    ],
+    "must_keep_grade4_cards_out_of_main_deck": true,
+    "must_keep_g_units_out_of_runtime_fixture": true
+  },
+  "decision_item": {
+    "decision_item_id": "m57_04_m56_recipe_001_g_zone_stride_decision",
+    "accepted_review_item_id": "m57_01_m56_recipe_001_repair_review",
+    "accepted_recipe_id": "m56_recipe_001",
+    "accepted_g_zone_package_id": "m56_recipe_001_g_zone_deferred_pkg_001",
+    "selected_option_id": "main_deck_only_review_no_runtime_promotion",
+    "decision_status": "selected_for_main_deck_only_validation",
+    "main_deck_only_validation_allowed": true,
+    "boundary_resolves_g_zone_deferred_for_main_deck_validation": true,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "grade4_main_deck_allowed": false,
+    "g_units_allowed_in_main_deck": false,
+    "runtime_promotion_allowed": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "requires_validation_rerun": true,
+    "g_zone_future_system_work": [
+      "G Zone deck slot model",
+      "Stride deck-building validation",
+      "G unit visibility and public-event policy",
+      "Stride timing and Generation Break runtime support"
+    ]
+  },
+  "summary": {
+    "accepted_review_item_id": "m57_01_m56_recipe_001_repair_review",
+    "accepted_recipe_id": "m56_recipe_001",
+    "accepted_g_zone_package_id": "m56_recipe_001_g_zone_deferred_pkg_001",
+    "selected_option_id": "main_deck_only_review_no_runtime_promotion",
+    "main_deck_only_validation_allowed": true,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "runtime_promotion_allowed": false,
+    "human_selection_recorded": true,
+    "human_acceptance_recorded": true,
+    "g_zone_decision_recorded": true,
+    "accepted_artifact_ready_for_m57_04": true,
+    "ready_for_m57_05": true
+  },
+  "next_target": {
+    "milestone": "M57-05",
+    "task": "Sixth-slice repaired recipe validation rerun"
+  }
+}

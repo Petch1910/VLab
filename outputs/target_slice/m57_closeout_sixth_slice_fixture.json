@@ -1,0 +1,89 @@
+{
+  "version": "M57-closeout",
+  "description": "Sixth-slice fixture closeout and next queue selection",
+  "source_inputs": {
+    "sixth_slice_runtime_fixture_promotion_gate": "outputs\\target_slice\\m57_06_sixth_slice_runtime_fixture_promotion_gate.json"
+  },
+  "scope": {
+    "closeout_report": true,
+    "changes_fixture_artifact": false,
+    "mutates_runtime_deck_library": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_integration": false,
+    "automatic_playbook_promotion": false,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "GameState_mutation": false
+  },
+  "key_results": {
+    "recipe_id": "m56_recipe_001",
+    "accepted_review_item_id": "m57_01_m56_recipe_001_repair_review",
+    "selected_g_zone_option_id": "main_deck_only_review_no_runtime_promotion",
+    "m57_complete": true,
+    "sixth_runtime_fixture_available": true,
+    "fixture_path": "outputs/target_slice/runtime_fixtures/m56_recipe_001_shadow_paladin_m57_06.json",
+    "fixture_scope": "offline_runtime_test_fixture",
+    "promotion_allowed": true,
+    "gate_passed_check_count": 7,
+    "gate_failed_check_count": 0,
+    "runtime_deck_library_mutated": false,
+    "saved_deck_injected": false,
+    "ui_deck_list_published": false,
+    "bot_playbook_enabled": false,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false
+  },
+  "decision": {
+    "sixth_recipe_enters_fixture_scope": true,
+    "sixth_recipe_remains_advisory_only": false,
+    "live_runtime_deck_enabled": false,
+    "saved_deck_enabled": false,
+    "ui_deck_list_enabled": false,
+    "bot_playbook_enabled": false,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "needs_user_team_review_before_live_deck_ui": true,
+    "decision_notes": [
+      "The sixth-slice Shadow Paladin recipe can be used as an offline runtime/test fixture.",
+      "The fixture is main-deck-only; G Zone and Stride runtime remain disabled.",
+      "The fixture is not a saved player deck and is not automatically visible in UI.",
+      "Bot/playbook runtime use still needs a separate gate."
+    ]
+  },
+  "next_queue": {
+    "id": "M58",
+    "title": "Sixth Fixture Consumption and Six-Fixture Scale Gate",
+    "goal": "Validate how the Shadow Paladin fixture can be consumed safely, export reviewable deck text, run a headless load smoke, then decide whether the fixture set is ready for another scale step.",
+    "tasks": [
+      {
+        "id": "M58-01",
+        "title": "Sixth fixture schema validator",
+        "goal": "Validate the Shadow Paladin runtime fixture independently from the M57 generator."
+      },
+      {
+        "id": "M58-02",
+        "title": "Sixth fixture deck text exporter",
+        "goal": "Export the Shadow Paladin fixture as reviewable count-line deck text without adding it to saved decks."
+      },
+      {
+        "id": "M58-03",
+        "title": "Sixth fixture headless load smoke",
+        "goal": "Load the Shadow Paladin fixture through offline/headless paths without UI, bot, G Zone, or Stride mutation."
+      },
+      {
+        "id": "M58-04",
+        "title": "Six-fixture scale decision",
+        "goal": "Review all six fixture evidence before selecting any further slice."
+      }
+    ]
+  },
+  "summary": {
+    "m57_complete": true,
+    "sixth_runtime_fixture_available": true,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "next_queue_id": "M58",
+    "ready_for_next_queue": true
+  }
+}

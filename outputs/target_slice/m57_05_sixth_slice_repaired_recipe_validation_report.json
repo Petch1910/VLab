@@ -1,0 +1,382 @@
+{
+  "version": "M57-05",
+  "description": "Sixth-slice repaired recipe validation rerun",
+  "selected_target": {
+    "slice": "Sixth Offline Slice",
+    "era_preset": "g_next_z",
+    "group": "ชาโดว์ พาลาดิน",
+    "group_field": "clan",
+    "rank": 4,
+    "priority_score": 73.61,
+    "best_era_candidates": 864,
+    "mechanic_tier": 2,
+    "mechanic_tier_label": "OG Keywords",
+    "priority_reasons": [
+      "HIGH_PRIORITY",
+      "simple_mechanics",
+      "decent_combo_pool",
+      "large_card_pool"
+    ]
+  },
+  "source_inputs": {
+    "m57_03_human_accepted_repair_artifact": "outputs\\target_slice\\m57_03_sixth_slice_human_accepted_repair_artifact.json",
+    "m57_04_g_zone_stride_decision_artifact": "outputs\\target_slice\\m57_04_sixth_slice_g_zone_stride_decision_artifact.json",
+    "runtime_cards_sqlite": "data/packs/vanguard_th/cards.sqlite"
+  },
+  "scope": {
+    "offline_validation_rerun": true,
+    "records_human_acceptance": false,
+    "records_g_zone_decision": false,
+    "changes_accepted_repair_artifact": false,
+    "changes_g_zone_decision_artifact": false,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "automatic_deck_injection": false,
+    "direct_GameState_mutation": false,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false
+  },
+  "validation_policy": {
+    "classic_main_deck_size": 50,
+    "classic_trigger_count": 16,
+    "heal_trigger_max": 4,
+    "grade4_main_deck_max_until_g_zone_support": 0,
+    "copy_limit_from_sqlite_deck_limit": true,
+    "grade_profile_mismatch_is_review_not_blocker": true,
+    "manual_review_card_overlap_is_blocking": true,
+    "human_selection_pending_is_review_not_blocker": true,
+    "g_zone_support_deferred_is_review_not_blocker": true,
+    "validated_input": "m57_03_repaired_quantity_preview",
+    "human_acceptance_required": true,
+    "g_zone_boundary_required": true,
+    "suppressed_by_m57_04_boundary_issue_codes": [
+      "g_zone_support_deferred"
+    ],
+    "main_deck_only_validation": true,
+    "runtime_fixture_gate_still_required": true
+  },
+  "accepted_context": {
+    "accepted_review_item_id": "m57_01_m56_recipe_001_repair_review",
+    "accepted_recipe_id": "m56_recipe_001",
+    "accepted_combined_repair_package_id": "m56_recipe_001_combined_manual_grade_pkg_001",
+    "accepted_g_zone_package_id": "m56_recipe_001_g_zone_deferred_pkg_001",
+    "human_selection_recorded": true,
+    "human_acceptance_recorded": true,
+    "accepted_artifact_ready_for_g_zone_decision": true
+  },
+  "g_zone_decision_context": {
+    "selected_option_id": "main_deck_only_review_no_runtime_promotion",
+    "g_zone_decision_recorded": true,
+    "main_deck_only_boundary_applied": true,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "source_decision_item_id": "m57_04_m56_recipe_001_g_zone_stride_decision"
+  },
+  "repaired_recipe_validation": {
+    "recipe_id": "m56_recipe_001",
+    "validation_status": "validator_passed",
+    "runtime_ready": true,
+    "blocking_issue_count": 0,
+    "blocker_codes": [],
+    "review_codes": [],
+    "count_summary": {
+      "main_deck_target": 50,
+      "explicit_card_count": 50,
+      "trigger_count": 16,
+      "trigger_counts": {
+        "Critical": 4,
+        "Draw": 4,
+        "Heal": 4,
+        "Stand": 4
+      },
+      "grade_counts": {
+        "0": 17,
+        "1": 14,
+        "2": 11,
+        "3": 8
+      },
+      "grade4_main_deck_count": 0,
+      "clan_counts": {
+        "ชาโดว์ พาลาดิน": 50
+      }
+    }
+  },
+  "repaired_recipe_consistency": {
+    "recipe_id": "m56_recipe_001",
+    "consistency_status": "consistent_validator_passed",
+    "pair_cards_present": true,
+    "promotion_allowed_by_validation_and_consistency": true,
+    "source_card_id": "G-BT12-062TH",
+    "target_card_id": "G-BT12-066TH",
+    "g_zone_support_deferred": false
+  },
+  "validation_report_preview": {
+    "version": "M56-04",
+    "description": "Sixth-slice recipe validator for M56-03 advisory drafts",
+    "selected_target": {
+      "slice": "Sixth Offline Slice",
+      "era_preset": "g_next_z",
+      "group": "ชาโดว์ พาลาดิน",
+      "group_field": "clan",
+      "rank": 4,
+      "priority_score": 73.61,
+      "best_era_candidates": 864,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    "source_inputs": {
+      "sixth_slice_recipe_draft_model": "outputs\\target_slice\\m56_03_sixth_slice_recipe_draft_model.json",
+      "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+    },
+    "scope": {
+      "offline_validator": true,
+      "saved_deck_injection": false,
+      "ui_deck_list_publication": false,
+      "runtime_deck": false,
+      "bot_playbook": false,
+      "automatic_deck_injection": false,
+      "direct_GameState_mutation": false
+    },
+    "validation_policy": {
+      "classic_main_deck_size": 50,
+      "classic_trigger_count": 16,
+      "heal_trigger_max": 4,
+      "grade4_main_deck_max_until_g_zone_support": 0,
+      "copy_limit_from_sqlite_deck_limit": true,
+      "grade_profile_mismatch_is_review_not_blocker": true,
+      "manual_review_card_overlap_is_blocking": true,
+      "human_selection_pending_is_review_not_blocker": true,
+      "g_zone_support_deferred_is_review_not_blocker": true
+    },
+    "summary": {
+      "recipe_count": 1,
+      "runtime_ready_recipe_count": 1,
+      "validator_passed_count": 1,
+      "validator_passed_pending_human_selection_count": 0,
+      "invalid_draft_count": 0,
+      "blocked_by_manual_review_count": 0,
+      "missing_card_recipe_count": 0,
+      "copy_limit_violation_recipe_count": 0,
+      "slot_gap_recipe_count": 0,
+      "trigger_count_mismatch_recipe_count": 0,
+      "grade4_main_deck_recipe_count": 0,
+      "manual_review_overlap_recipe_count": 0,
+      "grade_profile_review_recipe_count": 0,
+      "g_zone_deferred_recipe_count": 0,
+      "issue_counts": {},
+      "ready_for_m56_05": true
+    },
+    "recipe_validations": [
+      {
+        "recipe_id": "m56_recipe_001",
+        "source_candidate_edge": "G-BT12-062TH->G-BT12-066TH",
+        "source_edge_rank": 1,
+        "anchor_card_id": "G-BT12-062TH",
+        "review_status": "human_accepted_main_deck_only_repair_preview",
+        "validation_status": "validator_passed",
+        "blocking_issue_count": 0,
+        "issues": [],
+        "count_summary": {
+          "main_deck_target": 50,
+          "explicit_card_count": 50,
+          "trigger_count": 16,
+          "trigger_counts": {
+            "Critical": 4,
+            "Draw": 4,
+            "Heal": 4,
+            "Stand": 4
+          },
+          "grade_counts": {
+            "0": 17,
+            "1": 14,
+            "2": 11,
+            "3": 8
+          },
+          "grade4_main_deck_count": 0,
+          "clan_counts": {
+            "ชาโดว์ พาลาดิน": 50
+          }
+        },
+        "runtime_ready": true
+      }
+    ],
+    "next_target": {
+      "milestone": "M56-05",
+      "task": "Sixth-slice combo-to-recipe consistency"
+    }
+  },
+  "consistency_report_preview": {
+    "version": "M56-05",
+    "description": "Sixth-slice candidate edge to recipe consistency check",
+    "selected_target": {
+      "slice": "Sixth Offline Slice",
+      "era_preset": "g_next_z",
+      "group": "ชาโดว์ พาลาดิน",
+      "group_field": "clan",
+      "rank": 4,
+      "priority_score": 73.61,
+      "best_era_candidates": 864,
+      "mechanic_tier": 2,
+      "mechanic_tier_label": "OG Keywords",
+      "priority_reasons": [
+        "HIGH_PRIORITY",
+        "simple_mechanics",
+        "decent_combo_pool",
+        "large_card_pool"
+      ]
+    },
+    "source_inputs": {
+      "sixth_slice_recipe_draft_model": "outputs\\target_slice\\m56_03_sixth_slice_recipe_draft_model.json",
+      "sixth_slice_recipe_validation_report": "outputs\\target_slice\\m56_04_sixth_slice_recipe_validation_report.json"
+    },
+    "scope": {
+      "offline_consistency_check": true,
+      "saved_deck_injection": false,
+      "ui_deck_list_publication": false,
+      "runtime_deck": false,
+      "bot_playbook": false,
+      "automatic_deck_injection": false,
+      "direct_GameState_mutation": false
+    },
+    "summary": {
+      "recipe_count": 1,
+      "consistency_check_count": 1,
+      "pair_cards_present_count": 1,
+      "missing_pair_card_check_count": 0,
+      "pair_manual_dependency_check_count": 0,
+      "recipe_manual_dependency_check_count": 0,
+      "g_zone_deferred_check_count": 0,
+      "promotion_allowed_count": 1,
+      "runtime_ready_consistent_count": 1,
+      "status_counts": {
+        "consistent_validator_passed": 1
+      },
+      "ready_for_m56_06": true
+    },
+    "consistency_checks": [
+      {
+        "recipe_id": "m56_recipe_001",
+        "source_candidate_edge": "G-BT12-062TH->G-BT12-066TH",
+        "source_edge_rank": 1,
+        "source_card_id": "G-BT12-062TH",
+        "target_card_id": "G-BT12-066TH",
+        "pair_card_count": 2,
+        "recipe_card_id_count": 15,
+        "pair_cards_present": true,
+        "missing_pair_card_ids": [],
+        "pair_manual_review_dependencies": [],
+        "recipe_manual_review_dependencies": [],
+        "g_zone_support_deferred": false,
+        "recipe_validation_status": "validator_passed",
+        "recipe_runtime_ready": true,
+        "consistency_status": "consistent_validator_passed",
+        "promotion_allowed": true
+      }
+    ],
+    "next_target": {
+      "milestone": "M56-06",
+      "task": "Sixth-slice blocker repair candidates"
+    }
+  },
+  "summary": {
+    "recipe_count": 1,
+    "runtime_ready_recipe_count": 1,
+    "validator_passed_count": 1,
+    "validator_passed_pending_human_selection_count": 0,
+    "invalid_draft_count": 0,
+    "blocked_by_manual_review_count": 0,
+    "missing_card_recipe_count": 0,
+    "copy_limit_violation_recipe_count": 0,
+    "slot_gap_recipe_count": 0,
+    "trigger_count_mismatch_recipe_count": 0,
+    "grade4_main_deck_recipe_count": 0,
+    "manual_review_overlap_recipe_count": 0,
+    "grade_profile_review_recipe_count": 0,
+    "g_zone_deferred_recipe_count": 0,
+    "issue_counts": {},
+    "ready_for_m56_05": true,
+    "accepted_recipe_id": "m56_recipe_001",
+    "accepted_review_item_id": "m57_01_m56_recipe_001_repair_review",
+    "accepted_combined_repair_package_id": "m56_recipe_001_combined_manual_grade_pkg_001",
+    "accepted_g_zone_package_id": "m56_recipe_001_g_zone_deferred_pkg_001",
+    "human_acceptance_recorded": true,
+    "selected_g_zone_option_id": "main_deck_only_review_no_runtime_promotion",
+    "g_zone_decision_recorded": true,
+    "main_deck_only_boundary_applied": true,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "source_g_zone_decision_item_id": "m57_04_m56_recipe_001_g_zone_stride_decision",
+    "consistency_status": "consistent_validator_passed",
+    "promotion_allowed_count": 1,
+    "runtime_fixture_created": false,
+    "runtime_promotion_allowed": false,
+    "ready_for_m57_06": true
+  },
+  "recipe_validations": [
+    {
+      "recipe_id": "m56_recipe_001",
+      "source_candidate_edge": "G-BT12-062TH->G-BT12-066TH",
+      "source_edge_rank": 1,
+      "anchor_card_id": "G-BT12-062TH",
+      "review_status": "human_accepted_main_deck_only_repair_preview",
+      "validation_status": "validator_passed",
+      "blocking_issue_count": 0,
+      "issues": [],
+      "count_summary": {
+        "main_deck_target": 50,
+        "explicit_card_count": 50,
+        "trigger_count": 16,
+        "trigger_counts": {
+          "Critical": 4,
+          "Draw": 4,
+          "Heal": 4,
+          "Stand": 4
+        },
+        "grade_counts": {
+          "0": 17,
+          "1": 14,
+          "2": 11,
+          "3": 8
+        },
+        "grade4_main_deck_count": 0,
+        "clan_counts": {
+          "ชาโดว์ พาลาดิน": 50
+        }
+      },
+      "runtime_ready": true
+    }
+  ],
+  "consistency_checks": [
+    {
+      "recipe_id": "m56_recipe_001",
+      "source_candidate_edge": "G-BT12-062TH->G-BT12-066TH",
+      "source_edge_rank": 1,
+      "source_card_id": "G-BT12-062TH",
+      "target_card_id": "G-BT12-066TH",
+      "pair_card_count": 2,
+      "recipe_card_id_count": 15,
+      "pair_cards_present": true,
+      "missing_pair_card_ids": [],
+      "pair_manual_review_dependencies": [],
+      "recipe_manual_review_dependencies": [],
+      "g_zone_support_deferred": false,
+      "recipe_validation_status": "validator_passed",
+      "recipe_runtime_ready": true,
+      "consistency_status": "consistent_validator_passed",
+      "promotion_allowed": true
+    }
+  ],
+  "next_target": {
+    "milestone": "M57-06",
+    "task": "Sixth-slice runtime fixture promotion gate"
+  }
+}

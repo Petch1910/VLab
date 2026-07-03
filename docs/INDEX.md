@@ -829,30 +829,55 @@
 - `../outputs/target_slice/m57_03_sixth_slice_human_acceptance_support_closeout.md` M57-03 human acceptance support closeout summary
 - `../tools/deck/build_sixth_slice_human_accepted_repair_artifact.py` M57-03 sixth-slice human-accepted repair artifact tool
 - `../tests/test_sixth_slice_human_accepted_repair_artifact.py` M57-03 sixth-slice human-accepted repair artifact tests
+- `history/M57_M58_SIXTH_FIXTURE_MATERIALIZATION_CLOSEOUT.md` M57/M58 sixth fixture materialization closeout
+- `../outputs/target_slice/m57_03_sixth_slice_human_accepted_repair_artifact.json` M57-03 sixth-slice human-accepted repair artifact JSON
+- `../outputs/target_slice/m57_03_sixth_slice_human_accepted_repair_artifact.md` M57-03 sixth-slice human-accepted repair artifact summary
 - `specs/cards_and_decks/SIXTH_SLICE_G_ZONE_STRIDE_DECISION_ARTIFACT_SPEC.md` M57-04 sixth-slice G Zone / Stride decision artifact spec
 - `../tools/deck/build_sixth_slice_g_zone_stride_decision_artifact.py` M57-04 sixth-slice G Zone / Stride decision artifact tool
 - `../tests/test_sixth_slice_g_zone_stride_decision_artifact.py` M57-04 sixth-slice G Zone / Stride decision artifact tests
+- `../outputs/target_slice/m57_04_sixth_slice_g_zone_stride_decision_artifact.json` M57-04 sixth-slice G Zone / Stride decision artifact JSON
+- `../outputs/target_slice/m57_04_sixth_slice_g_zone_stride_decision_artifact.md` M57-04 sixth-slice G Zone / Stride decision artifact summary
 - `specs/cards_and_decks/SIXTH_SLICE_REPAIRED_RECIPE_VALIDATION_RERUN_SPEC.md` M57-05 sixth-slice repaired recipe validation rerun spec
 - `../tools/deck/validate_sixth_slice_repaired_recipe.py` M57-05 sixth-slice repaired recipe validation rerun tool
 - `../tests/test_sixth_slice_repaired_recipe_validation.py` M57-05 sixth-slice repaired recipe validation rerun tests
+- `../outputs/target_slice/m57_05_sixth_slice_repaired_recipe_validation_report.json` M57-05 sixth-slice repaired recipe validation report JSON
+- `../outputs/target_slice/m57_05_sixth_slice_repaired_recipe_validation_report.md` M57-05 sixth-slice repaired recipe validation report summary
 - `specs/cards_and_decks/SIXTH_SLICE_RUNTIME_FIXTURE_PROMOTION_GATE_SPEC.md` M57-06 sixth-slice runtime fixture promotion gate spec
 - `../tools/deck/build_sixth_slice_runtime_fixture_promotion_gate.py` M57-06 sixth-slice runtime fixture promotion gate tool
 - `../tests/test_sixth_slice_runtime_fixture_promotion_gate.py` M57-06 sixth-slice runtime fixture promotion gate tests
+- `../outputs/target_slice/m57_06_sixth_slice_runtime_fixture_promotion_gate.json` M57-06 sixth-slice runtime fixture promotion gate JSON
+- `../outputs/target_slice/m57_06_sixth_slice_runtime_fixture_promotion_gate.md` M57-06 sixth-slice runtime fixture promotion gate summary
+- `../outputs/target_slice/runtime_fixtures/m56_recipe_001_shadow_paladin_m57_06.json` M57-06 Shadow Paladin offline runtime/test fixture
 - `specs/cards_and_decks/SIXTH_SLICE_FIXTURE_CLOSEOUT_SPEC.md` M57-closeout sixth-slice fixture closeout spec
 - `../tools/deck/build_sixth_slice_fixture_closeout.py` M57-closeout sixth-slice fixture closeout tool
 - `../tests/test_sixth_slice_fixture_closeout.py` M57-closeout sixth-slice fixture closeout tests
+- `../outputs/target_slice/m57_closeout_sixth_slice_fixture.json` M57-closeout sixth-slice fixture closeout JSON
+- `../outputs/target_slice/m57_closeout_sixth_slice_fixture.md` M57-closeout sixth-slice fixture closeout summary
 - `specs/cards_and_decks/SIXTH_FIXTURE_SCHEMA_VALIDATOR_SPEC.md` M58-01 sixth fixture schema validator spec
 - `../tools/deck/validate_sixth_runtime_fixture_schema.py` M58-01 sixth fixture schema validation tool
 - `../tests/test_sixth_runtime_fixture_schema_validator.py` M58-01 sixth fixture schema validation tests
+- `../outputs/target_slice/m58_01_sixth_fixture_schema_validation.json` M58-01 sixth fixture schema validation JSON
+- `../outputs/target_slice/m58_01_sixth_fixture_schema_validation.md` M58-01 sixth fixture schema validation summary
 - `specs/cards_and_decks/SIXTH_FIXTURE_DECK_TEXT_EXPORT_SPEC.md` M58-02 sixth fixture deck text export spec
 - `../tools/deck/export_sixth_fixture_deck_text.py` M58-02 sixth fixture deck text export tool
 - `../tests/test_sixth_fixture_deck_text_export.py` M58-02 sixth fixture deck text export tests
+- `../outputs/target_slice/m58_02_sixth_fixture_deck_text_export.txt` M58-02 sixth fixture count-line deck text export
+- `../outputs/target_slice/m58_02_sixth_fixture_deck_text_export.json` M58-02 sixth fixture deck text export JSON
+- `../outputs/target_slice/m58_02_sixth_fixture_deck_text_export.md` M58-02 sixth fixture deck text export summary
 - `specs/cards_and_decks/SIXTH_HEADLESS_FIXTURE_LOAD_SMOKE_SPEC.md` M58-03 sixth fixture headless load smoke spec
 - `../tools/deck/build_sixth_headless_fixture_load_smoke.py` M58-03 sixth fixture headless load smoke tool
 - `../tests/test_sixth_headless_fixture_load_smoke.py` M58-03 sixth fixture headless load smoke tests
+- `../outputs/target_slice/m58_03_sixth_fixture_deck_code.txt` M58-03 sixth fixture deck code artifact
+- `../outputs/target_slice/m58_03_sixth_fixture_load_smoke.json` M58-03 sixth fixture headless load smoke JSON
+- `../outputs/target_slice/m58_03_sixth_fixture_load_smoke.md` M58-03 sixth fixture headless load smoke summary
+- `../outputs/target_slice/m58_03_sixth_fixture_unity_result.json` M58-03 sixth fixture Unity headless result
+- `../outputs/target_slice/m58_03_sixth_fixture_unity_replay.json` M58-03 sixth fixture Unity headless replay
+- `../outputs/target_slice/m58_03_sixth_fixture_unity.log` M58-03 sixth fixture Unity headless log
 - `specs/cards_and_decks/SIX_FIXTURE_SCALE_DECISION_SPEC.md` M58-04 six-fixture scale decision spec
 - `../tools/deck/build_six_fixture_scale_decision.py` M58-04 six-fixture scale decision tool
 - `../tests/test_six_fixture_scale_decision.py` M58-04 six-fixture scale decision tests
+- `../outputs/target_slice/m58_04_six_fixture_scale_decision.json` M58-04 six-fixture scale decision JSON
+- `../outputs/target_slice/m58_04_six_fixture_scale_decision.md` M58-04 six-fixture scale decision summary
 - `specs/cards_and_decks/SEVENTH_TARGET_SLICE_SELECTION_SPEC.md` M59-01 seventh target slice selection spec
 - `../tools/deck/build_seventh_target_slice_selection.py` M59-01 seventh target slice selection tool
 - `../tests/test_seventh_target_slice_selection.py` M59-01 seventh target slice selection tests

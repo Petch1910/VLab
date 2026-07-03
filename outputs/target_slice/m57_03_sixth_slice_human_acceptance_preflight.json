@@ -20,8 +20,8 @@
     "direct_GameState_mutation": false
   },
   "input": {
-    "acceptance_text_provided": false,
-    "acceptance_text_preview": ""
+    "acceptance_text_provided": true,
+    "acceptance_text_preview": "ทีมยืนยันรับ recipe_001 พร้อม repair package ที่เลือกไว้ และให้ keep G Zone deferred for validation rerun"
   },
   "selected_recipe": {
     "selected_review_item_id": "m57_01_m56_recipe_001_repair_review",
@@ -46,51 +46,44 @@
     "ready_for_human_repair_review": true
   },
   "dry_run": {
-    "executed": false,
-    "would_create_m57_03_artifact": false,
-    "would_record_human_selection": false,
-    "would_record_human_acceptance": false,
+    "executed": true,
+    "would_create_m57_03_artifact": true,
+    "would_record_human_selection": true,
+    "would_record_human_acceptance": true,
     "would_record_g_zone_decision": false,
     "would_declare_recipe_valid": false,
     "would_allow_runtime_promotion": false,
-    "would_be_ready_for_m57_04": false,
-    "accepted_recipe_id": "",
-    "accepted_review_item_id": "",
-    "accepted_combined_repair_package_id": "",
-    "acceptance_decision": "",
-    "real_command": ""
+    "would_be_ready_for_m57_04": true,
+    "accepted_recipe_id": "m56_recipe_001",
+    "accepted_review_item_id": "m57_01_m56_recipe_001_repair_review",
+    "accepted_combined_repair_package_id": "m56_recipe_001_combined_manual_grade_pkg_001",
+    "acceptance_decision": "accepted",
+    "real_command": "python tools\\deck\\build_sixth_slice_human_accepted_repair_artifact.py --acceptance-text \"ทีมยืนยันรับ recipe_001 พร้อม repair package ที่เลือกไว้ และให้ keep G Zone deferred for validation rerun\""
   },
-  "issues": [
-    {
-      "code": "missing_acceptance_text",
-      "severity": "requires_input",
-      "message": "Preflight needs non-empty acceptance_text to dry-run the real M57-03 command.",
-      "details": {}
-    }
-  ],
+  "issues": [],
   "decision": {
     "preflight_report_ready": true,
-    "preflight_passed": false,
-    "ready_for_real_m57_03_command": false,
+    "preflight_passed": true,
+    "ready_for_real_m57_03_command": true,
     "human_acceptance_recorded": false,
     "runtime_promotion_allowed": false,
-    "recommended_milestone": "M57-03-user-acceptance",
-    "recommended_task": "Provide non-empty acceptance_text, then rerun preflight"
+    "recommended_milestone": "M57-03",
+    "recommended_task": "Run the real M57-03 accepted repair artifact command with the preflighted acceptance text"
   },
   "summary": {
     "request_ready": true,
     "selected_review_item_id": "m57_01_m56_recipe_001_repair_review",
     "selected_recipe_id": "m56_recipe_001",
-    "issue_count": 1,
+    "issue_count": 0,
     "blocking_issue_count": 0,
-    "input_issue_count": 1,
-    "preflight_passed": false,
-    "ready_for_real_m57_03_command": false,
-    "accepted_recipe_id": "",
+    "input_issue_count": 0,
+    "preflight_passed": true,
+    "ready_for_real_m57_03_command": true,
+    "accepted_recipe_id": "m56_recipe_001",
     "human_acceptance_recorded": false
   },
   "next_target": {
-    "milestone": "M57-03-user-acceptance",
-    "task": "Provide explicit acceptance text for the selected sixth-slice repair"
+    "milestone": "M57-03",
+    "task": "Run real sixth-slice human-accepted repair artifact"
   }
 }

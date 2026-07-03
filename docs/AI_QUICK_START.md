@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M57-03 explicit sixth-slice human repair acceptance
-   after M57-02 recorded the selected review item
-   `m57_01_m56_recipe_001_repair_review`
+-> current target: M59-01 seventh target slice selection
+   after M57-03 through M58-04 real artifacts materialized the sixth
+   Shadow Paladin fixture and opened the six-fixture scale gate
 -> latest safety gate closed: M57-02-preflight writes a no-selection report
    and can dry-run a proposed review_item_id/selection_text without creating
    the real selected artifact
@@ -63,6 +63,11 @@ Windows-first program completion
 -> latest acceptance-support gate closed: M57-03-acceptance-support-closeout
    summarizes request/preflight evidence, records no acceptance, creates no
    real M57-03 artifact, and routes only to M57-03-user-acceptance
+-> latest materialization chain closed: M57-03 accepted recipe `m56_recipe_001`,
+   M57-04 selected `main_deck_only_review_no_runtime_promotion`, M57-05
+   validation passed, M57-06 created the offline Shadow Paladin fixture,
+   M57-closeout routed to M58, and M58-01 through M58-04 passed with Unity
+   headless evidence; next queue is M59-01
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -541,10 +546,11 @@ Windows-first program completion
    G-BT12-062TH -> G-BT12-066TH, human acceptance false, G Zone decision false,
    runtime promotion false, and ready_for_m57_03 true. Targeted selected-artifact
    tests pass 9/9
--> M57-03 tooling/spec/tests are scaffolded; targeted tests 7/7 and full
-   Python tests 1146/1146 pass. It applies manual substitutions first, then
-   recomputes grade repair after manual conflict detection, but the real
-   output artifact remains gated on explicit acceptance_text
+-> M57-03 accepted repair artifact is complete; it exports
+   outputs/target_slice/m57_03_sixth_slice_human_accepted_repair_artifact.json/md,
+   records human_acceptance_recorded=true for m56_recipe_001, applies manual
+   substitutions first, recomputes grade repair to 50 cards with G0/G1/G2/G3
+   17/14/11/8, keeps runtime_promotion_allowed=false, and is ready for M57-04
 -> M57-03-prerequisite acceptance request packet is complete; it exports
    outputs/target_slice/m57_03_sixth_slice_human_acceptance_request_packet.json/md/csv,
    preserves selected recipe m56_recipe_001 and pair G-BT12-062TH ->
@@ -564,38 +570,35 @@ Windows-first program completion
    default_preflight_requires_input=true, human_acceptance_recorded=false,
    real_m57_03_artifact_created=false, and routes to M57-03-user-acceptance.
    Combined M57-03 support/preflight/request/accepted targeted tests pass 25/25
--> M57-04 tooling/spec/tests are scaffolded; targeted M57-03/M57-04 tests
-   16/16 and full Python tests 1155/1155 pass. It records an explicit G Zone /
-   Stride boundary decision and keeps G Zone, Stride, runtime fixture, saved
-   deck, UI publication, bot/playbook, and GameState mutation disabled
--> M57-05 tooling/spec/tests are scaffolded; targeted M57-04/M57-05 tests
-   18/18 and full Python tests 1164/1164 pass. It validates the repaired
-   main-deck preview after the M57-04 boundary and checks combo consistency,
-   while keeping runtime fixture promotion deferred to M57-06
--> M57-06 tooling/spec/tests are scaffolded; targeted M57-06 tests 9/9 and
-   full Python tests 1173/1173 pass. It can create only an offline runtime/test
-   fixture after M57-03 accepted rows and M57-05 validation exist; saved deck,
-   UI publication, bot/playbook, G Zone/Stride runtime, and GameState mutation
-   remain disabled
--> M57-closeout tooling/spec/tests are scaffolded; targeted M57-closeout tests
-   6/6 and full Python tests 1179/1179 pass. It routes a completed sixth
-   fixture to M58 consumption/scale work, but the real closeout output remains
-   gated on M57-06 output
--> M58-01 tooling/spec/tests are scaffolded; targeted M58-01 tests 11/11 and
-   full Python tests 1190/1190 pass using an in-memory M57-06 fixture. The real
-   M58-01 report remains gated on the real M57-06 runtime fixture file
--> M58-02 tooling/spec/tests are scaffolded; targeted M58-02 tests 7/7 and full
-   Python tests 1197/1197 pass using an in-memory M57-06 fixture plus M58-01
-   validation report. The real M58-02 deck text/report artifacts remain gated
-   on real M57-06 and M58-01 files
--> M58-03 tooling/spec/tests are scaffolded; targeted M58-03 tests 9/9 and full
-   Python tests 1206/1206 pass using in-memory M57-06/M58-01/M58-02 artifacts.
-   Offline deck-code smoke is ready in scaffold, while real outputs and Unity
-   headless evidence remain gated on real upstream files
--> M58-04 tooling/spec/tests are scaffolded; targeted M58-04 tests 8/8 and full
-   Python tests 1214/1214 pass using the first five real smoke reports plus
-   in-memory sixth fixture smoke. Six-fixture scale decision is ready in
-   scaffold, while real report remains gated on real M58-03 Unity evidence
+-> M57-04 G Zone / Stride decision artifact is complete; it exports
+   outputs/target_slice/m57_04_sixth_slice_g_zone_stride_decision_artifact.json/md
+   with selected_option_id=main_deck_only_review_no_runtime_promotion,
+   ready_for_m57_05=true, and G Zone/Stride runtime disabled
+-> M57-05 repaired validation rerun is complete; it exports
+   outputs/target_slice/m57_05_sixth_slice_repaired_recipe_validation_report.json/md,
+   validator_passed_count=1, consistency_status=consistent_validator_passed,
+   promotion_allowed_count=1, and ready_for_m57_06=true
+-> M57-06 runtime fixture promotion gate is complete; it exports
+   outputs/target_slice/m57_06_sixth_slice_runtime_fixture_promotion_gate.json/md
+   and outputs/target_slice/runtime_fixtures/m56_recipe_001_shadow_paladin_m57_06.json,
+   promotion_allowed=true, passed_check_count=7, failed_check_count=0, with
+   saved deck/UI/bot/G Zone/Stride/GameState boundaries still disabled
+-> M57-closeout is complete; it exports
+   outputs/target_slice/m57_closeout_sixth_slice_fixture.json/md with
+   m57_complete=true, sixth_runtime_fixture_available=true, and next_queue_id=M58
+-> M58-01 schema validation is complete; it exports
+   outputs/target_slice/m58_01_sixth_fixture_schema_validation.json/md with
+   schema_valid=true, blocking_issue_count=0, and ready_for_m58_02=true
+-> M58-02 deck text export is complete; it exports
+   outputs/target_slice/m58_02_sixth_fixture_deck_text_export.txt/json/md with
+   main_deck_count=50, exported_card_line_count=15, and ready_for_m58_03=true
+-> M58-03 headless load smoke is complete; it exports deck code, load-smoke,
+   Unity result, Unity replay, and Unity log artifacts with offline_load_ready=true,
+   unity_headless_smoke_passed=true, and ready_for_m58_04=true
+-> M58-04 six-fixture scale decision is complete; it exports
+   outputs/target_slice/m58_04_six_fixture_scale_decision.json/md with
+   passed_fixture_count=6, failed_fixture_count=0, candidate_count=5, and
+   ready_for_m59=true
 -> M59-01 tooling/spec/tests are scaffolded; targeted M59-01 tests 7/7 and full
    Python tests 1221/1221 pass using an in-memory M58-04 scale decision.
    Seventh target selection is ready in scaffold, while real report remains
@@ -1217,18 +1220,14 @@ Windows-first program completion
    acceptance, lists the accepted-repair command template, and confirms the
    next real artifact still requires explicit non-empty acceptance_text.
    Verification passed: targeted acceptance-request tests 6/6.
--> M57-03-preflight acceptance guard is complete; default output has
-   preflight_passed=false, blocking_issue_count=0, input_issue_count=1
-   missing_acceptance_text, and no accepted artifact is written.
-   Verification passed: combined M57-03 preflight/request/accepted tests 19/19.
--> M57-03-acceptance-support-closeout is complete; it records
-   support_closeout_complete=true, default_preflight_requires_input=true,
-   human_acceptance_recorded=false, real_m57_03_artifact_created=false, and
-   ready_for_user_acceptance=true without creating the real M57-03 artifact.
-   Verification passed: combined M57-03 support/preflight/request/accepted
-   tests 25/25.
-   Current next target: M57-03 explicit human acceptance text before M57-04,
-   M57-06, or M58 materialization
+-> M57-03 through M58-04 real materialization is complete after explicit
+   acceptance_text. M57-03 preflight now passes with input_issue_count=0,
+   M57-03 accepted artifact exists, M57-04 records the main-deck-only G Zone
+   boundary, M57-05 validates the repaired deck, M57-06 creates the offline
+   Shadow Paladin fixture, M57-closeout routes to M58, and M58-04 opens M59-01.
+   Verification passed: targeted M57/M58 chain tests 81/81 and full Python
+   unittest discovery 1891/1891.
+   Current next target: M59-01 seventh target slice selection
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```

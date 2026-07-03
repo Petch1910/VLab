@@ -1,0 +1,418 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.5/staging' branch; Version is '6000.5.0f1 (88b47c5e7076) revision 8959100'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Channel LicenseClient-Phet doesn't exist
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16334 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-07-03T09:48:35Z
+[Licensing::Module] Successfully launched the LicensingClient (PId: 25604)
+
+COMMAND LINE ARGUMENTS:
+C:\Users\Phet\AppData\Local\Unity\Hub\Editor\6000.5.0f1\Editor\Unity.exe
+-batchmode
+-nographics
+-quit
+-projectPath
+C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim
+-executeMethod
+VanguardThaiSim.EditorTools.HeadlessSimulationCliRunner.RunFromCommandLine
+-headlessSeed
+5803
+-headlessRuleset
+Premium
+-headlessDeckCode
+VGTH1.H4sIAAAAAAAC_42S30_DIBDH_xXCkyZthDIq3aNR55MxsQ_GZSFYaEe0dCKd02X_u1d_PDhdyhNw9_ne9-7CFmtTPUqr8RS3XBCmjSlOuSa1EUX-ILSqcyZEbZjACXaqNQDO0PXFXXlyj26XSnev6EY9KW0durSb0HuDjlqeS28quzKSEHoMyrrzrQqgbaQzmyDfIVYpr-VK_divlWv6IRSWv5Jr419s54DIOIVMqyw85tsv5FM6S89KUqSE5OUVEM-9csGGNzyd7JL_OL7PsQOciONyNu5LCdTLIrgM6sVyEfPSSUqoGOPK86E_su9LD3BsbC_fHI_0LeI4SuJ8KYubg_7d3yLB3mr45XO4NcOx-wDi7sXzJAMAAA
+-headlessResultPath
+C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\outputs\target_slice\m58_03_sixth_fixture_unity_result.json
+-headlessReplayPath
+C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\outputs\target_slice\m58_03_sixth_fixture_unity_replay.json
+-logFile
+C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\outputs\target_slice\m58_03_sixth_fixture_unity.log
+Successfully changed project path to: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim
+C:/Users/Phet/Documents/Codex/2026-06-19/d-cardfight-area-full-version-4/client/unity/VanguardThaiSim
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=0"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.Player connection [9940]  Target information:
+
+Player connection [9940]  * "[IP] 192.168.1.112 [Port] 55504 [Flags] 2 [Guid] 3245469911 [EditorId] 3245469911 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-VK2ABGD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor"
+
+Player connection [9940]  * "[IP] 192.168.32.1 [Port] 55504 [Flags] 2 [Guid] 3245469911 [EditorId] 3245469911 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-VK2ABGD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor"
+
+Player connection [9940]  * "[IP] 192.168.136.1 [Port] 55504 [Flags] 2 [Guid] 3245469911 [EditorId] 3245469911 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-VK2ABGD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor"
+
+Player connection [9940] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [9940] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-8804" after 0.3 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Phet" at "2026-07-03T09:48:39.9181949Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 25604, path: "C:/Users/Phet/AppData/Local/Unity/Hub/Editor/6000.5.0f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              12f981bb890742a8bcc1d14c10b80911
+  Correlation Id:          c75e0f7a18d12d6a9812880d9fe03bb2
+  External correlation Id: 4402290240545317005
+  Machine Id:              uHp0K4QkIX679Md2/WMdS844j9o=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Phet" (connect: 4.37s, validation: 0.35s, handshake: 0.02s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Phet-notifications" at "2026-07-03T09:48:40.2870284Z"
+[Licensing::Module] Connected to LicensingClient (PId: 25604, launch time: 0.06, total connection time: 4.74s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 18967348759529-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 4.84s
+[Licensing::Module] Licensing is initialized (took 3.72s).
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 6.33 ms, found 1 plugins.
+Initialize engine version: 6000.5.0f1 (88b47c5e7076)
+[Subsystems] Discovering subsystems at path C:/Users/Phet/AppData/Local/Unity/Hub/Editor/6000.5.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Phet/Documents/Codex/2026-06-19/d-cardfight-area-full-version-4/client/unity/VanguardThaiSim/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = 'C:/Users/Phet/AppData/Local/Unity/Hub/Editor/6000.5.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/Phet/AppData/Local/Unity/Hub/Editor/6000.5.0f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Users/Phet/AppData/Local/Unity/Hub/Editor/6000.5.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Users/Phet/AppData/Local/Unity/Hub/Editor/6000.5.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56804
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/Phet/AppData/Local/Unity/Hub/Editor/6000.5.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: C:/Users/Phet/AppData/Local/Unity/Hub/Editor/6000.5.0f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.008790 seconds.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.666 seconds
+Domain Reload Profiling: 1533ms
+	BeginReloadAssembly (228ms)
+		CreateAndSetChildDomain (11ms)
+	RebuildCommonClasses (8ms)
+	RebuildNativeTypeToScriptingClass (34ms)
+	initialDomainReloadingComplete (116ms)
+	LoadAllAssembliesAndSetupDomain (476ms)
+		LoadAssemblies (213ms)
+		AnalyzeDomain (344ms)
+			TypeCache.Refresh (341ms)
+				TypeCache.ScanAssembly (320ms)
+	FinalizeReload (670ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			BeforeProcessingInitializeOnLoad (149ms)
+			ProcessInitializeOnLoadAttributes (153ms)
+			ProcessInitializeOnLoadMethodAttributes (224ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 62 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.collab-proxy@2.12.4 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.collab-proxy@0b1559bcd34e)
+    com.unity.ide.rider@3.0.38 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.ide.rider@1f60b3138684)
+    com.unity.ide.visualstudio@2.0.26 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.inputsystem@1.19.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.inputsystem@21a28c3a6c83)
+    com.unity.timeline@1.8.12 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.timeline@8cd8509afae5)
+    com.unity.visualscripting@1.9.11 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.visualscripting@8bed5ad90189)
+    com.unity.2d.animation@15.1.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.2d.animation@6d5a363ae647)
+    com.unity.2d.pixel-perfect@6.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.2d.pixel-perfect@a860cb24a0cc)
+    com.unity.2d.psdimporter@14.0.3 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.2d.psdimporter@5d82044f9e43)
+    com.unity.2d.spriteshape@15.0.3 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.2d.spriteshape@fcb7ec61a58b)
+    com.unity.2d.tilemap.extras@8.0.3 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.2d.tilemap.extras@a80140457adc)
+    com.unity.2d.aseprite@5.0.3 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.2d.aseprite@d13865913efa)
+    com.unity.2d.tooling@3.0.1 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.2d.tooling@6f06ffb033c0)
+    com.unity.2d.common@14.0.1 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.2d.common@73badf92ba8b)
+    com.unity.burst@1.8.29 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.burst@6bb9aca3ef38)
+    com.unity.nuget.mono-cecil@1.11.6 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.test-framework.performance@3.5.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.test-framework.performance@8b56083ec0f0)
+  Built-in packages:
+    com.unity.feature.2d@2.0.2 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.feature.2d@11724ae7e5b5)
+    com.unity.multiplayer.center@1.0.1 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.multiplayer.center@b860850997d0)
+    com.unity.test-framework@1.7.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.test-framework@f3e6c9a02477)
+    com.unity.ugui@2.5.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.ugui@4f9b15fd1386)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.1.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.ext.nunit@44f7d31723bd)
+    com.unity.2d.sprite@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.2d.sprite@053a968eab56)
+    com.unity.2d.tilemap@1.0.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.2d.tilemap@be0bacb99591)
+    com.unity.mathematics@1.4.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.mathematics@981956d94fb6)
+    com.unity.collections@6.5.0 (location: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\client\unity\VanguardThaiSim\Library\PackageCache\com.unity.collections@a43cabe808ca)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.03 seconds
+Starting: C:\Users\Phet\AppData\Local\Unity\Hub\Editor\6000.5.0f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/Phet/Documents/Codex/2026-06-19/d-cardfight-area-full-version-4/client/unity/VanguardThaiSim
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 0s833ms
+[710/900    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+*** Tundra build success (0.73 seconds), 1 items updated, 900 evaluated
+AssetDatabase: script compilation time: 4.650906s
+Begin MonoManager ReloadAssembly
+Refreshing native plugins compatible for Editor in 12.59 ms, found 6 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.51 ms, found 6 plugins.
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.761 seconds
+Domain Reload Profiling: 6437ms
+	BeginReloadAssembly (487ms)
+		DisableScriptedObjects (44ms)
+		CreateAndSetChildDomain (169ms)
+	RebuildCommonClasses (14ms)
+	RebuildNativeTypeToScriptingClass (32ms)
+	initialDomainReloadingComplete (136ms)
+	LoadAllAssembliesAndSetupDomain (1005ms)
+		LoadAssemblies (590ms)
+		AnalyzeDomain (387ms)
+			TypeCache.Refresh (262ms)
+				TypeCache.ScanAssembly (242ms)
+			BuildScriptInfoCaches (118ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (4763ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			BeforeProcessingInitializeOnLoad (165ms)
+			ProcessInitializeOnLoadAttributes (3950ms)
+			ProcessInitializeOnLoadMethodAttributes (302ms)
+			AfterProcessingInitializeOnLoad (13ms)
+		AwakeInstancesAfterBackupRestoration (45ms)
+Starting new worker id: 0 with log in C:/Users/Phet/Documents/Codex/2026-06-19/d-cardfight-area-full-version-4/client/unity/VanguardThaiSim/Logs/AssetImportWorkerHW0.log
+
+Asset Pipeline Refresh (id=f80646d56971423488895462a385524a): Total: 12.674 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=6034 ms
+		Asset DB Callback time: managed=93 ms, native=39 ms
+		Scripting: domain reloads=1, domain reload time=1769 ms, compile time=4655 ms, other=81 ms
+		Project Asset Count: scripts=1117, non-scripts=1899
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 42.173ms
+	ApplyChangesToAssetFolders: 1.082ms
+	Scan: 537.551ms
+	Collect global state as custom dependencies: 6.427ms
+	CategorizeScriptCompilationAssets: 111.090ms
+	ProcessAssetsWithTransientArtifactChanges: 110.888ms
+	CategorizeAssets: 37.047ms
+	CompileScripts: 4655.417ms
+	ImportOutOfDateAssets: 4938.080ms (4799.307ms without children)
+		UnloadImportedAssets: 0.169ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.630ms
+		ImportSchedulerStart: 137.971ms
+	PostProcessAllAssets: 93.448ms
+		MonoPostProcessAllAssets: 93.273ms
+			SyncVS.PostprocessSyncProject 31.836ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 20.258ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 2.247ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.620ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.603ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.461ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.385ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.369ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.353ms
+	UnloadStreamsBegin: 2.277ms
+	PersistCurrentRevisions: 0.094ms
+	GenerateScriptTypeHashes: 3.129ms
+	GenerateScriptTypeSerializationHashes: 5.745ms
+	Untracked: 2128.469ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 26.752ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-VanguardThaiSim
+GetVirtualKey: Could not map char: z (122) to any virtual key
+GetVirtualKey: Could not map char: y (121) to any virtual key
+GetVirtualKey: Could not map char: x (120) to any virtual key
+GetVirtualKey: Could not map char: c (99) to any virtual key
+GetVirtualKey: Could not map char: v (118) to any virtual key
+GetVirtualKey: Could not map char: V (86) to any virtual key
+GetVirtualKey: Could not map char: d (100) to any virtual key
+GetVirtualKey: Could not map char: f (102) to any virtual key
+GetVirtualKey: Could not map char: f (102) to any virtual key
+GetVirtualKey: Could not map char: a (97) to any virtual key
+GetVirtualKey: Could not map char: d (100) to any virtual key
+GetVirtualKey: Could not map char: c (99) to any virtual key
+GetVirtualKey: Could not map char: r (114) to any virtual key
+GetVirtualKey: Could not map char: i (105) to any virtual key
+GetVirtualKey: Could not map char: l (108) to any virtual key
+GetVirtualKey: Could not map char: f (102) to any virtual key
+GetVirtualKey: Could not map char: k (107) to any virtual key
+GetVirtualKey: Could not map char: p (112) to any virtual key
+GetVirtualKey: Could not map char: p (112) to any virtual key
+GetVirtualKey: Could not map char: p (112) to any virtual key
+GetVirtualKey: Could not map char: c (99) to any virtual key
+GetVirtualKey: Could not map char: r (114) to any virtual key
+GetVirtualKey: Could not map char: P (80) to any virtual key
+GetVirtualKey: Could not map char: n (110) to any virtual key
+GetVirtualKey: Could not map char: n (110) to any virtual key
+GetVirtualKey: Could not map char: g (103) to any virtual key
+GetVirtualKey: Could not map char: = (61) to any virtual key
+GetVirtualKey: Could not map char: f (102) to any virtual key
+GetVirtualKey: Could not map char: f (102) to any virtual key
+GetVirtualKey: Could not map char: a (97) to any virtual key
+GetVirtualKey: Could not map char: a (97) to any virtual key
+GetVirtualKey: Could not map char: n (110) to any virtual key
+GetVirtualKey: Could not map char: o (111) to any virtual key
+GetVirtualKey: Could not map char: s (115) to any virtual key
+GetVirtualKey: Could not map char: s (115) to any virtual key
+GetVirtualKey: Could not map char: b (98) to any virtual key
+GetVirtualKey: Could not map char: b (98) to any virtual key
+GetVirtualKey: Could not map char: c (99) to any virtual key
+GetVirtualKey: Could not map char: u (117) to any virtual key
+Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5699 unused Assets / (3.4 MB). Loaded Objects now: 6308.
+Memory consumption went from 344.8 MB to 341.4 MB.
+Total: 20.174700 ms (FindLiveObjects: 1.072700 ms CreateObjectMapping: 2.673900 ms MarkObjects: 11.760000 ms  DeleteObjects: 4.658400 ms)
+
+Worker ready: AssetImportWorkerHW0 0
+Headless simulation passed. Result: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\outputs\target_slice\m58_03_sixth_fixture_unity_result.json Replay: C:\Users\Phet\Documents\Codex\2026-06-19\d-cardfight-area-full-version-4\outputs\target_slice\m58_03_sixth_fixture_unity_replay.json
+{
+    "accepted": true,
+    "failure_reason": "",
+    "seed": 5803,
+    "ruleset": "Premium",
+    "deck_source": "deck_code",
+    "result_path": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m58_03_sixth_fixture_unity_result.json",
+    "replay_path": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m58_03_sixth_fixture_unity_replay.json",
+    "actions_executed": 4,
+    "event_count": 4,
+    "final_phase": "Main",
+    "player_count": 2,
+    "player0_deck_count": 44,
+    "player0_hand_count": 5,
+    "player0_rear_guard_count": 1,
+    "player0_protect_markers": 1,
+    "action_types": [
+        "Draw",
+        "MoveCard",
+        "SetPhase",
+        "AddGiftMarker"
+    ]
+}
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VanguardThaiSim.EditorTools.HeadlessSimulationCliRunner:RunFromCommandLine () (at Assets/Editor/Vanguard/Headless/HeadlessSimulationCliRunner.cs:58)
+
+(Filename: Assets/Editor/Vanguard/Headless/HeadlessSimulationCliRunner.cs Line: 58)
+
+MonoPathRemapper: Attempts to remap: 23519; Successful remaps: 2
+Serialized file version minimum: 23, current 23
+Curl error 42: Callback aborted
+Request timed out while processing request "https://public-cdn.cloud.unity3d.com/config/production", HTTP error code 0
+.[UnityConnect] Request timed out.
+Killing ADB server in 2.3651761 seconds.
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-Phet-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-Phet channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+[Package Manager] Server process was shutdown
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1783072144923,"processId":8804,"allocatedMemory":16571283,"memoryLabels":[{"Default":209388},{"Permanent":15516},{"NewDelete":65785},{"Thread":4197600},{"Manager":32517},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":853434},{"Material":24},{"GfxDevice":55328},{"Animation":952},{"Audio":1544},{"FreeType":8},{"FontEngine":736},{"Physics":2146},{"Physics2D":16},{"Serialization":1016},{"Input":42840},{"JobScheduler":256},{"TextLib":216},{"Mono":48},{"ScriptingNativeRuntime":1540204},{"BaseObject":1621960},{"Resource":1208},{"Renderer":3080},{"Transform":4685},{"File":1032},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":12318},{"StaticString":3808},{"Utility":2673238},{"Curl":1712},{"PoolAlloc":2216},{"AI":80},{"TypeTree":18701},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"Director":8296},{"CloudService":8248},{"WebRequest":845},{"VR":47114},{"SceneManager":608},{"Video":64},{"LazyScriptCache":32},{"Camera":17},{"Secure":2377},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":552},{"Hierarchy":1176},{"UIElements":72},{"CoreStats":13688},{"Identifiers":13536},{"Gui":128},{"EditorUtility":99837},{"VersionControl":8},{"Undo":931},{"AssetDatabase":4584148},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":38868},{"Upm":1912},{"UpmDiagnostics":8},{"AssetCompliance":64},{"DrivenProperties":72},{"LocalIPC":210},{"ProfilerEditor":9746},{"CoreBusinessMetrics":2898},{"Windowing":456},{"Licensing":1232},{"AssetReference":32},{"IPCStream":32}]}
+~StackAllocator(ALLOC_TEMP_MAIN) m_LastAlloc not NULL. Did you forget to call FreeAllStackAllocations()? To get more information, run app with -diag-temp-memory-leak-validation cmd line argument

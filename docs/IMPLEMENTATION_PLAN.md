@@ -93,9 +93,9 @@ Windows-first program completion
 -> latest target closed: M57-03-prerequisite sixth-slice human acceptance request packet
 -> latest target closed: M57-03-preflight sixth-slice human acceptance preflight
 -> latest target closed: M57-03-acceptance-support-closeout sixth-slice human acceptance support handoff
--> current next target: M57-03 explicit sixth-slice human repair acceptance
-   using non-empty acceptance_text before M57-04, M57-06 runtime fixture, and
-   M58 artifact materialization
+-> latest target closed: M57-03 through M57-closeout sixth fixture materialization
+-> latest target closed: M58-01 through M58-04 sixth fixture consumption and scale gate
+-> current next target: M59-01 seventh target slice selection
 ```
 
 ## Completed Phases (M0-M19)
@@ -2337,7 +2337,7 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     M57-02 request/selected/preflight/digest/batch/closeout targeted tests pass
     `42/42`; full Python unittest discovery passes `1873/1873`. Real M57-02
     selected-artifact targeted tests pass `9/9`.
-- `M57-03`: Sixth-slice human-accepted repair artifact. **Blocked by explicit acceptance text; scaffold ready.**
+- `M57-03`: Sixth-slice human-accepted repair artifact. **Done.**
   - Record explicit acceptance after M57-02 exists, then build an in-memory
     repaired preview.
   - Apply manual substitutions first, detect source grade-package conflicts,
@@ -2373,7 +2373,12 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     request targeted tests pass `6/6`; combined M57-03 preflight/request/accepted
     targeted tests pass `19/19`; combined M57-03
     support/preflight/request/accepted targeted tests pass `25/25`.
-- `M57-04`: Sixth-slice G Zone / Stride decision artifact. **Blocked by M57-03 output; scaffold ready.**
+  - Real artifact status: complete. The accepted repair artifact exports
+    `outputs/target_slice/m57_03_sixth_slice_human_accepted_repair_artifact.*`,
+    records `human_acceptance_recorded=true`, recomputes the grade repair to
+    `17/14/11/8`, keeps runtime promotion disabled, and reports
+    `ready_for_m57_04=true`.
+- `M57-04`: Sixth-slice G Zone / Stride decision artifact. **Done.**
   - Record an explicit G Zone / Stride boundary decision after M57-03 exists.
   - Support `main_deck_only_review_no_runtime_promotion` and
     `defer_until_g_zone_runtime_exists`.
@@ -2384,7 +2389,11 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     pass `16/16`; full Python unittest discovery passes `1155/1155`. The real
     `outputs/target_slice/m57_04_*` artifact is not generated until M57-03
     exists and an explicit G Zone / Stride option is provided.
-- `M57-05`: Sixth-slice repaired recipe validation rerun. **Blocked by M57-04 output; scaffold ready.**
+  - Real artifact status: complete. The artifact exports
+    `outputs/target_slice/m57_04_sixth_slice_g_zone_stride_decision_artifact.*`
+    with `selected_option_id=main_deck_only_review_no_runtime_promotion` and
+    `ready_for_m57_05=true`.
+- `M57-05`: Sixth-slice repaired recipe validation rerun. **Done.**
   - Validate the repaired main-deck preview from M57-03 after the explicit
     M57-04 boundary decision.
   - Reuse sixth-slice validator and combo consistency checks.
@@ -2395,7 +2404,12 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     pass `18/18`; full Python unittest discovery passes `1164/1164`. The real
     `outputs/target_slice/m57_05_*` report is not generated until M57-03 and
     M57-04 outputs exist.
-- `M57-06`: Sixth-slice runtime fixture promotion gate. **Blocked by M57-05 output; scaffold ready.**
+  - Real artifact status: complete. The report exports
+    `outputs/target_slice/m57_05_sixth_slice_repaired_recipe_validation_report.*`,
+    reports `validator_passed_count=1`,
+    `consistency_status=consistent_validator_passed`,
+    `promotion_allowed_count=1`, and `ready_for_m57_06=true`.
+- `M57-06`: Sixth-slice runtime fixture promotion gate. **Done.**
   - Promote only an offline runtime/test fixture after M57-03 accepted rows and
     M57-05 validation/consistency both pass.
   - Require the `main_deck_only_review_no_runtime_promotion` G Zone / Stride
@@ -2407,7 +2421,12 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     `9/9`; full Python unittest discovery passes `1173/1173`. The real
     `outputs/target_slice/m57_06_*` gate report and fixture are not generated
     until M57-03 and M57-05 outputs exist.
-- `M57-closeout`: Sixth-slice fixture closeout. **Blocked by M57-06 output; scaffold ready.**
+  - Real artifact status: complete. The gate exports
+    `outputs/target_slice/m57_06_sixth_slice_runtime_fixture_promotion_gate.*`
+    and `outputs/target_slice/runtime_fixtures/m56_recipe_001_shadow_paladin_m57_06.json`
+    with `promotion_allowed=true`, `passed_check_count=7`, and
+    `failed_check_count=0`.
+- `M57-closeout`: Sixth-slice fixture closeout. **Done.**
   - Close the sixth-slice fixture gate and select the next queue without
     mutating fixture artifacts, runtime deck libraries, saved decks, UI deck
     lists, bot/playbooks, G Zone/Stride runtime, or `GameState`.
@@ -2418,10 +2437,14 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     pass `6/6`; full Python unittest discovery passes `1179/1179`. The real
     `outputs/target_slice/m57_closeout_*` report is not generated until M57-06
     output exists.
+  - Real artifact status: complete. The closeout exports
+    `outputs/target_slice/m57_closeout_sixth_slice_fixture.*` with
+    `m57_complete=true`, `sixth_runtime_fixture_available=true`, and
+    `next_queue_id=M58`.
 
 ### M58: Sixth Fixture Consumption and Six-Fixture Scale Gate
 
-- `M58-01`: Sixth fixture schema validator. **Blocked by M57-06 output; scaffold ready.**
+- `M58-01`: Sixth fixture schema validator. **Done.**
   - Validate the Shadow Paladin runtime fixture independently from the M57
     generator before any deck text, headless smoke, UI, or bot consumption.
   - Scaffold status: spec/tool/tests are present. Targeted M58-01 tests pass
@@ -2429,7 +2452,10 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     in-memory fixture built from the M57-02 through M57-06 chain. The real
     `outputs/target_slice/m58_01_*` validation report is not generated until
     the M57-06 runtime fixture file exists.
-- `M58-02`: Sixth fixture deck text exporter. **Blocked by M58-01 real output; scaffold ready.**
+  - Real artifact status: complete. The report exports
+    `outputs/target_slice/m58_01_sixth_fixture_schema_validation.*` with
+    `schema_valid=true`, `blocking_issue_count=0`, and `ready_for_m58_02=true`.
+- `M58-02`: Sixth fixture deck text exporter. **Done.**
   - Export the Shadow Paladin fixture as reviewable count-line deck text
     without adding it to saved decks.
   - Scaffold status: spec/tool/tests are present. Targeted M58-02 tests pass
@@ -2438,7 +2464,11 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     `outputs/target_slice/m58_02_*` deck text/report artifacts are not
     generated until the M57-06 runtime fixture file and M58-01 validation
     report file exist.
-- `M58-03`: Sixth fixture headless load smoke. **Blocked by M58-02 real output; scaffold ready.**
+  - Real artifact status: complete. The exporter writes
+    `outputs/target_slice/m58_02_sixth_fixture_deck_text_export.txt/json/md`
+    with `main_deck_count=50`, `exported_card_line_count=15`, and
+    `ready_for_m58_03=true`.
+- `M58-03`: Sixth fixture headless load smoke. **Done.**
   - Load the Shadow Paladin fixture through offline/headless paths without UI,
     bot, G Zone, or Stride mutation.
   - Scaffold status: spec/tool/tests are present. Targeted M58-03 tests pass
@@ -2446,7 +2476,14 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     in-memory M57-06/M58-01/M58-02 artifacts. Offline deck-code smoke is ready
     in scaffold, but real `outputs/target_slice/m58_03_*` artifacts and Unity
     headless evidence are not generated until upstream real files exist.
-- `M58-04`: Six-fixture scale decision. **Blocked by M58-03 real Unity evidence; scaffold ready.**
+  - Real artifact status: complete. The smoke exports
+    `outputs/target_slice/m58_03_sixth_fixture_deck_code.txt`,
+    `outputs/target_slice/m58_03_sixth_fixture_load_smoke.*`,
+    `outputs/target_slice/m58_03_sixth_fixture_unity_result.json`, and
+    `outputs/target_slice/m58_03_sixth_fixture_unity_replay.json`, with
+    `offline_load_ready=true`, `unity_headless_smoke_passed=true`, and
+    `ready_for_m58_04=true`.
+- `M58-04`: Six-fixture scale decision. **Done.**
   - Review all six fixture evidence before selecting any further slice.
   - Scaffold status: spec/tool/tests are present. Targeted M58-04 tests pass
     `8/8`; full Python unittest discovery passes `1214/1214`. Tests use the
@@ -2454,18 +2491,23 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     accepted Unity evidence. The real `outputs/target_slice/m58_04_*` scale
     decision artifacts are not generated until real M58-03 smoke and Unity
     evidence files exist.
+  - Real artifact status: complete. The decision exports
+    `outputs/target_slice/m58_04_six_fixture_scale_decision.*` with
+    `passed_fixture_count=6`, `failed_fixture_count=0`, `candidate_count=5`,
+    `seventh_slice_offline_pipeline_allowed=true`, and `ready_for_m59=true`.
+  - Materialization verification: targeted M57/M58 chain tests pass `81/81`;
+    full Python unittest discovery passes `1891/1891`.
 
 ### M59: Seventh Offline Slice Selection
 
-- `M59-01`: Seventh target slice selection. **Blocked by M58-04 real output; scaffold ready.**
+- `M59-01`: Seventh target slice selection. **Next target; scaffold ready.**
   - Select the next offline target from the M58-04 candidate queue only after
     the six-fixture scale gate allows `ready_for_m59`.
   - Scaffold status: spec/tool/tests are present. Targeted M59-01 tests pass
     `7/7`; full Python unittest discovery passes `1221/1221`. Tests use an
     in-memory M58-04 scale decision built from the first five real smoke reports
-    plus in-memory sixth fixture smoke. The real
-    `outputs/target_slice/m59_01_*` selection artifacts are not generated until
-    the real M58-04 scale decision output exists.
+    plus in-memory sixth fixture smoke. The real M58-04 scale decision output
+    now exists, so M59-01 is ready for real artifact generation.
 - `M59-02`: Seventh-slice fixture/format readiness. **Blocked by M59-01 real output; scaffold ready.**
   - Start only after real or scaffold M59-01 selection evidence exists for the
     next offline target.
@@ -3441,12 +3483,11 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
   - Scaffold status: spec/tool/tests are present. Targeted M72-03 tests pass
     (`6/6`). The real gate report was generated at
     `outputs/target_slice/m72_03_sixth_fixture_primary_artifact_materialization_gate.json`.
-  - Evidence: the gate proves the M58 chain can build in memory when a fixture
-    and Unity headless evidence are supplied, but the current real worktree has
-    no `outputs/target_slice/runtime_fixtures/m56_recipe_001_shadow_paladin_m57_06.json`.
-    It therefore records `m57_06_runtime_fixture_missing`, keeps ready steps at
-    `0/4`, writes no M58 artifacts, and routes back to `M57-02` for explicit
-    sixth-slice human selection rather than faking the M57 human-gated chain.
+  - Historical evidence: this gate originally proved the M58 chain could build
+    in memory while the real worktree lacked
+    `outputs/target_slice/runtime_fixtures/m56_recipe_001_shadow_paladin_m57_06.json`.
+    That blocker is now superseded by the real M57-06 fixture and real M58-01
+    through M58-04 artifacts generated after explicit M57-03 acceptance.
 
 ## Post-M28 Backlog (not in active queue)
 

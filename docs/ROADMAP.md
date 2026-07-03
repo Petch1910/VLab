@@ -408,42 +408,20 @@ Active order:
   `acceptance_text`, writes no accepted artifact, and combined M57-03
   preflight/request/accepted tests pass `19/19`.
   `M57-03-acceptance-support-closeout` is complete and exports JSON/MD at
-  `outputs/target_slice/m57_03_sixth_slice_human_acceptance_support_closeout.*`;
-  it records no acceptance, confirms no real M57-03 artifact exists, and routes
-  only to `M57-03-user-acceptance`, with combined M57-03 support tests
-  `25/25`.
-  M57-03
-  spec/tool/tests are also scaffolded and verified (`7/7` targeted,
-  `1146/1146` full Python), but its real accepted artifact remains gated on
-  M57-02 output and explicit acceptance text. M57-04 spec/tool/tests are
-  scaffolded and verified (`16/16` targeted across M57-03/M57-04, `1155/1155`
-  full Python), but its real G Zone / Stride decision artifact remains gated on
-  M57-03 output and explicit option selection. M57-05 spec/tool/tests are
-  scaffolded and verified (`18/18` targeted across M57-04/M57-05, `1164/1164`
-  full Python), but its real repaired validation report remains gated on M57-03
-  and M57-04 outputs. M57-06 spec/tool/tests are scaffolded and verified
-  (`9/9` targeted, `1173/1173` full Python); it can create only an offline
-  runtime/test fixture after M57-03 accepted rows and M57-05 validation exist,
-  while saved deck/UI, bot/playbook, G Zone/Stride runtime, and `GameState`
-  mutation remain disabled. M57-closeout spec/tool/tests are scaffolded and
-  verified (`6/6` targeted, `1179/1179` full Python); it routes a completed
-  sixth fixture to M58 consumption/scale work, but the real closeout output
-  remains gated on M57-06 output. Current next target is `M57-03` explicit
-  human acceptance text before M57-04, M57-06, and M58 real materialization.
-  M58-01
-  spec/tool/tests are scaffolded and verified (`11/11`
-  targeted, `1190/1190` full Python) against an in-memory M57-06 fixture; the
-  real report remains gated on the real M57-06 fixture file. M58-02
-  spec/tool/tests are scaffolded and verified (`7/7` targeted, `1197/1197`
-  full Python) against an in-memory fixture plus M58-01 validation report; the
-  real deck text/report artifacts remain gated on real M57-06 and M58-01
-  files. M58-03 spec/tool/tests are scaffolded and verified (`9/9` targeted,
-  `1206/1206` full Python) against in-memory M57-06/M58-01/M58-02 artifacts;
-  offline deck-code smoke is ready in scaffold, while real outputs and Unity
-  headless evidence remain gated on real upstream files. M58-04 spec/tool/tests
-  are scaffolded and verified (`8/8` targeted, `1214/1214` full Python) using
-  the first five real smoke reports plus in-memory sixth fixture smoke; the
-  real scale decision remains gated on real M58-03 Unity evidence. M59-01
+  `outputs/target_slice/m57_03_sixth_slice_human_acceptance_support_closeout.*`.
+  After explicit `acceptance_text`, the real M57-03 accepted artifact was
+  created, M57-04 recorded
+  `main_deck_only_review_no_runtime_promotion`, M57-05 passed repaired
+  validation and combo consistency, M57-06 created the offline Shadow Paladin
+  fixture at
+  `outputs/target_slice/runtime_fixtures/m56_recipe_001_shadow_paladin_m57_06.json`,
+  and M57-closeout routed to M58. M58-01 schema validation passed, M58-02
+  exported reviewable deck text, M58-03 passed offline and Unity headless
+  deck-code smoke, and M58-04 produced a six-fixture scale decision with
+  `passed_fixture_count=6`, `failed_fixture_count=0`, `candidate_count=5`, and
+  `ready_for_m59=true`. Verification passed: targeted M57/M58 chain tests
+  `81/81` and full Python discovery `1891/1891`. Current next target is
+  `M59-01` seventh target slice selection. M59-01
   spec/tool/tests are scaffolded and verified (`7/7` targeted, `1221/1221`
   full Python) using an in-memory M58-04 scale decision; the real seventh
   target selection remains gated on real M58-04 output. M59-02 spec/tool/tests
@@ -951,11 +929,11 @@ Active order:
   materialization, tenth-slice selection, runtime/UI/bot/live parsing/G
   Zone/Stride/Aqua runtime/GameState mutation disabled. M72-03 spec/tool/tests
   are scaffolded and targeted tests pass (`6/6`). The real M72-03 gate report
-  confirms the sixth M58 chain is blocked by the missing real M57-06 runtime
-  fixture, writes no M58 artifacts, keeps ready steps at `0/4`, preserves all
-  runtime/UI/bot/G Zone/Stride/tenth-slice/GameState boundaries, and routes
-  back to the explicit `M57-02` human selection prerequisite, which has now
-  been satisfied by the real selected artifact. `M57-02-preflight`
+  originally confirmed the sixth M58 chain was blocked by the missing real
+  M57-06 runtime fixture. That blocker is now superseded: explicit M57-03
+  acceptance produced the M57-06 fixture, M58-01 through M58-04 real artifacts
+  exist, and M58-04 routes to M59-01 while preserving runtime/UI/bot/G
+  Zone/Stride/tenth-slice/GameState boundaries. `M57-02-preflight`
   is available as the read-only guard before running the real selected artifact
   command, and `M57-02-candidate-digest` is available as the read-only
   comparison matrix for the 12 ready candidates. `M57-02-batch-preflight-matrix`
@@ -967,7 +945,7 @@ Active order:
   artifact still requires explicit non-empty acceptance text. `M57-03-preflight`
   now provides a read-only guard to dry-run proposed acceptance text before the
   real accepted artifact command. `M57-03-acceptance-support-closeout` now
-  provides the consolidated no-acceptance handoff to `M57-03-user-acceptance`.
+  remains as historical handoff evidence; the real accepted artifact exists.
 
 Deferred until explicit user instruction:
 

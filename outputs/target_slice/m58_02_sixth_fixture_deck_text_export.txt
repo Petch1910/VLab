@@ -1,0 +1,50 @@
+# Vanguard Thai Sim Deck List
+# M58-02 review-only export from an offline runtime fixture.
+# FixtureId: runtime_fixture_m56_recipe_001_shadow_paladin_m57_06
+# RecipeId: m56_recipe_001
+# Slice: Sixth Offline Slice
+# Group: ชาโดว์ พาลาดิน
+# GZoneBoundary: main_deck_only_review_no_runtime_promotion
+# Scope: review_only_offline_fixture
+Name: G NEXT/Z Shadow Paladin Fixture (m56_recipe_001)
+Format: g_next_z
+PackId: vanguard_th
+PackVersion: 251
+PackDefinitionHash: e1d568ec103786c3a9a782e6a011e6307f612be28ba6e6b677c281f367cdd7c4
+
+[Main]
+# Card: แดรกวิซาร์ด, โมลเฟสซ่า | G2 | Normal Unit | G-BT09
+4 G-BT09-006TH
+# Card: รีเวนเจอร์แห่งการจู่โจมอันเกรี้ยวกราด, ดีแลน | G2 | Normal Unit | G-BT09
+3 G-BT09-056TH
+# Card: รีเวนเจอร์, ไวต์กอร์・ดราก้อน | G1 | Normal Unit | G-BT09
+3 G-BT09-058TH
+# Card: แรบิดมิว | G0 | Trigger Unit | Critical | G-BT09
+4 G-BT09-063TH
+# Card: แดรกวิซาร์ด, ซีรุ | G0 | Trigger Unit | Draw | G-BT10
+4 G-BT10-052TH
+# Card: กิกันต์เท็ค・ชัตเตอร์ | G3 | Normal Unit | G-BT12
+4 G-BT12-062TH
+# Card: บลูเอสปาด้า・ดราก้อน | G1 | Normal Unit | G-BT12
+4 G-BT12-066TH
+# Card: รีเวนเจอร์แห่งความกรุณา, อาริล | G0 | Trigger Unit | Heal | G-BT14
+4 G-BT14-018TH
+# Card: เครสต์วิเชียส・ดราก้อน | G3 | Normal Unit | G-TD10
+1 G-TD10-002TH
+# Card: แดรกฮาร์ต, ลูอาร์ด | G3 | Normal Unit | G-TD10
+3 G-TD10-003TH
+# Card: ปราสาทโลกมาร, ไอน์แก๊งก์ | G2 | Normal Unit | G-TD10
+4 G-TD10-005TH
+# Card: แดรกวิซาร์ด, นีซ์ | G1 | Normal Unit | G-TD10
+4 G-TD10-009TH
+# Card: คิลเลอร์มิว | G1 | Normal Unit | G-TD10
+3 G-TD10-010TH
+# Card: แดรกพรินซ์, รูต | G0 | Normal Unit | G-TD10
+1 G-TD10-013TH
+# Card: อัศวินผู้โหยหา, บริแอน | G0 | Trigger Unit | Stand | G-TD10
+4 G-TD10-016TH
+
+[Ride]
+
+[G]
+# Empty: G Zone and Stride runtime are disabled for this fixture.

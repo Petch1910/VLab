@@ -1,0 +1,65 @@
+{
+  "version": "M58-03",
+  "description": "Sixth fixture headless load smoke",
+  "source_inputs": {
+    "runtime_fixture": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\runtime_fixtures\\m56_recipe_001_shadow_paladin_m57_06.json",
+    "m58_02_report": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m58_02_sixth_fixture_deck_text_export.json",
+    "deck_text": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m58_02_sixth_fixture_deck_text_export.txt",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "scope": {
+    "offline_headless_fixture_load_smoke": true,
+    "sixth_fixture_headless_load_smoke": true,
+    "creates_deck_code_artifact": true,
+    "mutates_saved_decks": false,
+    "mutates_ui_deck_library": false,
+    "bot_integration": false,
+    "g_zone_runtime_enabled": false,
+    "stride_runtime_enabled": false,
+    "GameState_mutation_from_python": false
+  },
+  "fixture_summary": {
+    "fixture_id": "runtime_fixture_m56_recipe_001_shadow_paladin_m57_06",
+    "recipe_id": "m56_recipe_001",
+    "main_deck_count": 50,
+    "unique_card_count": 15,
+    "g_zone_count": 0
+  },
+  "headless_request": {
+    "seed": 5803,
+    "ruleset": "Premium",
+    "deck_code_path": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m58_03_sixth_fixture_deck_code.txt",
+    "deck_code_sha256": "c16166aa151787233d8455c86b07fa9370023dbac0ed3c26f86d2d9215d39694",
+    "deck_code_prefix": "VGTH1.H4sIAAAAAA",
+    "deck_code_length": 384,
+    "unity_result_path": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m58_03_sixth_fixture_unity_result.json",
+    "unity_replay_path": "C:\\Users\\Phet\\Documents\\Codex\\2026-06-19\\d-cardfight-area-full-version-4\\outputs\\target_slice\\m58_03_sixth_fixture_unity_replay.json"
+  },
+  "unity_headless_result": {
+    "provided": true,
+    "accepted": true,
+    "result_path": "outputs\\target_slice\\m58_03_sixth_fixture_unity_result.json",
+    "replay_path": "outputs\\target_slice\\m58_03_sixth_fixture_unity_replay.json",
+    "replay_exists": true,
+    "seed": 5803,
+    "ruleset": "Premium",
+    "deck_source": "deck_code",
+    "actions_executed": 4,
+    "event_count": 4,
+    "failure_reason": ""
+  },
+  "issues": [],
+  "summary": {
+    "offline_load_ready": true,
+    "deck_code_created": true,
+    "unity_headless_result_provided": true,
+    "unity_headless_smoke_passed": true,
+    "blocking_issue_count": 0,
+    "issue_count": 0,
+    "ready_for_m58_04": true
+  },
+  "next_target": {
+    "milestone": "M58-04",
+    "task": "Six-fixture scale decision"
+  }
+}

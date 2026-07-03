@@ -1,0 +1,79 @@
+{
+  "version": "M58-01",
+  "description": "Sixth runtime fixture schema validation",
+  "source_inputs": {
+    "runtime_fixture": "outputs\\target_slice\\runtime_fixtures\\m56_recipe_001_shadow_paladin_m57_06.json",
+    "runtime_cards_sqlite": "data\\packs\\vanguard_th\\cards.sqlite"
+  },
+  "scope": {
+    "offline_fixture_schema_validator": true,
+    "mutates_fixture_artifact": false,
+    "mutates_runtime_deck_library": false,
+    "bot_integration": false,
+    "GameState_mutation": false,
+    "sixth_fixture_schema_validator": true,
+    "g_zone_stride_boundary_enforced": true
+  },
+  "validation_policy": {
+    "schema_version": "deck_recipe_runtime_fixture_v1",
+    "fixture_scope": "offline_runtime_test_fixture",
+    "main_deck_count": 50,
+    "trigger_profile": {
+      "Critical": 4,
+      "Draw": 4,
+      "Heal": 4,
+      "Stand": 4
+    },
+    "grade_profile": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "copy_limit_from_sqlite": true,
+    "selected_group_only": true,
+    "runtime_boundaries_enforced": true,
+    "g_zone_stride_boundary": {
+      "selected_option_id": "main_deck_only_review_no_runtime_promotion",
+      "main_deck_only_validation_allowed": true,
+      "g_zone_runtime_enabled": false,
+      "stride_runtime_enabled": false,
+      "grade4_main_deck_allowed": false,
+      "g_units_allowed_in_main_deck": false,
+      "grade4_main_deck_count": 0,
+      "accepts_m57_06_source_artifacts_plural": true
+    }
+  },
+  "fixture_summary": {
+    "fixture_id": "runtime_fixture_m56_recipe_001_shadow_paladin_m57_06",
+    "recipe_id": "m56_recipe_001",
+    "main_deck_count": 50,
+    "trigger_counts": {
+      "Critical": 4,
+      "Draw": 4,
+      "Heal": 4,
+      "Stand": 4
+    },
+    "grade_counts": {
+      "0": 17,
+      "1": 14,
+      "2": 11,
+      "3": 8
+    },
+    "clan_counts": {
+      "ชาโดว์ พาลาดิน": 50
+    },
+    "unique_card_count": 15
+  },
+  "issues": [],
+  "summary": {
+    "schema_valid": true,
+    "blocking_issue_count": 0,
+    "issue_count": 0,
+    "ready_for_m58_02": true
+  },
+  "next_target": {
+    "milestone": "M58-02",
+    "task": "Sixth fixture deck text exporter"
+  }
+}
