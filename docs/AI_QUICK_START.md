@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M70-04 nine-fixture scale decision
-   after M70-03 ninth fixture headless load smoke scaffold; M58-01 through
-   M70-03 spec/tool/tests scaffolds are ready
+-> current target: M71-01 post-nine fixture queue planning
+   after M70-04 nine-fixture scale decision scaffold; M58-01 through
+   M70-04 spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -1074,8 +1074,17 @@ Windows-first program completion
    empty Ride/G sections, deck-code round-trip, optional Unity result gating,
    and keeps saved deck injection, UI deck publication, bot/playbook, live card
    text parsing, G Zone runtime, Stride runtime, Aqua Force battle-order
-   runtime, and GameState mutation disabled. Current next target: M70-04
-   nine-fixture scale decision
+   runtime, and GameState mutation disabled.
+-> M70-04 tooling/spec/tests are scaffolded; targeted M70-04 tests 8/8 and
+   full Python tests 1812/1812 pass.
+   The scale decision reviews nine fixture smoke records, counts Aqua Force as
+   the ninth fixture, requires Unity deck-code acceptance for every fixture,
+   excludes completed groups from the advisory candidate queue, routes failed
+   evidence to M70-repair, opens only M71 planning on pass, and keeps saved
+   deck injection, UI deck publication, bot/playbook, live card text parsing,
+   G Zone runtime, Stride runtime, Aqua Force battle-order runtime, and
+   GameState mutation disabled. Current next target: M71-01 post-nine fixture
+   queue planning
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3475,13 +3484,12 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 If continuing from here, do this next:
 
 1. Open `docs/IMPLEMENTATION_PLAN.md` section `M70`.
-2. Read `docs/specs/cards_and_decks/NINTH_HEADLESS_FIXTURE_LOAD_SMOKE_SPEC.md`,
-   `tools/deck/build_ninth_headless_fixture_load_smoke.py`, and
-   `tests/test_ninth_headless_fixture_load_smoke.py`.
-3. Implement `M70-04` as the nine-fixture scale decision.
-4. Review all fixture schema/deck-text/headless evidence records, keep real
-   artifacts gated on real fixture evidence where needed, and keep saved-deck/UI
-   publication, bot/playbook promotion, G Zone/Stride/Aqua runtime, live text
-   parsing, and GameState mutation disabled.
+2. Read `docs/specs/cards_and_decks/NINE_FIXTURE_SCALE_DECISION_SPEC.md`,
+   `tools/deck/build_nine_fixture_scale_decision.py`, and
+   `tests/test_nine_fixture_scale_decision.py`.
+3. Implement `M71-01` as the post-nine fixture queue planning slice.
+4. Decide the next bounded queue after nine fixture scaffolds without creating
+   runtime fixtures, saved-deck/UI publication, bot/playbook promotion,
+   G Zone/Stride/Aqua runtime, live text parsing, or GameState mutation.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.

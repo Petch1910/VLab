@@ -990,7 +990,13 @@
   matching, empty Ride/G sections, deck-code round-trip, optional Unity result
   gating, keeps real CLI artifacts gated on real M69-06/M70-01/M70-02 files,
   and keeps saved deck/UI/bot/live parsing/G Zone/Stride/Aqua runtime/GameState
-  mutation disabled. The current next target is M70-04.
+  mutation disabled. M70-04 spec/tool/tests are scaffolded, targeted tests pass
+  (`8/8`), and full Python discovery passes (`1812/1812`). It reviews nine
+  fixture smoke records, counts Aqua Force as the ninth fixture, requires Unity
+  deck-code acceptance for every fixture, excludes completed groups from the
+  advisory candidate queue, routes failed evidence to M70-repair, opens only
+  M71 planning on pass, and keeps saved deck/UI/bot/live parsing/G Zone/Stride/
+  Aqua runtime/GameState mutation disabled. The current next target is M71-01.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

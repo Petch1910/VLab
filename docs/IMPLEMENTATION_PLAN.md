@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M70-04 nine-fixture scale decision
-   after M70-03 ninth fixture headless load smoke scaffold; M58-01 through
-   M70-03 scaffolds are ready
+-> current next target: M71-01 post-nine fixture queue planning
+   after M70-04 nine-fixture scale decision scaffold; M58-01 through
+   M70-04 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -3281,9 +3281,31 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     publication, bot/playbook integration, live card text parsing, G Zone
     runtime, Stride runtime, Aqua Force battle-order runtime, and direct
     `GameState` mutation boundaries.
-- `M70-04`: Nine-fixture scale decision. **Planned.**
+- `M70-04`: Nine-fixture scale decision. **Blocked by M58-03/M62-03/M66-03/M70-03 real evidence; scaffold ready.**
   - Review all nine fixture evidence records before selecting any further
     slice.
+  - Scaffold status: spec/tool/tests are present. Targeted M70-04 tests pass
+    (`8/8`) and full Python discovery passes (`1812/1812`) using in-memory
+    sixth, seventh, eighth, and ninth fixture smoke evidence where real
+    artifacts remain gated.
+  - Evidence: the decision reviews nine fixture smoke records, requires
+    offline load readiness, deck code creation, Unity deck-code acceptance, and
+    zero blockers for every fixture, counts Aqua Force as the ninth fixture,
+    excludes completed groups from the advisory candidate queue, does not
+    select a tenth slice, opens only M71 planning on pass, routes failed
+    evidence to M70-repair, and preserves saved deck injection, UI deck
+    publication, bot/playbook integration, live card text parsing, G Zone
+    runtime, Stride runtime, Aqua Force battle-order runtime, and direct
+    `GameState` mutation boundaries.
+
+### M71: Post-Nine Fixture Queue Planning
+
+- `M71-01`: Post-nine fixture queue planning. **Planned.**
+  - Decide the next bounded queue after nine fixture scaffolds.
+  - Must not create runtime fixtures, saved decks, UI deck entries, bot
+    playbooks, G Zone runtime, Stride runtime, Aqua Force battle-order runtime,
+    live card text parsing, or direct `GameState` mutation without a new
+    explicit gate.
 
 ## Post-M28 Backlog (not in active queue)
 
