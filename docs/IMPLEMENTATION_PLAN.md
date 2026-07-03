@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M70-02 ninth fixture deck text exporter
-   after M70-01 ninth fixture schema validator scaffold; M58-01 through
-   M70-01 scaffolds are ready
+-> current next target: M70-03 ninth fixture headless load smoke
+   after M70-02 ninth fixture deck text exporter scaffold; M58-01 through
+   M70-02 scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -3252,9 +3252,20 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     injection, UI deck publication, bot/playbook integration, live card text
     parsing, G Zone runtime, Stride runtime, Aqua Force battle-order runtime,
     and direct `GameState` mutation boundaries.
-- `M70-02`: Ninth fixture deck text exporter. **Planned.**
+- `M70-02`: Ninth fixture deck text exporter. **Blocked by M69-06/M70-01 real outputs; scaffold ready.**
   - Export the Aqua Force fixture as reviewable count-line deck text without
     adding it to saved decks.
+  - Scaffold status: spec/tool/tests are present. Targeted M70-02 tests pass
+    (`10/10`) and full Python discovery passes (`1794/1794`) using an
+    in-memory M69-06 Aqua Force fixture plus M70-01 validation report.
+  - Evidence: the exporter emits review-only count-line deck text, preserves
+    empty Ride/G sections, includes G Zone, Stride, and Aqua Force
+    runtime-disabled comments, blocks invalid M70-01 validation, malformed
+    fixture rows, and missing SQLite card ids, keeps the real CLI artifacts
+    gated on real M69-06/M70-01 files, and preserves saved deck injection, UI
+    deck publication, bot/playbook integration, live card text parsing,
+    G Zone runtime, Stride runtime, Aqua Force battle-order runtime, and direct
+    `GameState` mutation boundaries.
 - `M70-03`: Ninth fixture headless load smoke. **Planned.**
   - Load the Aqua Force fixture through offline/headless paths without UI,
     bot, G Zone, Stride, Aqua Force battle-order runtime, or `GameState`

@@ -977,7 +977,14 @@
   rejects unsafe saved deck/G Zone/Stride/Aqua Force boundaries, keeps the real
   CLI artifact gated on a real M69-06 fixture file, and keeps saved
   deck/UI/bot/live parsing/G Zone/Stride/Aqua runtime/GameState mutation
-  disabled. The current next target is M70-02.
+  disabled. M70-02 spec/tool/tests are scaffolded, targeted tests pass
+  (`10/10`), and full Python discovery passes (`1794/1794`) using the
+  in-memory M69-06 Aqua Force fixture plus M70-01 validation report. It exports
+  review-only count-line deck text, preserves empty Ride/G sections, writes
+  G Zone/Stride/Aqua Force runtime-disabled comments, keeps real CLI artifacts
+  gated on real M69-06/M70-01 files, and keeps saved deck/UI/bot/live
+  parsing/G Zone/Stride/Aqua runtime/GameState mutation disabled. The current
+  next target is M70-03.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.
