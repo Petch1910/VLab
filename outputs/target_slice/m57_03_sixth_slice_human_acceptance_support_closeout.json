@@ -1,0 +1,61 @@
+{
+  "version": "M57-03-acceptance-support-closeout",
+  "description": "Sixth-slice human acceptance support closeout",
+  "source_inputs": {
+    "m57_03_acceptance_request_packet": "outputs\\target_slice\\m57_03_sixth_slice_human_acceptance_request_packet.json",
+    "m57_03_acceptance_preflight": "outputs\\target_slice\\m57_03_sixth_slice_human_acceptance_preflight.json"
+  },
+  "scope": {
+    "read_only_support_closeout": true,
+    "records_human_selection": false,
+    "records_human_acceptance": false,
+    "records_g_zone_decision": false,
+    "creates_m57_03_artifact": false,
+    "declares_recipe_valid": false,
+    "changes_recipe_draft_file": false,
+    "creates_runtime_fixture": false,
+    "saved_deck_injection": false,
+    "ui_deck_list_publication": false,
+    "bot_playbook": false,
+    "direct_GameState_mutation": false
+  },
+  "evidence": {
+    "request_ready": true,
+    "selected_review_item_id": "m57_01_m56_recipe_001_repair_review",
+    "selected_recipe_id": "m56_recipe_001",
+    "source_card_id": "G-BT12-062TH",
+    "target_card_id": "G-BT12-066TH",
+    "decision_option_count": 4,
+    "acceptance_option_count": 1,
+    "preflight_report_ready": true,
+    "default_preflight_requires_input": true,
+    "preflight_input_issue_count": 1,
+    "preflight_blocking_issue_count": 0,
+    "preflight_passed": false,
+    "real_m57_03_artifact_created": false,
+    "human_acceptance_recorded_anywhere": false
+  },
+  "handoff": {
+    "requires_explicit_acceptance_text": true,
+    "selection_text_is_not_acceptance_text": true,
+    "real_m57_03_artifact_blocked_until_acceptance": true,
+    "safe_next_milestone": "M57-03-user-acceptance",
+    "preflight_command_template": "python tools\\deck\\build_sixth_slice_human_acceptance_preflight.py --acceptance-text \"<explicit user/team acceptance text>\"",
+    "real_command_template": "python tools\\deck\\build_sixth_slice_human_accepted_repair_artifact.py --acceptance-text \"<explicit user/team acceptance text>\""
+  },
+  "issues": [],
+  "summary": {
+    "support_closeout_complete": true,
+    "blocking_issue_count": 0,
+    "acceptance_request_ready": true,
+    "preflight_report_ready": true,
+    "default_preflight_requires_input": true,
+    "human_acceptance_recorded": false,
+    "real_m57_03_artifact_created": false,
+    "ready_for_user_acceptance": true
+  },
+  "next_target": {
+    "milestone": "M57-03-user-acceptance",
+    "task": "User/team provides non-empty acceptance_text"
+  }
+}

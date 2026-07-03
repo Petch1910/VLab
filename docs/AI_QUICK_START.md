@@ -60,6 +60,9 @@ Windows-first program completion
 -> latest acceptance-preflight gate closed: M57-03-preflight writes a
    no-acceptance report, can dry-run proposed acceptance_text through the real
    M57-03 generator in memory, and currently routes to M57-03-user-acceptance
+-> latest acceptance-support gate closed: M57-03-acceptance-support-closeout
+   summarizes request/preflight evidence, records no acceptance, creates no
+   real M57-03 artifact, and routes only to M57-03-user-acceptance
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -555,6 +558,12 @@ Windows-first program completion
    dry-run proposed acceptance_text through the real M57-03 generator without
    writing the accepted artifact. Combined M57-03 preflight/request/accepted
    targeted tests pass 19/19
+-> M57-03-acceptance-support-closeout is complete; it exports
+   outputs/target_slice/m57_03_sixth_slice_human_acceptance_support_closeout.json/md,
+   summarizes request/preflight evidence, has support_closeout_complete=true,
+   default_preflight_requires_input=true, human_acceptance_recorded=false,
+   real_m57_03_artifact_created=false, and routes to M57-03-user-acceptance.
+   Combined M57-03 support/preflight/request/accepted targeted tests pass 25/25
 -> M57-04 tooling/spec/tests are scaffolded; targeted M57-03/M57-04 tests
    16/16 and full Python tests 1155/1155 pass. It records an explicit G Zone /
    Stride boundary decision and keeps G Zone, Stride, runtime fixture, saved
@@ -1212,6 +1221,12 @@ Windows-first program completion
    preflight_passed=false, blocking_issue_count=0, input_issue_count=1
    missing_acceptance_text, and no accepted artifact is written.
    Verification passed: combined M57-03 preflight/request/accepted tests 19/19.
+-> M57-03-acceptance-support-closeout is complete; it records
+   support_closeout_complete=true, default_preflight_requires_input=true,
+   human_acceptance_recorded=false, real_m57_03_artifact_created=false, and
+   ready_for_user_acceptance=true without creating the real M57-03 artifact.
+   Verification passed: combined M57-03 support/preflight/request/accepted
+   tests 25/25.
    Current next target: M57-03 explicit human acceptance text before M57-04,
    M57-06, or M58 materialization
 -> do not promote playbook hints into runtime/bot until a later bot/playbook

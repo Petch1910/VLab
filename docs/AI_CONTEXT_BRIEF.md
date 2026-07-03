@@ -513,6 +513,11 @@
   default report has `0` blockers, `1` input issue for missing
   `acceptance_text`, writes no accepted artifact, and combined M57-03
   preflight/request/accepted tests pass `19/19`.
+  `M57-03-acceptance-support-closeout` is complete and exports JSON/MD at
+  `outputs/target_slice/m57_03_sixth_slice_human_acceptance_support_closeout.*`;
+  it records no acceptance, confirms no real M57-03 artifact exists, routes only
+  to `M57-03-user-acceptance`, and combined M57-03 support/preflight/request/accepted
+  tests pass `25/25`.
   M57-03 spec/tool/tests are scaffolded and verified
   (`7/7` targeted, `1146/1146` full Python); it applies manual substitutions
   before recomputing grade repair, but its real output remains gated on
@@ -1066,7 +1071,8 @@
   read-only acceptance request packet and command template, but the real M57-03
   artifact still requires explicit non-empty acceptance text. `M57-03-preflight`
   now provides a read-only guard to dry-run proposed acceptance text before the
-  real accepted artifact command.
+  real accepted artifact command. `M57-03-acceptance-support-closeout` now
+  provides the consolidated no-acceptance handoff to `M57-03-user-acceptance`.
 - Latest bot/combo milestone: `M14-10` bounded readiness-gated one-ply advanced search prototype over legal actions and snapshot simulation.
 - Latest custom pack milestone: `M15-01` backward-compatible custom pack v2 schema envelope with capability/dependency validation and v2 template.
 - Latest custom ability-data milestone: `M15-02` custom pack v2 ability file validation with same-pack card id checks and manifest ability hash metadata.

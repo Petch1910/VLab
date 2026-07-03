@@ -821,6 +821,12 @@
 - `../tests/test_sixth_slice_human_acceptance_preflight.py` M57-03 human acceptance preflight tests
 - `../outputs/target_slice/m57_03_sixth_slice_human_acceptance_preflight.json` M57-03 human acceptance preflight JSON
 - `../outputs/target_slice/m57_03_sixth_slice_human_acceptance_preflight.md` M57-03 human acceptance preflight summary
+- `specs/cards_and_decks/SIXTH_SLICE_HUMAN_ACCEPTANCE_SUPPORT_CLOSEOUT_SPEC.md` M57-03 human acceptance support closeout spec
+- `history/M57_03_HUMAN_ACCEPTANCE_SUPPORT_CLOSEOUT.md` M57-03 human acceptance support closeout history
+- `../tools/deck/build_sixth_slice_human_acceptance_support_closeout.py` M57-03 human acceptance support closeout tool
+- `../tests/test_sixth_slice_human_acceptance_support_closeout.py` M57-03 human acceptance support closeout tests
+- `../outputs/target_slice/m57_03_sixth_slice_human_acceptance_support_closeout.json` M57-03 human acceptance support closeout JSON
+- `../outputs/target_slice/m57_03_sixth_slice_human_acceptance_support_closeout.md` M57-03 human acceptance support closeout summary
 - `../tools/deck/build_sixth_slice_human_accepted_repair_artifact.py` M57-03 sixth-slice human-accepted repair artifact tool
 - `../tests/test_sixth_slice_human_accepted_repair_artifact.py` M57-03 sixth-slice human-accepted repair artifact tests
 - `specs/cards_and_decks/SIXTH_SLICE_G_ZONE_STRIDE_DECISION_ARTIFACT_SPEC.md` M57-04 sixth-slice G Zone / Stride decision artifact spec

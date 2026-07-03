@@ -407,6 +407,11 @@ Active order:
   default report has `0` blockers, `1` input issue for missing
   `acceptance_text`, writes no accepted artifact, and combined M57-03
   preflight/request/accepted tests pass `19/19`.
+  `M57-03-acceptance-support-closeout` is complete and exports JSON/MD at
+  `outputs/target_slice/m57_03_sixth_slice_human_acceptance_support_closeout.*`;
+  it records no acceptance, confirms no real M57-03 artifact exists, and routes
+  only to `M57-03-user-acceptance`, with combined M57-03 support tests
+  `25/25`.
   M57-03
   spec/tool/tests are also scaffolded and verified (`7/7` targeted,
   `1146/1146` full Python), but its real accepted artifact remains gated on
@@ -961,7 +966,8 @@ Active order:
   read-only acceptance request packet and command template, but the real M57-03
   artifact still requires explicit non-empty acceptance text. `M57-03-preflight`
   now provides a read-only guard to dry-run proposed acceptance text before the
-  real accepted artifact command.
+  real accepted artifact command. `M57-03-acceptance-support-closeout` now
+  provides the consolidated no-acceptance handoff to `M57-03-user-acceptance`.
 
 Deferred until explicit user instruction:
 
