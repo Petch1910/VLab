@@ -45,6 +45,9 @@ Windows-first program completion
    the real selected artifact
 -> latest decision-support gate closed: M57-02-candidate-digest lists all 12
    ready candidates, groups them by source/target card, and keeps auto-selection disabled
+-> latest contract gate closed: M57-02-batch-preflight-matrix dry-runs all 12
+   candidates through the real M57-02 generator in memory and still records no
+   human selection
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -502,8 +505,14 @@ Windows-first program completion
    lists 12/12 ready candidates, source groups 2, target groups 7, one shared
    structural readiness profile, records no selection, and keeps
    auto-selection disabled. Candidate digest targeted tests pass 7/7;
-   combined M57-02 request/selected/preflight/digest targeted tests pass 29/29;
-   full Python tests pass 1860/1860
+   combined M57-02 request/selected/preflight/digest targeted tests pass 29/29
+-> M57-02-batch-preflight-matrix is complete; it exports
+   outputs/target_slice/m57_02_sixth_slice_human_selection_batch_preflight_matrix.json/md/csv,
+   dry-runs all 12 ready candidates through the real M57-02 generator contract
+   in memory, reports 12/12 pass and 0 failures, records no human selection,
+   and writes no selected artifact. Batch-preflight targeted tests pass 7/7;
+   combined M57-02 request/selected/preflight/digest/batch tests pass 36/36;
+   full Python tests pass 1867/1867
 -> M57-02 tooling/spec/tests are scaffolded; targeted tests 9/9 and full
    Python tests 1139/1139 pass, but the real output artifact is still pending
    an explicit M57-01 review item id such as m57_01_m56_recipe_001_repair_review
@@ -1147,8 +1156,11 @@ Windows-first program completion
    source groups, 7 target groups, one shared structural readiness profile, and
    human_selection_recorded=false. It gives the team a comparison matrix but no
    recommendation or auto-pick.
-   Verification passed: targeted M57-02 guard/digest tests 29/29 and full
-   Python tests 1860/1860.
+-> M57-02-batch-preflight-matrix is complete; it records 12/12 candidates pass
+   the real M57-02 generator contract in memory, 0 failures, and
+   human_selection_recorded=false.
+   Verification passed: targeted M57-02 guard/digest/batch tests 36/36 and
+   full Python tests 1867/1867.
    Current next target: M57-02 explicit sixth-slice human selection
    prerequisite before M57-06/M58 materialization
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
@@ -3555,7 +3567,8 @@ If continuing from here, do this next:
    `outputs/target_slice/m57_02_sixth_slice_human_selection_request_packet.md`,
    `outputs/target_slice/m57_02_sixth_slice_human_selection_request_packet.csv`,
    `outputs/target_slice/m57_02_sixth_slice_human_selection_preflight.md`,
-   and `outputs/target_slice/m57_02_sixth_slice_human_selection_candidate_digest.md`.
+   `outputs/target_slice/m57_02_sixth_slice_human_selection_candidate_digest.md`,
+   and `outputs/target_slice/m57_02_sixth_slice_human_selection_batch_preflight_matrix.md`.
 3. Ask the user/team to choose exactly one ready `review_item_id` and provide
    non-empty `selection_text`; optionally run
    `tools\deck\build_sixth_slice_human_selection_preflight.py` with those

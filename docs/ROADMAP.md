@@ -385,7 +385,12 @@ Active order:
   complete and exports JSON/MD/CSV with `12` ready candidates, `2` source-card
   groups, `7` target-card groups, one shared structural readiness profile, no
   recorded selection, no auto-pick, targeted M57-02 guard/digest tests `29/29`,
-  and full Python discovery `1860/1860`. M57-03
+  and full Python discovery `1860/1860`. `M57-02-batch-preflight-matrix` is
+  complete and exports JSON/MD/CSV proving all `12/12` ready candidates pass the
+  real M57-02 generator contract in memory with `0` failures, no selected
+  artifact written, targeted M57-02 guard/digest/batch tests `36/36`, and full
+  Python discovery `1867/1867`.
+  M57-03
   spec/tool/tests are also scaffolded and verified (`7/7` targeted,
   `1146/1146` full Python), but its real accepted artifact remains gated on
   M57-02 output and explicit acceptance text. M57-04 spec/tool/tests are
@@ -929,7 +934,8 @@ Active order:
   back to the explicit `M57-02` human selection prerequisite. `M57-02-preflight`
   is available as the read-only guard before running the real selected artifact
   command, and `M57-02-candidate-digest` is available as the read-only
-  comparison matrix for the 12 ready candidates.
+  comparison matrix for the 12 ready candidates. `M57-02-batch-preflight-matrix`
+  is available as the read-only all-candidate generator-contract check.
 
 Deferred until explicit user instruction:
 

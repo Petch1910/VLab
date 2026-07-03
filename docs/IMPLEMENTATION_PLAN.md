@@ -87,6 +87,7 @@ Windows-first program completion
 -> latest target closed: M57-02-prerequisite sixth-slice human selection request packet
 -> latest target closed: M57-02-preflight sixth-slice human selection preflight
 -> latest target closed: M57-02-candidate-digest sixth-slice human selection candidate digest
+-> latest target closed: M57-02-batch-preflight-matrix sixth-slice all-candidate dry-run contract check
 -> current next target: M57-02 explicit sixth-slice human selection prerequisite
    using one ready review_item_id and non-empty selection text before M57-06
    runtime fixture and M58 artifact materialization
@@ -2305,11 +2306,18 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     target-card groups, records no selection, and states that all ready
     candidates share the same structural readiness profile so the remaining tie
     breaker is human/team source-target preference.
+  - `M57-02-batch-preflight-matrix`: Batch preflight matrix is complete. It
+    exports JSON/MD/CSV at
+    `outputs/target_slice/m57_02_sixth_slice_human_selection_batch_preflight_matrix.*`,
+    dry-runs all `12` ready candidates through the real M57-02 generator
+    contract in memory, reports `12/12` pass and `0` failures, records no human
+    selection, and writes no selected artifact.
   - Scaffold status: spec/tool/tests are present and reject non-M57 review ids.
     Selected-artifact targeted tests pass `9/9`; preflight targeted tests pass
-    `7/7`; candidate-digest targeted tests pass `7/7`; combined M57-02
-    request/selected/preflight/digest targeted tests pass `29/29`; full Python
-    unittest discovery passes `1860/1860`. The real
+    `7/7`; candidate-digest targeted tests pass `7/7`; batch-preflight targeted
+    tests pass `7/7`; combined M57-02 request/selected/preflight/digest/batch
+    targeted tests pass `36/36`; full Python unittest discovery passes
+    `1867/1867`. The real
     `outputs/target_slice/m57_02_*selected_recipe_artifact*` artifact is not
     generated until the user selects a valid
     `m57_01_m56_recipe_*_repair_review` item and provides non-empty
