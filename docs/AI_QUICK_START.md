@@ -37,9 +37,9 @@ Windows-first program completion
 -> defer Android, mobile QA, APK, app packaging, release-candidate packaging,
    and public distribution until the user explicitly re-enables that track
 -> M32 PlayTable UI work is paused by user instruction
--> current target: M69-closeout ninth-slice fixture closeout
-   after M69-06 ninth-slice runtime fixture promotion gate scaffold; M58-01
-   through M69-06 spec/tool/tests scaffolds are ready
+-> current target: M70-01 ninth fixture schema validator
+   after M69-closeout ninth-slice fixture closeout scaffold; M58-01 through
+   M69-closeout spec/tool/tests scaffolds are ready
 -> first slice closed through M35-D4 reviewed playbook seed export for selected
    Classic Core / Nova Grappler
 -> second slice selected by M35-E1: Classic Core / Oracle Think Tank
@@ -1041,7 +1041,15 @@ Windows-first program completion
    publication, bot/playbook, live card text parsing, G Zone runtime, Stride
    runtime, Aqua Force battle-order runtime, and GameState mutation disabled.
    Real M69-06 artifacts remain gated on real M69-03/M69-05 output files.
-   Current next target: M69-closeout ninth-slice fixture closeout
+-> M69-closeout tooling/spec/tests are scaffolded; targeted M69-closeout tests
+   7/7 and full Python tests 1767/1767 pass.
+   The closeout consumes M69-06 gate evidence, routes complete Aqua Force
+   fixture evidence to M70, routes failed or payload-missing evidence to
+   M69-repair, keeps the fixture offline-only, and keeps saved deck injection,
+   UI deck publication, bot/playbook, live card text parsing, G Zone runtime,
+   Stride runtime, Aqua Force battle-order runtime, and GameState mutation
+   disabled. Real M69-closeout artifacts remain gated on real M69-06 output.
+   Current next target: M70-01 ninth fixture schema validator
 -> do not promote playbook hints into runtime/bot until a later bot/playbook
    gate explicitly allows it
 ```
@@ -3440,14 +3448,14 @@ Unity sometimes leaves project-local lock files after batchmode. If no Unity pro
 
 If continuing from here, do this next:
 
-1. Open `docs/IMPLEMENTATION_PLAN.md` section `M69`.
-2. Read `docs/specs/cards_and_decks/NINTH_SLICE_RUNTIME_FIXTURE_PROMOTION_GATE_SPEC.md`,
-   `tools/deck/build_ninth_slice_runtime_fixture_promotion_gate.py`,
-   and `tests/test_ninth_slice_runtime_fixture_promotion_gate.py`.
-3. Implement `M69-closeout` as the ninth-slice fixture closeout.
-4. Summarize M69-06 gate evidence, preserve scaffold-only status while real
-   M69-03/M69-05 artifacts are absent, select the next bounded queue, and keep
+1. Open `docs/IMPLEMENTATION_PLAN.md` sections `M69` and `M70`.
+2. Read `docs/specs/cards_and_decks/NINTH_SLICE_FIXTURE_CLOSEOUT_SPEC.md`,
+   `tools/deck/build_ninth_slice_fixture_closeout.py`, and
+   `tests/test_ninth_slice_fixture_closeout.py`.
+3. Implement `M70-01` as the ninth fixture schema validator.
+4. Validate the Aqua Force fixture independently from the M69 generator, keep
+   real artifacts gated on real M69-06/M69-closeout outputs, and keep
    saved-deck/UI publication, bot/playbook promotion, G Zone/Stride/Aqua
-   runtime, and GameState mutation disabled.
+   runtime, live text parsing, and GameState mutation disabled.
 5. Verify with targeted Python tests and full `python -m unittest discover -s
    tests -p "test_*.py"`.

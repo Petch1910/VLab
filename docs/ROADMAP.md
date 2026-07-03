@@ -858,7 +858,13 @@ Active order:
   repaired validation, combo consistency, and explicit G Zone/Stride/Aqua
   boundaries before creating an offline runtime/test fixture model, keeps saved
   deck/UI/bot/live parsing/G Zone/Stride/Aqua runtime/GameState mutation
-  disabled, and selects M69-closeout. The current next target is M69-closeout.
+  disabled, and selects M69-closeout. M69-closeout spec/tool/tests are
+  scaffolded and targeted tests pass (`7/7`) with full Python discovery
+  passing (`1767/1767`) using in-memory M69-06 evidence;
+  it routes complete Aqua Force fixture evidence to M70, routes failed or
+  payload-missing evidence to M69-repair, keeps the fixture offline-only, and
+  keeps saved deck/UI/bot/live parsing/G Zone/Stride/Aqua runtime/GameState
+  mutation disabled. The current next target is M70-01.
 
 Deferred until explicit user instruction:
 

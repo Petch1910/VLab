@@ -80,9 +80,9 @@ Windows-first program completion
 -> latest target closed: M56-06 sixth-slice blocker repair candidates
 -> latest target closed: M56-closeout sixth-slice runtime readiness decision
 -> latest target closed: M57-01 sixth-slice human repair review packet
--> current next target: M69-closeout ninth-slice fixture closeout
-   after M69-06 ninth-slice runtime fixture promotion gate scaffold; M58-01
-   through M69-06 scaffolds are ready
+-> current next target: M70-01 ninth fixture schema validator
+   after M69-closeout ninth-slice fixture closeout scaffold; M58-01 through
+   M69-closeout scaffolds are ready
 ```
 
 ## Completed Phases (M0-M19)
@@ -3225,8 +3225,33 @@ runtime, and `GameState` mutation remain blocked until later explicit gates.
     deck injection, UI deck publication, bot/playbook integration, live card
     text parsing, G Zone runtime, Stride runtime, Aqua Force battle-order
     runtime, and direct `GameState` mutation boundaries.
-- `M69-closeout`: Ninth-slice fixture closeout. **Planned.**
+- `M69-closeout`: Ninth-slice fixture closeout. **Blocked by real M69-06 output; scaffold ready.**
   - Close the ninth-slice fixture decision and select the next bounded queue.
+  - Scaffold status: spec/tool/tests are present. Targeted M69-closeout tests
+    pass (`7/7`) and full Python discovery passes (`1767/1767`) using
+    in-memory M69-06 evidence.
+  - Evidence: complete M69-06 evidence routes to `M70`, failed or
+    payload-missing evidence routes to `M69-repair`, and the closeout records
+    Aqua Force fixture availability without enabling saved deck injection, UI
+    deck publication, bot/playbook integration, live card text parsing, G Zone
+    runtime, Stride runtime, Aqua Force battle-order runtime, or direct
+    `GameState` mutation.
+
+### M70: Ninth Fixture Consumption and Nine-Fixture Scale Gate
+
+- `M70-01`: Ninth fixture schema validator. **Planned.**
+  - Validate the Aqua Force runtime fixture independently from the M69
+    generator.
+- `M70-02`: Ninth fixture deck text exporter. **Planned.**
+  - Export the Aqua Force fixture as reviewable count-line deck text without
+    adding it to saved decks.
+- `M70-03`: Ninth fixture headless load smoke. **Planned.**
+  - Load the Aqua Force fixture through offline/headless paths without UI,
+    bot, G Zone, Stride, Aqua Force battle-order runtime, or `GameState`
+    mutation.
+- `M70-04`: Nine-fixture scale decision. **Planned.**
+  - Review all nine fixture evidence records before selecting any further
+    slice.
 
 ## Post-M28 Backlog (not in active queue)
 
